@@ -11,7 +11,8 @@ interface Props {
   services?: Service[]
 }
 
-const { heading, subheading, services = [] } = Astro.props
+const { heading, subheading, services: rawServices } = Astro.props
+const services = rawServices ?? []
 ---
 
 {services.length > 0 && (

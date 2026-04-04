@@ -4,8 +4,9 @@ import Hero from '@components/sections/Hero.astro'
 import Services from '@components/sections/Services.astro'
 import CTABanner from '@components/sections/CTABanner.astro'
 import PortableText from '@components/ui/PortableText'
-import { getClient } from '@sanity/client'
-import { homePageQuery } from '@sanity/queries'
+import ContactForm from '@components/ui/ContactForm'
+import { getClient } from '@cms/client'
+import { homePageQuery } from '@cms/queries'
 
 // Detect preview mode (set by Sanity Presentation Tool)
 const isPreview = Astro.cookies.has('sanity-preview-secret')
@@ -61,6 +62,9 @@ const page = await client.fetch(homePageQuery)
       </div>
     </section>
   )}
+
+  <!-- Contact Form -->
+  <ContactForm client:load />
 
   <!-- Bottom CTA Banner -->
   <CTABanner

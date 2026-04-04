@@ -1,4 +1,4 @@
-import { groq } from '@sanity/client'
+import groq from 'groq'
 
 /* ── Reusable Fragments ───────────────────────────────────────────────────── */
 

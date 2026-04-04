@@ -68,33 +68,18 @@ export const POST: APIRoute = async ({ request, site }) => {
     siteUrl:   site?.href ?? request.headers.get('origin') ?? '',
   }
 
-  // Send to n8n
+  // Send to n8n (fire-and-forget — never block the user response)
   const webhookUrl = import.meta.env.N8N_CONTACT_WEBHOOK_URL
-  if (!webhookUrl) {
-    console.error('[contact] N8N_CONTACT_WEBHOOK_URL is not set')
-    return new Response(
-      JSON.stringify({ error: 'Server configuration error. Please try again later.' }),
-      { status: 500, headers: { 'Content-Type': 'application/json' } }
-    )
-  }
-
-  try {
-    const n8nRes = await fetch(webhookUrl, {
+  if (webhookUrl) {
+    fetch(webhookUrl, {
       method:  'POST',
       headers: { 'Content-Type': 'application/json' },
       body:    JSON.stringify(payload),
     })
-
-    if (!n8nRes.ok) {
-      console.error('[contact] n8n webhook returned', n8nRes.status)
-      throw new Error(`n8n responded with ${n8nRes.status}`)
-    }
-  } catch (err) {
-    console.error('[contact] Failed to reach n8n webhook:', err)
-    return new Response(
-      JSON.stringify({ error: 'Failed to send your message. Please try again.' }),
-      { status: 502, headers: { 'Content-Type': 'application/json' } }
-    )
+      .then((r) => { if (!r.ok) console.error('[contact] n8n webhook returned', r.status) })
+      .catch((err: unknown) => console.error('[contact] n8n webhook error:', err))
+  } else {
+    console.log('[contact] No webhook URL configured, skipping n8n. Payload:', JSON.stringify(payload))
   }
 
   return new Response(

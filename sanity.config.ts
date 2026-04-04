@@ -64,15 +64,15 @@ export default defineConfig({
 
   // ── REPLACE THESE per client ─────────────────────────────────
   title: 'Client Site Name',
-  projectId: process.env.PUBLIC_SANITY_PROJECT_ID!,
-  dataset: process.env.PUBLIC_SANITY_DATASET ?? 'production',
+  projectId: import.meta.env.PUBLIC_SANITY_PROJECT_ID,
+  dataset: import.meta.env.PUBLIC_SANITY_DATASET ?? 'production',
   // ─────────────────────────────────────────────────────────────
 
   plugins: [
     structureTool({ structure }),
 
     presentationTool({
-      previewUrl: process.env.SITE_URL ?? 'http://localhost:4321',
+      previewUrl: import.meta.env.SITE_URL ?? 'http://localhost:4321',
       resolve: {
         locations: {
           homePage: {

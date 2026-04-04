@@ -1,10 +1,16 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro'
 import PortableText from '@components/ui/PortableText'
-import { getClient } from '@sanity/client'
-import { pageBySlugQuery } from '@sanity/queries'
+import { getClient } from '@cms/client'
+import { pageBySlugQuery } from '@cms/queries'
 
 const { slug } = Astro.params
+
+// Don't let the catch-all handle API routes
+if (slug?.startsWith('api/')) {
+  return new Response('Not Found', { status: 404 })
+}
+
 const isPreview = Astro.cookies.has('sanity-preview-secret')
 const client    = getClient(isPreview)
 
