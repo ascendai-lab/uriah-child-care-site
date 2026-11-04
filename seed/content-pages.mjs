@@ -16,7 +16,7 @@ const trustStrip = () =>
     items: [
       ['Since 2005', 'Caring for Cumberland County kids'],
       ['7 days', 'Open every day of the week'],
-      ['6 am – 11 pm', 'First, second and third shift'],
+      ['6 am – 11 pm', 'Early morning to late evening'],
       ['Ages 2½+', 'Toddlers to school age'],
       ['CCAP', 'NJ childcare subsidy accepted'],
     ].map(([value, label]) => ({ _key: key(), _type: 'stat', value, label })),
@@ -33,7 +33,7 @@ export const homePage = {
       heading: 'Day care center in Vineland, NJ',
       accentWord: 'Vineland, NJ',
       subheading:
-        'Uriah Child Care is a licensed child care center at 30 W Chestnut Ave, open Monday to Sunday, 6 am to 11 pm. Toddler care, preschool and pre-K, and before and after school care, with first, second and third shift care for working parents.',
+        'Uriah Child Care is a licensed child care center at 30 W Chestnut Ave, open Monday to Sunday, 6 am to 11 pm. Toddler care, preschool and pre-K, and before and after school care, from early morning to 11 pm for working parents.',
       image: IMG.exterior(),
       showRating: true,
       showPhone: true,
@@ -93,7 +93,7 @@ export const homePage = {
       items: [
         ['Led by Ms. Paulette since 2005', 'Families who have known her for years now bring their younger children, and their grandchildren.', 'page-about'],
         ['Licensed by NJ DCF', 'License ID CCC128557, posted in our lobby with the state’s information for parents.', 'service-safe-licensed'],
-        ['Open when you work', 'Monday to Sunday, 6 am to 11 pm, with first, second and third shift care.', 'category-shift-care'],
+        ['Open when you work', 'Monday to Sunday, early morning to 11 pm, for parents who work shifts.', 'category-shift-care'],
         ['NJ childcare subsidy (CCAP) accepted', 'We walk you through the steps for families who qualify.', 'service-ccap'],
         ['Meals included', 'Meals and snacks through the USDA Child and Adult Care Food Program (CACFP).', 'service-meals'],
         ['Brightwheel check-in and updates', 'Secure check-in at the lobby kiosk, and updates about your child’s day.', 'page-our-center'],
@@ -132,7 +132,7 @@ export const homePage = {
   ],
   seo: seo(
     'Day Care Center in Vineland, NJ | Uriah Child Care',
-    'Licensed day care center in Vineland, NJ for ages 2.5 and up. Open 7 days, 6 am to 11 pm, with first, second and third shift care. CCAP accepted. Book a tour.',
+    'Licensed day care center in Vineland, NJ for ages 2.5 and up. Open 7 days, early morning to 11 pm. CCAP accepted. Book a tour.',
   ),
 }
 

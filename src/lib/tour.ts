@@ -13,7 +13,7 @@ export const childAgeOptions = [
 export const careOptions = [
   { value: 'weekdays', label: 'Weekdays' },
   { value: 'evenings', label: 'Evenings' },
-  { value: 'third-shift', label: 'Late evenings (third shift)' },
+  { value: 'third-shift', label: 'Late evenings (until 11 pm)' },
   { value: 'weekends', label: 'Weekends' },
   { value: 'before-after-school', label: 'Before / after school' },
 ] as const

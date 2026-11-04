@@ -153,7 +153,7 @@ Call [(856) 455-6701](tel:8564556701) or [book a tour](/tour/). Tell us your chi
     reviews: refs('review-jake-jones', 'review-marcia-bailey'),
     faqs: [
       faq('What ages are in the after school program?', 'Our before and after school program is for school-age children up to 13 years old.'),
-      faq('How late can my child stay?', 'We are open until 11 pm, Monday to Sunday, so children can stay through a second shift. Pickup must be before we close.'),
+      faq('How late can my child stay?', 'We are open until 11 pm, Monday to Sunday, so children can stay through a second shift.'),
       faq('Do you help with homework?', 'Yes. After snack, children have homework time at a quiet table, and staff help with reading and checking work.'),
       faq('Do you pick children up from school?', 'No. We do not offer school pickup or drop-off. Parents bring children to the center and pick them up here.'),
       faq('Are you open in the summer and when school is closed?', 'Yes. We offer full-day care all summer and on school holidays, breaks and snow days.'),
@@ -173,14 +173,14 @@ Call [(856) 455-6701](tel:8564556701) or [book a tour](/tour/). Tell us your chi
     gbpName: 'Child care agency',
     keyword: 'child care vineland nj',
     ageRange: 'Ages 2.5 and up',
-    schedule: 'Monday to Sunday, 6 am to 11 pm. First, second and third shift.',
+    schedule: 'Monday to Sunday, 6 am to 11 pm.',
     image: IMG.exterior(),
     intro:
-      'Uriah Child Care is a licensed child care center in Vineland, NJ, open Monday to Sunday from 6 am to 11 pm. We offer first, second and third shift care for children ages 2.5 and up, so parents who work early mornings, evenings and weekends have a safe place for their kids. We accept NJ childcare subsidy (CCAP).',
-    excerpt: 'Licensed child care open 7 days a week, 6 am to 11 pm, with first, second and third shift care for ages 2.5 and up.',
+      'Uriah Child Care is a licensed child care center in Vineland, NJ, open Monday to Sunday from 6 am to 11 pm. We offer early morning, evening and late evening care for children ages 2.5 and up, so parents who work early mornings, evenings and weekends have a safe place for their kids. We accept NJ childcare subsidy (CCAP).',
+    excerpt: 'Licensed child care open 7 days a week, early morning to 11 pm, for ages 2.5 and up.',
     highlights: [
       'Open 7 days a week, 6 am to 11 pm',
-      'First, second and third shift care',
+      'Early morning to 11 pm',
       'Weekend care on Saturday and Sunday',
       'Full-time and part-time schedules',
       'Ages 2.5 and up',
@@ -191,14 +191,14 @@ Call [(856) 455-6701](tel:8564556701) or [book a tour](/tour/). Tell us your chi
 
 Vineland runs on more than nine-to-five. Parents work at the hospital, in warehouses and food plants, in stores and on farms, and many start before sunrise or finish late at night. Uriah Child Care is open **Monday to Sunday, 6 am to 11 pm**, so your child care can follow your shift instead of the other way around.
 
-## First, second and third shift care
+## Care from early morning to 11 pm
 
-- [Early morning care](/first-shift-child-care-vineland-nj/) from 6 am for first shift.
-- [Evening child care](/evening-child-care-vineland-nj/) for second shift.
-- [Late evening care until 11 pm](/late-evening-child-care-vineland-nj/), our third shift.
+- [Early morning care](/first-shift-child-care-vineland-nj/) from 6 am.
+- [Evening child care](/evening-child-care-vineland-nj/) after work.
+- [Late evening care until 11 pm](/late-evening-child-care-vineland-nj/).
 - [Weekend daycare](/weekend-daycare-vineland-nj/) on Saturday and Sunday.
 
-We do not offer overnight care. If your schedule changes from week to week, see [child care for shift workers](/child-care-for-shift-workers-vineland-nj/).
+Work overnight? Call us at [(856) 455-6701](tel:8564556701) and Ms. Paulette will talk with you about it. If your schedule changes from week to week, see [child care for shift workers](/child-care-for-shift-workers-vineland-nj/).
 
 ## Who we care for
 
@@ -210,12 +210,12 @@ We are at 30 W Chestnut Ave in Vineland, and many families drive in from [Millvi
 `,
     reviews: refs('review-marcia-bailey', 'review-jake-jones'),
     faqs: [
-      faq('What are your hours?', 'We are open Monday to Sunday, 6 am to 11 pm, with first, second and third shift care.'),
-      faq('Do you offer overnight care?', 'No. Our latest care is our third shift, which ends when we close at 11 pm.'),
+      faq('What are your hours?', 'We are open Monday to Sunday, 6 am to 11 pm.'),
+      faq('Do you offer overnight care?', 'Our posted hours end at 11 pm. If you work overnight and need care after 11 pm, call us at (856) 455-6701 and Ms. Paulette will talk with you about it.'),
       faq('Can my schedule change from week to week?', 'Often, yes. Many of our parents work rotating shifts. Tell us your schedule and we will work out the days and times that fit, as space allows.'),
     ],
     related: refs('service-first-shift', 'service-evening', 'service-weekend', 'service-shift-workers'),
-    seo: seo('Child Care in Vineland, NJ, Open 7 Days', 'Licensed child care in Vineland, NJ open Monday to Sunday, 6 am to 11 pm. First, second and third shift care for ages 2.5 and up. CCAP accepted.'),
+    seo: seo('Child Care in Vineland, NJ, Open 7 Days', 'Licensed child care in Vineland, NJ open Monday to Sunday, 6 am to 11 pm. Early morning to late evening care for ages 2.5 and up. CCAP accepted.'),
   }),
 ]
 
@@ -591,7 +591,7 @@ If your shift starts before the school day, bring your child to us from 6 am. Th
 
 ## Getting to and from school
 
-Parents drop off and pick up at the center. We do not provide transportation to or from school.
+Parents drop off and pick up at the center, and we do not drive children to or from school. School buses can stop at the center, so ask your school district whether your child's bus can pick up and drop off here.
 
 ## After school too
 
@@ -818,17 +818,17 @@ See [late evening care until 11 pm](/late-evening-child-care-vineland-nj/), or [
     schedule: 'Until 11 pm, 7 days a week',
     image: IMG.porch(),
     intro:
-      'Uriah Child Care is open until 11 pm, 7 days a week, for parents in the Vineland, NJ area who work late. Our third shift care is our latest care of the day. We do not offer overnight care.',
-    excerpt: 'Our third shift: care until 11 pm, 7 days a week. No overnight care.',
-    highlights: ['Open until 11 pm', '7 days a week', 'Our third shift', 'No overnight care'],
+      'Uriah Child Care is open until 11 pm, 7 days a week, for parents in the Vineland, NJ area who work late. Need care after 11 pm? Call us to talk about it.',
+    excerpt: 'Care until 11 pm, 7 days a week, for parents who work late.',
+    highlights: ['Open until 11 pm', '7 days a week', 'Dinner served', 'After 11 pm? Call us'],
     body: md`
 ## Child care until 11 pm
 
-If you work late, finding child care in Cumberland County can feel impossible. Uriah Child Care stays open **until 11 pm, Monday to Sunday**. That is our third shift, and it is the latest care we offer.
+If you work late, finding child care in Cumberland County can feel impossible. Uriah Child Care stays open **until 11 pm, Monday to Sunday**.
 
-## What "third shift" means here
+## Working past 11 pm?
 
-We call our latest care of the day our third shift. It runs until we close at 11 pm. We do **not** offer overnight care, so pickup must be before 11 pm.
+Our posted hours end at 11 pm. Need care after 11 pm for an overnight shift? Call us at [(856) 455-6701](tel:8564556701) and Ms. Paulette will talk with you about it.
 
 ## A quiet, safe evening
 
@@ -837,11 +837,11 @@ By late evening the center is calm. Children have had dinner and wind down with 
 Call [(856) 455-6701](tel:8564556701) to talk about your hours, or see [evening child care](/evening-child-care-vineland-nj/).
 `,
     faqs: [
-      faq('What time do you close?', 'We close at 11 pm, Monday to Sunday. Pickup must be before 11 pm.'),
-      faq('Do you offer overnight care?', 'No. Our latest care, our third shift, ends at 11 pm.'),
+      faq('What time do you close?', 'Our posted closing time is 11 pm, Monday to Sunday.'),
+      faq('Do you offer overnight care?', 'Our posted hours end at 11 pm. If you work overnight and need care after 11 pm, call us at (856) 455-6701 and Ms. Paulette will talk with you about it.'),
     ],
     related: refs('service-evening', 'category-shift-care', 'service-shift-workers', 'service-weekend'),
-    seo: seo('Late Evening Child Care in Vineland, NJ', 'Late evening child care in Vineland, NJ until 11 pm, 7 days a week. Our third shift for parents who work late. Ages 2.5+. CCAP accepted.'),
+    seo: seo('Late Evening Child Care in Vineland, NJ', 'Late evening child care in Vineland, NJ until 11 pm, 7 days a week. For parents who work late. Ages 2.5+. CCAP accepted.'),
   }),
 
   service('weekend', 'category-shift-care', {
@@ -921,9 +921,9 @@ Tuition depends on your child's age and schedule. See [tuition and how to pay](/
     schedule: 'Monday to Sunday, 6 am to 11 pm',
     image: IMG.kiosk(),
     intro:
-      'Uriah Child Care is built for parents in Vineland, NJ who work shifts: nurses, warehouse and plant workers, retail and restaurant staff. We are open Monday to Sunday, 6 am to 11 pm, with first, second and third shift care for children ages 2.5 and up, and we accept NJ childcare subsidy (CCAP).',
+      'Uriah Child Care is built for parents in Vineland, NJ who work shifts: nurses, warehouse and plant workers, retail and restaurant staff. We are open Monday to Sunday, early morning to 11 pm, for children ages 2.5 and up, and we accept NJ childcare subsidy (CCAP).',
     excerpt: 'Built for nurses, warehouse, plant, retail and restaurant workers: care 6 am to 11 pm, 7 days.',
-    highlights: ['First, second and third shift', 'Open 7 days a week', 'Rotating schedules welcome', 'CCAP accepted'],
+    highlights: ['Early morning to 11 pm', 'Open 7 days a week', 'Rotating schedules welcome', 'CCAP accepted'],
     body: md`
 ## Made for parents who work shifts
 
@@ -931,9 +931,9 @@ Ms. Paulette has spent years helping parents with hard schedules. As one parent 
 
 ## Every shift, every day
 
-- **First shift:** [drop off from 6 am](/first-shift-child-care-vineland-nj/)
-- **Second shift:** [evening care](/evening-child-care-vineland-nj/) with dinner
-- **Third shift:** [late evening care until 11 pm](/late-evening-child-care-vineland-nj/)
+- **Early morning:** [drop off from 6 am](/first-shift-child-care-vineland-nj/)
+- **Evening:** [evening care](/evening-child-care-vineland-nj/) with dinner
+- **Late evening:** [care until 11 pm](/late-evening-child-care-vineland-nj/)
 - **Weekends:** [Saturday and Sunday](/weekend-daycare-vineland-nj/), same hours
 
 ## Rotating and changing schedules
@@ -945,7 +945,7 @@ If your schedule rotates, bring it to your tour and we'll work out a plan. Tell 
     reviews: refs('review-monique-willoughby', 'review-jake-jones'),
     faqs: [faq('My shifts rotate. Can you work with that?', 'Often, yes. Bring your schedule to your tour and we will work out a plan, as space allows.')],
     related: refs('category-shift-care', 'service-first-shift', 'service-evening', 'service-weekend'),
-    seo: seo('Shift Worker Child Care in Vineland, NJ', 'Child care for nurses, warehouse and plant workers in Vineland, NJ. Open 6 am to 11 pm, 7 days, first to third shift. Ages 2.5+. CCAP accepted.'),
+    seo: seo('Shift Worker Child Care in Vineland, NJ', 'Child care for nurses, warehouse and plant workers in Vineland, NJ. Open 6 am to 11 pm, 7 days. Ages 2.5+. CCAP accepted.'),
   }),
 ]
 
@@ -1024,7 +1024,7 @@ Many Bridgeton parents work in Vineland, at the hospital, in warehouses and food
 
 ## Open when you work
 
-We are open **Monday to Sunday, 6 am to 11 pm**, with [first, second and third shift care](/child-care-vineland-nj/) and [weekend daycare](/weekend-daycare-vineland-nj/).
+We are open **Monday to Sunday, 6 am to 11 pm**, with [early morning to late evening care](/child-care-vineland-nj/) and [weekend daycare](/weekend-daycare-vineland-nj/).
 
 ## Programs for Bridgeton families
 

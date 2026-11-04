@@ -115,7 +115,7 @@ export const siteSettings = defineType({
       name: 'shiftsLine',
       title: 'Shift care line',
       type: 'string',
-      description: 'e.g. "First, second and third shift care, 7 days a week"',
+      description: 'e.g. "Early morning to 11 pm, 7 days a week"',
       group: 'facts',
     }),
     defineField({
