@@ -280,6 +280,7 @@ export const layoutQuery = defineQuery(`{
   "owner": *[_type == "teamMember"] | order(order asc)[0] { name, role, photo { ${imageFields} } },
   "tourPage": *[_type == "page" && slug.current == "tour"][0] { "slug": slug.current },
   "reviews": *[_type == "testimonial" && firstParty != false] | order(order asc, _createdAt desc)[0...6] { ${testimonialFields} },
+  "photoPool": *[_type in ["category", "service", "serviceArea"] && defined(image.asset)] | order(order asc).image { ${imageFields} },
   "generalFaqs": *[_type == "faq"] | order(order asc, _createdAt asc)[0...8] { ${faqFields} }
 }`)
 

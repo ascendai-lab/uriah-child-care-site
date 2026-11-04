@@ -64,15 +64,16 @@ const facts =
       {
         block.showRating && (
           <a class="hero__rating" href={reviewsHref} target={reviewsHref.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">
-            {rating ? <Stars rating={rating} /> : <Icon name="heart" size={18} />}
+            {rating && <Stars rating={rating} />}
             <span>
-              {rating ? `${rating} on Google` : 'Read what local families say on Google'}
+              {rating ? `${rating} on Google` : 'Read reviews from local families'}
               {rating && reviewCount ? ` · ${reviewCount} reviews` : ''}
             </span>
+            <Icon name="arrow" size={16} />
           </a>
         )
       }
-      {block.eyebrow && <span class="eyebrow"><Icon name="sparkle" /> {block.eyebrow}</span>}
+      {block.eyebrow && <span class="eyebrow">{block.eyebrow}</span>}
       <Heading class:list={['hero__heading', layout === 'photoFade' ? 'display-hero' : 'page-title']}>
         {parts ? (<>{parts[0]}<span class="accent-word">{parts[1]}</span>{parts[2]}</>) : heading}
       </Heading>
@@ -119,19 +120,24 @@ const facts =
   .hero { position: relative; overflow: hidden; }
   .hero__inner { position: relative; display: grid; gap: 2.5rem; align-items: center; }
   .hero__sub { font-size: 1.15rem; max-width: 36rem; margin-top: 1.1rem; color: var(--fg2); }
+  /* A quiet text link, not a badge. */
   .hero__rating {
     display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
-    padding: 0.4rem 0.95rem 0.4rem 0.7rem;
-    margin-bottom: 1.1rem;
-    border-radius: var(--radius-full);
-    background: var(--white);
-    color: var(--navy);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
     font-weight: 700;
-    font-size: 0.9rem;
-    box-shadow: var(--shadow-card);
+    font-size: 0.95rem;
+    color: var(--fg2);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 4px;
+    transition: text-decoration-color 200ms var(--ease-out);
   }
+  .hero__rating:hover { text-decoration-color: currentColor; }
+  .hero__rating :global(svg:last-child) { transition: transform 200ms var(--ease-out); }
+  .hero__rating:hover :global(svg:last-child) { transform: translateX(3px); }
+  .hero--photoFade .hero__rating { color: var(--sunshine); }
 
   /* Split / card: text with a playful masked photo */
   .hero--split, .hero--card, .hero--centered, .hero--background { padding-block: clamp(2.5rem, 6vw, 5rem); }

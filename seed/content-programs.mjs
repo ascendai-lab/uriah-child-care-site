@@ -971,7 +971,7 @@ export const cities = [
     driveTime: 'About 20 minutes by car',
     ageRange: 'Ages 2.5 and up',
     schedule: 'Monday to Sunday, 6 am to 11 pm',
-    image: IMG.paulette(),
+    image: IMG.entrance(),
     intro:
       'Uriah Child Care serves Millville, NJ families from our licensed center at 30 W Chestnut Ave in Vineland, about a 20-minute drive. Ms. Paulette cared for Millville children for years before opening the Vineland center. We are open 7 days a week, 6 am to 11 pm, for ages 2.5 and up.',
     excerpt: 'Ms. Paulette has cared for Millville children for years. Our Vineland center is about 20 minutes away.',
@@ -1012,7 +1012,7 @@ We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for famil
     driveTime: 'About 25 minutes by car',
     ageRange: 'Ages 2.5 and up',
     schedule: 'Monday to Sunday, 6 am to 11 pm',
-    image: IMG.exterior(),
+    image: IMG.kiosk(),
     intro:
       'Uriah Child Care welcomes Bridgeton, NJ families at our licensed center at 30 W Chestnut Ave in Vineland, about a 25-minute drive. We are open Monday to Sunday, 6 am to 11 pm, with toddler care, preschool and before and after school care for ages 2.5 and up. We accept NJ childcare subsidy (CCAP).',
     excerpt: 'Licensed care for Bridgeton families at our Vineland center, about 25 minutes away, open 7 days.',

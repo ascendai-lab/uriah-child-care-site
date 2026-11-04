@@ -37,7 +37,7 @@ export const homePage = {
       eyebrow: 'Ages 2.5 to 5',
       heading: 'Preschool in Vineland',
       body: md`Our play-based preschool, built on the Experience Early Learning curriculum, helps children learn letters, numbers, colors and how to be a good friend. Every day starts with circle time, and older children move into [pre-K](/pre-k-vineland-nj/) and [kindergarten readiness](/kindergarten-readiness-vineland-nj/). Children don't need to be potty trained to start.`,
-      image: IMG.classroom(),
+      image: IMG.schedule(),
       imagePosition: 'right',
       imageShape: 'blob',
       accent: 'coral',
@@ -49,7 +49,7 @@ export const homePage = {
       eyebrow: 'School age, up to 13',
       heading: 'After school program in Vineland',
       body: md`Before school from 6 am and after school until 11 pm, school-age kids get a snack, [homework time](/homework-help-vineland-nj/) with help on reading, and time to play with friends in a safe, licensed center.`,
-      image: IMG.lobby(),
+      image: IMG.signIn(),
       imagePosition: 'left',
       imageShape: 'arch',
       accent: 'sky',
@@ -61,7 +61,7 @@ export const homePage = {
       eyebrow: 'Open 7 days, 6 am to 11 pm',
       heading: 'Child care for every shift in Vineland',
       body: md`Nurses, warehouse and plant workers, retail and restaurant staff: we are open when you work. [Early morning care](/first-shift-child-care-vineland-nj/) from 6 am, [evening care](/evening-child-care-vineland-nj/) with dinner, [late evening care until 11 pm](/late-evening-child-care-vineland-nj/), and [weekend daycare](/weekend-daycare-vineland-nj/) on Saturday and Sunday.`,
-      image: IMG.entrance(),
+      image: IMG.porch(),
       imagePosition: 'right',
       imageShape: 'circle',
       accent: 'sage',
@@ -123,7 +123,6 @@ export const pages = [
         layout: 'card',
         eyebrow: 'Tours by appointment',
         heading: 'Book a tour of our Vineland child care center',
-        accentWord: 'Book a tour',
         subheading:
           'See the classroom, meet Ms. Paulette, and ask every question you have. Fill in the short form below or call us.',
         // No photo or button here: on the tour page the form starts right below.
@@ -152,7 +151,6 @@ export const pages = [
         layout: 'card',
         eyebrow: 'Caring for local children since 2005',
         heading: 'Meet Ms. Paulette',
-        accentWord: 'Ms. Paulette',
         subheading:
           'Ms. Paulette (Paulette Senior) has cared for Cumberland County children since 2005. Today she runs Uriah Child Care in Vineland with her daughter, Tameca Burke, our director.',
         image: IMG.paulette(),
@@ -201,7 +199,6 @@ The center is licensed by the New Jersey Department of Children and Families, li
         layout: 'card',
         eyebrow: '30 W Chestnut Ave, Vineland',
         heading: 'Take a look around our center',
-        accentWord: 'our center',
         subheading:
           'A bright, welcoming child care center with a secure entrance, Brightwheel check-in and an accessible ramp and parking. Here is what you will see when you visit.',
         image: IMG.exterior(),
@@ -240,7 +237,6 @@ The center is licensed by the New Jersey Department of Children and Families, li
       block('hero', {
         layout: 'card',
         heading: 'What families say about Ms. Paulette',
-        accentWord: 'Ms. Paulette',
         subheading: 'Real reviews from parents and grandparents, copied word for word from Google.',
         image: IMG.paulette(),
         accent: 'sage',
@@ -264,7 +260,6 @@ The center is licensed by the New Jersey Department of Children and Families, li
         layout: 'card',
         eyebrow: 'FAQ',
         heading: 'Questions parents ask',
-        accentWord: 'Questions',
         subheading: 'Hours, ages, cost, CCAP, meals, safety and how to enroll. Can’t find your answer? Call us at (856) 455-6701.',
         image: IMG.signIn(),
         accent: 'sunshine',
@@ -286,7 +281,6 @@ The center is licensed by the New Jersey Department of Children and Families, li
         layout: 'card',
         eyebrow: 'Tuition and how to pay',
         heading: 'Tuition and NJ childcare subsidy (CCAP)',
-        accentWord: 'CCAP',
         subheading:
           'Tuition depends on your child’s age, the days you need and your shift. Call us or book a tour and we will give you a clear price for your schedule. We accept NJ childcare subsidy (CCAP) for families who qualify.',
         image: IMG.kiosk(),

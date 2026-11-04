@@ -78,17 +78,29 @@ const shownServices = services.filter((s) => !s.needsConfirmation)
 // Keep the hero facts on one line: only the first sentence of the schedule (the full text is in Quick facts).
 const heroSchedule = (doc.schedule || settings?.hoursSummary || '').split(/\.\s/)[0].replace(/\.$/, '') || null
 
-// City pages lead with the map (how far the center is) instead of a photo, so they don't look like program pages.
-const isCity = doc._type === 'serviceArea'
-const siteName = stegaClean(settings?.siteName) || 'Uriah Child Care'
-const mapQuery = encodeURIComponent(`${siteName}, ${a?.street ?? ''}, ${a?.city ?? ''}, ${a?.state ?? ''} ${a?.zip ?? ''}`)
-const mapEmbed = stegaClean(settings?.gbpMapEmbedUrl) || `https://maps.google.com/maps?q=${mapQuery}&z=11&output=embed`
+// Never show the same photo twice on a page: a card whose photo is already used borrows an unused one
+// from the site's photo pool, or goes without a photo.
+const assetRef = (img: { asset?: { _ref?: string } | null } | null | undefined) => img?.asset?._ref
+const used = new Set<string>([assetRef(doc.image)].filter((r): r is string => Boolean(r)))
+const pool = (layout.photoPool ?? []).filter((img, i, list) => img?.asset && list.findIndex((x) => assetRef(x) === assetRef(img)) === i)
+const withUniquePhoto = <T extends { image?: unknown }>(item: T): T => {
+  const ref = assetRef(item.image as never)
+  if (ref && !used.has(ref)) {
+    used.add(ref)
+    return item
+  }
+  const spare = pool.find((img) => !used.has(assetRef(img) ?? ''))
+  if (spare) used.add(assetRef(spare) ?? '')
+  return { ...item, image: spare ?? null }
+}
 
 // Program grid: pick a column count that leaves no lonely card on the last row.
 const n = shownServices.length
 const programCols = n % 4 === 0 ? 4 : n % 3 === 0 ? 3 : n <= 4 ? n : n % 2 === 0 ? 2 : 3
 // Hide the age badge when every card would show the same one.
 const sameAge = n > 1 && shownServices.every((s) => stegaClean(s.ageRange) === stegaClean(shownServices[0].ageRange))
+// "3-year-olds" should never break at its hyphens.
+const noBreakHyphens = (text: string) => text.replace(/(\w)-(?=\w)/g, '$1\u2011')
 const highlightCount = doc.highlights?.length ?? 0
 const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 2 : 3
 ---
@@ -97,7 +109,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
   <div class="container">
     <div class="core-hero__card">
       <div class="core-hero__text enter">
-        <span class="eyebrow"><Icon name="sparkle" /> {eyebrow}</span>
+        <span class="eyebrow">{eyebrow}</span>
         <h1 class="page-title">{doc.title}</h1>
         {doc.intro && <p class="core-hero__intro">{doc.intro}</p>}
         <ul class="fact-line core-hero__facts">
@@ -113,12 +125,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
         </div>
       </div>
       {
-        isCity ? (
-          <div class="core-hero__media core-hero__map">
-            <iframe src={mapEmbed} title={`Map: ${siteName}, ${where}`} loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
-            {doc.driveTime && <p class="core-hero__map-note"><Icon name="directions" size={16} /> {doc.driveTime} from {stegaClean(doc.city)}</p>}
-          </div>
-        ) : doc.image?.asset && (
+        doc.image?.asset && (
           <div class="core-hero__media">
             <div class="shape shape--arch">
               <SanityImage image={doc.image} width={560} aspectRatio={4 / 5} sizes="(min-width: 900px) 420px, 85vw" loading="eager" fetchpriority="high" />
@@ -146,7 +153,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
         {settings?.subsidyStatement && <div><dt><Icon name="wallet" /> Subsidy</dt><dd>{settings.subsidyStatement} <a class="text-link" href="/ccap-child-care-vineland-nj/">How CCAP works</a></dd></div>}
         {settings?.license?.summary && <div><dt><Icon name="shield" /> License</dt><dd>{settings.license.summary}</dd></div>}
       </dl>
-      <a class="btn btn--secondary" href="#book-a-tour">Book a tour</a>
+      <a class="btn btn--primary" href="#book-a-tour">Book a tour</a>
       {settings?.phone && <a class="core-facts__call" href={telHref(settings.phone)} data-track="call_click">or call {settings.phone}</a>}
     </aside>
   </div>
@@ -157,11 +164,11 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
     <section class="section bg-white">
       <div class="container">
         <h2 class="section-heading core-section-title">What your family gets</h2>
-        <ul class="checklist core-highlights" style={`--cols:${highlightCols}`}>
+        <ul class="ticks core-highlights" style={`--cols:${highlightCols}`}>
           {doc.highlights.map((h) => (
             <li>
-              <span class="checklist__icon"><Icon name="check" /></span>
-              <span>{h}</span>
+              <span class="ticks__icon"><Icon name="check" /></span>
+              <span>{noBreakHyphens(h)}</span>
             </li>
           ))}
         </ul>
@@ -175,9 +182,10 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
     <section class="section bg-muted">
       <div class="container">
         <h2 class="section-heading core-section-title">What the day looks like</h2>
-        <ol class:list={["day-plan", `day-plan--${doc.dayPlan.length % 3 === 0 ? 3 : 4}`]}>
+        <ol class="day-plan" style={`--steps:${doc.dayPlan.length}`}>
           {doc.dayPlan.map((step, i) => (
             <li class={`accent-${['coral', 'sage', 'sunshine', 'sky'][i % 4]}`}>
+              <span class="day-plan__dot" aria-hidden="true">{i + 1}</span>
               <span class="day-plan__when">{step.label}</span>
               <span class="day-plan__what">{step.activity}</span>
             </li>
@@ -196,7 +204,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
           <h2 class="section-heading">{doc._type === 'category' ? 'Choose the care that fits' : 'More programs at our Vineland center'}</h2>
         </header>
         <div class={`grid-cards grid-cards--${programCols}`}>
-          {shownServices.map((s, i) => <ProgramCard item={s} index={i} hideAge={sameAge} />)}
+          {shownServices.map((s, i) => <ProgramCard item={withUniquePhoto(s)} index={i} hideAge={sameAge} />)}
         </div>
       </div>
     </section>
@@ -220,10 +228,10 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
 {
   faqs.length ? (
     <section class="section bg-white">
-      <div class="container core-faq">
+      <div class="container"><div class="core-faq">
         <h2 class="section-heading core-section-title">Questions parents ask</h2>
         <FaqList items={faqs} openFirst />
-      </div>
+      </div></div>
     </section>
   ) : null
 }
@@ -269,18 +277,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
     gap: 2.25rem;
     align-items: center;
   }
-  .core-hero__map { max-width: 440px; }
-  .core-hero__map iframe {
-    display: block;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border: 0;
-    border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-card);
-    background: var(--surface-soft);
-  }
-  .core-hero__map-note { display: flex; align-items: center; gap: 0.45rem; margin-top: 0.8rem; font-weight: 600; color: var(--fg2); }
-  .core-hero__map-note :global(svg) { color: var(--coral-700); }
+
   .core-hero__intro { font-size: 1.15rem; margin-top: 1rem; max-width: 38rem; }
   .core-hero__facts { margin-top: 1.5rem; }
   .core-hero__media { position: relative; max-width: 380px; width: 100%; justify-self: center; }
@@ -299,37 +296,57 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
   .core-highlights { grid-template-columns: 1fr; }
   @media (min-width: 720px) { .core-highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (min-width: 1040px) { .core-highlights { grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); } }
-  .core-highlights li { border-radius: var(--radius-lg); }
+  .ticks { list-style: none; display: grid; gap: 1rem 2.5rem; }
+  .ticks li { display: flex; align-items: flex-start; gap: 0.75rem; font-weight: 600; font-size: 1.05rem; }
+  .ticks__icon {
+    flex: none;
+    display: inline-grid;
+    place-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 0.05rem;
+    border-radius: 50%;
+    background: var(--sage-50);
+    color: var(--sage-700);
+  }
+  .ticks__icon :global(svg) { width: 0.95rem; height: 0.95rem; }
 
-  .day-plan { list-style: none; display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); counter-reset: step; }
-  @media (min-width: 900px) { .day-plan--3 { grid-template-columns: repeat(3, 1fr); } .day-plan--4 { grid-template-columns: repeat(4, 1fr); } }
-  .day-plan li {
-    display: grid;
-    align-content: start;
-    gap: 0.35rem;
-    padding: 1.2rem 1.3rem;
-    border-radius: var(--radius-xl);
-    background: var(--white);
-    box-shadow: var(--shadow-card);
-  }
-  .day-plan__when {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 1.12rem;
-    color: var(--navy);
-  }
-  .day-plan__when::before {
+  /* The day as a timeline: numbered stops on a quiet neutral track (no cards, no colored borders). */
+  .day-plan { list-style: none; position: relative; display: grid; gap: 1.6rem; }
+  .day-plan::before {
     content: '';
-    width: 0.6rem;
-    height: 0.6rem;
+    position: absolute;
+    left: 1.05rem;
+    top: 1rem;
+    bottom: 1rem;
+    width: 2px;
+    background: rgba(51, 67, 80, 0.12);
+  }
+  .day-plan li { position: relative; display: grid; gap: 0.25rem; align-content: start; padding-left: 3.25rem; }
+  .day-plan__dot {
+    position: absolute;
+    left: 0;
+    top: -0.1rem;
+    display: grid;
+    place-items: center;
+    width: 2.15rem;
+    height: 2.15rem;
     border-radius: 50%;
     background: var(--accent);
-    flex: none;
+    color: var(--on-accent, var(--navy));
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 0 0 5px var(--surface-soft);
   }
-  .day-plan__what { color: var(--fg2); }
+  .day-plan__when { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; color: var(--navy); }
+  .day-plan__what { color: var(--fg2); max-width: 30rem; }
+  @media (min-width: 1040px) {
+    .day-plan { grid-template-columns: repeat(var(--steps, 6), minmax(0, 1fr)); gap: 1.5rem; }
+    .day-plan::before { left: 1rem; right: 1rem; top: 1.0rem; bottom: auto; width: auto; height: 2px; }
+    .day-plan li { padding-left: 0; padding-top: 3.25rem; }
+    .day-plan__dot { top: 0; }
+  }
 
   .core-faq { max-width: 52rem; }
 

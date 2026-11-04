@@ -216,7 +216,7 @@
 
   /* Coral is too light for text on white: accent words use the deep coral (4.5:1+). */
   .accent-word { color: var(--coral-800); }
-  .bg-dark .accent-word, .hero-fade .accent-word { color: var(--sunshine); }
+  .bg-dark .accent-word, .hero--photoFade .accent-word { color: var(--sunshine); }
 
   .section-header {
     max-width: 44rem;
@@ -608,7 +608,7 @@
   .review-card__who { display: grid; gap: 0.05rem; line-height: 1.3; }
   .review-card cite { font-style: normal; font-weight: 700; }
   .review-card__source { color: var(--fg3); font-size: 0.85rem; }
-  .review-card__source a { text-decoration: underline; text-underline-offset: 3px; }
+  .review-card__source a { display: inline-block; padding-block: 0.3rem; text-decoration: underline; text-underline-offset: 3px; }
 
   /* ─── Fact table ─── */
   .fact-table {
@@ -664,6 +664,12 @@
   }
   .field fieldset, fieldset.field { border: 0; }
   .choice-group { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.15rem; }
+  @media (max-width: 520px) {
+    /* Phones: two even columns of choices instead of a ragged stack. */
+    .choice-group { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .choice, .choice span { width: 100%; }
+    .choice span { justify-content: center; text-align: center; padding-inline: 0.6rem; font-size: 0.9rem; }
+  }
   .choice {
     position: relative;
     display: inline-flex;

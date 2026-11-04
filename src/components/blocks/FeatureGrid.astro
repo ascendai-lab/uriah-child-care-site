@@ -88,7 +88,10 @@ const palette = ['coral', 'sage', 'sunshine', 'sky']
   a.checklist__title { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: text-decoration-color 200ms var(--ease-out); }
   a.checklist__title:hover { text-decoration-color: currentColor; }
   .checklist__desc { font-weight: 500; color: var(--fg2); font-size: 0.95rem; }
-  .checklist-split .checklist li { border-radius: var(--radius-lg); }
+    /* A plain list beside the photo: no card boxes. */
+  .checklist-split .checklist { gap: 1.4rem; }
+  .checklist-split .checklist li { padding: 0; background: none; box-shadow: none; border-radius: 0; }
+  .checklist-split .checklist__icon { margin-top: 0.15rem; background: var(--sage-50); color: var(--sage-700); }
   .feature-card {
     display: flex;
     flex-direction: column;
