@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-/** Options shared by the tour form (client) and /api/contact (server), so they can't drift. */
+/** Options for the tour form, and the Zod schema that checks it before it is sent to Netlify Forms. */
 export const childAgeOptions = [
   { value: '2.5-3', label: '2½ to 3' },
   { value: '3', label: '3' },
@@ -68,3 +68,31 @@ export type TourRequest = z.infer<typeof TourRequestSchema>
 
 /** Anything faster than this is almost certainly a bot. */
 export const MIN_FILL_MS = 2500
+
+/** The form name in public/__forms.html. Netlify lists submissions under this name. */
+export const NETLIFY_FORM_NAME = 'tour-request'
+
+const labelOf = (list: readonly { value: string; label: string }[], value: string) =>
+  list.find((o) => o.value === value)?.label ?? value
+
+/**
+ * Flattens a tour request into the plain fields declared in public/__forms.html, with readable labels,
+ * so the notification email Netlify sends reads well. Keep the two lists in step.
+ */
+export function toNetlifyFields(r: TourRequest): Record<string, string> {
+  return {
+    name: r.name,
+    phone: r.phone,
+    email: r.email,
+    child_age: labelOf(childAgeOptions, r.childAge),
+    care_needed: r.careNeeded.map((v) => labelOf(careOptions, v)).join(', '),
+    tour_times: r.tourPreference.map((v) => labelOf(tourTimeOptions, v)).join(', '),
+    subsidy: r.subsidy ? labelOf(subsidyOptions, r.subsidy) : '',
+    message: r.message,
+    page: r.pagePath,
+    utm_source: r.utm.source ?? '',
+    utm_medium: r.utm.medium ?? '',
+    utm_campaign: r.utm.campaign ?? '',
+    ga_client_id: r.gaClientId ?? '',
+  }
+}

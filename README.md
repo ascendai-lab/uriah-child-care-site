@@ -30,7 +30,7 @@ Requires Node 22.12+.
 
 ```sh
 npm install
-cp .env.example .env   # fill in the Sanity project + token + n8n webhook
+cp .env.example .env   # fill in the Sanity project + token
 npm run dev            # site on http://localhost:4321, CMS on /studio
 ```
 

@@ -7,7 +7,6 @@ interface ImportMetaEnv {
   readonly PUBLIC_SANITY_DATASET?: string
   readonly PUBLIC_SANITY_PREVIEW_ORIGIN?: string
   readonly SANITY_API_READ_TOKEN?: string
-  readonly N8N_CONTACT_WEBHOOK_URL?: string
 }
 
 interface ImportMeta {

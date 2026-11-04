@@ -26,7 +26,7 @@ Read this before touching any file.
 | CMS | Sanity v6 | Studio embedded at `/studio` (can also be deployed with `npm run sanity:deploy`) |
 | Visual Editing | Sanity Presentation Tool + Stega | Requires SSR — do NOT switch to static output |
 | Hosting | Netlify | SSR via Netlify adapter. NOT Cloudflare Pages |
-| Forms | Custom API route → n8n | See `src/pages/api/contact.ts` |
+| Forms | Netlify Forms | `TourForm.tsx` posts to `/__forms.html` (see below) |
 | Language | TypeScript strict | No `any` types. Use Zod for runtime validation |
 
 ---
@@ -65,7 +65,6 @@ Tailwind utility classes map to those properties wherever possible.
 - `src/pages/blog/` — blog listing + posts
 - `src/pages/llms.txt.ts`, `llms-full.txt.ts` — AI-search summaries generated from the CMS
 - `src/pages/sitemap.xml.ts`, `robots.txt.ts` — generated from the CMS on request
-- `src/pages/api/contact.ts` — form submission API route
 - `src/pages/api/draft-mode/{enable,disable}.ts` — visual editing preview on/off
 - `src/middleware.ts` — draft-mode detection, CDN cache headers, CMS redirects on 404
 
@@ -114,30 +113,19 @@ All env vars are documented in `.env.example`.
 | `PUBLIC_SANITY_DATASET` | astro.config.mjs, sanity.config.ts |
 | `SANITY_STUDIO_URL` | astro.config.mjs (stega) — optional, defaults to `/studio` |
 | `SANITY_API_READ_TOKEN` | src/sanity/lib/load.ts, api/draft-mode (server only) |
-| `N8N_CONTACT_WEBHOOK_URL` | src/pages/api/contact.ts |
 | `SITE_URL` | astro.config.mjs |
 
 ---
 
-## Forms → n8n
+## Forms → Netlify Forms
 
-Contact form submissions go to `POST /api/contact`.
-That endpoint validates with Zod, then POSTs to `N8N_CONTACT_WEBHOOK_URL`.
-n8n handles routing to the client's CRM.
+The tour form (`src/components/ui/TourForm.tsx`) checks the answers with `TourRequestSchema` (Zod, `src/lib/tour.ts`),
+drops obvious spam (honeypot + time-to-submit), then POSTs URL-encoded fields to `/__forms.html` with
+`form-name=tour-request`. Netlify stores each submission and emails it (set up under Forms → Notifications).
 
-The payload sent to n8n:
-```json
-{
-  "name": "string",
-  "email": "string",
-  "phone": "string (optional)",
-  "message": "string",
-  "source": "website-contact-form",
-  "timestamp": "ISO 8601",
-  "siteUrl": "string",
-  "page": "string (path the form was sent from)"
-}
-```
+`public/__forms.html` declares the fields so Netlify can detect the form at deploy time: the pages are server-rendered,
+so Netlify never sees the real form. Keep its fields in step with `toNetlifyFields()` in `src/lib/tour.ts`.
+Mark does not use n8n. Don't add a webhook or third-party form service unless asked.
 
 ---
 
@@ -156,4 +144,4 @@ If visual editing breaks, this header is the first thing to check.
 - Do NOT add `X-Frame-Options: DENY` — it overrides the CSP and breaks visual editing
 - Do NOT store API tokens in the frontend — use server-side routes
 - Do NOT create Tailwind config files — Tailwind 4 is config-free
-- Do NOT use `<form>` action attributes — all forms post via fetch to `/api/contact`
+- Do NOT use `<form>` action attributes — forms post via fetch to Netlify Forms (`/__forms.html`)

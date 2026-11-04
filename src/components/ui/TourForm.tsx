@@ -1,5 +1,14 @@
 import { useEffect, useRef, useState, type SubmitEvent } from 'react'
-import { careOptions, childAgeOptions, subsidyOptions, tourTimeOptions } from '@/lib/tour'
+import {
+  careOptions,
+  childAgeOptions,
+  MIN_FILL_MS,
+  NETLIFY_FORM_NAME,
+  subsidyOptions,
+  toNetlifyFields,
+  tourTimeOptions,
+  TourRequestSchema,
+} from '@/lib/tour'
 
 type FormState = 'idle' | 'submitting' | 'error'
 
@@ -44,7 +53,10 @@ function readGaClientId(): string | undefined {
   return match?.[1]
 }
 
-/** The tour request form. Posts to /api/contact, which validates and forwards to n8n. */
+/**
+ * The tour request form. Checks the answers with the shared Zod schema, then sends them to Netlify Forms
+ * (Netlify emails each request to the center; see public/__forms.html).
+ */
 export default function TourForm({ thanksPath = '/tour/thanks/', phone, idPrefix = 'tour' }: Props) {
   const [state, setState] = useState<FormState>('idle')
   const [errorMsg, setErrorMsg] = useState('')
@@ -72,7 +84,7 @@ export default function TourForm({ thanksPath = '/tour/thanks/', phone, idPrefix
     setState('submitting')
     setErrorMsg('')
 
-    const payload = {
+    const result = TourRequestSchema.safeParse({
       name: String(data.get('name') ?? ''),
       phone: String(data.get('phone') ?? ''),
       email: String(data.get('email') ?? ''),
@@ -86,17 +98,24 @@ export default function TourForm({ thanksPath = '/tour/thanks/', phone, idPrefix
       utm: readUtm(),
       gaClientId: readGaClientId(),
       elapsedMs: Date.now() - startedAt.current,
+    })
+    if (!result.success) {
+      setErrorMsg(Object.values(result.error.flatten().fieldErrors).flat()[0] ?? 'Please check the form and try again.')
+      setState('error')
+      return
     }
+    const payload = result.data
 
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      })
-      if (!res.ok) {
-        const json: { error?: string } = await res.json().catch(() => ({}))
-        throw new Error(json.error ?? 'Something went wrong. Please try again, or give us a call.')
+      // Spam (honeypot filled, or sent faster than a person could): act as if it worked, send nothing.
+      const isBot = Boolean(payload.website) || (payload.elapsedMs ?? MIN_FILL_MS) < MIN_FILL_MS
+      if (!isBot) {
+        const res = await fetch('/__forms.html', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams({ 'form-name': NETLIFY_FORM_NAME, ...toNetlifyFields(payload) }).toString(),
+        })
+        if (!res.ok) throw new Error('We could not send your request. Please try again.')
       }
 
       // GA4 key event: tour_request, with the program and shift the family picked.

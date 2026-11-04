@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!--
+      Netlify Forms reads this file at deploy time to learn the form's fields. The site's pages are rendered
+      on the server, so Netlify can't see the real form there. The React TourForm posts to this path with
+      form-name=tour-request. Keep these fields in step with toNetlifyFields() in src/lib/tour.ts.
+    -->
+    <form name="tour-request" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="phone" />
+      <input name="email" />
+      <input name="child_age" />
+      <input name="care_needed" />
+      <input name="tour_times" />
+      <input name="subsidy" />
+      <textarea name="message"></textarea>
+      <input name="page" />
+      <input name="utm_source" />
+      <input name="utm_medium" />
+      <input name="utm_campaign" />
+      <input name="ga_client_id" />
+    </form>
+  </body>
+</html>
