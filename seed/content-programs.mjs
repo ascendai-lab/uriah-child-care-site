@@ -660,7 +660,7 @@ const afterSchoolServices = [
       step('Arrival', 'From 6 am, check in on the Brightwheel kiosk. Children wash hands and settle in.'),
       step('Quiet start', 'Books, puzzles, or reading and homework left over from last night.'),
       step('Breakfast', 'Served from 7:30 to 9 am through the USDA food program (CACFP).'),
-      step('Off to school', 'Parents take children to school, or the school bus picks up at the center.'),
+      step('Off to school', 'Parents take children to school. School buses can also stop at the center.'),
     ],
     body: md`
 ## A calm start before school
