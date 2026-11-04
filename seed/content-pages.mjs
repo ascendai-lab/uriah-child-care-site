@@ -10,18 +10,6 @@ const block = (_type, fields) => ({ _type, _key: key(), ...fields })
 const refs = (...ids) => ids.map(ref)
 const tourBtn = (label = 'Book a tour') => button(label, link.internal('page-tour'), 'primary')
 
-const trustStrip = () =>
-  block('statsBlock', {
-    background: 'white',
-    items: [
-      ['Since 2005', 'Caring for Cumberland County kids'],
-      ['7 days', 'Open every day of the week'],
-      ['6 am – 11 pm', 'Early morning to late evening'],
-      ['Ages 2½+', 'Toddlers to school age'],
-      ['CCAP', 'NJ childcare subsidy accepted'],
-    ].map(([value, label]) => ({ _key: key(), _type: 'stat', value, label })),
-  })
-
 export const homePage = {
   _id: 'homePage',
   _type: 'homePage',
@@ -39,7 +27,6 @@ export const homePage = {
       accent: 'sunshine',
       buttons: [tourBtn()],
     }),
-    trustStrip(),
     block('servicesBlock', {
       mode: 'all',
       heading: 'Programs for every age we serve',
@@ -88,7 +75,7 @@ export const homePage = {
       intro: 'A small, family-run center where your child is known by name.',
       image: IMG.paulette(),
       imageShape: 'circle',
-      background: 'sunshine',
+      background: 'white',
       items: [
         ['Led by Ms. Paulette since 2005', 'Families who have known her for years now bring their younger children, and their grandchildren.', 'page-about'],
         ['Licensed by NJ DCF', 'License ID CCC128557, posted in our lobby with the state’s information for parents.', 'service-safe-licensed'],
@@ -101,18 +88,14 @@ export const homePage = {
     }),
     block('testimonialsBlock', {
       mode: 'all',
-      heading: 'What local families say',
-      intro: 'Real reviews from parents and grandparents on Google.',
-      background: 'white',
+      heading: 'What parents say',
+      intro: 'Real reviews from local families on Google.',
+      background: 'muted',
     }),
     block('serviceAreasBlock', {
       mode: 'all',
       heading: 'Serving Vineland, Millville and Bridgeton',
       intro: 'Our center is in Vineland, and many families drive in from across Cumberland County.',
-      background: 'muted',
-    }),
-    block('factTableBlock', {
-      heading: 'Uriah Child Care at a glance',
       background: 'white',
     }),
     block('faqBlock', {
@@ -133,7 +116,7 @@ const page = (id, fields) => ({ _id: `page-${id}`, _type: 'page', ...fields })
 
 export const pages = [
   page('tour', {
-    title: 'Book a Tour of Our Vineland Child Care Center',
+    title: 'Book a tour of our Vineland child care center',
     slug: slug('tour'),
     pageBuilder: [
       block('hero', {
@@ -143,8 +126,7 @@ export const pages = [
         accentWord: 'Book a tour',
         subheading:
           'See the classroom, meet Ms. Paulette, and ask every question you have. Fill in the short form below or call us.',
-        // No photo here: on the tour page the form should be on the first screen.
-        buttons: [button('Request your tour', { ...link.internal('page-tour'), anchor: 'tour-form' }, 'primary')],
+        // No photo or button here: on the tour page the form starts right below.
         accent: 'coral',
         showPhone: true,
       }),
@@ -163,7 +145,7 @@ export const pages = [
   }),
 
   page('about', {
-    title: 'Meet Ms. Paulette, Owner of Uriah Child Care',
+    title: 'Meet Ms. Paulette, owner of Uriah Child Care',
     slug: slug('about-ms-paulette'),
     pageBuilder: [
       block('hero', {
@@ -203,7 +185,8 @@ The center is licensed by the New Jersey Department of Children and Families, li
       }),
       block('testimonialsBlock', {
         mode: 'all',
-        heading: 'In parents’ words',
+        heading: 'What parents say',
+        intro: 'Real reviews from local families on Google.',
         background: 'white',
       }),
     ],
@@ -211,7 +194,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
   }),
 
   page('our-center', {
-    title: 'Our Child Care Center in Vineland, NJ',
+    title: 'Our child care center in Vineland, NJ',
     slug: slug('our-center'),
     pageBuilder: [
       block('hero', {
@@ -251,12 +234,11 @@ The center is licensed by the New Jersey Department of Children and Families, li
   }),
 
   page('reviews', {
-    title: 'Uriah Child Care Reviews From Vineland Families',
+    title: 'Uriah Child Care reviews from Vineland families',
     slug: slug('reviews'),
     pageBuilder: [
       block('hero', {
         layout: 'card',
-        eyebrow: 'Google reviews',
         heading: 'What families say about Ms. Paulette',
         accentWord: 'Ms. Paulette',
         subheading: 'Real reviews from parents and grandparents, copied word for word from Google.',
@@ -266,21 +248,16 @@ The center is licensed by the New Jersey Department of Children and Families, li
       }),
       block('testimonialsBlock', {
         mode: 'all',
-        heading: 'Reviews from local families',
+        heading: 'What parents say',
+        intro: 'Real reviews from local families on Google.',
         background: 'white',
-      }),
-      block('ctaBlock', {
-        heading: 'Is your family part of Uriah?',
-        body: 'We would be grateful if you shared your experience on Google. It helps other Vineland parents find safe, caring child care.',
-        background: 'sage',
-        buttons: [button('Leave a Google review', link.external('https://search.google.com/local/writereview?placeid=ChIJk-4vYVw3x4kRSX5zZYYtB10'), 'primary')],
       }),
     ],
     seo: seo('Reviews | Uriah Child Care in Vineland, NJ', 'Read Google reviews of Uriah Child Care and Ms. Paulette from parents and grandparents in Vineland, Millville and Bridgeton, NJ.'),
   }),
 
   page('faq', {
-    title: 'Child Care Questions Parents Ask',
+    title: 'Child care questions parents ask',
     slug: slug('faq'),
     pageBuilder: [
       block('hero', {

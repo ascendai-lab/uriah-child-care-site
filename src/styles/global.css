@@ -26,6 +26,7 @@
     /* Darker shades: hover, press, and text on light tints */
     --coral-600: #e27569;
     --coral-700: #b9544a;
+    --coral-800: #a4473e;
     --sage-600: #54988c;
     --sage-700: #3d7a6f;
     --sunshine-600: #e0ae43;
@@ -213,7 +214,8 @@
     line-height: 1.15;
   }
 
-  .accent-word { color: var(--coral); }
+  /* Coral is too light for text on white: accent words use the deep coral (4.5:1+). */
+  .accent-word { color: var(--coral-800); }
   .bg-dark .accent-word, .hero-fade .accent-word { color: var(--sunshine); }
 
   .section-header {
@@ -236,7 +238,7 @@
     width: fit-content;
     align-items: center;
     gap: 0.45rem;
-    color: var(--coral-700);
+    color: var(--coral-800);
     font-family: var(--font-display);
     font-weight: 600;
     font-size: 0.95rem;
@@ -355,9 +357,11 @@
     gap: 1.25rem;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
   }
-  @media (min-width: 900px) {
-    .grid-cards--2 { grid-template-columns: repeat(2, 1fr); }
+  @media (min-width: 700px) {
+    .grid-cards--2, .grid-cards--4 { grid-template-columns: repeat(2, 1fr); }
     .grid-cards--3 { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (min-width: 1040px) {
     .grid-cards--4 { grid-template-columns: repeat(4, 1fr); }
   }
 
@@ -493,6 +497,7 @@
   .checklist li {
     display: flex;
     align-items: flex-start;
+    align-self: start;
     gap: 0.8rem;
     padding: 0.85rem 1.1rem;
     border-radius: var(--radius-full);
@@ -511,9 +516,6 @@
     color: #fff;
   }
   .checklist__icon svg { width: 0.95rem; height: 0.95rem; }
-  .checklist li:nth-child(4n + 2) .checklist__icon { background: var(--coral); color: var(--navy); }
-  .checklist li:nth-child(4n + 3) .checklist__icon { background: var(--sunshine); color: var(--navy); }
-  .checklist li:nth-child(4n + 4) .checklist__icon { background: var(--sky); color: var(--navy); }
 
   /* ─── Breadcrumbs ─── */
   .breadcrumbs ol {
@@ -598,7 +600,7 @@
     height: 2.5rem;
     border-radius: 50%;
     background: var(--accent-50);
-    color: var(--accent-700);
+    color: var(--navy);
     font-family: var(--font-display);
     font-weight: 600;
     font-size: 1.05rem;

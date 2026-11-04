@@ -101,7 +101,7 @@ Call us at [(856) 455-6701](tel:8564556701) or [book a tour](/tour/) to see the 
   }),
 
   core('category', 'category-after-school', {
-    title: 'After School Program in Vineland, NJ',
+    title: 'After school program in Vineland, NJ',
     shortTitle: 'After school program',
     homeHeading: 'After school program in Vineland',
     slug: slug('after-school-program-vineland-nj'),
@@ -164,7 +164,7 @@ Call [(856) 455-6701](tel:8564556701) or [book a tour](/tour/). Tell us your chi
   }),
 
   core('category', 'category-shift-care', {
-    title: 'Child Care in Vineland, NJ for Every Shift',
+    title: 'Child care in Vineland, NJ for every shift',
     shortTitle: 'Child care for every shift',
     homeHeading: 'Child care for every shift in Vineland',
     slug: slug('child-care-vineland-nj'),
@@ -223,7 +223,7 @@ We are at 30 W Chestnut Ave in Vineland, and many families drive in from [Millvi
 
 const homeServices = [
   service('toddler-care', null, {
-    title: 'Toddler Care in Vineland, NJ for Ages 2.5 and Up',
+    title: 'Toddler care in Vineland, NJ for ages 2.5 and up',
     shortTitle: 'Toddler care',
     slug: slug('toddler-care-vineland-nj'),
     order: 1,
@@ -266,7 +266,7 @@ Toddlers grow into our [preschool](/preschool-vineland-nj/) program. [Book a tou
   }),
 
   service('ccap', null, {
-    title: 'Child Care in Vineland That Accepts NJ Subsidy (CCAP)',
+    title: 'Child care in Vineland that accepts NJ subsidy (CCAP)',
     shortTitle: 'CCAP child care',
     slug: slug('ccap-child-care-vineland-nj'),
     order: 2,
@@ -308,7 +308,7 @@ See [tuition and how to pay](/tuition/), call us at [(856) 455-6701](tel:8564556
   }),
 
   service('meals', null, {
-    title: 'Daycare Meals and Snacks in Vineland, NJ',
+    title: 'Daycare meals and snacks in Vineland, NJ',
     shortTitle: 'Meals and snacks',
     slug: slug('daycare-meals-vineland-nj'),
     order: 3,
@@ -347,7 +347,7 @@ Ask about our menus when you [book a tour](/tour/), or call [(856) 455-6701](tel
   }),
 
   service('safe-licensed', null, {
-    title: 'Safe, Licensed Daycare in Vineland, NJ',
+    title: 'Safe, licensed daycare in Vineland, NJ',
     shortTitle: 'Safety and licensing',
     slug: slug('safe-licensed-daycare-vineland-nj'),
     order: 4,
@@ -442,7 +442,7 @@ Some Vineland families also qualify for the public school district's free presch
   }),
 
   service('kindergarten-readiness', 'category-preschool', {
-    title: 'Kindergarten Readiness in Vineland, NJ',
+    title: 'Kindergarten readiness in Vineland, NJ',
     shortTitle: 'Kindergarten readiness',
     slug: slug('kindergarten-readiness-vineland-nj'),
     order: 2,
@@ -482,7 +482,7 @@ See our [pre-K program](/pre-k-vineland-nj/), or [book a tour](/tour/) and ask M
   }),
 
   service('play-based-learning', 'category-preschool', {
-    title: 'Play-Based Learning Curriculum in Vineland, NJ',
+    title: 'Play-based learning curriculum in Vineland, NJ',
     shortTitle: 'Play-based learning',
     slug: slug('play-based-learning-vineland-nj'),
     order: 3,
@@ -527,7 +527,7 @@ Each morning starts at circle time with the calendar, the weather, letters and c
   }),
 
   service('potty-training', 'category-preschool', {
-    title: 'Potty Training Support at Our Vineland Daycare',
+    title: 'Potty training support at our Vineland daycare',
     shortTitle: 'Potty training support',
     slug: slug('potty-training-daycare-vineland-nj'),
     order: 4,
@@ -570,7 +570,7 @@ Ask us when you [book a tour](/tour/), or see our [toddler care](/toddler-care-v
 
 const afterSchoolServices = [
   service('before-school', 'category-after-school', {
-    title: 'Before School Care in Vineland, NJ',
+    title: 'Before school care in Vineland, NJ',
     shortTitle: 'Before school care',
     slug: slug('before-school-care-vineland-nj'),
     order: 1,
@@ -606,7 +606,7 @@ Many families pair before school care with our [after school program](/after-sch
   }),
 
   service('homework-help', 'category-after-school', {
-    title: 'After School Homework Help in Vineland, NJ',
+    title: 'After school homework help in Vineland, NJ',
     shortTitle: 'Homework help',
     slug: slug('homework-help-vineland-nj'),
     order: 2,
@@ -640,7 +640,7 @@ See our full [after school program](/after-school-program-vineland-nj/) or [book
   }),
 
   service('summer-care', 'category-after-school', {
-    title: 'Summer Child Care in Vineland, NJ',
+    title: 'Summer child care in Vineland, NJ',
     shortTitle: 'Summer care',
     slug: slug('summer-child-care-vineland-nj'),
     order: 3,
@@ -687,7 +687,7 @@ Space can fill up before summer, so call [(856) 455-6701](tel:8564556701) or [bo
   }),
 
   service('school-closure', 'category-after-school', {
-    title: 'Child Care on School Closure Days in Vineland',
+    title: 'Child care on school closure days in Vineland',
     shortTitle: 'School closure days',
     slug: slug('school-closure-care-vineland-nj'),
     order: 4,
@@ -729,7 +729,7 @@ We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for famil
 
 const shiftServices = [
   service('first-shift', 'category-shift-care', {
-    title: 'Early Morning Child Care in Vineland, NJ',
+    title: 'Early morning child care in Vineland, NJ',
     shortTitle: 'Early morning care',
     slug: slug('first-shift-child-care-vineland-nj'),
     order: 1,
@@ -765,7 +765,7 @@ See all [shift care](/child-care-vineland-nj/), or call [(856) 455-6701](tel:856
   }),
 
   service('evening', 'category-shift-care', {
-    title: 'Evening Child Care in Vineland, NJ',
+    title: 'Evening child care in Vineland, NJ',
     shortTitle: 'Evening care',
     slug: slug('evening-child-care-vineland-nj'),
     order: 2,
@@ -807,7 +807,7 @@ See [late evening care until 11 pm](/late-evening-child-care-vineland-nj/), or [
   }),
 
   service('late-evening', 'category-shift-care', {
-    title: 'Late Evening Child Care in Vineland Until 11 pm',
+    title: 'Late evening child care in Vineland until 11 pm',
     shortTitle: 'Late evening care',
     slug: slug('late-evening-child-care-vineland-nj'),
     order: 3,
@@ -845,7 +845,7 @@ Call [(856) 455-6701](tel:8564556701) to talk about your hours, or see [evening 
   }),
 
   service('weekend', 'category-shift-care', {
-    title: 'Weekend Daycare in Vineland, NJ',
+    title: 'Weekend daycare in Vineland, NJ',
     shortTitle: 'Weekend daycare',
     slug: slug('weekend-daycare-vineland-nj'),
     order: 4,
@@ -878,7 +878,7 @@ Some families use us only on weekends; others every day. See [full-time and part
   }),
 
   service('full-part-time', 'category-shift-care', {
-    title: 'Full-Time and Part-Time Daycare in Vineland, NJ',
+    title: 'Full-time and part-time daycare in Vineland, NJ',
     shortTitle: 'Full-time and part-time',
     slug: slug('full-time-part-time-daycare-vineland-nj'),
     order: 5,
@@ -910,7 +910,7 @@ Tuition depends on your child's age and schedule. See [tuition and how to pay](/
   }),
 
   service('shift-workers', 'category-shift-care', {
-    title: 'Child Care for Shift Workers in Vineland, NJ',
+    title: 'Child care for shift workers in Vineland, NJ',
     shortTitle: 'For shift workers',
     slug: slug('child-care-for-shift-workers-vineland-nj'),
     order: 6,
@@ -962,7 +962,7 @@ const city = (id, name, fields) =>
 
 export const cities = [
   city('millville', 'Millville', {
-    title: 'Child Care for Millville, NJ Families',
+    title: 'Child care for Millville, NJ families',
     shortTitle: 'Millville, NJ',
     slug: slug('millville-nj'),
     order: 1,
@@ -1003,7 +1003,7 @@ We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for famil
   }),
 
   city('bridgeton', 'Bridgeton', {
-    title: 'Child Care for Bridgeton, NJ Families',
+    title: 'Child care for Bridgeton, NJ families',
     shortTitle: 'Bridgeton, NJ',
     slug: slug('bridgeton-nj'),
     order: 2,

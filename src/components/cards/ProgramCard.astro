@@ -20,10 +20,12 @@ interface Props {
   /** Fallback accent when the item has none, so a row of cards cycles through the palette. */
   index?: number
   headingLevel?: 'h2' | 'h3'
+  /** Hide the age badge (e.g. when every card in the row shows the same one). */
+  hideAge?: boolean
 }
 
 const palette = ['coral', 'sage', 'sunshine', 'sky']
-const { item, index = 0, headingLevel: H = 'h3' } = Astro.props
+const { item, index = 0, headingLevel: H = 'h3', hideAge = false } = Astro.props
 const href = hrefFor(item._type, item.slug)
 const accent = stegaClean(item.accent) || palette[index % palette.length]
 ---
@@ -37,7 +39,7 @@ const accent = stegaClean(item.accent) || palette[index % palette.length]
         </div>
       )}
       <div class="program-card__body">
-        {item.ageRange && <span class="program-card__age">{item.ageRange}</span>}
+        {item.ageRange && !hideAge && <span class="program-card__age">{item.ageRange}</span>}
         <H>{item.shortTitle || item.title}</H>
         {item.excerpt && <p>{item.excerpt}</p>}
         <span class="program-card__more">

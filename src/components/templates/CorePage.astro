@@ -32,13 +32,6 @@ const a = settings?.address
 const where = a?.street ? `${a.street}, ${a.city}` : 'Vineland, NJ'
 const label = (p: { shortTitle?: string | null; title?: string | null }) => p.shortTitle || p.title
 
-// Split the body after its second H2 so a short "Book a tour" link sits mid-page.
-const body = doc.body ?? []
-const h2Indexes = body.map((b, i) => (b._type === 'block' && 'style' in b && b.style === 'h2' ? i : -1)).filter((i) => i >= 0)
-const splitAt = h2Indexes.length >= 3 ? h2Indexes[2] : h2Indexes.length === 2 ? h2Indexes[1] : -1
-const bodyFirst = splitAt > 0 ? body.slice(0, splitAt) : body
-const bodyRest = splitAt > 0 ? body.slice(splitAt) : []
-
 const eyebrow =
   doc._type === 'serviceArea'
     ? `For ${stegaClean(doc.city)} families`
@@ -83,7 +76,21 @@ const extraFaqs =
 const faqs = [...ownFaqs, ...extraFaqs]
 const shownServices = services.filter((s) => !s.needsConfirmation)
 // Keep the hero facts on one line: only the first sentence of the schedule (the full text is in Quick facts).
-const heroSchedule = doc.schedule ? doc.schedule.split(/\.\s/)[0].replace(/\.$/, '') : null
+const heroSchedule = (doc.schedule || settings?.hoursSummary || '').split(/\.\s/)[0].replace(/\.$/, '') || null
+
+// City pages lead with the map (how far the center is) instead of a photo, so they don't look like program pages.
+const isCity = doc._type === 'serviceArea'
+const siteName = stegaClean(settings?.siteName) || 'Uriah Child Care'
+const mapQuery = encodeURIComponent(`${siteName}, ${a?.street ?? ''}, ${a?.city ?? ''}, ${a?.state ?? ''} ${a?.zip ?? ''}`)
+const mapEmbed = stegaClean(settings?.gbpMapEmbedUrl) || `https://maps.google.com/maps?q=${mapQuery}&z=11&output=embed`
+
+// Program grid: pick a column count that leaves no lonely card on the last row.
+const n = shownServices.length
+const programCols = n % 4 === 0 ? 4 : n % 3 === 0 ? 3 : n <= 4 ? n : n % 2 === 0 ? 2 : 3
+// Hide the age badge when every card would show the same one.
+const sameAge = n > 1 && shownServices.every((s) => stegaClean(s.ageRange) === stegaClean(shownServices[0].ageRange))
+const highlightCount = doc.highlights?.length ?? 0
+const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 2 : 3
 ---
 
 <section class:list={['core-hero', `accent-${accent}`]}>
@@ -106,7 +113,12 @@ const heroSchedule = doc.schedule ? doc.schedule.split(/\.\s/)[0].replace(/\.$/,
         </div>
       </div>
       {
-        doc.image?.asset && (
+        isCity ? (
+          <div class="core-hero__media core-hero__map">
+            <iframe src={mapEmbed} title={`Map: ${siteName}, ${where}`} loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
+            {doc.driveTime && <p class="core-hero__map-note"><Icon name="directions" size={16} /> {doc.driveTime} from {stegaClean(doc.city)}</p>}
+          </div>
+        ) : doc.image?.asset && (
           <div class="core-hero__media">
             <div class="shape shape--arch">
               <SanityImage image={doc.image} width={560} aspectRatio={4 / 5} sizes="(min-width: 900px) 420px, 85vw" loading="eager" fetchpriority="high" />
@@ -121,17 +133,7 @@ const heroSchedule = doc.schedule ? doc.schedule.split(/\.\s/)[0].replace(/\.$/,
 <section class="section bg-white core-body">
   <div class="container core-body__grid">
     <div class="core-body__main">
-      <PortableText value={bodyFirst} />
-      <aside class="tour-inline" aria-label="Book a tour">
-        <div class="tour-inline__text">
-          <p class="tour-inline__title">See it for yourself</p>
-          <p>Tours take about 20 minutes, and you're welcome to bring your little one.</p>
-        </div>
-        <a class="btn btn--primary" href="#book-a-tour">
-          Book a tour <span class="btn__arrow" aria-hidden="true"><Icon name="arrow" /></span>
-        </a>
-      </aside>
-      <PortableText value={bodyRest} />
+      <PortableText value={doc.body ?? []} />
     </div>
 
     <aside class="core-facts card" aria-label="Quick facts">
@@ -155,7 +157,7 @@ const heroSchedule = doc.schedule ? doc.schedule.split(/\.\s/)[0].replace(/\.$/,
     <section class="section bg-white">
       <div class="container">
         <h2 class="section-heading core-section-title">What your family gets</h2>
-        <ul class="checklist core-highlights">
+        <ul class="checklist core-highlights" style={`--cols:${highlightCols}`}>
           {doc.highlights.map((h) => (
             <li>
               <span class="checklist__icon"><Icon name="check" /></span>
@@ -191,10 +193,10 @@ const heroSchedule = doc.schedule ? doc.schedule.split(/\.\s/)[0].replace(/\.$/,
     <section class="section bg-white">
       <div class="container">
         <header class="section-header section-header--center">
-          <h2 class="section-heading">{doc.shortTitle ? `${doc.shortTitle} programs` : 'Programs'} at our Vineland center</h2>
+          <h2 class="section-heading">{doc._type === 'category' ? 'Choose the care that fits' : 'More programs at our Vineland center'}</h2>
         </header>
-        <div class={`grid-cards grid-cards--${shownServices.length >= 4 ? 4 : 3}`}>
-          {shownServices.map((s, i) => <ProgramCard item={s} index={i} />)}
+        <div class={`grid-cards grid-cards--${programCols}`}>
+          {shownServices.map((s, i) => <ProgramCard item={s} index={i} hideAge={sameAge} />)}
         </div>
       </div>
     </section>
@@ -260,38 +262,31 @@ const heroSchedule = doc.schedule ? doc.schedule.split(/\.\s/)[0].replace(/\.$/,
 }
 
 <style>
-  .core-hero { padding-top: 1.25rem; }
+  .core-hero { padding-block: 1.5rem clamp(1rem, 3vw, 2.5rem); }
   .core-hero__card {
     position: relative;
     display: grid;
     gap: 2.25rem;
     align-items: center;
-    padding: clamp(1.6rem, 5vw, 3.5rem);
-    border-radius: var(--radius-2xl);
-    background: var(--accent-50);
   }
+  .core-hero__map { max-width: 440px; }
+  .core-hero__map iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 0;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-card);
+    background: var(--surface-soft);
+  }
+  .core-hero__map-note { display: flex; align-items: center; gap: 0.45rem; margin-top: 0.8rem; font-weight: 600; color: var(--fg2); }
+  .core-hero__map-note :global(svg) { color: var(--coral-700); }
   .core-hero__intro { font-size: 1.15rem; margin-top: 1rem; max-width: 38rem; }
   .core-hero__facts { margin-top: 1.5rem; }
   .core-hero__media { position: relative; max-width: 380px; width: 100%; justify-self: center; }
 
   .core-body__grid { display: grid; gap: 2.5rem; align-items: start; }
   .core-body__main > :global(.prose:first-child > :first-child) { margin-top: 0; }
-  .tour-inline {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.25rem 2rem;
-    margin: 2.75rem 0;
-    padding: 1.75rem 2rem;
-    border-radius: var(--radius-xl);
-    background: var(--surface-soft);
-    max-width: 70ch;
-  }
-  .tour-inline__text { flex: 1 1 18rem; display: grid; gap: 0.3rem; }
-  .tour-inline__title { font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; color: var(--navy); }
-  .tour-inline__text p:not(.tour-inline__title) { color: var(--fg2); }
-  @media (max-width: 520px) { .tour-inline { padding: 1.5rem; } }
   .core-facts { padding: 1.5rem; display: grid; gap: 1rem; }
   .core-facts h2 { font-size: 1.35rem; }
   .core-facts dl { display: grid; gap: 0.9rem; }
@@ -301,13 +296,16 @@ const heroSchedule = doc.schedule ? doc.schedule.split(/\.\s/)[0].replace(/\.$/,
   .core-facts__call { text-align: center; font-weight: 700; font-size: 0.95rem; text-decoration: underline; text-underline-offset: 3px; }
 
   .core-section-title { margin-bottom: 1.75rem; }
-  .core-highlights { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+  .core-highlights { grid-template-columns: 1fr; }
+  @media (min-width: 720px) { .core-highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 1040px) { .core-highlights { grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr)); } }
   .core-highlights li { border-radius: var(--radius-lg); }
 
   .day-plan { list-style: none; display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); counter-reset: step; }
   @media (min-width: 900px) { .day-plan--3 { grid-template-columns: repeat(3, 1fr); } .day-plan--4 { grid-template-columns: repeat(4, 1fr); } }
   .day-plan li {
     display: grid;
+    align-content: start;
     gap: 0.35rem;
     padding: 1.2rem 1.3rem;
     border-radius: var(--radius-xl);

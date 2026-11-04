@@ -35,6 +35,15 @@ const reviewCount = settings?.googleReviewCount
 const reviewsHref = stegaClean(settings?.gbpReviewUrl) || '/reviews/'
 const showPhone = block.showPhone !== false
 const buttons = block.buttons ?? []
+// The home hero carries the key facts as one quiet line (replaces the old stat strip).
+const facts =
+  layout === 'photoFade'
+    ? [
+        settings?.hoursSummary && { icon: 'clock', text: settings.hoursSummary },
+        settings?.agesServed && { icon: 'users', text: settings.agesServed },
+        settings?.license?.number && { icon: 'shield', text: 'Licensed by NJ DCF' },
+      ].filter((f): f is { icon: 'clock' | 'users' | 'shield'; text: string } => Boolean(f))
+    : []
 ---
 
 <section
@@ -68,6 +77,17 @@ const buttons = block.buttons ?? []
         {parts ? (<>{parts[0]}<span class="accent-word">{parts[1]}</span>{parts[2]}</>) : heading}
       </Heading>
       {block.subheading && <p class="hero__sub">{block.subheading}</p>}
+      {
+        facts.length > 0 && (
+          <ul class="fact-line hero__facts">
+            {facts.map((f) => (
+              <li>
+                <Icon name={f.icon} /> {f.text}
+              </li>
+            ))}
+          </ul>
+        )
+      }
       {
         (buttons.length > 0 || showPhone) && (
           <div class="btn-row">
@@ -116,11 +136,7 @@ const buttons = block.buttons ?? []
   /* Split / card: text with a playful masked photo */
   .hero--split, .hero--card, .hero--centered, .hero--background { padding-block: clamp(2.5rem, 6vw, 5rem); }
   .hero__media { position: relative; max-width: 460px; width: 100%; justify-self: center; }
-  .hero--card .hero__inner {
-    padding: clamp(1.75rem, 5vw, 3.5rem);
-    border-radius: var(--radius-2xl);
-    background: var(--accent-50);
-  }
+  /* Card layout: no tinted box (a white hero lines up with the page grid); the photo frame carries the color. */
   .hero--centered .hero__content { text-align: center; margin-inline: auto; max-width: 48rem; }
   .hero--centered .hero__sub { margin-inline: auto; }
   .hero--centered .btn-row { justify-content: center; }
@@ -132,7 +148,7 @@ const buttons = block.buttons ?? []
     min-height: min(84vh, 720px);
     display: flex;
     align-items: center;
-    padding-block: 4rem 7.5rem;
+    padding-block: 4rem 5rem;
   }
   .hero-fade__media { position: absolute; inset: 0; }
   .hero-fade__media :global(img) { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
@@ -150,6 +166,8 @@ const buttons = block.buttons ?? []
   .hero--photoFade :global(.phone-link) { color: #fff; }
   .hero--photoFade :global(.btn--outline) { color: #fff; }
   .hero--photoFade .eyebrow { color: var(--sunshine); }
+  .hero__facts { margin-top: 1.4rem; color: rgba(255, 255, 255, 0.9); }
+  .hero__facts :global(svg) { color: var(--sunshine); }
   .hero--photoFade::after {
     /* soft wave into the next section */
     content: '';
@@ -166,7 +184,7 @@ const buttons = block.buttons ?? []
 
   @media (max-width: 899px) {
     /* Phones: the photo sits as a band on top and fades down into the navy text panel. */
-    .hero--photoFade { min-height: 0; padding-block: 14.5rem 6.5rem; }
+    .hero--photoFade { min-height: 0; padding-block: 14.5rem 4rem; }
     .hero-fade__media { inset: 0 0 auto 0; height: 19rem; }
     .hero-fade__media::after {
       background: linear-gradient(180deg, rgba(51, 67, 80, 0.05) 0%, rgba(51, 67, 80, 0.35) 50%, var(--navy) 100%);

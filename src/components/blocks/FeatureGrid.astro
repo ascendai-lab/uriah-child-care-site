@@ -40,7 +40,7 @@ const palette = ['coral', 'sage', 'sunshine', 'sky']
                 <li>
                   <span class="checklist__icon"><Icon name="check" /></span>
                   <span>
-                    {link ? <a href={link.href} class="text-link">{item.title}</a> : item.title}
+                    {link ? <a href={link.href} class="checklist__title">{item.title}</a> : <span class="checklist__title">{item.title}</span>}
                     {item.description && <span class="checklist__desc">{item.description}</span>}
                   </span>
                 </li>
@@ -84,6 +84,9 @@ const palette = ['coral', 'sage', 'sunshine', 'sky']
   .checklist-split { display: grid; gap: 2.5rem; align-items: center; }
   .checklist-split__media { position: relative; max-width: 440px; width: 100%; justify-self: center; }
   .checklist-split .checklist li > span:last-child { display: grid; gap: 0.15rem; }
+  .checklist__title { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; color: var(--navy); }
+  a.checklist__title { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: text-decoration-color 200ms var(--ease-out); }
+  a.checklist__title:hover { text-decoration-color: currentColor; }
   .checklist__desc { font-weight: 500; color: var(--fg2); font-size: 0.95rem; }
   .checklist-split .checklist li { border-radius: var(--radius-lg); }
   .feature-card {
@@ -93,10 +96,9 @@ const palette = ['coral', 'sage', 'sunshine', 'sky']
     padding: 1.6rem;
     border-radius: var(--radius-xl);
     background: var(--accent-50);
-    border: 2px solid transparent;
-    transition: border-color 180ms ease-out, transform 180ms ease-out;
+    transition: box-shadow 260ms var(--ease-out), transform 260ms var(--ease-out);
   }
-  a.feature-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  a.feature-card:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-3px); }
   .feature-card h3 { font-size: 1.3rem; }
   .feature-card p { color: var(--fg2); }
   .feature-card__icon { width: 64px; height: 64px; border-radius: 50%; overflow: hidden; background: var(--accent); }
