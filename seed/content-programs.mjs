@@ -275,6 +275,14 @@ One mom wrote that her son "learned how to communicate his words better because 
 
 Many children who join us at 2½ are still in diapers or pull-ups. We follow your routine and [support potty training](/potty-training-daycare-vineland-nj/) at the center, so your child hears the same words and steps everywhere.
 
+## Meals for little eaters
+
+Toddlers eat breakfast from 7:30 to 9 am, lunch at 12 noon and a snack at 3 pm, all through the USDA food program (CACFP), with portions sized for their age. Lunch might be a chicken patty with whole-grain rotini and green beans, or meatloaf with a corn muffin and broccoli.
+
+## A small center, familiar faces
+
+We are licensed by NJ DCF for up to 33 children, so your toddler sees the same faces every day: Ms. Paulette, who has cared for Vineland and Millville children since 2005, and our director, Tameca Burke. Every staff member must have CPR and first aid training before we hire them.
+
 ## Next steps
 
 Toddlers grow into our [preschool](/preschool-vineland-nj/) program. [Book a tour](/tour/) or call [(856) 455-6701](tel:8564556701).
@@ -361,6 +369,16 @@ Meals are served at the same times every day, 7 days a week:
 - **Evening snack:** 9 pm, for children staying late
 
 Children wash their hands before every meal, and we eat together at the table.
+
+## A sample of our menu
+
+Our menu changes every month. Here are some of the meals on our November 2026 menu:
+
+- **Breakfast:** a whole-grain banana muffin with honeydew melon, a yogurt parfait with blueberries and granola, or whole-grain cereal with peaches or pears
+- **Lunch:** arroz con pollo with brown rice and mixed vegetables, chicken fajitas with bell peppers, turkey with gravy, brown rice and broccoli, or vegetable chili with quinoa
+- **Snack:** apple slices with a banana-cinnamon chickpea spread, yogurt with banana slices, or cheddar cheese with whole-grain crackers
+
+Breakfast and lunch come with milk.
 
 ## Allergies and special diets
 
@@ -462,6 +480,10 @@ Read more about [kindergarten readiness](/kindergarten-readiness-vineland-nj/).
 
 Our pre-K runs inside a full child care day. Your child can arrive at 6 am and stay into the evening, or come on weekends, so you don't have to piece together care around a short school day.
 
+## Who teaches your child
+
+Pre-K is led by Ms. Paulette, who has cared for local children since 2005, with our director, Tameca Burke, who has about five years of experience in child care. Ms. Paulette is certified in pediatric First Aid and CPR/AED, and every staff member must have CPR and first aid training before we hire them.
+
 ## Is your child also eligible for public preschool?
 
 Some Vineland families also qualify for the public school district's free preschool. If you are deciding between options, call us at [(856) 455-6701](tel:8564556701) and we will talk it through honestly, or [book a tour](/tour/).
@@ -505,6 +527,10 @@ Kindergarten readiness is more than ABCs. Teachers also look for children who ca
 ## Keeping you in the loop
 
 We share how your child is doing and what to practice at home, through the Brightwheel app and at pickup.
+
+## Getting ready for a Vineland school
+
+Many Vineland children go on to Vineland Public Schools elementary schools such as Gloria M. Sabater, Pauline J. Petway, Marie Durand or Dr. William Mennies Elementary School. Kindergarten registration is run by the school district, so check its website in the spring before your child starts. If your child will stay with us before or after school, our [before and after school care](/after-school-program-vineland-nj/) keeps the same faces in their week.
 
 ## Learn more
 
@@ -550,6 +576,10 @@ A developmental continuum lets us see where each child is and plan the next step
 ## Circle time every day
 
 Each morning starts at circle time with the calendar, the weather, letters and counting. It builds the routines children will use in school.
+
+## How you'll know what your child did
+
+At pickup we tell you about your child's day, and the Brightwheel app keeps you posted with updates. If your child built something they are proud of or learned a new song, you'll hear about it, so you can talk about it on the drive home.
 
 ## See it in action
 
@@ -623,13 +653,27 @@ const afterSchoolServices = [
     schedule: 'From 6 am, 7 days a week',
     image: IMG.morning(),
     intro:
-      'Uriah Child Care opens at 6 am, so school-age children in Vineland, NJ have a safe, warm place to start the day before school. Kids can have breakfast and quiet time before school starts. We accept NJ childcare subsidy (CCAP) for families who qualify.',
+      'Uriah Child Care opens at 6 am, so school-age children in Vineland, NJ have a safe, warm place to start the day before school. Breakfast is served from 7:30 am, and kids get a quiet start before school. We accept NJ childcare subsidy (CCAP) for families who qualify.',
     excerpt: 'Drop off from 6 am. Breakfast and a calm start to the day before school.',
     highlights: ['Drop-off from 6 am', 'Breakfast through the USDA food program (CACFP)', 'Quiet time and reading', 'Ages up to 13'],
+    dayPlan: [
+      step('Arrival', 'From 6 am, check in on the Brightwheel kiosk. Children wash hands and settle in.'),
+      step('Quiet start', 'Books, puzzles, or reading and homework left over from last night.'),
+      step('Breakfast', 'Served from 7:30 to 9 am through the USDA food program (CACFP).'),
+      step('Off to school', 'Parents take children to school, or the school bus picks up at the center.'),
+    ],
     body: md`
 ## A calm start before school
 
-If your shift starts before the school day, bring your child to us from 6 am. They can have breakfast, finish a little reading or homework, and relax with friends until it's time for school.
+If your shift starts before the school day, bring your child to us from 6 am. They can finish a little reading or homework, have breakfast if they are still here at 7:30, and relax with friends until it's time for school.
+
+## What the morning looks like
+
+Doors open at 6 am. Parents check in on the Brightwheel kiosk in the lobby, and children wash their hands and settle in with books, puzzles or quiet play. Breakfast is served from 7:30 to 9 am through the USDA food program (CACFP). A typical breakfast is whole-grain cereal or a muffin with fruit, like peaches or cantaloupe, and milk.
+
+## Schools near the center
+
+Our center is at 30 W Chestnut Ave in Vineland. Gloria M. Sabater Elementary School is close by, and Compass Academy Charter School is also on W Chestnut Ave. Wherever your child goes to school, school buses can pick up at our center, so ask your district about a stop here.
 
 ## Getting to and from school
 
@@ -674,6 +718,14 @@ Younger children can read aloud to staff or to a friend. Older children can ask 
 
 If your child's teacher sends notes or a reading log, put it in their bag and tell us. We'll keep you posted through the Brightwheel app.
 
+## Homework help on every shift
+
+Homework help isn't only for the hour after school. Children who stay into the evening, or come in on a weekend with a project due, can get help whenever they need it, on every shift until we close at 11 pm. Kids who stay late have dinner at 6 pm and an evening snack at 9 pm, so nobody is doing math on an empty stomach.
+
+## Getting here from school
+
+School buses can pick up and drop off at our center at 30 W Chestnut Ave, so ask your school district about a stop here. Gloria M. Sabater Elementary School is close by, and Compass Academy Charter School is also on W Chestnut Ave. Parents can always drop off and pick up at the center too.
+
 See our full [after school program](/after-school-program-vineland-nj/) or [book a tour](/tour/).
 `,
     faqs: [
@@ -716,6 +768,14 @@ Summer break is long when you still have to work. Our summer care gives school-a
 
 Children have breakfast, lunch and snacks through the USDA food program (CACFP). We mix reading time with art, building, games and time with friends, so kids stay busy and keep their skills up before the new school year.
 
+## Meals all summer
+
+Summer days are long, so meals come at set times: breakfast from 7:30 to 9 am, lunch at 12 noon and a snack at 3 pm, plus dinner at 6 pm for kids who stay into the evening. Lunches are real meals, like arroz con pollo with brown rice or chicken fajitas with peppers, served through the USDA food program (CACFP).
+
+## Reading and homework help
+
+If your child has a summer reading list or packet from school, send it in. Homework help is available on every shift, so kids can chip away at it before playtime.
+
 ## Hours that fit your job
 
 We are open **7 days a week, 6 am to 11 pm** all summer, including evenings and weekends for parents who work [shifts](/child-care-vineland-nj/).
@@ -748,6 +808,13 @@ Space can fill up before summer, so call [(856) 455-6701](tel:8564556701) or [bo
       'School closed but you still have to work? Uriah Child Care offers full-day child care in Vineland, NJ on school holidays, breaks, teacher days and snow days for school-age children up to 13. We are open 7 days a week, 6 am to 11 pm, and accept NJ childcare subsidy (CCAP).',
     excerpt: 'Full-day care on school holidays, breaks, teacher days and snow days.',
     highlights: ['School holidays and breaks', 'Teacher in-service days', 'Snow days', 'Full days, 6 am to 11 pm', 'Meals and snacks (CACFP)', 'Ages up to 13'],
+    dayPlan: [
+      step('Arrival', 'From 6 am. Check in on the Brightwheel kiosk.'),
+      step('Breakfast', 'Served from 7:30 to 9 am through the USDA food program (CACFP).'),
+      step('Reading and play', 'Reading and homework time, then art, building and games.'),
+      step('Lunch', 'Lunch at 12 noon, with fruit or vegetables and milk.'),
+      step('Afternoon', 'Snack at 3 pm and time with friends, with dinner at 6 pm for kids who stay late.'),
+    ],
     body: md`
 ## Care when school is closed
 
@@ -756,6 +823,14 @@ School calendars are full of days off: holidays, winter and spring breaks, teach
 ## A full day with familiar faces
 
 Children who come to our [after school program](/after-school-program-vineland-nj/) already know our staff and routine. On closure days they get breakfast, lunch and snacks, reading and homework time, and plenty of play.
+
+## What a closure day looks like
+
+Doors open at 6 am. Breakfast is from 7:30 to 9 am, lunch is at 12 noon and snack is at 3 pm, all through the USDA food program (CACFP). Children who stay late have dinner at 6 pm. Between meals there's reading and homework time, art, building, games and time with friends. Children can stay until 11 pm if you work a late shift.
+
+## Brothers and sisters together
+
+On a day off school, younger siblings in our [toddler care](/toddler-care-vineland-nj/) or [preschool](/preschool-vineland-nj/) are in the same building, so you make one drop-off and one pickup.
 
 ## Plan ahead, or call that morning
 
@@ -790,6 +865,12 @@ const shiftServices = [
       'Uriah Child Care opens at 6 am, 7 days a week, so parents in Vineland, NJ who work first shift can drop off before work. Children ages 2.5 and up get breakfast and a calm start to their day. We accept NJ childcare subsidy (CCAP).',
     excerpt: 'Drop off from 6 am, 7 days a week, with breakfast and a calm start to the day.',
     highlights: ['Open from 6 am', '7 days a week', 'Breakfast served (CACFP)', 'Ages 2.5 and up'],
+    dayPlan: [
+      step('6 am drop-off', 'Check in on the Brightwheel kiosk and head to work.'),
+      step('Quiet start', 'Books, puzzles and free play while the center wakes up.'),
+      step('Breakfast', 'Served from 7:30 to 9 am through the USDA food program (CACFP).'),
+      step('Morning activities', 'Circle time and play-based learning for preschoolers. School-age kids leave for school.'),
+    ],
     body: md`
 ## Drop off from 6 am
 
@@ -798,6 +879,14 @@ Many Vineland parents start work at 6 or 7 in the morning. We open at **6 am, Mo
 ## A gentle morning for your child
 
 Early arrivals get breakfast and a quiet start: books, puzzles and free play while the center wakes up. Preschoolers join circle time and the day's activities, and school-age kids can start the day here with [before school care](/before-school-care-vineland-nj/).
+
+## Breakfast is included
+
+You don't have to feed everyone before a 6 am shift. Breakfast is served from 7:30 to 9 am through the USDA Child and Adult Care Food Program (CACFP). On a typical morning that's whole-grain cereal or a muffin, fresh fruit like cantaloupe, peaches or honeydew, and milk. The menu changes every month.
+
+## Who uses early morning care
+
+Nurses and hospital staff starting at 7 am, warehouse and plant workers on first shift, and anyone who has to be at work before schools and most daycares open. School-age kids can stay with us until it's time for school, and school buses can pick up at the center.
 
 ## Fast check-in
 
@@ -845,6 +934,14 @@ Second shift is hard on families when child care closes as your shift starts. We
 ## A real evening routine
 
 Dinner is at 6 pm. Children go outside when the weather allows, school-age kids get homework help if they need it, and then everyone settles into calm activities like books, puzzles and quiet games. There is an evening snack at 9 pm. We keep the evening low-key so children are ready for bed when you pick them up.
+
+## What's for dinner
+
+Dinner is at 6 pm through the USDA Child and Adult Care Food Program (CACFP). Like every meal we serve, it follows the program's standards: a protein, a whole grain, vegetables or fruit, and milk. Tell us about allergies or special diets when you enroll.
+
+## Safe pickup at night
+
+Pick up any time before we close at 11 pm. You check out on the Brightwheel kiosk in the lobby, we release children only to adults you have authorized in writing, and a security camera watches the front entrance.
 
 ## For every age we serve
 
@@ -897,6 +994,14 @@ Our posted hours end at 11 pm. Need care after 11 pm for an overnight shift? Cal
 
 By late evening the center is calm. Children have had dinner at 6 pm, and they go outside when the weather allows. School-age children get homework help if they need it. The evening snack is at 9 pm and quiet time starts at 9:30 pm, so children are ready for bed when you get them home.
 
+## Safe pickup at night
+
+You check out on the Brightwheel kiosk in the lobby, and we release children only to adults you have authorized in writing. A security camera watches the front entrance, and our building has a ramp and accessible parking, which helps when you're carrying a sleepy child.
+
+## Brothers and sisters together
+
+Children from 2½ up to 13 can stay until 11 pm, so younger and school-age siblings can be picked up together at the end of your shift.
+
 Call [(856) 455-6701](tel:8564556701) to talk about your hours, or see [evening child care](/evening-child-care-vineland-nj/).
 `,
     faqs: [
@@ -930,6 +1035,14 @@ Hospitals, stores, restaurants and plants don't close on weekends, and neither d
 ## The same routine, every day of the week
 
 Weekend days follow the same routine as weekdays: meals and snacks, play-based learning, rest time and play. Children see familiar faces, which helps when your schedule changes from week to week.
+
+## A weekend day at Uriah
+
+Meals are served at the same times on Saturday and Sunday as during the week: breakfast from 7:30 to 9 am, lunch at 12 noon, a snack at 3 pm, dinner at 6 pm and an evening snack at 9 pm. Preschoolers have circle time, play-based activities and rest time. School-age kids can get homework help with weekend assignments, on every shift.
+
+## Who weekend care is for
+
+Nurses working weekend shifts, retail and restaurant staff, warehouse and plant workers, and any parent who has to work a Saturday. Children can stay until 11 pm on weekends too. Need care after 11 pm? Call us and Ms. Paulette will talk with you about it.
 
 ## Weekends only, or the whole week
 
@@ -967,6 +1080,17 @@ Every family's week looks different. Some parents need care five or more days, s
 ## How scheduling works
 
 Tell us your work schedule when you call or tour. We'll set up a regular schedule so your child has a steady routine. If your hours change, talk to us and we'll do our best to adjust, as space allows.
+
+## What every schedule includes
+
+Full-time or part-time, your child gets the same day: meals and snacks at set times through the USDA food program (CACFP), our play-based Experience Early Learning curriculum for preschoolers, and homework help for school-age kids on every shift. Your child is with the same small team every time, led by Ms. Paulette and our director, Tameca Burke. You check in and out on the Brightwheel kiosk, so every drop-off and pickup is on record.
+
+## Schedules we can set up
+
+- Three or four days a week around 12-hour hospital shifts
+- Weekday mornings only, or weekday afternoons and evenings
+- Weekends only
+- After school until 11 pm for school-age kids
 
 ## Cost
 
@@ -1012,6 +1136,14 @@ Ms. Paulette has spent years helping parents with hard schedules. As one parent 
 ## Rotating and changing schedules
 
 If your schedule rotates, bring it to your tour and we'll work out a plan. Tell us as early as you can when your hours change.
+
+## Meals on every shift
+
+Whatever hours your child is here, meals come at set times through the USDA food program (CACFP): breakfast from 7:30 to 9 am, lunch at 12 noon, a snack at 3 pm, dinner at 6 pm and an evening snack at 9 pm. Tell us about allergies when you enroll.
+
+## Room for the whole family
+
+Brothers and sisters can come together: we care for children from 2½ up to 13, and homework help is available on every shift. We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for families who qualify. In Cumberland County, CCAP is handled by Rutgers Southern Regional CCR&R in Vineland, (856) 462-6800.
 
 [Book a tour](/tour/) or call [(856) 455-6701](tel:8564556701).
 `,
@@ -1063,6 +1195,10 @@ Before opening our center in Vineland, Ms. Paulette cared for children in Millvi
 
 Our center at 30 W Chestnut Ave in Vineland is about a 15-minute drive from Millville. Most Millville families drive north on Delsea Drive (Route 47) into Vineland and turn onto W Chestnut Ave. For Millville parents who work in Vineland, it's right on the way. And because we're open **7 days a week, 6 am to 11 pm**, you can find care for [early, evening and weekend shifts](/child-care-vineland-nj/).
 
+## School-age kids from Millville
+
+Many Millville children go to Millville Public Schools elementary schools such as Rieck Avenue, Mount Pleasant or Silver Run Elementary. Bus routes are set by the district, so ask whether a stop in Vineland is possible. Our [after school program](/after-school-program-vineland-nj/) is open until 11 pm, with homework help on every shift and dinner at 6 pm.
+
 ## Programs for Millville families
 
 - [Toddler care](/toddler-care-vineland-nj/) from 2½
@@ -1104,6 +1240,10 @@ Many Bridgeton parents work in Vineland, at the hospital, in warehouses and food
 ## Open when you work
 
 We are open **Monday to Sunday, 6 am to 11 pm**, with [early morning to late evening care](/child-care-vineland-nj/) and [weekend daycare](/weekend-daycare-vineland-nj/).
+
+## School-age kids from Bridgeton
+
+Bridgeton Public Schools run K–8 schools such as Broad Street, Buckshutem Road, Cherry Street, Indian Avenue, Quarter Mile Lane and West Avenue School. Bus routes are set by the district, so ask Bridgeton Public Schools whether a stop in Vineland is possible. Our [after school program](/after-school-program-vineland-nj/) is open until 11 pm, with homework help on every shift, dinner at 6 pm and an evening snack at 9 pm.
 
 ## Programs for Bridgeton families
 
