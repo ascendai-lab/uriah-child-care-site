@@ -29,7 +29,6 @@ export const homePage = {
   pageBuilder: [
     block('hero', {
       layout: 'photoFade',
-      eyebrow: 'Now enrolling ages 2.5 and up',
       heading: 'Day care center in Vineland, NJ',
       accentWord: 'Vineland, NJ',
       subheading:
@@ -45,7 +44,7 @@ export const homePage = {
       mode: 'all',
       heading: 'Programs for every age we serve',
       intro: 'From 2½-year-olds to school-age kids up to 13, every program follows our play-based curriculum and runs 7 days a week.',
-      background: 'default',
+      background: 'white',
     }),
     block('imageText', {
       eyebrow: 'Ages 2.5 to 5',
@@ -56,7 +55,7 @@ export const homePage = {
       imageShape: 'blob',
       accent: 'coral',
       showDoodles: true,
-      background: 'white',
+      background: 'muted',
       buttons: [button('Explore preschool', link.internal('category-preschool'), 'secondary')],
     }),
     block('imageText', {
@@ -68,7 +67,7 @@ export const homePage = {
       imageShape: 'arch',
       accent: 'sky',
       showDoodles: true,
-      background: 'default',
+      background: 'white',
       buttons: [button('See the after school program', link.internal('category-after-school'), 'secondary')],
     }),
     block('imageText', {
@@ -80,7 +79,7 @@ export const homePage = {
       imageShape: 'circle',
       accent: 'sage',
       showDoodles: true,
-      background: 'white',
+      background: 'muted',
       buttons: [button('Find care for your shift', link.internal('category-shift-care'), 'secondary')],
     }),
     block('featureGrid', {
@@ -101,22 +100,16 @@ export const homePage = {
       buttons: [button('Meet Ms. Paulette', link.internal('page-about'), 'secondary')],
     }),
     block('testimonialsBlock', {
-      mode: 'selected',
+      mode: 'all',
       heading: 'What local families say',
       intro: 'Real reviews from parents and grandparents on Google.',
-      testimonials: refs('review-monique-willoughby', 'review-marcia-bailey', 'review-jake-jones'),
-      background: 'default',
+      background: 'white',
     }),
     block('serviceAreasBlock', {
       mode: 'all',
       heading: 'Serving Vineland, Millville and Bridgeton',
       intro: 'Our center is in Vineland, and many families drive in from across Cumberland County.',
-      background: 'white',
-    }),
-    block('mapBlock', {
-      heading: 'Visit our Vineland center',
-      notes: 'We are at 30 W Chestnut Ave, with a wheelchair ramp and accessible parking out front. Tours are by appointment.',
-      background: 'default',
+      background: 'muted',
     }),
     block('factTableBlock', {
       heading: 'Uriah Child Care at a glance',
@@ -126,7 +119,7 @@ export const homePage = {
       mode: 'selected',
       heading: 'Questions parents ask',
       faqs: refs('faq-hours', 'faq-ages', 'faq-third-shift', 'faq-ccap', 'faq-cost', 'faq-tour'),
-      background: 'default',
+      background: 'white',
       buttons: [button('See all questions', link.internal('page-faq'), 'secondary')],
     }),
   ],
@@ -159,11 +152,6 @@ export const pages = [
         anchorId: 'tour-form',
         heading: 'Request your tour',
         intro: 'Tell us a little about your child and your schedule. Ms. Paulette or Tameca will call you within one business day to pick a time. Tours take about 20 minutes, and you are welcome to bring your little one.',
-      }),
-      block('mapBlock', {
-        heading: 'Where to find us',
-        notes: '30 W Chestnut Ave, Vineland, NJ 08360. Park out front; the ramp and accessible parking are next to the entrance.',
-        background: 'white',
       }),
       block('faqBlock', {
         mode: 'selected',
@@ -214,9 +202,8 @@ The center is licensed by the New Jersey Department of Children and Families, li
         background: 'default',
       }),
       block('testimonialsBlock', {
-        mode: 'selected',
+        mode: 'all',
         heading: 'In parents’ words',
-        testimonials: refs('review-jake-jones', 'review-monique-willoughby', 'review-marcia-bailey'),
         background: 'white',
       }),
     ],
@@ -358,5 +345,171 @@ The center is licensed by the New Jersey Department of Children and Families, li
       }),
     ],
     seo: seo('Tuition and CCAP | Uriah Child Care, Vineland, NJ', 'How tuition works at Uriah Child Care in Vineland, NJ, and how to pay with NJ childcare subsidy (CCAP). Call for a price for your schedule.'),
+  }),
+  // Legal pages, carried over from the old site (uriahchildcare.com/privacy-policy/ and /terms-and-conditions/).
+  // Edits from the old text: governing law is New Jersey (the old template said "Netherlands"), the account
+  // and ad-partner lines were dropped (the site has neither), and a section on the tour form was added.
+  page('privacy', {
+    title: 'Privacy Policy',
+    slug: slug('privacy-policy'),
+    showInFooter: true,
+    pageBuilder: [
+      block('hero', { layout: 'split', heading: 'Privacy Policy', subheading: 'Last updated November 4, 2026', showPhone: false, background: 'white' }),
+      block('textBlock', {
+        width: 'narrow',
+        background: 'white',
+        body: md`At Uriah Child Care, accessible from uriahchildcare.com, one of our main priorities is the privacy of our visitors. This Privacy Policy describes the information Uriah Child Care collects and records and how we use it.
+
+If you have additional questions or need more information about our Privacy Policy, contact us at [hello@uriahchildcare.com](mailto:hello@uriahchildcare.com) or [(856) 455-6701](tel:8564556701).
+
+This Privacy Policy applies only to our online activities and is valid for visitors to our website with regard to the information that they shared and/or collect on this website. It does not apply to information collected offline or through channels other than this website.
+
+## Consent
+
+By using our website, you consent to our Privacy Policy and agree to its terms.
+
+## Information we collect
+
+The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide it.
+
+When you request a tour, we ask for your name, phone number, email address (optional), your child's age, the care you need and any message you write. If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of your message and any other information you choose to provide.
+
+## How we use your information
+
+We use the information we collect in various ways, including to:
+
+- Provide, operate, and maintain our website
+- Contact you about your tour request and your child's care
+- Improve, personalize, and expand our website
+- Understand and analyze how you use our website
+- Communicate with you, including for customer service and to provide updates about our center
+- Find and prevent fraud and spam
+
+## Tour requests
+
+Tour requests are stored by our website host, Netlify, and sent to our staff by email so we can call you back. We do not sell your information, and we only use it to respond to you and to arrange care.
+
+## Log files
+
+Uriah Child Care follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this as part of hosting services' analytics. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
+
+## Cookies and web beacons
+
+Like any other website, Uriah Child Care uses cookies. These cookies are used to store information including visitors' preferences and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
+
+## Third-party privacy policies
+
+Uriah Child Care's Privacy Policy does not apply to other advertisers or websites, such as Google Maps, which shows the map on our pages. We advise you to consult the privacy policies of these third parties for more detailed information, including how to opt out of certain options.
+
+You can choose to disable cookies through your individual browser options. More detailed information about cookie management can be found on your browser's website.
+
+## CCPA privacy rights (Do Not Sell My Personal Information)
+
+Under the CCPA, among other rights, California consumers have the right to:
+
+- Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.
+- Request that a business delete any personal data about the consumer that a business has collected.
+- Request that a business that sells a consumer's personal data not sell the consumer's personal data.
+
+If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
+
+## GDPR data protection rights
+
+We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:
+
+- The right to access: you have the right to request copies of your personal data. We may charge you a small fee for this service.
+- The right to rectification: you have the right to request that we correct any information you believe is inaccurate, or complete information you believe is incomplete.
+- The right to erasure: you have the right to request that we erase your personal data, under certain conditions.
+- The right to restrict processing: you have the right to request that we restrict the processing of your personal data, under certain conditions.
+- The right to object to processing: you have the right to object to our processing of your personal data, under certain conditions.
+- The right to data portability: you have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.
+
+If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
+
+## Children's information
+
+Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+
+Uriah Child Care does not knowingly collect any personally identifiable information from children under the age of 13. If you think that your child provided this kind of information on our website, please contact us immediately and we will do our best to promptly remove it from our records.`,
+      }),
+    ],
+    seo: seo('Privacy Policy | Uriah Child Care', 'How Uriah Child Care in Vineland, NJ collects, uses and protects the information you share on our website, including tour requests.'),
+  }),
+
+  page('terms', {
+    title: 'Terms and Conditions',
+    slug: slug('terms-and-conditions'),
+    showInFooter: true,
+    pageBuilder: [
+      block('hero', { layout: 'split', heading: 'Terms and Conditions', subheading: 'Last updated November 4, 2026', showPhone: false, background: 'white' }),
+      block('textBlock', {
+        width: 'narrow',
+        background: 'white',
+        body: md`Welcome to Uriah Child Care. These terms and conditions outline the rules and regulations for the use of Uriah Child Care's website, located at uriahchildcare.com.
+
+By accessing this website we assume you accept these terms and conditions. Do not continue to use this website if you do not agree to all of the terms and conditions stated on this page.
+
+The following terminology applies to these Terms and Conditions, our Privacy Policy and all agreements: "Client", "You" and "Your" refer to you, the person using this website. "The Company", "Ourselves", "We", "Our" and "Us" refer to Uriah Child Care. "Party", "Parties", or "Us" refer to both the Client and ourselves. These terms are governed by the laws of the State of New Jersey.
+
+## Cookies
+
+We use cookies. By accessing this website, you agree to the use of cookies in line with our [Privacy Policy](/privacy-policy/).
+
+Most interactive websites use cookies to retrieve the user's details for each visit. Cookies are used by our website to make certain areas work and to make the site easier to use.
+
+## License
+
+Unless otherwise stated, Uriah Child Care and/or its licensors own the intellectual property rights for all material on this website, including text, photos and the Uriah Child Care name and logo. All intellectual property rights are reserved. You may view and print pages from this website for your own personal use, subject to the restrictions set in these terms and conditions.
+
+You must not:
+
+- Republish material from this website
+- Sell, rent or sub-license material from this website
+- Reproduce, duplicate or copy material from this website
+- Redistribute content from this website
+
+## Hyperlinking to our content
+
+Government agencies, search engines, news organizations, online directories, schools and community organizations may link to our website without prior written approval, so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.
+
+No use of the Uriah Child Care logo or other artwork is allowed for linking without our written permission.
+
+## iFrames
+
+Without prior approval and written permission, you may not create frames around our web pages that alter in any way the visual presentation or appearance of our website.
+
+## Content liability
+
+We shall not be held responsible for any content that appears on your website. You agree to protect and defend us against all claims arising from your website. No link should appear on any website that may be interpreted as libelous, obscene or criminal, or which infringes or otherwise violates any third-party rights.
+
+## Your privacy
+
+Please read our [Privacy Policy](/privacy-policy/).
+
+## Reservation of rights
+
+We reserve the right to request that you remove all links or any particular link to our website. You agree to immediately remove all links to our website upon request. We also reserve the right to amend these terms and conditions and this linking policy at any time. By continuing to link to our website, you agree to be bound by these terms.
+
+## Removal of links from our website
+
+If you find any link on our website that is offensive for any reason, you are free to contact us at any moment. We will consider requests to remove links, but we are not obligated to do so or to respond to you directly.
+
+We do our best to keep the information on this website correct, but we do not warrant its completeness or accuracy, nor do we promise that the website remains available or that the material on it is kept up to date. Hours, programs and availability can change: please call us at [(856) 455-6701](tel:8564556701) to confirm.
+
+## Disclaimer
+
+To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:
+
+- limit or exclude our or your liability for death or personal injury;
+- limit or exclude our or your liability for fraud or fraudulent misrepresentation;
+- limit any of our or your liabilities in any way that is not permitted under applicable law; or
+- exclude any of our or your liabilities that may not be excluded under applicable law.
+
+The limitations and prohibitions of liability set in this section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.
+
+As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.`,
+      }),
+    ],
+    seo: seo('Terms and Conditions | Uriah Child Care', 'The terms and conditions for using the Uriah Child Care website.'),
   }),
 ]

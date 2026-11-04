@@ -4,7 +4,6 @@ import BaseLayout from '@layouts/BaseLayout.astro'
 import { loadQuery } from '@cms/lib/load'
 import { layoutQuery } from '@cms/queries'
 import PhoneLink from '@components/ui/PhoneLink.astro'
-import Doodle from '@components/ui/Doodle.astro'
 import Icon from '@components/ui/Icon.astro'
 
 const layout = await loadQuery(Astro.locals.draftMode, layoutQuery)
@@ -16,8 +15,6 @@ const query = encodeURIComponent(`${stegaClean(s?.siteName) ?? ''}, ${a?.street 
 <BaseLayout layout={layout} title="Thank you" seo={{ noIndex: true }} hideTourBlock>
   <section class="section">
     <div class="container thanks">
-      <Doodle type="sun" color="sunshine" size={72} style="top:-10px;right:12%" />
-      <Doodle type="heart" color="coral" size={44} style="bottom:20px;left:10%" />
       <span class="eyebrow"><Icon name="heart" /> Tour request sent</span>
       <h1 class="page-title">Thank you</h1>
       <p class="section-intro">Ms. Paulette or Tameca will call you within one business day to pick a time.</p>

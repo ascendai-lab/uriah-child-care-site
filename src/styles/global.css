@@ -17,10 +17,10 @@
     --navy: #334350;
 
     /* 50 tints: washes and tag backgrounds */
-    --coral-50: #fdece9;
-    --sage-50: #e4f2ef;
-    --sunshine-50: #fdf4de;
-    --sky-50: #e3f0f7;
+    --coral-50: #fdf1ef;
+    --sage-50: #edf6f4;
+    --sunshine-50: #fef8e8;
+    --sky-50: #edf5fa;
     --navy-50: #e6e9ec;
 
     /* Darker shades: hover, press, and text on light tints */
@@ -35,9 +35,11 @@
     --navy-600: #263440;
 
     /* Surfaces */
-    --cream: #f8f1e8;
-    --cream-deep: #f2e8db;
+    /* Surfaces: white page, a soft cool grey for alternating bands (Mark 2026-11-04: no tan) */
+    --cream: #ffffff;
+    --cream-deep: #f5f7f8;
     --white: #ffffff;
+    --surface-soft: #f5f7f8;
 
     /* Text */
     --fg1: #334350;
@@ -48,10 +50,11 @@
     --border-hairline: rgba(51, 67, 80, 0.08);
     --border-default: rgba(51, 67, 80, 0.12);
     --border-strong: rgba(51, 67, 80, 0.16);
-    --shadow-button: 0 2px 0 rgba(51, 67, 80, 0.12);
-    --shadow-button-hover: 0 3px 0 rgba(51, 67, 80, 0.14);
-    --shadow-card: 0 1px 2px rgba(51, 67, 80, 0.06);
-    --shadow-card-hover: 0 4px 16px rgba(51, 67, 80, 0.08);
+    --shadow-button: 0 1px 2px rgba(51, 67, 80, 0.10);
+    --shadow-button-hover: 0 6px 16px rgba(51, 67, 80, 0.14);
+    --shadow-card: 0 1px 2px rgba(51, 67, 80, 0.04), 0 4px 18px rgba(51, 67, 80, 0.05);
+    --shadow-card-hover: 0 2px 4px rgba(51, 67, 80, 0.05), 0 14px 34px rgba(51, 67, 80, 0.10);
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
     --shadow-overlay: 0 20px 48px rgba(51, 67, 80, 0.16);
     --focus-ring: 0 0 0 3px rgba(93, 167, 206, 0.45);
 
@@ -166,9 +169,9 @@
   }
 
   /* Section backgrounds */
-  .bg-default { background: var(--cream); }
+  .bg-default { background: var(--white); }
   .bg-white { background: var(--white); }
-  .bg-muted { background: var(--cream-deep); }
+  .bg-muted { background: var(--surface-soft); }
   .bg-sky { background: var(--sky-50); }
   .bg-sage { background: var(--sage-50); }
   .bg-sunshine { background: var(--sunshine-50); }
@@ -229,18 +232,16 @@
   .bg-dark .section-intro { color: rgba(255, 255, 255, 0.82); }
 
   .eyebrow {
-    display: inline-flex;
+    display: flex;
+    width: fit-content;
     align-items: center;
     gap: 0.45rem;
-    padding: 0.35rem 0.9rem;
-    border-radius: var(--radius-full);
-    background: var(--white);
     color: var(--coral-700);
     font-family: var(--font-display);
-    font-weight: 500;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-    box-shadow: var(--shadow-card);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.85rem;
   }
   .eyebrow svg { width: 1rem; height: 1rem; }
 
@@ -249,21 +250,22 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.6rem;
-    min-height: 48px;
-    padding: 0.7rem 1.5rem;
+    gap: 0.55rem;
+    min-height: 44px;
+    padding: 0.55rem 1.35rem;
     border-radius: var(--radius-full);
     font-family: var(--font-display);
     font-weight: 600;
-    font-size: 1.02rem;
+    font-size: 1rem;
     line-height: 1.1;
     border: 2px solid transparent;
     box-shadow: var(--shadow-button);
     cursor: pointer;
-    transition: background-color 180ms ease-out, box-shadow 180ms ease-out, transform 120ms ease-out, color 180ms ease-out;
+    transition: background-color 200ms var(--ease-out), box-shadow 200ms var(--ease-out), transform 200ms var(--ease-out), color 200ms var(--ease-out);
     white-space: nowrap;
   }
-  .btn:hover { box-shadow: var(--shadow-button-hover); }
+  .btn:hover { box-shadow: var(--shadow-button-hover); transform: translateY(-1px); }
+  .btn:hover .btn__arrow svg { transform: translateX(2px); }
   .btn:active { box-shadow: none; transform: translateY(1px); }
   .btn--primary { background: var(--coral); color: var(--navy-600); }
   .btn--primary:hover { background: var(--coral-600); }
@@ -276,19 +278,19 @@
   .btn--light { background: #fff; color: var(--navy); }
   .btn--light:hover { background: var(--cream); }
   .btn--ghost { background: transparent; box-shadow: none; padding-inline: 0.5rem; }
-  .btn--lg { min-height: 56px; padding: 0.85rem 1.8rem; font-size: 1.1rem; }
+  .btn--lg { min-height: 50px; padding: 0.6rem 1.6rem; font-size: 1.05rem; }
   .btn__arrow {
     display: inline-grid;
     place-items: center;
-    width: 1.9rem;
-    height: 1.9rem;
-    margin-right: -0.9rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: -0.95rem;
     border-radius: var(--radius-full);
     background: var(--navy);
     color: #fff;
   }
   .btn--light .btn__arrow, .btn--sunshine .btn__arrow { background: var(--coral); color: var(--navy-600); }
-  .btn__arrow svg { width: 1rem; height: 1rem; }
+  .btn__arrow svg { width: 0.95rem; height: 0.95rem; transition: transform 200ms var(--ease-out); }
 
   .btn-row {
     display: flex;
@@ -309,8 +311,8 @@
   .phone-link__icon {
     display: inline-grid;
     place-items: center;
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: var(--radius-full);
     background: var(--sunshine);
     color: var(--navy);
@@ -341,11 +343,11 @@
     border: 1px solid var(--border-hairline);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-card);
-    transition: box-shadow 180ms ease-out, transform 180ms ease-out;
+    transition: box-shadow 260ms var(--ease-out), transform 260ms var(--ease-out);
   }
   a.card:hover, .card--hover:hover {
     box-shadow: var(--shadow-card-hover);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
   }
 
   .grid-cards {
@@ -375,10 +377,12 @@
     background: var(--accent, var(--coral));
     color: var(--on-accent, var(--navy));
     box-shadow: var(--shadow-card);
-    transition: transform 180ms ease-out, box-shadow 180ms ease-out;
+    transition: transform 280ms var(--ease-out), box-shadow 280ms var(--ease-out);
     min-height: 100%;
   }
-  .program-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-card-hover); }
+  .program-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); }
+  .program-card__media img { transition: transform 600ms var(--ease-out); }
+  .program-card:hover .program-card__media img { transform: scale(1.04); }
   .program-card__media {
     position: relative;
     aspect-ratio: 4 / 3;
@@ -471,6 +475,20 @@
   }
   .chip svg { width: 1.05rem; height: 1.05rem; color: var(--accent-700, var(--coral-700)); flex: none; }
 
+  /* Plain facts with icons on one line (page heroes): no chip backgrounds, so the CTA stands out. */
+  .fact-line {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.25rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--fg2);
+  }
+  .fact-line li { display: inline-flex; align-items: center; gap: 0.45rem; white-space: nowrap; }
+  .fact-line svg { width: 1.1rem; height: 1.1rem; color: var(--coral-700); flex: none; }
+
   .checklist { list-style: none; display: grid; gap: 0.75rem; }
   .checklist li {
     display: flex;
@@ -551,21 +569,41 @@
   .stars { display: inline-flex; gap: 2px; color: var(--sunshine); }
   .stars svg { width: 1.05rem; height: 1.05rem; }
   .review-card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.9rem;
-    padding: 1.5rem;
-    height: 100%;
+    gap: 1.1rem;
+    padding: 1.6rem 1.6rem 1.5rem;
   }
-  .review-card blockquote { font-size: 1.02rem; color: var(--fg1); }
-  .review-card footer {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    font-size: 0.9rem;
+  .review-card::before {
+    /* a soft opening quote mark, in the flow so it never overlaps the text */
+    content: '\201C';
+    display: block;
+    height: 1.6rem;
+    margin-bottom: -0.4rem;
+    font-family: Georgia, serif;
+    font-size: 3.6rem;
+    line-height: 1;
+    color: var(--coral);
+    opacity: 0.55;
+    pointer-events: none;
   }
+  .review-card blockquote { position: relative; font-size: 1.02rem; line-height: 1.65; color: var(--fg1); }
+  .review-card__by { display: flex; align-items: center; gap: 0.75rem; }
+  .review-card__avatar {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--accent-50);
+    color: var(--accent-700);
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+  .review-card__who { display: grid; gap: 0.05rem; line-height: 1.3; }
   .review-card cite { font-style: normal; font-weight: 700; }
   .review-card__source { color: var(--fg3); font-size: 0.85rem; }
   .review-card__source a { text-decoration: underline; text-underline-offset: 3px; }
@@ -591,7 +629,7 @@
     width: 34%;
     font-family: var(--font-display);
     font-weight: 600;
-    background: var(--sunshine-50);
+    background: var(--surface-soft);
   }
 
   /* ─── Forms ─── */
@@ -674,9 +712,29 @@
   }
   .prose a:hover { text-decoration-color: currentColor; }
   .prose a.btn { color: var(--navy); text-decoration: none; }
-  .prose ul, .prose ol { padding-left: 1.3rem; }
-  .prose li + li { margin-top: 0.4rem; }
-  .prose li::marker { color: var(--coral); }
+  /* Lists sit flush with the paragraphs: the bullet lines up with the text edge above it. */
+  .prose ul, .prose ol { padding-left: 0; list-style: none; }
+  .prose ol { counter-reset: prose-ol; }
+  .prose li { position: relative; padding-left: 1.35rem; }
+  .prose li + li { margin-top: 0.45rem; }
+  .prose ul > li::before {
+    content: '';
+    position: absolute;
+    left: 0.1rem;
+    top: 0.62em;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background: var(--coral);
+  }
+  .prose ol > li { counter-increment: prose-ol; }
+  .prose ol > li::before {
+    content: counter(prose-ol) '.';
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    color: var(--coral-700);
+  }
   .prose blockquote {
     padding: 1rem 1.3rem;
     border-radius: var(--radius-lg);
@@ -692,4 +750,36 @@
 
   .video-frame { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-lg); overflow: hidden; }
   .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+}
+
+/* ─── Motion ──────────────────────────────────────────────────────────────────
+   Sections fade up as they scroll into view (src/scripts/reveal.ts adds .reveal only
+   when JS runs and the visitor hasn't asked for reduced motion, so nothing is hidden without it). */
+@layer components {
+  /* Two white sections in a row read as one: don't stack both paddings. */
+  .section:is(.bg-white, .bg-default) + .section:is(.bg-white, .bg-default) { padding-top: calc(var(--section-y) * 0.4); }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .reveal.is-in { opacity: 1; transform: none; }
+
+  @keyframes rise-in {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: none; }
+  }
+  .enter > * { animation: rise-in 800ms var(--ease-out) both; }
+  .enter > :nth-child(2) { animation-delay: 80ms; }
+  .enter > :nth-child(3) { animation-delay: 160ms; }
+  .enter > :nth-child(4) { animation-delay: 240ms; }
+  .enter > :nth-child(5) { animation-delay: 320ms; }
+  .enter > :nth-child(n + 6) { animation-delay: 400ms; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition-duration: 1ms !important; scroll-behavior: auto !important; }
+    .reveal { opacity: 1; transform: none; }
+  }
 }

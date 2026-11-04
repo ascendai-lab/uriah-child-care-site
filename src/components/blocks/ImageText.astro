@@ -5,7 +5,6 @@ import Section from '@components/ui/Section.astro'
 import Button from '@components/ui/Button.astro'
 import SanityImage from '@components/ui/SanityImage.astro'
 import PortableText from '@components/ui/PortableText'
-import Doodle from '@components/ui/Doodle.astro'
 
 interface Props {
   block: BlockOf<'imageText'>
@@ -16,7 +15,6 @@ const { block, 'data-sanity': dataSanity } = Astro.props
 const position = stegaClean(block.imagePosition) || 'right'
 const shape = stegaClean(block.imageShape) || 'blob'
 const accent = stegaClean(block.accent) || 'sunshine'
-const doodles = block.showDoodles !== false
 ---
 
 <Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
@@ -25,14 +23,6 @@ const doodles = block.showDoodles !== false
       <div class={`shape shape--${shape}`}>
         <SanityImage image={block.image} width={640} sizes="(min-width: 900px) 480px, 90vw" />
       </div>
-      {
-        doodles && (
-          <>
-            <Doodle type={position === 'left' ? 'sun' : 'star'} color={accent === 'sunshine' ? 'coral' : 'sunshine'} size={48} style="top:-2%;right:4%" />
-            <Doodle type="squiggle" color="sky" size={64} style="bottom:2%;left:-4%" />
-          </>
-        )
-      }
     </div>
     <div class="image-text__content">
       {block.eyebrow && <span class="eyebrow">{block.eyebrow}</span>}

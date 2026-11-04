@@ -278,7 +278,9 @@ export const layoutQuery = defineQuery(`{
   "homeServices": *[_type == "service" && !defined(category) && defined(slug.current)] | order(order asc) { ${pageLinkFields} },
   "cities": *[_type == "serviceArea" && defined(slug.current)] | order(order asc) { ${pageLinkFields}, city },
   "owner": *[_type == "teamMember"] | order(order asc)[0] { name, role, photo { ${imageFields} } },
-  "tourPage": *[_type == "page" && slug.current == "tour"][0] { "slug": slug.current }
+  "tourPage": *[_type == "page" && slug.current == "tour"][0] { "slug": slug.current },
+  "reviews": *[_type == "testimonial" && firstParty != false] | order(order asc, _createdAt desc)[0...6] { ${testimonialFields} },
+  "generalFaqs": *[_type == "faq"] | order(order asc, _createdAt asc)[0...8] { ${faqFields} }
 }`)
 
 /* ── Pages ────────────────────────────────────────────────────────────────── */

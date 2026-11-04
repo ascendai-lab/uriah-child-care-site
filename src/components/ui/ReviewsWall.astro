@@ -1,0 +1,76 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+import type { SiteSettings } from '@cms/lib/types'
+import ReviewCard from '@components/cards/ReviewCard.astro'
+import Icon from '@components/ui/Icon.astro'
+
+type Review = Parameters<typeof ReviewCard>[0]['review'] & { _id?: string }
+
+interface Props {
+  reviews: (Review | null | undefined)[] | null | undefined
+  settings?: SiteSettings | null
+  /** Show the "Leave a review" link next to "View more reviews". */
+  showWrite?: boolean
+}
+
+/** The same Google reviews on every page: a 3-column masonry wall plus a link to the full list on Google. */
+const { reviews, settings, showWrite = false } = Astro.props
+const items = (reviews ?? []).filter((r): r is Review => Boolean(r))
+const moreUrl = stegaClean(settings?.gbpReviewUrl) || stegaClean(settings?.gbpUrl)
+const writeUrl = stegaClean(settings?.gbpWriteReviewUrl)
+
+// Masonry without layout jumps: deal the reviews into 3 columns, each going to the shortest column
+// so far (by an estimate of its height). On phones and tablets the columns fold into one simple grid.
+const COLUMNS = 3
+const CARD_OVERHEAD = 220
+const columns: { items: Review[]; height: number }[] = Array.from({ length: COLUMNS }, () => ({ items: [], height: 0 }))
+for (const review of items) {
+  const shortest = columns.reduce((a, b) => (b.height < a.height ? b : a))
+  shortest.items.push(review)
+  shortest.height += Math.min(stegaClean(review.quote)?.length ?? 0, 420) + CARD_OVERHEAD
+}
+---
+
+{
+  items.length ? (
+    <>
+      <div class="reviews-grid">
+        {columns.map((col) => (
+          <div class="reviews-grid__col">
+            {col.items.map((review) => <ReviewCard review={review} />)}
+          </div>
+        ))}
+      </div>
+      {moreUrl && (
+        <div class="reviews-actions">
+          <a class="btn btn--secondary" href={moreUrl} target="_blank" rel="noopener noreferrer">
+            View more reviews on Google <span class="btn__arrow" aria-hidden="true"><Icon name="arrow" /></span>
+          </a>
+          {showWrite && writeUrl && (
+            <a class="text-link" href={writeUrl} target="_blank" rel="noopener noreferrer">
+              Leave a review
+            </a>
+          )}
+        </div>
+      )}
+    </>
+  ) : null
+}
+
+<style>
+  .reviews-grid { display: grid; gap: 1.25rem; align-items: start; }
+  .reviews-grid__col { display: contents; }
+  .reviews-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 1.5rem;
+    margin-top: 2.25rem;
+  }
+  @media (min-width: 720px) { .reviews-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 1040px) {
+    .reviews-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .reviews-grid__col { display: grid; gap: 1.25rem; align-content: start; }
+  }
+</style>

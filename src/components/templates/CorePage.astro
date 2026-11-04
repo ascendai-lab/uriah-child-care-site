@@ -14,10 +14,9 @@ import { formatDate } from '@/lib/format'
 import PortableText from '@components/ui/PortableText'
 import SanityImage from '@components/ui/SanityImage.astro'
 import ProgramCard from '@components/cards/ProgramCard.astro'
-import ReviewCard from '@components/cards/ReviewCard.astro'
+import ReviewsWall from '@components/ui/ReviewsWall.astro'
 import FaqList from '@components/ui/FaqList.astro'
 import Icon from '@components/ui/Icon.astro'
-import Doodle from '@components/ui/Doodle.astro'
 import PhoneLink from '@components/ui/PhoneLink.astro'
 import PageBuilder from '@components/blocks/PageBuilder.astro'
 
@@ -56,22 +55,48 @@ const related = [
 ].filter((p, i, list) => p && list.findIndex((q) => q?._id === p._id) === i && p._id !== doc._id)
 
 const services = (doc.services ?? []).filter(Boolean)
-const reviews = (doc.reviews ?? []).filter(Boolean)
-const faqs = (doc.faqs ?? []).filter(Boolean)
+// Same reviews on every page (Mark, 2026-11-04), not page-specific pairs.
+const reviews = (layout.reviews ?? []).filter(Boolean)
+
+// A page with only one or two questions of its own is topped up with general questions from the FAQ,
+// skipping any whose topic the page already answers.
+const MIN_FAQS = 4
+const TOPICS: [RegExp, RegExp][] = [
+  [/hour|open|close|early|time|sunday|weekend/i, /^faq-(hours|third-shift)$/],
+  [/age|youngest|old/i, /^faq-ages$/],
+  [/ccap|subsid/i, /^faq-ccap$/],
+  [/cost|price|tuition|pay/i, /^faq-cost$/],
+  [/meal|lunch|dinner|snack|food/i, /^faq-meals$/],
+  [/licens/i, /^faq-license$/],
+  [/tour/i, /^faq-tour$/],
+  [/potty|diaper/i, /^faq-potty$/],
+  [/where|far|drive|millville|bridgeton/i, /^faq-where$/],
+  [/school.*(pick|bus|transport)|pick.*school/i, /^faq-school-transport$/],
+]
+const ownFaqs = (doc.faqs ?? []).filter(Boolean)
+const covered = (id: string) =>
+  TOPICS.some(([question, faqId]) => faqId.test(id) && ownFaqs.some((f) => question.test(stegaClean(f.question) ?? '')))
+const extraFaqs =
+  ownFaqs.length >= MIN_FAQS
+    ? []
+    : (layout.generalFaqs ?? []).filter((f) => f && !covered(f._id)).slice(0, MIN_FAQS + 1 - ownFaqs.length)
+const faqs = [...ownFaqs, ...extraFaqs]
 const shownServices = services.filter((s) => !s.needsConfirmation)
+// Keep the hero facts on one line: only the first sentence of the schedule (the full text is in Quick facts).
+const heroSchedule = doc.schedule ? doc.schedule.split(/\.\s/)[0].replace(/\.$/, '') : null
 ---
 
 <section class:list={['core-hero', `accent-${accent}`]}>
   <div class="container">
     <div class="core-hero__card">
-      <div class="core-hero__text">
+      <div class="core-hero__text enter">
         <span class="eyebrow"><Icon name="sparkle" /> {eyebrow}</span>
         <h1 class="page-title">{doc.title}</h1>
         {doc.intro && <p class="core-hero__intro">{doc.intro}</p>}
-        <ul class="chip-row core-hero__chips">
-          <li class="chip"><Icon name="users" /> {doc.ageRange || settings?.agesServed}</li>
-          {doc.schedule && <li class="chip"><Icon name="clock" /> {doc.schedule}</li>}
-          <li class="chip"><Icon name="pin" /> {where}</li>
+        <ul class="fact-line core-hero__facts">
+          <li><Icon name="users" /> {doc.ageRange || settings?.agesServed}</li>
+          {heroSchedule && <li><Icon name="clock" /> {heroSchedule}</li>}
+          <li><Icon name="pin" /> {where}</li>
         </ul>
         <div class="btn-row">
           <a class="btn btn--primary btn--lg" href="#book-a-tour">
@@ -83,12 +108,9 @@ const shownServices = services.filter((s) => !s.needsConfirmation)
       {
         doc.image?.asset && (
           <div class="core-hero__media">
-            <div class="shape shape--arch accent-sunshine">
+            <div class="shape shape--arch">
               <SanityImage image={doc.image} width={560} aspectRatio={4 / 5} sizes="(min-width: 900px) 420px, 85vw" loading="eager" fetchpriority="high" />
             </div>
-            <Doodle type="star" color="sunshine" size={44} style="top:2%;left:-6%" />
-            <Doodle type="heart" color="coral" size={34} style="top:38%;right:-6%" />
-            <Doodle type="squiggle" color="sky" size={64} style="bottom:-4%;left:4%" />
           </div>
         )
       }
@@ -96,16 +118,18 @@ const shownServices = services.filter((s) => !s.needsConfirmation)
   </div>
 </section>
 
-<section class="section core-body">
+<section class="section bg-white core-body">
   <div class="container core-body__grid">
     <div class="core-body__main">
       <PortableText value={bodyFirst} />
       <aside class="tour-inline" aria-label="Book a tour">
-        <span class="tour-inline__icon"><Icon name="calendar" size={22} /></span>
-        <p>
-          <strong>See it for yourself.</strong> Tours take about 20 minutes, and you can bring your little one.
-        </p>
-        <a class="btn btn--primary" href="#book-a-tour">Book a tour</a>
+        <div class="tour-inline__text">
+          <p class="tour-inline__title">See it for yourself</p>
+          <p>Tours take about 20 minutes, and you're welcome to bring your little one.</p>
+        </div>
+        <a class="btn btn--primary" href="#book-a-tour">
+          Book a tour <span class="btn__arrow" aria-hidden="true"><Icon name="arrow" /></span>
+        </a>
       </aside>
       <PortableText value={bodyRest} />
     </div>
@@ -146,7 +170,7 @@ const shownServices = services.filter((s) => !s.needsConfirmation)
 
 {
   doc.dayPlan?.length ? (
-    <section class="section bg-sky">
+    <section class="section bg-muted">
       <div class="container">
         <h2 class="section-heading core-section-title">What the day looks like</h2>
         <ol class:list={["day-plan", `day-plan--${doc.dayPlan.length % 3 === 0 ? 3 : 4}`]}>
@@ -164,7 +188,7 @@ const shownServices = services.filter((s) => !s.needsConfirmation)
 
 {
   shownServices.length ? (
-    <section class="section">
+    <section class="section bg-white">
       <div class="container">
         <header class="section-header section-header--center">
           <h2 class="section-heading">{doc.shortTitle ? `${doc.shortTitle} programs` : 'Programs'} at our Vineland center</h2>
@@ -179,14 +203,13 @@ const shownServices = services.filter((s) => !s.needsConfirmation)
 
 {
   reviews.length ? (
-    <section class="section bg-sunshine">
+    <section class="section bg-muted">
       <div class="container">
         <header class="section-header section-header--center">
           <h2 class="section-heading">What parents say</h2>
+          <p class="section-intro">Real reviews from local families on Google.</p>
         </header>
-        <div class={`grid-cards grid-cards--${Math.min(reviews.length, 3)}`}>
-          {reviews.map((r) => <ReviewCard review={r} />)}
-        </div>
+        <ReviewsWall reviews={reviews} settings={settings} />
       </div>
     </section>
   ) : null
@@ -194,7 +217,7 @@ const shownServices = services.filter((s) => !s.needsConfirmation)
 
 {
   faqs.length ? (
-    <section class="section">
+    <section class="section bg-white">
       <div class="container core-faq">
         <h2 class="section-heading core-section-title">Questions parents ask</h2>
         <FaqList items={faqs} openFirst />
@@ -207,7 +230,7 @@ const shownServices = services.filter((s) => !s.needsConfirmation)
 
 {
   related.length ? (
-    <section class="section section--tight">
+    <section class="section section--tight bg-white">
       <div class="container">
         <nav class="keep-exploring" aria-label="Related pages">
           <h2>Keep exploring</h2>
@@ -248,32 +271,27 @@ const shownServices = services.filter((s) => !s.needsConfirmation)
     background: var(--accent-50);
   }
   .core-hero__intro { font-size: 1.15rem; margin-top: 1rem; max-width: 38rem; }
-  .core-hero__chips { list-style: none; margin-top: 1.4rem; }
+  .core-hero__facts { margin-top: 1.5rem; }
   .core-hero__media { position: relative; max-width: 380px; width: 100%; justify-self: center; }
 
   .core-body__grid { display: grid; gap: 2.5rem; align-items: start; }
   .core-body__main > :global(.prose:first-child > :first-child) { margin-top: 0; }
   .tour-inline {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0.6rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 2rem 0;
-    padding: 1.2rem 1.4rem;
+    justify-content: space-between;
+    gap: 1.25rem 2rem;
+    margin: 2.75rem 0;
+    padding: 1.75rem 2rem;
     border-radius: var(--radius-xl);
-    background: var(--sage-50);
+    background: var(--surface-soft);
     max-width: 70ch;
   }
-  .tour-inline__icon {
-    display: grid;
-    place-items: center;
-    width: 2.75rem;
-    height: 2.75rem;
-    border-radius: 50%;
-    background: var(--sage-700);
-    color: #fff;
-  }
-  .tour-inline .btn { grid-column: 1 / -1; justify-self: start; }
+  .tour-inline__text { flex: 1 1 18rem; display: grid; gap: 0.3rem; }
+  .tour-inline__title { font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; color: var(--navy); }
+  .tour-inline__text p:not(.tour-inline__title) { color: var(--fg2); }
+  @media (max-width: 520px) { .tour-inline { padding: 1.5rem; } }
   .core-facts { padding: 1.5rem; display: grid; gap: 1rem; }
   .core-facts h2 { font-size: 1.35rem; }
   .core-facts dl { display: grid; gap: 0.9rem; }
@@ -294,11 +312,26 @@ const shownServices = services.filter((s) => !s.needsConfirmation)
     padding: 1.2rem 1.3rem;
     border-radius: var(--radius-xl);
     background: var(--white);
-    border-top: 6px solid var(--accent);
     box-shadow: var(--shadow-card);
   }
-  .day-plan__when { font-family: var(--font-display); font-weight: 600; font-size: 1.12rem; color: var(--accent-700); }
-  .day-plan__what { color: var(--fg1); }
+  .day-plan__when {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.12rem;
+    color: var(--navy);
+  }
+  .day-plan__when::before {
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+  }
+  .day-plan__what { color: var(--fg2); }
 
   .core-faq { max-width: 52rem; }
 
@@ -313,13 +346,13 @@ const shownServices = services.filter((s) => !s.needsConfirmation)
     background: var(--white);
     border: 1.5px solid var(--border-default);
     font-weight: 700;
-    transition: border-color 180ms ease-out;
+    transition: border-color 200ms var(--ease-out), transform 200ms var(--ease-out);
   }
-  .keep-exploring a:hover { border-color: var(--coral); }
+  .keep-exploring a:hover { border-color: var(--navy); transform: translateY(-1px); }
   .last-updated { margin-top: 1.5rem; font-size: 0.88rem; color: var(--fg3); }
 
   @media (min-width: 900px) {
-    .core-hero__card { grid-template-columns: 1.25fr 0.75fr; gap: 3rem; }
+    .core-hero__card { grid-template-columns: minmax(0, 1.45fr) minmax(0, 0.75fr); gap: 3rem; }
     .core-body__grid { grid-template-columns: minmax(0, 1fr) 320px; gap: 3.5rem; }
     .core-facts { position: sticky; top: 100px; }
   }

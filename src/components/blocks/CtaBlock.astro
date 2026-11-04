@@ -2,7 +2,6 @@
 import type { BlockOf } from '@cms/lib/types'
 import Section from '@components/ui/Section.astro'
 import Button from '@components/ui/Button.astro'
-import Doodle from '@components/ui/Doodle.astro'
 
 interface Props {
   block: BlockOf<'ctaBlock'>
@@ -14,8 +13,6 @@ const { block, 'data-sanity': dataSanity } = Astro.props
 
 <Section anchorId={block.anchorId} background={block.background} class="section--tight" data-sanity={dataSanity}>
   <div class="cta-band">
-    <Doodle type="sun" color="sunshine" size={58} style="top:-18px;left:6%" />
-    <Doodle type="sparkles" color="white" size={52} style="bottom:12px;right:5%" />
     <div>
       {block.heading && <h2 class="section-heading">{block.heading}</h2>}
       {block.body && <p>{block.body}</p>}

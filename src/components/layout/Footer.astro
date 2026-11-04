@@ -23,6 +23,10 @@ const mapsHref =
   stegaClean(settings?.gbpUrl) ||
   stegaClean(settings?.mapUrl) ||
   (address?.street ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${siteName}, ${address.street}, ${address.city}, ${address.state} ${address.zip}`)}` : undefined)
+const fullAddress = address?.street ? `${address.street}, ${address.city}, ${address.state} ${address.zip}` : ''
+const mapQuery = encodeURIComponent(`${siteName}, ${stegaClean(fullAddress)}`)
+const mapEmbed = stegaClean(settings?.gbpMapEmbedUrl) || `https://maps.google.com/maps?q=${mapQuery}&z=15&output=embed`
+const directionsHref = `https://www.google.com/maps/dir/?api=1&destination=${mapQuery}`
 const label = (p: { shortTitle?: string | null; title?: string | null }) => p.shortTitle || p.title
 const aboutLinks = [
   { href: '/about-ms-paulette/', label: 'Meet Ms. Paulette' },
@@ -49,9 +53,7 @@ const aboutLinks = [
           address?.street && (
             <a href={mapsHref} target="_blank" rel="noopener noreferrer">
               <Icon name="pin" size={18} />
-              <span>
-                {address.street}, {address.city}, {address.state} {address.zip}
-              </span>
+              <span>{fullAddress}</span>
             </a>
           )
         }
@@ -149,60 +151,67 @@ const aboutLinks = [
       )
     }
 
-    <div class="site-footer__col">
-      <h2>Families we serve</h2>
-      {settings?.serviceAreasLine && <p>{settings.serviceAreasLine}</p>}
-      <ul>
-        <li><a href="/">Vineland, NJ</a></li>
-        {
-          cities?.map((c) => (
-            <li>
-              <a href={hrefFor(c._type, c.slug) ?? '#'}>{c.city}, NJ</a>
-            </li>
+    <div class="site-footer__map">
+      <h2>Find us</h2>
+      <div class="site-footer__map-frame">
+        <iframe
+          src={mapEmbed}
+          title={`Map: ${siteName}, ${stegaClean(fullAddress)}`}
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        />
+      </div>
+      <p class="site-footer__areas">
+        Serving <a href="/">Vineland</a>{
+          cities?.map((c, i) => (
+            <>
+              {i === (cities?.length ?? 0) - 1 ? ' and ' : ', '}
+              <a href={hrefFor(c._type, c.slug) ?? '#'}>{c.city}</a>
+            </>
           ))
         }
-      </ul>
+      </p>
+      <a class="site-footer__directions" href={directionsHref} target="_blank" rel="noopener noreferrer" data-track="directions_click">
+        <Icon name="directions" size={18} /> Get directions
+      </a>
     </div>
   </div>
 
-  <div class="container site-footer__facts">
-    {settings?.license?.summary && <p><Icon name="shield" size={18} /> {settings.license.summary}</p>}
-    {settings?.subsidyStatement && <p><Icon name="wallet" size={18} /> {settings.subsidyStatement}</p>}
-    {settings?.foodProgramStatement && <p><Icon name="utensils" size={18} /> {settings.foodProgramStatement}</p>}
-    {
-      settings?.attributes?.length ? (
-        <ul class="site-footer__badges" aria-label="Accessibility and amenities">
-          {settings.attributes.map((a) => (
-            <li>{a}</li>
-          ))}
-        </ul>
-      ) : null
-    }
+  <div class="container">
+    <ul class="site-footer__facts">
+      {settings?.license?.summary && <li><Icon name="shield" size={16} /> {settings.license.summary}</li>}
+      {settings?.subsidyStatement && <li><Icon name="wallet" size={16} /> {settings.subsidyStatement}</li>}
+      {settings?.foodProgramStatement && <li><Icon name="utensils" size={16} /> {settings.foodProgramStatement}</li>}
+      {settings?.attributes?.map((a) => <li><Icon name="check" size={16} /> {a}</li>)}
+    </ul>
   </div>
 
-  <div class="container site-footer__bottom">
-    <p>© {year} {copyright}. All rights reserved.</p>
-    {
-      footerPages?.length ? (
-        <ul>
-          {footerPages.map((p) => (
-            <li>
-              <a href={hrefFor('page', p.slug) ?? '#'}>{p.title}</a>
-            </li>
-          ))}
-        </ul>
-      ) : null
-    }
+  <div class="site-footer__bottom">
+    <div class="container site-footer__bottom-inner">
+      <p>© {year} {copyright}. All rights reserved.</p>
+      {
+        footerPages?.length ? (
+          <ul>
+            {footerPages.map((p) => (
+              <li>
+                <a href={hrefFor('page', p.slug) ?? '#'}>{p.title}</a>
+              </li>
+            ))}
+          </ul>
+        ) : null
+      }
+    </div>
   </div>
 </footer>
 
 <style>
   .site-footer {
     position: relative;
-    margin-top: var(--section-y);
+    margin-top: calc(var(--section-y) * 0.75);
     background: var(--navy);
-    color: rgba(255, 255, 255, 0.88);
-    padding: 3.5rem 0 1.5rem;
+    color: rgba(255, 255, 255, 0.86);
+    padding-top: 3.75rem;
   }
   .site-footer__wave {
     position: absolute;
@@ -214,47 +223,64 @@ const aboutLinks = [
   }
   .site-footer__wave svg { width: 100%; height: 100%; fill: var(--navy); }
   .site-footer__grid { display: grid; gap: 2.5rem; }
-  .site-footer__brand img { height: 84px; width: auto; }
+  .site-footer__brand img { height: 80px; width: auto; }
   .site-footer__nap { display: grid; gap: 0.6rem; margin-top: 1.5rem; font-style: normal; }
   .site-footer__nap strong { font-family: var(--font-display); font-size: 1.15rem; color: #fff; }
   .site-footer__nap a, .site-footer__nap > span { display: inline-flex; align-items: flex-start; gap: 0.6rem; }
-  .site-footer__nap a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
   .site-footer__nap :global(svg) { flex: none; margin-top: 0.2rem; color: var(--sunshine); }
   .site-footer__social { list-style: none; display: flex; gap: 0.5rem; margin-top: 1.25rem; }
   .site-footer__social a { display: inline-grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; background: rgba(255, 255, 255, 0.1); }
-  .site-footer__col h2 { font-size: 1.15rem; color: #fff; margin-bottom: 0.9rem; }
-  .site-footer__col ul { list-style: none; display: grid; gap: 0.5rem; }
-  .site-footer__col p { margin-bottom: 0.8rem; font-size: 0.95rem; }
-  .site-footer__col a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
-  .site-footer__facts {
-    display: grid;
-    gap: 0.55rem;
-    margin-top: 2.5rem;
-    padding-top: 1.75rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.14);
-    font-size: 0.94rem;
+  .site-footer h2 { font-size: 1.1rem; color: #fff; margin-bottom: 1rem; }
+  .site-footer__col ul { list-style: none; display: grid; gap: 0.55rem; }
+  .site-footer a { transition: color 180ms var(--ease-out); }
+  .site-footer__grid a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+  .site-footer__map-frame {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--navy-600);
   }
-  .site-footer__facts p { display: flex; gap: 0.6rem; align-items: flex-start; }
-  .site-footer__facts :global(svg) { flex: none; margin-top: 0.15rem; color: var(--sunshine); }
-  .site-footer__badges { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.6rem; }
-  .site-footer__badges li {
-    padding: 0.3rem 0.8rem;
-    border-radius: var(--radius-full);
-    background: rgba(255, 255, 255, 0.1);
-    font-size: 0.85rem;
+  .site-footer__map-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .site-footer__areas { margin-top: 0.9rem; font-size: 0.95rem; }
+  .site-footer__areas a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255, 255, 255, 0.35); }
+  .site-footer__directions {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 0.6rem;
+    font-family: var(--font-display);
     font-weight: 600;
+    color: var(--sunshine);
   }
-  .site-footer__bottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 0.75rem;
-    margin-top: 1.75rem;
-    font-size: 0.85rem;
-    opacity: 0.8;
+  .site-footer__directions :global(svg) { flex: none; }
+
+  /* Small print: smaller than the links, in a row on desktop and stacked on phones. */
+  .site-footer__facts {
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 2.75rem;
+    padding-bottom: 2rem;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.7);
   }
-  .site-footer__bottom ul { list-style: none; display: flex; gap: 1rem; }
+  .site-footer__facts li { display: flex; gap: 0.45rem; align-items: flex-start; }
+  .site-footer__facts :global(svg) { flex: none; margin-top: 0.1rem; color: var(--sunshine); opacity: 0.85; }
+
+  .site-footer__bottom { background: var(--navy-600); padding-block: 1.1rem; font-size: 0.82rem; color: rgba(255, 255, 255, 0.72); }
+  .site-footer__bottom-inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.6rem 1.5rem; }
+  .site-footer__bottom ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; }
+  .site-footer__bottom a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255, 255, 255, 0.3); }
+  .site-footer__bottom a:hover { color: #fff; }
+
   @media (min-width: 768px) {
-    .site-footer__grid { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
+    .site-footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .site-footer__facts { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.75rem; }
+  }
+  @media (min-width: 1040px) {
+    .site-footer__grid { grid-template-columns: 1.2fr 0.9fr 0.9fr 1.3fr; gap: 3rem; }
   }
 </style>

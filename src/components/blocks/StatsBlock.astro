@@ -1,52 +1,78 @@
 ---
+import { stegaClean } from '@sanity/client/stega'
 import type { BlockOf } from '@cms/lib/types'
-import Section from '@components/ui/Section.astro'
 
 interface Props {
   block: BlockOf<'statsBlock'>
   'data-sanity'?: string
 }
 
+/**
+ * Trust band: one calm panel of key facts. Right after the home hero it lifts up over the
+ * hero's wave edge. No colored borders or per-item colors (Mark's rule, 2026-11-04).
+ */
 const { block, 'data-sanity': dataSanity } = Astro.props
-const palette = ['coral', 'sage', 'sunshine', 'sky']
+const items = block.items ?? []
 ---
 
-<Section anchorId={block.anchorId} background={block.background} class="section--tight" data-sanity={dataSanity}>
-  {block.heading && <h2 class="visually-hidden">{block.heading}</h2>}
-  <ul class="trust-strip">
-    {
-      block.items?.map((item, i) => (
-        <li class={`accent-${palette[i % palette.length]}`}>
-          <strong>{item.value}</strong>
-          <span>{item.label}</span>
-        </li>
-      ))
-    }
-  </ul>
-</Section>
+<section
+  id={stegaClean(block.anchorId) || undefined}
+  class:list={['section section--tight trust-band', `bg-${stegaClean(block.background) || 'default'}`]}
+  data-sanity={dataSanity}
+>
+  <div class="container">
+    {block.heading && <h2 class="visually-hidden">{block.heading}</h2>}
+    <ul class="trust-band__panel" style={`--count:${items.length}`}>
+      {
+        items.map((item) => (
+          <li class="trust-band__item">
+            <strong>{item.value}</strong>
+            <span>{item.label}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
 
 <style>
-  .trust-strip {
+  .trust-band__panel {
     list-style: none;
     display: grid;
-    gap: 0.9rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .trust-strip li:last-child:nth-child(odd) { grid-column: 1 / -1; }
-  @media (min-width: 900px) {
-    .trust-strip { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-    .trust-strip li:last-child:nth-child(odd) { grid-column: auto; }
-  }
-  @media (max-width: 480px) { .trust-strip li { padding: 1rem; } .trust-strip strong { font-size: 1.2rem; white-space: nowrap; } .trust-strip span { font-size: 0.88rem; } }
-  .trust-strip li {
-    display: grid;
-    gap: 0.2rem;
-    padding: 1.2rem 1.4rem;
+    gap: 1.6rem 1.25rem;
+    padding: 1.75rem 1.5rem;
     border-radius: var(--radius-xl);
     background: var(--white);
-    border-bottom: 5px solid var(--accent);
-    box-shadow: var(--shadow-card);
+    box-shadow: 0 2px 6px rgba(51, 67, 80, 0.05), 0 22px 50px rgba(51, 67, 80, 0.11);
   }
-  .trust-strip strong { font-family: var(--font-display); font-weight: 600; font-size: 1.7rem; line-height: 1.1; color: var(--accent-700); }
-  .trust-strip span { font-weight: 600; color: var(--fg2); }
+  .trust-band__item { display: grid; gap: 0.3rem; align-content: start; }
+  .trust-band__item strong {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(1.3rem, 2.2vw, 1.65rem);
+    line-height: 1.1;
+    color: var(--navy);
+    white-space: nowrap;
+  }
+  .trust-band__item span { font-size: 0.92rem; line-height: 1.4; color: var(--fg2); }
+  .trust-band__item:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+  @media (min-width: 900px) {
+    .trust-band__panel {
+      grid-template-columns: repeat(var(--count, 4), minmax(0, 1fr));
+      gap: 2rem;
+      padding: 2rem 2.5rem;
+    }
+    .trust-band__item:last-child:nth-child(odd) { grid-column: auto; }
+  }
+
+  /* Directly under the home hero: lift the panel over the wave. */
+  :global(.hero--photoFade) + .trust-band {
+    position: relative;
+    z-index: 4;
+    margin-top: -3.75rem;
+    padding-top: 0;
+    background: transparent;
+  }
 </style>

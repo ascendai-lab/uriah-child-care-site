@@ -19,26 +19,28 @@ const { review, maxLength = 420 } = Astro.props
 const quote = review.quote ?? ''
 const trimmed = quote.length > maxLength ? `${quote.slice(0, quote.lastIndexOf(' ', maxLength))}…` : quote
 const url = stegaClean(review.reviewUrl)
+const name = stegaClean(review.name) ?? ''
+const initial = name.trim().charAt(0).toUpperCase()
+const tones = ['coral', 'sage', 'sunshine', 'sky']
+const tone = tones[[...name].reduce((n, c) => n + c.charCodeAt(0), 0) % tones.length]
+const source = review.source ?? 'Google'
 ---
 
 <figure class="card review-card">
   {review.rating ? <Stars rating={review.rating} /> : null}
-  <blockquote>“{trimmed}”</blockquote>
-  <footer>
-    <figcaption>
+  <blockquote>{trimmed}</blockquote>
+  <figcaption class="review-card__by">
+    <span class={`review-card__avatar accent-${tone}`} aria-hidden="true">{initial}</span>
+    <span class="review-card__who">
       <cite>{review.name}</cite>
-      {review.context && <span class="review-card__source"> · {review.context}</span>}
-    </figcaption>
-    {
-      url ? (
-        <span class="review-card__source">
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            {review.source ?? 'Google'} review
-          </a>
-        </span>
-      ) : (
-        review.source && <span class="review-card__source">{review.source} review</span>
-      )
-    }
-  </footer>
+      <span class="review-card__source">
+        {review.context ? `${review.context} · ` : ''}
+        {url ? (
+          <a href={url} target="_blank" rel="noopener noreferrer">{source} review</a>
+        ) : (
+          `${source} review`
+        )}
+      </span>
+    </span>
+  </figcaption>
 </figure>

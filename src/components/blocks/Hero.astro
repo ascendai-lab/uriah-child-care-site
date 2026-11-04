@@ -5,7 +5,6 @@ import Button from '@components/ui/Button.astro'
 import SanityImage from '@components/ui/SanityImage.astro'
 import PhoneLink from '@components/ui/PhoneLink.astro'
 import Stars from '@components/ui/Stars.astro'
-import Doodle from '@components/ui/Doodle.astro'
 import Icon from '@components/ui/Icon.astro'
 
 interface Props {
@@ -52,7 +51,7 @@ const buttons = block.buttons ?? []
   }
 
   <div class="container hero__inner">
-    <div class="hero__content">
+    <div class="hero__content enter">
       {
         block.showRating && (
           <a class="hero__rating" href={reviewsHref} target={reviewsHref.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">
@@ -89,15 +88,11 @@ const buttons = block.buttons ?? []
           <div class={`shape shape--${layout === 'card' ? 'arch' : 'blob'}`}>
             <SanityImage image={block.image} width={640} sizes="(min-width: 900px) 480px, 90vw" loading="eager" fetchpriority="high" />
           </div>
-          <Doodle type="star" color="sunshine" size={46} style="top:4%;left:-4%" />
-          <Doodle type="heart" color="coral" size={38} style="bottom:6%;right:-2%" />
-          <Doodle type="loop" color="sky" size={70} style="bottom:-6%;left:8%" />
         </div>
       )
     }
   </div>
 
-  {layout === 'photoFade' && <Doodle type="sparkles" color="sunshine" size={64} class="hero-fade__doodle" />}
 </section>
 
 <style>
@@ -137,7 +132,7 @@ const buttons = block.buttons ?? []
     min-height: min(84vh, 720px);
     display: flex;
     align-items: center;
-    padding-block: 4rem 4.5rem;
+    padding-block: 4rem 7.5rem;
   }
   .hero-fade__media { position: absolute; inset: 0; }
   .hero-fade__media :global(img) { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
@@ -154,8 +149,7 @@ const buttons = block.buttons ?? []
   .hero--photoFade .hero__sub { color: rgba(255, 255, 255, 0.9); }
   .hero--photoFade :global(.phone-link) { color: #fff; }
   .hero--photoFade :global(.btn--outline) { color: #fff; }
-  .hero--photoFade .eyebrow { background: rgba(255, 255, 255, 0.14); color: #fff; box-shadow: none; }
-  :global(.hero-fade__doodle) { right: 6%; top: 12%; left: auto; z-index: 2; }
+  .hero--photoFade .eyebrow { color: var(--sunshine); }
   .hero--photoFade::after {
     /* soft wave into the next section */
     content: '';
@@ -172,12 +166,11 @@ const buttons = block.buttons ?? []
 
   @media (max-width: 899px) {
     /* Phones: the photo sits as a band on top and fades down into the navy text panel. */
-    .hero--photoFade { min-height: 0; padding-block: 14.5rem 4rem; }
+    .hero--photoFade { min-height: 0; padding-block: 14.5rem 6.5rem; }
     .hero-fade__media { inset: 0 0 auto 0; height: 19rem; }
     .hero-fade__media::after {
       background: linear-gradient(180deg, rgba(51, 67, 80, 0.05) 0%, rgba(51, 67, 80, 0.35) 50%, var(--navy) 100%);
     }
-    :global(.hero-fade__doodle) { display: none; }
   }
 
   @media (min-width: 900px) {

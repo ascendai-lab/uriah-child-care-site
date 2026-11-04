@@ -225,6 +225,7 @@ const structuredData = [...structuredJsonLd, ...jsonLd].filter(Boolean)
       )
     }
     <VisualEditing enabled={draftMode} zIndex={1000} />
+    {!draftMode && <script>import '@/scripts/reveal'</script>}
   </body>
 </html>
 

@@ -2,7 +2,6 @@
 import type { Layout } from '@cms/lib/types'
 import SanityImage from '@components/ui/SanityImage.astro'
 import Icon from '@components/ui/Icon.astro'
-import Doodle from '@components/ui/Doodle.astro'
 import TourForm from '@components/ui/TourForm'
 
 interface Props {
@@ -27,8 +26,6 @@ const reassurance = [
 <section class:list={['section tour-block', asPageForm && 'tour-block--page']} id={id} aria-labelledby={`${id}-heading`}>
   <div class="container">
     <div class="tour-block__card">
-      <Doodle type="sun" color="sunshine" size={64} style="top:-22px;right:8%" />
-      <Doodle type="squiggle" color="sky" size={70} style="bottom:28px;left:-18px" />
       <div class="tour-block__aside">
         <span class="eyebrow"><Icon name="calendar" /> Book a tour</span>
         <h2 id={`${id}-heading`} class="section-heading">{heading ?? 'Come see our Vineland center'}</h2>
