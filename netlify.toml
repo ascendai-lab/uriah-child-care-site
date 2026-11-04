@@ -3,23 +3,264 @@
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "22"
 
 # ─── Security Headers ───────────────────────────────────────────────────────
 # IMPORTANT: The Content-Security-Policy frame-ancestors directive is what
-# allows Sanity Studio to embed this site in an iframe for visual editing.
-# Without this, you'll get the "Refused to display in a frame" error.
+# allows Sanity Studio (embedded at /studio or hosted on *.sanity.studio) to
+# show this site in its Presentation iframe for visual editing.
+# Do NOT add X-Frame-Options: DENY — it overrides this and breaks visual editing.
 [[headers]]
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
-    X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     Content-Security-Policy = "frame-ancestors 'self' https://*.sanity.studio https://sanity.studio"
 
-# ─── Netlify Functions (SSR) ─────────────────────────────────────────────────
+# Astro's Netlify adapter routes /api/* and every page to its SSR function
+# automatically. No manual redirects needed.
+
+# ─── 301s from the old WordPress site ───────────────────────────────────────
+# Keeps the link equity the old pages built up (map from the website strategy doc).
+# Each old URL is listed with and without its trailing slash.
+# More redirects can be added in the Studio (Redirects) without a deploy.
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+  from = "/daycare-vineland-nj"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/daycare-vineland-nj/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/daycare-services-millville"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/daycare-services-millville/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uriah-child-care-service-areas"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uriah-child-care-service-areas/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/daycare-millville-nj"
+  to = "/millville-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/daycare-millville-nj/"
+  to = "/millville-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/daycare-bridgeton-nj"
+  to = "/bridgeton-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/daycare-bridgeton-nj/"
+  to = "/bridgeton-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/before-and-after-school-care-millville-nj"
+  to = "/after-school-program-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/before-and-after-school-care-millville-nj/"
+  to = "/after-school-program-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/daycare-curriculum"
+  to = "/play-based-learning-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/daycare-curriculum/"
+  to = "/play-based-learning-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/view-our-facility"
+  to = "/our-center/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/view-our-facility/"
+  to = "/our-center/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about"
+  to = "/about-ms-paulette/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about/"
+  to = "/about-ms-paulette/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/tour/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact/"
+  to = "/tour/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/post-card-landing-page"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/post-card-landing-page/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/thank-you-post-card-landing"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/thank-you-post-card-landing/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/coming-soon"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/coming-soon/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/test"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/test/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/style-guide"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/style-guide/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/a-new-chapter-begins-for-uriah-child-care"
+  to = "/our-center/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/a-new-chapter-begins-for-uriah-child-care/"
+  to = "/our-center/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uriah-childcare-center-participates-in-the-child-and-adult-care-food-program-cacfp"
+  to = "/daycare-meals-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/uriah-childcare-center-participates-in-the-child-and-adult-care-food-program-cacfp/"
+  to = "/daycare-meals-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-help-your-child-succeed-in-school-this-year-2023"
+  to = "/kindergarten-readiness-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-help-your-child-succeed-in-school-this-year-2023/"
+  to = "/kindergarten-readiness-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-protect-your-childs-mental-health"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-protect-your-childs-mental-health/"
+  to = "/"
+  status = 301
+  force = true

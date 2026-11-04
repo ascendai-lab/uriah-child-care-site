@@ -1,0 +1,45 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+import BaseLayout from '@layouts/BaseLayout.astro'
+import DetailHeader from '@components/layout/DetailHeader.astro'
+import PortableText from '@components/ui/PortableText'
+import { loadQuery } from '@cms/lib/load'
+import { urlFor } from '@cms/lib/image'
+import { layoutQuery, blogPostQuery } from '@cms/queries'
+import { formatDate } from '@/lib/format'
+
+const slug = Astro.params.slug!
+const { draftMode } = Astro.locals
+const [layout, post] = await Promise.all([loadQuery(draftMode, layoutQuery), loadQuery(draftMode, blogPostQuery, { slug })])
+if (!post) return Astro.rewrite('/404')
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: stegaClean(post.title),
+  description: stegaClean(post.excerpt) || undefined,
+  datePublished: stegaClean(post.publishedAt) || undefined,
+  dateModified: post._updatedAt,
+  image: post.image?.asset ? urlFor(post.image as Parameters<typeof urlFor>[0]).width(1200).url() : undefined,
+  author: post.author?.name ? { '@type': 'Person', name: stegaClean(post.author.name) } : undefined,
+  publisher: { '@type': 'Organization', name: stegaClean(layout.settings?.siteName) },
+}
+const meta = [post.publishedAt && formatDate(post.publishedAt), post.author?.name && `by ${post.author.name}`].filter(Boolean).join(' · ')
+---
+
+<BaseLayout
+  layout={layout}
+  title={post.title}
+  seo={post.seo}
+  description={post.excerpt}
+  image={post.image}
+  type="article"
+  publishedAt={post.publishedAt}
+  modifiedAt={post._updatedAt}
+  jsonLd={[jsonLd]}
+>
+  <article>
+    <DetailHeader title={post.title} intro={meta} image={post.image} backHref="/blog" backLabel="All posts" />
+    <section class="section"><div class="container"><PortableText value={post.body} className="prose detail-body" /></div></section>
+  </article>
+</BaseLayout>

@@ -1,0 +1,37 @@
+---
+import type { BlockOf, SiteSettings } from '@cms/lib/types'
+import Section from '@components/ui/Section.astro'
+import SectionHeader from '@components/ui/SectionHeader.astro'
+import { factRows } from '@/lib/facts'
+
+interface Props {
+  block: BlockOf<'factTableBlock'>
+  settings?: SiteSettings | null
+  'data-sanity'?: string
+}
+
+const { block, settings, 'data-sanity': dataSanity } = Astro.props
+const rows = [...factRows(settings), ...(block.extraRows ?? []).map((r) => ({ label: r.label ?? '', value: r.value ?? '' }))]
+---
+
+<Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
+  <div class="fact-block">
+    <SectionHeader heading={block.heading} intro={block.intro} />
+    <table class="fact-table">
+      <tbody>
+        {
+          rows.map((r) => (
+            <tr>
+              <th scope="row">{r.label}</th>
+              <td>{r.value}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</Section>
+
+<style>
+  .fact-block { max-width: 52rem; margin-inline: auto; }
+</style>

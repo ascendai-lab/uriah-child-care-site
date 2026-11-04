@@ -1,0 +1,109 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+import type { BlockOf } from '@cms/lib/types'
+import { resolveLink } from '@cms/lib/links'
+import Section from '@components/ui/Section.astro'
+import SectionHeader from '@components/ui/SectionHeader.astro'
+import SanityImage from '@components/ui/SanityImage.astro'
+import Icon from '@components/ui/Icon.astro'
+import Doodle from '@components/ui/Doodle.astro'
+import Button from '@components/ui/Button.astro'
+
+interface Props {
+  block: BlockOf<'featureGrid'>
+  'data-sanity'?: string
+}
+
+const { block, 'data-sanity': dataSanity } = Astro.props
+const style = stegaClean(block.style) || 'cards'
+const columns = Number(stegaClean(block.columns)) || 3
+const shape = stegaClean(block.imageShape) || 'circle'
+const palette = ['coral', 'sage', 'sunshine', 'sky']
+---
+
+<Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
+  {
+    style === 'checklist' ? (
+      <div class="checklist-split">
+        <div class="checklist-split__media accent-sage">
+          {block.image?.asset && (
+            <div class={`shape shape--${shape}`}>
+              <SanityImage image={block.image} width={560} sizes="(min-width: 900px) 440px, 90vw" />
+            </div>
+          )}
+          <Doodle type="heart" color="coral" size={44} style="top:2%;left:4%" />
+          <Doodle type="sparkles" color="sunshine" size={56} style="bottom:4%;right:0" />
+        </div>
+        <div>
+          <SectionHeader heading={block.heading} intro={block.intro} />
+          <ul class="checklist">
+            {block.items?.map((item) => {
+              const link = resolveLink(item.link)
+              return (
+                <li>
+                  <span class="checklist__icon"><Icon name="check" /></span>
+                  <span>
+                    {link ? <a href={link.href} class="text-link">{item.title}</a> : item.title}
+                    {item.description && <span class="checklist__desc">{item.description}</span>}
+                  </span>
+                </li>
+              )
+            })}
+          </ul>
+          {block.buttons?.length ? <div class="btn-row" style="margin-top:1.75rem">{block.buttons.map((b) => <Button button={b} />)}</div> : null}
+        </div>
+      </div>
+    ) : (
+      <>
+        <SectionHeader heading={block.heading} intro={block.intro} align="center" />
+        <div class={`grid-cards grid-cards--${columns}`}>
+          {block.items?.map((item, i) => {
+            const link = resolveLink(item.link)
+            const Tag = link ? 'a' : 'div'
+            return (
+              <Tag href={link?.href} class:list={['feature-card', `accent-${palette[i % palette.length]}`]}>
+                {item.image?.asset && (
+                  <div class="feature-card__icon">
+                    <SanityImage image={item.image} width={96} aspectRatio={1} sizes="64px" />
+                  </div>
+                )}
+                <h3>{item.title}</h3>
+                {item.description && <p>{item.description}</p>}
+                {link && (
+                  <span class="program-card__more">
+                    Learn more <Icon name="arrow" />
+                  </span>
+                )}
+              </Tag>
+            )
+          })}
+        </div>
+      </>
+    )
+  }
+</Section>
+
+<style>
+  .checklist-split { display: grid; gap: 2.5rem; align-items: center; }
+  .checklist-split__media { position: relative; max-width: 440px; width: 100%; justify-self: center; }
+  .checklist-split .checklist li > span:last-child { display: grid; gap: 0.15rem; }
+  .checklist__desc { font-weight: 500; color: var(--fg2); font-size: 0.95rem; }
+  .checklist-split .checklist li { border-radius: var(--radius-lg); }
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.6rem;
+    border-radius: var(--radius-xl);
+    background: var(--accent-50);
+    border: 2px solid transparent;
+    transition: border-color 180ms ease-out, transform 180ms ease-out;
+  }
+  a.feature-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .feature-card h3 { font-size: 1.3rem; }
+  .feature-card p { color: var(--fg2); }
+  .feature-card__icon { width: 64px; height: 64px; border-radius: 50%; overflow: hidden; background: var(--accent); }
+  @media (min-width: 900px) {
+    .checklist-split { grid-template-columns: 0.85fr 1.15fr; gap: 4rem; }
+  }
+</style>

@@ -1,0 +1,76 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+import type { BlockOf, SiteSettings } from '@cms/lib/types'
+import { telHref } from '@cms/lib/links'
+import Section from '@components/ui/Section.astro'
+import SectionHeader from '@components/ui/SectionHeader.astro'
+import Icon from '@components/ui/Icon.astro'
+
+interface Props {
+  block: BlockOf<'mapBlock'>
+  settings?: SiteSettings | null
+  'data-sanity'?: string
+}
+
+const { block, settings, 'data-sanity': dataSanity } = Astro.props
+const name = stegaClean(settings?.siteName) || 'Uriah Child Care'
+const a = settings?.address
+const fullAddress = a?.street ? `${a.street}, ${a.city}, ${a.state} ${a.zip}` : ''
+const query = encodeURIComponent(`${name}, ${stegaClean(fullAddress)}`)
+const embed = stegaClean(settings?.gbpMapEmbedUrl) || `https://maps.google.com/maps?q=${query}&z=15&output=embed`
+const directions = `https://www.google.com/maps/dir/?api=1&destination=${query}`
+const listing = stegaClean(settings?.gbpUrl)
+---
+
+<Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
+  <div class="map-block">
+    <div class="map-block__info">
+      <SectionHeader heading={block.heading} intro={block.intro} />
+      <address class="map-block__nap">
+        <strong>{settings?.siteName}</strong>
+        {fullAddress && <span><Icon name="pin" /> {fullAddress}</span>}
+        {settings?.phone && <a href={telHref(settings.phone)} data-track="call_click"><Icon name="phone" /> {settings.phone}</a>}
+        {settings?.hoursSummary && <span><Icon name="clock" /> {settings.hoursSummary}</span>}
+      </address>
+      {block.notes && <p class="map-block__notes">{block.notes}</p>}
+      <div class="btn-row">
+        <a class="btn btn--secondary" href={directions} target="_blank" rel="noopener noreferrer" data-track="directions_click">
+          <Icon name="directions" /> Get directions
+        </a>
+        {listing && (
+          <a class="btn btn--light" href={listing} target="_blank" rel="noopener noreferrer">
+            View on Google
+          </a>
+        )}
+      </div>
+    </div>
+    <div class="map-block__map">
+      <iframe
+        src={embed}
+        title={`Map of ${name} at ${stegaClean(fullAddress)}`}
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</Section>
+
+<style>
+  .map-block { display: grid; gap: 2rem; align-items: center; }
+  .map-block__nap { display: grid; gap: 0.7rem; font-style: normal; font-size: 1.05rem; }
+  .map-block__nap strong { font-family: var(--font-display); font-size: 1.3rem; }
+  .map-block__nap span, .map-block__nap a { display: inline-flex; gap: 0.6rem; align-items: flex-start; }
+  .map-block__nap :global(svg) { flex: none; margin-top: 0.2rem; color: var(--coral-700); }
+  .map-block__notes { margin-top: 1rem; color: var(--fg2); }
+  .map-block__map {
+    position: relative;
+    min-height: 340px;
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    border: 6px solid var(--white);
+    box-shadow: var(--shadow-card-hover);
+    background: var(--sky-50);
+  }
+  .map-block__map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  @media (min-width: 900px) { .map-block { grid-template-columns: 1fr 1.2fr; gap: 3.5rem; } .map-block__map { min-height: 420px; } }
+</style>

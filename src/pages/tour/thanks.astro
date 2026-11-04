@@ -1,0 +1,39 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+import BaseLayout from '@layouts/BaseLayout.astro'
+import { loadQuery } from '@cms/lib/load'
+import { layoutQuery } from '@cms/queries'
+import PhoneLink from '@components/ui/PhoneLink.astro'
+import Doodle from '@components/ui/Doodle.astro'
+import Icon from '@components/ui/Icon.astro'
+
+const layout = await loadQuery(Astro.locals.draftMode, layoutQuery)
+const s = layout.settings
+const a = s?.address
+const query = encodeURIComponent(`${stegaClean(s?.siteName) ?? ''}, ${a?.street ?? ''}, ${a?.city ?? ''}, ${a?.state ?? ''} ${a?.zip ?? ''}`)
+---
+
+<BaseLayout layout={layout} title="Thank you" seo={{ noIndex: true }} hideTourBlock>
+  <section class="section">
+    <div class="container thanks">
+      <Doodle type="sun" color="sunshine" size={72} style="top:-10px;right:12%" />
+      <Doodle type="heart" color="coral" size={44} style="bottom:20px;left:10%" />
+      <span class="eyebrow"><Icon name="heart" /> Tour request sent</span>
+      <h1 class="page-title">Thank you</h1>
+      <p class="section-intro">Ms. Paulette will call you within one business day to pick a time.</p>
+      <div class="btn-row">
+        <a class="btn btn--secondary btn--lg" href={`https://www.google.com/maps/dir/?api=1&destination=${query}`} target="_blank" rel="noopener noreferrer">
+          <Icon name="directions" /> Get directions
+        </a>
+        <PhoneLink phone={s?.phone} note="Can't wait? Call us" />
+      </div>
+      {a?.street && <p class="thanks__address">{s?.siteName} · {a.street}, {a.city}, {a.state} {a.zip}</p>}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .thanks { position: relative; max-width: 44rem; text-align: center; padding-block: 2rem; }
+  .thanks .btn-row { justify-content: center; }
+  .thanks__address { margin-top: 2rem; color: var(--fg2); font-weight: 600; }
+</style>

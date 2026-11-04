@@ -1,0 +1,15 @@
+---
+import Icon from './Icon.astro'
+interface Props {
+  rating?: number
+}
+const rating = Math.round(Astro.props.rating ?? 5)
+---
+
+<span class="stars" role="img" aria-label={`${rating} out of 5 stars`}>
+  {Array.from({ length: 5 }, (_, i) => <Icon name="star" class={i < rating ? undefined : 'star--off'} />)}
+</span>
+
+<style>
+  .stars :global(.star--off) { opacity: 0.25; }
+</style>

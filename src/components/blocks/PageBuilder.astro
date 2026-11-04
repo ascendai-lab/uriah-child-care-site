@@ -1,0 +1,80 @@
+---
+import type { Layout, PageBuilderBlock } from '@cms/lib/types'
+import { editAttr, type EditableDocument } from '@cms/lib/visualEditing'
+import Hero from './Hero.astro'
+import TextBlock from './TextBlock.astro'
+import ImageText from './ImageText.astro'
+import FeatureGrid from './FeatureGrid.astro'
+import StatsBlock from './StatsBlock.astro'
+import ServicesBlock from './ServicesBlock.astro'
+import ServiceAreasBlock from './ServiceAreasBlock.astro'
+import TestimonialsBlock from './TestimonialsBlock.astro'
+import FaqBlock from './FaqBlock.astro'
+import TeamBlock from './TeamBlock.astro'
+import LatestPostsBlock from './LatestPostsBlock.astro'
+import CtaBlock from './CtaBlock.astro'
+import ContactFormBlock from './ContactFormBlock.astro'
+import VideoBlock from './VideoBlock.astro'
+import MapBlock from './MapBlock.astro'
+import FactTableBlock from './FactTableBlock.astro'
+import GalleryBlock from './GalleryBlock.astro'
+
+interface Props {
+  blocks: PageBuilderBlock[] | null | undefined
+  /** The document the sections belong to, so visual editing knows what to edit. */
+  document: EditableDocument | null | undefined
+  layout: Layout
+  /** True when the page has no other <h1>, so the first hero becomes it. */
+  firstHeroIsH1?: boolean
+}
+
+const { blocks, document, layout, firstHeroIsH1 = true } = Astro.props
+const settings = layout.settings
+const { draftMode } = Astro.locals
+---
+
+<div data-sanity={editAttr(draftMode, document, 'pageBuilder')}>
+  {
+    blocks?.map((block, index) => {
+      const attr = editAttr(draftMode, document, `pageBuilder[_key=="${block._key}"]`)
+      switch (block._type) {
+        case 'hero':
+          return <Hero block={block} settings={settings} isFirst={firstHeroIsH1 && index === 0} data-sanity={attr} />
+        case 'textBlock':
+          return <TextBlock block={block} data-sanity={attr} />
+        case 'imageText':
+          return <ImageText block={block} data-sanity={attr} />
+        case 'featureGrid':
+          return <FeatureGrid block={block} data-sanity={attr} />
+        case 'statsBlock':
+          return <StatsBlock block={block} data-sanity={attr} />
+        case 'servicesBlock':
+          return <ServicesBlock block={block} data-sanity={attr} />
+        case 'serviceAreasBlock':
+          return <ServiceAreasBlock block={block} data-sanity={attr} />
+        case 'testimonialsBlock':
+          return <TestimonialsBlock block={block} settings={settings} data-sanity={attr} />
+        case 'faqBlock':
+          return <FaqBlock block={block} data-sanity={attr} />
+        case 'teamBlock':
+          return <TeamBlock block={block} data-sanity={attr} />
+        case 'latestPostsBlock':
+          return <LatestPostsBlock block={block} data-sanity={attr} />
+        case 'ctaBlock':
+          return <CtaBlock block={block} data-sanity={attr} />
+        case 'contactFormBlock':
+          return <ContactFormBlock block={block} layout={layout} data-sanity={attr} />
+        case 'videoBlock':
+          return <VideoBlock block={block} data-sanity={attr} />
+        case 'mapBlock':
+          return <MapBlock block={block} settings={settings} data-sanity={attr} />
+        case 'factTableBlock':
+          return <FactTableBlock block={block} settings={settings} data-sanity={attr} />
+        case 'galleryBlock':
+          return <GalleryBlock block={block} data-sanity={attr} />
+        default:
+          return null
+      }
+    })
+  }
+</div>

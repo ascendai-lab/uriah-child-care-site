@@ -1,0 +1,32 @@
+---
+import SanityImage, { type SanityImageValue } from '@components/ui/SanityImage.astro'
+
+interface Props {
+  title: string | null
+  intro?: string | null
+  image?: SanityImageValue | null
+  backHref?: string
+  backLabel?: string
+}
+
+const { title, intro, image, backHref, backLabel } = Astro.props
+---
+
+<header class="section bg-muted detail-header">
+  <div class="container detail-header__inner">
+    <div>
+      {backHref && <a href={backHref} class="detail-header__back">← {backLabel}</a>}
+      <h1 class="section-heading">{title}</h1>
+      {intro && <p class="section-intro">{intro}</p>}
+    </div>
+    {image?.asset && <SanityImage image={image} width={640} aspectRatio={4 / 3} loading="eager" fetchpriority="high" />}
+  </div>
+</header>
+
+<style>
+  .detail-header__inner { display: grid; gap: 2.5rem; align-items: center; }
+  .detail-header__inner :global(img) { width: 100%; border-radius: var(--radius-2xl); }
+  .detail-header__back { display: inline-block; margin-bottom: 1rem; font-weight: 600; color: var(--color-brand); }
+  @media (min-width: 768px) { .detail-header__inner { grid-template-columns: 3fr 2fr; } }
+  :global(.detail-body) { max-width: 46rem; margin-inline: auto; }
+</style>

@@ -1,78 +1,128 @@
 ---
+import { stegaClean } from '@sanity/client/stega'
 import BaseLayout from '@layouts/BaseLayout.astro'
-import PortableText from '@components/ui/PortableText'
-import { getClient } from '@cms/client'
-import { pageBySlugQuery } from '@cms/queries'
+import PageBuilder from '@components/blocks/PageBuilder.astro'
+import CorePage from '@components/templates/CorePage.astro'
+import { loadQuery } from '@cms/lib/load'
+import { layoutQuery, routeQuery } from '@cms/queries'
+import { hrefFor } from '@cms/routes'
+import { faqEntity, personEntity, serviceEntity } from '@/lib/schema'
+import type { Crumb } from '@components/ui/Breadcrumbs.astro'
 
-const { slug } = Astro.params
+const slug = Astro.params.slug?.replace(/\/+$/, '')
+if (!slug) return Astro.rewrite('/404')
 
-// Don't let the catch-all handle API routes
-if (slug?.startsWith('api/')) {
-  return new Response('Not Found', { status: 404 })
+const { draftMode } = Astro.locals
+const [layout, doc] = await Promise.all([loadQuery(draftMode, layoutQuery), loadQuery(draftMode, routeQuery, { slug })])
+if (!doc) return Astro.rewrite('/404')
+
+const site = Astro.site ?? new URL(Astro.url.origin)
+const url = new URL(hrefFor(doc._type, doc.slug) ?? Astro.url.pathname, site).href
+const label = (p: { shortTitle?: string | null; title?: string | null }) => stegaClean(p.shortTitle || p.title) || ''
+
+const crumbs: Crumb[] = [{ label: 'Home', href: '/' }]
+if (doc.parent) crumbs.push({ label: label(doc.parent), href: hrefFor(doc.parent._type, doc.parent.slug) ?? '/' })
+crumbs.push({ label: label(doc), href: hrefFor(doc._type, doc.slug) ?? Astro.url.pathname })
+
+const isCore = doc._type !== 'page'
+const blocks = doc.pageBuilder ?? []
+const startsWithHero = blocks[0]?._type === 'hero'
+const hasTourForm = blocks.some((b) => b._type === 'contactFormBlock')
+
+/* Page-specific schema */
+const jsonLd: (Record<string, unknown> | null)[] = []
+if (doc._type === 'category' || doc._type === 'service') {
+  jsonLd.push(
+    serviceEntity({
+      site,
+      url,
+      name: stegaClean(doc.title) ?? '',
+      serviceType: doc.gbpName,
+      description: doc.intro,
+      settings: layout.settings,
+      areas: layout.cities ?? [],
+    }),
+  )
 }
+const pageFaqs = [
+  ...(doc.faqs ?? []).map((f) => ({ question: f.question, answer: f.answer })),
+]
+jsonLd.push(faqEntity(pageFaqs))
 
-const isPreview = Astro.cookies.has('sanity-preview-secret')
-const client    = getClient(isPreview)
-
-const page = await client.fetch(pageBySlugQuery, { slug })
-
-// 404 if no page found in Sanity
-if (!page) {
-  return Astro.redirect('/404')
+const teamBlock = blocks.find((b) => b._type === 'teamBlock')
+if (teamBlock && 'items' in teamBlock) {
+  for (const member of teamBlock.items ?? []) jsonLd.push(personEntity(site, member))
+}
+const faqBlock = blocks.find((b) => b._type === 'faqBlock')
+if (faqBlock && 'items' in faqBlock) {
+  jsonLd.push(
+    faqEntity(
+      (faqBlock.items ?? []).map((f) => ({
+        question: f.question,
+        answer: (f.answer ?? [])
+          .map((b) => ('children' in b && Array.isArray(b.children) ? b.children.map((c) => ('text' in c ? c.text : '')).join('') : ''))
+          .join('\n\n'),
+      })),
+    ),
+  )
+}
+const gallery = blocks.find((b) => b._type === 'galleryBlock')
+const pageType =
+  doc.slug === 'tour'
+    ? 'ContactPage'
+    : doc.slug?.startsWith('about')
+      ? 'AboutPage'
+      : faqBlock
+        ? 'FAQPage'
+        : gallery
+          ? 'CollectionPage'
+          : 'WebPage'
+if (doc.slug === 'tour') {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'ReserveAction',
+    target: { '@type': 'EntryPoint', urlTemplate: `${url}#tour-form`, actionPlatform: ['https://schema.org/DesktopWebPlatform', 'https://schema.org/MobileWebPlatform'] },
+    result: { '@type': 'Reservation', name: 'Child care center tour' },
+    agent: { '@id': new URL('/#childcare', site).href },
+  })
+}
+if (gallery) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'ImageGallery',
+    name: stegaClean(doc.title),
+    about: { '@id': new URL('/#childcare', site).href },
+  })
 }
 ---
 
 <BaseLayout
-  title={page.seo?.metaTitle ?? page.title}
-  description={page.seo?.metaDescription}
-  ogImage={page.seo?.ogImage?.asset?.url}
-  noIndex={page.seo?.noIndex}
+  layout={layout}
+  title={doc.title}
+  seo={doc.seo}
+  description={doc.excerpt || doc.intro}
+  image={doc.image}
+  breadcrumbs={crumbs}
+  pageType={pageType}
+  modifiedAt={doc.lastReviewed ?? doc._updatedAt}
+  jsonLd={jsonLd}
+  hideTourBlock={hasTourForm}
+  forceNoIndex={Boolean(doc.needsConfirmation)}
 >
-
-  <!-- Page Hero -->
-  {(page.heroHeadline || page.heroSubheadline) && (
-    <section class="page-hero section">
-      <div class="container page-hero-inner">
-        {page.heroHeadline    && <h1 class="page-hero-headline">{page.heroHeadline}</h1>}
-        {page.heroSubheadline && <p  class="page-hero-sub">{page.heroSubheadline}</p>}
-      </div>
-    </section>
-  )}
-
-  <!-- Page Body -->
-  {page.body && (
-    <section class="page-body section">
-      <div class="container page-body-inner">
-        <PortableText value={page.body} client:load />
-      </div>
-    </section>
-  )}
-
+  {
+    isCore ? (
+      <CorePage doc={doc} layout={layout} />
+    ) : (
+      <>
+        {!startsWithHero && (
+          <header class="section section--tight">
+            <div class="container">
+              <h1 class="page-title">{doc.title}</h1>
+            </div>
+          </header>
+        )}
+        <PageBuilder blocks={blocks} document={doc} layout={layout} firstHeroIsH1={startsWithHero} />
+      </>
+    )
+  }
 </BaseLayout>
-
-<style>
-  .page-hero {
-    background: var(--color-bg-muted);
-    padding-block: 4rem;
-  }
-
-  .page-hero-inner { max-width: 64ch; }
-
-  .page-hero-headline {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 800;
-    color: var(--color-text);
-    letter-spacing: -0.02em;
-  }
-
-  .page-hero-sub {
-    margin-top: 1rem;
-    font-size: 1.125rem;
-    color: var(--color-text-muted);
-    line-height: 1.6;
-  }
-
-  .page-body-inner {
-    max-width: 72ch;
-  }
-</style>

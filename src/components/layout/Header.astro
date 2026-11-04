@@ -1,0 +1,283 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+import type { Layout } from '@cms/lib/types'
+import { resolveLink, telHref } from '@cms/lib/links'
+import { editAttr } from '@cms/lib/visualEditing'
+import { urlFor } from '@cms/lib/image'
+import Button from '@components/ui/Button.astro'
+import Icon from '@components/ui/Icon.astro'
+
+interface Props {
+  layout: Layout
+}
+
+const { layout } = Astro.props
+const { settings, navigation } = layout
+const { draftMode } = Astro.locals
+const norm = (href: string) => href.replace(/\/+$/, '') || '/'
+const currentPath = norm(Astro.url.pathname)
+const announcement = settings?.announcement
+const announcementLink = resolveLink(announcement?.link)
+const isCurrent = (href: string | undefined) => href !== undefined && norm(href) === currentPath
+const siteName = stegaClean(settings?.siteName) || 'Uriah Child Care'
+const logoSrc = settings?.logo?.asset ? urlFor(settings.logo as Parameters<typeof urlFor>[0]).width(440).url() : '/brand/uriah-logo.svg'
+const phone = settings?.phone
+---
+
+{
+  announcement?.enabled && announcement.text && (
+    <div class="announcement">
+      {announcementLink ? (
+        <a href={announcementLink.href} target={announcementLink.target} rel={announcementLink.rel}>
+          {announcement.text}
+        </a>
+      ) : (
+        <span>{announcement.text}</span>
+      )}
+    </div>
+  )
+}
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/" class="site-header__logo">
+      <img src={logoSrc} alt={`${siteName} home`} width="200" height="114" />
+    </a>
+
+    <nav aria-label="Main" class="site-nav" id="site-nav" data-sanity={editAttr(draftMode, { _id: 'navigation', _type: 'navigation' }, 'headerLinks')}>
+      <ul class="site-nav__list">
+        {
+          navigation?.headerLinks?.map((item) => {
+            const link = resolveLink(item.link)
+            const children = item.children?.filter((child) => resolveLink(child.link)) ?? []
+            if (children.length) {
+              const open = children.some((c) => isCurrent(resolveLink(c.link)?.href)) || isCurrent(link?.href)
+              return (
+                <li class="site-nav__item">
+                  <details class="site-nav__dropdown">
+                    <summary class:list={[open && 'is-active']}>
+                      {item.label}
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <path d="m6 9 6 6 6-6" />
+                      </svg>
+                    </summary>
+                    <ul>
+                      {link && (
+                        <li>
+                          <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>
+                            All {String(item.label).toLowerCase()}
+                          </a>
+                        </li>
+                      )}
+                      {children.map((child) => {
+                        const childLink = resolveLink(child.link)!
+                        return (
+                          <li>
+                            <a href={childLink.href} target={childLink.target} rel={childLink.rel} aria-current={isCurrent(childLink.href) ? 'page' : undefined}>
+                              {child.label}
+                            </a>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  </details>
+                </li>
+              )
+            }
+            return (
+              <li class="site-nav__item">
+                {link ? (
+                  <a href={link.href} target={link.target} rel={link.rel} aria-current={isCurrent(link.href) ? 'page' : undefined}>
+                    {item.label}
+                  </a>
+                ) : (
+                  <span>{item.label}</span>
+                )}
+              </li>
+            )
+          })
+        }
+      </ul>
+      {
+        phone && (
+          <a class="site-nav__phone-mobile phone-link" href={telHref(phone)} data-track="call_click">
+            <span class="phone-link__icon"><Icon name="phone" /></span>
+            <span>{phone}<small>Call or text us</small></span>
+          </a>
+        )
+      }
+    </nav>
+
+    <div class="site-header__actions">
+      {
+        phone && (
+          <a class="site-header__phone" href={telHref(phone)} data-track="call_click" aria-label={`Call ${siteName} at ${stegaClean(phone)}`}>
+            <span class="site-header__phone-icon"><Icon name="phone" size={18} /></span>
+            <span class="site-header__phone-text">{phone}</span>
+          </a>
+        )
+      }
+      {navigation?.headerCta?.label ? <Button button={navigation.headerCta} /> : <a class="btn btn--primary" href="/tour/">Book a tour</a>}
+      <button class="site-header__toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="toggle-open"><Icon name="menu" size={24} /></span>
+        <span class="toggle-close"><Icon name="close" size={24} /></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.site-header__toggle')
+  const nav = document.getElementById('site-nav')
+  toggle?.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true'
+    toggle.setAttribute('aria-expanded', String(!open))
+    toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu')
+    nav?.classList.toggle('is-open', !open)
+  })
+  // Close other dropdowns when one opens, and when clicking outside.
+  const dropdowns = Array.from(document.querySelectorAll<HTMLDetailsElement>('.site-nav__dropdown'))
+  dropdowns.forEach((d) =>
+    d.addEventListener('toggle', () => {
+      if (d.open) dropdowns.filter((o) => o !== d).forEach((o) => (o.open = false))
+    }),
+  )
+  document.addEventListener('click', (e) => {
+    if (window.matchMedia('(min-width: 1080px)').matches && !(e.target as Element).closest('.site-nav__dropdown')) {
+      dropdowns.forEach((d) => (d.open = false))
+    }
+  })
+</script>
+
+<style>
+  .announcement {
+    background: var(--navy);
+    color: #fff;
+    text-align: center;
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 0.55rem 1rem;
+  }
+  .announcement a { text-decoration: underline; text-underline-offset: 3px; }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--cream);
+    border-bottom: 1px solid var(--border-hairline);
+  }
+  .site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 76px;
+  }
+  .site-header__logo img { height: 56px; width: auto; }
+  .site-header__actions { display: flex; align-items: center; gap: 0.6rem; }
+  .site-header__actions .btn { min-height: 44px; padding: 0.55rem 1.15rem; font-size: 0.98rem; }
+
+  .site-header__phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+  }
+  .site-header__phone-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--sunshine);
+  }
+  .site-header__phone-text { display: none; }
+
+  .site-nav { display: none; }
+  .site-nav.is-open {
+    display: block;
+    position: absolute;
+    inset: 100% 0 auto;
+    max-height: calc(100vh - 76px);
+    overflow-y: auto;
+    background: var(--cream);
+    border-bottom: 1px solid var(--border-default);
+    padding: 0.75rem var(--container-px) 1.5rem;
+    box-shadow: var(--shadow-overlay);
+  }
+  .site-nav__list { list-style: none; display: grid; gap: 0.1rem; }
+  .site-nav__item > a,
+  .site-nav__item summary,
+  .site-nav__item > span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.7rem 0;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.08rem;
+    cursor: pointer;
+  }
+  .site-nav a[aria-current='page'], .site-nav summary.is-active { color: var(--coral-700); }
+  .site-nav__dropdown summary { list-style: none; }
+  .site-nav__dropdown summary::-webkit-details-marker { display: none; }
+  .site-nav__dropdown[open] summary svg { transform: rotate(180deg); }
+  .site-nav__dropdown ul { list-style: none; padding: 0 0 0.5rem 0.9rem; }
+  .site-nav__dropdown ul a { display: block; padding: 0.45rem 0; font-weight: 600; }
+  .site-nav__dropdown ul a:hover { color: var(--coral-700); }
+  .site-nav__phone-mobile { margin-top: 1rem; }
+
+  .site-header__toggle {
+    display: inline-grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    background: var(--white);
+    border: 1px solid var(--border-default);
+    border-radius: 50%;
+    cursor: pointer;
+    color: inherit;
+  }
+  .toggle-close { display: none; }
+  .site-header__toggle[aria-expanded='true'] .toggle-open { display: none; }
+  .site-header__toggle[aria-expanded='true'] .toggle-close { display: block; }
+  .toggle-open, .toggle-close { line-height: 0; }
+
+  @media (max-width: 420px) {
+    .site-header__logo img { height: 46px; }
+    .site-header__actions .btn { padding-inline: 0.9rem; font-size: 0.92rem; }
+    .site-header__phone-icon { width: 2.3rem; height: 2.3rem; }
+  }
+
+  @media (min-width: 1080px) {
+    .site-header__toggle, .site-nav__phone-mobile { display: none; }
+    .site-header__phone-text { display: inline; }
+    .site-header__phone-icon { width: 2.2rem; height: 2.2rem; }
+    .site-nav, .site-nav.is-open {
+      display: block;
+      position: static;
+      padding: 0;
+      border: 0;
+      box-shadow: none;
+      background: none;
+      max-height: none;
+      overflow: visible;
+    }
+    .site-nav__list { display: flex; gap: 1.4rem; }
+    .site-nav__item > a, .site-nav__item summary { padding: 0.5rem 0; font-size: 1.02rem; }
+    .site-nav__dropdown { position: relative; }
+    .site-nav__dropdown ul {
+      position: absolute;
+      top: calc(100% + 0.4rem);
+      left: -1rem;
+      min-width: 17rem;
+      padding: 0.6rem 1rem;
+      background: var(--white);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-overlay);
+    }
+  }
+</style>

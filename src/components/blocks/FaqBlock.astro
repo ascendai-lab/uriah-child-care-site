@@ -1,0 +1,26 @@
+---
+import type { BlockOf } from '@cms/lib/types'
+import Section from '@components/ui/Section.astro'
+import SectionHeader from '@components/ui/SectionHeader.astro'
+import FaqList from '@components/ui/FaqList.astro'
+import Button from '@components/ui/Button.astro'
+
+interface Props {
+  block: BlockOf<'faqBlock'>
+  'data-sanity'?: string
+}
+
+const { block, 'data-sanity': dataSanity } = Astro.props
+---
+
+<Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
+  <div class="faq-block">
+    <SectionHeader heading={block.heading} intro={block.intro} />
+    <FaqList items={block.items} openFirst />
+    {block.buttons?.length ? <div class="btn-row" style="margin-top:1.5rem">{block.buttons.map((b) => <Button button={b} />)}</div> : null}
+  </div>
+</Section>
+
+<style>
+  .faq-block { max-width: 52rem; margin-inline: auto; }
+</style>

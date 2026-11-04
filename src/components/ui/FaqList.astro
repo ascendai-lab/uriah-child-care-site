@@ -1,0 +1,32 @@
+---
+import PortableText from './PortableText'
+
+interface Props {
+  items: { _key?: string; _id?: string; question?: string | null; answer?: unknown }[] | null | undefined
+  /** Open the first question by default. */
+  openFirst?: boolean
+}
+
+const { items, openFirst = false } = Astro.props
+const PARAGRAPHS = /\n\s*\n/
+const paragraphs = (text: string) => text.split(PARAGRAPHS)
+---
+
+{
+  items?.length ? (
+    <div class="faq-list">
+      {items.map((item, i) => (
+        <details class="faq-item" open={openFirst && i === 0}>
+          <summary>{item.question}</summary>
+          <div class="faq-item__answer">
+            {typeof item.answer === 'string' ? (
+              paragraphs(item.answer).map((p) => <p>{p}</p>)
+            ) : (
+              <PortableText value={item.answer as never} className="prose" />
+            )}
+          </div>
+        </details>
+      ))}
+    </div>
+  ) : null
+}

@@ -1,0 +1,101 @@
+---
+import type { Layout } from '@cms/lib/types'
+import SanityImage from '@components/ui/SanityImage.astro'
+import Icon from '@components/ui/Icon.astro'
+import Doodle from '@components/ui/Doodle.astro'
+import TourForm from '@components/ui/TourForm'
+
+interface Props {
+  layout: Layout
+  heading?: string | null
+  intro?: string | null
+  /** Rendered as the page's main form (on /tour/), not the shared footer block. */
+  asPageForm?: boolean
+  id?: string
+}
+
+const { layout, heading, intro, asPageForm = false, id = 'book-a-tour' } = Astro.props
+const owner = layout.owner
+const phone = layout.settings?.phone
+const reassurance = [
+  { icon: 'clock', text: 'Tours take about 20 minutes' },
+  { icon: 'heart', text: 'Bring your questions, and your little one' },
+  { icon: 'phone', text: "We'll call you within one business day" },
+] as const
+---
+
+<section class:list={['section tour-block', asPageForm && 'tour-block--page']} id={id} aria-labelledby={`${id}-heading`}>
+  <div class="container">
+    <div class="tour-block__card">
+      <Doodle type="sun" color="sunshine" size={64} style="top:-22px;right:8%" />
+      <Doodle type="squiggle" color="sky" size={70} style="bottom:28px;left:-18px" />
+      <div class="tour-block__aside">
+        <span class="eyebrow"><Icon name="calendar" /> Book a tour</span>
+        <h2 id={`${id}-heading`} class="section-heading">{heading ?? 'Come see our Vineland center'}</h2>
+        <p class="section-intro">
+          {intro ?? 'Tell us a little about your family and Ms. Paulette will call you to pick a time that works for you.'}
+        </p>
+        <ul class="tour-block__reassure">
+          {
+            reassurance.map((r) => (
+              <li>
+                <span class="tour-block__reassure-icon"><Icon name={r.icon} size={18} /></span>
+                {r.text}
+              </li>
+            ))
+          }
+        </ul>
+        {
+          owner?.photo?.asset && (
+            <figure class="tour-block__owner">
+              <div class="shape shape--circle accent-sky">
+                <SanityImage image={owner.photo} width={180} aspectRatio={1} sizes="120px" />
+              </div>
+              <figcaption>
+                <strong>{owner.name}</strong>
+                <span>{owner.role}</span>
+              </figcaption>
+            </figure>
+          )
+        }
+      </div>
+      <div class="tour-block__form card">
+        <TourForm client:visible phone={phone} idPrefix={id} />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tour-block { padding-top: calc(var(--section-y) * 0.6); }
+  .tour-block--page { padding-top: 2rem; }
+  .tour-block__card {
+    position: relative;
+    display: grid;
+    gap: 2rem;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    border-radius: var(--radius-2xl);
+    background: var(--coral-50);
+  }
+  .tour-block__form { padding: clamp(1.25rem, 3vw, 2rem); }
+  .tour-block__reassure { list-style: none; display: grid; gap: 0.6rem; margin-top: 1.5rem; }
+  .tour-block__reassure li { display: flex; align-items: center; gap: 0.7rem; font-weight: 600; }
+  .tour-block__reassure-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    background: var(--white);
+    color: var(--coral-700);
+    flex: none;
+  }
+  .tour-block__owner { display: flex; align-items: center; gap: 1rem; margin-top: 2rem; }
+  .tour-block__owner .shape { width: 104px; flex: none; }
+  .tour-block__owner figcaption { display: grid; }
+  .tour-block__owner strong { font-family: var(--font-display); font-size: 1.15rem; }
+  .tour-block__owner span { color: var(--fg2); font-size: 0.92rem; }
+  @media (min-width: 960px) {
+    .tour-block__card { grid-template-columns: 5fr 7fr; align-items: start; gap: 3rem; }
+  }
+</style>

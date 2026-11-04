@@ -1,0 +1,68 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+import { urlFor, type ImageSource } from '@cms/lib/image'
+
+export interface SanityImageValue {
+  asset?: unknown
+  hotspot?: unknown
+  crop?: unknown
+  alt?: string | null
+  decorative?: boolean | null
+  dimensions?: { width?: number | null; height?: number | null } | null
+  lqip?: string | null
+}
+
+interface Props {
+  image: SanityImageValue | null | undefined
+  /** Largest width the image is shown at, in CSS pixels. */
+  width?: number
+  /** Crop to this width/height ratio, e.g. 16/9. Uses the editor's hotspot. */
+  aspectRatio?: number
+  sizes?: string
+  class?: string
+  loading?: 'lazy' | 'eager'
+  fetchpriority?: 'high' | 'low' | 'auto'
+  'data-sanity'?: string
+}
+
+const {
+  image,
+  width = 1200,
+  aspectRatio,
+  sizes = `(min-width: ${width}px) ${width}px, 100vw`,
+  class: className,
+  loading = 'lazy',
+  fetchpriority,
+  'data-sanity': dataSanity,
+} = Astro.props
+
+const hasAsset = Boolean(image?.asset)
+const source = image as ImageSource
+const natural = image?.dimensions
+const ratio = aspectRatio ?? (natural?.width && natural?.height ? natural.width / natural.height : 4 / 3)
+const steps = [320, 480, 640, 768, 1024, 1280, 1600, 1920, 2400].filter((w) => w <= width * 2)
+const build = (w: number) => {
+  const img = urlFor(source).width(w)
+  return aspectRatio ? img.height(Math.round(w / aspectRatio)).fit('crop') : img
+}
+const alt = image?.decorative ? '' : stegaClean(image?.alt ?? '')
+---
+
+{
+  hasAsset && (
+    <img
+      src={build(width).url()}
+      srcset={steps.map((w) => `${build(w).url()} ${w}w`).join(', ')}
+      sizes={sizes}
+      width={width}
+      height={Math.round(width / ratio)}
+      alt={alt}
+      loading={loading}
+      decoding="async"
+      fetchpriority={fetchpriority}
+      class={className}
+      data-sanity={dataSanity}
+      style={image?.lqip ? `background-image:url(${image.lqip});background-size:cover` : undefined}
+    />
+  )
+}

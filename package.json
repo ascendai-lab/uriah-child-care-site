@@ -1,35 +1,51 @@
 {
-  "name": "ascend-ai-starter",
+  "name": "uriah-child-care-site",
   "type": "module",
-  "version": "1.0.0",
-  "description": "Ascend AI Marketing — Astro 5 + Tailwind 4 + Sanity CMS starter template",
+  "version": "2.0.0",
+  "description": "Uriah Child Care website: Astro 5 + Tailwind 4 + Sanity CMS on Netlify (from the Ascend AI starter)",
+  "engines": {
+    "node": ">=22.12"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "check": "astro check",
+    "typegen": "sanity schema extract --path=./src/sanity/schema.json --force && sanity typegen generate",
     "sanity": "sanity dev",
-    "sanity:deploy": "sanity deploy"
+    "sanity:deploy": "sanity deploy",
+    "sanity:deploy-schema": "sanity schema deploy",
+    "seed:build": "node seed/build.mjs",
+    "seed:mock": "node seed/mock-api.mjs",
+    "seed:import": "node seed/build.mjs && sanity dataset import seed/dataset.ndjson production --replace",
+    "dev:seed": "SANITY_API_HOST=http://localhost:9999 PUBLIC_SANITY_IMAGE_BASE_URL=http://localhost:9999 PUBLIC_SANITY_PROJECT_ID=preview astro dev"
   },
   "dependencies": {
-    "@astrojs/netlify": "^6.3.0",
-    "@astrojs/react": "^4.2.0",
-    "@portabletext/react": "^3.2.0",
-    "@sanity/astro": "^3.0.0",
-    "@sanity/icons": "^3.5.0",
-    "@sanity/image-url": "^1.1.0",
-    "astro": "^5.6.0",
-    "lucide-react": "^0.469.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "sanity": "^3.75.0",
-    "zod": "^3.24.0"
+    "@astrojs/netlify": "^6.6.5",
+    "@astrojs/react": "^4.4.2",
+    "@portabletext/react": "^8.0.1",
+    "@sanity/astro": "^3.6.0",
+    "@sanity/client": "^8.14.1",
+    "@sanity/icons": "^5.2.3",
+    "@sanity/image-url": "^2.1.1",
+    "@sanity/preview-url-secret": "^4.1.5",
+    "@sanity/visual-editing": "^6.2.0",
+    "astro": "^5.18.2",
+    "groq": "^6.21.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-is": "^19.2.4",
+    "sanity": "^6.21.0",
+    "styled-components": "^6.1.19",
+    "zod": "^3.25.0"
   },
   "devDependencies": {
-    "@sanity/vision": "^3.75.0",
+    "@astrojs/check": "^0.9.6",
+    "@sanity/vision": "^6.21.0",
     "@tailwindcss/vite": "^4.1.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "tailwindcss": "^4.1.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3"
   }
 }

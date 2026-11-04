@@ -1,0 +1,18 @@
+---
+import type { BlockOf } from '@cms/lib/types'
+import type { Layout } from '@cms/lib/types'
+import TourBlock from '@components/layout/TourBlock.astro'
+
+interface Props {
+  block: BlockOf<'contactFormBlock'>
+  layout: Layout
+  'data-sanity'?: string
+}
+
+/** The "Book a tour" form placed as a page section (used on /tour/). */
+const { block, layout, 'data-sanity': dataSanity } = Astro.props
+---
+
+<div data-sanity={dataSanity}>
+  <TourBlock layout={layout} heading={block.heading} intro={block.intro} asPageForm id={block.anchorId ?? 'tour-form'} />
+</div>

@@ -1,0 +1,19 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+
+interface Props {
+  anchorId?: string | null
+  background?: string | null
+  class?: string
+  'data-sanity'?: string
+}
+
+const { anchorId, background, class: className, 'data-sanity': dataSanity } = Astro.props
+const bg = stegaClean(background) || 'default'
+---
+
+<section id={stegaClean(anchorId) || undefined} class:list={['section', `bg-${bg}`, className]} data-sanity={dataSanity}>
+  <div class="container">
+    <slot />
+  </div>
+</section>

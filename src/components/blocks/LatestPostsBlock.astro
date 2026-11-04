@@ -1,0 +1,26 @@
+---
+import type { BlockOf } from '@cms/lib/types'
+import Section from '@components/ui/Section.astro'
+import SectionHeader from '@components/ui/SectionHeader.astro'
+import PostCard from '@components/cards/PostCard.astro'
+
+interface Props {
+  block: BlockOf<'latestPostsBlock'>
+  'data-sanity'?: string
+}
+
+const { block, 'data-sanity': dataSanity } = Astro.props
+const posts = (block.items ?? []).slice(0, block.count ?? 3)
+---
+
+<Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
+  <SectionHeader heading={block.heading} intro={block.intro} />
+  <div class="grid-cards" data-columns="3">
+    {posts.map((post) => <PostCard post={post} />)}
+  </div>
+  <p class="all-posts"><a href="/blog" class="btn btn--secondary">All posts</a></p>
+</Section>
+
+<style>
+  .all-posts { margin-top: 2.5rem; text-align: center; }
+</style>

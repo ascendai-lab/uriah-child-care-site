@@ -1,0 +1,50 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+import type { BlockOf, SiteSettings } from '@cms/lib/types'
+import Section from '@components/ui/Section.astro'
+import SectionHeader from '@components/ui/SectionHeader.astro'
+import ReviewCard from '@components/cards/ReviewCard.astro'
+import Icon from '@components/ui/Icon.astro'
+
+interface Props {
+  block: BlockOf<'testimonialsBlock'>
+  settings?: SiteSettings | null
+  'data-sanity'?: string
+}
+
+const { block, settings, 'data-sanity': dataSanity } = Astro.props
+const items = (block.items ?? []).filter(Boolean)
+const reviewsUrl = stegaClean(settings?.gbpReviewUrl)
+const writeUrl = stegaClean(settings?.gbpWriteReviewUrl)
+---
+
+<Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
+  <SectionHeader heading={block.heading} intro={block.intro} align="center" />
+  <div class="reviews-grid">
+    {items.map((review) => <ReviewCard review={review} />)}
+  </div>
+  {
+    (reviewsUrl || writeUrl) && (
+      <div class="btn-row reviews-actions">
+        {reviewsUrl && (
+          <a class="btn btn--light" href={reviewsUrl} target="_blank" rel="noopener noreferrer">
+            Read all our Google reviews <Icon name="arrow" />
+          </a>
+        )}
+        {writeUrl && (
+          <a class="btn btn--outline" href={writeUrl} target="_blank" rel="noopener noreferrer">
+            Leave a review
+          </a>
+        )}
+      </div>
+    )
+  }
+</Section>
+
+<style>
+  .reviews-grid { columns: 1; column-gap: 1.25rem; }
+  .reviews-grid > :global(*) { break-inside: avoid; margin-bottom: 1.25rem; }
+  .reviews-actions { justify-content: center; }
+  @media (min-width: 720px) { .reviews-grid { columns: 2; } }
+  @media (min-width: 1040px) { .reviews-grid { columns: 3; } }
+</style>

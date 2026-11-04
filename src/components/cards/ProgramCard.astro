@@ -1,0 +1,49 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+import { hrefFor } from '@cms/routes'
+import SanityImage, { type SanityImageValue } from '@components/ui/SanityImage.astro'
+import Icon from '@components/ui/Icon.astro'
+
+export interface ProgramCardItem {
+  _type: string
+  slug?: string | null
+  title?: string | null
+  shortTitle?: string | null
+  excerpt?: string | null
+  ageRange?: string | null
+  accent?: string | null
+  image?: SanityImageValue | null
+}
+
+interface Props {
+  item: ProgramCardItem
+  /** Fallback accent when the item has none, so a row of cards cycles through the palette. */
+  index?: number
+  headingLevel?: 'h2' | 'h3'
+}
+
+const palette = ['coral', 'sage', 'sunshine', 'sky']
+const { item, index = 0, headingLevel: H = 'h3' } = Astro.props
+const href = hrefFor(item._type, item.slug)
+const accent = stegaClean(item.accent) || palette[index % palette.length]
+---
+
+{
+  href && (
+    <a href={href} class:list={['program-card', `accent-${accent}`]}>
+      {item.image?.asset && (
+        <div class="program-card__media">
+          <SanityImage image={item.image} width={560} aspectRatio={4 / 3} sizes="(min-width: 900px) 360px, 100vw" />
+        </div>
+      )}
+      <div class="program-card__body">
+        {item.ageRange && <span class="program-card__age">{item.ageRange}</span>}
+        <H>{item.shortTitle || item.title}</H>
+        {item.excerpt && <p>{item.excerpt}</p>}
+        <span class="program-card__more">
+          Learn more <Icon name="arrow" />
+        </span>
+      </div>
+    </a>
+  )
+}

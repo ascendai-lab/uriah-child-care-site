@@ -1,0 +1,62 @@
+{
+ "exterior-now-enrolling-flags-uriah-child-care-vineland": {
+  "w": 1800,
+  "h": 1350,
+  "kb": 559
+ },
+ "entrance-welcome-sign-uriah-child-care-vineland": {
+  "w": 1350,
+  "h": 1800,
+  "kb": 74
+ },
+ "entrance-porch-security-camera-uriah-child-care": {
+  "w": 1350,
+  "h": 1800,
+  "kb": 136
+ },
+ "accessible-parking-ramp-uriah-child-care-vineland": {
+  "w": 1800,
+  "h": 1350,
+  "kb": 421
+ },
+ "lobby-sign-in-area-uriah-child-care-vineland": {
+  "w": 1800,
+  "h": 1350,
+  "kb": 134
+ },
+ "lobby-waiting-area-uriah-child-care": {
+  "w": 1800,
+  "h": 1350,
+  "kb": 134
+ },
+ "hallway-accessible-restroom-uriah-child-care": {
+  "w": 1350,
+  "h": 1800,
+  "kb": 108
+ },
+ "brightwheel-check-in-kiosk-uriah-child-care": {
+  "w": 1350,
+  "h": 1800,
+  "kb": 235
+ },
+ "ms-paulette-senior-owner-uriah-child-care": {
+  "w": 1350,
+  "h": 1800,
+  "kb": 82
+ },
+ "tameca-burke-director-uriah-child-care": {
+  "w": 1350,
+  "h": 1800,
+  "kb": 116
+ },
+ "classroom-uriah-child-care-vineland": {
+  "w": 1800,
+  "h": 1176,
+  "kb": 150
+ },
+ "daily-schedule-chart-classroom-uriah-child-care": {
+  "w": 782,
+  "h": 1800,
+  "kb": 81
+ }
+}

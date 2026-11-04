@@ -1,0 +1,41 @@
+---
+import type { BlockOf } from '@cms/lib/types'
+import Section from '@components/ui/Section.astro'
+import SectionHeader from '@components/ui/SectionHeader.astro'
+import SanityImage from '@components/ui/SanityImage.astro'
+
+interface Props {
+  block: BlockOf<'galleryBlock'>
+  'data-sanity'?: string
+}
+
+const { block, 'data-sanity': dataSanity } = Astro.props
+const images = (block.images ?? []).filter((img) => img?.asset)
+---
+
+<Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
+  <SectionHeader heading={block.heading} intro={block.intro} />
+  <ul class="gallery">
+    {
+      images.map((img, i) => (
+        <li class:list={['gallery__item', i % 5 === 0 && 'gallery__item--wide']}>
+          <figure>
+            <SanityImage image={img} width={i % 5 === 0 ? 900 : 560} aspectRatio={i % 5 === 0 ? 16 / 10 : 4 / 3} sizes="(min-width: 900px) 50vw, 100vw" />
+            {(img.caption || img.alt) && <figcaption>{img.caption || img.alt}</figcaption>}
+          </figure>
+        </li>
+      ))
+    }
+  </ul>
+</Section>
+
+<style>
+  .gallery { list-style: none; display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); }
+  .gallery figure { height: 100%; display: flex; flex-direction: column; background: var(--white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-card); }
+  .gallery :global(img) { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .gallery figcaption { padding: 0.8rem 1rem 1rem; font-size: 0.94rem; font-weight: 600; }
+  @media (min-width: 720px) {
+    .gallery__item--wide { grid-column: span 2; }
+    .gallery__item--wide :global(img) { aspect-ratio: 16 / 10; }
+  }
+</style>

@@ -1,0 +1,42 @@
+---
+import type { BlockOf } from '@cms/lib/types'
+import Section from '@components/ui/Section.astro'
+import Button from '@components/ui/Button.astro'
+import Doodle from '@components/ui/Doodle.astro'
+
+interface Props {
+  block: BlockOf<'ctaBlock'>
+  'data-sanity'?: string
+}
+
+const { block, 'data-sanity': dataSanity } = Astro.props
+---
+
+<Section anchorId={block.anchorId} background={block.background} class="section--tight" data-sanity={dataSanity}>
+  <div class="cta-band">
+    <Doodle type="sun" color="sunshine" size={58} style="top:-18px;left:6%" />
+    <Doodle type="sparkles" color="white" size={52} style="bottom:12px;right:5%" />
+    <div>
+      {block.heading && <h2 class="section-heading">{block.heading}</h2>}
+      {block.body && <p>{block.body}</p>}
+    </div>
+    {block.buttons?.length ? <div class="btn-row">{block.buttons.map((b) => <Button button={b} size="lg" />)}</div> : null}
+  </div>
+</Section>
+
+<style>
+  .cta-band {
+    position: relative;
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    padding: clamp(1.75rem, 5vw, 3rem);
+    border-radius: var(--radius-2xl);
+    background: var(--sage);
+    color: #fff;
+  }
+  .cta-band p { margin-top: 0.6rem; font-size: 1.1rem; color: rgba(255, 255, 255, 0.92); }
+  .cta-band .btn-row { margin-top: 0; }
+  .cta-band :global(.btn--outline) { color: #fff; }
+  @media (min-width: 900px) { .cta-band { grid-template-columns: 1fr auto; } }
+</style>

@@ -1,0 +1,24 @@
+---
+import { telHref } from '@cms/lib/links'
+import Icon from './Icon.astro'
+interface Props {
+  phone?: string | null
+  note?: string
+  class?: string
+}
+const { phone, note = 'Call or text us', class: className } = Astro.props
+---
+
+{
+  phone && (
+    <a href={telHref(phone)} class:list={['phone-link', className]} data-track="call_click">
+      <span class="phone-link__icon">
+        <Icon name="phone" />
+      </span>
+      <span>
+        {phone}
+        <small>{note}</small>
+      </span>
+    </a>
+  )
+}

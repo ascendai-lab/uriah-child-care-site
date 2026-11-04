@@ -1,0 +1,23 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro'
+import { loadQuery } from '@cms/lib/load'
+import { layoutQuery } from '@cms/queries'
+
+Astro.response.status = 404
+const layout = await loadQuery(Astro.locals.draftMode ?? false, layoutQuery)
+---
+
+<BaseLayout layout={layout} title="Page not found" seo={{ noIndex: true }}>
+  <section class="section">
+    <div class="container not-found">
+      <h1 class="section-heading">We couldn't find that page</h1>
+      <p class="section-intro">It may have moved. Try the home page, or get in touch and we'll help.</p>
+      <div class="btn-row"><a href="/" class="btn btn--primary">Go to the home page</a></div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .not-found { max-width: 40rem; text-align: center; }
+  .not-found .btn-row { justify-content: center; }
+</style>

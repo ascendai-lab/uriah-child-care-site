@@ -1,0 +1,55 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+import type { BlockOf } from '@cms/lib/types'
+import Section from '@components/ui/Section.astro'
+import Button from '@components/ui/Button.astro'
+import SanityImage from '@components/ui/SanityImage.astro'
+import PortableText from '@components/ui/PortableText'
+import Doodle from '@components/ui/Doodle.astro'
+
+interface Props {
+  block: BlockOf<'imageText'>
+  'data-sanity'?: string
+}
+
+const { block, 'data-sanity': dataSanity } = Astro.props
+const position = stegaClean(block.imagePosition) || 'right'
+const shape = stegaClean(block.imageShape) || 'blob'
+const accent = stegaClean(block.accent) || 'sunshine'
+const doodles = block.showDoodles !== false
+---
+
+<Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
+  <div class:list={['image-text', `image-text--${position}`]}>
+    <div class:list={['image-text__media', `accent-${accent}`]}>
+      <div class={`shape shape--${shape}`}>
+        <SanityImage image={block.image} width={640} sizes="(min-width: 900px) 480px, 90vw" />
+      </div>
+      {
+        doodles && (
+          <>
+            <Doodle type={position === 'left' ? 'sun' : 'star'} color={accent === 'sunshine' ? 'coral' : 'sunshine'} size={48} style="top:-2%;right:4%" />
+            <Doodle type="squiggle" color="sky" size={64} style="bottom:2%;left:-4%" />
+          </>
+        )
+      }
+    </div>
+    <div class="image-text__content">
+      {block.eyebrow && <span class="eyebrow">{block.eyebrow}</span>}
+      {block.heading && <h2 class="section-heading">{block.heading}</h2>}
+      <PortableText value={block.body} />
+      {block.buttons?.length ? <div class="btn-row">{block.buttons.map((button) => <Button button={button} />)}</div> : null}
+    </div>
+  </div>
+</Section>
+
+<style>
+  .image-text { display: grid; gap: 2.75rem; align-items: center; }
+  .image-text__media { position: relative; max-width: 460px; width: 100%; justify-self: center; }
+  .image-text__content :global(.prose) { margin-top: 1.1rem; }
+  @media (min-width: 900px) {
+    .image-text { grid-template-columns: 0.9fr 1.1fr; gap: 4.5rem; }
+    .image-text--right { grid-template-columns: 1.1fr 0.9fr; }
+    .image-text--right .image-text__media { order: 2; }
+  }
+</style>

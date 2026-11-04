@@ -1,0 +1,21 @@
+---
+interface Props {
+  heading?: string | null
+  intro?: string | null
+  eyebrow?: string | null
+  as?: 'h1' | 'h2'
+  align?: 'left' | 'center'
+}
+
+const { heading, intro, eyebrow, as: Tag = 'h2', align = 'left' } = Astro.props
+---
+
+{
+  (heading || intro) && (
+    <header class:list={['section-header', align === 'center' && 'section-header--center']}>
+      {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+      {heading && <Tag class="section-heading">{heading}</Tag>}
+      {intro && <p class="section-intro">{intro}</p>}
+    </header>
+  )
+}

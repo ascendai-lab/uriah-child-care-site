@@ -1,126 +1,118 @@
-import { PortableText as BasePortableText } from '@portabletext/react'
+import {
+  PortableText as BasePortableText,
+  type PortableTextComponents,
+  type PortableTextProps,
+} from '@portabletext/react'
+import { stegaClean } from '@sanity/client/stega'
+import { urlFor, type ImageSource } from '@cms/lib/image'
+import { resolveLink, type LinkValue } from '@cms/lib/links'
+import { getEmbedUrl } from '@/lib/video'
 
-/* ── Video Embed Helper ────────────────────────────────────────────────────── */
-
-function getEmbedUrl(url: string): string | null {
-  try {
-    const parsed = new URL(url)
-
-    // YouTube
-    if (parsed.hostname.includes('youtube.com')) {
-      const videoId = parsed.searchParams.get('v')
-      return videoId ? `https://www.youtube.com/embed/${videoId}` : null
-    }
-    if (parsed.hostname === 'youtu.be') {
-      const videoId = parsed.pathname.slice(1)
-      return videoId ? `https://www.youtube.com/embed/${videoId}` : null
-    }
-
-    // Vimeo
-    if (parsed.hostname.includes('vimeo.com')) {
-      const videoId = parsed.pathname.split('/').filter(Boolean)[0]
-      return videoId ? `https://player.vimeo.com/video/${videoId}` : null
-    }
-
-    return null
-  } catch {
-    return null
-  }
+interface ImageBlock {
+  _type: 'imageWithAlt'
+  asset?: unknown
+  alt?: string | null
+  decorative?: boolean | null
+  caption?: string | null
+  dimensions?: { width?: number | null; height?: number | null } | null
 }
 
-/* ── Component Map ─────────────────────────────────────────────────────────── */
+interface VideoBlock {
+  _type: 'videoEmbed'
+  url?: string | null
+  caption?: string | null
+  autoplay?: boolean | null
+}
 
-const components = {
+interface ButtonBlock {
+  _type: 'ctaButton'
+  label?: string | null
+  variant?: string | null
+  link?: LinkValue | null
+}
+
+const components: PortableTextComponents = {
   types: {
-    // Sanity image block
-    image: ({ value }: any) => {
-      if (!value?.asset?.url) return null
+    imageWithAlt: ({ value }: { value: ImageBlock }) => {
+      if (!value?.asset) return null
+      const src = urlFor(value as ImageSource).width(1200)
+      const { width = 1200, height = 800 } = value.dimensions ?? {}
       return (
-        <figure style={{ margin: '2rem 0' }}>
+        <figure>
           <img
-            src={value.asset.url}
-            alt={value.alt ?? ''}
-            style={{ borderRadius: '0.75rem', width: '100%', height: 'auto' }}
+            src={src.url()}
+            srcSet={[480, 800, 1200, 1600].map((w) => `${urlFor(value as ImageSource).width(w).url()} ${w}w`).join(', ')}
+            sizes="(min-width: 768px) 720px, 100vw"
+            alt={value.decorative ? '' : stegaClean(value.alt ?? '')}
+            width={1200}
+            height={width && height ? Math.round((1200 * height) / width) : 800}
             loading="lazy"
+            decoding="async"
           />
-          {value.caption && (
-            <figcaption style={{ marginTop: '0.5rem', fontSize: '0.875rem', color: '#64748b', textAlign: 'center' }}>
-              {value.caption}
-            </figcaption>
-          )}
+          {value.caption && <figcaption>{value.caption}</figcaption>}
         </figure>
       )
     },
 
-    // Video embed block
-    videoEmbed: ({ value }: any) => {
-      const embedUrl = getEmbedUrl(value?.url ?? '')
-      if (!embedUrl) {
-        return (
-          <p style={{ color: '#dc2626', fontSize: '0.875rem' }}>
-            Invalid video URL: {value?.url}
-          </p>
-        )
-      }
+    videoEmbed: ({ value }: { value: VideoBlock }) => {
+      const embedUrl = getEmbedUrl(value?.url, Boolean(value?.autoplay))
+      if (!embedUrl) return null
       return (
-        <figure style={{ margin: '2rem 0' }}>
-          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '0.75rem' }}>
+        <figure>
+          <div className="video-frame">
             <iframe
-              src={`${embedUrl}${value.autoplay ? '?autoplay=1&mute=1' : ''}`}
-              title={value.caption ?? 'Video'}
+              src={embedUrl}
+              title={stegaClean(value.caption) || 'Video'}
+              loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                border: 0,
-              }}
             />
           </div>
-          {value.caption && (
-            <figcaption style={{ marginTop: '0.75rem', fontSize: '0.875rem', color: '#64748b', textAlign: 'center' }}>
-              {value.caption}
-            </figcaption>
-          )}
+          {value.caption && <figcaption>{value.caption}</figcaption>}
         </figure>
+      )
+    },
+
+    ctaButton: ({ value }: { value: ButtonBlock }) => {
+      const link = resolveLink(value?.link)
+      if (!link || !value.label) return null
+      const variant = stegaClean(value.variant) || 'primary'
+      return (
+        <p>
+          <a href={link.href} target={link.target} rel={link.rel} className={`btn btn--${variant}`}>
+            {value.label}
+          </a>
+        </p>
       )
     },
   },
 
   marks: {
-    // External / internal links
-    link: ({ children, value }: any) => (
-      <a
-        href={value?.href}
-        target={value?.blank ? '_blank' : undefined}
-        rel={value?.blank ? 'noopener noreferrer' : undefined}
-      >
-        {children}
-      </a>
-    ),
+    link: ({ children, value }) => {
+      const link = resolveLink(value as LinkValue)
+      if (!link) return <>{children}</>
+      return (
+        <a href={link.href} target={link.target} rel={link.rel}>
+          {children}
+        </a>
+      )
+    },
+    highlight: ({ children }) => <mark>{children}</mark>,
   },
 
   block: {
-    blockquote: ({ children }: any) => <blockquote>{children}</blockquote>,
-    h2: ({ children }: any) => <h2>{children}</h2>,
-    h3: ({ children }: any) => <h3>{children}</h3>,
-    h4: ({ children }: any) => <h4>{children}</h4>,
+    lead: ({ children }) => <p className="lead">{children}</p>,
   },
 }
 
-/* ── Export ────────────────────────────────────────────────────────────────── */
-
 interface Props {
-  value: any[]
+  value: PortableTextProps['value'] | null | undefined
   className?: string
 }
 
+/** Renders CMS rich text. Server-rendered — no client JavaScript. */
 export default function PortableText({ value, className = 'prose' }: Props) {
-  if (!value || !Array.isArray(value)) return null
-
+  if (!value || !Array.isArray(value) || value.length === 0) return null
   return (
     <div className={className}>
       <BasePortableText value={value} components={components} />

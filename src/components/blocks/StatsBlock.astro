@@ -1,0 +1,52 @@
+---
+import type { BlockOf } from '@cms/lib/types'
+import Section from '@components/ui/Section.astro'
+
+interface Props {
+  block: BlockOf<'statsBlock'>
+  'data-sanity'?: string
+}
+
+const { block, 'data-sanity': dataSanity } = Astro.props
+const palette = ['coral', 'sage', 'sunshine', 'sky']
+---
+
+<Section anchorId={block.anchorId} background={block.background} class="section--tight" data-sanity={dataSanity}>
+  {block.heading && <h2 class="visually-hidden">{block.heading}</h2>}
+  <ul class="trust-strip">
+    {
+      block.items?.map((item, i) => (
+        <li class={`accent-${palette[i % palette.length]}`}>
+          <strong>{item.value}</strong>
+          <span>{item.label}</span>
+        </li>
+      ))
+    }
+  </ul>
+</Section>
+
+<style>
+  .trust-strip {
+    list-style: none;
+    display: grid;
+    gap: 0.9rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .trust-strip li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  @media (min-width: 900px) {
+    .trust-strip { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .trust-strip li:last-child:nth-child(odd) { grid-column: auto; }
+  }
+  @media (max-width: 480px) { .trust-strip li { padding: 1rem; } .trust-strip strong { font-size: 1.2rem; white-space: nowrap; } .trust-strip span { font-size: 0.88rem; } }
+  .trust-strip li {
+    display: grid;
+    gap: 0.2rem;
+    padding: 1.2rem 1.4rem;
+    border-radius: var(--radius-xl);
+    background: var(--white);
+    border-bottom: 5px solid var(--accent);
+    box-shadow: var(--shadow-card);
+  }
+  .trust-strip strong { font-family: var(--font-display); font-weight: 600; font-size: 1.7rem; line-height: 1.1; color: var(--accent-700); }
+  .trust-strip span { font-weight: 600; color: var(--fg2); }
+</style>

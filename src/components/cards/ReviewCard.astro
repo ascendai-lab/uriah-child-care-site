@@ -1,0 +1,44 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+import Stars from '@components/ui/Stars.astro'
+
+interface Props {
+  review: {
+    name?: string | null
+    context?: string | null
+    quote?: string | null
+    rating?: number | null
+    source?: string | null
+    reviewUrl?: string | null
+  }
+  /** Long reviews are trimmed to this many characters, with a link to read the rest on Google. */
+  maxLength?: number
+}
+
+const { review, maxLength = 420 } = Astro.props
+const quote = review.quote ?? ''
+const trimmed = quote.length > maxLength ? `${quote.slice(0, quote.lastIndexOf(' ', maxLength))}…` : quote
+const url = stegaClean(review.reviewUrl)
+---
+
+<figure class="card review-card">
+  {review.rating ? <Stars rating={review.rating} /> : null}
+  <blockquote>“{trimmed}”</blockquote>
+  <footer>
+    <figcaption>
+      <cite>{review.name}</cite>
+      {review.context && <span class="review-card__source"> · {review.context}</span>}
+    </figcaption>
+    {
+      url ? (
+        <span class="review-card__source">
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            {review.source ?? 'Google'} review
+          </a>
+        </span>
+      ) : (
+        review.source && <span class="review-card__source">{review.source} review</span>
+      )
+    }
+  </footer>
+</figure>

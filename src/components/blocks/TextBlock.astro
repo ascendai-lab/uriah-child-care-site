@@ -1,0 +1,28 @@
+---
+import { stegaClean } from '@sanity/client/stega'
+import type { BlockOf } from '@cms/lib/types'
+import Section from '@components/ui/Section.astro'
+import SectionHeader from '@components/ui/SectionHeader.astro'
+import PortableText from '@components/ui/PortableText'
+
+interface Props {
+  block: BlockOf<'textBlock'>
+  'data-sanity'?: string
+}
+
+const { block, 'data-sanity': dataSanity } = Astro.props
+const width = stegaClean(block.width) || 'narrow'
+---
+
+<Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
+  <div class:list={['text-block', `text-block--${width}`]}>
+    <SectionHeader heading={block.heading} />
+    <PortableText value={block.body} />
+  </div>
+</Section>
+
+<style>
+  .text-block { margin-inline: auto; }
+  .text-block--narrow { max-width: 46rem; }
+  .text-block :global(.section-header) { text-align: left; margin-inline: 0; margin-bottom: 1.5rem; }
+</style>
