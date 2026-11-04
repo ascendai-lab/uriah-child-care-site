@@ -774,7 +774,7 @@ See all [shift care](/child-care-vineland-nj/), or call [(856) 455-6701](tel:856
     keyword: 'evening child care vineland nj',
     ageRange: 'Ages 2.5 and up',
     schedule: 'Evenings, 7 days a week, until 11 pm',
-    image: IMG.lobby(),
+    image: IMG.porch(),
     intro:
       'Uriah Child Care offers evening child care in Vineland, NJ for parents who work second shift. Children ages 2.5 and up get dinner, play and a calm evening routine at our licensed center, which stays open until 11 pm, 7 days a week. We accept NJ childcare subsidy (CCAP).',
     excerpt: 'Second shift care with dinner and a calm evening routine, open until 11 pm.',

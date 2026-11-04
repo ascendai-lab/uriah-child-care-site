@@ -201,7 +201,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
         heading: 'Take a look around our center',
         subheading:
           'A bright, welcoming child care center with a secure entrance, Brightwheel check-in and an accessible ramp and parking. Here is what you will see when you visit.',
-        image: IMG.exterior(),
+        image: IMG.porch(),
         accent: 'sky',
         buttons: [tourBtn('Book a tour to see it in person')],
       }),
@@ -224,7 +224,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
       block('featureGrid', {
         style: 'checklist',
         heading: 'What parents notice',
-        image: IMG.entrance(),
+        image: IMG.restroom(),
         imageShape: 'arch',
         columns: 3,
         items: [
