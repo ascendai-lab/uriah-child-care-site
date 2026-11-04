@@ -1,3 +1,4 @@
+import { getSecret } from 'astro:env/server'
 import type { QueryParams } from '@sanity/client'
 import { sanityClient } from 'sanity:client'
 
@@ -40,7 +41,7 @@ export async function loadQuery<const Query extends string>(
     return sanityClient.fetch(query, params, { perspective: 'published', stega: false })
   }
 
-  const token = import.meta.env.SANITY_API_READ_TOKEN
+  const token = getSecret('SANITY_API_READ_TOKEN')
   if (!token) {
     throw new Error('SANITY_API_READ_TOKEN is required for visual editing / draft mode.')
   }

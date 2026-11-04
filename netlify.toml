@@ -4,6 +4,8 @@
 
 [build.environment]
   NODE_VERSION = "22"
+  # These are public by design (they ship in the page code), so the secret scan should skip them.
+  SECRETS_SCAN_OMIT_KEYS = "PUBLIC_SANITY_PROJECT_ID,PUBLIC_SANITY_DATASET,SITE_URL,SANITY_STUDIO_URL"
 
 # ─── Security Headers ───────────────────────────────────────────────────────
 # IMPORTANT: The Content-Security-Policy frame-ancestors directive is what

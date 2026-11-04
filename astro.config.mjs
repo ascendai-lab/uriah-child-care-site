@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config'
+import { defineConfig, envField } from 'astro/config'
 import { loadEnv } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 import sanity from '@sanity/astro'
@@ -14,6 +14,14 @@ export default defineConfig({
   output: 'server',
   adapter: netlify(),
   trailingSlash: 'ignore',
+
+  // Server secrets are read when a request comes in, not baked into the build output.
+  // (import.meta.env inlines values at build time, which Netlify's secret scan rightly blocks.)
+  env: {
+    schema: {
+      SANITY_API_READ_TOKEN: envField.string({ context: 'server', access: 'secret', optional: true }),
+    },
+  },
 
   integrations: [
     sanity({

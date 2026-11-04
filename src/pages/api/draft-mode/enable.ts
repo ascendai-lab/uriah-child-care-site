@@ -1,3 +1,4 @@
+import { getSecret } from 'astro:env/server'
 import type { APIRoute } from 'astro'
 import { validatePreviewUrl } from '@sanity/preview-url-secret'
 import { sanityClient } from 'sanity:client'
@@ -8,7 +9,7 @@ import { DRAFT_MODE_COOKIE, draftModeCookieValue } from '@cms/lib/draftMode'
  * Validates the one-time secret, sets the draft-mode cookie and redirects to the page.
  */
 export const GET: APIRoute = async ({ request, cookies, redirect }) => {
-  const token = import.meta.env.SANITY_API_READ_TOKEN
+  const token = getSecret('SANITY_API_READ_TOKEN')
   const cookieValue = await draftModeCookieValue()
   if (!token || !cookieValue) {
     return new Response('Visual editing needs SANITY_API_READ_TOKEN to be set.', { status: 500 })
