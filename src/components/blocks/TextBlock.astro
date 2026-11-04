@@ -15,7 +15,7 @@ const width = stegaClean(block.width) || 'narrow'
 ---
 
 <Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
-  <div class:list={['text-block', `text-block--${width}`]}>
+  <div class:list={['text-block', `text-block--${width}`, block.heading && 'text-block--split']}>
     <SectionHeader heading={block.heading} />
     <PortableText value={block.body} />
   </div>
@@ -27,7 +27,7 @@ const width = stegaClean(block.width) || 'narrow'
   .text-block :global(.section-header) { text-align: left; margin-inline: 0; margin-bottom: 1.5rem; }
   /* Wide screens: heading on the left, text on the right, so a short block doesn't leave half the row empty. */
   @media (min-width: 1040px) {
-    .text-block--narrow { max-width: none; display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr); gap: 4rem; align-items: start; }
-    .text-block--narrow :global(.section-header) { margin-bottom: 0; }
+    .text-block--narrow.text-block--split { max-width: none; display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr); gap: 4rem; align-items: start; }
+    .text-block--split :global(.section-header) { margin-bottom: 0; }
   }
 </style>

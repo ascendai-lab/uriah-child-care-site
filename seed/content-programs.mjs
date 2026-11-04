@@ -127,7 +127,7 @@ Call us at [(856) 455-6701](tel:8564556701) or [book a tour](/tour/) to see the 
     gbpName: 'After school program',
     keyword: 'after school program vineland nj',
     ageRange: 'School-age children up to 13',
-    schedule: 'Before school from 6 am, after school until 11 pm, 7 days a week',
+    schedule: '6 am to 11 pm, 7 days',
     image: IMG.playHall(),
     intro:
       'Uriah Child Care offers before and after school care in Vineland, NJ for school-age children up to 13. Kids get a snack, time for homework and time to play in a safe, licensed center, and we stay open until 11 pm for parents who work late. We accept NJ childcare subsidy (CCAP) for families who qualify.',
@@ -191,13 +191,13 @@ Call [(856) 455-6701](tel:8564556701) or [book a tour](/tour/). Tell us your chi
     keyword: 'child care vineland nj',
     ageRange: 'Ages 2.5 and up',
     schedule: 'Monday to Sunday, 6 am to 11 pm.',
-    image: IMG.dusk(),
+    image: IMG.ramp(),
     intro:
       'Uriah Child Care is a licensed child care center in Vineland, NJ, open Monday to Sunday from 6 am to 11 pm. We offer early morning, evening and late evening care for children ages 2.5 and up, so parents who work early mornings, evenings and weekends have a safe place for their kids. We accept NJ childcare subsidy (CCAP).',
     excerpt: 'Licensed child care open 7 days a week, early morning to 11 pm, for ages 2.5 and up.',
     highlights: [
       'Open 7 days a week, 6 am to 11 pm',
-      'Early morning to 11 pm',
+      'Evening meal for children staying late',
       'Weekend care on Saturday and Sunday',
       'Full-time and part-time schedules',
       'Ages 2.5 and up',
@@ -420,7 +420,7 @@ const preschoolServices = [
     keyword: 'pre k vineland nj',
     ageRange: 'Ages 4 to 5',
     schedule: 'Monday to Sunday, 6 am to 11 pm',
-    image: IMG.horseshoe(),
+    image: IMG.classroom(),
     intro:
       'Uriah Child Care offers a play-based pre-K program in Vineland, NJ for 4 and 5-year-olds. Children practice letters, numbers, writing their name and following directions, so they start kindergarten confident. Our center is licensed by NJ DCF, open 7 days a week, and accepts NJ childcare subsidy (CCAP).',
     excerpt: 'Play-based pre-K for 4 and 5-year-olds: letters, numbers, writing their name and getting ready for school.',

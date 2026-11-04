@@ -49,7 +49,7 @@ export const homePage = {
       eyebrow: 'School age, up to 13',
       heading: 'After school program in Vineland',
       body: md`Before school from 6 am and after school until 11 pm, school-age kids get a snack, [homework time](/homework-help-vineland-nj/) with help on reading, and time to play with friends in a safe, licensed center.`,
-      image: IMG.playHall(),
+      image: IMG.tables(),
       imagePosition: 'left',
       imageShape: 'arch',
       accent: 'sky',
@@ -185,7 +185,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
         mode: 'all',
         heading: 'What parents say',
         intro: 'Real reviews from local families on Google.',
-        background: 'white',
+        background: 'muted',
       }),
     ],
     seo: seo('Meet Ms. Paulette | Owner of Uriah Child Care, Vineland', 'Ms. Paulette has cared for Cumberland County children since 2005. Meet the owner and director of Uriah Child Care in Vineland, NJ.'),
@@ -224,7 +224,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
       block('featureGrid', {
         style: 'checklist',
         heading: 'What parents notice',
-        image: IMG.sink(),
+        image: IMG.restroom(),
         imageShape: 'arch',
         columns: 3,
         items: [
