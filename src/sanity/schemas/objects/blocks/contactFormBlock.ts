@@ -16,7 +16,7 @@ export const contactFormBlock = defineType({
       title: 'Message after sending',
       type: 'string',
       group: 'content',
-      initialValue: 'Thank you. Ms. Paulette will call you within one business day to pick a time.',
+      initialValue: 'Thank you. Ms. Paulette or Tameca will call you within one business day to pick a time.',
     }),
     defineField({
       name: 'showContactDetails',

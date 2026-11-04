@@ -104,7 +104,7 @@ export const homePage = {
       mode: 'selected',
       heading: 'What local families say',
       intro: 'Real reviews from parents and grandparents on Google.',
-      testimonials: refs('review-monique-willoughby', 'review-rockay-davis', 'review-jake-jones'),
+      testimonials: refs('review-monique-willoughby', 'review-marcia-bailey', 'review-jake-jones'),
       background: 'default',
     }),
     block('serviceAreasBlock', {
@@ -149,15 +149,16 @@ export const pages = [
         heading: 'Book a tour of our Vineland child care center',
         accentWord: 'Book a tour',
         subheading:
-          'See the classroom, meet Ms. Paulette, and ask every question you have. Tours take about 20 minutes, and you are welcome to bring your little one. Fill in the form or call us.',
-        image: IMG.paulette(),
+          'See the classroom, meet Ms. Paulette, and ask every question you have. Fill in the short form below or call us.',
+        // No photo here: on the tour page the form should be on the first screen.
+        buttons: [button('Request your tour', { ...link.internal('page-tour'), anchor: 'tour-form' }, 'primary')],
         accent: 'coral',
         showPhone: true,
       }),
       block('contactFormBlock', {
         anchorId: 'tour-form',
         heading: 'Request your tour',
-        intro: 'Tell us a little about your child and your schedule. Ms. Paulette or Tameca will call you within one business day to pick a time.',
+        intro: 'Tell us a little about your child and your schedule. Ms. Paulette or Tameca will call you within one business day to pick a time. Tours take about 20 minutes, and you are welcome to bring your little one.',
       }),
       block('mapBlock', {
         heading: 'Where to find us',
@@ -183,16 +184,16 @@ export const pages = [
         heading: 'Meet Ms. Paulette',
         accentWord: 'Ms. Paulette',
         subheading:
-          'Ms. Paulette Senior has cared for Cumberland County children since 2005. Today she runs Uriah Child Care in Vineland with her daughter, Tameca Burke, our director.',
+          'Ms. Paulette (Paulette Senior) has cared for Cumberland County children since 2005. Today she runs Uriah Child Care in Vineland with her daughter, Tameca Burke, our director.',
         image: IMG.paulette(),
         accent: 'sunshine',
         buttons: [tourBtn('Book a tour with Ms. Paulette')],
       }),
       block('imageText', {
         heading: 'Families who come back, generation after generation',
-        body: md`For many families, Ms. Paulette is more than a child care provider. Parents who once brought their first child now bring their second and third, and some grandparents bring their grandchildren. One father even made her his daughter's godmother.
+        body: md`For many families, Ms. Paulette is more than a child care provider. Parents who once brought their first child now bring their second and third, and some grandparents bring their grandchildren. One parent even made her their daughter's godmother.
 
-What families mention most is how she treats their children: "she loves them like her own." Children come home clean, cared for and happy, and parents always know how the day went.`,
+What families mention most is how she treats their children: "she loves them like her own." Parents say their children come home clean, cared for and happy.`,
         image: IMG.entrance(),
         imagePosition: 'right',
         imageShape: 'arch',
@@ -215,11 +216,11 @@ The center is licensed by the New Jersey Department of Children and Families, li
       block('testimonialsBlock', {
         mode: 'selected',
         heading: 'In parents’ words',
-        testimonials: refs('review-jake-jones', 'review-vana-tinamarie', 'review-marcia-bailey'),
+        testimonials: refs('review-jake-jones', 'review-monique-willoughby', 'review-marcia-bailey'),
         background: 'white',
       }),
     ],
-    seo: seo('Meet Ms. Paulette | Owner of Uriah Child Care, Vineland', 'Ms. Paulette Senior has cared for Cumberland County children since 2005. Meet the owner and director of Uriah Child Care in Vineland, NJ.'),
+    seo: seo('Meet Ms. Paulette | Owner of Uriah Child Care, Vineland', 'Ms. Paulette has cared for Cumberland County children since 2005. Meet the owner and director of Uriah Child Care in Vineland, NJ.'),
   }),
 
   page('our-center', {

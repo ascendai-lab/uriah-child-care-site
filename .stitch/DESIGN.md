@@ -33,7 +33,7 @@ Reference sites Mark picked (Nov 2026) set the layout language:
 | `-50` tints | see global.css | Section bands, chips |
 | `-700` shades | see global.css | Text on tints (contrast) |
 
-Text on coral, sunshine and sky buttons is navy (contrast); text on sage and navy is white.
+Text on coral, sky and sage surfaces is `--navy-600` (#263440, 4.8:1 or better); on sunshine it is navy. White text only goes on navy or `--sage-700` (#3D7A6F, 5:1): secondary buttons, the CTA band and icon circles use `--sage-700`, never plain sage. White on plain sage is 2.6:1 and fails WCAG AA.
 
 ## 3. Type
 
@@ -43,7 +43,7 @@ Text on coral, sunshine and sky buttons is navy (contrast); text on sage and nav
 
 ## 4. Components
 
-- Buttons are pills (`.btn`), primary coral with a navy arrow badge, secondary sage, light and outline variants on dark.
+- Buttons are pills (`.btn`), primary coral with a navy arrow badge, secondary `--sage-700` with white text, light and outline variants on dark.
 - Cards: radius 28px (`--radius-xl`), soft shadow, no hard borders.
 - Chips: white pills with an icon (ages, hours, address).
 - FAQ: white rounded `<details>` rows, first one open.

@@ -145,8 +145,10 @@ export default function TourForm({ thanksPath = '/tour/thanks/', phone, idPrefix
 
       <div className="form-row form-row--2">
         <div className="field">
-          <label htmlFor={id('email')}>Email</label>
-          <input id={id('email')} name="email" type="email" autoComplete="email" required />
+          <label htmlFor={id('email')}>
+            Email <span className="field__hint">(optional)</span>
+          </label>
+          <input id={id('email')} name="email" type="email" autoComplete="email" />
         </div>
         <div className="field">
           <label htmlFor={id('childAge')}>Your child's age</label>

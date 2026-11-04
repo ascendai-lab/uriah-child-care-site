@@ -45,7 +45,6 @@ export function childCareEntity(
     { '@type': 'City', name: `${clean(settings.address?.city) ?? 'Vineland'}, ${clean(settings.address?.state) ?? 'NJ'}` },
     ...(opts.areas ?? []).map((a) => ({ '@type': 'City', name: `${clean(a.city)}, ${clean(a.state) ?? 'NJ'}` })),
   ]
-  const reviews = (opts.reviews ?? []).filter((r) => r.rating && r.quote)
   const sameAs = [
     clean(settings.gbpUrl),
     ...(settings.socialLinks ?? []).map((s) => clean(s.url)),
@@ -93,24 +92,8 @@ export function childCareEntity(
           recognizedBy: license.issuer ? { '@type': 'GovernmentOrganization', name: clean(license.issuer) } : undefined,
         })
       : undefined,
-    // Only first-party reviews that are shown on the page, per Google's review snippet rules.
-    aggregateRating: reviews.length
-      ? {
-          '@type': 'AggregateRating',
-          ratingValue: (reviews.reduce((n, r) => n + (r.rating ?? 0), 0) / reviews.length).toFixed(1),
-          reviewCount: reviews.length,
-          bestRating: 5,
-        }
-      : undefined,
-    review: reviews.slice(0, 6).map((r) =>
-      compact({
-        '@type': 'Review',
-        reviewRating: { '@type': 'Rating', ratingValue: r.rating, bestRating: 5 },
-        author: { '@type': 'Person', name: clean(r.name) },
-        reviewBody: clean(r.quote),
-        datePublished: clean(r.date) || undefined,
-      }),
-    ),
+    // No aggregateRating or review here: Google ignores self-serving LocalBusiness review markup, and an average
+    // of hand-picked reviews would misstate the real Google rating. Reviews are shown on the page only.
     sameAs,
   })
 }

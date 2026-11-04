@@ -41,25 +41,25 @@
 
 [[redirects]]
   from = "/daycare-services-millville"
-  to = "/"
+  to = "/millville-nj/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/daycare-services-millville/"
-  to = "/"
+  to = "/millville-nj/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/uriah-child-care-service-areas"
-  to = "/"
+  to = "/child-care-vineland-nj/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/uriah-child-care-service-areas/"
-  to = "/"
+  to = "/child-care-vineland-nj/"
   status = 301
   force = true
 
@@ -203,18 +203,6 @@
 
 [[redirects]]
   from = "/style-guide/"
-  to = "/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/blog"
-  to = "/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/blog/"
   to = "/"
   status = 301
   force = true

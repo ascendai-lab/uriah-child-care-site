@@ -6,7 +6,7 @@ export const childAgeOptions = [
   { value: '3', label: '3' },
   { value: '4', label: '4' },
   { value: '5', label: '5' },
-  { value: 'school-age', label: 'School age (6–12)' },
+  { value: 'school-age', label: 'School age (6–13)' },
   { value: 'under-2.5', label: 'Under 2½' },
 ] as const
 
@@ -40,7 +40,7 @@ export const TourRequestSchema = z.object({
     .string()
     .trim()
     .refine((v) => v.replace(/\D/g, '').length >= 10, 'Please enter a phone number with area code.'),
-  email: z.string().trim().email('Please enter a valid email address.'),
+  email: z.union([z.literal(''), z.string().trim().email('Please enter a valid email address.')]).optional().default(''),
   childAge: z.enum(values(childAgeOptions), { errorMap: () => ({ message: "Please pick your child's age." }) }),
   careNeeded: z.array(z.enum(values(careOptions))).min(1, 'Please pick at least one kind of care.'),
   tourPreference: z.array(z.enum(values(tourTimeOptions))).default([]),

@@ -265,10 +265,10 @@
   }
   .btn:hover { box-shadow: var(--shadow-button-hover); }
   .btn:active { box-shadow: none; transform: translateY(1px); }
-  .btn--primary { background: var(--coral); color: var(--navy); }
+  .btn--primary { background: var(--coral); color: var(--navy-600); }
   .btn--primary:hover { background: var(--coral-600); }
-  .btn--secondary { background: var(--sage); color: #fff; }
-  .btn--secondary:hover { background: var(--sage-600); }
+  .btn--secondary { background: var(--sage-700); color: #fff; }
+  .btn--secondary:hover { background: #336a60; }
   .btn--sunshine { background: var(--sunshine); color: var(--navy); }
   .btn--sunshine:hover { background: var(--sunshine-600); }
   .btn--outline { background: transparent; border-color: currentColor; box-shadow: none; }
@@ -287,7 +287,7 @@
     background: var(--navy);
     color: #fff;
   }
-  .btn--light .btn__arrow, .btn--sunshine .btn__arrow { background: var(--coral); color: var(--navy); }
+  .btn--light .btn__arrow, .btn--sunshine .btn__arrow { background: var(--coral); color: var(--navy-600); }
   .btn__arrow svg { width: 1rem; height: 1rem; }
 
   .btn-row {
@@ -360,10 +360,10 @@
   }
 
   /* Accent color helpers (cards, frames, chips) */
-  .accent-coral { --accent: var(--coral); --accent-50: var(--coral-50); --accent-700: var(--coral-700); --on-accent: var(--navy); }
-  .accent-sage { --accent: var(--sage); --accent-50: var(--sage-50); --accent-700: var(--sage-700); --on-accent: #fff; }
+  .accent-coral { --accent: var(--coral); --accent-50: var(--coral-50); --accent-700: var(--coral-700); --on-accent: var(--navy-600); }
+  .accent-sage { --accent: var(--sage); --accent-50: var(--sage-50); --accent-700: var(--sage-700); --on-accent: var(--navy-600); }
   .accent-sunshine { --accent: var(--sunshine); --accent-50: var(--sunshine-50); --accent-700: var(--sunshine-700); --on-accent: var(--navy); }
-  .accent-sky { --accent: var(--sky); --accent-50: var(--sky-50); --accent-700: var(--sky-700); --on-accent: var(--navy); }
+  .accent-sky { --accent: var(--sky); --accent-50: var(--sky-50); --accent-700: var(--sky-700); --on-accent: var(--navy-600); }
 
   /* Program card: bold color block with a photo */
   .program-card {
@@ -489,7 +489,7 @@
     width: 1.6rem;
     height: 1.6rem;
     border-radius: 50%;
-    background: var(--sage);
+    background: var(--sage-700);
     color: #fff;
   }
   .checklist__icon svg { width: 0.95rem; height: 0.95rem; }

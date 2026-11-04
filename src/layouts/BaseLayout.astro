@@ -76,7 +76,7 @@ const pageDescription = stegaClean(seo?.metaDescription || description || defaul
 const site = Astro.site ?? new URL(Astro.url.origin)
 const canonical = stegaClean(seo?.canonicalUrl) || new URL(Astro.url.pathname, site).href
 const shareImage = [seo?.ogImage, image, defaults?.ogImage].find((img) => img?.asset)
-const shareImageUrl = shareImage ? urlFor(shareImage as Parameters<typeof urlFor>[0]).width(1200).height(630).fit('crop').url() : null
+const shareImageUrl = shareImage ? urlFor(shareImage as Parameters<typeof urlFor>[0]).width(1200).height(630).fit('crop').format('jpg').url() : null
 const shareImageAlt = stegaClean(shareImage?.alt) || pageTitle
 const noIndex = Boolean(seo?.noIndex) || forceNoIndex || draftMode
 const favicon = settings?.faviconUrl

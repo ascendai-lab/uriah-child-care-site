@@ -9,7 +9,8 @@ import netlify from '@astrojs/netlify'
 const env = loadEnv(process.env.NODE_ENV ?? 'development', process.cwd(), '')
 
 export default defineConfig({
-  site: env.SITE_URL || 'http://localhost:4321',
+  // SITE_URL wins; on Netlify, URL is the site's main address (the custom domain once it is set).
+  site: env.SITE_URL || env.URL || 'http://localhost:4321',
   // SSR is required for visual editing and draft previews. Do NOT switch to static.
   output: 'server',
   adapter: netlify(),

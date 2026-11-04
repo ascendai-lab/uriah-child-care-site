@@ -23,7 +23,7 @@ Disallow: /studio
 Disallow: /api/
 Disallow: /tour/thanks/
 
-${aiCrawlers.map((bot) => `User-agent: ${bot}\nAllow: /\nDisallow: /studio\nDisallow: /api/`).join('\n\n')}
+${aiCrawlers.map((bot) => `User-agent: ${bot}\nAllow: /\nDisallow: /studio\nDisallow: /api/\nDisallow: /tour/thanks/`).join('\n\n')}
 
 Sitemap: ${new URL('/sitemap.xml', origin).href}
 `

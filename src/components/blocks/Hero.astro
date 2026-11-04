@@ -40,7 +40,7 @@ const buttons = block.buttons ?? []
 
 <section
   id={stegaClean(block.anchorId) || undefined}
-  class:list={['hero', `hero--${layout}`, `accent-${accent}`, layout !== 'photoFade' && `bg-${stegaClean(block.background) || 'default'}`]}
+  class:list={['hero', `hero--${layout}`, `accent-${accent}`, !block.image?.asset && 'hero--no-media', layout !== 'photoFade' && `bg-${stegaClean(block.background) || 'default'}`]}
   data-sanity={dataSanity}
 >
   {
@@ -171,14 +171,19 @@ const buttons = block.buttons ?? []
   }
 
   @media (max-width: 899px) {
-    .hero--photoFade { min-height: 0; padding-block: 3rem 4rem; }
+    /* Phones: the photo sits as a band on top and fades down into the navy text panel. */
+    .hero--photoFade { min-height: 0; padding-block: 14.5rem 4rem; }
+    .hero-fade__media { inset: 0 0 auto 0; height: 19rem; }
     .hero-fade__media::after {
-      background: linear-gradient(0deg, var(--navy) 18%, rgba(51, 67, 80, 0.86) 55%, rgba(51, 67, 80, 0.5) 100%);
+      background: linear-gradient(180deg, rgba(51, 67, 80, 0.05) 0%, rgba(51, 67, 80, 0.35) 50%, var(--navy) 100%);
     }
     :global(.hero-fade__doodle) { display: none; }
   }
 
   @media (min-width: 900px) {
     .hero--split .hero__inner, .hero--card .hero__inner { grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; }
+    /* No photo (e.g. the tour page): one column, so the card doesn't leave an empty half. */
+    .hero--split.hero--no-media .hero__inner, .hero--card.hero--no-media .hero__inner { grid-template-columns: 1fr; }
   }
+  .hero--no-media.hero--card, .hero--no-media.hero--split { padding-block: clamp(1.5rem, 3vw, 2.5rem); }
 </style>

@@ -14,5 +14,8 @@ export function applyTitleTemplate(template: string | null | undefined, title: s
   if (!clean || !clean.includes('%s')) return title
   // A title that already carries the brand (e.g. the home page's "… | Uriah Child Care") is used as is.
   const brand = clean.replace('%s', '').replace(/^[\s|–-]+|[\s|–-]+$/g, '')
-  return brand && title.includes(brand) ? title : clean.replace('%s', title)
+  // Also catch a short form like "… | Uriah" (the brand's first word as the last segment), so it isn't doubled.
+  const short = brand.split(/\s+/)[0]
+  const branded = brand && (title.includes(brand) || (short && new RegExp(`\\|\\s*${short}\\s*$`).test(title)))
+  return branded ? title : clean.replace('%s', title)
 }
