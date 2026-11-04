@@ -57,7 +57,7 @@
     --shadow-card-hover: 0 2px 4px rgba(51, 67, 80, 0.05), 0 14px 34px rgba(51, 67, 80, 0.10);
     --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
     --shadow-overlay: 0 20px 48px rgba(51, 67, 80, 0.16);
-    --focus-ring: 0 0 0 3px rgba(93, 167, 206, 0.45);
+    --focus-ring: 0 0 0 2px #fff, 0 0 0 4.5px var(--sky-700);
 
     /* Radii */
     --radius-sm: 8px;
@@ -447,7 +447,7 @@
     content: '';
     position: absolute;
     z-index: -1;
-    inset: 6% -5% -5% 6%;
+    inset: 6% -4% -4% 6%;
     background: var(--accent, var(--sunshine));
     opacity: 0.9;
   }
@@ -526,7 +526,9 @@
     font-size: 0.9rem;
     color: var(--fg2);
   }
-  .breadcrumbs li + li::before { content: '›'; margin-right: 0.35rem; opacity: 0.6; }
+  .breadcrumbs li { display: inline-flex; align-items: baseline; }
+  .breadcrumbs li + li::before { content: '›'; margin-right: 0.35rem; opacity: 0.6; flex: none; }
+  .breadcrumbs a { display: inline-block; padding-block: 0.2rem; }
   .breadcrumbs a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(51, 67, 80, 0.3); }
   .breadcrumbs [aria-current] { font-weight: 700; color: var(--fg1); }
 
@@ -665,10 +667,8 @@
   .field fieldset, fieldset.field { border: 0; }
   .choice-group { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.15rem; }
   @media (max-width: 520px) {
-    /* Phones: two even columns of choices instead of a ragged stack. */
-    .choice-group { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .choice, .choice span { width: 100%; }
-    .choice span { justify-content: center; text-align: center; padding-inline: 0.6rem; font-size: 0.9rem; }
+    .choice-group { gap: 0.4rem; }
+    .choice span { min-height: 40px; padding: 0.4rem 0.8rem; font-size: 0.9rem; }
   }
   .choice {
     position: relative;
@@ -764,6 +764,11 @@
    Sections fade up as they scroll into view (src/scripts/reveal.ts adds .reveal only
    when JS runs and the visitor hasn't asked for reduced motion, so nothing is hidden without it). */
 @layer components {
+  /* A photo-less page hero flows straight into its first white section. */
+  .hero--no-media + .section:is(.bg-white, .bg-default) { padding-top: 0.5rem; }
+  /* On phones the offset photo backdrops keep clear of the screen edge. */
+  @media (max-width: 640px) { .shape { width: 88%; margin-inline: auto; } }
+
   /* Two white sections in a row read as one: don't stack both paddings. */
   .section:is(.bg-white, .bg-default) + .section:is(.bg-white, .bg-default) { padding-top: calc(var(--section-y) * 0.4); }
 

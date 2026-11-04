@@ -64,7 +64,7 @@ const reassurance = [
 </section>
 
 <style>
-  .tour-block { padding-top: calc(var(--section-y) * 0.6); }
+  .tour-block { padding-top: calc(var(--section-y) * 0.6); padding-bottom: 0; }
   .tour-block--page { padding-top: 2rem; }
   .tour-block__card {
     position: relative;
@@ -92,6 +92,12 @@ const reassurance = [
   .tour-block__owner figcaption { display: grid; }
   .tour-block__owner strong { font-family: var(--font-display); font-size: 1.15rem; }
   .tour-block__owner span { color: var(--fg2); font-size: 0.92rem; }
+  @media (max-width: 640px) {
+    /* Phones: no card around the card, so the form gets the full width. */
+    .tour-block__card { padding: 0; background: none; border-radius: 0; gap: 1.5rem; }
+    .tour-block__form { box-shadow: var(--shadow-card-hover); }
+    .tour-block__owner { display: none; }
+  }
   @media (min-width: 960px) {
     .tour-block__card { grid-template-columns: 5fr 7fr; align-items: start; gap: 3rem; }
   }

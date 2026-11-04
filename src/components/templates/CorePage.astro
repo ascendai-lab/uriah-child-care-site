@@ -204,7 +204,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
           <h2 class="section-heading">{doc._type === 'category' ? 'Choose the care that fits' : 'More programs at our Vineland center'}</h2>
         </header>
         <div class={`grid-cards grid-cards--${programCols}`}>
-          {shownServices.map((s, i) => <ProgramCard item={withUniquePhoto(s)} index={i} hideAge={sameAge} />)}
+          {shownServices.map((s, i) => <ProgramCard item={{ ...withUniquePhoto(s), accent: null }} index={i} hideAge={sameAge} />)}
         </div>
       </div>
     </section>
@@ -348,7 +348,8 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
     .day-plan__dot { top: 0; }
   }
 
-  .core-faq { max-width: 52rem; }
+  .core-faq { max-width: 52rem; margin-inline: auto; }
+  .core-faq .core-section-title { text-align: center; }
 
   .keep-exploring h2 { font-size: 1.35rem; margin-bottom: 1rem; }
   .keep-exploring ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; }

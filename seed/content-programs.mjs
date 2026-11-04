@@ -174,7 +174,7 @@ Call [(856) 455-6701](tel:8564556701) or [book a tour](/tour/). Tell us your chi
     keyword: 'child care vineland nj',
     ageRange: 'Ages 2.5 and up',
     schedule: 'Monday to Sunday, 6 am to 11 pm.',
-    image: IMG.exterior(),
+    image: IMG.porch(),
     intro:
       'Uriah Child Care is a licensed child care center in Vineland, NJ, open Monday to Sunday from 6 am to 11 pm. We offer early morning, evening and late evening care for children ages 2.5 and up, so parents who work early mornings, evenings and weekends have a safe place for their kids. We accept NJ childcare subsidy (CCAP).',
     excerpt: 'Licensed child care open 7 days a week, early morning to 11 pm, for ages 2.5 and up.',
@@ -886,7 +886,7 @@ Some families use us only on weekends; others every day. See [full-time and part
     gbpName: 'Full-time and part-time care',
     keyword: 'part time daycare vineland nj',
     ageRange: 'Ages 2.5 and up',
-    image: IMG.signIn(),
+    image: IMG.classroom(),
     intro:
       'Uriah Child Care in Vineland, NJ offers full-time and part-time child care for children ages 2.5 and up. Choose the days and hours you need between 6 am and 11 pm, 7 days a week, and we will build a schedule around your work.',
     excerpt: 'Choose the days and hours you need, between 6 am and 11 pm, 7 days a week.',

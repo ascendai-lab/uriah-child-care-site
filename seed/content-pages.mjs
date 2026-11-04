@@ -61,7 +61,7 @@ export const homePage = {
       eyebrow: 'Open 7 days, 6 am to 11 pm',
       heading: 'Child care for every shift in Vineland',
       body: md`Nurses, warehouse and plant workers, retail and restaurant staff: we are open when you work. [Early morning care](/first-shift-child-care-vineland-nj/) from 6 am, [evening care](/evening-child-care-vineland-nj/) with dinner, [late evening care until 11 pm](/late-evening-child-care-vineland-nj/), and [weekend daycare](/weekend-daycare-vineland-nj/) on Saturday and Sunday.`,
-      image: IMG.porch(),
+      image: IMG.ramp(),
       imagePosition: 'right',
       imageShape: 'circle',
       accent: 'sage',
@@ -148,7 +148,7 @@ export const pages = [
     slug: slug('about-ms-paulette'),
     pageBuilder: [
       block('hero', {
-        layout: 'card',
+        layout: 'split',
         eyebrow: 'Caring for local children since 2005',
         heading: 'Meet Ms. Paulette',
         subheading:
@@ -163,10 +163,10 @@ export const pages = [
 
 What families mention most is how she treats their children: "she loves them like her own." Parents say their children come home clean, cared for and happy.`,
         image: IMG.entrance(),
-        imagePosition: 'right',
+        imagePosition: 'left',
         imageShape: 'arch',
         accent: 'coral',
-        background: 'white',
+        background: 'muted',
       }),
       block('teamBlock', {
         mode: 'all',
@@ -208,7 +208,17 @@ The center is licensed by the New Jersey Department of Children and Families, li
       block('galleryBlock', {
         heading: 'Inside and out',
         intro: 'Photos of our building and common areas. We do not post photos of children without written permission from their parents.',
-        images: [IMG.exterior(), IMG.entrance(), IMG.porch(), IMG.ramp(), IMG.lobby(), IMG.signIn(), IMG.kiosk(), IMG.classroom(), IMG.schedule(), IMG.restroom()].map((i) => ({ ...i, _key: key() })),
+        images: [
+          [IMG.exterior(), 'Our building on W Chestnut Ave'],
+          [IMG.classroom(), 'The classroom'],
+          [IMG.schedule(), 'Picture schedule on the classroom wall'],
+          [IMG.entrance(), 'Front entrance'],
+          [IMG.porch(), 'Covered porch with a security camera'],
+          [IMG.ramp(), 'Ramp and accessible parking'],
+          [IMG.lobby(), 'Lobby'],
+          [IMG.kiosk(), 'Brightwheel check-in kiosk'],
+          [IMG.restroom(), 'Hallway and accessible restroom'],
+        ].map(([i, caption]) => ({ ...i, caption, _key: key() })),
         background: 'white',
       }),
       block('featureGrid', {
@@ -225,7 +235,6 @@ The center is licensed by the New Jersey Department of Children and Families, li
         ].map(([title, description]) => ({ _key: key(), _type: 'feature', title, description })),
         background: 'default',
       }),
-      block('mapBlock', { heading: 'Find us', background: 'white' }),
     ],
     seo: seo('Our Center | Photos of Uriah Child Care in Vineland, NJ', 'See photos of Uriah Child Care at 30 W Chestnut Ave in Vineland, NJ: secure entrance, Brightwheel check-in, classroom and accessible ramp.'),
   }),
@@ -235,17 +244,15 @@ The center is licensed by the New Jersey Department of Children and Families, li
     slug: slug('reviews'),
     pageBuilder: [
       block('hero', {
-        layout: 'card',
+        layout: 'centered',
+        eyebrow: 'Google reviews',
         heading: 'What families say about Ms. Paulette',
         subheading: 'Real reviews from parents and grandparents, copied word for word from Google.',
-        image: IMG.paulette(),
         accent: 'sage',
-        showRating: true,
+        buttons: [tourBtn()],
       }),
       block('testimonialsBlock', {
         mode: 'all',
-        heading: 'What parents say',
-        intro: 'Real reviews from local families on Google.',
         background: 'white',
       }),
     ],
@@ -263,6 +270,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
         subheading: 'Hours, ages, cost, CCAP, meals, safety and how to enroll. Can’t find your answer? Call us at (856) 455-6701.',
         image: IMG.signIn(),
         accent: 'sunshine',
+        buttons: [tourBtn()],
       }),
       block('faqBlock', {
         mode: 'all',
