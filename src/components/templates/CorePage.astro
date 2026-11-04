@@ -16,6 +16,7 @@ import SanityImage from '@components/ui/SanityImage.astro'
 import ProgramCard from '@components/cards/ProgramCard.astro'
 import ReviewsWall from '@components/ui/ReviewsWall.astro'
 import FaqList from '@components/ui/FaqList.astro'
+import Doodle from '@components/ui/Doodle.astro'
 import Icon from '@components/ui/Icon.astro'
 import PhoneLink from '@components/ui/PhoneLink.astro'
 import PageBuilder from '@components/blocks/PageBuilder.astro'
@@ -115,7 +116,7 @@ const highlightCount = doc.highlights?.length ?? 0
 const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 2 : 3
 ---
 
-<section class:list={['core-hero', `accent-${accent}`]}>
+<section class:list={['core-hero', 'page-hero', `accent-${accent}`]}>
   <div class="container">
     <div class="core-hero__card">
       <div class="core-hero__text enter">
@@ -140,6 +141,8 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
             <div class="shape shape--arch">
               <SanityImage image={doc.image} width={560} aspectRatio={4 / 5} sizes="(min-width: 900px) 420px, 85vw" loading="eager" fetchpriority="high" />
             </div>
+            <Doodle type="star" color="sunshine" size={44} class="doodle--float" style="top:2%;left:-6%" />
+            <Doodle type="loop" color="sky" size={68} class="doodle--float doodle--slow" style="bottom:-5%;left:6%" />
           </div>
         )
       }
@@ -147,7 +150,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
   </div>
 </section>
 
-<section class="section bg-white core-body">
+<section class="section bg-default core-body">
   <div class="container core-body__grid">
     <div class="core-body__main">
       <PortableText value={doc.body ?? []} />
@@ -171,7 +174,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
 
 {
   doc.highlights?.length ? (
-    <section class="section bg-white">
+    <section class="section bg-default">
       <div class="container">
         <h2 class="section-heading core-section-title">{titles.gets}</h2>
         <ul class="ticks core-highlights" style={`--cols:${highlightCols}`}>
@@ -208,7 +211,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
 
 {
   shownServices.length ? (
-    <section class="section bg-white">
+    <section class="section bg-default">
       <div class="container">
         <header class="section-header section-header--center">
           <h2 class="section-heading">{titles.programs}</h2>
@@ -237,7 +240,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
 
 {
   faqs.length ? (
-    <section class="section bg-white">
+    <section class="section bg-default">
       <div class="container"><div class="core-faq">
         <h2 class="section-heading core-section-title">{titles.faq}</h2>
         <FaqList items={faqs} openFirst />
@@ -280,7 +283,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
 }
 
 <style>
-  .core-hero { padding-block: 1.5rem clamp(1rem, 3vw, 2.5rem); }
+  .core-hero { padding-top: 1.75rem; }
   .core-hero__text { min-width: 0; }
   .core-hero__card {
     position: relative;
@@ -351,7 +354,21 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
     font-size: 0.95rem;
     box-shadow: 0 0 0 5px var(--surface-soft);
   }
-  .day-plan__when { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; color: var(--navy); }
+  .day-plan__when { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; color: var(--navy); transition: color 220ms var(--ease-out); }
+  /* Hover: the stop lifts and its number bounces, like a little hop along the day. */
+  .day-plan li { transition: transform 320ms var(--ease-spring, cubic-bezier(0.34, 1.56, 0.64, 1)); cursor: default; }
+  .day-plan__dot { transition: transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 220ms var(--ease-out); z-index: 1; }
+  @media (hover: hover) {
+    .day-plan li:hover { transform: translateY(-6px); }
+    .day-plan li:hover .day-plan__dot { transform: scale(1.18) rotate(-8deg); box-shadow: 0 0 0 5px var(--surface-soft), 0 8px 18px rgba(51, 67, 80, 0.18); }
+    .day-plan li:hover .day-plan__when { color: var(--accent-700, var(--navy)); }
+    .ticks li:hover .ticks__icon { transform: scale(1.15) rotate(-8deg); }
+  }
+  .ticks__icon { transition: transform 320ms cubic-bezier(0.34, 1.56, 0.64, 1); }
+  @media (prefers-reduced-motion: reduce) {
+    .day-plan li, .day-plan__dot, .ticks__icon { transition: none; }
+    .day-plan li:hover, .day-plan li:hover .day-plan__dot, .ticks li:hover .ticks__icon { transform: none; }
+  }
   .day-plan__what { color: var(--fg2); max-width: 30rem; }
   @media (min-width: 1040px) {
     .day-plan { grid-template-columns: repeat(var(--steps, 6), minmax(0, 1fr)); gap: 1.5rem; }

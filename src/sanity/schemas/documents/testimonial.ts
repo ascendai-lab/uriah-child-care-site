@@ -16,7 +16,13 @@ export const testimonial = defineType({
       type: 'string',
       description: 'e.g. "Parent of two, Millville"',
     }),
-    defineField({ name: 'quote', title: 'Quote', type: 'text', rows: 5, validation: (Rule) => Rule.required() }),
+    defineField({
+      name: 'quote',
+      title: 'Quote',
+      type: 'text',
+      rows: 5,
+      description: 'Copy the review word for word. Leave empty for a star rating with no written review.',
+    }),
     defineField({
       name: 'rating',
       title: 'Star rating',

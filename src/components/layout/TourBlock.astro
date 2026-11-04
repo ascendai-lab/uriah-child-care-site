@@ -1,6 +1,7 @@
 ---
 import type { Layout } from '@cms/lib/types'
 import SanityImage from '@components/ui/SanityImage.astro'
+import Doodle from '@components/ui/Doodle.astro'
 import Icon from '@components/ui/Icon.astro'
 import TourForm from '@components/ui/TourForm'
 
@@ -26,6 +27,7 @@ const reassurance = [
 <section class:list={['section tour-block', asPageForm && 'tour-block--page']} id={id} aria-labelledby={`${id}-heading`}>
   <div class="container">
     <div class="tour-block__card">
+      <Doodle type="sun" color="sunshine" size={60} class="doodle--float doodle--slow tour-block__doodle" style="top:-22px;right:8%" />
       <div class="tour-block__aside">
         <span class="eyebrow"><Icon name="calendar" /> Book a tour</span>
         <h2 id={`${id}-heading`} class="section-heading">{heading ?? 'Come see our Vineland center'}</h2>
@@ -97,6 +99,7 @@ const reassurance = [
     .tour-block__card { padding: 0; background: none; border-radius: 0; gap: 1.5rem; }
     .tour-block__form { box-shadow: var(--shadow-card-hover); }
     .tour-block__owner { display: none; }
+    :global(.tour-block__doodle) { display: none; }
   }
   @media (min-width: 960px) {
     .tour-block__card { grid-template-columns: 5fr 7fr; align-items: start; gap: 3rem; }

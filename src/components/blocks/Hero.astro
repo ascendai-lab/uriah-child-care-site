@@ -48,7 +48,7 @@ const facts =
 
 <section
   id={stegaClean(block.anchorId) || undefined}
-  class:list={['hero', `hero--${layout}`, `accent-${accent}`, !block.image?.asset && 'hero--no-media', layout !== 'photoFade' && `bg-${stegaClean(block.background) || 'default'}`]}
+  class:list={['hero', `hero--${layout}`, `accent-${accent}`, !block.image?.asset && 'hero--no-media', layout !== 'photoFade' && 'page-hero']}
   data-sanity={dataSanity}
 >
   {
@@ -140,7 +140,7 @@ const facts =
   .hero--photoFade .hero__rating { color: var(--sunshine); }
 
   /* Split / card: text with a playful masked photo */
-  .hero--split, .hero--card, .hero--centered, .hero--background { padding-block: clamp(2.5rem, 6vw, 5rem); }
+  .hero--split, .hero--card, .hero--centered, .hero--background { padding-top: clamp(1.75rem, 4vw, 3.5rem); }
   .hero__media { position: relative; max-width: 460px; width: 100%; justify-self: center; }
   /* Card layout: no tinted box (a white hero lines up with the page grid); the photo frame carries the color. */
   .hero--centered .hero__content { text-align: center; margin-inline: auto; max-width: 48rem; }
@@ -168,7 +168,7 @@ const facts =
   }
   .hero--photoFade .hero__inner { z-index: 2; }
   .hero--photoFade .hero__content { max-width: 40rem; }
-  .hero--photoFade .hero__sub { color: rgba(255, 255, 255, 0.9); }
+  .hero--photoFade .hero__sub, .page-hero .hero__sub { color: rgba(255, 255, 255, 0.9); }
   .hero--photoFade :global(.phone-link) { color: #fff; }
   .hero--photoFade :global(.btn--outline) { color: #fff; }
   .hero--photoFade .eyebrow { color: var(--sunshine); }

@@ -18,15 +18,47 @@ const paragraphs = (text: string) => text.split(PARAGRAPHS)
       {items.map((item, i) => (
         <details class="faq-item" open={openFirst && i === 0}>
           <summary>{item.question}</summary>
-          <div class="faq-item__answer">
+          <div class="faq-item__panel"><div class="faq-item__answer">
             {typeof item.answer === 'string' ? (
               paragraphs(item.answer).map((p) => <p>{p}</p>)
             ) : (
               <PortableText value={item.answer as never} className="prose" />
             )}
-          </div>
+          </div></div>
         </details>
       ))}
     </div>
   ) : null
 }
+
+<script>
+  // Smooth open/close for the native <details> accordion. Without JS (or with reduced motion) it still works, just instantly.
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)')
+  document.querySelectorAll<HTMLDetailsElement>('.faq-item').forEach((item) => {
+    const summary = item.querySelector('summary')
+    const panel = item.querySelector<HTMLElement>('.faq-item__panel')
+    if (!summary || !panel) return
+    let anim: Animation | null = null
+    let wantOpen = item.open
+    summary.addEventListener('click', (e) => {
+      if (reduce.matches) { wantOpen = !item.open; return }
+      e.preventDefault()
+      anim?.cancel()
+      const opening = !wantOpen
+      wantOpen = opening
+      item.classList.toggle('is-closing', !opening)
+      if (opening) item.open = true
+      const full = panel.scrollHeight
+      anim = panel.animate(
+        opening
+          ? [{ height: '0px', opacity: 0 }, { height: `${full}px`, opacity: 1 }]
+          : [{ height: `${full}px`, opacity: 1 }, { height: '0px', opacity: 0 }],
+        { duration: opening ? 340 : 260, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' },
+      )
+      anim.onfinish = () => {
+        if (!opening) { item.open = false; item.classList.remove('is-closing') }
+        anim = null
+      }
+    })
+  })
+</script>

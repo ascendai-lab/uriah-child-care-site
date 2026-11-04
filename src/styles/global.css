@@ -25,22 +25,23 @@
 
     /* Darker shades: hover, press, and text on light tints */
     --coral-600: #e27569;
-    --coral-700: #b9544a;
+    --coral-700: #a8463d;
     --coral-800: #a4473e;
     --sage-600: #54988c;
     --sage-700: #3d7a6f;
     --sunshine-600: #e0ae43;
     --sunshine-700: #9a6f12;
     --sky-600: #4992b9;
-    --sky-700: #2f7099;
+    --sky-700: #275f84;
     --navy-600: #263440;
 
     /* Surfaces */
-    /* Surfaces: white page, a soft cool grey for alternating bands (Mark 2026-11-04: no tan) */
-    --cream: #ffffff;
-    --cream-deep: #f5f7f8;
+    /* Surfaces: warm tan page (Mark 2026-11-04 16:03: tan over white), a deeper tan for
+       alternating bands, white for cards. Page heroes sit on navy so they never match the page. */
+    --cream: #f8f1e8;
+    --cream-deep: #f0e4d3;
     --white: #ffffff;
-    --surface-soft: #f5f7f8;
+    --surface-soft: #f0e4d3;
 
     /* Text */
     --fg1: #334350;
@@ -170,7 +171,7 @@
   }
 
   /* Section backgrounds */
-  .bg-default { background: var(--white); }
+  .bg-default { background: var(--cream); }
   .bg-white { background: var(--white); }
   .bg-muted { background: var(--surface-soft); }
   .bg-sky { background: var(--sky-50); }
@@ -467,6 +468,11 @@
     z-index: 1;
   }
   .doodle svg { width: 100%; height: 100%; display: block; }
+  /* A slow, small drift so the doodles feel hand-placed rather than stuck on. */
+  @keyframes doodle-float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-6px) rotate(4deg); } }
+  .doodle--float { animation: doodle-float 6s ease-in-out infinite; }
+  .doodle--slow { animation-duration: 9s; animation-delay: -3s; }
+  @media (prefers-reduced-motion: reduce) { .doodle--float { animation: none; } }
 
   /* ─── Chips and checklist ─── */
   .chip-row { display: flex; flex-wrap: wrap; gap: 0.55rem; }
@@ -526,20 +532,84 @@
     color: #fff;
   }
   .checklist__icon svg { width: 0.95rem; height: 0.95rem; }
+  .checklist__icon { transition: transform 320ms cubic-bezier(0.34, 1.56, 0.64, 1); }
+
+  /* Small hover touches: playful, never busy. Off for reduced motion. */
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .checklist li:hover .checklist__icon { transform: scale(1.15) rotate(-8deg); }
+    .review-card { transition: transform 300ms var(--ease-out), box-shadow 300ms var(--ease-out); }
+    .review-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); }
+    .phone-link__icon { transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .phone-link:hover .phone-link__icon { transform: rotate(-12deg) scale(1.08); }
+    .btn__arrow { transition: transform 260ms var(--ease-out); }
+    .btn:hover .btn__arrow { transform: translateX(3px); }
+  }
 
   /* ─── Breadcrumbs ─── */
+  /* Inner pages: breadcrumbs sit on the top of the navy page hero, so the two read as one band. */
+  .breadcrumbs-band { background: var(--navy); color: #fff; }
+  .breadcrumbs-band .breadcrumbs ol { color: rgba(255, 255, 255, 0.78); }
+  .breadcrumbs-band .breadcrumbs a { color: rgba(255, 255, 255, 0.86); text-decoration-color: rgba(255, 255, 255, 0.35); }
+  .breadcrumbs-band .breadcrumbs a:hover { color: #fff; text-decoration-color: currentColor; }
+  .breadcrumbs-band .breadcrumbs [aria-current] { color: #fff; }
+
+  /* Navy page hero shared by every inner page (CorePage and the Hero block), ending in the same
+     soft wave as the home hero. Text and icons switch to light colors on it. */
+  .page-hero { position: relative; background: var(--navy); color: #fff; padding-bottom: calc(clamp(2.5rem, 6vw, 4.5rem) + 30px); }
+  .page-hero .page-title, .page-hero h1 { color: #fff; }
+  .page-hero .eyebrow { color: var(--sunshine); }
+  .page-hero .accent-word { color: var(--sunshine); }
+  .page-hero p { color: rgba(255, 255, 255, 0.88); }
+  .page-hero .fact-line { color: rgba(255, 255, 255, 0.92); }
+  .page-hero .fact-line svg { color: var(--sunshine); }
+  .page-hero .phone-link { color: #fff; }
+  .page-hero .phone-link small { color: rgba(255, 255, 255, 0.75); }
+  .page-hero .btn--outline, .page-hero .btn--secondary { color: #fff; }
+  .page-hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 34px;
+    background: var(--cream);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 46' preserveAspectRatio='none'%3E%3Cpath d='M0 26c180 22 360 22 540 6S900 0 1080 12s270 18 360 10v24H0Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 46' preserveAspectRatio='none'%3E%3Cpath d='M0 26c180 22 360 22 540 6S900 0 1080 12s270 18 360 10v24H0Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  }
+  /* The wave takes the color of whatever section comes next. */
+  .page-hero:has(+ .bg-white)::after, .hero--photoFade:has(+ .bg-white)::after { background: var(--white); }
+  .page-hero:has(+ .bg-muted)::after, .hero--photoFade:has(+ .bg-muted)::after { background: var(--surface-soft); }
+
   .breadcrumbs ol {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
-    font-size: 0.9rem;
+    align-items: center;
+    gap: 0.25rem 0.5rem;
+    margin: 0;
+    padding: 0;
+    font-size: 0.88rem;
+    line-height: 1.4;
     color: var(--fg2);
   }
-  .breadcrumbs li { display: inline-flex; align-items: baseline; }
-  .breadcrumbs li + li::before { content: '›'; margin-right: 0.35rem; opacity: 0.6; flex: none; }
-  .breadcrumbs a { display: inline-block; padding-block: 0.2rem; }
-  .breadcrumbs a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(51, 67, 80, 0.3); }
+  .breadcrumbs li { display: inline-flex; align-items: center; gap: 0.5rem; min-width: 0; }
+  .breadcrumbs li + li::before {
+    content: '';
+    flex: none;
+    width: 6px;
+    height: 6px;
+    border-top: 1.5px solid currentColor;
+    border-right: 1.5px solid currentColor;
+    transform: rotate(45deg);
+    opacity: 0.55;
+  }
+  .breadcrumbs a { text-decoration: none; border-radius: 4px; display: inline-block; padding-block: 0.4rem; }
+  @media (max-width: 640px) {
+    .breadcrumbs ol { flex-wrap: nowrap; }
+    .breadcrumbs li:last-child { flex: 1 1 auto; overflow: hidden; min-width: 0; }
+    .breadcrumbs li:last-child > * { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
+  }
+  .breadcrumbs a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .breadcrumbs [aria-current] { font-weight: 700; color: var(--fg1); }
 
   /* ─── FAQ accordion ─── */
@@ -563,19 +633,35 @@
     font-size: 1.1rem;
   }
   .faq-item summary::-webkit-details-marker { display: none; }
+  /* Plus drawn with two bars so it sits dead-centre in the circle (a '+' glyph never does). */
   .faq-item summary::after {
-    content: '+';
+    content: '';
     flex: none;
-    display: grid;
-    place-items: center;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background: var(--sunshine-50);
-    font-size: 1.3rem;
-    transition: transform 180ms ease-out;
+    background:
+      linear-gradient(var(--fg1), var(--fg1)) center / 12px 2px no-repeat,
+      linear-gradient(var(--fg1), var(--fg1)) center / 2px 12px no-repeat,
+      var(--sunshine-50);
+    transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1), background-color 320ms ease;
   }
-  .faq-item[open] summary::after { transform: rotate(45deg); background: var(--coral-50); }
+  .faq-item[open] summary::after {
+    transform: rotate(135deg);
+    background:
+      linear-gradient(var(--fg1), var(--fg1)) center / 12px 2px no-repeat,
+      linear-gradient(var(--fg1), var(--fg1)) center / 2px 12px no-repeat,
+      var(--coral-50);
+  }
+  .faq-item.is-closing summary::after {
+    transform: none;
+    background:
+      linear-gradient(var(--fg1), var(--fg1)) center / 12px 2px no-repeat,
+      linear-gradient(var(--fg1), var(--fg1)) center / 2px 12px no-repeat,
+      var(--sunshine-50);
+  }
+  .faq-item summary:focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-lg); }
+  .faq-item__panel { overflow: hidden; }
   .faq-item__answer { padding: 0 1.3rem 1.2rem; color: var(--fg2); }
   .faq-item__answer p + p { margin-top: 0.7rem; }
 
@@ -603,6 +689,7 @@
     pointer-events: none;
   }
   .review-card blockquote { position: relative; font-size: 1.02rem; line-height: 1.65; color: var(--fg1); }
+  .review-card__rating-only { color: var(--fg2); font-style: italic; }
   @media (max-width: 640px) {
     /* Phones: long reviews are cut to six lines; the Google link carries the full text. */
     .review-card blockquote { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; line-clamp: 6; overflow: hidden; }
@@ -624,7 +711,7 @@
   .review-card__who { display: grid; gap: 0.05rem; line-height: 1.3; }
   .review-card cite { font-style: normal; font-weight: 700; }
   .review-card__source { color: var(--fg3); font-size: 0.85rem; }
-  .review-card__source a { display: inline-block; padding-block: 0.3rem; text-decoration: underline; text-underline-offset: 3px; }
+  .review-card__source a { display: inline-block; padding-block: 0.55rem; text-decoration: underline; text-underline-offset: 3px; }
 
   /* ─── Fact table ─── */
   .fact-table {
@@ -779,12 +866,14 @@
    when JS runs and the visitor hasn't asked for reduced motion, so nothing is hidden without it). */
 @layer components {
   /* A photo-less page hero flows straight into its first white section. */
-  .hero--no-media + .section:is(.bg-white, .bg-default) { padding-top: 0.5rem; }
+
   /* On phones the offset photo backdrops keep clear of the screen edge. */
   @media (max-width: 640px) { .shape { width: 88%; margin-inline: auto; } }
 
-  /* Two white sections in a row read as one: don't stack both paddings. */
-  .section:is(.bg-white, .bg-default) + .section:is(.bg-white, .bg-default) { padding-top: calc(var(--section-y) * 0.4); }
+  /* Two sections on the same background read as one: don't stack both paddings. */
+  .section.bg-white + .section.bg-white,
+  .section.bg-default + .section.bg-default,
+  .section.bg-muted + .section.bg-muted { padding-top: calc(var(--section-y) * 0.4); }
 
   .reveal {
     opacity: 0;

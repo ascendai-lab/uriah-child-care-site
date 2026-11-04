@@ -71,11 +71,14 @@ export const siteSettings = {
   copyrightName: 'Uriah Child Care',
 }
 
+/** The News listing is a route, not a document, so it is linked by path. */
+const NEWS = { _type: 'link', linkType: 'external', external: '/news/' }
+
 const navItem = (label, id, children = []) => ({
   _key: key(),
   label,
   ...(id ? { link: link.internal(id) } : {}),
-  ...(children.length ? { children: children.map(([l, cid]) => ({ _key: key(), label: l, link: link.internal(cid) })) } : {}),
+  ...(children.length ? { children: children.map(([l, cid]) => ({ _key: key(), label: l, link: typeof cid === 'string' ? link.internal(cid) : cid })) } : {}),
 })
 
 export const navigation = {
@@ -104,6 +107,7 @@ export const navigation = {
       ['Our center', 'page-our-center'],
       ['Safety and licensing', 'service-safe-licensed'],
       ['Reviews', 'page-reviews'],
+      ['News', NEWS],
       ['FAQ', 'page-faq'],
     ]),
   ],
@@ -116,10 +120,11 @@ export const navigation = {
         ['Meet Ms. Paulette', 'page-about'],
         ['Our center', 'page-our-center'],
         ['Reviews', 'page-reviews'],
+        ['News', NEWS],
         ['Tuition and CCAP', 'page-tuition'],
         ['Questions parents ask', 'page-faq'],
         ['Book a tour', 'page-tour'],
-      ].map(([label, id]) => ({ _key: key(), label, link: link.internal(id) })),
+      ].map(([label, id]) => ({ _key: key(), label, link: typeof id === 'string' ? link.internal(id) : id })),
     },
   ],
 }
@@ -151,15 +156,16 @@ const review = (id, name, quote, order, context) => ({
   _id: `review-${id}`,
   _type: 'testimonial',
   name,
-  quote,
+  ...(quote ? { quote } : {}),
   source: 'Google',
   reviewUrl,
   firstParty: true,
+  rating: 5,
   order,
   ...(context ? { context } : {}),
 })
 
-/** Real Google reviews copied word for word from the old site's review widget. Star ratings still need checking on the GBP. */
+/** All 8 Google reviews, copied word for word from the Google Business Profile (checked 2026-11-04). Never edit the wording. */
 export const reviews = [
   review(
     'monique-willoughby',
@@ -174,23 +180,36 @@ export const reviews = [
     2,
   ),
   review(
-    'jake-jones',
-    'Jake Jones',
-    'Miss Paulette haves been watching my children for some time now her daycare is very clean , she also does a amazing job with the kids one thing for sure your kids are gone come home the same way you brought them clean , im bless to have such a wonderful daycare provider for my children she loves them like her own to the point i also made her my daughter godmother ! if anything i highly recommend this daycare for you and your family',
+    'shameka-humphries',
+    'Shameka Humphries',
+    "Miss Paulette is truly amazing! My son has been going to her daycare since he was 9 months old and she has taken such great care of him. She is truly a gem and just know that your child is in AMAZING hands with her. She's more than a daycare provider; she tries to teach the children and genuinely cares for them. My son is always clean and there are NO issues with anything while he's there. She's the best around. I would recommend her 1000 times over.",
     3,
+  ),
+  review(
+    'ashley-whitaker',
+    'Ashley Whitaker',
+    'Ms. Paulette is an awesome daycare provider. My son has been attending her day care since he was four months old, he will soon be two and he loves going there. I am so happy to have a day care provider that is caring, loving and willing to teach the kids everything they need to know.',
+    4,
   ),
   review(
     'vana-tinamarie',
     'Vana TinaMarie',
     'Ms Paulette is an excellent child care provider she took care of my first son , is currently taking care of my second son and she will be taking care of my baby when he gets old enough to go to daycare as well ! I highly recommended her !',
-    4,
-  ),
-  review(
-    'marcia-bailey',
-    'Marcia Bailey',
-    'paulette is a great child care provider, she has been watching my grand children throughout the years and she always takes great care of them',
     5,
   ),
+  review(
+    'marian-henry',
+    'Marian Henry',
+    'I definitely recommend you riot childcare. Miss Paulette is a very caring and nurturing person.',
+    6,
+  ),
+  review(
+    'marcia-antina',
+    'Marcia Antina',
+    'paulette is a great child care provider, she has been watching my grand children throughout the years and she always takes great care of them',
+    7,
+  ),
+  review('cherryanne-henry', 'cherryanne henry', '', 8),
 ]
 
 const faqDoc = (id, question, answer, order, category) => ({

@@ -16,12 +16,13 @@ import { mdToPortableText } from './lib.mjs'
 import { faqs, navigation, reviews, siteSettings, team } from './content-core.mjs'
 import { categories, cities, services } from './content-programs.mjs'
 import { homePage, pages } from './content-pages.mjs'
+import { posts } from './content-news.mjs'
 
 const here = dirname(fileURLToPath(import.meta.url))
 const meta = JSON.parse(readFileSync(join(here, 'images/meta.json'), 'utf8'))
 const NOW = new Date().toISOString()
 
-const docs = [siteSettings, navigation, homePage, ...team, ...reviews, ...faqs, ...categories, ...services, ...pages, ...cities]
+const docs = [siteSettings, navigation, homePage, ...team, ...reviews, ...faqs, ...categories, ...services, ...pages, ...cities, ...posts]
 
 /* ── Checks ── */
 const ids = new Set()
@@ -33,7 +34,7 @@ const paths = new Map()
 for (const d of docs) {
   const s = d.slug?.current
   if (!s) continue
-  const path = d._type === 'blogPost' ? `/blog/${s}/` : `/${s}/`
+  const path = d._type === 'blogPost' ? `/news/${s}/` : `/${s}/`
   if (paths.has(path)) throw new Error(`Duplicate URL ${path}`)
   paths.set(path, d._id)
 }

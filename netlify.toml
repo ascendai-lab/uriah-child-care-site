@@ -208,49 +208,61 @@
   force = true
 
 [[redirects]]
+  from = "/blog/*"
+  to = "/news/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog"
+  to = "/news/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/a-new-chapter-begins-for-uriah-child-care"
-  to = "/our-center/"
+  to = "/news/a-new-chapter-begins-for-uriah-child-care/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/a-new-chapter-begins-for-uriah-child-care/"
-  to = "/our-center/"
+  to = "/news/a-new-chapter-begins-for-uriah-child-care/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/uriah-childcare-center-participates-in-the-child-and-adult-care-food-program-cacfp"
-  to = "/daycare-meals-vineland-nj/"
+  to = "/news/uriah-childcare-center-participates-in-the-child-and-adult-care-food-program-cacfp/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/uriah-childcare-center-participates-in-the-child-and-adult-care-food-program-cacfp/"
-  to = "/daycare-meals-vineland-nj/"
+  to = "/news/uriah-childcare-center-participates-in-the-child-and-adult-care-food-program-cacfp/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/how-to-help-your-child-succeed-in-school-this-year-2023"
-  to = "/kindergarten-readiness-vineland-nj/"
+  to = "/news/how-to-help-your-child-succeed-in-school/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/how-to-help-your-child-succeed-in-school-this-year-2023/"
-  to = "/kindergarten-readiness-vineland-nj/"
+  to = "/news/how-to-help-your-child-succeed-in-school/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/how-to-protect-your-childs-mental-health"
-  to = "/"
+  to = "/news/how-to-protect-your-childs-mental-health/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/how-to-protect-your-childs-mental-health/"
-  to = "/"
+  to = "/news/how-to-protect-your-childs-mental-health/"
   status = 301
   force = true

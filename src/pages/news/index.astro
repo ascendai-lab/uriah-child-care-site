@@ -1,0 +1,46 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro'
+import PostCard from '@components/cards/PostCard.astro'
+import { loadQuery } from '@cms/lib/load'
+import { blogIndexQuery, layoutQuery } from '@cms/queries'
+import type { Crumb } from '@components/ui/Breadcrumbs.astro'
+
+const { draftMode } = Astro.locals
+const [layout, posts] = await Promise.all([loadQuery(draftMode, layoutQuery), loadQuery(draftMode, blogIndexQuery)])
+const crumbs: Crumb[] = [
+  { label: 'Home', href: '/' },
+  { label: 'News', href: '/news/' },
+]
+---
+
+<BaseLayout
+  layout={layout}
+  title="News from Uriah Child Care in Vineland, NJ"
+  description="Center news, announcements and tips for parents from Uriah Child Care, 30 W Chestnut Ave, Vineland, NJ."
+  breadcrumbs={crumbs}
+>
+  <header class="section page-hero news-hero">
+    <div class="container">
+      <p class="eyebrow">News</p>
+      <h1 class="page-title">News from our center</h1>
+      <p class="news-hero__intro">Announcements from Uriah Child Care in Vineland, plus a few tips for parents.</p>
+    </div>
+  </header>
+  <section class="section bg-default">
+    <div class="container">
+      {posts.length ? (
+        <div class="news-grid">{posts.map((post) => <PostCard post={post} />)}</div>
+      ) : (
+        <p class="section-intro" style="text-align:center">No news yet.</p>
+      )}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .news-hero { padding-top: clamp(1.75rem, 4vw, 3rem); }
+  .news-hero h1 { margin-top: 0.6rem; font-size: clamp(2.1rem, 4.6vw, 3.3rem); }
+  .news-hero__intro { margin-top: 1rem; font-size: 1.12rem; max-width: 38rem; }
+  .news-grid { display: grid; gap: 1.5rem; }
+  @media (min-width: 720px) { .news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>

@@ -12,7 +12,7 @@ export const routes = {
   category: (slug: string) => `/${slug}/`,
   service: (slug: string) => `/${slug}/`,
   serviceArea: (slug: string) => `/${slug}/`,
-  blogPost: (slug: string) => `/blog/${slug}/`,
+  blogPost: (slug: string) => `/news/${slug}/`,
 } as const
 
 export type RoutableType = keyof typeof routes
@@ -22,7 +22,7 @@ export const rootTypes = ['page', 'category', 'service', 'serviceArea'] as const
 
 /** Listing pages that are not documents themselves. */
 export const indexRoutes = {
-  blog: '/blog/',
+  blog: '/news/',
 } as const
 
 export function isRoutableType(type: string): type is RoutableType {

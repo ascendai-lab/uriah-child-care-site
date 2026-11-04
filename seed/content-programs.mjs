@@ -22,6 +22,23 @@ const IMG = {
   tameca: () => img('tameca-burke-director-uriah-child-care', 'Tameca Burke, director of Uriah Child Care'),
   classroom: () => img('classroom-uriah-child-care-vineland', 'Colorful preschool classroom at Uriah Child Care in Vineland'),
   schedule: () => img('daily-schedule-chart-classroom-uriah-child-care', 'Picture daily schedule chart on a classroom wall at Uriah Child Care'),
+  readingRug: () => img('classroom-reading-rug-uriah-child-care-vineland', 'Preschool classroom with an alphabet rug, reading shelves and a horseshoe table at Uriah Child Care'),
+  horseshoe: () => img('classroom-horseshoe-table-uriah-child-care', 'Horseshoe learning table and book shelves in a classroom at Uriah Child Care'),
+  tables: () => img('classroom-tables-easel-uriah-child-care', 'Classroom tables, an easel and toy shelves at Uriah Child Care in Vineland'),
+  sink: () => img('classroom-sink-step-stool-uriah-child-care', 'Child-height classroom sink with a step stool at Uriah Child Care'),
+  alphabetRug: () => img('classroom-alphabet-rug-shelves-uriah-child-care', 'Alphabet rug, circle time board and shelves in a classroom at Uriah Child Care'),
+  centers: () => img('classroom-learning-centers-uriah-child-care', 'Toy and learning centers in a bright classroom at Uriah Child Care'),
+  playRug: () => img('play-rug-toys-uriah-child-care-vineland', 'Colorful play rug with toys and cubbies at Uriah Child Care in Vineland'),
+  playHall: () => img('open-play-hall-uriah-child-care', 'Open play hall with a basketball hoop at Uriah Child Care'),
+  welcomeTable: () => img('lobby-welcome-table-uriah-child-care', 'Welcome table with forms and flowers in the lobby of Uriah Child Care'),
+  springFlag: () => img('exterior-spring-day-care-flag-uriah-child-care-vineland', 'Day Care flag on the front lawn of Uriah Child Care in Vineland on a sunny day'),
+  springTree: () => img('exterior-spring-tree-uriah-child-care-vineland', 'Front lawn and flowering tree at Uriah Child Care on W Chestnut Ave'),
+  morning: () => img('exterior-morning-uriah-child-care-vineland', 'Uriah Child Care building in Vineland in the morning sun'),
+  flag: () => img('day-care-flag-w-chestnut-ave-vineland', 'Day Care flag outside Uriah Child Care on W Chestnut Ave in Vineland'),
+  sunset: () => img('evening-parking-sunset-uriah-child-care', 'Accessible parking at Uriah Child Care at sunset'),
+  dusk: () => img('front-porch-dusk-uriah-child-care-vineland', 'Front porch and entrance of Uriah Child Care at dusk'),
+  buildingRamp: () => img('building-ramp-front-uriah-child-care-vineland', 'Front of Uriah Child Care with the wheelchair ramp'),
+  parkingLot: () => img('building-parking-lot-uriah-child-care-vineland', 'Uriah Child Care building and parking lot in Vineland'),
 }
 export { IMG }
 
@@ -57,7 +74,7 @@ export const categories = [
     keyword: 'preschool vineland nj',
     ageRange: 'Ages 2.5 to 5',
     schedule: 'Monday to Sunday, 6 am to 11 pm. Full-time and part-time.',
-    image: IMG.classroom(),
+    image: IMG.readingRug(),
     intro:
       'Uriah Child Care runs a play-based preschool in Vineland, NJ for children ages 2.5 to 5. Children learn letters, numbers, colors and getting along with friends through play, guided by Ms. Paulette and our caring staff. We are licensed by NJ DCF, accept NJ childcare subsidy (CCAP), and are open 7 days a week.',
     excerpt: 'Play-based preschool and pre-K for ages 2.5 to 5, open 7 days a week at our licensed Vineland center.',
@@ -89,7 +106,7 @@ We are open Monday to Sunday, 6 am to 11 pm, so preschoolers can come before an 
 
 Call us at [(856) 455-6701](tel:8564556701) or [book a tour](/tour/) to see the classroom and meet Ms. Paulette. We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for families who qualify.
 `,
-    reviews: refs('review-monique-willoughby', 'review-marcia-bailey'),
+    reviews: refs('review-monique-willoughby', 'review-marcia-antina'),
     faqs: [
       faq('What age can my child start preschool at Uriah?', 'Children can start at 2½ years old. Our preschool program covers ages 2.5 to 5, and children move into pre-K and kindergarten readiness as they grow.'),
       faq('Does my child need to be potty trained for preschool?', 'No. Many of our 2½ and 3-year-olds are still learning. We work on potty training together with you, using the same routine at home and at the center.'),
@@ -111,7 +128,7 @@ Call us at [(856) 455-6701](tel:8564556701) or [book a tour](/tour/) to see the 
     keyword: 'after school program vineland nj',
     ageRange: 'School-age children up to 13',
     schedule: 'Before school from 6 am, after school until 11 pm, 7 days a week',
-    image: IMG.lobby(),
+    image: IMG.playHall(),
     intro:
       'Uriah Child Care offers before and after school care in Vineland, NJ for school-age children up to 13. Kids get a snack, time for homework and time to play in a safe, licensed center, and we stay open until 11 pm for parents who work late. We accept NJ childcare subsidy (CCAP) for families who qualify.',
     excerpt: 'Before and after school care for school-age kids up to 13, with homework time, snacks and care until 11 pm.',
@@ -150,7 +167,7 @@ Parents drop off and pick up at the center. We do not offer school pickup or dro
 
 Call [(856) 455-6701](tel:8564556701) or [book a tour](/tour/). Tell us your child's school and your work schedule, and we will go over how the days would work. We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for families who qualify.
 `,
-    reviews: refs('review-jake-jones', 'review-marcia-bailey'),
+    reviews: refs('review-rockay-davis', 'review-marcia-antina'),
     faqs: [
       faq('What ages are in the after school program?', 'Our before and after school program is for school-age children up to 13 years old.'),
       faq('How late can my child stay?', 'We are open until 11 pm, Monday to Sunday, so children can stay through a second shift.'),
@@ -174,7 +191,7 @@ Call [(856) 455-6701](tel:8564556701) or [book a tour](/tour/). Tell us your chi
     keyword: 'child care vineland nj',
     ageRange: 'Ages 2.5 and up',
     schedule: 'Monday to Sunday, 6 am to 11 pm.',
-    image: IMG.porch(),
+    image: IMG.dusk(),
     intro:
       'Uriah Child Care is a licensed child care center in Vineland, NJ, open Monday to Sunday from 6 am to 11 pm. We offer early morning, evening and late evening care for children ages 2.5 and up, so parents who work early mornings, evenings and weekends have a safe place for their kids. We accept NJ childcare subsidy (CCAP).',
     excerpt: 'Licensed child care open 7 days a week, early morning to 11 pm, for ages 2.5 and up.',
@@ -208,7 +225,7 @@ We care for children ages 2.5 and up: [toddlers from 2½](/toddler-care-vineland
 
 We are at 30 W Chestnut Ave in Vineland, and many families drive in from [Millville](/millville-nj/) and [Bridgeton](/bridgeton-nj/). We are [licensed by NJ DCF](/safe-licensed-daycare-vineland-nj/) (license ID CCC128557) and accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for families who qualify.
 `,
-    reviews: refs('review-marcia-bailey', 'review-jake-jones'),
+    reviews: refs('review-marcia-antina', 'review-rockay-davis'),
     faqs: [
       faq('What are your hours?', 'We are open Monday to Sunday, 6 am to 11 pm.'),
       faq('Do you offer overnight care?', 'Our posted hours end at 11 pm. If you work overnight and need care after 11 pm, call us at (856) 455-6701 and Ms. Paulette will talk with you about it.'),
@@ -232,7 +249,7 @@ const homeServices = [
     keyword: 'toddler daycare vineland nj',
     ageRange: 'From 2½ years',
     schedule: 'Monday to Sunday, 6 am to 11 pm',
-    image: IMG.classroom(),
+    image: IMG.playRug(),
     intro:
       'Uriah Child Care cares for toddlers from 2½ years old at our licensed center in Vineland, NJ. Your little one builds words, makes friends and learns daily routines through play, with potty training support along the way. We are open 7 days a week, 6 am to 11 pm, and accept NJ childcare subsidy (CCAP).',
     excerpt: 'Warm, play-based care for toddlers from 2½, with potty training support and care 7 days a week.',
@@ -255,7 +272,7 @@ Many children who join us at 2½ are still in diapers or pull-ups. We follow you
 
 Toddlers grow into our [preschool](/preschool-vineland-nj/) program. [Book a tour](/tour/) or call [(856) 455-6701](tel:8564556701).
 `,
-    reviews: refs('review-monique-willoughby', 'review-marcia-bailey'),
+    reviews: refs('review-monique-willoughby', 'review-marcia-antina'),
     faqs: [
       faq('What is the youngest age you take?', 'We care for children from 2½ years old.'),
       faq('My toddler has never been to daycare. How do you help them settle in?', 'We keep the first days calm and predictable, and you are welcome to stay for a few minutes at drop-off. We let you know how your child is doing so you are not left wondering.'),
@@ -274,7 +291,7 @@ Toddlers grow into our [preschool](/preschool-vineland-nj/) program. [Book a tou
     gbpName: 'Child care subsidy accepted',
     keyword: 'daycare that accepts ccap vineland nj',
     ageRange: 'Ages 2.5 and up',
-    image: IMG.signIn(),
+    image: IMG.welcomeTable(),
     intro:
       'Yes, Uriah Child Care accepts NJ childcare subsidy (CCAP) for families who qualify. Our licensed center at 30 W Chestnut Ave in Vineland, NJ cares for children ages 2.5 and up, 7 days a week from 6 am to 11 pm. We are happy to walk you through the steps to apply and use your subsidy with us.',
     excerpt: 'We accept NJ childcare subsidy (CCAP) for families who qualify, and we can walk you through the steps.',
@@ -379,7 +396,7 @@ Children wash their hands when they arrive, before meals and after using the bat
 
 Our building has a wheelchair ramp, accessible parking and an accessible restroom. Come see it for yourself: [book a tour](/tour/) or call [(856) 455-6701](tel:8564556701).
 `,
-    reviews: refs('review-monique-willoughby', 'review-jake-jones'),
+    reviews: refs('review-monique-willoughby', 'review-rockay-davis'),
     faqs: [
       faq('Is Uriah Child Care licensed?', 'Yes. We are licensed by the NJ Department of Children and Families as a child care center, license ID CCC128557.'),
       faq('How do you keep track of who picks up?', 'Parents check in and out on the Brightwheel kiosk, and we release children only to adults you authorize in writing. We ask for ID from anyone we do not know.'),
@@ -403,7 +420,7 @@ const preschoolServices = [
     keyword: 'pre k vineland nj',
     ageRange: 'Ages 4 to 5',
     schedule: 'Monday to Sunday, 6 am to 11 pm',
-    image: IMG.classroom(),
+    image: IMG.horseshoe(),
     intro:
       'Uriah Child Care offers a play-based pre-K program in Vineland, NJ for 4 and 5-year-olds. Children practice letters, numbers, writing their name and following directions, so they start kindergarten confident. Our center is licensed by NJ DCF, open 7 days a week, and accepts NJ childcare subsidy (CCAP).',
     excerpt: 'Play-based pre-K for 4 and 5-year-olds: letters, numbers, writing their name and getting ready for school.',
@@ -432,7 +449,7 @@ Our pre-K runs inside a full child care day. Your child can arrive at 6 am and s
 
 Some Vineland families also qualify for the public school district's free preschool. If you are deciding between options, call us at [(856) 455-6701](tel:8564556701) and we will talk it through honestly, or [book a tour](/tour/).
 `,
-    reviews: refs('review-marcia-bailey'),
+    reviews: refs('review-marcia-antina'),
     faqs: [
       faq('What age is pre-K?', 'Our pre-K is for children ages 4 to 5, the year or two before kindergarten.'),
       faq('Is pre-K a full day?', 'Yes. Pre-K learning happens inside a full child care day, and children can stay for the hours you need between 6 am and 11 pm.'),
@@ -450,7 +467,7 @@ Some Vineland families also qualify for the public school district's free presch
     gbpName: 'Kindergarten readiness',
     keyword: 'kindergarten readiness vineland nj',
     ageRange: 'Ages 4 to 5',
-    image: IMG.schedule(),
+    image: IMG.alphabetRug(),
     intro:
       'At Uriah Child Care in Vineland, NJ, we get 4 and 5-year-olds ready for kindergarten with the skills teachers look for: knowing letters and sounds, counting, writing their name, following directions and getting along with classmates. It all happens through play in our licensed center, open 7 days a week.',
     excerpt: 'The skills kindergarten teachers look for, built through play: letters, counting, routines and making friends.',
@@ -490,7 +507,7 @@ See our [pre-K program](/pre-k-vineland-nj/), or [book a tour](/tour/) and ask M
     gbpName: 'Play-based curriculum',
     keyword: 'play based preschool vineland nj',
     ageRange: 'Ages 2.5 to 5',
-    image: IMG.classroom(),
+    image: IMG.centers(),
     intro:
       'Uriah Child Care in Vineland, NJ uses a play-based curriculum built on Experience Early Learning. Children learn language, math, science, art and social skills through hands-on play, weekly themes and daily circle time, and a developmental continuum helps us track each child’s progress.',
     excerpt: 'Our Experience Early Learning curriculum: weekly themes, hands-on play and a skills continuum for each child.',
@@ -535,7 +552,7 @@ Each morning starts at circle time with the calendar, the weather, letters and c
     gbpName: 'Potty training support',
     keyword: 'daycare potty training vineland nj',
     ageRange: 'Ages 2.5 to 4',
-    image: IMG.restroom(),
+    image: IMG.sink(),
     intro:
       'Your child does not need to be potty trained to join Uriah Child Care in Vineland, NJ. We care for children from 2½ and support potty training together with parents, using the same words and routine at home and at the center, with patience and lots of praise.',
     excerpt: 'No need to be potty trained. We work on it with you, with the same routine at home and at the center.',
@@ -560,7 +577,11 @@ Diapers or pull-ups, wipes, and two or three changes of clothes, all labeled wit
 
 Ask us when you [book a tour](/tour/), or see our [toddler care](/toddler-care-vineland-nj/) program.
 `,
-    faqs: [faq('What should I pack for potty training?', 'Diapers or pull-ups, wipes and two or three labeled changes of clothes. We will tell you if we run low.')],
+    faqs: [
+      faq('What should I pack for potty training?', 'Diapers or pull-ups, wipes and two or three labeled changes of clothes. We will tell you if we run low.'),
+      faq('Does my child have to be potty trained to start?', 'No. We care for children from 2½, and many start in diapers or pull-ups. We work on potty training together with you.'),
+      faq('How will I know how potty training went today?', 'We tell you at pickup, and parents get updates through the Brightwheel app. You can always call us too.'),
+    ],
     related: refs('service-toddler-care', 'category-preschool', 'service-play-based-learning', 'page-faq'),
     seo: seo('Potty Training Daycare in Vineland, NJ', 'No need to be potty trained to start at Uriah Child Care in Vineland, NJ. We support potty training together with parents, from 2½ years.'),
   }),
@@ -579,7 +600,7 @@ const afterSchoolServices = [
     keyword: 'before school care vineland nj',
     ageRange: 'School-age children up to 13',
     schedule: 'From 6 am, 7 days a week',
-    image: IMG.entrance(),
+    image: IMG.morning(),
     intro:
       'Uriah Child Care opens at 6 am, so school-age children in Vineland, NJ have a safe, warm place to start the day before school. Kids can have breakfast and quiet time before school starts. We accept NJ childcare subsidy (CCAP) for families who qualify.',
     excerpt: 'Drop off from 6 am. Breakfast and a calm start to the day before school.',
@@ -614,7 +635,7 @@ Many families pair before school care with our [after school program](/after-sch
     gbpName: 'Homework help',
     keyword: 'after school homework help vineland nj',
     ageRange: 'School-age children up to 13',
-    image: IMG.lobby(),
+    image: IMG.tables(),
     intro:
       'Children in the Uriah Child Care after school program in Vineland, NJ get daily homework time at a quiet table, with staff who help with reading and check that work gets done. That means less homework stress at night for parents coming home from work.',
     excerpt: 'Daily homework time with help on reading and checking work, so evenings are easier at home.',
@@ -634,7 +655,12 @@ If your child's teacher sends notes or a reading log, put it in their bag and te
 
 See our full [after school program](/after-school-program-vineland-nj/) or [book a tour](/tour/).
 `,
-    faqs: [faq('Do you make sure homework is finished?', 'We set aside homework time every day and check work before play. Let us know if there is something specific your child needs to finish.')],
+    faqs: [
+      faq('Do you make sure homework is finished?', 'We set aside homework time every day and check work before play. Let us know if there is something specific your child needs to finish.'),
+      faq('What ages come to homework help?', 'Homework time is part of our after school program for school-age children up to 13.'),
+      faq('Do you pick my child up from school?', "No. We do not drive children to or from school. School buses can stop at the center, so ask your school district whether your child's bus can drop off here."),
+      faq('Do you accept CCAP for after school care?', 'Yes. We accept NJ childcare subsidy (CCAP) for families who qualify.'),
+    ],
     related: refs('category-after-school', 'service-before-school', 'service-evening', 'service-kindergarten-readiness'),
     seo: seo('Homework Help in Vineland, NJ', 'Daily homework time and reading help in our after school program in Vineland, NJ. Kids up to 13, care until 11 pm, CCAP accepted.'),
   }),
@@ -649,7 +675,7 @@ See our full [after school program](/after-school-program-vineland-nj/) or [book
     keyword: 'summer child care vineland nj',
     ageRange: 'School-age children up to 13',
     schedule: 'Full days all summer, 7 days a week, 6 am to 11 pm',
-    image: IMG.lobby(),
+    image: IMG.springFlag(),
     intro:
       'Uriah Child Care offers summer child care in Vineland, NJ for school-age children up to 13. When school is out, kids spend full days with us at our licensed center, open 7 days a week from 6 am to 11 pm, with meals, play and learning to keep them busy. We accept NJ childcare subsidy (CCAP) for families who qualify.',
     excerpt: 'Full-day summer care for school-age kids up to 13, 7 days a week, 6 am to 11 pm.',
@@ -696,7 +722,7 @@ Space can fill up before summer, so call [(856) 455-6701](tel:8564556701) or [bo
     keyword: 'school closure child care vineland nj',
     ageRange: 'School-age children up to 13',
     schedule: 'Full days on school holidays, breaks and snow days',
-    image: IMG.entrance(),
+    image: IMG.flag(),
     intro:
       'School closed but you still have to work? Uriah Child Care offers full-day child care in Vineland, NJ on school holidays, breaks, teacher days and snow days for school-age children up to 13. We are open 7 days a week, 6 am to 11 pm, and accept NJ childcare subsidy (CCAP).',
     excerpt: 'Full-day care on school holidays, breaks, teacher days and snow days.',
@@ -758,8 +784,13 @@ Check your child in on the Brightwheel kiosk in the lobby and you're on your way
 
 See all [shift care](/child-care-vineland-nj/), or call [(856) 455-6701](tel:8564556701).
 `,
-    reviews: refs('review-marcia-bailey'),
-    faqs: [faq('How early do you open?', 'We open at 6 am, Monday to Sunday.')],
+    reviews: refs('review-marcia-antina'),
+    faqs: [
+      faq('How early do you open?', 'We open at 6 am, Monday to Sunday.'),
+      faq('Is breakfast served for early arrivals?', 'Yes. We participate in the USDA Child and Adult Care Food Program (CACFP), and children are served meals and snacks during the day, including breakfast.'),
+      faq('Are you open early on weekends too?', 'Yes. We open at 6 am on Saturday and Sunday, the same as weekdays.'),
+      faq('How do I check my child in?', 'Parents check children in and out on the Brightwheel kiosk in our lobby.'),
+    ],
     related: refs('category-shift-care', 'service-before-school', 'service-shift-workers', 'service-full-part-time'),
     seo: seo('Early Morning Daycare in Vineland, NJ', 'First shift child care in Vineland, NJ. Drop off from 6 am, 7 days a week, with breakfast. Ages 2.5 and up. CCAP accepted.'),
   }),
@@ -774,7 +805,7 @@ See all [shift care](/child-care-vineland-nj/), or call [(856) 455-6701](tel:856
     keyword: 'evening child care vineland nj',
     ageRange: 'Ages 2.5 and up',
     schedule: 'Evenings, 7 days a week, until 11 pm',
-    image: IMG.porch(),
+    image: IMG.sunset(),
     intro:
       'Uriah Child Care offers evening child care in Vineland, NJ for parents who work second shift. Children ages 2.5 and up get dinner, play and a calm evening routine at our licensed center, which stays open until 11 pm, 7 days a week. We accept NJ childcare subsidy (CCAP).',
     excerpt: 'Second shift care with dinner and a calm evening routine, open until 11 pm.',
@@ -800,8 +831,12 @@ Toddlers and preschoolers from 2½, and school-age children up to 13 coming from
 
 See [late evening care until 11 pm](/late-evening-child-care-vineland-nj/), or [book a tour](/tour/).
 `,
-    reviews: refs('review-marcia-bailey'),
-    faqs: [faq('Do children get dinner?', 'Yes. Children staying into the evening are served an evening meal through the USDA food program (CACFP).')],
+    reviews: refs('review-marcia-antina'),
+    faqs: [
+      faq('Do children get dinner?', 'Yes. Children staying into the evening are served an evening meal through the USDA food program (CACFP).'),
+      faq('How late are you open?', 'We are open until 11 pm, Monday to Sunday.'),
+      faq('Can school-age children come in the evening?', 'Yes. We care for children ages 2.5 and up, including school-age children up to 13, so older kids can do homework and wind down with us.'),
+    ],
     related: refs('service-late-evening', 'category-shift-care', 'service-shift-workers', 'category-after-school'),
     seo: seo('Evening Child Care in Vineland, NJ', 'Second shift child care in Vineland, NJ with dinner and a calm evening routine. Open until 11 pm, 7 days. Ages 2.5+. CCAP accepted.'),
   }),
@@ -854,7 +889,7 @@ Call [(856) 455-6701](tel:8564556701) to talk about your hours, or see [evening 
     keyword: 'weekend daycare vineland nj',
     ageRange: 'Ages 2.5 and up',
     schedule: 'Saturday and Sunday, 6 am to 11 pm',
-    image: IMG.exterior(),
+    image: IMG.springTree(),
     intro:
       'Uriah Child Care is open on Saturday and Sunday from 6 am to 11 pm, so parents in Vineland, NJ who work weekends have licensed child care they can count on. Children ages 2.5 and up are welcome. We accept NJ childcare subsidy (CCAP).',
     excerpt: 'Open Saturday and Sunday, 6 am to 11 pm, for parents who work weekends.',
@@ -872,7 +907,12 @@ Weekend days follow the same routine as weekdays: meals and snacks, play-based l
 
 Some families use us only on weekends; others every day. See [full-time and part-time daycare](/full-time-part-time-daycare-vineland-nj/), or call [(856) 455-6701](tel:8564556701).
 `,
-    faqs: [faq('Are you open on Sundays?', 'Yes. We are open Saturday and Sunday, 6 am to 11 pm.')],
+    faqs: [
+      faq('Are you open on Sundays?', 'Yes. We are open Saturday and Sunday, 6 am to 11 pm.'),
+      faq('Can I use weekend care only?', 'Yes. Some families use us only on weekends and others every day. Choose the days you need, as space allows.'),
+      faq('Is weekend care covered by CCAP?', 'We accept NJ childcare subsidy (CCAP) for families who qualify. Ask us and we will help you check what your approval covers.'),
+      faq('What ages do you care for on weekends?', 'The same as every day: children ages 2.5 and up, including school-age children up to 13.'),
+    ],
     related: refs('category-shift-care', 'service-shift-workers', 'service-full-part-time', 'service-late-evening'),
     seo: seo('Weekend Daycare in Vineland, NJ', 'Weekend child care in Vineland, NJ, open Saturday and Sunday 6 am to 11 pm. Licensed center for ages 2.5 and up. CCAP accepted.'),
   }),
@@ -904,7 +944,12 @@ Tell us your work schedule when you call or tour. We'll set up a regular schedul
 
 Tuition depends on your child's age and schedule. See [tuition and how to pay](/tuition/) and [CCAP](/ccap-child-care-vineland-nj/).
 `,
-    faqs: [faq('Do you offer part-time care?', 'Yes. Choose the days and hours you need between 6 am and 11 pm, 7 days a week, as space allows.')],
+    faqs: [
+      faq('Do you offer part-time care?', 'Yes. Choose the days and hours you need between 6 am and 11 pm, 7 days a week, as space allows.'),
+      faq('How much does full-time or part-time care cost?', "Tuition depends on your child's age, the days and the shift you need. Call us or book a tour and we will give you a clear price for your schedule."),
+      faq('Can I change my schedule later?', 'Talk to us when your hours change, and we will do our best to adjust as space allows.'),
+      faq('Do you accept CCAP?', 'Yes. We accept NJ childcare subsidy (CCAP) for families who qualify, for full-time and part-time care.'),
+    ],
     related: refs('page-tuition', 'service-shift-workers', 'category-shift-care', 'service-ccap'),
     seo: seo('Full & Part-Time Daycare in Vineland, NJ', 'Full-time and part-time child care in Vineland, NJ for ages 2.5+. Pick your days and hours, 6 am to 11 pm, 7 days a week. CCAP accepted.'),
   }),
@@ -942,8 +987,13 @@ If your schedule rotates, bring it to your tour and we'll work out a plan. Tell 
 
 [Book a tour](/tour/) or call [(856) 455-6701](tel:8564556701).
 `,
-    reviews: refs('review-monique-willoughby', 'review-jake-jones'),
-    faqs: [faq('My shifts rotate. Can you work with that?', 'Often, yes. Bring your schedule to your tour and we will work out a plan, as space allows.')],
+    reviews: refs('review-monique-willoughby', 'review-rockay-davis'),
+    faqs: [
+      faq('My shifts rotate. Can you work with that?', 'Often, yes. Bring your schedule to your tour and we will work out a plan, as space allows.'),
+      faq('What are your hours?', 'We are open Monday to Sunday, 6 am to 11 pm.'),
+      faq('I work overnight. Can you help?', 'Our posted hours end at 11 pm. If you need care after 11 pm, call us at (856) 455-6701 and Ms. Paulette will talk with you about your schedule.'),
+      faq('Do children get meals during long shifts?', 'Yes. Children are served meals and snacks through the USDA Child and Adult Care Food Program (CACFP), including an evening meal for children staying late.'),
+    ],
     related: refs('category-shift-care', 'service-first-shift', 'service-evening', 'service-weekend'),
     seo: seo('Shift Worker Child Care in Vineland, NJ', 'Child care for nurses, warehouse and plant workers in Vineland, NJ. Open 6 am to 11 pm, 7 days. Ages 2.5+. CCAP accepted.'),
   }),
@@ -971,7 +1021,7 @@ export const cities = [
     driveTime: 'About 20 minutes by car',
     ageRange: 'Ages 2.5 and up',
     schedule: 'Monday to Sunday, 6 am to 11 pm',
-    image: IMG.entrance(),
+    image: IMG.buildingRamp(),
     intro:
       'Uriah Child Care serves Millville, NJ families from our licensed center at 30 W Chestnut Ave in Vineland, about a 20-minute drive. Ms. Paulette cared for Millville children for years before opening the Vineland center. We are open 7 days a week, 6 am to 11 pm, for ages 2.5 and up.',
     excerpt: 'Ms. Paulette has cared for Millville children for years. Our Vineland center is about 20 minutes away.',
@@ -993,7 +1043,7 @@ Our center at 30 W Chestnut Ave in Vineland is about a 20-minute drive from Mill
 
 We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for families who qualify. [Book a tour](/tour/) or call [(856) 455-6701](tel:8564556701).
 `,
-    reviews: refs('review-marcia-bailey', 'review-monique-willoughby'),
+    reviews: refs('review-marcia-antina', 'review-monique-willoughby'),
     faqs: [
       faq('Is your center in Millville?', 'Our center is in Vineland at 30 W Chestnut Ave, about a 20-minute drive from Millville. Many of our families come from Millville.'),
       faq('Can I use CCAP if I live in Millville?', 'Yes. Millville and Vineland are both in Cumberland County, and we accept NJ childcare subsidy (CCAP) for families who qualify.'),
@@ -1012,7 +1062,7 @@ We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for famil
     driveTime: 'About 25 minutes by car',
     ageRange: 'Ages 2.5 and up',
     schedule: 'Monday to Sunday, 6 am to 11 pm',
-    image: IMG.kiosk(),
+    image: IMG.parkingLot(),
     intro:
       'Uriah Child Care welcomes Bridgeton, NJ families at our licensed center at 30 W Chestnut Ave in Vineland, about a 25-minute drive. We are open Monday to Sunday, 6 am to 11 pm, with toddler care, preschool and before and after school care for ages 2.5 and up. We accept NJ childcare subsidy (CCAP).',
     excerpt: 'Licensed care for Bridgeton families at our Vineland center, about 25 minutes away, open 7 days.',
@@ -1034,7 +1084,7 @@ We are open **Monday to Sunday, 6 am to 11 pm**, with [early morning to late eve
 
 We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for families who qualify. [Book a tour](/tour/) or call [(856) 455-6701](tel:8564556701).
 `,
-    reviews: refs('review-jake-jones'),
+    reviews: refs('review-rockay-davis'),
     faqs: [
       faq('How far is your center from Bridgeton?', 'Our center is at 30 W Chestnut Ave in Vineland, about a 25-minute drive from Bridgeton.'),
       faq('Can I use CCAP if I live in Bridgeton?', 'Yes. Bridgeton and Vineland are both in Cumberland County, and we accept NJ childcare subsidy (CCAP) for families who qualify.'),

@@ -28,7 +28,11 @@ const source = review.source ?? 'Google'
 
 <figure class="card review-card">
   {review.rating ? <Stars rating={review.rating} /> : null}
-  <blockquote>{trimmed}</blockquote>
+  {trimmed ? (
+    <blockquote>{trimmed}</blockquote>
+  ) : (
+    <p class="review-card__rating-only">Left a {review.rating ?? 5}-star rating on Google.</p>
+  )}
   <figcaption class="review-card__by">
     <span class={`review-card__avatar accent-${tone}`} aria-hidden="true">{initial}</span>
     <span class="review-card__who">

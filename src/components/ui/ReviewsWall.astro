@@ -24,16 +24,18 @@ const writeUrl = stegaClean(settings?.gbpWriteReviewUrl)
 const COLUMNS = 3
 const CARD_OVERHEAD = 220
 // Phones show the first few reviews only, so the section doesn't run thousands of pixels.
-const MOBILE_COUNT = 3
+const MOBILE_COUNT = 99
 type Slot = { review: Review; index: number }
 const columns: { items: Slot[]; height: number }[] = Array.from({ length: COLUMNS }, () => ({ items: [], height: 0 }))
+// The invite tile always closes the last column, so count its height there before dealing the reviews.
+if (showWrite && writeUrl) columns[COLUMNS - 1].height = 380
 items.forEach((review, index) => {
   const shortest = columns.reduce((a, b) => (b.height < a.height ? b : a))
   shortest.items.push({ review, index })
   shortest.height += Math.min(stegaClean(review.quote)?.length ?? 0, 420) + CARD_OVERHEAD
 })
 // With fewer reviews than slots, the shortest column gets an invitation to leave one, so the wall stays even.
-const inviteColumn = showWrite && writeUrl && items.length % COLUMNS !== 0 ? columns.reduce((a, b) => (b.height < a.height ? b : a)) : null
+const inviteColumn = showWrite && writeUrl ? columns[COLUMNS - 1] : null
 ---
 
 {
@@ -49,7 +51,7 @@ const inviteColumn = showWrite && writeUrl && items.length % COLUMNS !== 0 ? col
             ))}
             {col === inviteColumn && (
               <div class="reviews-invite" style={`order:${items.length}`}>
-                <p class="reviews-invite__title">Is your family part of Uriah?</p>
+                <p class="reviews-invite__title">Is your family part of Uriah Child Care Center?</p>
                 <p>A few words on Google help other Vineland parents find safe, caring child care.</p>
                 <a class="text-link" href={writeUrl} target="_blank" rel="noopener noreferrer">Leave a Google review</a>
               </div>

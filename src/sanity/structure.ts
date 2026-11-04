@@ -71,7 +71,7 @@ export const structure: StructureResolver = (S) =>
             ]),
         ),
       documentListItem(S, 'serviceArea', 'City pages', PinIcon),
-      documentListItem(S, 'blogPost', 'Blog posts', EditIcon),
+      documentListItem(S, 'blogPost', 'News posts', EditIcon),
       S.divider(),
       documentListItem(S, 'testimonial', 'Google reviews', CommentIcon),
       documentListItem(S, 'faq', 'FAQs', HelpCircleIcon),

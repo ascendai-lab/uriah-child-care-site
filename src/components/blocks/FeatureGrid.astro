@@ -5,6 +5,7 @@ import { resolveLink } from '@cms/lib/links'
 import Section from '@components/ui/Section.astro'
 import SectionHeader from '@components/ui/SectionHeader.astro'
 import SanityImage from '@components/ui/SanityImage.astro'
+import Doodle from '@components/ui/Doodle.astro'
 import Icon from '@components/ui/Icon.astro'
 import Button from '@components/ui/Button.astro'
 
@@ -30,6 +31,8 @@ const palette = ['coral', 'sage', 'sunshine', 'sky']
               <SanityImage image={block.image} width={560} sizes="(min-width: 900px) 440px, 90vw" />
             </div>
           )}
+          {block.image?.asset && <Doodle type="heart" color="coral" size={40} class="doodle--float" style="top:2%;left:4%" />}
+          {block.image?.asset && <Doodle type="sparkles" color="sunshine" size={54} class="doodle--float doodle--slow" style="bottom:4%;right:0" />}
         </div>
         <div>
           <SectionHeader heading={block.heading} intro={block.intro} />

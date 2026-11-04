@@ -26,9 +26,11 @@ const { post } = Astro.props
 </article>
 
 <style>
-  .post-card { position: relative; }
-  .post-card :global(img) { width: 100%; }
+  .post-card { position: relative; overflow: hidden; background: var(--white); }
+  .post-card h3 { font-size: 1.25rem; line-height: 1.25; }
+  .post-card p { color: var(--fg2); }
+  .post-card :global(img) { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
   .post-card__body { padding: 1.5rem; display: grid; gap: 0.5rem; }
-  time { font-size: 0.875rem; color: var(--color-text-muted); }
+  time { font-size: 0.85rem; font-weight: 600; color: var(--coral-700, var(--fg2)); }
   .stretched::after { content: ''; position: absolute; inset: 0; }
 </style>

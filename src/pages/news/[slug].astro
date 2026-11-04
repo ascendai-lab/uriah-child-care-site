@@ -7,6 +7,7 @@ import { loadQuery } from '@cms/lib/load'
 import { urlFor } from '@cms/lib/image'
 import { layoutQuery, blogPostQuery } from '@cms/queries'
 import { formatDate } from '@/lib/format'
+import type { Crumb } from '@components/ui/Breadcrumbs.astro'
 
 const slug = Astro.params.slug!
 const { draftMode } = Astro.locals
@@ -25,6 +26,11 @@ const jsonLd = {
   publisher: { '@type': 'Organization', name: stegaClean(layout.settings?.siteName) },
 }
 const meta = [post.publishedAt && formatDate(post.publishedAt), post.author?.name && `by ${post.author.name}`].filter(Boolean).join(' · ')
+const crumbs: Crumb[] = [
+  { label: 'Home', href: '/' },
+  { label: 'News', href: '/news/' },
+  { label: stegaClean(post.title) ?? 'Post', href: Astro.url.pathname },
+]
 ---
 
 <BaseLayout
@@ -37,9 +43,19 @@ const meta = [post.publishedAt && formatDate(post.publishedAt), post.author?.nam
   publishedAt={post.publishedAt}
   modifiedAt={post._updatedAt}
   jsonLd={[jsonLd]}
+  breadcrumbs={crumbs}
 >
   <article>
-    <DetailHeader title={post.title} intro={meta} image={post.image} backHref="/blog" backLabel="All posts" />
-    <section class="section"><div class="container"><PortableText value={post.body} className="prose detail-body" /></div></section>
+    <DetailHeader title={post.title} eyebrow={meta} intro={post.excerpt} image={post.image} />
+    <section class="section bg-default">
+      <div class="container">
+        <PortableText value={post.body} className="prose detail-body" />
+        <p class="detail-body news-back"><a class="text-link" href="/news/">← All news</a></p>
+      </div>
+    </section>
   </article>
 </BaseLayout>
+
+<style>
+  .news-back { margin-top: 3rem; }
+</style>
