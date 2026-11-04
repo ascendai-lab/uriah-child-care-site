@@ -820,6 +820,7 @@
     text-decoration-color: rgba(93, 167, 206, 0.5);
   }
   .prose a:hover { text-decoration-color: currentColor; }
+  a[href^='tel:'] { white-space: nowrap; }
   .prose a.btn { color: var(--navy); text-decoration: none; }
   /* Lists sit flush with the paragraphs: the bullet lines up with the text edge above it. */
   .prose ul, .prose ol { padding-left: 0; list-style: none; }

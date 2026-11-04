@@ -24,6 +24,7 @@ const width = stegaClean(block.width) || 'narrow'
 <style>
   /* Left-aligned with the page grid, like the hero above it. */
   .text-block--narrow { max-width: 46rem; }
+  .text-block--narrow:not(.text-block--split) { margin-inline: auto; }
   .text-block :global(.section-header) { text-align: left; margin-inline: 0; margin-bottom: 1.5rem; }
   /* Wide screens: heading on the left, text on the right, so a short block doesn't leave half the row empty. */
   @media (min-width: 1040px) {

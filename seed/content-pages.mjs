@@ -31,7 +31,7 @@ export const homePage = {
       mode: 'all',
       heading: 'Programs for every age we serve',
       intro: 'From 2½-year-olds to school-age kids up to 13, every program follows our play-based curriculum and runs 7 days a week.',
-      background: 'white',
+      background: 'default',
     }),
     block('imageText', {
       eyebrow: 'Ages 2.5 to 5',
@@ -61,7 +61,7 @@ export const homePage = {
       eyebrow: 'Open 7 days, 6 am to 11 pm',
       heading: 'Child care for every shift in Vineland',
       body: md`Nurses, warehouse and plant workers, retail and restaurant staff: we are open when you work. [Early morning care](/first-shift-child-care-vineland-nj/) from 6 am, [evening care](/evening-child-care-vineland-nj/) with dinner, [late evening care until 11 pm](/late-evening-child-care-vineland-nj/), and [weekend daycare](/weekend-daycare-vineland-nj/) on Saturday and Sunday.`,
-      image: IMG.ramp(),
+      image: IMG.dusk(),
       imagePosition: 'right',
       imageShape: 'circle',
       accent: 'sage',
