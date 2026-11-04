@@ -101,6 +101,16 @@ const programCols = n % 4 === 0 ? 4 : n % 3 === 0 ? 3 : n <= 4 ? n : n % 2 === 0
 const sameAge = n > 1 && shownServices.every((s) => stegaClean(s.ageRange) === stegaClean(shownServices[0].ageRange))
 // "3-year-olds" should never break at its hyphens.
 const noBreakHyphens = (text: string) => text.replace(/(\w)-(?=\w)/g, '$1\u2011')
+// Section titles vary by page type so the same formula isn't repeated on every page.
+const city = doc._type === 'serviceArea' ? stegaClean(doc.city) : null
+const short = stegaClean(label(doc) ?? '')
+const lowerFirst = (t: string) => (/^[A-Z][a-z]/.test(t) ? t[0].toLowerCase() + t.slice(1) : t)
+const titles =
+  doc._type === 'serviceArea'
+    ? { gets: `What ${city} families get`, day: 'A day at our Vineland center', programs: `Programs for ${city} families`, faq: `Questions from ${city} parents` }
+    : doc._type === 'service'
+      ? { gets: `What ${lowerFirst(short)} includes`, day: 'What the day looks like', programs: 'More programs at our Vineland center', faq: `Questions about ${lowerFirst(short)}` }
+      : { gets: 'What your family gets', day: 'What the day looks like', programs: 'Choose the care that fits', faq: 'Questions parents ask' }
 const highlightCount = doc.highlights?.length ?? 0
 const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 2 : 3
 ---
@@ -163,7 +173,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
   doc.highlights?.length ? (
     <section class="section bg-white">
       <div class="container">
-        <h2 class="section-heading core-section-title">What your family gets</h2>
+        <h2 class="section-heading core-section-title">{titles.gets}</h2>
         <ul class="ticks core-highlights" style={`--cols:${highlightCols}`}>
           {doc.highlights.map((h) => (
             <li>
@@ -181,7 +191,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
   doc.dayPlan?.length ? (
     <section class="section bg-muted">
       <div class="container">
-        <h2 class="section-heading core-section-title">What the day looks like</h2>
+        <h2 class="section-heading core-section-title">{titles.day}</h2>
         <ol class="day-plan" style={`--steps:${doc.dayPlan.length}`}>
           {doc.dayPlan.map((step, i) => (
             <li class={`accent-${['coral', 'sage', 'sunshine', 'sky'][i % 4]}`}>
@@ -201,7 +211,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
     <section class="section bg-white">
       <div class="container">
         <header class="section-header section-header--center">
-          <h2 class="section-heading">{doc._type === 'category' ? 'Choose the care that fits' : 'More programs at our Vineland center'}</h2>
+          <h2 class="section-heading">{titles.programs}</h2>
         </header>
         <div class={`grid-cards grid-cards--${programCols}`}>
           {shownServices.map((s, i) => <ProgramCard item={{ ...withUniquePhoto(s), accent: null }} index={i} hideAge={sameAge} />)}
@@ -229,7 +239,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
   faqs.length ? (
     <section class="section bg-white">
       <div class="container"><div class="core-faq">
-        <h2 class="section-heading core-section-title">Questions parents ask</h2>
+        <h2 class="section-heading core-section-title">{titles.faq}</h2>
         <FaqList items={faqs} openFirst />
       </div></div>
     </section>
@@ -271,6 +281,7 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
 
 <style>
   .core-hero { padding-block: 1.5rem clamp(1rem, 3vw, 2.5rem); }
+  .core-hero__text { min-width: 0; }
   .core-hero__card {
     position: relative;
     display: grid;
@@ -313,12 +324,13 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
 
   /* The day as a timeline: numbered stops on a quiet neutral track (no cards, no colored borders). */
   .day-plan { list-style: none; position: relative; display: grid; gap: 1.6rem; }
-  .day-plan::before {
+  /* Mobile: each stop draws the track down to the next one, so it ends at the last dot. */
+  .day-plan li:not(:last-child)::before {
     content: '';
     position: absolute;
-    left: 1.05rem;
-    top: 1rem;
-    bottom: 1rem;
+    left: 1.02rem;
+    top: 1.5rem;
+    bottom: -1.7rem;
     width: 2px;
     background: rgba(51, 67, 80, 0.12);
   }
@@ -343,7 +355,17 @@ const highlightCols = highlightCount % 3 === 0 ? 3 : highlightCount % 2 === 0 ? 
   .day-plan__what { color: var(--fg2); max-width: 30rem; }
   @media (min-width: 1040px) {
     .day-plan { grid-template-columns: repeat(var(--steps, 6), minmax(0, 1fr)); gap: 1.5rem; }
-    .day-plan::before { left: 1rem; right: 1rem; top: 1.0rem; bottom: auto; width: auto; height: 2px; }
+    .day-plan li:not(:last-child)::before { display: none; }
+    /* Desktop: one track from the first dot's center to the last dot's center. */
+    .day-plan::before {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      height: 2px;
+      left: 1.075rem;
+      right: calc((100% - (var(--steps, 6) - 1) * 1.5rem) / var(--steps, 6) - 1.075rem);
+      background: rgba(51, 67, 80, 0.12);
+    }
     .day-plan li { padding-left: 0; padding-top: 3.25rem; }
     .day-plan__dot { top: 0; }
   }

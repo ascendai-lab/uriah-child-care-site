@@ -222,8 +222,10 @@ The center is licensed by the New Jersey Department of Children and Families, li
         background: 'white',
       }),
       block('featureGrid', {
-        style: 'cards',
+        style: 'checklist',
         heading: 'What parents notice',
+        image: IMG.entrance(),
+        imageShape: 'arch',
         columns: 3,
         items: [
           ['Brightwheel check-in', 'Check your child in and out on the kiosk in the lobby, and get updates about their day.'],
@@ -234,6 +236,12 @@ The center is licensed by the New Jersey Department of Children and Families, li
           ['Clean and cared for', 'Parents mention it in their reviews: “her daycare is very clean.”'],
         ].map(([title, description]) => ({ _key: key(), _type: 'feature', title, description })),
         background: 'default',
+      }),
+      block('testimonialsBlock', {
+        mode: 'all',
+        heading: 'What parents say about our center',
+        intro: 'Real reviews from local families on Google.',
+        background: 'muted',
       }),
     ],
     seo: seo('Our Center | Photos of Uriah Child Care in Vineland, NJ', 'See photos of Uriah Child Care at 30 W Chestnut Ave in Vineland, NJ: secure entrance, Brightwheel check-in, classroom and accessible ramp.'),
@@ -296,8 +304,11 @@ The center is licensed by the New Jersey Department of Children and Families, li
         buttons: [tourBtn('Get a price for your schedule')],
       }),
       block('featureGrid', {
-        style: 'cards',
+        style: 'checklist',
         heading: 'What sets your tuition',
+        intro: 'Three things decide your price. Tell us your schedule and we will give you a clear number.',
+        image: IMG.classroom(),
+        imageShape: 'circle',
         columns: 3,
         items: [
           ['Your child’s age', 'Toddler and preschool care, or before and after school care for school-age kids.'],
@@ -321,6 +332,12 @@ The center is licensed by the New Jersey Department of Children and Families, li
         heading: 'Cost questions',
         faqs: refs('faq-cost', 'faq-ccap', 'faq-meals'),
         background: 'white',
+      }),
+      block('testimonialsBlock', {
+        mode: 'all',
+        heading: 'What parents say',
+        intro: 'Real reviews from local families on Google.',
+        background: 'muted',
       }),
     ],
     seo: seo('Tuition and CCAP | Uriah Child Care, Vineland, NJ', 'How tuition works at Uriah Child Care in Vineland, NJ, and how to pay with NJ childcare subsidy (CCAP). Call for a price for your schedule.'),

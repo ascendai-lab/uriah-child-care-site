@@ -100,5 +100,7 @@ const reassurance = [
   }
   @media (min-width: 960px) {
     .tour-block__card { grid-template-columns: 5fr 7fr; align-items: start; gap: 3rem; }
+    /* The intro column stays beside the taller form while you fill it in. */
+    .tour-block__card > :first-child { position: sticky; top: 7rem; }
   }
 </style>

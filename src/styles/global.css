@@ -358,10 +358,14 @@
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
   }
   @media (min-width: 700px) {
-    .grid-cards--2, .grid-cards--4 { grid-template-columns: repeat(2, 1fr); }
-    .grid-cards--3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-cards--2, .grid-cards--3, .grid-cards--4 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 700px) and (max-width: 1039px) {
+    /* Tablets: three cards sit two-up, with the odd one centered below. */
+    .grid-cards--3 > :last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; width: calc(50% - 0.625rem); }
   }
   @media (min-width: 1040px) {
+    .grid-cards--3 { grid-template-columns: repeat(3, 1fr); }
     .grid-cards--4 { grid-template-columns: repeat(4, 1fr); }
   }
 
@@ -491,6 +495,12 @@
     color: var(--fg2);
   }
   .fact-line li { display: inline-flex; align-items: center; gap: 0.45rem; white-space: nowrap; }
+  @media (max-width: 640px) {
+    /* Phones: one fact per line, and long facts may wrap. */
+    .fact-line { flex-direction: column; align-items: flex-start; gap: 0.55rem; }
+    .fact-line li { white-space: normal; align-items: flex-start; }
+    .fact-line svg { margin-top: 0.2rem; }
+  }
   .fact-line svg { width: 1.1rem; height: 1.1rem; color: var(--coral-700); flex: none; }
 
   .checklist { list-style: none; display: grid; gap: 0.75rem; }
@@ -593,6 +603,10 @@
     pointer-events: none;
   }
   .review-card blockquote { position: relative; font-size: 1.02rem; line-height: 1.65; color: var(--fg1); }
+  @media (max-width: 640px) {
+    /* Phones: long reviews are cut to six lines; the Google link carries the full text. */
+    .review-card blockquote { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; line-clamp: 6; overflow: hidden; }
+  }
   .review-card__by { display: flex; align-items: center; gap: 0.75rem; }
   .review-card__avatar {
     flex: none;

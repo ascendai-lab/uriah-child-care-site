@@ -37,6 +37,14 @@ const accent = stegaClean(block.accent) || 'sunshine'
   .image-text { display: grid; gap: 2.75rem; align-items: center; }
   .image-text__media { position: relative; max-width: 460px; width: 100%; justify-self: center; }
   .image-text__content :global(.prose) { margin-top: 1.1rem; }
+  @media (max-width: 899px) {
+    .image-text__media { max-width: 380px; }
+  }
+  @media (min-width: 720px) {
+    .image-text { grid-template-columns: 0.9fr 1.1fr; gap: 2.5rem; }
+    .image-text--right { grid-template-columns: 1.1fr 0.9fr; }
+    .image-text--right .image-text__media { order: 2; }
+  }
   @media (min-width: 900px) {
     .image-text { grid-template-columns: 0.9fr 1.1fr; gap: 4.5rem; }
     .image-text--right { grid-template-columns: 1.1fr 0.9fr; }

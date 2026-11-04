@@ -324,7 +324,14 @@ export type GalleryBlock = {
   >;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type FactTableBlock = {
@@ -339,7 +346,14 @@ export type FactTableBlock = {
   }>;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type MapBlock = {
@@ -349,7 +363,14 @@ export type MapBlock = {
   notes?: string;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type VideoBlock = {
@@ -359,7 +380,14 @@ export type VideoBlock = {
   video?: VideoEmbed;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type ContactFormBlock = {
@@ -370,7 +398,14 @@ export type ContactFormBlock = {
   showContactDetails?: boolean;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type CtaBlock = {
@@ -384,7 +419,14 @@ export type CtaBlock = {
   >;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type LatestPostsBlock = {
@@ -394,7 +436,14 @@ export type LatestPostsBlock = {
   count?: number;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type TeamMemberReference = {
@@ -416,7 +465,14 @@ export type TeamBlock = {
   >;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type FaqReference = {
@@ -443,7 +499,14 @@ export type FaqBlock = {
   >;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type TestimonialReference = {
@@ -465,7 +528,14 @@ export type TestimonialsBlock = {
   >;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type ServiceAreasBlock = {
@@ -480,7 +550,14 @@ export type ServiceAreasBlock = {
   >;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type ServicesBlock = {
@@ -491,7 +568,14 @@ export type ServicesBlock = {
   services?: ArrayOf<CategoryReference | ServiceReference>;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type StatsBlock = {
@@ -505,7 +589,14 @@ export type StatsBlock = {
   }>;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type FeatureGrid = {
@@ -531,7 +622,14 @@ export type FeatureGrid = {
   columns?: 2 | 3 | 4;
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type ImageText = {
@@ -551,7 +649,14 @@ export type ImageText = {
   accent?: "coral" | "sage" | "sunshine" | "sky";
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type TextBlock = {
@@ -561,7 +666,14 @@ export type TextBlock = {
   width?: "narrow" | "wide";
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type Hero = {
@@ -582,7 +694,14 @@ export type Hero = {
   accent?: "coral" | "sage" | "sunshine" | "sky";
   anchorId?: Slug;
   background?:
-    "default" | "white" | "sky" | "sage" | "sunshine" | "coral" | "dark";
+    | "default"
+    | "muted"
+    | "white"
+    | "sky"
+    | "sage"
+    | "sunshine"
+    | "coral"
+    | "dark";
 };
 
 export type VideoEmbed = {
@@ -1785,6 +1904,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -1803,6 +1923,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -1858,6 +1979,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -1879,6 +2001,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2055,6 +2178,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2178,6 +2302,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2208,6 +2333,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2283,6 +2409,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2472,6 +2599,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2509,6 +2637,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2526,6 +2655,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2567,6 +2697,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2656,6 +2787,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2676,6 +2808,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2712,6 +2845,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2751,6 +2885,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2884,6 +3019,7 @@ export type HomePageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2936,6 +3072,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -2954,6 +3091,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3009,6 +3147,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3030,6 +3169,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3206,6 +3346,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3329,6 +3470,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3359,6 +3501,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3434,6 +3577,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3623,6 +3767,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3660,6 +3805,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3677,6 +3823,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3718,6 +3865,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3807,6 +3955,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3827,6 +3976,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3863,6 +4013,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -3902,6 +4053,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -4035,6 +4187,7 @@ export type PageQueryResult = {
           | "coral"
           | "dark"
           | "default"
+          | "muted"
           | "sage"
           | "sky"
           | "sunshine"
@@ -4326,6 +4479,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -4344,6 +4498,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -4399,6 +4554,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -4420,6 +4576,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -4599,6 +4756,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -4722,6 +4880,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -4752,6 +4911,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -4827,6 +4987,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5018,6 +5179,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5055,6 +5217,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5072,6 +5235,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5113,6 +5277,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5202,6 +5367,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5222,6 +5388,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5258,6 +5425,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5298,6 +5466,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5433,6 +5602,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5505,6 +5675,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5523,6 +5694,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5578,6 +5750,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5599,6 +5772,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5778,6 +5952,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5901,6 +6076,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -5931,6 +6107,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6006,6 +6183,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6197,6 +6375,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6234,6 +6413,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6251,6 +6431,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6292,6 +6473,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6381,6 +6563,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6401,6 +6584,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6437,6 +6621,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6477,6 +6662,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6612,6 +6798,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6889,6 +7076,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6907,6 +7095,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6962,6 +7151,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -6983,6 +7173,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7162,6 +7353,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7285,6 +7477,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7315,6 +7508,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7390,6 +7584,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7581,6 +7776,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7618,6 +7814,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7635,6 +7832,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7676,6 +7874,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7765,6 +7964,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7785,6 +7985,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7821,6 +8022,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7861,6 +8063,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -7996,6 +8199,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -8259,6 +8463,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -8277,6 +8482,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -8332,6 +8538,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -8353,6 +8560,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -8532,6 +8740,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -8655,6 +8864,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -8685,6 +8895,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -8760,6 +8971,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -8951,6 +9163,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -8988,6 +9201,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -9005,6 +9219,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -9046,6 +9261,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -9135,6 +9351,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -9155,6 +9372,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -9191,6 +9409,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -9231,6 +9450,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"
@@ -9366,6 +9586,7 @@ export type RouteQueryResult =
               | "coral"
               | "dark"
               | "default"
+              | "muted"
               | "sage"
               | "sky"
               | "sunshine"

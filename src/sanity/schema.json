@@ -1854,6 +1854,10 @@
               },
               {
                 "type": "string",
+                "value": "muted"
+              },
+              {
+                "type": "string",
                 "value": "white"
               },
               {
@@ -1973,6 +1977,10 @@
               },
               {
                 "type": "string",
+                "value": "muted"
+              },
+              {
+                "type": "string",
                 "value": "white"
               },
               {
@@ -2052,6 +2060,10 @@
               {
                 "type": "string",
                 "value": "default"
+              },
+              {
+                "type": "string",
+                "value": "muted"
               },
               {
                 "type": "string",
@@ -2135,6 +2147,10 @@
               {
                 "type": "string",
                 "value": "default"
+              },
+              {
+                "type": "string",
+                "value": "muted"
               },
               {
                 "type": "string",
@@ -2224,6 +2240,10 @@
               {
                 "type": "string",
                 "value": "default"
+              },
+              {
+                "type": "string",
+                "value": "muted"
               },
               {
                 "type": "string",
@@ -2324,6 +2344,10 @@
               },
               {
                 "type": "string",
+                "value": "muted"
+              },
+              {
+                "type": "string",
                 "value": "white"
               },
               {
@@ -2403,6 +2427,10 @@
               {
                 "type": "string",
                 "value": "default"
+              },
+              {
+                "type": "string",
+                "value": "muted"
               },
               {
                 "type": "string",
@@ -2547,6 +2575,10 @@
               {
                 "type": "string",
                 "value": "default"
+              },
+              {
+                "type": "string",
+                "value": "muted"
               },
               {
                 "type": "string",
@@ -2716,6 +2748,10 @@
               },
               {
                 "type": "string",
+                "value": "muted"
+              },
+              {
+                "type": "string",
                 "value": "white"
               },
               {
@@ -2860,6 +2896,10 @@
               },
               {
                 "type": "string",
+                "value": "muted"
+              },
+              {
+                "type": "string",
                 "value": "white"
               },
               {
@@ -2971,6 +3011,10 @@
               {
                 "type": "string",
                 "value": "default"
+              },
+              {
+                "type": "string",
+                "value": "muted"
               },
               {
                 "type": "string",
@@ -3086,6 +3130,10 @@
               },
               {
                 "type": "string",
+                "value": "muted"
+              },
+              {
+                "type": "string",
                 "value": "white"
               },
               {
@@ -3195,6 +3243,10 @@
               {
                 "type": "string",
                 "value": "default"
+              },
+              {
+                "type": "string",
+                "value": "muted"
               },
               {
                 "type": "string",
@@ -3426,6 +3478,10 @@
               },
               {
                 "type": "string",
+                "value": "muted"
+              },
+              {
+                "type": "string",
                 "value": "white"
               },
               {
@@ -3613,6 +3669,10 @@
               },
               {
                 "type": "string",
+                "value": "muted"
+              },
+              {
+                "type": "string",
                 "value": "white"
               },
               {
@@ -3703,6 +3763,10 @@
               {
                 "type": "string",
                 "value": "default"
+              },
+              {
+                "type": "string",
+                "value": "muted"
               },
               {
                 "type": "string",
@@ -3890,6 +3954,10 @@
               {
                 "type": "string",
                 "value": "default"
+              },
+              {
+                "type": "string",
+                "value": "muted"
               },
               {
                 "type": "string",

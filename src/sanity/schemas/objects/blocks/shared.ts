@@ -18,7 +18,8 @@ export const sectionSettingsFields = [
     options: {
       layout: 'radio',
       list: [
-        { title: 'Cream', value: 'default' },
+        { title: 'White (default)', value: 'default' },
+        { title: 'Light grey', value: 'muted' },
         { title: 'White', value: 'white' },
         { title: 'Sky wash', value: 'sky' },
         { title: 'Sage wash', value: 'sage' },
