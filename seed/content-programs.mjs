@@ -52,12 +52,12 @@ const core = (type, id, fields) => ({
 const service = (id, category, fields) => core('service', `service-${id}`, { ...(category ? { category: ref1(category) } : {}), ...fields })
 
 const preschoolDay = [
-  step('Arrival', 'Parents check in on the Brightwheel kiosk, and children wash hands and settle in with free play.'),
-  step('Breakfast', 'A healthy breakfast served through the USDA food program (CACFP).'),
+  step('Arrival', 'From 6 am, parents check in on the Brightwheel kiosk, and children wash hands and settle in with free play.'),
+  step('Breakfast', 'Served from 7:30 to 9 am through the USDA food program (CACFP).'),
   step('Circle time', 'Calendar, weather, letters, numbers and a song to start the day together.'),
   step('Learning centers', 'Play-based activities in language, math, science and art from our Experience Early Learning curriculum.'),
-  step('Lunch and rest', 'A family-style lunch, then a quiet rest time.'),
-  step('Afternoon', 'Snack, stories, music and movement, and play with friends until pickup.'),
+  step('Lunch and rest', 'Lunch at 12 noon, then a quiet rest time.'),
+  step('Afternoon', 'Snack at 3 pm, then stories, music and movement, and play with friends until pickup.'),
 ]
 
 /* ───────────────────────── Program hubs (GBP categories) ───────────────────────── */
@@ -141,10 +141,10 @@ Call us at [(856) 455-6701](tel:8564556701) or [book a tour](/tour/) to see the 
       'NJ childcare subsidy (CCAP) accepted',
     ],
     dayPlan: [
-      step('After school', 'Kids arrive, wash up and have a healthy snack.'),
+      step('After school', 'Kids arrive by school bus or with a parent, wash up and have a snack.'),
       step('Homework time', 'A quiet table for homework and reading, with help when they get stuck.'),
       step('Play', 'Games, art, building and time with friends.'),
-      step('Dinner and wind-down', 'For children staying into the evening, dinner and calm activities until pickup.'),
+      step('Dinner and wind-down', 'Dinner at 6 pm and an evening snack at 9 pm for children staying late, with calm activities until pickup.'),
     ],
     body: md`
 ## Before and after school care for working parents
@@ -161,7 +161,7 @@ Many parents still work when school is closed. We offer full-day care on [school
 
 ## Getting to and from school
 
-Parents drop off and pick up at the center. We do not offer school pickup or drop-off.
+We don't drive children to or from school, but school buses can pick up and drop off at our center. Ask your school district about a bus stop at 30 W Chestnut Ave. Vineland Public Schools elementary schools such as Gloria M. Sabater Elementary School are close by. Parents can always drop off and pick up at the center too.
 
 ## Getting started
 
@@ -172,7 +172,7 @@ Call [(856) 455-6701](tel:8564556701) or [book a tour](/tour/). Tell us your chi
       faq('What ages are in the after school program?', 'Our before and after school program is for school-age children up to 13 years old.'),
       faq('How late can my child stay?', 'We are open until 11 pm, Monday to Sunday, so children can stay through a second shift.'),
       faq('Do you help with homework?', 'Yes. After snack, children have homework time at a quiet table, and staff help with reading and checking work.'),
-      faq('Do you pick children up from school?', 'No. We do not offer school pickup or drop-off. Parents bring children to the center and pick them up here.'),
+      faq('Can the school bus drop my child off at your center?', 'Yes. School buses can pick up and drop off at our center. Ask your school district about a bus stop at 30 W Chestnut Ave. We do not drive children to or from school ourselves.'),
       faq('Are you open in the summer and when school is closed?', 'Yes. We offer full-day care all summer and on school holidays, breaks and snow days.'),
       faq('Can I use CCAP for after school care?', 'We accept NJ childcare subsidy (CCAP) for families who qualify, including for school-age care. Call us and we will help you with the next steps.'),
     ],
@@ -254,7 +254,14 @@ const homeServices = [
       'Uriah Child Care cares for toddlers from 2½ years old at our licensed center in Vineland, NJ. Your little one builds words, makes friends and learns daily routines through play, with potty training support along the way. We are open 7 days a week, 6 am to 11 pm, and accept NJ childcare subsidy (CCAP).',
     excerpt: 'Warm, play-based care for toddlers from 2½, with potty training support and care 7 days a week.',
     highlights: ['Children from 2½ years old', 'Talking, sharing and taking turns', 'Potty training support', 'Daily routine with a picture schedule', 'Meals and snacks (CACFP)', 'Updates through the Brightwheel app'],
-    dayPlan: preschoolDay,
+    dayPlan: [
+      step('Arrival', 'From 6 am, parents check in on the Brightwheel kiosk, and your toddler washes hands and warms up with free play.'),
+      step('Breakfast', 'Served from 7:30 to 9 am through the USDA food program (CACFP).'),
+      step('Circle time', 'A short circle with songs, colors and new words, sized for younger children.'),
+      step('Play and potty breaks', 'Hands-on play in small groups, with regular bathroom trips for children who are potty training.'),
+      step('Lunch and rest', 'Lunch at 12 noon, then a quiet rest time.'),
+      step('Afternoon', 'Snack at 3 pm, then stories, music and play until pickup.'),
+    ],
     body: md`
 ## Care for your 2½-year-old
 
@@ -303,7 +310,7 @@ The New Jersey Child Care Assistance Program (CCAP) helps working families, and 
 
 ## How CCAP works in Cumberland County
 
-In Cumberland County, CCAP is managed by the local child care resource and referral agency, Rutgers Southern Regional CCR&R, which has an office in Vineland. You apply through the state's Child Care Assistance Program, and the agency decides eligibility and your family's share of the cost. Rules and income limits are set by the state and can change, so check the official [NJ Child Care Assistance Program](https://www.childcarenj.gov/) website for the latest.
+In Cumberland County, CCAP is managed by the local child care resource and referral agency, Rutgers Southern Regional CCR&R. Its Vineland office is at 415 W Landis Ave, Suite 202, and you can call them at [(856) 462-6800](tel:8564626800). You apply through the state's Child Care Assistance Program, and the agency decides eligibility and your family's share of the cost. Rules and income limits are set by the state and can change, so check the official [NJ Child Care Assistance Program](https://www.childcarenj.gov/) website for the latest.
 
 ## How we help
 
@@ -317,7 +324,7 @@ See [tuition and how to pay](/tuition/), call us at [(856) 455-6701](tel:8564556
 `,
     faqs: [
       faq('Do you accept CCAP?', 'Yes. We accept NJ childcare subsidy (CCAP) for families who qualify.'),
-      faq('Who decides if I qualify?', 'The state program and the county agency decide eligibility and your share of the cost. In Cumberland County that is Rutgers Southern Regional CCR&R. We can help you with the next steps.'),
+      faq('Who decides if I qualify?', 'The state program and the county agency decide eligibility and your share of the cost. In Cumberland County that is Rutgers Southern Regional CCR&R in Vineland, (856) 462-6800. We can help you with the next steps.'),
       faq('Can I use CCAP for evening or weekend care?', 'Care has to fit what your subsidy approval covers. Tell us your work schedule and we will go over it with you.'),
     ],
     related: refs('page-tuition', 'category-shift-care', 'category-preschool', 'page-tour'),
@@ -345,7 +352,15 @@ We participate in the USDA Child and Adult Care Food Program (CACFP). The progra
 
 ## What a day of meals looks like
 
-Children who arrive early have breakfast, everyone has lunch, and there are snacks during the day. Children staying into the evening are served an evening meal. Children wash their hands before every meal, and we eat together at the table.
+Meals are served at the same times every day, 7 days a week:
+
+- **Breakfast:** 7:30 to 9 am
+- **Lunch:** 12 noon
+- **Afternoon snack:** 3 pm
+- **Dinner:** 6 pm, for children staying into the evening
+- **Evening snack:** 9 pm, for children staying late
+
+Children wash their hands before every meal, and we eat together at the table.
 
 ## Allergies and special diets
 
@@ -357,6 +372,7 @@ Ask about our menus when you [book a tour](/tour/), or call [(856) 455-6701](tel
 `,
     faqs: [
       faq('Do I need to pack lunch?', 'Meals and snacks are served during the day through the USDA food program (CACFP). Ask us at enrollment about anything your child needs from home.'),
+      faq('What time are meals served?', 'Breakfast is from 7:30 to 9 am, lunch is at 12 noon, snack is at 3 pm, dinner is at 6 pm and the evening snack is at 9 pm.'),
       faq('Can you handle food allergies?', 'Tell us about allergies and special diets when you enroll, and we will plan meals around them.'),
     ],
     related: refs('service-safe-licensed', 'category-preschool', 'service-evening', 'page-faq'),
@@ -376,7 +392,7 @@ Ask about our menus when you [book a tour](/tour/), or call [(856) 455-6701](tel
     intro:
       'Uriah Child Care is licensed by the New Jersey Department of Children and Families as a child care center, license ID CCC128557. Parents check children in and out on the Brightwheel app, children are released only to adults you authorize, and Ms. Paulette is certified in pediatric First Aid and CPR/AED.',
     excerpt: 'Licensed by NJ DCF (CCC128557), with secure Brightwheel check-in and release only to authorized adults.',
-    highlights: ['Licensed by NJ DCF, license ID CCC128557', 'Brightwheel check-in and check-out', 'Release only to authorized adults', 'Pediatric First Aid and CPR/AED certified owner', 'Security camera at the entrance', 'Wheelchair accessible entrance and parking'],
+    highlights: ['Licensed by NJ DCF, license ID CCC128557', 'Brightwheel check-in and check-out', 'Release only to authorized adults', 'CPR and first aid trained staff', 'Security camera at the entrance', 'Wheelchair accessible entrance and parking'],
     body: md`
 ## Licensed by NJ DCF
 
@@ -390,7 +406,7 @@ We are licensed by the New Jersey Department of Children and Families (DCF) as a
 
 ## Health and safety every day
 
-Children wash their hands when they arrive, before meals and after using the bathroom. Ms. Paulette is certified in pediatric First Aid and CPR/AED. We use positive discipline: clear rules, redirection and praise, and never physical punishment or shaming.
+Children wash their hands when they arrive, before meals and after using the bathroom. Ms. Paulette is certified in pediatric First Aid and CPR/AED, and every staff member must have CPR and first aid training before we hire them. Our director, Tameca Burke, has about five years of experience in child care. We use positive discipline: clear rules, redirection and praise, and never physical punishment or shaming.
 
 ## Built for every family
 
@@ -401,6 +417,7 @@ Our building has a wheelchair ramp, accessible parking and an accessible restroo
       faq('Is Uriah Child Care licensed?', 'Yes. We are licensed by the NJ Department of Children and Families as a child care center, license ID CCC128557.'),
       faq('How do you keep track of who picks up?', 'Parents check in and out on the Brightwheel kiosk, and we release children only to adults you authorize in writing. We ask for ID from anyone we do not know.'),
       faq('How do you handle discipline?', 'We use positive discipline: clear, simple rules, redirection and praise. We never use physical punishment, shaming or withholding food.'),
+      faq('Are your staff trained in CPR and first aid?', 'Yes. Every staff member must have CPR and first aid training before we hire them, and Ms. Paulette is certified in pediatric First Aid and CPR/AED.'),
     ],
     related: refs('page-our-center', 'page-about', 'service-meals', 'page-faq'),
     seo: seo('Licensed Daycare in Vineland, NJ', 'Uriah Child Care is a licensed child care center in Vineland, NJ (NJ DCF license CCC128557). Brightwheel check-in and safe, secure pickup.'),
@@ -562,6 +579,10 @@ Each morning starts at circle time with the calendar, the weather, letters and c
 
 Many of our 2½ and 3-year-olds are still in diapers or pull-ups when they start. That's normal, and we're happy to help.
 
+## How long potty training usually takes
+
+Every child is different. Toilet training often starts somewhere between 21 and 36 months, and only about 40 to 60 percent of children are fully trained by their third birthday, according to a review in the journal of the [American Academy of Family Physicians](https://www.aafp.org/pubs/afp/issues/2008/1101/p1059.html). Staying dry at night usually comes later than staying dry during the day. Starting earlier doesn't always mean finishing earlier, so we follow your child's readiness signs, like staying dry for a couple of hours, telling you about a wet diaper or showing interest in the toilet.
+
 ## How we work on it together
 
 - We talk with you about the words and steps you use at home, and use the same ones.
@@ -620,7 +641,7 @@ Many families pair before school care with our [after school program](/after-sch
 `,
     faqs: [
       faq('What time can I drop off before school?', 'We open at 6 am, 7 days a week.'),
-      faq('Do you take children to school or pick them up?', 'No. We do not offer school pickup or drop-off. Parents bring children to the center and pick them up here.'),
+      faq('Can the school bus pick my child up here?', 'Yes. School buses can pick up and drop off at our center, so ask your school district about a stop at 30 W Chestnut Ave. We do not drive children to or from school ourselves.'),
     ],
     related: refs('category-after-school', 'service-first-shift', 'service-homework-help', 'service-meals'),
     seo: seo('Before School Care in Vineland, NJ', 'Before school care in Vineland, NJ from 6 am, with breakfast and a calm start to the day. School-age kids up to 13. CCAP accepted.'),
@@ -658,7 +679,7 @@ See our full [after school program](/after-school-program-vineland-nj/) or [book
     faqs: [
       faq('Do you make sure homework is finished?', 'We set aside homework time every day and check work before play. Let us know if there is something specific your child needs to finish.'),
       faq('What ages come to homework help?', 'Homework time is part of our after school program for school-age children up to 13.'),
-      faq('Do you pick my child up from school?', "No. We do not drive children to or from school. School buses can stop at the center, so ask your school district whether your child's bus can drop off here."),
+      faq('Can the school bus drop my child off here?', 'Yes. School buses can pick up and drop off at our center, so ask your school district about a stop at 30 W Chestnut Ave. We do not drive children to or from school ourselves.'),
       faq('Do you accept CCAP for after school care?', 'Yes. We accept NJ childcare subsidy (CCAP) for families who qualify.'),
     ],
     related: refs('category-after-school', 'service-before-school', 'service-evening', 'service-kindergarten-readiness'),
@@ -787,7 +808,7 @@ See all [shift care](/child-care-vineland-nj/), or call [(856) 455-6701](tel:856
     reviews: refs('review-marcia-antina'),
     faqs: [
       faq('How early do you open?', 'We open at 6 am, Monday to Sunday.'),
-      faq('Is breakfast served for early arrivals?', 'Yes. We participate in the USDA Child and Adult Care Food Program (CACFP), and children are served meals and snacks during the day, including breakfast.'),
+      faq('Is breakfast served for early arrivals?', 'Yes. Breakfast is served from 7:30 to 9 am through the USDA Child and Adult Care Food Program (CACFP).'),
       faq('Are you open early on weekends too?', 'Yes. We open at 6 am on Saturday and Sunday, the same as weekdays.'),
       faq('How do I check my child in?', 'Parents check children in and out on the Brightwheel kiosk in our lobby.'),
     ],
@@ -811,9 +832,9 @@ See all [shift care](/child-care-vineland-nj/), or call [(856) 455-6701](tel:856
     excerpt: 'Second shift care with dinner and a calm evening routine, open until 11 pm.',
     highlights: ['Second shift care', 'Open until 11 pm', 'Evening meal served', 'Calm evening routine', 'Ages 2.5 and up'],
     dayPlan: [
-      step('Afternoon', 'Snack and play, or homework time for school-age kids.'),
-      step('Dinner', 'An evening meal through the USDA food program (CACFP).'),
-      step('Wind-down', 'Books, quiet games and stories to wind down.'),
+      step('Afternoon', 'Snack at 3 pm and play, or homework time for school-age kids.'),
+      step('Dinner', 'Dinner at 6 pm through the USDA food program (CACFP).'),
+      step('Wind-down', 'Books, quiet games and stories, with an evening snack at 9 pm.'),
       step('Pickup', 'Before we close at 11 pm.'),
     ],
     body: md`
@@ -823,7 +844,7 @@ Second shift is hard on families when child care closes as your shift starts. We
 
 ## A real evening routine
 
-Children have dinner, then settle into calm activities like books, puzzles and quiet games. We keep the evening low-key so children are ready for bed when you pick them up.
+Dinner is at 6 pm. Children go outside when the weather allows, school-age kids get homework help if they need it, and then everyone settles into calm activities like books, puzzles and quiet games. There is an evening snack at 9 pm. We keep the evening low-key so children are ready for bed when you pick them up.
 
 ## For every age we serve
 
@@ -856,6 +877,13 @@ See [late evening care until 11 pm](/late-evening-child-care-vineland-nj/), or [
       'Uriah Child Care is open until 11 pm, 7 days a week, for parents in the Vineland, NJ area who work late. Need care after 11 pm? Call us to talk about it.',
     excerpt: 'Care until 11 pm, 7 days a week, for parents who work late.',
     highlights: ['Open until 11 pm', '7 days a week', 'Dinner served', 'After 11 pm? Call us'],
+    dayPlan: [
+      step('Dinner', 'Dinner at 6 pm through the USDA food program (CACFP).'),
+      step('Outside time', 'Children go outside to play when the weather allows.'),
+      step('Homework help', 'School-age kids finish homework, with help if they need it.'),
+      step('Evening snack', 'A light snack at 9 pm.'),
+      step('Quiet time', 'From 9:30 pm, books and calm play until pickup by 11 pm.'),
+    ],
     body: md`
 ## Child care until 11 pm
 
@@ -867,7 +895,7 @@ Our posted hours end at 11 pm. Need care after 11 pm for an overnight shift? Cal
 
 ## A quiet, safe evening
 
-By late evening the center is calm. Children have had dinner and wind down with books and quiet play, so they're ready for bed at home.
+By late evening the center is calm. Children have had dinner at 6 pm, and they go outside when the weather allows. School-age children get homework help if they need it. The evening snack is at 9 pm and quiet time starts at 9:30 pm, so children are ready for bed when you get them home.
 
 Call [(856) 455-6701](tel:8564556701) to talk about your hours, or see [evening child care](/evening-child-care-vineland-nj/).
 `,
@@ -1018,14 +1046,14 @@ export const cities = [
     order: 1,
     accent: 'sage',
     keyword: 'daycare millville nj',
-    driveTime: 'About 20 minutes by car',
+    driveTime: 'About 15 minutes by car',
     ageRange: 'Ages 2.5 and up',
     schedule: 'Monday to Sunday, 6 am to 11 pm',
     image: IMG.buildingRamp(),
     intro:
-      'Uriah Child Care serves Millville, NJ families from our licensed center at 30 W Chestnut Ave in Vineland, about a 20-minute drive. Ms. Paulette cared for Millville children for years before opening the Vineland center. We are open 7 days a week, 6 am to 11 pm, for ages 2.5 and up.',
-    excerpt: 'Ms. Paulette has cared for Millville children for years. Our Vineland center is about 20 minutes away.',
-    highlights: ['About 20 minutes from Millville', 'Open 7 days, 6 am to 11 pm', 'Ages 2.5 and up', 'NJ childcare subsidy (CCAP) accepted'],
+      'Uriah Child Care serves Millville, NJ families from our licensed center at 30 W Chestnut Ave in Vineland, about a 15-minute drive. Ms. Paulette cared for Millville children for years before opening the Vineland center. We are open 7 days a week, 6 am to 11 pm, for ages 2.5 and up.',
+    excerpt: 'Ms. Paulette has cared for Millville children for years. Our Vineland center is about 15 minutes away.',
+    highlights: ['About 15 minutes from Millville', 'Open 7 days, 6 am to 11 pm', 'Ages 2.5 and up', 'NJ childcare subsidy (CCAP) accepted'],
     body: md`
 ## Ms. Paulette and Millville
 
@@ -1033,7 +1061,7 @@ Before opening our center in Vineland, Ms. Paulette cared for children in Millvi
 
 ## Worth the short drive
 
-Our center at 30 W Chestnut Ave in Vineland is about a 20-minute drive from Millville. For Millville parents who work in Vineland, it's right on the way. And because we're open **7 days a week, 6 am to 11 pm**, you can find care for [early, evening and weekend shifts](/child-care-vineland-nj/).
+Our center at 30 W Chestnut Ave in Vineland is about a 15-minute drive from Millville. Most Millville families drive north on Delsea Drive (Route 47) into Vineland and turn onto W Chestnut Ave. For Millville parents who work in Vineland, it's right on the way. And because we're open **7 days a week, 6 am to 11 pm**, you can find care for [early, evening and weekend shifts](/child-care-vineland-nj/).
 
 ## Programs for Millville families
 
@@ -1045,11 +1073,12 @@ We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for famil
 `,
     reviews: refs('review-marcia-antina', 'review-monique-willoughby'),
     faqs: [
-      faq('Is your center in Millville?', 'Our center is in Vineland at 30 W Chestnut Ave, about a 20-minute drive from Millville. Many of our families come from Millville.'),
+      faq('Is your center in Millville?', 'Our center is in Vineland at 30 W Chestnut Ave, about a 15-minute drive from Millville up Delsea Drive. Many of our families come from Millville.'),
+      faq('Will my child\'s Millville school bus stop at your center?', 'Bus routes are set by each school district, so ask Millville Public Schools whether a stop in Vineland is possible. School buses can pick up and drop off at our center, and parents can always drop off and pick up here.'),
       faq('Can I use CCAP if I live in Millville?', 'Yes. Millville and Vineland are both in Cumberland County, and we accept NJ childcare subsidy (CCAP) for families who qualify.'),
     ],
     related: refs('category-shift-care', 'category-preschool', 'page-about', 'area-bridgeton'),
-    seo: seo('Daycare for Millville, NJ Families | Uriah Child Care', 'Child care for Millville, NJ families at our licensed Vineland center, about 20 minutes away. Open 7 days, 6 am to 11 pm. Ages 2.5+.'),
+    seo: seo('Daycare for Millville, NJ Families | Uriah Child Care', 'Child care for Millville, NJ families at our licensed Vineland center, about 15 minutes away. Open 7 days, 6 am to 11 pm. Ages 2.5+.'),
   }),
 
   city('bridgeton', 'Bridgeton', {
@@ -1059,18 +1088,18 @@ We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for famil
     order: 2,
     accent: 'sky',
     keyword: 'daycare bridgeton nj',
-    driveTime: 'About 25 minutes by car',
+    driveTime: 'About 15 to 20 minutes by car',
     ageRange: 'Ages 2.5 and up',
     schedule: 'Monday to Sunday, 6 am to 11 pm',
     image: IMG.parkingLot(),
     intro:
-      'Uriah Child Care welcomes Bridgeton, NJ families at our licensed center at 30 W Chestnut Ave in Vineland, about a 25-minute drive. We are open Monday to Sunday, 6 am to 11 pm, with toddler care, preschool and before and after school care for ages 2.5 and up. We accept NJ childcare subsidy (CCAP).',
-    excerpt: 'Licensed care for Bridgeton families at our Vineland center, about 25 minutes away, open 7 days.',
-    highlights: ['About 25 minutes from Bridgeton', 'Open 7 days, 6 am to 11 pm', 'Ages 2.5 and up', 'NJ childcare subsidy (CCAP) accepted'],
+      'Uriah Child Care welcomes Bridgeton, NJ families at our licensed center at 30 W Chestnut Ave in Vineland, a 15 to 20-minute drive. We are open Monday to Sunday, 6 am to 11 pm, with toddler care, preschool and before and after school care for ages 2.5 and up. We accept NJ childcare subsidy (CCAP).',
+    excerpt: 'Licensed care for Bridgeton families at our Vineland center, 15 to 20 minutes away, open 7 days.',
+    highlights: ['15 to 20 minutes from Bridgeton', 'Open 7 days, 6 am to 11 pm', 'Ages 2.5 and up', 'NJ childcare subsidy (CCAP) accepted'],
     body: md`
 ## Child care for Bridgeton parents
 
-Many Bridgeton parents work in Vineland, at the hospital, in warehouses and food plants or in stores along Delsea Drive. Our center at 30 W Chestnut Ave is about a 25-minute drive from Bridgeton, so you can drop off on the way to work.
+Many Bridgeton parents work in Vineland, at the hospital, in warehouses and food plants or in stores along Delsea Drive. Our center at 30 W Chestnut Ave is a 15 to 20-minute drive from Bridgeton, depending on where in Bridgeton you live. Many families take Route 56, which becomes Landis Avenue in Vineland, then head south on Delsea Drive to W Chestnut Ave. You can drop off on the way to work.
 
 ## Open when you work
 
@@ -1086,10 +1115,11 @@ We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for famil
 `,
     reviews: refs('review-rockay-davis'),
     faqs: [
-      faq('How far is your center from Bridgeton?', 'Our center is at 30 W Chestnut Ave in Vineland, about a 25-minute drive from Bridgeton.'),
+      faq('How far is your center from Bridgeton?', 'Our center is at 30 W Chestnut Ave in Vineland, a 15 to 20-minute drive from Bridgeton, depending on where in Bridgeton you start.'),
+      faq('Will my child\'s Bridgeton school bus stop at your center?', 'Bus routes are set by each school district, so ask Bridgeton Public Schools whether a stop in Vineland is possible. School buses can pick up and drop off at our center, and parents can always drop off and pick up here.'),
       faq('Can I use CCAP if I live in Bridgeton?', 'Yes. Bridgeton and Vineland are both in Cumberland County, and we accept NJ childcare subsidy (CCAP) for families who qualify.'),
     ],
     related: refs('category-shift-care', 'category-after-school', 'service-ccap', 'area-millville'),
-    seo: seo('Daycare for Bridgeton, NJ Families | Uriah Child Care', 'Child care for Bridgeton, NJ families at our licensed Vineland center, about 25 minutes away. Open 7 days, 6 am to 11 pm. Ages 2.5+.'),
+    seo: seo('Daycare for Bridgeton, NJ Families | Uriah Child Care', 'Child care for Bridgeton, NJ families at our licensed Vineland center, 15 to 20 minutes away. Open 7 days, 6 am to 11 pm. Ages 2.5+.'),
   }),
 ]

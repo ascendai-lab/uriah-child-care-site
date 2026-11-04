@@ -205,7 +205,9 @@ const phone = settings?.phone
     background: var(--cream);
     border-bottom: 1px solid var(--border-default);
     padding: 0.75rem var(--container-px) 1.5rem;
-    box-shadow: var(--shadow-overlay);
+    /* Dim the page under the open menu (below the header only). */
+    box-shadow: var(--shadow-overlay), 0 0 0 100vmax rgba(36, 48, 61, 0.45);
+    clip-path: inset(0 -100vmax -100vmax -100vmax);
   }
   .site-nav__list { list-style: none; display: grid; gap: 0.1rem; }
   .site-nav__item > a,

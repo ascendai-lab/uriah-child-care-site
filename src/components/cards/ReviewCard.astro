@@ -11,13 +11,15 @@ interface Props {
     source?: string | null
     reviewUrl?: string | null
   }
-  /** Long reviews are trimmed to this many characters, with a link to read the rest on Google. */
-  maxLength?: number
+  /** Soft background color for the card (used on the review wall, which sits on white). */
+  tint?: 'coral' | 'sage' | 'sunshine' | 'sky'
 }
 
-const { review, maxLength = 420 } = Astro.props
-const quote = review.quote ?? ''
-const trimmed = quote.length > maxLength ? `${quote.slice(0, quote.lastIndexOf(' ', maxLength))}…` : quote
+const { review, tint } = Astro.props
+const quote = (review.quote ?? '').trim()
+// Long reviews start cut to a few lines; a "Read more" button opens the full text in place.
+const long = quote.length > 170
+const quoteId = `q-${Math.random().toString(36).slice(2, 9)}`
 const url = stegaClean(review.reviewUrl)
 const name = stegaClean(review.name) ?? ''
 const initial = name.trim().charAt(0).toUpperCase()
@@ -26,10 +28,15 @@ const tone = tones[[...name].reduce((n, c) => n + c.charCodeAt(0), 0) % tones.le
 const source = review.source ?? 'Google'
 ---
 
-<figure class="card review-card">
+<figure class:list={['card review-card', tint && `review-card--${tint}`]} data-clamp={long ? '' : undefined}>
   {review.rating ? <Stars rating={review.rating} /> : null}
-  {trimmed ? (
-    <blockquote>{trimmed}</blockquote>
+  {quote ? (
+    <>
+      <blockquote id={quoteId}>{quote}</blockquote>
+      {long && (
+        <button type="button" class="review-card__more" aria-expanded="false" aria-controls={quoteId}>Read more</button>
+      )}
+    </>
   ) : (
     <p class="review-card__rating-only">Left a {review.rating ?? 5}-star rating on Google.</p>
   )}

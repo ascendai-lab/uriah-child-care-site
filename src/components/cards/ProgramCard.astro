@@ -24,7 +24,7 @@ interface Props {
   hideAge?: boolean
 }
 
-const palette = ['coral', 'sage', 'sunshine', 'sky']
+import { CARD_PALETTE as palette } from '@lib/accents'
 const { item, index = 0, headingLevel: H = 'h3', hideAge = false } = Astro.props
 const href = hrefFor(item._type, item.slug)
 const accent = stegaClean(item.accent) || palette[index % palette.length]

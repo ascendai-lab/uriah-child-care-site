@@ -13,52 +13,42 @@ interface Props {
   showWrite?: boolean
 }
 
-/** The same Google reviews on every page: a 3-column masonry wall plus a link to the full list on Google. */
+/** The same Google reviews on every page: an even 3-column grid plus a link to the full list on Google. */
 const { reviews, settings, showWrite = true } = Astro.props
 const items = (reviews ?? []).filter((r): r is Review => Boolean(r))
 const moreUrl = stegaClean(settings?.gbpReviewUrl) || stegaClean(settings?.gbpUrl)
 const writeUrl = stegaClean(settings?.gbpWriteReviewUrl)
 
-// Masonry without layout jumps: deal the reviews into 3 columns, each going to the shortest column
-// so far (by an estimate of its height). On phones and tablets the columns fold into one simple grid.
-const COLUMNS = 3
-const CARD_OVERHEAD = 220
-// Phones show the first few reviews only, so the section doesn't run thousands of pixels.
-const MOBILE_COUNT = 99
-type Slot = { review: Review; index: number }
-const columns: { items: Slot[]; height: number }[] = Array.from({ length: COLUMNS }, () => ({ items: [], height: 0 }))
-// The invite tile always closes the last column, so count its height there before dealing the reviews.
-if (showWrite && writeUrl) columns[COLUMNS - 1].height = 380
-items.forEach((review, index) => {
-  const shortest = columns.reduce((a, b) => (b.height < a.height ? b : a))
-  shortest.items.push({ review, index })
-  shortest.height += Math.min(stegaClean(review.quote)?.length ?? 0, 420) + CARD_OVERHEAD
-})
-// With fewer reviews than slots, the shortest column gets an invitation to leave one, so the wall stays even.
-const inviteColumn = showWrite && writeUrl ? columns[COLUMNS - 1] : null
+// An even grid: every review is cut to the same few lines with a "Read more" button, so the rows line up,
+// and the invite tile closes the last row at the same height as the cards beside it.
+const tints = ['sunshine', 'sky', 'coral', 'sage'] as const
+const showInvite = Boolean(showWrite && writeUrl)
 ---
 
 {
   items.length ? (
     <>
       <div class="reviews-grid">
-        {columns.map((col) => (
-          <div class="reviews-grid__col">
-            {col.items.map(({ review, index }) => (
-              <div class:list={['reviews-grid__item', index >= MOBILE_COUNT && 'reviews-grid__item--extra']} style={`order:${index}`}>
-                <ReviewCard review={review} />
-              </div>
-            ))}
-            {col === inviteColumn && (
-              <div class="reviews-invite" style={`order:${items.length}`}>
-                <p class="reviews-invite__title">Is your family part of Uriah Child Care Center?</p>
-                <p>A few words on Google help other Vineland parents find safe, caring child care.</p>
-                <a class="text-link" href={writeUrl} target="_blank" rel="noopener noreferrer">Leave a Google review</a>
-              </div>
-            )}
-          </div>
+        {items.map((review, index) => (
+          <ReviewCard review={review} tint={tints[index % tints.length]} />
         ))}
+        {showInvite && (
+          <div class="reviews-invite">
+            <p class="reviews-invite__title">Is your family part of Uriah Child Care Center?</p>
+            <p>A few words on Google help other Vineland parents find safe, caring child care.</p>
+            <a class="reviews-invite__link" href={writeUrl} target="_blank" rel="noopener noreferrer">
+              Leave a Google review <span aria-hidden="true"><Icon name="arrow" size={16} /></span>
+            </a>
+          </div>
+        )}
       </div>
+      {items.length > 3 && (
+        <div class="reviews-showall">
+          <button type="button" class="btn btn--outline reviews-showall__btn" aria-expanded="false">
+            Show all {items.length} reviews
+          </button>
+        </div>
+      )}
       {moreUrl && (
         <div class="reviews-actions">
           <a class="btn btn--secondary" href={moreUrl} target="_blank" rel="noopener noreferrer">
@@ -70,27 +60,100 @@ const inviteColumn = showWrite && writeUrl ? columns[COLUMNS - 1] : null
   ) : null
 }
 
+<script>
+  // "Read more" only shows on reviews that are actually cut off, and opens just that card.
+  const setup = () => {
+    document.querySelectorAll<HTMLElement>('.review-card[data-clamp]').forEach((card) => {
+      const quote = card.querySelector<HTMLElement>('blockquote')
+      const button = card.querySelector<HTMLButtonElement>('.review-card__more')
+      if (!quote || !button || button.dataset.ready) return
+      button.dataset.ready = '1'
+      const check = () => {
+        if (card.classList.contains('is-open')) return
+        button.hidden = quote.scrollHeight <= quote.clientHeight + 2
+      }
+      check()
+      window.addEventListener('resize', check, { passive: true })
+      button.addEventListener('click', () => {
+        const grid = card.closest<HTMLElement>('.reviews-grid')
+        const tiles = grid ? [...grid.children].filter((el): el is HTMLElement => el instanceof HTMLElement && el !== card) : []
+        // Keep the other cards at their current size so only this one grows.
+        if (!card.classList.contains('is-open') && grid && !grid.querySelector('.is-open')) {
+          tiles.forEach((el) => { el.style.height = `${el.offsetHeight}px` })
+        }
+        const open = card.classList.toggle('is-open')
+        if (open) card.style.height = ''
+        if (grid && !grid.querySelector('.is-open')) tiles.concat(card).forEach((el) => { el.style.height = '' })
+        button.setAttribute('aria-expanded', String(open))
+        button.textContent = open ? 'Read less' : 'Read more'
+      })
+    })
+  }
+  setup()
+  document.fonts?.ready.then(setup)
+  // Phones show three reviews first, so the page doesn't turn into a long column of cards.
+  document.querySelectorAll<HTMLButtonElement>('.reviews-showall__btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const grid = btn.closest('.reviews-showall')?.previousElementSibling
+      grid?.classList.add('is-all')
+      btn.closest<HTMLElement>('.reviews-showall')?.setAttribute('hidden', '')
+      const next = grid?.children[3]
+      if (next instanceof HTMLElement) {
+        next.setAttribute('tabindex', '-1')
+        next.focus({ preventScroll: true })
+      }
+    })
+  })
+</script>
+
 <style>
-  .reviews-grid { display: grid; gap: 1.25rem; align-items: start; }
-  .reviews-grid__col { display: contents; }
+  .reviews-grid { display: grid; gap: 1.25rem; align-items: stretch; }
+  .reviews-showall { display: none; }
+  @media (max-width: 719px) {
+    .reviews-grid:not(.is-all) > :global(.review-card:nth-child(n + 4)),
+    .reviews-grid:not(.is-all) > .reviews-invite { display: none; }
+    .reviews-showall { display: flex; justify-content: center; margin-top: 1.25rem; }
+  }
+  /* An opened review grows alone; its row-mates keep their size. */
+  .reviews-grid:has(.is-open) { align-items: start; }
+  .reviews-grid:has(.is-open) > :global(*) { align-self: start; }
   .reviews-invite {
-    display: grid;
-    gap: 0.5rem;
-    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.8rem 1.7rem;
     border-radius: var(--radius-lg);
-    background: var(--sunshine-50);
+    background: var(--navy);
+    color: #fff;
   }
-  .reviews-invite__title { font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; color: var(--navy); }
-  .reviews-invite p:not(.reviews-invite__title) { color: var(--fg2); }
-  .reviews-invite .text-link { justify-self: start; padding-block: 0.3rem; }
+  .reviews-invite__title { font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; line-height: 1.3; }
+  .reviews-invite p:not(.reviews-invite__title) { color: rgba(255, 255, 255, 0.82); }
+  .reviews-invite__link {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 0.35rem;
+    padding: 0.6rem 1.15rem;
+    border-radius: var(--radius-full);
+    background: var(--sunshine);
+    color: var(--navy);
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 200ms var(--ease-out), box-shadow 200ms var(--ease-out);
+  }
+  .reviews-invite__link:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18); }
+  .reviews-invite__link:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--navy), 0 0 0 4.5px #fff; }
   .reviews-actions { display: flex; justify-content: center; margin-top: 2.25rem; }
-  @media (max-width: 1039px) {
-    .reviews-grid__item--extra { display: none; }
-  }
   @media (min-width: 720px) { .reviews-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (min-width: 1040px) {
-    .reviews-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .reviews-grid__col { display: grid; gap: 1.25rem; align-content: start; }
-    .reviews-grid__col > * { order: 0 !important; }
+  /* Two columns: a lone invite tile in the last row spans it, so there's no empty cell beside it. */
+  @media (min-width: 720px) and (max-width: 1039px) {
+    .reviews-invite:nth-child(odd) { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr auto; column-gap: 2rem; align-items: center; }
+    .reviews-invite:nth-child(odd) > :not(a) { grid-column: 1; }
+    .reviews-invite:nth-child(odd) > a { grid-column: 2; grid-row: 1 / span 2; }
   }
+  @media (min-width: 1040px) { .reviews-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (prefers-reduced-motion: reduce) { .reviews-invite__link { transition: none; } .reviews-invite__link:hover { transform: none; } }
 </style>

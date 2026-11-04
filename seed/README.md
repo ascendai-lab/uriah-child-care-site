@@ -39,7 +39,7 @@ npm run dev:seed             # terminal 2: the site on :4321, reading from the m
 - No invented ratios, prices, credentials or star ratings. Review stars only show once a rating is entered.
 - Reviews are copied word for word. Skipped: Tameca Burke's (staff/family, against Google policy), two that mention
   infant ages, and one with a typo in the name.
-- Confirmed by Mark (2026-11-04): tuition is "call for pricing"; no school pickup or drop-off (said on the before/after
+- Confirmed by Mark (2026-11-04): tuition is "call for pricing"; no center-run school pickup or drop-off, but school buses CAN pick up and drop off at the center (Mark, 18:05) (said on the before/after
   school pages and FAQ); summer care and school-closure care are offered and published.
 - Any page marked **Waiting for confirmation** is hidden from Google, the sitemap and llms.txt.
 

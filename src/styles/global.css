@@ -35,9 +35,24 @@
     --sky-700: #275f84;
     --navy-600: #263440;
 
+    /* Two extra card colors (Mark, 2026-11-04) so a row of six program cards never repeats.
+       Picked to sit with the logo pastels: soft lilac and warm peach. */
+    --lilac: #b3a5dc;
+    --lilac-50: #f4f1fb;
+    --lilac-700: #5f4e94;
+    --peach: #f7b07c;
+    --peach-50: #fef3ea;
+    --peach-700: #9a5320;
+
+    /* Soft card tints for the review wall on white */
+    --coral-100: #fce4e0;
+    --sage-100: #dcefeb;
+    --sunshine-100: #fdf0cf;
+    --sky-100: #dcebf5;
+
     /* Surfaces */
-    /* Surfaces: warm tan page (Mark 2026-11-04 16:03: tan over white), a deeper tan for
-       alternating bands, white for cards. Page heroes sit on navy so they never match the page. */
+    /* Surfaces: warm tan page (Mark 2026-11-04 16:03: tan over white). Alternating bands are
+       white, never a second tan (Mark 2026-11-04 18:05: no tan on tan). Heroes sit on navy. */
     --cream: #f8f1e8;
     --cream-deep: #f0e4d3;
     --white: #ffffff;
@@ -46,7 +61,7 @@
     /* Text */
     --fg1: #334350;
     --fg2: rgba(51, 67, 80, 0.78);
-    --fg3: rgba(51, 67, 80, 0.6);
+    --fg3: rgba(51, 67, 80, 0.78);
 
     /* Borders and shadows */
     --border-hairline: rgba(51, 67, 80, 0.08);
@@ -173,7 +188,7 @@
   /* Section backgrounds */
   .bg-default { background: var(--cream); }
   .bg-white { background: var(--white); }
-  .bg-muted { background: var(--surface-soft); }
+  .bg-muted { background: var(--white); }
   .bg-sky { background: var(--sky-50); }
   .bg-sage { background: var(--sage-50); }
   .bg-sunshine { background: var(--sunshine-50); }
@@ -267,6 +282,8 @@
     transition: background-color 200ms var(--ease-out), box-shadow 200ms var(--ease-out), transform 200ms var(--ease-out), color 200ms var(--ease-out);
     white-space: nowrap;
   }
+  .btn:focus-visible { box-shadow: var(--focus-ring); }
+
   .btn:hover { box-shadow: var(--shadow-button-hover); transform: translateY(-1px); }
   .btn:hover .btn__arrow svg { transform: translateX(2px); }
   .btn:active { box-shadow: none; transform: translateY(1px); }
@@ -361,12 +378,12 @@
   @media (min-width: 700px) {
     .grid-cards--2, .grid-cards--3, .grid-cards--4 { grid-template-columns: repeat(2, 1fr); }
   }
-  @media (min-width: 700px) and (max-width: 1039px) {
-    /* Tablets: three cards sit two-up, with the odd one centered below. */
-    .grid-cards--3 > :last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; width: calc(50% - 0.625rem); }
+  @media (min-width: 700px) {
+    /* Three cards always sit in one row, so none is left alone on tablets. */
+    .grid-cards--3 { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
   }
   @media (min-width: 1040px) {
-    .grid-cards--3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-cards--3 { gap: 1.25rem; }
     .grid-cards--4 { grid-template-columns: repeat(4, 1fr); }
   }
 
@@ -375,6 +392,8 @@
   .accent-sage { --accent: var(--sage); --accent-50: var(--sage-50); --accent-700: var(--sage-700); --on-accent: var(--navy-600); }
   .accent-sunshine { --accent: var(--sunshine); --accent-50: var(--sunshine-50); --accent-700: var(--sunshine-700); --on-accent: var(--navy); }
   .accent-sky { --accent: var(--sky); --accent-50: var(--sky-50); --accent-700: var(--sky-700); --on-accent: var(--navy-600); }
+  .accent-lilac { --accent: var(--lilac); --accent-50: var(--lilac-50); --accent-700: var(--lilac-700); --on-accent: var(--navy-600); }
+  .accent-peach { --accent: var(--peach); --accent-50: var(--peach-50); --accent-700: var(--peach-700); --on-accent: var(--navy-600); }
 
   /* Program card: bold color block with a photo */
   .program-card {
@@ -578,7 +597,7 @@
   }
   /* The wave takes the color of whatever section comes next. */
   .page-hero:has(+ .bg-white)::after, .hero--photoFade:has(+ .bg-white)::after { background: var(--white); }
-  .page-hero:has(+ .bg-muted)::after, .hero--photoFade:has(+ .bg-muted)::after { background: var(--surface-soft); }
+  .page-hero:has(+ .bg-muted)::after, .hero--photoFade:has(+ .bg-muted)::after { background: var(--white); }
 
   .breadcrumbs ol {
     list-style: none;
@@ -690,10 +709,32 @@
   }
   .review-card blockquote { position: relative; font-size: 1.02rem; line-height: 1.65; color: var(--fg1); }
   .review-card__rating-only { color: var(--fg2); font-style: italic; }
-  @media (max-width: 640px) {
-    /* Phones: long reviews are cut to six lines; the Google link carries the full text. */
-    .review-card blockquote { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; line-clamp: 6; overflow: hidden; }
+  /* Long reviews are cut to five lines so every card on the wall is the same size; "Read more" opens one. */
+  .review-card[data-clamp] blockquote { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; line-clamp: 5; overflow: hidden; }
+  .review-card.is-open blockquote { display: block; -webkit-line-clamp: unset; line-clamp: none; overflow: visible; }
+  .review-card__more {
+    align-self: flex-start;
+    margin-top: -0.5rem;
+    padding: 0.35rem 0;
+    border: 0;
+    background: none;
+    color: var(--navy);
+    font: inherit;
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
   }
+  .review-card__more:hover { text-decoration-thickness: 2px; }
+  .review-card__more:focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: 4px; }
+  .review-card__by { margin-top: auto; }
+  /* Tinted cards for the wall, which sits on a white band. */
+  .review-card--sunshine { background: var(--sunshine-100); border-color: transparent; box-shadow: none; }
+  .review-card--sky { background: var(--sky-100); border-color: transparent; box-shadow: none; }
+  .review-card--coral { background: var(--coral-100); border-color: transparent; box-shadow: none; }
+  .review-card--sage { background: var(--sage-100); border-color: transparent; box-shadow: none; }
+  .review-card[class*='review-card--'] .review-card__avatar { background: var(--white); color: var(--navy); }
   .review-card__by { display: flex; align-items: center; gap: 0.75rem; }
   .review-card__avatar {
     flex: none;
@@ -874,7 +915,9 @@
   /* Two sections on the same background read as one: don't stack both paddings. */
   .section.bg-white + .section.bg-white,
   .section.bg-default + .section.bg-default,
-  .section.bg-muted + .section.bg-muted { padding-top: calc(var(--section-y) * 0.4); }
+  .section.bg-muted + .section.bg-muted,
+  .section.bg-white + .section.bg-muted,
+  .section.bg-muted + .section.bg-white { padding-top: calc(var(--section-y) * 0.4); }
 
   .reveal {
     opacity: 0;

@@ -15,6 +15,24 @@ interface Props {
 }
 
 const { layout, heading, intro, asPageForm = false, id = 'book-a-tour' } = Astro.props
+// The same form closes every page, so its band changes color from page to page (Mark, 2026-11-04):
+// logo green on the home page, then blue, yellow and green in turn, so pages next to each other in the
+// menu never share a color. Pages not listed get a color from their address.
+const tones = ['sky', 'sunshine', 'sage'] as const
+const order = [
+  'preschool-vineland-nj', 'child-care-vineland-nj', 'after-school-program-vineland-nj', 'toddler-care-vineland-nj',
+  'pre-k-vineland-nj', 'kindergarten-readiness-vineland-nj', 'play-based-learning-vineland-nj', 'potty-training-daycare-vineland-nj',
+  'first-shift-child-care-vineland-nj', 'evening-child-care-vineland-nj', 'late-evening-child-care-vineland-nj',
+  'weekend-daycare-vineland-nj', 'child-care-for-shift-workers-vineland-nj', 'full-time-part-time-daycare-vineland-nj',
+  'before-school-care-vineland-nj', 'homework-help-vineland-nj', 'summer-child-care-vineland-nj', 'school-closure-care-vineland-nj',
+  'ccap-child-care-vineland-nj', 'daycare-meals-vineland-nj', 'safe-licensed-daycare-vineland-nj', 'millville-nj', 'bridgeton-nj',
+  'about-ms-paulette', 'our-center', 'reviews', 'faq', 'tuition', 'tour', 'news',
+]
+const path = Astro.url.pathname
+const first = path.split('/').filter(Boolean)[0] ?? ''
+const at = order.indexOf(first)
+const tone =
+  path === '/' ? 'forest' : tones[at >= 0 ? at % tones.length : [...path].reduce((n, c) => (n * 31 + c.charCodeAt(0)) % 9973, 7) % tones.length]
 const owner = layout.owner
 const phone = layout.settings?.phone
 const reassurance = [
@@ -24,10 +42,10 @@ const reassurance = [
 ] as const
 ---
 
-<section class:list={['section tour-block', asPageForm && 'tour-block--page']} id={id} aria-labelledby={`${id}-heading`}>
+<section class:list={['section tour-block', `tour-block--${tone}`, asPageForm && 'tour-block--page']} id={id} aria-labelledby={`${id}-heading`}>
   <div class="container">
     <div class="tour-block__card">
-      <Doodle type="sun" color="sunshine" size={60} class="doodle--float doodle--slow tour-block__doodle" style="top:-22px;right:8%" />
+      <Doodle type="sun" color={tone === 'sunshine' ? 'coral' : 'sunshine'} size={60} class="doodle--float doodle--slow tour-block__doodle" style="top:-22px;right:8%" />
       <div class="tour-block__aside">
         <span class="eyebrow"><Icon name="calendar" /> Book a tour</span>
         <h2 id={`${id}-heading`} class="section-heading">{heading ?? 'Come see our Vineland center'}</h2>
@@ -74,8 +92,19 @@ const reassurance = [
     gap: 2rem;
     padding: clamp(1.5rem, 4vw, 3rem);
     border-radius: var(--radius-2xl);
-    background: var(--surface-soft);
+    background: var(--tour-bg);
+    color: var(--tour-fg);
   }
+  /* Deep logo green and blue carry white text; the yellow band keeps navy text (all pass WCAG AA). */
+  /* Home only: the deepest logo green, so the home page's band is its own. */
+  .tour-block--forest { --tour-bg: #2c5e55; --tour-fg: #fff; --tour-soft: #fff; --tour-eyebrow: #fff; }
+  .tour-block--sage { --tour-bg: var(--sage-700); --tour-fg: #fff; --tour-soft: #fff; --tour-eyebrow: #fff; }
+  .tour-block--sky { --tour-bg: var(--sky-700); --tour-fg: #fff; --tour-soft: rgba(255, 255, 255, 0.84); --tour-eyebrow: #fff; }
+  .tour-block--sunshine { --tour-bg: var(--sunshine); --tour-fg: var(--navy); --tour-soft: var(--navy); --tour-eyebrow: var(--navy); }
+  .tour-block__card :global(.eyebrow) { color: var(--tour-eyebrow); }
+  .tour-block__card :global(.section-intro) { color: var(--tour-soft); }
+  .tour-block__owner span { color: var(--tour-soft) !important; }
+  .tour-block__form { color: var(--fg1); }
   .tour-block__form { padding: clamp(1.25rem, 3vw, 2rem); }
   .tour-block__reassure { list-style: none; display: grid; gap: 0.6rem; margin-top: 1.5rem; }
   .tour-block__reassure li { display: flex; align-items: center; gap: 0.7rem; font-weight: 600; }
@@ -86,7 +115,7 @@ const reassurance = [
     height: 2.1rem;
     border-radius: 50%;
     background: var(--white);
-    color: var(--coral-700);
+    color: var(--navy);
     flex: none;
   }
   .tour-block__owner { display: flex; align-items: center; gap: 1rem; margin-top: 2rem; }
@@ -96,8 +125,8 @@ const reassurance = [
   .tour-block__owner span { color: var(--fg2); font-size: 0.92rem; }
   @media (max-width: 640px) {
     /* Phones: no card around the card, so the form gets the full width. */
-    .tour-block__card { padding: 0; background: none; border-radius: 0; gap: 1.5rem; }
-    .tour-block__form { box-shadow: var(--shadow-card-hover); }
+    .tour-block__card { padding: 1.5rem 1rem 1rem; border-radius: var(--radius-xl); gap: 1.5rem; }
+    .tour-block__form { box-shadow: none; }
     .tour-block__owner { display: none; }
     :global(.tour-block__doodle) { display: none; }
   }

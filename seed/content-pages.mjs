@@ -54,7 +54,7 @@ export const homePage = {
       imageShape: 'arch',
       accent: 'sky',
       showDoodles: true,
-      background: 'white',
+      background: 'default',
       buttons: [button('See the after school program', link.internal('category-after-school'), 'secondary')],
     }),
     block('imageText', {
@@ -75,7 +75,7 @@ export const homePage = {
       intro: 'A small, family-run center where your child is known by name.',
       image: IMG.paulette(),
       imageShape: 'circle',
-      background: 'white',
+      background: 'default',
       items: [
         ['Led by Ms. Paulette since 2005', 'Families who have known her for years now bring their younger children, and their grandchildren.', 'page-about'],
         ['Licensed by NJ DCF', 'License ID CCC128557, posted in our lobby with the state’s information for parents.', 'service-safe-licensed'],
@@ -96,7 +96,7 @@ export const homePage = {
       mode: 'all',
       heading: 'Serving Vineland, Millville and Bridgeton',
       intro: 'Our center is in Vineland, and many families drive in from across Cumberland County.',
-      background: 'white',
+      background: 'default',
     }),
     block('faqBlock', {
       mode: 'selected',
@@ -307,7 +307,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
         style: 'checklist',
         heading: 'What sets your tuition',
         intro: 'Three things decide your price. Tell us your schedule and we will give you a clear number.',
-        image: IMG.classroom(),
+        image: IMG.horseshoe(),
         imageShape: 'circle',
         columns: 3,
         items: [
@@ -315,7 +315,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
           ['Full-time or part-time', 'The number of days and hours you need each week.'],
           ['Your shift', 'Early morning, evening, late evening and weekend care are all available.'],
         ].map(([title, description]) => ({ _key: key(), _type: 'feature', title, description })),
-        background: 'white',
+        background: 'default',
       }),
       block('imageText', {
         heading: 'Paying with NJ childcare subsidy (CCAP)',
@@ -324,14 +324,14 @@ The center is licensed by the New Jersey Department of Children and Families, li
         imagePosition: 'right',
         imageShape: 'rounded',
         accent: 'sage',
-        background: 'default',
+        background: 'white',
         buttons: [button('CCAP child care', link.internal('service-ccap'), 'secondary')],
       }),
       block('faqBlock', {
         mode: 'selected',
         heading: 'Cost questions',
         faqs: refs('faq-cost', 'faq-ccap', 'faq-meals'),
-        background: 'white',
+        background: 'default',
       }),
       block('testimonialsBlock', {
         mode: 'all',
