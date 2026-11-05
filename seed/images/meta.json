@@ -143,5 +143,20 @@
   "w": 1800,
   "h": 1350,
   "kb": 466
+ },
+ "lobby-fall-welcome-table-uriah-child-care-vineland": {
+  "w": 1800,
+  "h": 1753,
+  "kb": 299
+ },
+ "lobby-fall-door-chairs-uriah-child-care": {
+  "w": 1247,
+  "h": 1800,
+  "kb": 161
+ },
+ "lobby-fall-seating-pumpkins-uriah-child-care": {
+  "w": 1800,
+  "h": 1350,
+  "kb": 260
  }
 }
