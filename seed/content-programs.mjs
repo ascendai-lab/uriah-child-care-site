@@ -382,9 +382,15 @@ Breakfast and lunch come with milk.
 
 And every week, the children look forward to **Watermelon Wednesday**.
 
+## Who prepares our meals
+
+Our meals are made by a licensed local food vendor and delivered following Vineland Health Department and New Jersey licensing rules. We have a Certified Food Protection Manager on staff, and we follow food safety rules for storing, holding and serving food at the right temperature. Weekly menus are posted for families. Because of these rules, breakfast can't be brought from home, and birthday treats need to be store-bought, labeled with their ingredients and okayed with us first.
+
 ## Allergies and special diets
 
-Tell us about any allergies, intolerances or special diets when you enroll, and remind us if anything changes. We keep that information where staff can see it at mealtimes.
+If your child has a food allergy, a medical condition or a special diet, bring a note from your child's doctor and we will fill out an Allergy Action Plan together and keep it on file. We plan your child's meals around it, and staff can see it at every meal. Let us know before your child's first day, and tell us if anything changes.
+
+We encourage children to try new foods, but we never force them.
 
 ## Questions
 
@@ -393,7 +399,7 @@ Ask about our menus when you [book a tour](/tour/), or call [(856) 455-6701](tel
     faqs: [
       faq('Do I need to pack lunch?', 'Meals and snacks are served during the day through the USDA food program (CACFP). Ask us at enrollment about anything your child needs from home.'),
       faq('What time are meals served?', 'Breakfast is from 7:30 to 9 am, lunch is at 12 noon, snack is at 3 pm, dinner is at 6 pm and the evening snack is at 9 pm.'),
-      faq('Can you handle food allergies?', 'Tell us about allergies and special diets when you enroll, and we will plan meals around them.'),
+      faq('Can you handle food allergies?', 'Yes. Bring a note from your child’s doctor, and we will complete an Allergy Action Plan with you and plan meals around it.'),
     ],
     related: refs('service-safe-licensed', 'category-preschool', 'service-evening', 'page-faq'),
     seo: seo('Daycare Meals in Vineland, NJ | CACFP | Uriah Child Care', 'Meals and snacks for children at Uriah Child Care in Vineland, NJ through the USDA food program (CACFP). Allergies planned for. Book a tour.'),
@@ -421,12 +427,17 @@ We are licensed by the New Jersey Department of Children and Families (DCF) as a
 ## Safe drop-off and pickup
 
 - Parents check in and out with **Procare**.
-- We release children only to parents and adults you authorize in writing, and we ask for ID from anyone we don't know.
+- We release children only to parents and adults you authorize in writing, and we ask for photo ID from anyone we don't know, even grandparents.
+- The front door stays locked. Only staff can let visitors in, so ring the bell when you arrive. Parents are welcome to visit any time we are open.
 - A security camera watches the front entrance.
 
 ## Health and safety every day
 
 Children wash their hands when they arrive, before meals and after using the bathroom. Ms. Paulette is certified in pediatric First Aid and CPR/AED, and every staff member must have CPR and first aid training before we hire them. Our director, Tameca Burke, has about five years of experience in child care. We use positive discipline: clear rules, redirection and praise, and never physical punishment or shaming.
+
+## Open with parents
+
+All of our staff are mandated reporters under New Jersey law. Our licensing notebook, with the state's inspection reports, is in the office, and you are welcome to read it any time we are open. You can also ask to see your own child's records.
 
 ## Built for every family
 
@@ -580,14 +591,14 @@ Every child is different. Toilet training often starts somewhere between 21 and 
 
 ## What to bring
 
-Diapers or pull-ups, wipes, and two or three changes of clothes, all labeled with your child's name.
+Diapers or pull-ups, plus two or three changes of clothes, all labeled with your child's name. We provide the wipes. Clothes that are easy to pull down help a lot: overalls and lots of snaps slow little ones down.
 
 ## Questions?
 
 Ask us when you [book a tour](/tour/), or see our [toddler care](/toddler-care-vineland-nj/) program.
 `,
     faqs: [
-      faq('What should I pack for potty training?', 'Diapers or pull-ups, wipes and two or three labeled changes of clothes. We will tell you if we run low.'),
+      faq('What should I pack for potty training?', 'Diapers or pull-ups and two or three labeled changes of clothes. We provide the wipes, and we will tell you if you run low on anything.'),
       faq('Does my child have to be potty trained to start?', 'No. We care for children from 2½, and many start in diapers or pull-ups. We work on potty training together with you.'),
       faq('How will I know how potty training went today?', 'We tell you at pickup, and parents get updates through the Procare app. You can always call us too.'),
     ],
@@ -792,13 +803,13 @@ On a day off school, younger siblings in our [toddler care](/toddler-care-vinela
 
 ## Plan ahead, or call that morning
 
-For planned days off, tell us ahead of time. For snow days and other surprises, call [(856) 455-6701](tel:8564556701) as early as you can, and we will fit your child in if we have space.
+We stay open when public schools have a snow day, though we may open a little late. For planned days off, tell us ahead of time. For snow days and other surprises, call [(856) 455-6701](tel:8564556701) as early as you can, and we will fit your child in if we have space.
 
 We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for families who qualify.
 `,
     faqs: [
       faq('Are you open when school is closed?', 'Yes. We offer full-day care for school-age children up to 13 on school holidays, breaks, teacher days and snow days.'),
-      faq('What about snow days?', 'Call us as early as you can that morning, and we will fit your child in if we have space.'),
+      faq('What about snow days?', 'We stay open on public school snow days, though we may open a little late. Call us as early as you can that morning, and we will fit your child in if we have space.'),
     ],
     related: refs('category-after-school', 'service-summer-care', 'service-before-school', 'category-shift-care'),
     seo: seo('School Closure Day Care in Vineland, NJ', 'Full-day child care in Vineland, NJ on school holidays, breaks and snow days for kids up to 13. Open Monday to Saturday, 6 am to 11 pm. CCAP accepted.'),
