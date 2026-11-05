@@ -23,6 +23,44 @@
 # Astro's Netlify adapter routes /api/* and every page to its SSR function
 # automatically. No manual redirects needed.
 
+# ─── 301s for pages renamed on the new site (Nov 2026) ─────────────────────
+# Uriah is not a preschool and is closed on Sunday (Tameca, 2026-11-05).
+[[redirects]]
+  from = "/preschool-vineland-nj"
+  to = "/early-learning-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/preschool-vineland-nj/"
+  to = "/early-learning-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pre-k-vineland-nj"
+  to = "/kindergarten-readiness-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pre-k-vineland-nj/"
+  to = "/kindergarten-readiness-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/weekend-daycare-vineland-nj"
+  to = "/saturday-daycare-vineland-nj/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/weekend-daycare-vineland-nj/"
+  to = "/saturday-daycare-vineland-nj/"
+  status = 301
+  force = true
+
 # ─── 301s from the old WordPress site ───────────────────────────────────────
 # Keeps the link equity the old pages built up (map from the website strategy doc).
 # Each old URL is listed with and without its trailing slash.

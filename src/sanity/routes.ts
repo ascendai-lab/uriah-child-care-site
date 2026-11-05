@@ -4,7 +4,7 @@
  * so a new route only has to be added here.
  *
  * Uriah's "Core 30" pages all live at the root with a trailing slash
- * (e.g. /preschool-vineland-nj/), matching the GBP service names one to one.
+ * (e.g. /toddler-care-vineland-nj/), matching the GBP service names one to one.
  */
 export const routes = {
   homePage: () => '/',

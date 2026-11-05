@@ -14,7 +14,7 @@ export const careOptions = [
   { value: 'weekdays', label: 'Weekdays' },
   { value: 'evenings', label: 'Evenings' },
   { value: 'third-shift', label: 'Late evenings (until 11 pm)' },
-  { value: 'weekends', label: 'Weekends' },
+  { value: 'weekends', label: 'Saturdays' },
   { value: 'before-after-school', label: 'Before / after school' },
 ] as const
 
@@ -22,7 +22,7 @@ export const tourTimeOptions = [
   { value: 'weekday-morning', label: 'Weekday morning' },
   { value: 'weekday-afternoon', label: 'Weekday afternoon' },
   { value: 'evening', label: 'Evening' },
-  { value: 'weekend', label: 'Weekend' },
+  { value: 'weekend', label: 'Saturday' },
 ] as const
 
 export const subsidyOptions = [

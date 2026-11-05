@@ -107,7 +107,7 @@ export const corePageFields = (slugPrefix = '') => [
     title: 'Page heading (H1)',
     type: 'string',
     group: 'content',
-    description: 'Includes the target keyword, e.g. "Pre-K in Vineland, NJ".',
+    description: 'Includes the target keyword, e.g. "Toddler care in Vineland, NJ".',
     validation: (Rule) => Rule.required(),
   }),
   defineField({
@@ -115,7 +115,7 @@ export const corePageFields = (slugPrefix = '') => [
     title: 'Short name',
     type: 'string',
     group: 'content',
-    description: 'Used on cards, menus and breadcrumbs, e.g. "Pre-K".',
+    description: 'Used on cards, menus and breadcrumbs, e.g. "Toddler care".',
   }),
   defineField({
     name: 'intro',
@@ -148,7 +148,7 @@ export const corePageFields = (slugPrefix = '') => [
     title: 'Days and times',
     type: 'string',
     group: 'content',
-    description: 'e.g. "Monday to Sunday, 6 am to 11 pm"',
+    description: 'e.g. "Monday to Saturday, 6 am to 11 pm"',
   }),
   defineField({
     name: 'body',

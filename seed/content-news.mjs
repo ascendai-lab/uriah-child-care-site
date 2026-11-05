@@ -14,6 +14,36 @@ const seo = (metaTitle, metaDescription) => ({ _type: 'seoFields', metaTitle, me
 const post = (id, fields) => ({ _id: `post-${id}`, _type: 'blogPost', ...fields })
 
 export const posts = [
+  post('november-2026', {
+    title: 'November 2026 at Uriah Child Care: a season of gratitude',
+    slug: slug('november-2026-newsletter'),
+    publishedAt: '2026-11-01T12:00:00Z',
+    categories: ['Announcements'],
+    excerpt: 'Our center is closed Thursday to Saturday, November 26 to 28, for Thanksgiving. Here is what the children are learning this month.',
+    image: IMG.readingRug(),
+    seo: seo('November 2026 newsletter | Uriah Child Care, Vineland, NJ', 'Uriah Child Care is closed November 26 to 28 for Thanksgiving. This month the children focus on language, creative expression, math and the seasons.'),
+    body: md`November is a season of gratitude at Uriah Child Care. Here is what is coming up this month.
+
+## Important dates
+
+Our center is **closed Thursday, November 26, Friday, November 27 and Saturday, November 28** for Thanksgiving. We reopen on Monday, November 30 at 6 am. If you work over the holiday, please plan care for those days early.
+
+## What the children are learning
+
+This month our learning focus is:
+
+- **Language development:** new words, stories and talking about what we are thankful for.
+- **Creative expression:** art, music and pretend play.
+- **Math and problem solving:** counting, sorting and patterns.
+- **Exploring nature and the seasons:** leaves, pumpkins and how the weather changes in the fall.
+
+See how we teach through play on our [play-based learning](/play-based-learning-vineland-nj/) page.
+
+## Questions
+
+Call us at [(856) 455-6701](tel:8564556701) or email [hello@uriahchildcare.com](mailto:hello@uriahchildcare.com). Thank you for being part of the Uriah family.`,
+  }),
+
   post('cacfp', {
     title: 'Uriah Childcare Center participates in the Child and Adult Care Food Program (CACFP)',
     slug: slug('uriah-childcare-center-participates-in-the-child-and-adult-care-food-program-cacfp'),
@@ -46,9 +76,9 @@ To file a program discrimination complaint, complete Form AD-3027 or contact USD
     slug: slug('a-new-chapter-begins-for-uriah-child-care'),
     publishedAt: '2025-12-30T12:00:00Z',
     categories: ['Announcements'],
-    excerpt: 'We moved and expanded to a new home at 30 W Chestnut Ave in Vineland, open 7 days a week with open enrollment.',
+    excerpt: 'We moved and expanded to a new home at 30 W Chestnut Ave in Vineland, open Monday to Saturday with open enrollment.',
     image: IMG.springFlag(),
-    seo: seo('A new chapter: our new Vineland center | Uriah Child Care', 'Uriah Child Care moved and expanded to 30 W Chestnut Ave, Vineland, NJ 08360. Open Monday to Sunday, 6 am to 11 pm. Open enrollment for ages 2.5 and up.'),
+    seo: seo('A new chapter: our new Vineland center | Uriah Child Care', 'Uriah Child Care moved and expanded to 30 W Chestnut Ave, Vineland, NJ 08360. Open Monday to Saturday, 6 am to 11 pm. Open enrollment for ages 2.5 and up.'),
     body: md`We have some fantastic news to share with the Vineland community!
 
 At Uriah Child Care, our mission has always been to provide high-quality, nurturing care for your little ones. To better serve the growing needs of families in Vineland and the surrounding areas, we are thrilled to announce our **grand opening and expansion** into a brand-new facility.
@@ -59,7 +89,7 @@ We have officially moved and expanded to our new home at **30 W Chestnut Ave, Vi
 
 Life for today's parents doesn't always fit a 9-to-5 schedule. Parents work early mornings, evenings and weekends to provide for their families, and finding reliable child care shouldn't add to that stress.
 
-That is why we are open **7 days a week, Monday to Sunday, 6 am to 11 pm**. Whether you work early, late or on weekends, your child has a safe, engaging place to be. See [child care for every shift](/child-care-vineland-nj/).
+That is why we are open **Monday to Saturday, 6 am to 11 pm**. Whether you work early, late or on Saturday, your child has a safe, engaging place to be. See [child care for every shift](/child-care-vineland-nj/).
 
 ## Subsidy news for 2026
 
@@ -73,7 +103,7 @@ For where things stand today and how we can help with the steps, see our [CCAP c
 
 ## Open enrollment
 
-We are enrolling children ages 2.5 and up at our new location. Spaces fill quickly, especially for evening and weekend care, so reach out soon.
+We are enrolling children ages 2.5 and up at our new location. Spaces fill quickly, especially for evening and Saturday care, so reach out soon.
 
 Call [(856) 455-6701](tel:8564556701) or [book a tour](/tour/). We can't wait to welcome you to our new home!`,
   }),
@@ -124,7 +154,7 @@ Keep in touch with your child's teachers, share what is happening at home, and r
 
 ## How we help at Uriah Child Care
 
-Our [after school program](/after-school-program-vineland-nj/) gives school-age children a quiet time and place for [homework help](/homework-help-vineland-nj/), and our [pre-K](/pre-k-vineland-nj/) and [kindergarten readiness](/kindergarten-readiness-vineland-nj/) programs build the habits younger children need for school.`,
+Our [after school program](/after-school-program-vineland-nj/) gives school-age children a quiet time and place for [homework help](/homework-help-vineland-nj/), and our [kindergarten readiness](/kindergarten-readiness-vineland-nj/) program builds the habits younger children need for school.`,
   }),
 
   post('mental-health', {

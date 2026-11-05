@@ -20,7 +20,7 @@ export const homePage = {
       heading: 'Day care center in Vineland, NJ',
       accentWord: 'Vineland, NJ',
       subheading:
-        'Uriah Child Care is a licensed child care center at 30 W Chestnut Ave, open Monday to Sunday, 6 am to 11 pm. Toddler care, preschool and pre-K, and before and after school care, from early morning to 11 pm for working parents.',
+        'Uriah Child Care is a licensed child care center at 30 W Chestnut Ave, open Monday to Saturday, 6 am to 11 pm. Toddler care, kindergarten readiness, and before and after school care, from early morning to 11 pm for working parents.',
       image: IMG.exterior(),
       showRating: false,
       showPhone: true,
@@ -30,20 +30,20 @@ export const homePage = {
     block('servicesBlock', {
       mode: 'all',
       heading: 'Programs for every age we serve',
-      intro: 'From 2½-year-olds to school-age kids up to 13, every program follows our play-based curriculum and runs 7 days a week.',
+      intro: 'From 2½-year-olds to school-age kids up to 13, every program follows our play-based curriculum and runs Monday to Saturday.',
       background: 'default',
     }),
     block('imageText', {
       eyebrow: 'Ages 2.5 to 5',
-      heading: 'Preschool in Vineland',
-      body: md`Our play-based preschool, built on the Experience Early Learning curriculum, helps children learn letters, numbers, colors and how to be a good friend. Every day starts with circle time, and older children move into [pre-K](/pre-k-vineland-nj/) and [kindergarten readiness](/kindergarten-readiness-vineland-nj/). Children don't need to be potty trained to start.`,
+      heading: 'Early learning in Vineland',
+      body: md`Our play-based day for toddlers and young children, built on the Experience Early Learning curriculum, helps them learn letters, numbers, colors and how to be a good friend. Every day starts with circle time, and 4 and 5-year-olds work on [kindergarten readiness](/kindergarten-readiness-vineland-nj/). Children don't need to be potty trained to start.`,
       image: IMG.schedule(),
       imagePosition: 'right',
       imageShape: 'blob',
       accent: 'coral',
       showDoodles: true,
       background: 'muted',
-      buttons: [button('Explore preschool', link.internal('category-preschool'), 'secondary')],
+      buttons: [button('Explore early learning', link.internal('category-preschool'), 'secondary')],
     }),
     block('imageText', {
       eyebrow: 'School age, up to 13',
@@ -58,9 +58,9 @@ export const homePage = {
       buttons: [button('See the after school program', link.internal('category-after-school'), 'secondary')],
     }),
     block('imageText', {
-      eyebrow: 'Open 7 days, 6 am to 11 pm',
+      eyebrow: 'Open Monday to Saturday, 6 am to 11 pm',
       heading: 'Child care for every shift in Vineland',
-      body: md`Nurses, warehouse and plant workers, retail and restaurant staff: we are open when you work. [Early morning care](/first-shift-child-care-vineland-nj/) from 6 am, [evening care](/evening-child-care-vineland-nj/) with dinner, [late evening care until 11 pm](/late-evening-child-care-vineland-nj/), and [weekend daycare](/weekend-daycare-vineland-nj/) on Saturday and Sunday.`,
+      body: md`Nurses, warehouse and plant workers, retail and restaurant staff: we are open when you work. [Early morning care](/first-shift-child-care-vineland-nj/) from 6 am, [evening care](/evening-child-care-vineland-nj/) with dinner, [late evening care until 11 pm](/late-evening-child-care-vineland-nj/), and [Saturday daycare](/saturday-daycare-vineland-nj/).`,
       image: IMG.dusk(),
       imagePosition: 'right',
       imageShape: 'circle',
@@ -79,10 +79,10 @@ export const homePage = {
       items: [
         ['Led by Ms. Paulette since 2005', 'Families who have known her for years now bring their younger children, and their grandchildren.', 'page-about'],
         ['Licensed by NJ DCF', 'License ID CCC128557, posted in our lobby with the state’s information for parents.', 'service-safe-licensed'],
-        ['Open when you work', 'Monday to Sunday, early morning to 11 pm, for parents who work shifts.', 'category-shift-care'],
+        ['Open when you work', 'Monday to Saturday, early morning to 11 pm, for parents who work shifts.', 'category-shift-care'],
         ['NJ childcare subsidy (CCAP) accepted', 'We walk you through the steps for families who qualify.', 'service-ccap'],
         ['Meals included', 'Meals and snacks through the USDA Child and Adult Care Food Program (CACFP).', 'service-meals'],
-        ['Brightwheel check-in and updates', 'Secure check-in at the lobby kiosk, and updates about your child’s day.', 'page-our-center'],
+        ['Procare check-in and updates', 'Secure check-in and check-out, and updates about your child’s day.', 'page-our-center'],
       ].map(([title, description, id]) => ({ _key: key(), _type: 'feature', title, description, link: link.internal(id) })),
       buttons: [button('Meet Ms. Paulette', link.internal('page-about'), 'secondary')],
     }),
@@ -108,7 +108,7 @@ export const homePage = {
   ],
   seo: seo(
     'Day Care Center in Vineland, NJ | Uriah Child Care',
-    'Licensed day care center in Vineland, NJ for ages 2.5 and up. Open 7 days, early morning to 11 pm. CCAP accepted. Book a tour.',
+    'Licensed day care center in Vineland, NJ for ages 2.5 and up. Open Monday to Saturday, early morning to 11 pm. CCAP accepted. Book a tour.',
   ),
 }
 
@@ -176,7 +176,7 @@ What families mention most is how she treats their children. In another parent's
       block('textBlock', {
         heading: 'From Millville to Vineland',
         width: 'narrow',
-        body: md`Ms. Paulette cared for children in Millville for many years before opening Uriah Child Care at 30 W Chestnut Ave in Vineland. The new center gave her room to welcome more families and to stay open 7 days a week, from 6 am to 11 pm, for parents who work every kind of shift.
+        body: md`Ms. Paulette cared for children in Millville for many years before opening Uriah Child Care at 30 W Chestnut Ave in Vineland. The new center gave her room to welcome more families and to stay open Monday to Saturday, from 6 am to 11 pm, for parents who work every kind of shift.
 
 The center is licensed by the New Jersey Department of Children and Families, license ID CCC128557. See [safety and licensing](/safe-licensed-daycare-vineland-nj/) or [take a look around our center](/our-center/).`,
         background: 'default',
@@ -200,7 +200,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
         eyebrow: '30 W Chestnut Ave, Vineland',
         heading: 'Take a look around our center',
         subheading:
-          'A bright, welcoming child care center with a secure entrance, Brightwheel check-in and an accessible ramp and parking. Here is what you will see when you visit.',
+          'A bright, welcoming child care center with a secure entrance, Procare check-in and an accessible ramp and parking. Here is what you will see when you visit.',
         image: IMG.porch(),
         accent: 'sky',
         buttons: [tourBtn('Book a tour to see it in person')],
@@ -217,7 +217,6 @@ The center is licensed by the New Jersey Department of Children and Families, li
           [IMG.alphabetRug(), 'Circle time corner'],
           [IMG.playHall(), 'Open play hall'],
           [IMG.lobby(), 'Lobby'],
-          [IMG.kiosk(), 'Brightwheel check-in kiosk'],
         ].map(([i, caption]) => ({ ...i, caption, _key: key() })),
         background: 'white',
       }),
@@ -228,7 +227,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
         imageShape: 'arch',
         columns: 3,
         items: [
-          ['Brightwheel check-in', 'Check your child in and out on the kiosk in the lobby, and get updates about their day.'],
+          ['Procare check-in', 'Check your child in and out with Procare, and get updates about their day.'],
           ['Secure entrance', 'A covered porch with a security camera at the front door.'],
           ['Accessible for everyone', 'A wheelchair ramp, accessible parking and an accessible restroom.'],
           ['A classroom made for play', 'Learning centers, books, art supplies and a picture schedule children can follow.'],
@@ -244,7 +243,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
         background: 'muted',
       }),
     ],
-    seo: seo('Our Center | Photos of Uriah Child Care in Vineland, NJ', 'See photos of Uriah Child Care at 30 W Chestnut Ave in Vineland, NJ: secure entrance, Brightwheel check-in, classroom and accessible ramp.'),
+    seo: seo('Our Center | Photos of Uriah Child Care in Vineland, NJ', 'See photos of Uriah Child Care at 30 W Chestnut Ave in Vineland, NJ: secure entrance, Procare check-in, classroom and accessible ramp.'),
   }),
 
   page('reviews', {
@@ -286,7 +285,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
         background: 'white',
       }),
     ],
-    seo: seo('FAQ | Uriah Child Care in Vineland, NJ', 'Answers about hours, ages, cost, CCAP, meals, safety and enrolling at Uriah Child Care in Vineland, NJ. Open 7 days, 6 am to 11 pm.'),
+    seo: seo('FAQ | Uriah Child Care in Vineland, NJ', 'Answers about hours, ages, cost, CCAP, meals, safety and enrolling at Uriah Child Care in Vineland, NJ. Open Monday to Saturday, 6 am to 11 pm.'),
   }),
 
   page('tuition', {
@@ -299,7 +298,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
         heading: 'Tuition and NJ childcare subsidy (CCAP)',
         subheading:
           'Tuition depends on your child’s age, the days you need and your shift. Call us or book a tour and we will give you a clear price for your schedule. We accept NJ childcare subsidy (CCAP) for families who qualify.',
-        image: IMG.kiosk(),
+        image: IMG.entrance(),
         accent: 'sage',
         buttons: [tourBtn('Get a price for your schedule')],
       }),
@@ -311,9 +310,9 @@ The center is licensed by the New Jersey Department of Children and Families, li
         imageShape: 'circle',
         columns: 3,
         items: [
-          ['Your child’s age', 'Toddler and preschool care, or before and after school care for school-age kids.'],
+          ['Your child’s age', 'Toddler care and early learning, or before and after school care for school-age kids.'],
           ['Full-time or part-time', 'The number of days and hours you need each week.'],
-          ['Your shift', 'Early morning, evening, late evening and weekend care are all available.'],
+          ['Your shift', 'Early morning, evening, late evening and Saturday care are all available.'],
         ].map(([title, description]) => ({ _key: key(), _type: 'feature', title, description })),
         background: 'default',
       }),

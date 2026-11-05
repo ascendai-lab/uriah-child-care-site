@@ -22,7 +22,7 @@ export const category = defineType({
       title: 'H2 on the home page',
       type: 'string',
       group: 'gbp',
-      description: 'The secondary category as a home page H2, e.g. "Preschool in Vineland".',
+      description: 'The secondary category as a home page H2, e.g. "Early learning in Vineland".',
     }),
     pageBuilderField('content'),
   ],

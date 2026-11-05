@@ -19,7 +19,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
   const { pathname, search } = context.url
   const skip = skipPrefixes.some((prefix) => pathname.startsWith(prefix))
 
-  // Every page URL ends in a slash (/preschool-vineland-nj/). Redirect the other form once,
+  // Every page URL ends in a slash (/toddler-care-vineland-nj/). Redirect the other form once,
   // so search engines only ever see one version. Files like /sitemap.xml are left alone.
   const method = context.request.method
   if (!skip && !errorPages.has(pathname) && (method === 'GET' || method === 'HEAD') && pathname !== '/' && !pathname.endsWith('/') && !/\.[a-z0-9]+$/i.test(pathname)) {
