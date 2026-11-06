@@ -37,7 +37,7 @@ export const homePage = {
       eyebrow: 'Ages 2.5 to 5',
       heading: 'Early learning in Vineland',
       body: md`Our play-based day for toddlers and young children, built on the Experience Early Learning curriculum, helps them learn letters, numbers, colors and how to be a good friend. Every day starts with circle time, and 4 and 5-year-olds work on [kindergarten readiness](/kindergarten-readiness-vineland-nj/). Children don't need to be potty trained to start.`,
-      image: IMG.schedule(),
+      image: IMG.watermelon(),
       imagePosition: 'right',
       imageShape: 'blob',
       accent: 'coral',
@@ -207,7 +207,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
       }),
       block('galleryBlock', {
         heading: 'Inside and out',
-        intro: 'Photos of our building and common areas. We do not post photos of children without written permission from their parents.',
+        intro: 'Our building, classrooms and play yard. Photos of children are shared with their parents’ written permission.',
         images: [
           [IMG.springFlag(), 'Our building on W Chestnut Ave'],
           [IMG.readingRug(), 'Reading rug and shelves'],
@@ -218,6 +218,9 @@ The center is licensed by the New Jersey Department of Children and Families, li
           [IMG.fallTable(), 'Welcome table in the lobby'],
           [IMG.fallSeating(), 'Lobby seating, dressed for fall'],
           [IMG.fallDoor(), 'A cozy spot to wait at pickup'],
+          [IMG.playYard(), 'Our fenced, shaded play yard'],
+          [IMG.watermelon(), 'Watermelon Wednesday crafts'],
+          [IMG.cake(), 'Birthday cake at the table'],
         ].map(([i, caption]) => ({ ...i, caption, _key: key() })),
         background: 'white',
       }),
