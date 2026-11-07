@@ -169,39 +169,27 @@ export type ImageWithAlt = {
   caption?: string;
 };
 
-export type SiteSettings = {
+export type SeoSettings = {
   _id: string;
-  _type: "siteSettings";
+  _type: "seoSettings";
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
-  siteName?: string;
+  titleTemplate?: string;
+  defaultSeo?: SeoFields;
+  gaId?: string;
+  gtmId?: string;
+  metaPixelId?: string;
+  googleSiteVerification?: string;
+  gbpDescription?: string;
+  gbpUrl?: string;
+  gbpReviewUrl?: string;
+  gbpWriteReviewUrl?: string;
+  gbpMapEmbedUrl?: string;
+  googleRating?: number;
+  googleReviewCount?: number;
+  sameAs?: Array<string>;
   legalName?: string;
-  tagline?: string;
-  logo?: ImageWithAlt;
-  logoInverse?: ImageWithAlt;
-  favicon?: {
-    asset?: SanityImageAssetReference;
-    media?: unknown;
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    _type: "image";
-  };
-  phone?: string;
-  email?: string;
-  address?: {
-    street?: string;
-    city?: string;
-    state?: string;
-    zip?: string;
-  };
-  mapUrl?: string;
-  hours?: Array<
-    {
-      _key: string;
-    } & OpeningHours
-  >;
-  hoursSummary?: string;
   businessType?: string;
   priceRange?: string;
   agesServed?: string;
@@ -221,32 +209,6 @@ export type SiteSettings = {
   ownerName?: string;
   serviceAreasLine?: string;
   attributes?: Array<string>;
-  gbpDescription?: string;
-  gbpUrl?: string;
-  gbpReviewUrl?: string;
-  gbpWriteReviewUrl?: string;
-  gbpMapEmbedUrl?: string;
-  googleRating?: number;
-  googleReviewCount?: number;
-  sameAs?: Array<string>;
-  socialLinks?: Array<
-    {
-      _key: string;
-    } & SocialLink
-  >;
-  titleTemplate?: string;
-  defaultSeo?: SeoFields;
-  gaId?: string;
-  gtmId?: string;
-  metaPixelId?: string;
-  googleSiteVerification?: string;
-  announcement?: {
-    enabled?: boolean;
-    text?: string;
-    link?: Link;
-  };
-  footerText?: string;
-  copyrightName?: string;
 };
 
 export type SeoFields = {
@@ -256,6 +218,31 @@ export type SeoFields = {
   ogImage?: ImageWithAlt;
   canonicalUrl?: string;
   noIndex?: boolean;
+};
+
+export type BrandSettings = {
+  _id: string;
+  _type: "brandSettings";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  logo?: ImageWithAlt;
+  logoInverse?: ImageWithAlt;
+  favicon?: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
+  tagline?: string;
+  footerText?: string;
+  copyrightName?: string;
+  socialLinks?: Array<
+    {
+      _key: string;
+    } & SocialLink
+  >;
 };
 
 export type SanityImageCrop = {
@@ -272,6 +259,41 @@ export type SanityImageHotspot = {
   y?: number;
   height?: number;
   width?: number;
+};
+
+export type AnnouncementBar = {
+  _id: string;
+  _type: "announcementBar";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  enabled?: boolean;
+  text?: string;
+  link?: Link;
+};
+
+export type BusinessInfo = {
+  _id: string;
+  _type: "businessInfo";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  siteName?: string;
+  phone?: string;
+  email?: string;
+  address?: {
+    street?: string;
+    city?: string;
+    state?: string;
+    zip?: string;
+  };
+  mapUrl?: string;
+  hoursSummary?: string;
+  hours?: Array<
+    {
+      _key: string;
+    } & OpeningHours
+  >;
 };
 
 export type Navigation = {
@@ -1310,10 +1332,13 @@ export type AllSanitySchemaTypes =
   | Testimonial
   | SanityImageAssetReference
   | ImageWithAlt
-  | SiteSettings
+  | SeoSettings
   | SeoFields
+  | BrandSettings
   | SanityImageCrop
   | SanityImageHotspot
+  | AnnouncementBar
+  | BusinessInfo
   | Navigation
   | CtaButton
   | GalleryBlock
@@ -1358,12 +1383,12 @@ export type AllSanitySchemaTypes =
 
 // Source: src/sanity/queries.ts
 // Variable: layoutQuery
-// Query: {  "settings": *[_type == "siteSettings" && _id == "siteSettings"][0] {    siteName,    legalName,    tagline,    logo {   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip },    logoInverse {   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip },    "faviconUrl": favicon.asset->url,    phone,    email,    address { street, city, state, zip },    mapUrl,    hours[] { _key, days, open24Hours, opens, closes },    hoursSummary,    agesServed,    ageMin,    ageMax,    shiftsLine,    programsLine,    subsidyStatement,    foodProgramStatement,    license { issuer, number, summary },    foundingYear,    ownerName,    serviceAreasLine,    attributes,    gbpDescription,    gbpUrl,    gbpReviewUrl,    gbpWriteReviewUrl,    gbpMapEmbedUrl,    googleRating,    googleReviewCount,    sameAs,    businessType,    priceRange,    socialLinks[] { _key, platform, url },    titleTemplate,    defaultSeo {      metaTitle,      metaDescription,      ogImage {   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip }    },    gaId,    gtmId,    metaPixelId,    googleSiteVerification,    announcement { enabled, text, link {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } } },    footerText,    copyrightName  },  "navigation": *[_type == "navigation" && _id == "navigation"][0] {    headerLinks[] {      _key,      label,      link {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } },      children[] { _key, label, link {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } } }    },    headerCta {   _key,  label,  variant,  link {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } } },    footerColumns[] {      _key,      heading,      links[] { _key, label, link {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } } }    }  },  "footerPages": *[_type == "page" && showInFooter == true && defined(slug.current)] | order(title asc) {    _id, title, "slug": slug.current  },  "programs": *[_type == "category" && defined(slug.current)] | order(order asc) {      _id,  _type,  title,  shortTitle,  excerpt,  "slug": slug.current,    "services": *[_type == "service" && category._ref == ^._id && needsConfirmation != true && defined(slug.current)]      | order(order asc) {   _id,  _type,  title,  shortTitle,  excerpt,  "slug": slug.current }  },  "homeServices": *[_type == "service" && !defined(category) && defined(slug.current)] | order(order asc) {   _id,  _type,  title,  shortTitle,  excerpt,  "slug": slug.current },  "cities": *[_type == "serviceArea" && defined(slug.current)] | order(order asc) {   _id,  _type,  title,  shortTitle,  excerpt,  "slug": slug.current, city },  "owner": *[_type == "teamMember"] | order(order asc)[0] { name, role, photo {   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip } },  "tourPage": *[_type == "page" && slug.current == "tour"][0] { "slug": slug.current },  "reviews": *[_type == "testimonial" && firstParty != false] | order(order asc, _createdAt desc)[0...6] {   _id,  name,  context,  quote,  rating,  source,  reviewUrl,  date,  photo {   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip } },  "photoPool": *[_type in ["category", "service", "serviceArea"] && defined(image.asset)] | order(order asc).image {   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip },  "generalFaqs": *[_type == "faq"] | order(order asc, _createdAt asc)[0...8] {   _id,  question,  answer[] {   ...,  markDefs[] {    ...,    _type == "link" => {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } }  },  _type == "imageWithAlt" => { _key, _type,   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip },  _type == "ctaButton" => { _type,   _key,  label,  variant,  link {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } } } } }}
+// Query: {  "settings": {    "siteName": *[_id == "businessInfo"][0].siteName,    "legalName": *[_id == "seoSettings"][0].legalName,    "tagline": *[_id == "brandSettings"][0].tagline,    "logo": *[_id == "brandSettings"][0].logo {   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip },    "logoInverse": *[_id == "brandSettings"][0].logoInverse {   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip },    "faviconUrl": *[_id == "brandSettings"][0].favicon.asset->url,    "phone": *[_id == "businessInfo"][0].phone,    "email": *[_id == "businessInfo"][0].email,    "address": *[_id == "businessInfo"][0].address { street, city, state, zip },    "mapUrl": *[_id == "businessInfo"][0].mapUrl,    "hours": *[_id == "businessInfo"][0].hours[] { _key, days, open24Hours, opens, closes },    "hoursSummary": *[_id == "businessInfo"][0].hoursSummary,    "agesServed": *[_id == "seoSettings"][0].agesServed,    "ageMin": *[_id == "seoSettings"][0].ageMin,    "ageMax": *[_id == "seoSettings"][0].ageMax,    "shiftsLine": *[_id == "seoSettings"][0].shiftsLine,    "programsLine": *[_id == "seoSettings"][0].programsLine,    "subsidyStatement": *[_id == "seoSettings"][0].subsidyStatement,    "foodProgramStatement": *[_id == "seoSettings"][0].foodProgramStatement,    "license": *[_id == "seoSettings"][0].license { issuer, number, summary },    "foundingYear": *[_id == "seoSettings"][0].foundingYear,    "ownerName": *[_id == "seoSettings"][0].ownerName,    "serviceAreasLine": *[_id == "seoSettings"][0].serviceAreasLine,    "attributes": *[_id == "seoSettings"][0].attributes,    "gbpDescription": *[_id == "seoSettings"][0].gbpDescription,    "gbpUrl": *[_id == "seoSettings"][0].gbpUrl,    "gbpReviewUrl": *[_id == "seoSettings"][0].gbpReviewUrl,    "gbpWriteReviewUrl": *[_id == "seoSettings"][0].gbpWriteReviewUrl,    "gbpMapEmbedUrl": *[_id == "seoSettings"][0].gbpMapEmbedUrl,    "googleRating": *[_id == "seoSettings"][0].googleRating,    "googleReviewCount": *[_id == "seoSettings"][0].googleReviewCount,    "sameAs": *[_id == "seoSettings"][0].sameAs,    "businessType": *[_id == "seoSettings"][0].businessType,    "priceRange": *[_id == "seoSettings"][0].priceRange,    "socialLinks": *[_id == "brandSettings"][0].socialLinks[] { _key, platform, url },    "titleTemplate": *[_id == "seoSettings"][0].titleTemplate,    "defaultSeo": *[_id == "seoSettings"][0].defaultSeo {      metaTitle,      metaDescription,      ogImage {   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip }    },    "gaId": *[_id == "seoSettings"][0].gaId,    "gtmId": *[_id == "seoSettings"][0].gtmId,    "metaPixelId": *[_id == "seoSettings"][0].metaPixelId,    "googleSiteVerification": *[_id == "seoSettings"][0].googleSiteVerification,    "announcement": *[_id == "announcementBar"][0] { enabled, text, link {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } } },    "footerText": *[_id == "brandSettings"][0].footerText,    "copyrightName": *[_id == "brandSettings"][0].copyrightName  },  "navigation": *[_type == "navigation" && _id == "navigation"][0] {    headerLinks[] {      _key,      label,      link {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } },      children[] { _key, label, link {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } } }    },    headerCta {   _key,  label,  variant,  link {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } } },    footerColumns[] {      _key,      heading,      links[] { _key, label, link {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } } }    }  },  "footerPages": *[_type == "page" && showInFooter == true && defined(slug.current)] | order(title asc) {    _id, title, "slug": slug.current  },  "programs": *[_type == "category" && defined(slug.current)] | order(order asc) {      _id,  _type,  title,  shortTitle,  excerpt,  "slug": slug.current,    "services": *[_type == "service" && category._ref == ^._id && needsConfirmation != true && defined(slug.current)]      | order(order asc) {   _id,  _type,  title,  shortTitle,  excerpt,  "slug": slug.current }  },  "homeServices": *[_type == "service" && !defined(category) && defined(slug.current)] | order(order asc) {   _id,  _type,  title,  shortTitle,  excerpt,  "slug": slug.current },  "cities": *[_type == "serviceArea" && defined(slug.current)] | order(order asc) {   _id,  _type,  title,  shortTitle,  excerpt,  "slug": slug.current, city },  "owner": *[_type == "teamMember"] | order(order asc)[0] { name, role, photo {   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip } },  "tourPage": *[_type == "page" && slug.current == "tour"][0] { "slug": slug.current },  "reviews": *[_type == "testimonial" && firstParty != false] | order(order asc, _createdAt desc)[0...12] {   _id,  name,  context,  quote,  rating,  source,  reviewUrl,  date,  photo {   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip } },  "photoPool": *[_type in ["category", "service", "serviceArea"] && defined(image.asset)] | order(order asc).image {   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip },  "generalFaqs": *[_type == "faq"] | order(order asc, _createdAt asc)[0...8] {   _id,  question,  answer[] {   ...,  markDefs[] {    ...,    _type == "link" => {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } }  },  _type == "imageWithAlt" => { _key, _type,   asset,  hotspot,  crop,  alt,  decorative,  caption,  "dimensions": asset->metadata.dimensions { width, height },  "lqip": asset->metadata.lqip },  _type == "ctaButton" => { _type,   _key,  label,  variant,  link {   linkType,  external,  email,  phone,  anchor,  openInNewTab,  "internal": internal->{ _type, "slug": slug.current } } } } }}
 export type LayoutQueryResult = {
   settings: {
-    siteName: string | null;
-    legalName: string | null;
-    tagline: string | null;
+    siteName: null | string;
+    legalName: null | string;
+    tagline: null | string;
     logo: {
       asset: SanityImageAssetReference | null;
       hotspot: SanityImageHotspot | null;
@@ -1391,15 +1416,15 @@ export type LayoutQueryResult = {
       lqip: string | null;
     } | null;
     faviconUrl: string | null;
-    phone: string | null;
-    email: string | null;
-    address: {
+    phone: null | string;
+    email: null | string;
+    address: null | {
       street: string | null;
       city: string | null;
       state: string | null;
       zip: string | null;
-    } | null;
-    mapUrl: string | null;
+    };
+    mapUrl: null | string;
     hours: Array<{
       _key: string;
       days: Array<string> | null;
@@ -1407,33 +1432,33 @@ export type LayoutQueryResult = {
       opens: string | null;
       closes: string | null;
     }> | null;
-    hoursSummary: string | null;
-    agesServed: string | null;
-    ageMin: number | null;
-    ageMax: number | null;
-    shiftsLine: string | null;
-    programsLine: string | null;
-    subsidyStatement: string | null;
-    foodProgramStatement: string | null;
-    license: {
+    hoursSummary: null | string;
+    agesServed: null | string;
+    ageMin: null | number;
+    ageMax: null | number;
+    shiftsLine: null | string;
+    programsLine: null | string;
+    subsidyStatement: null | string;
+    foodProgramStatement: null | string;
+    license: null | {
       issuer: string | null;
       number: string | null;
       summary: string | null;
-    } | null;
-    foundingYear: number | null;
-    ownerName: string | null;
-    serviceAreasLine: string | null;
+    };
+    foundingYear: null | number;
+    ownerName: null | string;
+    serviceAreasLine: null | string;
     attributes: Array<string> | null;
-    gbpDescription: string | null;
-    gbpUrl: string | null;
-    gbpReviewUrl: string | null;
-    gbpWriteReviewUrl: string | null;
-    gbpMapEmbedUrl: string | null;
-    googleRating: number | null;
-    googleReviewCount: number | null;
+    gbpDescription: null | string;
+    gbpUrl: null | string;
+    gbpReviewUrl: null | string;
+    gbpWriteReviewUrl: null | string;
+    gbpMapEmbedUrl: null | string;
+    googleRating: null | number;
+    googleReviewCount: null | number;
     sameAs: Array<string> | null;
-    businessType: string | null;
-    priceRange: string | null;
+    businessType: null | string;
+    priceRange: null | string;
     socialLinks: Array<{
       _key: string;
       platform:
@@ -1450,7 +1475,7 @@ export type LayoutQueryResult = {
         | null;
       url: string | null;
     }> | null;
-    titleTemplate: string | null;
+    titleTemplate: null | string;
     defaultSeo: {
       metaTitle: string | null;
       metaDescription: string | null;
@@ -1468,51 +1493,58 @@ export type LayoutQueryResult = {
         lqip: string | null;
       } | null;
     } | null;
-    gaId: string | null;
-    gtmId: string | null;
-    metaPixelId: string | null;
-    googleSiteVerification: string | null;
-    announcement: {
-      enabled: boolean | null;
-      text: string | null;
-      link: {
-        linkType: "email" | "external" | "internal" | "phone" | null;
-        external: string | null;
-        email: string | null;
-        phone: string | null;
-        anchor: string | null;
-        openInNewTab: boolean | null;
-        internal:
-          | {
-              _type: "blogPost";
-              slug: string | null;
-            }
-          | {
-              _type: "category";
-              slug: string | null;
-            }
-          | {
-              _type: "homePage";
-              slug: null;
-            }
-          | {
-              _type: "page";
-              slug: string | null;
-            }
-          | {
-              _type: "service";
-              slug: string | null;
-            }
-          | {
-              _type: "serviceArea";
-              slug: string | null;
-            }
-          | null;
-      } | null;
-    } | null;
-    footerText: string | null;
-    copyrightName: string | null;
-  } | null;
+    gaId: null | string;
+    gtmId: null | string;
+    metaPixelId: null | string;
+    googleSiteVerification: null | string;
+    announcement:
+      | {
+          enabled: null;
+          text: null;
+          link: null;
+        }
+      | {
+          enabled: boolean | null;
+          text: string | null;
+          link: {
+            linkType: "email" | "external" | "internal" | "phone" | null;
+            external: string | null;
+            email: string | null;
+            phone: string | null;
+            anchor: string | null;
+            openInNewTab: boolean | null;
+            internal:
+              | {
+                  _type: "blogPost";
+                  slug: string | null;
+                }
+              | {
+                  _type: "category";
+                  slug: string | null;
+                }
+              | {
+                  _type: "homePage";
+                  slug: null;
+                }
+              | {
+                  _type: "page";
+                  slug: string | null;
+                }
+              | {
+                  _type: "service";
+                  slug: string | null;
+                }
+              | {
+                  _type: "serviceArea";
+                  slug: string | null;
+                }
+              | null;
+          } | null;
+        }
+      | null;
+    footerText: null | string;
+    copyrightName: null | string;
+  };
   navigation: {
     headerLinks: Array<{
       _key: string;
@@ -9906,36 +9938,36 @@ export type SitemapQueryResult = Array<
 
 // Source: src/sanity/queries.ts
 // Variable: llmsQuery
-// Query: {  "settings": *[_type == "siteSettings" && _id == "siteSettings"][0] {    siteName, legalName, phone, email, address { street, city, state, zip }, hoursSummary, agesServed,    shiftsLine, programsLine, subsidyStatement, foodProgramStatement, license { issuer, number, summary },    foundingYear, ownerName, serviceAreasLine, gbpDescription, gbpUrl  },  "categories": *[_type == "category" && defined(slug.current) && seo.noIndex != true] | order(order asc) {    title, "slug": slug.current, excerpt, intro, ageRange, schedule, faqs[] { question, answer },    "services": *[_type == "service" && category._ref == ^._id && needsConfirmation != true && seo.noIndex != true      && defined(slug.current)] | order(order asc) { title, "slug": slug.current, excerpt, intro, ageRange, schedule, faqs[] { question, answer } }  },  "homeServices": *[_type == "service" && !defined(category) && needsConfirmation != true && seo.noIndex != true    && defined(slug.current)] | order(order asc) { title, "slug": slug.current, excerpt, intro, faqs[] { question, answer } },  "cities": *[_type == "serviceArea" && defined(slug.current)] | order(order asc) { title, "slug": slug.current, excerpt, intro },  "pages": *[_type == "page" && defined(slug.current) && seo.noIndex != true] | order(title asc) {    title, "slug": slug.current, "description": seo.metaDescription  },  "faqs": *[_type == "faq"] | order(order asc) { question, "answer": pt::text(answer) }}
+// Query: {  "settings": {    "siteName": *[_id == "businessInfo"][0].siteName,    "legalName": *[_id == "seoSettings"][0].legalName,    "phone": *[_id == "businessInfo"][0].phone,    "email": *[_id == "businessInfo"][0].email,    "address": *[_id == "businessInfo"][0].address { street, city, state, zip },    "hoursSummary": *[_id == "businessInfo"][0].hoursSummary,    "agesServed": *[_id == "seoSettings"][0].agesServed,    "shiftsLine": *[_id == "seoSettings"][0].shiftsLine,    "programsLine": *[_id == "seoSettings"][0].programsLine,    "subsidyStatement": *[_id == "seoSettings"][0].subsidyStatement,    "foodProgramStatement": *[_id == "seoSettings"][0].foodProgramStatement,    "license": *[_id == "seoSettings"][0].license { issuer, number, summary },    "foundingYear": *[_id == "seoSettings"][0].foundingYear,    "ownerName": *[_id == "seoSettings"][0].ownerName,    "serviceAreasLine": *[_id == "seoSettings"][0].serviceAreasLine,    "gbpDescription": *[_id == "seoSettings"][0].gbpDescription,    "gbpUrl": *[_id == "seoSettings"][0].gbpUrl  },  "categories": *[_type == "category" && defined(slug.current) && seo.noIndex != true] | order(order asc) {    title, "slug": slug.current, excerpt, intro, ageRange, schedule, faqs[] { question, answer },    "services": *[_type == "service" && category._ref == ^._id && needsConfirmation != true && seo.noIndex != true      && defined(slug.current)] | order(order asc) { title, "slug": slug.current, excerpt, intro, ageRange, schedule, faqs[] { question, answer } }  },  "homeServices": *[_type == "service" && !defined(category) && needsConfirmation != true && seo.noIndex != true    && defined(slug.current)] | order(order asc) { title, "slug": slug.current, excerpt, intro, faqs[] { question, answer } },  "cities": *[_type == "serviceArea" && defined(slug.current)] | order(order asc) { title, "slug": slug.current, excerpt, intro },  "pages": *[_type == "page" && defined(slug.current) && seo.noIndex != true] | order(title asc) {    title, "slug": slug.current, "description": seo.metaDescription  },  "faqs": *[_type == "faq"] | order(order asc) { question, "answer": pt::text(answer) }}
 export type LlmsQueryResult = {
   settings: {
-    siteName: string | null;
-    legalName: string | null;
-    phone: string | null;
-    email: string | null;
-    address: {
+    siteName: null | string;
+    legalName: null | string;
+    phone: null | string;
+    email: null | string;
+    address: null | {
       street: string | null;
       city: string | null;
       state: string | null;
       zip: string | null;
-    } | null;
-    hoursSummary: string | null;
-    agesServed: string | null;
-    shiftsLine: string | null;
-    programsLine: string | null;
-    subsidyStatement: string | null;
-    foodProgramStatement: string | null;
-    license: {
+    };
+    hoursSummary: null | string;
+    agesServed: null | string;
+    shiftsLine: null | string;
+    programsLine: null | string;
+    subsidyStatement: null | string;
+    foodProgramStatement: null | string;
+    license: null | {
       issuer: string | null;
       number: string | null;
       summary: string | null;
-    } | null;
-    foundingYear: number | null;
-    ownerName: string | null;
-    serviceAreasLine: string | null;
-    gbpDescription: string | null;
-    gbpUrl: string | null;
-  } | null;
+    };
+    foundingYear: null | number;
+    ownerName: null | string;
+    serviceAreasLine: null | string;
+    gbpDescription: null | string;
+    gbpUrl: null | string;
+  };
   categories: Array<{
     title: string | null;
     slug: string | null;
@@ -9990,7 +10022,7 @@ export type LlmsQueryResult = {
 // Query TypeMap
 declare global {
   interface SanityQueries {
-    '{\n  "settings": *[_type == "siteSettings" && _id == "siteSettings"][0] {\n    siteName,\n    legalName,\n    tagline,\n    logo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n    logoInverse { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n    "faviconUrl": favicon.asset->url,\n    phone,\n    email,\n    address { street, city, state, zip },\n    mapUrl,\n    hours[] { _key, days, open24Hours, opens, closes },\n    hoursSummary,\n    agesServed,\n    ageMin,\n    ageMax,\n    shiftsLine,\n    programsLine,\n    subsidyStatement,\n    foodProgramStatement,\n    license { issuer, number, summary },\n    foundingYear,\n    ownerName,\n    serviceAreasLine,\n    attributes,\n    gbpDescription,\n    gbpUrl,\n    gbpReviewUrl,\n    gbpWriteReviewUrl,\n    gbpMapEmbedUrl,\n    googleRating,\n    googleReviewCount,\n    sameAs,\n    businessType,\n    priceRange,\n    socialLinks[] { _key, platform, url },\n    titleTemplate,\n    defaultSeo {\n      metaTitle,\n      metaDescription,\n      ogImage { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n    },\n    gaId,\n    gtmId,\n    metaPixelId,\n    googleSiteVerification,\n    announcement { enabled, text, link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n } },\n    footerText,\n    copyrightName\n  },\n  "navigation": *[_type == "navigation" && _id == "navigation"][0] {\n    headerLinks[] {\n      _key,\n      label,\n      link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n },\n      children[] { _key, label, link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n } }\n    },\n    headerCta { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n    footerColumns[] {\n      _key,\n      heading,\n      links[] { _key, label, link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n } }\n    }\n  },\n  "footerPages": *[_type == "page" && showInFooter == true && defined(slug.current)] | order(title asc) {\n    _id, title, "slug": slug.current\n  },\n  "programs": *[_type == "category" && defined(slug.current)] | order(order asc) {\n    \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  "slug": slug.current\n,\n    "services": *[_type == "service" && category._ref == ^._id && needsConfirmation != true && defined(slug.current)]\n      | order(order asc) { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  "slug": slug.current\n }\n  },\n  "homeServices": *[_type == "service" && !defined(category) && defined(slug.current)] | order(order asc) { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  "slug": slug.current\n },\n  "cities": *[_type == "serviceArea" && defined(slug.current)] | order(order asc) { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  "slug": slug.current\n, city },\n  "owner": *[_type == "teamMember"] | order(order asc)[0] { name, role, photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n } },\n  "tourPage": *[_type == "page" && slug.current == "tour"][0] { "slug": slug.current },\n  "reviews": *[_type == "testimonial" && firstParty != false] | order(order asc, _createdAt desc)[0...6] { \n  _id,\n  name,\n  context,\n  quote,\n  rating,\n  source,\n  reviewUrl,\n  date,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n  "photoPool": *[_type in ["category", "service", "serviceArea"] && defined(image.asset)] | order(order asc).image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  "generalFaqs": *[_type == "faq"] | order(order asc, _createdAt asc)[0...8] { \n  _id,\n  question,\n  answer[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n }\n }\n}': LayoutQueryResult;
+    '{\n  "settings": {\n    "siteName": *[_id == "businessInfo"][0].siteName,\n    "legalName": *[_id == "seoSettings"][0].legalName,\n    "tagline": *[_id == "brandSettings"][0].tagline,\n    "logo": *[_id == "brandSettings"][0].logo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n    "logoInverse": *[_id == "brandSettings"][0].logoInverse { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n    "faviconUrl": *[_id == "brandSettings"][0].favicon.asset->url,\n    "phone": *[_id == "businessInfo"][0].phone,\n    "email": *[_id == "businessInfo"][0].email,\n    "address": *[_id == "businessInfo"][0].address { street, city, state, zip },\n    "mapUrl": *[_id == "businessInfo"][0].mapUrl,\n    "hours": *[_id == "businessInfo"][0].hours[] { _key, days, open24Hours, opens, closes },\n    "hoursSummary": *[_id == "businessInfo"][0].hoursSummary,\n    "agesServed": *[_id == "seoSettings"][0].agesServed,\n    "ageMin": *[_id == "seoSettings"][0].ageMin,\n    "ageMax": *[_id == "seoSettings"][0].ageMax,\n    "shiftsLine": *[_id == "seoSettings"][0].shiftsLine,\n    "programsLine": *[_id == "seoSettings"][0].programsLine,\n    "subsidyStatement": *[_id == "seoSettings"][0].subsidyStatement,\n    "foodProgramStatement": *[_id == "seoSettings"][0].foodProgramStatement,\n    "license": *[_id == "seoSettings"][0].license { issuer, number, summary },\n    "foundingYear": *[_id == "seoSettings"][0].foundingYear,\n    "ownerName": *[_id == "seoSettings"][0].ownerName,\n    "serviceAreasLine": *[_id == "seoSettings"][0].serviceAreasLine,\n    "attributes": *[_id == "seoSettings"][0].attributes,\n    "gbpDescription": *[_id == "seoSettings"][0].gbpDescription,\n    "gbpUrl": *[_id == "seoSettings"][0].gbpUrl,\n    "gbpReviewUrl": *[_id == "seoSettings"][0].gbpReviewUrl,\n    "gbpWriteReviewUrl": *[_id == "seoSettings"][0].gbpWriteReviewUrl,\n    "gbpMapEmbedUrl": *[_id == "seoSettings"][0].gbpMapEmbedUrl,\n    "googleRating": *[_id == "seoSettings"][0].googleRating,\n    "googleReviewCount": *[_id == "seoSettings"][0].googleReviewCount,\n    "sameAs": *[_id == "seoSettings"][0].sameAs,\n    "businessType": *[_id == "seoSettings"][0].businessType,\n    "priceRange": *[_id == "seoSettings"][0].priceRange,\n    "socialLinks": *[_id == "brandSettings"][0].socialLinks[] { _key, platform, url },\n    "titleTemplate": *[_id == "seoSettings"][0].titleTemplate,\n    "defaultSeo": *[_id == "seoSettings"][0].defaultSeo {\n      metaTitle,\n      metaDescription,\n      ogImage { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n    },\n    "gaId": *[_id == "seoSettings"][0].gaId,\n    "gtmId": *[_id == "seoSettings"][0].gtmId,\n    "metaPixelId": *[_id == "seoSettings"][0].metaPixelId,\n    "googleSiteVerification": *[_id == "seoSettings"][0].googleSiteVerification,\n    "announcement": *[_id == "announcementBar"][0] { enabled, text, link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n } },\n    "footerText": *[_id == "brandSettings"][0].footerText,\n    "copyrightName": *[_id == "brandSettings"][0].copyrightName\n  },\n  "navigation": *[_type == "navigation" && _id == "navigation"][0] {\n    headerLinks[] {\n      _key,\n      label,\n      link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n },\n      children[] { _key, label, link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n } }\n    },\n    headerCta { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n    footerColumns[] {\n      _key,\n      heading,\n      links[] { _key, label, link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n } }\n    }\n  },\n  "footerPages": *[_type == "page" && showInFooter == true && defined(slug.current)] | order(title asc) {\n    _id, title, "slug": slug.current\n  },\n  "programs": *[_type == "category" && defined(slug.current)] | order(order asc) {\n    \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  "slug": slug.current\n,\n    "services": *[_type == "service" && category._ref == ^._id && needsConfirmation != true && defined(slug.current)]\n      | order(order asc) { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  "slug": slug.current\n }\n  },\n  "homeServices": *[_type == "service" && !defined(category) && defined(slug.current)] | order(order asc) { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  "slug": slug.current\n },\n  "cities": *[_type == "serviceArea" && defined(slug.current)] | order(order asc) { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  "slug": slug.current\n, city },\n  "owner": *[_type == "teamMember"] | order(order asc)[0] { name, role, photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n } },\n  "tourPage": *[_type == "page" && slug.current == "tour"][0] { "slug": slug.current },\n  "reviews": *[_type == "testimonial" && firstParty != false] | order(order asc, _createdAt desc)[0...12] { \n  _id,\n  name,\n  context,\n  quote,\n  rating,\n  source,\n  reviewUrl,\n  date,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n  "photoPool": *[_type in ["category", "service", "serviceArea"] && defined(image.asset)] | order(order asc).image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  "generalFaqs": *[_type == "faq"] | order(order asc, _createdAt asc)[0...8] { \n  _id,\n  question,\n  answer[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n }\n }\n}': LayoutQueryResult;
     '\n  *[_type == "homePage" && _id == "homePage"][0] {\n    _id,\n    _type,\n    \n  pageBuilder[] {\n    _key,\n    _type,\n    "anchorId": anchorId.current,\n    background,\n    heading,\n    _type == "hero" => {\n      eyebrow, subheading, layout, accentWord, showRating, showPhone, accent,\n      buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n      image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n    },\n    _type == "textBlock" => { width, body[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n } },\n    _type == "imageText" => {\n      eyebrow, imagePosition, imageShape, accent, showDoodles,\n      body[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n },\n      buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n      image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n    },\n    _type == "featureGrid" => {\n      intro, columns, style, imageShape,\n      buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n      image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n      items[] { _key, title, description, image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }, link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n } }\n    },\n    _type == "statsBlock" => { items[] { _key, value, label } },\n    _type == "servicesBlock" => {\n      intro,\n      "items": select(\n        mode == "selected" => services[]->{ \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  ageRange,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n        *[_type == "category" && defined(slug.current)] | order(order asc, title asc) { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  ageRange,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n }\n      )\n    },\n    _type == "serviceAreasBlock" => {\n      intro,\n      "items": select(\n        mode == "selected" => areas[]->{ \n  _id,\n  _type,\n  city,\n  state,\n  title,\n  shortTitle,\n  excerpt,\n  driveTime,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n        *[_type == "serviceArea" && defined(slug.current)] | order(order asc, city asc) { \n  _id,\n  _type,\n  city,\n  state,\n  title,\n  shortTitle,\n  excerpt,\n  driveTime,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n }\n      )\n    },\n    _type == "testimonialsBlock" => {\n      intro,\n      "items": select(\n        mode == "selected" => testimonials[]->{ \n  _id,\n  name,\n  context,\n  quote,\n  rating,\n  source,\n  reviewUrl,\n  date,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n        *[_type == "testimonial" && firstParty != false] | order(order asc, _createdAt desc) { \n  _id,\n  name,\n  context,\n  quote,\n  rating,\n  source,\n  reviewUrl,\n  date,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n }\n      )\n    },\n    _type == "faqBlock" => {\n      intro,\n      buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n      "items": select(\n        mode == "selected" => faqs[]->{ \n  _id,\n  question,\n  answer[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n }\n },\n        *[_type == "faq"] | order(order asc, _createdAt asc) { \n  _id,\n  question,\n  answer[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n }\n }\n      )\n    },\n    _type == "teamBlock" => {\n      intro,\n      "items": select(\n        mode == "selected" => members[]->{ \n  _id,\n  name,\n  role,\n  bio,\n  credentials,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n        *[_type == "teamMember"] | order(order asc, name asc) { \n  _id,\n  name,\n  role,\n  bio,\n  credentials,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n }\n      )\n    },\n    _type == "latestPostsBlock" => {\n      intro,\n      "items": *[_type == "blogPost" && defined(slug.current) && publishedAt <= now()]\n        | order(publishedAt desc) [0...12] { \n  _id,\n  title,\n  excerpt,\n  publishedAt,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n      count\n    },\n    _type == "ctaBlock" => { body, buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n } },\n    _type == "contactFormBlock" => { intro, successMessage, showContactDetails },\n    _type == "videoBlock" => { intro, video { url, caption, autoplay } },\n    _type == "mapBlock" => { intro, notes },\n    _type == "factTableBlock" => { intro, extraRows[] { _key, label, value } },\n    _type == "galleryBlock" => { intro, images[] { _key, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n } }\n  }\n,\n    \n  seo {\n    metaTitle,\n    metaDescription,\n    canonicalUrl,\n    noIndex,\n    ogImage { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n  }\n\n  }\n': HomePageQueryResult;
     '\n  *[_type == "page" && slug.current == $slug][0] {\n    _id,\n    _type,\n    title,\n    "slug": slug.current,\n    \n  pageBuilder[] {\n    _key,\n    _type,\n    "anchorId": anchorId.current,\n    background,\n    heading,\n    _type == "hero" => {\n      eyebrow, subheading, layout, accentWord, showRating, showPhone, accent,\n      buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n      image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n    },\n    _type == "textBlock" => { width, body[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n } },\n    _type == "imageText" => {\n      eyebrow, imagePosition, imageShape, accent, showDoodles,\n      body[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n },\n      buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n      image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n    },\n    _type == "featureGrid" => {\n      intro, columns, style, imageShape,\n      buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n      image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n      items[] { _key, title, description, image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }, link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n } }\n    },\n    _type == "statsBlock" => { items[] { _key, value, label } },\n    _type == "servicesBlock" => {\n      intro,\n      "items": select(\n        mode == "selected" => services[]->{ \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  ageRange,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n        *[_type == "category" && defined(slug.current)] | order(order asc, title asc) { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  ageRange,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n }\n      )\n    },\n    _type == "serviceAreasBlock" => {\n      intro,\n      "items": select(\n        mode == "selected" => areas[]->{ \n  _id,\n  _type,\n  city,\n  state,\n  title,\n  shortTitle,\n  excerpt,\n  driveTime,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n        *[_type == "serviceArea" && defined(slug.current)] | order(order asc, city asc) { \n  _id,\n  _type,\n  city,\n  state,\n  title,\n  shortTitle,\n  excerpt,\n  driveTime,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n }\n      )\n    },\n    _type == "testimonialsBlock" => {\n      intro,\n      "items": select(\n        mode == "selected" => testimonials[]->{ \n  _id,\n  name,\n  context,\n  quote,\n  rating,\n  source,\n  reviewUrl,\n  date,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n        *[_type == "testimonial" && firstParty != false] | order(order asc, _createdAt desc) { \n  _id,\n  name,\n  context,\n  quote,\n  rating,\n  source,\n  reviewUrl,\n  date,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n }\n      )\n    },\n    _type == "faqBlock" => {\n      intro,\n      buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n      "items": select(\n        mode == "selected" => faqs[]->{ \n  _id,\n  question,\n  answer[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n }\n },\n        *[_type == "faq"] | order(order asc, _createdAt asc) { \n  _id,\n  question,\n  answer[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n }\n }\n      )\n    },\n    _type == "teamBlock" => {\n      intro,\n      "items": select(\n        mode == "selected" => members[]->{ \n  _id,\n  name,\n  role,\n  bio,\n  credentials,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n        *[_type == "teamMember"] | order(order asc, name asc) { \n  _id,\n  name,\n  role,\n  bio,\n  credentials,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n }\n      )\n    },\n    _type == "latestPostsBlock" => {\n      intro,\n      "items": *[_type == "blogPost" && defined(slug.current) && publishedAt <= now()]\n        | order(publishedAt desc) [0...12] { \n  _id,\n  title,\n  excerpt,\n  publishedAt,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n      count\n    },\n    _type == "ctaBlock" => { body, buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n } },\n    _type == "contactFormBlock" => { intro, successMessage, showContactDetails },\n    _type == "videoBlock" => { intro, video { url, caption, autoplay } },\n    _type == "mapBlock" => { intro, notes },\n    _type == "factTableBlock" => { intro, extraRows[] { _key, label, value } },\n    _type == "galleryBlock" => { intro, images[] { _key, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n } }\n  }\n,\n    \n  seo {\n    metaTitle,\n    metaDescription,\n    canonicalUrl,\n    noIndex,\n    ogImage { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n  }\n\n  }\n': PageQueryResult;
     '\n  *[_type in ["page", "category", "service", "serviceArea"] && slug.current == $slug][0] {\n    _id,\n    _type,\n    _updatedAt,\n    title,\n    shortTitle,\n    "slug": slug.current,\n    intro,\n    excerpt,\n    ageRange,\n    schedule,\n    accent,\n    keyword,\n    gbpName,\n    needsConfirmation,\n    lastReviewed,\n    city,\n    state,\n    driveTime,\n    highlights,\n    dayPlan[] { _key, label, activity },\n    image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n    body[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n },\n    faqs[] { _key, question, answer },\n    reviews[]-> { \n  _id,\n  name,\n  context,\n  quote,\n  rating,\n  source,\n  reviewUrl,\n  date,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n    related[]-> { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  "slug": slug.current\n },\n    "parent": category-> { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  "slug": slug.current\n },\n    "services": select(\n      _type == "category" => *[_type == "service" && category._ref == ^._id && defined(slug.current)]\n        | order(order asc) { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  ageRange,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n, needsConfirmation },\n      null\n    ),\n    "siblings": select(\n      _type == "service" && defined(category) => *[_type == "service" && category._ref == ^.category._ref\n        && _id != ^._id && needsConfirmation != true && defined(slug.current)] | order(order asc)[0...3] { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  "slug": slug.current\n },\n      null\n    ),\n    \n  pageBuilder[] {\n    _key,\n    _type,\n    "anchorId": anchorId.current,\n    background,\n    heading,\n    _type == "hero" => {\n      eyebrow, subheading, layout, accentWord, showRating, showPhone, accent,\n      buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n      image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n    },\n    _type == "textBlock" => { width, body[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n } },\n    _type == "imageText" => {\n      eyebrow, imagePosition, imageShape, accent, showDoodles,\n      body[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n },\n      buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n      image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n    },\n    _type == "featureGrid" => {\n      intro, columns, style, imageShape,\n      buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n      image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n      items[] { _key, title, description, image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }, link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n } }\n    },\n    _type == "statsBlock" => { items[] { _key, value, label } },\n    _type == "servicesBlock" => {\n      intro,\n      "items": select(\n        mode == "selected" => services[]->{ \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  ageRange,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n        *[_type == "category" && defined(slug.current)] | order(order asc, title asc) { \n  _id,\n  _type,\n  title,\n  shortTitle,\n  excerpt,\n  ageRange,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n }\n      )\n    },\n    _type == "serviceAreasBlock" => {\n      intro,\n      "items": select(\n        mode == "selected" => areas[]->{ \n  _id,\n  _type,\n  city,\n  state,\n  title,\n  shortTitle,\n  excerpt,\n  driveTime,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n        *[_type == "serviceArea" && defined(slug.current)] | order(order asc, city asc) { \n  _id,\n  _type,\n  city,\n  state,\n  title,\n  shortTitle,\n  excerpt,\n  driveTime,\n  accent,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n }\n      )\n    },\n    _type == "testimonialsBlock" => {\n      intro,\n      "items": select(\n        mode == "selected" => testimonials[]->{ \n  _id,\n  name,\n  context,\n  quote,\n  rating,\n  source,\n  reviewUrl,\n  date,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n        *[_type == "testimonial" && firstParty != false] | order(order asc, _createdAt desc) { \n  _id,\n  name,\n  context,\n  quote,\n  rating,\n  source,\n  reviewUrl,\n  date,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n }\n      )\n    },\n    _type == "faqBlock" => {\n      intro,\n      buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n },\n      "items": select(\n        mode == "selected" => faqs[]->{ \n  _id,\n  question,\n  answer[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n }\n },\n        *[_type == "faq"] | order(order asc, _createdAt asc) { \n  _id,\n  question,\n  answer[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n }\n }\n      )\n    },\n    _type == "teamBlock" => {\n      intro,\n      "items": select(\n        mode == "selected" => members[]->{ \n  _id,\n  name,\n  role,\n  bio,\n  credentials,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n        *[_type == "teamMember"] | order(order asc, name asc) { \n  _id,\n  name,\n  role,\n  bio,\n  credentials,\n  photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n }\n      )\n    },\n    _type == "latestPostsBlock" => {\n      intro,\n      "items": *[_type == "blogPost" && defined(slug.current) && publishedAt <= now()]\n        | order(publishedAt desc) [0...12] { \n  _id,\n  title,\n  excerpt,\n  publishedAt,\n  "slug": slug.current,\n  image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n },\n      count\n    },\n    _type == "ctaBlock" => { body, buttons[] { \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n } },\n    _type == "contactFormBlock" => { intro, successMessage, showContactDetails },\n    _type == "videoBlock" => { intro, video { url, caption, autoplay } },\n    _type == "mapBlock" => { intro, notes },\n    _type == "factTableBlock" => { intro, extraRows[] { _key, label, value } },\n    _type == "galleryBlock" => { intro, images[] { _key, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n } }\n  }\n,\n    \n  seo {\n    metaTitle,\n    metaDescription,\n    canonicalUrl,\n    noIndex,\n    ogImage { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n  }\n\n  }\n': RouteQueryResult;
@@ -9998,7 +10030,7 @@ declare global {
     '\n  *[_type == "blogPost" && slug.current == $slug][0] {\n    _id,\n    _type,\n    title,\n    excerpt,\n    publishedAt,\n    _updatedAt,\n    categories,\n    "slug": slug.current,\n    image { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n    body[] { \n  ...,\n  markDefs[] {\n    ...,\n    _type == "link" => { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  },\n  _type == "imageWithAlt" => { _key, _type, \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n },\n  _type == "ctaButton" => { _type, \n  _key,\n  label,\n  variant,\n  link { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n }\n },\n    author->{ name, role, photo { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n } },\n    \n  seo {\n    metaTitle,\n    metaDescription,\n    canonicalUrl,\n    noIndex,\n    ogImage { \n  asset,\n  hotspot,\n  crop,\n  alt,\n  decorative,\n  caption,\n  "dimensions": asset->metadata.dimensions { width, height },\n  "lqip": asset->metadata.lqip\n }\n  }\n\n  }\n': BlogPostQueryResult;
     '\n  *[_type == "redirect" && source in $paths][0] {\n    permanent,\n    destination { \n  linkType,\n  external,\n  email,\n  phone,\n  anchor,\n  openInNewTab,\n  "internal": internal->{ _type, "slug": slug.current }\n }\n  }\n': RedirectQueryResult;
     '\n  *[_type in ["homePage", "page", "category", "service", "serviceArea", "blogPost"] && seo.noIndex != true\n    && needsConfirmation != true && (_type == "homePage" || defined(slug.current))] {\n    _type,\n    _updatedAt,\n    "slug": slug.current\n  }\n': SitemapQueryResult;
-    '{\n  "settings": *[_type == "siteSettings" && _id == "siteSettings"][0] {\n    siteName, legalName, phone, email, address { street, city, state, zip }, hoursSummary, agesServed,\n    shiftsLine, programsLine, subsidyStatement, foodProgramStatement, license { issuer, number, summary },\n    foundingYear, ownerName, serviceAreasLine, gbpDescription, gbpUrl\n  },\n  "categories": *[_type == "category" && defined(slug.current) && seo.noIndex != true] | order(order asc) {\n    title, "slug": slug.current, excerpt, intro, ageRange, schedule, faqs[] { question, answer },\n    "services": *[_type == "service" && category._ref == ^._id && needsConfirmation != true && seo.noIndex != true\n      && defined(slug.current)] | order(order asc) { title, "slug": slug.current, excerpt, intro, ageRange, schedule, faqs[] { question, answer } }\n  },\n  "homeServices": *[_type == "service" && !defined(category) && needsConfirmation != true && seo.noIndex != true\n    && defined(slug.current)] | order(order asc) { title, "slug": slug.current, excerpt, intro, faqs[] { question, answer } },\n  "cities": *[_type == "serviceArea" && defined(slug.current)] | order(order asc) { title, "slug": slug.current, excerpt, intro },\n  "pages": *[_type == "page" && defined(slug.current) && seo.noIndex != true] | order(title asc) {\n    title, "slug": slug.current, "description": seo.metaDescription\n  },\n  "faqs": *[_type == "faq"] | order(order asc) { question, "answer": pt::text(answer) }\n}': LlmsQueryResult;
+    '{\n  "settings": {\n    "siteName": *[_id == "businessInfo"][0].siteName,\n    "legalName": *[_id == "seoSettings"][0].legalName,\n    "phone": *[_id == "businessInfo"][0].phone,\n    "email": *[_id == "businessInfo"][0].email,\n    "address": *[_id == "businessInfo"][0].address { street, city, state, zip },\n    "hoursSummary": *[_id == "businessInfo"][0].hoursSummary,\n    "agesServed": *[_id == "seoSettings"][0].agesServed,\n    "shiftsLine": *[_id == "seoSettings"][0].shiftsLine,\n    "programsLine": *[_id == "seoSettings"][0].programsLine,\n    "subsidyStatement": *[_id == "seoSettings"][0].subsidyStatement,\n    "foodProgramStatement": *[_id == "seoSettings"][0].foodProgramStatement,\n    "license": *[_id == "seoSettings"][0].license { issuer, number, summary },\n    "foundingYear": *[_id == "seoSettings"][0].foundingYear,\n    "ownerName": *[_id == "seoSettings"][0].ownerName,\n    "serviceAreasLine": *[_id == "seoSettings"][0].serviceAreasLine,\n    "gbpDescription": *[_id == "seoSettings"][0].gbpDescription,\n    "gbpUrl": *[_id == "seoSettings"][0].gbpUrl\n  },\n  "categories": *[_type == "category" && defined(slug.current) && seo.noIndex != true] | order(order asc) {\n    title, "slug": slug.current, excerpt, intro, ageRange, schedule, faqs[] { question, answer },\n    "services": *[_type == "service" && category._ref == ^._id && needsConfirmation != true && seo.noIndex != true\n      && defined(slug.current)] | order(order asc) { title, "slug": slug.current, excerpt, intro, ageRange, schedule, faqs[] { question, answer } }\n  },\n  "homeServices": *[_type == "service" && !defined(category) && needsConfirmation != true && seo.noIndex != true\n    && defined(slug.current)] | order(order asc) { title, "slug": slug.current, excerpt, intro, faqs[] { question, answer } },\n  "cities": *[_type == "serviceArea" && defined(slug.current)] | order(order asc) { title, "slug": slug.current, excerpt, intro },\n  "pages": *[_type == "page" && defined(slug.current) && seo.noIndex != true] | order(title asc) {\n    title, "slug": slug.current, "description": seo.metaDescription\n  },\n  "faqs": *[_type == "faq"] | order(order asc) { question, "answer": pt::text(answer) }\n}': LlmsQueryResult;
   }
 }
 // Lets @sanity/client releases that predate the global registry read it too

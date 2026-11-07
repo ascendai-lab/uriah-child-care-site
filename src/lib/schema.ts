@@ -4,7 +4,7 @@ import { urlFor } from '@cms/lib/image'
 import { toOpeningHoursSpec } from './hours'
 
 /**
- * JSON-LD builders. Everything comes from Site settings, so the schema can't drift
+ * JSON-LD builders. Everything comes from the Settings documents, so the schema can't drift
  * from the footer, the fact table or the Google Business Profile.
  */
 type Json = Record<string, unknown>

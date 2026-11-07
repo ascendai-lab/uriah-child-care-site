@@ -20,6 +20,7 @@ import Doodle from '@components/ui/Doodle.astro'
 import Icon from '@components/ui/Icon.astro'
 import PhoneLink from '@components/ui/PhoneLink.astro'
 import PageBuilder from '@components/blocks/PageBuilder.astro'
+import { editAttr } from '@cms/lib/visualEditing'
 
 interface Props {
   doc: RouteDoc
@@ -27,6 +28,9 @@ interface Props {
 }
 
 const { doc, layout } = Astro.props
+// Click-to-edit targets for the Presentation tool (undefined outside draft mode).
+const { draftMode } = Astro.locals
+const edit = (path: string) => editAttr(draftMode, doc, path)
 const settings = layout.settings
 const accent = stegaClean(doc.accent) || 'coral'
 const a = settings?.address
@@ -74,7 +78,10 @@ const extraFaqs =
   ownFaqs.length >= MIN_FAQS
     ? []
     : (layout.generalFaqs ?? []).filter((f) => f && !covered(f._id)).slice(0, MIN_FAQS + 1 - ownFaqs.length)
-const faqs = [...ownFaqs, ...extraFaqs]
+const faqs = [
+  ...ownFaqs.map((f) => ({ ...f, dataSanity: edit(`faqs[_key=="${f._key}"]`) })),
+  ...extraFaqs.map((f) => ({ ...f, dataSanity: editAttr(draftMode, { _id: f._id, _type: 'faq' }, 'question') })),
+]
 const shownServices = services.filter((s) => !s.needsConfirmation)
 // Keep the hero facts on one line: only the first sentence of the schedule (the full text is in Quick facts).
 const heroSchedule = (doc.schedule || settings?.hoursSummary || '').split(/\.\s/)[0].replace(/\.$/, '') || null
@@ -123,8 +130,8 @@ const getsBand = !doc.dayPlan?.length && !shownServices.length ? 'bg-sky' : 'bg-
     <div class="core-hero__card">
       <div class="core-hero__text enter">
         <span class="eyebrow">{eyebrow}</span>
-        <h1 class="page-title">{doc.title}</h1>
-        {doc.intro && <p class="core-hero__intro">{doc.intro}</p>}
+        <h1 class="page-title" data-sanity={edit('title')}>{doc.title}</h1>
+        {doc.intro && <p class="core-hero__intro" data-sanity={edit('intro')}>{doc.intro}</p>}
         <ul class="fact-line core-hero__facts">
           <li><Icon name="users" /> {doc.ageRange || settings?.agesServed}</li>
           {heroSchedule && <li><Icon name="clock" /> {heroSchedule}</li>}
@@ -139,7 +146,7 @@ const getsBand = !doc.dayPlan?.length && !shownServices.length ? 'bg-sky' : 'bg-
       </div>
       {
         doc.image?.asset && (
-          <div class="core-hero__media">
+          <div class="core-hero__media" data-sanity={edit('image')}>
             <div class="shape shape--arch">
               <SanityImage image={doc.image} width={560} aspectRatio={4 / 5} sizes="(min-width: 900px) 420px, 85vw" loading="eager" fetchpriority="high" />
             </div>
@@ -154,17 +161,17 @@ const getsBand = !doc.dayPlan?.length && !shownServices.length ? 'bg-sky' : 'bg-
 
 <section class="section bg-default core-body">
   <div class="container core-body__grid">
-    <div class="core-body__main">
+    <div class="core-body__main" data-sanity={edit('body')}>
       <PortableText value={doc.body ?? []} />
     </div>
 
     <aside class="core-facts card" aria-label="Quick facts">
       <h2>Quick facts</h2>
       <dl>
-        <div><dt><Icon name="users" /> Ages</dt><dd>{doc.ageRange || settings?.agesServed}</dd></div>
-        <div><dt><Icon name="clock" /> Days and times</dt><dd>{doc.schedule || settings?.hoursSummary}</dd></div>
+        <div data-sanity={doc.ageRange ? edit('ageRange') : undefined}><dt><Icon name="users" /> Ages</dt><dd>{doc.ageRange || settings?.agesServed}</dd></div>
+        <div data-sanity={doc.schedule ? edit('schedule') : undefined}><dt><Icon name="clock" /> Days and times</dt><dd>{doc.schedule || settings?.hoursSummary}</dd></div>
         {a?.street && <div><dt><Icon name="pin" /> Where</dt><dd>{a.street}, {a.city}, {a.state} {a.zip}</dd></div>}
-        {doc.driveTime && <div><dt><Icon name="directions" /> Drive</dt><dd>{doc.driveTime}</dd></div>}
+        {doc.driveTime && <div data-sanity={edit('driveTime')}><dt><Icon name="directions" /> Drive</dt><dd>{doc.driveTime}</dd></div>}
         {settings?.subsidyStatement && <div><dt><Icon name="wallet" /> Subsidy</dt><dd>{settings.subsidyStatement} <a class="text-link" href="/ccap-child-care-vineland-nj/">How CCAP works</a></dd></div>}
         {settings?.license?.summary && <div><dt><Icon name="shield" /> License</dt><dd>{settings.license.summary}</dd></div>}
       </dl>
@@ -180,8 +187,8 @@ const getsBand = !doc.dayPlan?.length && !shownServices.length ? 'bg-sky' : 'bg-
       <div class="container">
         <h2 class="section-heading core-section-title">{titles.gets}</h2>
         <ul class="ticks core-highlights" style={`--cols:${highlightCols}`}>
-          {doc.highlights.map((h) => (
-            <li>
+          {doc.highlights.map((h, i) => (
+            <li data-sanity={edit(`highlights[${i}]`)}>
               <span class="ticks__icon"><Icon name="check" /></span>
               <span>{noBreakHyphens(h)}</span>
             </li>
@@ -199,7 +206,7 @@ const getsBand = !doc.dayPlan?.length && !shownServices.length ? 'bg-sky' : 'bg-
         <h2 class="section-heading core-section-title">{titles.day}</h2>
         <ol class="day-plan" style={`--steps:${doc.dayPlan.length}`}>
           {doc.dayPlan.map((step, i) => (
-            <li class={`accent-${['coral', 'sage', 'sunshine', 'sky'][i % 4]}`}>
+            <li class={`accent-${['coral', 'sage', 'sunshine', 'sky'][i % 4]}`} data-sanity={edit(`dayPlan[_key=="${step._key}"]`)}>
               <span class="day-plan__dot" aria-hidden="true">{i + 1}</span>
               <span class="day-plan__when">{step.label}</span>
               <span class="day-plan__what">{step.activity}</span>

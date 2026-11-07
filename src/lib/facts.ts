@@ -2,7 +2,7 @@ import type { SiteSettings } from '@cms/lib/types'
 
 /**
  * The visible fact table rows (address, hours, ages, programs, subsidy, license, founded, owner).
- * Built from Site settings so the table, the schema and llms.txt always say the same thing.
+ * Built from the Settings documents so the table, the schema and llms.txt always say the same thing.
  */
 export function factRows(settings: SiteSettings | null | undefined): { label: string; value: string }[] {
   if (!settings) return []

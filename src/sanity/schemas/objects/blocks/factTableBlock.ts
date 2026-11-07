@@ -4,11 +4,11 @@ import { blockPreview, headingField, introField, sectionGroups, sectionSettingsF
 
 /**
  * A small visible fact table (address, hours, ages, programs, subsidy, license, founded, owner).
- * The standard rows come from Site settings so they always match the schema and the GBP.
+ * The standard rows come from the Settings documents so they always match the schema and the GBP.
  */
 export const factTableBlock = defineType({
   name: 'factTableBlock',
-  title: 'Fact table (from Site settings)',
+  title: 'Fact table (from Settings)',
   type: 'object',
   icon: ThListIcon,
   groups: sectionGroups,

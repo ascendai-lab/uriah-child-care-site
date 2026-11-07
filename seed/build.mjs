@@ -13,7 +13,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { mdToPortableText } from './lib.mjs'
-import { faqs, navigation, reviews, siteSettings, team } from './content-core.mjs'
+import { faqs, navigation, reviews, settingsDocs, team } from './content-core.mjs'
 import { categories, cities, services } from './content-programs.mjs'
 import { homePage, pages } from './content-pages.mjs'
 import { posts } from './content-news.mjs'
@@ -22,7 +22,7 @@ const here = dirname(fileURLToPath(import.meta.url))
 const meta = JSON.parse(readFileSync(join(here, 'images/meta.json'), 'utf8'))
 const NOW = new Date().toISOString()
 
-const docs = [siteSettings, navigation, homePage, ...team, ...reviews, ...faqs, ...categories, ...services, ...pages, ...cities, ...posts]
+const docs = [...settingsDocs, navigation, homePage, ...team, ...reviews, ...faqs, ...categories, ...services, ...pages, ...cities, ...posts]
 
 /* ── Checks ── */
 const ids = new Set()

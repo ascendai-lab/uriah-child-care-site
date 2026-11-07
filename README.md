@@ -17,7 +17,7 @@ Read [`CLAUDE.md`](./CLAUDE.md) before building on it.
 | **Program hubs, Services, City pages** | Each gets a root URL (`/preschool-vineland-nj/`) with an answer-first hero, quick facts, highlights, day plan, reviews, FAQs and related links. Blog posts live under `/blog/` |
 | **Testimonials, FAQs, Team** | Managed once, shown anywhere through page-builder sections |
 | **Navigation** | Main menu with dropdowns, header button, footer link columns |
-| **Site settings** | Logo, favicon, phone/email/address, hours (incl. 24-hour), social profiles, page title format, fallback SEO, GA4 / GTM / Meta Pixel / Search Console, announcement bar, footer text |
+| **Settings** folder | **Business info & hours** (name, phone, email, address, hours), **Announcement bar**, **Logo, footer & social**, and **SEO & tracking** (title format, fallback SEO, GA4 / GTM / Meta Pixel / Search Console, GBP links, business facts). SEO & tracking is shown to administrators only |
 | **Redirects** | Old URL → new page (301/302), for moving from WordPress |
 
 Every page has an **SEO & sharing** tab (meta title/description with length hints, social share image, canonical URL, hide from Google). Every image requires **alt text** unless marked decorative. The **rich text editor** has headings, lists, bold/italic/highlight, links to pages, URLs, email and phone, plus images, videos and buttons.
@@ -39,7 +39,7 @@ In [sanity.io/manage](https://sanity.io/manage) for the client's project:
 1. **API → CORS origins**: add `http://localhost:4321` and the Netlify URL, with credentials allowed.
 2. **API → Tokens**: create a **Viewer** token and set it as `SANITY_API_READ_TOKEN`. Visual editing doesn't work without it.
 
-Then open `/studio`, fill in **Site settings** and **Navigation**, and add sections to the **Home page**.
+Then open `/studio`, fill in the **Settings** folder and **Navigation**, and add sections to the **Home page**.
 
 ## Scripts
 

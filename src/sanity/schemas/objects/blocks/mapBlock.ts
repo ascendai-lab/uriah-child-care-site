@@ -5,7 +5,7 @@ import { blockPreview, headingField, introField, sectionGroups, sectionSettingsF
 /** The embedded Google Business Profile map with the exact name, address, phone and hours. */
 export const mapBlock = defineType({
   name: 'mapBlock',
-  title: 'Map + address (from Site settings)',
+  title: 'Map + address (from Settings)',
   type: 'object',
   icon: PinIcon,
   groups: sectionGroups,

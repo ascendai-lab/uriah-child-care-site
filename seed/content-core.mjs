@@ -9,9 +9,8 @@ export const TODAY = '2026-11-04'
 
 export const PLACE_ID = 'ChIJk-4vYVw3x4kRSX5zZYYtB10'
 
-export const siteSettings = {
-  _id: 'siteSettings',
-  _type: 'siteSettings',
+/** All settings in one place; split into the four Settings documents below. */
+const settings = {
   siteName: 'Uriah Child Care',
   legalName: 'Johnson and Senior Group LLC',
   tagline: 'Warm. Safe. Playful. Ours.',
@@ -70,6 +69,19 @@ export const siteSettings = {
   footerText: 'A licensed child care center in Vineland, NJ, open Monday to Saturday.',
   copyrightName: 'Uriah Child Care',
 }
+
+const pick = (keys) => Object.fromEntries(keys.filter((k) => settings[k] !== undefined).map((k) => [k, settings[k]]))
+const BUSINESS = ['siteName', 'phone', 'email', 'address', 'mapUrl', 'hoursSummary', 'hours']
+const BRAND = ['logo', 'logoInverse', 'favicon', 'tagline', 'footerText', 'copyrightName', 'socialLinks']
+const placed = new Set([...BUSINESS, ...BRAND, 'announcement'])
+
+/** The Settings folder in the Studio: business info, announcement bar, logo/footer/social, SEO & tracking. */
+export const settingsDocs = [
+  { _id: 'businessInfo', _type: 'businessInfo', ...pick(BUSINESS) },
+  { _id: 'announcementBar', _type: 'announcementBar', ...settings.announcement },
+  { _id: 'brandSettings', _type: 'brandSettings', ...pick(BRAND) },
+  { _id: 'seoSettings', _type: 'seoSettings', ...pick(Object.keys(settings).filter((k) => !placed.has(k))) },
+]
 
 /** The News listing is a route, not a document, so it is linked by path. */
 const NEWS = { _type: 'link', linkType: 'external', external: '/news/' }

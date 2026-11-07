@@ -2,7 +2,7 @@
 import PortableText from './PortableText'
 
 interface Props {
-  items: { _key?: string; _id?: string; question?: string | null; answer?: unknown }[] | null | undefined
+  items: { _key?: string; _id?: string; question?: string | null; answer?: unknown; dataSanity?: string }[] | null | undefined
   /** Open the first question by default. */
   openFirst?: boolean
 }
@@ -16,7 +16,7 @@ const paragraphs = (text: string) => text.split(PARAGRAPHS)
   items?.length ? (
     <div class="faq-list">
       {items.map((item, i) => (
-        <details class="faq-item" open={openFirst && i === 0}>
+        <details class="faq-item" open={openFirst && i === 0} data-sanity={item.dataSanity}>
           <summary>{item.question}</summary>
           <div class="faq-item__panel"><div class="faq-item__answer">
             {typeof item.answer === 'string' ? (

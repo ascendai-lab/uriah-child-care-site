@@ -36,7 +36,5 @@ export const resolve: PresentationPluginOptions['resolve'] = {
         locations: [...(doc?.slug ? [location(doc.title, routes.blogPost(doc.slug))] : []), location('News', '/news/')],
       }),
     }),
-    siteSettings: defineLocations({ message: 'Used on every page', locations: [location('Home', '/')] }),
-    navigation: defineLocations({ message: 'Used on every page', locations: [location('Home', '/')] }),
   },
 }

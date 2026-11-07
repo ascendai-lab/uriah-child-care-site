@@ -4,7 +4,7 @@ The site's first content, written by hand and loaded into Sanity in one go.
 
 | File | What's in it |
 |---|---|
-| `content-core.mjs` | Site settings (NAP, hours, license, GBP text), navigation, team, Google reviews, the global FAQ |
+| `content-core.mjs` | Settings documents (NAP, hours, license, GBP text), navigation, team, Google reviews, the global FAQ |
 | `content-programs.mjs` | 3 program hubs (GBP categories), 18 service pages, 2 city pages |
 | `content-pages.mjs` | Home page and the 6 page-builder pages (tour, about, our center, reviews, FAQ, tuition) |
 | `lib.mjs` | Helpers. `md` turns a small Markdown subset into Portable Text; `[text](/slug/)` links become document references |

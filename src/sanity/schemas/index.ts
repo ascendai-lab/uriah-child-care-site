@@ -12,7 +12,10 @@ import { blockTypes } from './objects/blocks'
 // Singletons
 import { homePage } from './singletons/homePage'
 import { navigation } from './singletons/navigation'
-import { siteSettings } from './singletons/siteSettings'
+import { businessInfo } from './singletons/businessInfo'
+import { announcementBar } from './singletons/announcementBar'
+import { brandSettings } from './singletons/brandSettings'
+import { seoSettings } from './singletons/seoSettings'
 
 // Documents (repeatable)
 import { page } from './documents/page'
@@ -25,7 +28,7 @@ import { testimonial } from './documents/testimonial'
 import { faq } from './documents/faq'
 import { redirect } from './documents/redirect'
 
-export const singletonTypes = new Set(['homePage', 'navigation', 'siteSettings'])
+export const singletonTypes = new Set(['homePage', 'navigation', 'businessInfo', 'announcementBar', 'brandSettings', 'seoSettings'])
 
 export const schemaTypes = [
   link,
@@ -40,7 +43,10 @@ export const schemaTypes = [
 
   homePage,
   navigation,
-  siteSettings,
+  businessInfo,
+  announcementBar,
+  brandSettings,
+  seoSettings,
 
   page,
   category,
