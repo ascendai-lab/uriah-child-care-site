@@ -2,6 +2,7 @@
 import { stegaClean } from '@sanity/client/stega'
 import BaseLayout from '@layouts/BaseLayout.astro'
 import DetailHeader from '@components/layout/DetailHeader.astro'
+import { editAttr } from '@cms/lib/visualEditing'
 import PortableText from '@components/ui/PortableText'
 import { loadQuery } from '@cms/lib/load'
 import { urlFor } from '@cms/lib/image'
@@ -46,10 +47,10 @@ const crumbs: Crumb[] = [
   breadcrumbs={crumbs}
 >
   <article>
-    <DetailHeader title={post.title} eyebrow={meta} intro={post.excerpt} image={post.image} />
+    <DetailHeader title={post.title} eyebrow={meta} intro={post.excerpt} image={post.image} document={post} />
     <section class="section bg-default">
       <div class="container">
-        <PortableText value={post.body} className="prose detail-body" />
+        <div data-sanity={editAttr(Astro.locals.draftMode, post, 'body')}><PortableText value={post.body} className="prose detail-body" /></div>
         <p class="detail-body news-back"><a class="text-link" href="/news/">← All news</a></p>
       </div>
     </section>

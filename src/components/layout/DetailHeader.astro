@@ -1,26 +1,30 @@
 ---
 import SanityImage, { type SanityImageValue } from '@components/ui/SanityImage.astro'
+import { editAttr, type EditableDocument } from '@cms/lib/visualEditing'
 
 interface Props {
   title: string | null
   eyebrow?: string | null
   intro?: string | null
   image?: SanityImageValue | null
+  /** The document shown, so each part opens its field in the Presentation tool. */
+  document?: EditableDocument | null
 }
 
 /** Navy page hero for detail pages (news posts), matching the inner-page heroes. */
-const { title, eyebrow, intro, image } = Astro.props
+const { title, eyebrow, intro, image, document } = Astro.props
+const edit = (path: string) => editAttr(Astro.locals.draftMode, document, path)
 ---
 
 <header class="section page-hero detail-header">
   <div class="container detail-header__inner">
     <div class="detail-header__text">
       {eyebrow && <p class="eyebrow">{eyebrow}</p>}
-      <h1 class="page-title">{title}</h1>
-      {intro && <p class="detail-header__intro">{intro}</p>}
+      <h1 class="page-title" data-sanity={edit('title')}>{title}</h1>
+      {intro && <p class="detail-header__intro" data-sanity={edit('excerpt')}>{intro}</p>}
     </div>
     {image?.asset && (
-      <div class="detail-header__media">
+      <div class="detail-header__media" data-sanity={edit('image')}>
         <SanityImage image={image} width={720} aspectRatio={4 / 3} loading="eager" fetchpriority="high" />
       </div>
     )}
