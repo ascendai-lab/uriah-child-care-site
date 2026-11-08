@@ -47,13 +47,13 @@ const phone = settings?.phone
     <nav aria-label="Main" class="site-nav" id="site-nav" data-sanity={editAttr(draftMode, { _id: 'navigation', _type: 'navigation' }, 'headerLinks')}>
       <ul class="site-nav__list">
         {
-          navigation?.headerLinks?.map((item) => {
+          navigation?.headerLinks?.map((item, index) => {
             const link = resolveLink(item.link)
             const children = item.children?.filter((child) => resolveLink(child.link)) ?? []
             if (children.length) {
               const open = children.some((c) => isCurrent(resolveLink(c.link)?.href)) || isCurrent(link?.href)
               return (
-                <li class="site-nav__item">
+                <li class="site-nav__item" style={`--i:${index}`}>
                   <details class="site-nav__dropdown">
                     <summary class:list={[open && 'is-active']}>
                       {item.label}
@@ -85,7 +85,7 @@ const phone = settings?.phone
               )
             }
             return (
-              <li class="site-nav__item">
+              <li class="site-nav__item" style={`--i:${index}`}>
                 {link ? (
                   <a href={link.href} target={link.target} rel={link.rel} aria-current={isCurrent(link.href) ? 'page' : undefined}>
                     {item.label}
@@ -100,7 +100,7 @@ const phone = settings?.phone
       </ul>
       {
         phone && (
-          <a class="site-nav__phone-mobile phone-link" href={telHref(phone)} data-track="call_click">
+          <a class="site-nav__phone-mobile phone-link" href={telHref(phone)} data-track="call_click" style={`--i:${navigation?.headerLinks?.length ?? 0}`}>
             <span class="phone-link__icon"><Icon name="phone" /></span>
             <span>{phone}<small>Call us today</small></span>
           </a>
@@ -127,14 +127,35 @@ const phone = settings?.phone
 </header>
 
 <script>
+  const header = document.querySelector<HTMLElement>('.site-header')
   const toggle = document.querySelector<HTMLButtonElement>('.site-header__toggle')
   const nav = document.getElementById('site-nav')
-  toggle?.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') === 'true'
-    toggle.setAttribute('aria-expanded', String(!open))
-    toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu')
-    nav?.classList.toggle('is-open', !open)
+  const desktop = window.matchMedia('(min-width: 1080px)')
+
+  // The mobile menu is a full-screen panel that starts right under the header and covers the page.
+  const placeMenu = () => header && nav?.style.setProperty('--nav-top', `${Math.max(0, header.getBoundingClientRect().bottom)}px`)
+  const setMenu = (open: boolean) => {
+    if (!toggle || !nav) return
+    if (open) placeMenu()
+    toggle.setAttribute('aria-expanded', String(open))
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
+    nav.classList.toggle('is-open', open)
+    document.documentElement.classList.toggle('menu-open', open)
+  }
+  toggle?.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'))
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav?.classList.contains('is-open')) {
+      setMenu(false)
+      toggle?.focus()
+    }
   })
+  // Following a link (including #anchors on the same page) closes the menu.
+  nav?.addEventListener('click', (e) => {
+    if ((e.target as Element).closest('a') && !desktop.matches) setMenu(false)
+  })
+  desktop.addEventListener('change', () => setMenu(false))
+  window.addEventListener('resize', () => nav?.classList.contains('is-open') && placeMenu())
+
   // Close other dropdowns when one opens, and when clicking outside.
   const dropdowns = Array.from(document.querySelectorAll<HTMLDetailsElement>('.site-nav__dropdown'))
   dropdowns.forEach((d) =>
@@ -195,19 +216,48 @@ const phone = settings?.phone
   }
   .site-header__phone-text { display: none; }
 
-  .site-nav { display: none; }
-  .site-nav.is-open {
-    display: block;
-    position: absolute;
-    inset: 100% 0 auto;
-    max-height: calc(100vh - 76px);
+  /* Mobile menu: a full-screen panel over the page. It unrolls from the header,
+     then the items slide down one after another. */
+  .site-nav {
+    position: fixed;
+    inset: var(--nav-top, 76px) 0 0 0;
+    z-index: 49;
     overflow-y: auto;
+    overscroll-behavior: contain;
     background: var(--cream);
-    border-bottom: 1px solid var(--border-default);
-    padding: 0.75rem var(--container-px) 1.5rem;
-    /* Dim the page under the open menu (below the header only). */
-    box-shadow: var(--shadow-overlay), 0 0 0 100vmax rgba(36, 48, 61, 0.45);
-    clip-path: inset(0 -100vmax -100vmax -100vmax);
+    padding: 1.25rem var(--container-px) 2.5rem;
+    visibility: hidden;
+    clip-path: inset(0 0 100% 0);
+    transition:
+      clip-path 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+      visibility 0s linear 0.5s;
+  }
+  .site-nav.is-open {
+    visibility: visible;
+    clip-path: inset(0 0 0 0);
+    transition:
+      clip-path 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+      visibility 0s;
+  }
+  .site-nav__item,
+  .site-nav__phone-mobile {
+    opacity: 0;
+    transform: translateY(-14px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .site-nav.is-open .site-nav__item,
+  .site-nav.is-open .site-nav__phone-mobile {
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.45s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: calc(0.12s + var(--i, 0) * 0.06s);
+  }
+  :global(html.menu-open body) { overflow: hidden; }
+  @media (prefers-reduced-motion: reduce) {
+    .site-nav, .site-nav.is-open { clip-path: none; opacity: 0; transition: opacity 0.15s, visibility 0s linear 0.15s; }
+    .site-nav.is-open { opacity: 1; transition: opacity 0.15s, visibility 0s; }
+    .site-nav__item, .site-nav__phone-mobile,
+    .site-nav.is-open .site-nav__item, .site-nav.is-open .site-nav__phone-mobile { opacity: 1; transform: none; transition: none; }
   }
   .site-nav__list { list-style: none; display: grid; gap: 0.1rem; }
   .site-nav__item > a,
@@ -216,10 +266,10 @@ const phone = settings?.phone
     display: flex;
     align-items: center;
     gap: 0.3rem;
-    padding: 0.7rem 0;
+    padding: 0.95rem 0;
     font-family: var(--font-display);
     font-weight: 500;
-    font-size: 1.08rem;
+    font-size: 1.3rem;
     cursor: pointer;
   }
   .site-nav a[aria-current='page'], .site-nav summary.is-active { color: var(--coral-700); }
@@ -227,9 +277,10 @@ const phone = settings?.phone
   .site-nav__dropdown summary::-webkit-details-marker { display: none; }
   .site-nav__dropdown[open] summary svg { transform: rotate(180deg); }
   .site-nav__dropdown ul { list-style: none; padding: 0 0 0.5rem 0.9rem; }
-  .site-nav__dropdown ul a { display: block; padding: 0.45rem 0; font-weight: 600; }
+  .site-nav__dropdown ul a { display: block; padding: 0.55rem 0; font-weight: 600; font-size: 1.05rem; }
   .site-nav__dropdown ul a:hover { color: var(--coral-700); }
-  .site-nav__phone-mobile { margin-top: 1rem; }
+  .site-nav__phone-mobile { margin-top: 1.5rem; }
+  .site-nav__list > .site-nav__item + .site-nav__item { border-top: 1px solid var(--border-hairline); }
 
   .site-header__toggle {
     display: inline-grid;
@@ -258,15 +309,16 @@ const phone = settings?.phone
     .site-header__phone-text { display: inline; }
     .site-header__phone-icon { width: 2.2rem; height: 2.2rem; }
     .site-nav, .site-nav.is-open {
-      display: block;
       position: static;
       padding: 0;
-      border: 0;
-      box-shadow: none;
       background: none;
-      max-height: none;
       overflow: visible;
+      visibility: visible;
+      clip-path: none;
+      transition: none;
     }
+    .site-nav__item, .site-nav.is-open .site-nav__item { opacity: 1; transform: none; transition: none; }
+    .site-nav__list > .site-nav__item + .site-nav__item { border-top: 0; }
     .site-nav__list { display: flex; gap: 1.4rem; }
     .site-nav__item > a, .site-nav__item summary { padding: 0.5rem 0; font-size: 1.02rem; }
     .site-nav__dropdown { position: relative; }
