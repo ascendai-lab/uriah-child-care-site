@@ -1,0 +1,37 @@
+---
+import type { BlockOf, Layout } from '@cms/lib/types'
+import Section from '@components/ui/Section.astro'
+import JobApplicationForm from '@components/ui/JobApplicationForm'
+
+interface Props {
+  block: BlockOf<'jobApplicationBlock'>
+  layout: Layout
+  'data-sanity'?: string
+}
+
+/** The Careers page application: a short intro on the left, the form in a card on the right. */
+const { block, layout, 'data-sanity': dataSanity } = Astro.props
+const anchor = block.anchorId ?? 'apply'
+---
+
+<Section anchorId={anchor} background={block.background} data-sanity={dataSanity}>
+  <div class="job-apply">
+    <div class="job-apply__intro">
+      <h2 class="section-heading">{block.heading ?? 'Apply to work with us'}</h2>
+      {block.intro && <p class="section-intro">{block.intro}</p>}
+    </div>
+    <div class="job-apply__form card">
+      <JobApplicationForm client:visible positions={block.positions} successMessage={block.successMessage} phone={layout.settings?.phone} idPrefix={anchor} />
+    </div>
+  </div>
+</Section>
+
+<style>
+  .job-apply { display: grid; gap: 2rem; }
+  .job-apply__intro .section-intro { margin-top: 0.9rem; }
+  .job-apply__form { padding: clamp(1.25rem, 3.5vw, 2.25rem); }
+  @media (min-width: 1040px) {
+    .job-apply { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.6fr); gap: 3.5rem; align-items: start; }
+    .job-apply__intro { position: sticky; top: 7rem; }
+  }
+</style>

@@ -12,6 +12,7 @@ import { teamBlock } from './teamBlock'
 import { latestPostsBlock } from './latestPostsBlock'
 import { ctaBlock } from './ctaBlock'
 import { contactFormBlock } from './contactFormBlock'
+import { jobApplicationBlock } from './jobApplicationBlock'
 import { videoBlock } from './videoBlock'
 import { mapBlock } from './mapBlock'
 import { factTableBlock } from './factTableBlock'
@@ -31,6 +32,7 @@ export const blockTypes = [
   latestPostsBlock,
   ctaBlock,
   contactFormBlock,
+  jobApplicationBlock,
   videoBlock,
   mapBlock,
   factTableBlock,
@@ -61,7 +63,7 @@ export const pageBuilderField = (group?: string) =>
             title: 'From the CMS',
             of: ['servicesBlock', 'serviceAreasBlock', 'testimonialsBlock', 'faqBlock', 'teamBlock', 'latestPostsBlock', 'mapBlock', 'factTableBlock'],
           },
-          { name: 'conversion', title: 'Conversion', of: ['ctaBlock', 'contactFormBlock'] },
+          { name: 'conversion', title: 'Conversion', of: ['ctaBlock', 'contactFormBlock', 'jobApplicationBlock'] },
         ],
         views: [{ name: 'list' }],
       },

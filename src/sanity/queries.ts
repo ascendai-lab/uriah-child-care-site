@@ -193,6 +193,7 @@ const pageBuilderFields = /* groq */ `
     },
     _type == "ctaBlock" => { body, buttons[] { ${buttonFields} } },
     _type == "contactFormBlock" => { intro, successMessage, showContactDetails },
+    _type == "jobApplicationBlock" => { intro, positions, successMessage },
     _type == "videoBlock" => { intro, video { url, caption, autoplay } },
     _type == "mapBlock" => { intro, notes },
     _type == "factTableBlock" => { intro, extraRows[] { _key, label, value } },

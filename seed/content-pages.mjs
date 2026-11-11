@@ -17,7 +17,7 @@ export const homePage = {
   pageBuilder: [
     block('hero', {
       layout: 'photoFade',
-      heading: 'Day care center in Vineland, NJ',
+      heading: 'Childcare center in Vineland, NJ',
       accentWord: 'Vineland, NJ',
       subheading:
         'Uriah Child Care is a licensed child care center at 30 W Chestnut Ave, open Monday to Saturday, 6 am to 11 pm. Toddler care, kindergarten readiness, and before and after school care, from early morning to 11 pm for working parents.',
@@ -344,6 +344,28 @@ The center is licensed by the New Jersey Department of Children and Families, li
       }),
     ],
     seo: seo('Tuition and CCAP | Uriah Child Care, Vineland, NJ', 'How tuition works at Uriah Child Care in Vineland, NJ, and how to pay with NJ childcare subsidy (CCAP). Call for a price for your schedule.'),
+  }),
+  page('careers', {
+    title: 'Careers',
+    slug: slug('careers'),
+    pageBuilder: [
+      block('hero', {
+        layout: 'split',
+        eyebrow: 'Careers',
+        heading: 'Work at Uriah Child Care in Vineland',
+        subheading: 'We are a small, family-run center at 30 W Chestnut Ave. If you love caring for young children, we would like to hear from you.',
+        showPhone: false,
+        background: 'white',
+      }),
+      block('jobApplicationBlock', {
+        heading: 'Apply online',
+        intro: 'Tell us a little about yourself and attach your résumé. It takes about five minutes. Ms. Paulette or Tameca will reach out if there is a good fit.',
+        positions: ['Teacher', 'Assistant teacher', 'Aide / floater', 'Cook', 'Other'],
+        successMessage: 'Thank you for applying. We read every application, and we will call or email you if there is a good fit.',
+        background: 'default',
+      }),
+    ],
+    seo: seo('Careers | Uriah Child Care, Vineland, NJ', 'Apply to work at Uriah Child Care, a licensed child care center in Vineland, NJ. Fill out a short application and upload your résumé and cover letter.'),
   }),
   // Legal pages, carried over from the old site (uriahchildcare.com/privacy-policy/ and /terms-and-conditions/).
   // Edits from the old text: governing law is New Jersey (the old template said "Netherlands"), the account

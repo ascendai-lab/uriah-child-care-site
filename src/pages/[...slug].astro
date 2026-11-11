@@ -27,7 +27,7 @@ crumbs.push({ label: label(doc), href: hrefFor(doc._type, doc.slug) ?? Astro.url
 const isCore = doc._type !== 'page'
 const blocks = doc.pageBuilder ?? []
 const startsWithHero = blocks[0]?._type === 'hero'
-const hasTourForm = blocks.some((b) => b._type === 'contactFormBlock')
+const hasTourForm = blocks.some((b) => b._type === 'contactFormBlock' || b._type === 'jobApplicationBlock')
 
 /* Page-specific schema */
 const jsonLd: (Record<string, unknown> | null)[] = []

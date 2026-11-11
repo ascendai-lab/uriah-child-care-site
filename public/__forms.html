@@ -27,5 +27,25 @@
       <input name="utm_campaign" />
       <input name="ga_client_id" />
     </form>
+
+    <!-- Careers page job application (src/components/ui/JobApplicationForm.tsx). Keep in step with toNetlifyFormData() in src/lib/careers.ts. -->
+    <form name="job-application" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" hidden>
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="phone" />
+      <input name="email" />
+      <input name="city" />
+      <input name="position" />
+      <input name="hours" />
+      <input name="availability" />
+      <input name="start_date" />
+      <textarea name="experience"></textarea>
+      <input name="credentials" />
+      <input name="over_18" />
+      <input name="background_check" />
+      <textarea name="message"></textarea>
+      <input type="file" name="resume" />
+      <input type="file" name="cover_letter" />
+    </form>
   </body>
 </html>

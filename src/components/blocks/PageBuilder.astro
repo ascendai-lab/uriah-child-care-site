@@ -14,6 +14,7 @@ import TeamBlock from './TeamBlock.astro'
 import LatestPostsBlock from './LatestPostsBlock.astro'
 import CtaBlock from './CtaBlock.astro'
 import ContactFormBlock from './ContactFormBlock.astro'
+import JobApplicationBlock from './JobApplicationBlock.astro'
 import VideoBlock from './VideoBlock.astro'
 import MapBlock from './MapBlock.astro'
 import FactTableBlock from './FactTableBlock.astro'
@@ -64,6 +65,8 @@ const { draftMode } = Astro.locals
           return <CtaBlock block={block} data-sanity={attr} />
         case 'contactFormBlock':
           return <ContactFormBlock block={block} layout={layout} data-sanity={attr} />
+        case 'jobApplicationBlock':
+          return <JobApplicationBlock block={block} layout={layout} data-sanity={attr} />
         case 'videoBlock':
           return <VideoBlock block={block} data-sanity={attr} />
         case 'mapBlock':

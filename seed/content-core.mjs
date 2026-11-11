@@ -134,6 +134,7 @@ export const navigation = {
         ['News', NEWS],
         ['Tuition and CCAP', 'page-tuition'],
         ['Questions parents ask', 'page-faq'],
+        ['Careers', 'page-careers'],
         ['Book a tour', 'page-tour'],
       ].map(([label, id]) => ({ _key: key(), label, link: typeof id === 'string' ? link.internal(id) : id })),
     },
