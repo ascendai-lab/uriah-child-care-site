@@ -73,7 +73,6 @@ const facts =
           </a>
         )
       }
-      {block.eyebrow && <span class="eyebrow">{block.eyebrow}</span>}
       <Heading class:list={['hero__heading', layout === 'photoFade' ? 'display-hero' : 'page-title']}>
         {parts ? (<>{parts[0]}<span class="accent-word">{parts[1]}</span>{parts[2]}</>) : heading}
       </Heading>
@@ -144,7 +143,7 @@ const facts =
   .hero__media { position: relative; max-width: 460px; width: 100%; justify-self: center; }
   /* Card layout: no tinted box (a white hero lines up with the page grid); the photo frame carries the color. */
   .hero--centered .hero__content { text-align: center; margin-inline: auto; max-width: 48rem; }
-  .hero--centered .hero__sub, .hero--centered .eyebrow { margin-inline: auto; }
+  .hero--centered .hero__sub { margin-inline: auto; }
   .hero--centered .btn-row { justify-content: center; }
 
   /* Photo fading into a dark navy panel (home page, from Mark's reference) */
@@ -171,7 +170,6 @@ const facts =
   .hero--photoFade .hero__sub, .page-hero .hero__sub { color: rgba(255, 255, 255, 0.9); }
   .hero--photoFade :global(.phone-link) { color: #fff; }
   .hero--photoFade :global(.btn--outline) { color: #fff; }
-  .hero--photoFade .eyebrow { color: var(--sunshine); }
   .hero__facts { margin-top: 1.4rem; color: rgba(255, 255, 255, 0.9); }
   .hero__facts :global(svg) { color: var(--sunshine); }
   .hero--photoFade::after {

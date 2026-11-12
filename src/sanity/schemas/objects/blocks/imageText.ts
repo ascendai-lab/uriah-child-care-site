@@ -9,7 +9,8 @@ export const imageText = defineType({
   icon: SplitHorizontalIcon,
   groups: sectionGroups,
   fields: [
-    defineField({ name: 'eyebrow', title: 'Small text above heading', type: 'string', group: 'content' }),
+    // Eyebrows (small text above headings) are off site-wide (Mark, 2026-11-12); hidden so old values stay harmless.
+    defineField({ name: 'eyebrow', title: 'Small text above heading', type: 'string', group: 'content', hidden: true }),
     headingField(),
     defineField({ name: 'body', title: 'Content', type: 'richText', group: 'content' }),
     buttonsField,

@@ -47,7 +47,6 @@ const reassurance = [
     <div class="tour-block__card">
       <Doodle type="sun" color={tone === 'sunshine' ? 'coral' : 'sunshine'} size={60} class="doodle--float doodle--slow tour-block__doodle" style="top:-22px;right:8%" />
       <div class="tour-block__aside">
-        <span class="eyebrow"><Icon name="calendar" /> Book a tour</span>
         <h2 id={`${id}-heading`} class="section-heading">{heading ?? 'Come see our Vineland center'}</h2>
         <p class="section-intro">
           {intro ?? 'Tell us a little about your family and Ms. Paulette will call you to pick a time that works for you.'}
@@ -97,11 +96,10 @@ const reassurance = [
   }
   /* Deep logo green and blue carry white text; the yellow band keeps navy text (all pass WCAG AA). */
   /* Home only: the deepest logo green, so the home page's band is its own. */
-  .tour-block--forest { --tour-bg: #2c5e55; --tour-fg: #fff; --tour-soft: #fff; --tour-eyebrow: #fff; }
-  .tour-block--sage { --tour-bg: var(--sage-700); --tour-fg: #fff; --tour-soft: #fff; --tour-eyebrow: #fff; }
-  .tour-block--sky { --tour-bg: var(--sky-700); --tour-fg: #fff; --tour-soft: rgba(255, 255, 255, 0.84); --tour-eyebrow: #fff; }
-  .tour-block--sunshine { --tour-bg: var(--sunshine); --tour-fg: var(--navy); --tour-soft: var(--navy); --tour-eyebrow: var(--navy); }
-  .tour-block__card :global(.eyebrow) { color: var(--tour-eyebrow); }
+  .tour-block--forest { --tour-bg: #2c5e55; --tour-fg: #fff; --tour-soft: #fff; }
+  .tour-block--sage { --tour-bg: var(--sage-700); --tour-fg: #fff; --tour-soft: #fff; }
+  .tour-block--sky { --tour-bg: var(--sky-700); --tour-fg: #fff; --tour-soft: rgba(255, 255, 255, 0.84); }
+  .tour-block--sunshine { --tour-bg: var(--sunshine); --tour-fg: var(--navy); --tour-soft: var(--navy); }
   .tour-block__card :global(.section-intro) { color: var(--tour-soft); }
   .tour-block__owner span { color: var(--tour-soft) !important; }
   .tour-block__form { color: var(--fg1); }

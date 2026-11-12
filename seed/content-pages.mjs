@@ -34,7 +34,6 @@ export const homePage = {
       background: 'default',
     }),
     block('imageText', {
-      eyebrow: 'Ages 2.5 to 5',
       heading: 'Early learning in Vineland',
       body: md`Our play-based day for toddlers and young children, built on the Experience Early Learning curriculum, helps them learn letters, numbers, colors and how to be a good friend. Every day starts with circle time, and 4 and 5-year-olds work on [kindergarten readiness](/kindergarten-readiness-vineland-nj/). Children don't need to be potty trained to start.`,
       image: IMG.watermelon(),
@@ -46,7 +45,6 @@ export const homePage = {
       buttons: [button('Explore early learning', link.internal('category-preschool'), 'secondary')],
     }),
     block('imageText', {
-      eyebrow: 'School age, up to 13',
       heading: 'After school program in Vineland',
       body: md`Before school from 6 am and after school until 11 pm, school-age kids get a snack, [homework time](/homework-help-vineland-nj/) with help on reading, and time to play with friends in a safe, licensed center.`,
       image: IMG.tables(),
@@ -58,7 +56,6 @@ export const homePage = {
       buttons: [button('See the after school program', link.internal('category-after-school'), 'secondary')],
     }),
     block('imageText', {
-      eyebrow: 'Open Monday to Saturday, 6 am to 11 pm',
       heading: 'Child care for every shift in Vineland',
       body: md`Nurses, warehouse and plant workers, retail and restaurant staff: we are open when you work. [Early morning care](/first-shift-child-care-vineland-nj/) from 6 am, [evening care](/evening-child-care-vineland-nj/) with dinner, [late evening care until 11 pm](/late-evening-child-care-vineland-nj/), and [Saturday daycare](/saturday-daycare-vineland-nj/).`,
       image: IMG.dusk(),
@@ -121,7 +118,6 @@ export const pages = [
     pageBuilder: [
       block('hero', {
         layout: 'card',
-        eyebrow: 'Tours by appointment',
         heading: 'Book a tour of our Vineland child care center',
         subheading:
           'See the classroom, meet Ms. Paulette, and ask every question you have. Fill in the short form below or call us.',
@@ -149,7 +145,6 @@ export const pages = [
     pageBuilder: [
       block('hero', {
         layout: 'split',
-        eyebrow: 'Caring for local children since 2005',
         heading: 'Meet Ms. Paulette',
         subheading:
           'Ms. Paulette (Paulette Senior) has cared for Cumberland County children since 2005. Today she runs Uriah Child Care in Vineland with her daughter, Tameca Burke, our director.',
@@ -197,7 +192,6 @@ The center is licensed by the New Jersey Department of Children and Families, li
     pageBuilder: [
       block('hero', {
         layout: 'card',
-        eyebrow: '30 W Chestnut Ave, Vineland',
         heading: 'Take a look around our center',
         subheading:
           'A bright, welcoming child care center with a secure entrance, Procare check-in and an accessible ramp and parking. Here is what you will see when you visit.',
@@ -256,7 +250,6 @@ The center is licensed by the New Jersey Department of Children and Families, li
     pageBuilder: [
       block('hero', {
         layout: 'centered',
-        eyebrow: 'Google reviews',
         heading: 'What families say about Ms. Paulette',
         subheading: 'Real reviews from parents and grandparents, copied word for word from Google.',
         accent: 'sage',
@@ -276,7 +269,6 @@ The center is licensed by the New Jersey Department of Children and Families, li
     pageBuilder: [
       block('hero', {
         layout: 'card',
-        eyebrow: 'FAQ',
         heading: 'Questions parents ask',
         subheading: 'Hours, ages, cost, CCAP, meals, safety and how to enroll. Can’t find your answer? Call us at (856) 455-6701.',
         image: IMG.centers(),
@@ -298,7 +290,6 @@ The center is licensed by the New Jersey Department of Children and Families, li
     pageBuilder: [
       block('hero', {
         layout: 'card',
-        eyebrow: 'Tuition and how to pay',
         heading: 'Tuition and NJ childcare subsidy (CCAP)',
         subheading:
           'Tuition depends on your child’s age, the days you need and your shift. Call us or book a tour and we will give you a clear price for your schedule. We accept NJ childcare subsidy (CCAP) for families who qualify.',
@@ -351,7 +342,6 @@ The center is licensed by the New Jersey Department of Children and Families, li
     pageBuilder: [
       block('hero', {
         layout: 'split',
-        eyebrow: 'Careers',
         heading: 'Work at Uriah Child Care in Vineland',
         subheading: 'We are a small, family-run center at 30 W Chestnut Ave. If you love caring for young children, we would like to hear from you.',
         showPhone: false,

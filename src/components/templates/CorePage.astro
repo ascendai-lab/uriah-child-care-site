@@ -37,15 +37,6 @@ const a = settings?.address
 const where = a?.street ? `${a.street}, ${a.city}` : 'Vineland, NJ'
 const label = (p: { shortTitle?: string | null; title?: string | null }) => p.shortTitle || p.title
 
-const eyebrow =
-  doc._type === 'serviceArea'
-    ? `For ${stegaClean(doc.city)} families`
-    : doc.parent
-      ? label(doc.parent)
-      : doc._type === 'category'
-        ? 'Programs in Vineland'
-        : 'Uriah Child Care · Vineland, NJ'
-
 const related = [
   ...(doc.parent ? [doc.parent] : []),
   ...(doc.siblings ?? []),
@@ -129,7 +120,6 @@ const getsBand = !doc.dayPlan?.length && !shownServices.length ? 'bg-sky' : 'bg-
   <div class="container">
     <div class="core-hero__card">
       <div class="core-hero__text enter">
-        <span class="eyebrow">{eyebrow}</span>
         <h1 class="page-title" data-sanity={edit('title')}>{doc.title}</h1>
         {doc.intro && <p class="core-hero__intro" data-sanity={edit('intro')}>{doc.intro}</p>}
         <ul class="fact-line core-hero__facts">

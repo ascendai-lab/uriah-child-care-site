@@ -9,7 +9,8 @@ export const hero = defineType({
   icon: StarIcon,
   groups: sectionGroups,
   fields: [
-    defineField({ name: 'eyebrow', title: 'Small text above heading', type: 'string', group: 'content' }),
+    // Eyebrows (small text above headings) are off site-wide (Mark, 2026-11-12); hidden so old values stay harmless.
+    defineField({ name: 'eyebrow', title: 'Small text above heading', type: 'string', group: 'content', hidden: true }),
     headingField(true),
     defineField({
       name: 'accentWord',

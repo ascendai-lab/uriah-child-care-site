@@ -35,7 +35,6 @@ const doodles = block.showDoodles !== false
       }
     </div>
     <div class="image-text__content">
-      {block.eyebrow && <span class="eyebrow">{block.eyebrow}</span>}
       {block.heading && <h2 class="section-heading">{block.heading}</h2>}
       <PortableText value={block.body} />
       {block.buttons?.length ? <div class="btn-row">{block.buttons.map((button) => <Button button={button} />)}</div> : null}

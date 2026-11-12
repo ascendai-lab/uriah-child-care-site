@@ -47,7 +47,7 @@ const crumbs: Crumb[] = [
   breadcrumbs={crumbs}
 >
   <article>
-    <DetailHeader title={post.title} eyebrow={meta} intro={post.excerpt} image={post.image} document={post} />
+    <DetailHeader title={post.title} meta={meta} intro={post.excerpt} image={post.image} document={post} />
     <section class="section bg-default">
       <div class="container">
         <div data-sanity={editAttr(Astro.locals.draftMode, post, 'body')}><PortableText value={post.body} className="prose detail-body" /></div>

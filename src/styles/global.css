@@ -249,19 +249,6 @@
   }
   .bg-dark .section-intro { color: rgba(255, 255, 255, 0.82); }
 
-  .eyebrow {
-    display: flex;
-    width: fit-content;
-    align-items: center;
-    gap: 0.45rem;
-    color: var(--coral-800);
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 0.95rem;
-    letter-spacing: 0.01em;
-    margin-bottom: 0.85rem;
-  }
-  .eyebrow svg { width: 1rem; height: 1rem; }
 
   /* ─── Buttons (pill) ─── */
   .btn {
@@ -576,7 +563,6 @@
      soft wave as the home hero. Text and icons switch to light colors on it. */
   .page-hero { position: relative; background: var(--navy); color: #fff; padding-bottom: calc(clamp(2.5rem, 6vw, 4.5rem) + 30px); }
   .page-hero .page-title, .page-hero h1 { color: #fff; }
-  .page-hero .eyebrow { color: var(--sunshine); }
   .page-hero .accent-word { color: var(--sunshine); }
   .page-hero p { color: rgba(255, 255, 255, 0.88); }
   .page-hero .fact-line { color: rgba(255, 255, 255, 0.92); }
