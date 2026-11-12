@@ -87,7 +87,7 @@ export const categories = [
     schedule: 'Monday to Saturday, 6 am to 11 pm. Full-time and part-time.',
     image: IMG.readingRug(),
     intro:
-      'Uriah Child Care is a licensed child care center in Vineland, NJ for young children from 2½ to 5. Through play, toddlers and older children learn letters, numbers, colors and how to get along with friends, and 4 and 5-year-olds get ready for kindergarten, guided by Ms. Paulette and our caring staff. We accept NJ childcare subsidy (CCAP) and are open Monday to Saturday.',
+      'Play-based learning for ages 2½ to 5. Children learn letters, numbers and friendship, and 4 and 5-year-olds get ready for kindergarten.',
     excerpt: 'Toddler care and kindergarten readiness for ages 2.5 to 5, open Monday to Saturday at our licensed Vineland center.',
     highlights: [
       'Play-based curriculum from Experience Early Learning',
@@ -141,7 +141,7 @@ Call us at [(856) 455-6701](tel:8564556701) or [book a tour](/tour/) to see the 
     schedule: 'Monday to Saturday, 6 am to 11 pm',
     image: IMG.playHall(),
     intro:
-      'Uriah Child Care offers before and after school care in Vineland, NJ for school-age children up to 13. Kids get a snack, time for homework and time to play in a safe, licensed center, and we stay open until 11 pm for parents who work late. We accept NJ childcare subsidy (CCAP) for families who qualify.',
+      'Before and after school care for kids up to 13, with snacks, homework time and play. Open until 11 pm for parents who work late.',
     excerpt: 'Before and after school care for school-age kids up to 13, with homework time, snacks and care until 11 pm.',
     highlights: [
       'Before school care from 6 am',
@@ -204,7 +204,7 @@ Call [(856) 455-6701](tel:8564556701) or [book a tour](/tour/). Tell us your chi
     schedule: 'Monday to Saturday, 6 am to 11 pm.',
     image: IMG.outdoorBubbles(),
     intro:
-      'Uriah Child Care is a licensed child care center in Vineland, NJ, open Monday to Saturday from 6 am to 11 pm. We offer early morning, evening and late evening care for children ages 2.5 and up, so parents who work early mornings, evenings and Saturdays have a safe place for their kids. We accept NJ childcare subsidy (CCAP).',
+      'Licensed child care open Monday to Saturday, 6 am to 11 pm, for ages 2.5 and up. Early mornings, evenings and Saturdays covered.',
     excerpt: 'Licensed child care open Monday to Saturday, early morning to 11 pm, for ages 2.5 and up.',
     highlights: [
       'Open Monday to Saturday, 6 am to 11 pm',
@@ -262,7 +262,7 @@ const homeServices = [
     schedule: 'Monday to Saturday, 6 am to 11 pm',
     image: IMG.bubbleWand(),
     intro:
-      'Uriah Child Care cares for toddlers from 2½ years old at our licensed center in Vineland, NJ. Your little one builds words, makes friends and learns daily routines through play, with potty training support along the way. We are open Monday to Saturday, 6 am to 11 pm, and accept NJ childcare subsidy (CCAP).',
+      'Care for toddlers from 2½. Your little one builds words, makes friends and learns routines through play, with potty training support.',
     excerpt: 'Warm, play-based care for toddlers from 2½, with potty training support and care Monday to Saturday.',
     highlights: ['Children from 2½ years old', 'Talking, sharing and taking turns', 'Potty training support', 'Daily routine with a picture schedule', 'Meals and snacks (CACFP)', 'Updates through the Procare app'],
     dayPlan: [
@@ -319,7 +319,7 @@ As they grow, toddlers move on to [kindergarten readiness](/kindergarten-readine
     ageRange: 'Ages 2.5 and up',
     image: IMG.welcomeTable(),
     intro:
-      'Yes, Uriah Child Care accepts NJ childcare subsidy (CCAP) for families who qualify. Our licensed center at 30 W Chestnut Ave in Vineland, NJ cares for children ages 2.5 and up, Monday to Saturday from 6 am to 11 pm. We are happy to walk you through the steps to apply and use your subsidy with us.',
+      'Yes, we accept NJ childcare subsidy (CCAP) for families who qualify, and we\'re happy to walk you through the steps.',
     excerpt: 'We accept NJ childcare subsidy (CCAP) for families who qualify, and we can walk you through the steps.',
     highlights: ['NJ childcare subsidy (CCAP) accepted', 'Help with the next steps', 'Care for every shift, Monday to Saturday', 'Ages 2.5 and up'],
     body: md`
@@ -361,7 +361,7 @@ See [tuition and how to pay](/tuition/), call us at [(856) 455-6701](tel:8564556
     ageRange: 'Ages 2.5 and up',
     image: IMG.birthday(),
     intro:
-      'Children at Uriah Child Care in Vineland, NJ are served meals and snacks during the day. We participate in the USDA Child and Adult Care Food Program (CACFP), which sets nutrition standards for what we serve. Tell us about allergies or special diets when you enroll, and we will plan around them.',
+      'Meals and snacks every day, following the USDA Child and Adult Care Food Program (CACFP). Tell us about allergies when you enroll.',
     excerpt: 'Meals and snacks through the USDA Child and Adult Care Food Program (CACFP), with allergies planned for.',
     highlights: ['USDA food program (CACFP) participant', 'Meals and snacks during the day', 'Allergies and special diets planned for', 'Handwashing before every meal'],
     body: md`
@@ -427,7 +427,7 @@ Ask about our menus when you [book a tour](/tour/), or call [(856) 455-6701](tel
     ageRange: 'Ages 2.5 and up',
     image: IMG.porch(),
     intro:
-      'Uriah Child Care is licensed by the New Jersey Department of Children and Families as a child care center, license ID CCC128557. Parents check children in and out on the Procare app, children are released only to adults you authorize, and Ms. Paulette is certified in pediatric First Aid and CPR/AED.',
+      'Licensed by the NJ Department of Children and Families (CCC128557), with Procare check-in and release only to adults you authorize.',
     excerpt: 'Licensed by NJ DCF (CCC128557), with secure Procare check-in and release only to authorized adults.',
     highlights: ['Licensed by NJ DCF, license ID CCC128557', 'Procare check-in and check-out', 'Release only to authorized adults', 'CPR and first aid trained staff', 'Security camera at the entrance', 'Wheelchair accessible entrance and parking'],
     body: md`
@@ -480,7 +480,7 @@ const earlyServices = [
     ageRange: 'Ages 4 to 5',
     image: IMG.alphabetRug(),
     intro:
-      'At Uriah Child Care in Vineland, NJ, we get 4 and 5-year-olds ready for kindergarten with the skills teachers look for: knowing letters and sounds, counting, writing their name, following directions and getting along with classmates. It all happens through play in our licensed center, open Monday to Saturday.',
+      'We get 4 and 5-year-olds ready for kindergarten: letters and sounds, counting, writing their name and getting along with classmates.',
     excerpt: 'The skills kindergarten teachers look for, built through play: letters, counting, routines and making friends.',
     highlights: ['Letters, sounds and early reading', 'Counting and number sense', 'Holding a pencil and writing their name', 'Routines, listening and following directions', 'Making friends and solving problems'],
     body: md`
@@ -532,7 +532,7 @@ See [early learning at Uriah](/early-learning-vineland-nj/) and our [play-based 
     ageRange: 'Ages 2.5 to 5',
     image: IMG.foamBoy(),
     intro:
-      'Uriah Child Care in Vineland, NJ uses a play-based curriculum built on Experience Early Learning. Children learn language, math, science, art and social skills through hands-on play, weekly themes and daily circle time, and a developmental continuum helps us track each child’s progress.',
+      'A play-based curriculum built on Experience Early Learning, with weekly themes, daily circle time and hands-on play.',
     excerpt: 'Our Experience Early Learning curriculum: weekly themes, hands-on play and a skills continuum for each child.',
     highlights: ['Experience Early Learning curriculum', 'Weekly themes', 'Daily circle time', 'Developmental continuum of skills', 'Language, math, science and art'],
     dayPlan: earlyDay,
@@ -581,7 +581,7 @@ At pickup we tell you about your child's day, and the Procare app keeps you post
     ageRange: 'Ages 2.5 to 4',
     image: IMG.sink(),
     intro:
-      'Your child does not need to be potty trained to join Uriah Child Care in Vineland, NJ. We care for children from 2½ and support potty training together with parents, using the same words and routine at home and at the center, with patience and lots of praise.',
+      'Your child doesn\'t need to be potty trained to join. We work with you, using the same words and routine at home and here.',
     excerpt: 'No need to be potty trained. We work on it with you, with the same routine at home and at the center.',
     highlights: ['Children do not need to be potty trained', 'Same routine at home and at the center', 'Regular bathroom breaks', 'Patience and praise, never shame'],
     body: md`
@@ -633,7 +633,7 @@ const afterSchoolServices = [
     schedule: 'From 6 am, Monday to Saturday',
     image: IMG.morning(),
     intro:
-      'Uriah Child Care opens at 6 am, so school-age children in Vineland, NJ have a safe, warm place to start the day before school. Breakfast is served from 7:30 am, and kids get a quiet start before school. We accept NJ childcare subsidy (CCAP) for families who qualify.',
+      'We open at 6 am, so school-age kids have a safe, warm place to start the day. Breakfast is served from 7:30 am.',
     excerpt: 'Drop off from 6 am. Breakfast and a calm start to the day before school.',
     highlights: ['Drop-off from 6 am', 'Breakfast through the USDA food program (CACFP)', 'Quiet time and reading', 'Ages up to 13'],
     dayPlan: [
@@ -682,7 +682,7 @@ Many families pair before school care with our [after school program](/after-sch
     ageRange: 'School-age children up to 13',
     image: IMG.tables(),
     intro:
-      'Children in the Uriah Child Care after school program in Vineland, NJ get daily homework time at a quiet table, with staff who help with reading and check that work gets done. That means less homework stress at night for parents coming home from work.',
+      'Daily homework time at a quiet table, with staff who help with reading and check the work gets done.',
     excerpt: 'Daily homework time with help on reading and checking work, so evenings are easier at home.',
     highlights: ['Daily homework time after snack', 'Help with reading', 'Work checked before play', 'Less homework stress at night'],
     body: md`
@@ -730,7 +730,7 @@ See our full [after school program](/after-school-program-vineland-nj/) or [book
     schedule: 'Full days all summer, Monday to Saturday, 6 am to 11 pm',
     image: IMG.foamSummer(),
     intro:
-      'Uriah Child Care offers summer child care in Vineland, NJ for school-age children up to 13. When school is out, kids spend full days with us at our licensed center, open Monday to Saturday from 6 am to 11 pm, with meals, play and learning to keep them busy. We accept NJ childcare subsidy (CCAP) for families who qualify.',
+      'Full summer days for school-age kids up to 13, with meals, play and learning. Open Monday to Saturday, 6 am to 11 pm.',
     excerpt: 'Full-day summer care for school-age kids up to 13, Monday to Saturday, 6 am to 11 pm.',
     highlights: ['Full days when school is out', 'Open Monday to Saturday, 6 am to 11 pm', 'Meals and snacks (CACFP)', 'Reading, games, art and play', 'Ages up to 13', 'NJ childcare subsidy (CCAP) accepted'],
     dayPlan: [
@@ -785,7 +785,7 @@ Space can fill up before summer, so call [(856) 455-6701](tel:8564556701) or [bo
     schedule: 'Full days on school holidays, breaks and snow days',
     image: IMG.flag(),
     intro:
-      'School closed but you still have to work? Uriah Child Care offers full-day child care in Vineland, NJ on school holidays, breaks, teacher days and snow days for school-age children up to 13. We are open Monday to Saturday, 6 am to 11 pm, and accept NJ childcare subsidy (CCAP).',
+      'School closed but you still have to work? Full-day care on holidays, breaks, teacher days and snow days for kids up to 13.',
     excerpt: 'Full-day care on school holidays, breaks, teacher days and snow days.',
     highlights: ['School holidays and breaks', 'Teacher in-service days', 'Snow days', 'Full days, 6 am to 11 pm', 'Meals and snacks (CACFP)', 'Ages up to 13'],
     dayPlan: [
@@ -842,7 +842,7 @@ const shiftServices = [
     schedule: 'From 6 am, Monday to Saturday',
     image: IMG.entrance(),
     intro:
-      'Uriah Child Care opens at 6 am, Monday to Saturday, so parents in Vineland, NJ who work first shift can drop off before work. Children ages 2.5 and up get breakfast and a calm start to their day. We accept NJ childcare subsidy (CCAP).',
+      'We open at 6 am, Monday to Saturday, so you can drop off before first shift. Breakfast and a calm start to the day.',
     excerpt: 'Drop off from 6 am, Monday to Saturday, with breakfast and a calm start to the day.',
     highlights: ['Open from 6 am', 'Monday to Saturday', 'Breakfast served (CACFP)', 'Ages 2.5 and up'],
     dayPlan: [
@@ -897,7 +897,7 @@ See all [shift care](/child-care-vineland-nj/), or call [(856) 455-6701](tel:856
     schedule: 'Evenings, Monday to Saturday, until 11 pm',
     image: IMG.sunset(),
     intro:
-      'Uriah Child Care offers evening child care in Vineland, NJ for parents who work second shift. Children ages 2.5 and up get dinner, play and a calm evening routine at our licensed center, which stays open until 11 pm, Monday to Saturday. We accept NJ childcare subsidy (CCAP).',
+      'Evening care for parents who work second shift. Dinner, play and a calm routine, open until 11 pm, Monday to Saturday.',
     excerpt: 'Second shift care with dinner and a calm evening routine, open until 11 pm.',
     highlights: ['Second shift care', 'Open until 11 pm', 'Evening meal served', 'Calm evening routine', 'Ages 2.5 and up'],
     dayPlan: [
@@ -951,7 +951,7 @@ See [late evening care until 11 pm](/late-evening-child-care-vineland-nj/), or [
     schedule: 'Until 11 pm, Monday to Saturday',
     image: IMG.porch(),
     intro:
-      'Uriah Child Care is open until 11 pm, Monday to Saturday, for parents in the Vineland, NJ area who work late. Need care after 11 pm? Call us to talk about it.',
+      'Open until 11 pm, Monday to Saturday, for parents who work late. Need care after 11 pm? Call us.',
     excerpt: 'Care until 11 pm, Monday to Saturday, for parents who work late.',
     highlights: ['Open until 11 pm', 'Monday to Saturday', 'Dinner served', 'After 11 pm? Call us'],
     dayPlan: [
@@ -1004,7 +1004,7 @@ Call [(856) 455-6701](tel:8564556701) to talk about your hours, or see [evening 
     schedule: 'Saturday, 6 am to 11 pm',
     image: IMG.springTree(),
     intro:
-      'Uriah Child Care is open on Saturday from 6 am to 11 pm, so parents in Vineland, NJ who work Saturdays have licensed child care they can count on. Children ages 2.5 and up are welcome. We accept NJ childcare subsidy (CCAP). We are closed on Sunday.',
+      'Open Saturdays from 6 am to 11 pm, so parents who work weekends have care they can count on. Closed on Sunday.',
     excerpt: 'Open Saturday, 6 am to 11 pm, for parents who work Saturdays.',
     highlights: ['Open Saturday', '6 am to 11 pm', 'Same caring staff', 'Ages 2.5 and up'],
     body: md`
@@ -1049,7 +1049,7 @@ Some families use us only on Saturdays; others every day we are open. See [full-
     ageRange: 'Ages 2.5 and up',
     image: IMG.classroom(),
     intro:
-      'Uriah Child Care in Vineland, NJ offers full-time and part-time child care for children ages 2.5 and up. Choose the days and hours you need between 6 am and 11 pm, Monday to Saturday, and we will build a schedule around your work.',
+      'Full-time or part-time care for ages 2.5 and up. Pick the days and hours you need, 6 am to 11 pm, Monday to Saturday.',
     excerpt: 'Choose the days and hours you need, between 6 am and 11 pm, Monday to Saturday.',
     highlights: ['Full-time schedules', 'Part-time schedules', 'Pick your days and hours', 'Open Monday to Saturday, 6 am to 11 pm'],
     body: md`
@@ -1098,7 +1098,7 @@ Tuition depends on your child's age and schedule. See [tuition and how to pay](/
     schedule: 'Monday to Saturday, 6 am to 11 pm',
     image: IMG.lobby(),
     intro:
-      'Uriah Child Care is built for parents in Vineland, NJ who work shifts: nurses, warehouse and plant workers, retail and restaurant staff. We are open Monday to Saturday, early morning to 11 pm, for children ages 2.5 and up, and we accept NJ childcare subsidy (CCAP).',
+      'Built for parents who work shifts, from nurses to warehouse and restaurant staff. Open Monday to Saturday, early morning to 11 pm.',
     excerpt: 'Built for nurses, warehouse, plant, retail and restaurant workers: care 6 am to 11 pm, Monday to Saturday.',
     highlights: ['Early morning to 11 pm', 'Open Monday to Saturday', 'Rotating schedules welcome', 'CCAP accepted'],
     body: md`
@@ -1163,7 +1163,7 @@ export const cities = [
     schedule: 'Monday to Saturday, 6 am to 11 pm',
     image: IMG.buildingRamp(),
     intro:
-      'Uriah Child Care serves Millville, NJ families from our licensed center at 30 W Chestnut Ave in Vineland, about a 15-minute drive. Ms. Paulette cared for Millville children for years before opening the Vineland center. We are open Monday to Saturday, 6 am to 11 pm, for ages 2.5 and up.',
+      'Licensed child care for Millville families, about 15 minutes away. Ms. Paulette cared for Millville children for years before opening in Vineland.',
     excerpt: 'Ms. Paulette has cared for Millville children for years. Our Vineland center is about 15 minutes away.',
     highlights: ['About 15 minutes from Millville', 'Open Monday to Saturday, 6 am to 11 pm', 'Ages 2.5 and up', 'NJ childcare subsidy (CCAP) accepted'],
     body: md`
@@ -1209,7 +1209,7 @@ We accept [NJ childcare subsidy (CCAP)](/ccap-child-care-vineland-nj/) for famil
     schedule: 'Monday to Saturday, 6 am to 11 pm',
     image: IMG.parkingLot(),
     intro:
-      'Uriah Child Care welcomes Bridgeton, NJ families at our licensed center at 30 W Chestnut Ave in Vineland, a 15 to 20-minute drive. We are open Monday to Saturday, 6 am to 11 pm, with toddler care, kindergarten readiness and before and after school care for ages 2.5 and up. We accept NJ childcare subsidy (CCAP).',
+      'Licensed child care for Bridgeton families, a 15 to 20-minute drive away. Open Monday to Saturday, 6 am to 11 pm, for ages 2.5 and up.',
     excerpt: 'Licensed care for Bridgeton families at our Vineland center, 15 to 20 minutes away, open Monday to Saturday.',
     highlights: ['15 to 20 minutes from Bridgeton', 'Open Monday to Saturday, 6 am to 11 pm', 'Ages 2.5 and up', 'NJ childcare subsidy (CCAP) accepted'],
     body: md`

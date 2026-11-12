@@ -120,7 +120,7 @@ export const pages = [
         layout: 'card',
         heading: 'Book a tour of our Vineland child care center',
         subheading:
-          'See the classroom, meet Ms. Paulette, and ask every question you have. Fill in the short form below or call us.',
+          'See the classroom, meet Ms. Paulette and ask your questions. Fill in the form or call us.',
         // No photo or button here: on the tour page the form starts right below.
         accent: 'coral',
         showPhone: true,
@@ -147,7 +147,7 @@ export const pages = [
         layout: 'split',
         heading: 'Meet Ms. Paulette',
         subheading:
-          'Ms. Paulette (Paulette Senior) has cared for Cumberland County children since 2005. Today she runs Uriah Child Care in Vineland with her daughter, Tameca Burke, our director.',
+          'Caring for Cumberland County children since 2005, now with her daughter, director Tameca Burke.',
         image: IMG.springFlag(),
         accent: 'sunshine',
         buttons: [tourBtn('Book a tour with Ms. Paulette')],
@@ -194,7 +194,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
         layout: 'card',
         heading: 'Take a look around our center',
         subheading:
-          'A bright, welcoming child care center with a secure entrance, Procare check-in and an accessible ramp and parking. Here is what you will see when you visit.',
+          'A bright, welcoming center with a secure entrance, Procare check-in and an accessible ramp.',
         image: IMG.porch(),
         accent: 'sky',
         buttons: [tourBtn('Book a tour to see it in person')],
@@ -270,7 +270,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
       block('hero', {
         layout: 'card',
         heading: 'Questions parents ask',
-        subheading: 'Hours, ages, cost, CCAP, meals, safety and how to enroll. Can’t find your answer? Call us at (856) 455-6701.',
+        subheading: 'Hours, ages, cost, CCAP, meals and safety. Can\'t find your answer? Call us.',
         image: IMG.centers(),
         accent: 'sunshine',
         buttons: [tourBtn()],
@@ -292,7 +292,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
         layout: 'card',
         heading: 'Tuition and NJ childcare subsidy (CCAP)',
         subheading:
-          'Tuition depends on your child’s age, the days you need and your shift. Call us or book a tour and we will give you a clear price for your schedule. We accept NJ childcare subsidy (CCAP) for families who qualify.',
+          'Tuition depends on your child\'s age and schedule. Call or book a tour for a clear price. We accept CCAP.',
         image: IMG.entrance(),
         accent: 'sage',
         buttons: [tourBtn('Get a price for your schedule')],
@@ -343,7 +343,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
       block('hero', {
         layout: 'split',
         heading: 'Work at Uriah Child Care in Vineland',
-        subheading: 'We are a small, family-run center at 30 W Chestnut Ave. If you love caring for young children, we would like to hear from you.',
+        subheading: 'A small, family-run center in Vineland. If you love caring for young children, we\'d like to hear from you.',
         showPhone: false,
         background: 'white',
       }),
