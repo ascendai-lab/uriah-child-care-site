@@ -1,0 +1,484 @@
+{
+  "_createdAt": "2026-11-04T13:04:38Z",
+  "_id": "area-bridgeton",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "area-bridgeton",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "serviceArea",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sky",
+  "ageRange": "Ages 2.5 and up",
+  "body": [
+    {
+      "_key": "k0015j",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015k",
+          "_type": "span",
+          "marks": [],
+          "text": "Child care for Bridgeton parents"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0015l",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015m",
+          "_type": "span",
+          "marks": [],
+          "text": "Many Bridgeton parents work in Vineland, at the hospital, in warehouses and food plants or in stores along Delsea Drive. Our center at 30 W Chestnut Ave is a 15 to 20-minute drive from Bridgeton, depending on where in Bridgeton you live. Many families take Route 56, which becomes Landis Avenue in Vineland, then head south on Delsea Drive to W Chestnut Ave. You can drop off on the way to work."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0015n",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015o",
+          "_type": "span",
+          "marks": [],
+          "text": "Open when you work"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0015p",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015q",
+          "_type": "span",
+          "marks": [],
+          "text": "We are open "
+        },
+        {
+          "_key": "k0015r",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Monday to Saturday, 6 am to 11 pm"
+        },
+        {
+          "_key": "k0015s",
+          "_type": "span",
+          "marks": [],
+          "text": ", with "
+        },
+        {
+          "_key": "k0015u",
+          "_type": "span",
+          "marks": [
+            "k0015t"
+          ],
+          "text": "early morning to late evening care"
+        },
+        {
+          "_key": "k0015v",
+          "_type": "span",
+          "marks": [],
+          "text": " and "
+        },
+        {
+          "_key": "k0015x",
+          "_type": "span",
+          "marks": [
+            "k0015w"
+          ],
+          "text": "Saturday daycare"
+        },
+        {
+          "_key": "k0015y",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0015t",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-shift-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k0015w",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-weekend",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0015z",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00160",
+          "_type": "span",
+          "marks": [],
+          "text": "School-age kids from Bridgeton"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k00161",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00162",
+          "_type": "span",
+          "marks": [],
+          "text": "Bridgeton Public Schools run K–8 schools such as Broad Street, Buckshutem Road, Cherry Street, Indian Avenue, Quarter Mile Lane and West Avenue School. Bus routes are set by the district, so ask Bridgeton Public Schools whether a stop in Vineland is possible. Our "
+        },
+        {
+          "_key": "k00164",
+          "_type": "span",
+          "marks": [
+            "k00163"
+          ],
+          "text": "after school program"
+        },
+        {
+          "_key": "k00165",
+          "_type": "span",
+          "marks": [],
+          "text": " is open until 11 pm, with homework help on every shift, dinner at 6 pm and an evening snack at 9 pm."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k00163",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k00166",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00167",
+          "_type": "span",
+          "marks": [],
+          "text": "Programs for Bridgeton families"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k00168",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016a",
+          "_type": "span",
+          "marks": [
+            "k00169"
+          ],
+          "text": "Toddler care"
+        },
+        {
+          "_key": "k0016b",
+          "_type": "span",
+          "marks": [],
+          "text": " from 2½"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k00169",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-toddler-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015a",
+          "_type": "span",
+          "marks": [
+            "k00159"
+          ],
+          "text": "Early learning"
+        },
+        {
+          "_key": "k0015b",
+          "_type": "span",
+          "marks": [],
+          "text": " and "
+        },
+        {
+          "_key": "k0015d",
+          "_type": "span",
+          "marks": [
+            "k0015c"
+          ],
+          "text": "kindergarten readiness"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k00159",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-preschool",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k0015c",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-kindergarten-readiness",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016i",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016k",
+          "_type": "span",
+          "marks": [
+            "k0016j"
+          ],
+          "text": "Before and after school care"
+        },
+        {
+          "_key": "k0016l",
+          "_type": "span",
+          "marks": [],
+          "text": " up to 13"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k0016j",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016m",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016n",
+          "_type": "span",
+          "marks": [],
+          "text": "We accept "
+        },
+        {
+          "_key": "k0016p",
+          "_type": "span",
+          "marks": [
+            "k0016o"
+          ],
+          "text": "NJ childcare subsidy (CCAP)"
+        },
+        {
+          "_key": "k0016q",
+          "_type": "span",
+          "marks": [],
+          "text": " for families who qualify. "
+        },
+        {
+          "_key": "k0016s",
+          "_type": "span",
+          "marks": [
+            "k0016r"
+          ],
+          "text": "Book a tour"
+        },
+        {
+          "_key": "k0016t",
+          "_type": "span",
+          "marks": [],
+          "text": " or call "
+        },
+        {
+          "_key": "k0016v",
+          "_type": "span",
+          "marks": [
+            "k0016u"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k0016w",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0016o",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-ccap",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k0016r",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k0016u",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "city": "Bridgeton",
+  "driveTime": "About 15 to 20 minutes by car",
+  "excerpt": "Licensed care for Bridgeton families at our Vineland center, 15 to 20 minutes away, open Monday to Saturday.",
+  "faqs": [
+    {
+      "_key": "k0006j",
+      "_type": "faqItem",
+      "answer": "Our center is at 30 W Chestnut Ave in Vineland, a 15 to 20-minute drive from Bridgeton, depending on where in Bridgeton you start.",
+      "question": "How far is your center from Bridgeton?"
+    },
+    {
+      "_key": "k0006k",
+      "_type": "faqItem",
+      "answer": "Bus routes are set by each school district, so ask Bridgeton Public Schools whether a stop in Vineland is possible. School buses can pick up and drop off at our center, and parents can always drop off and pick up here.",
+      "question": "Will my child's Bridgeton school bus stop at your center?"
+    },
+    {
+      "_key": "k0006l",
+      "_type": "faqItem",
+      "answer": "Yes. Bridgeton and Vineland are both in Cumberland County, and we accept NJ childcare subsidy (CCAP) for families who qualify.",
+      "question": "Can I use CCAP if I live in Bridgeton?"
+    }
+  ],
+  "highlights": [
+    "15 to 20 minutes from Bridgeton",
+    "Open Monday to Saturday, 6 am to 11 pm",
+    "Ages 2.5 and up",
+    "NJ childcare subsidy (CCAP) accepted"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Uriah Child Care building and parking lot in Vineland",
+    "asset": {
+      "_ref": "image-bf4e1041437bd713a5bd5d9bf40535c783054b63-1800x1350-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Licensed child care for Bridgeton families, a 15 to 20-minute drive away. Open Monday to Saturday, 6 am to 11 pm, for ages 2.5 and up.",
+  "keyword": "daycare bridgeton nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 2,
+  "related": [
+    {
+      "_key": "k0005m",
+      "_ref": "category-shift-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0005n",
+      "_ref": "category-after-school",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0005o",
+      "_ref": "service-ccap",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0005p",
+      "_ref": "area-millville",
+      "_type": "reference"
+    }
+  ],
+  "reviews": [
+    {
+      "_key": "k00064",
+      "_ref": "review-rockay-davis",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Monday to Saturday, 6 am to 11 pm",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Child care for Bridgeton, NJ families at our licensed Vineland center, 15 to 20 minutes away. Open Monday to Saturday, 6 am to 11 pm. Ages 2.5+.",
+    "metaTitle": "Daycare for Bridgeton, NJ Families | Uriah Child Care"
+  },
+  "shortTitle": "Bridgeton, NJ",
+  "slug": {
+    "_type": "slug",
+    "current": "bridgeton-nj"
+  },
+  "state": "NJ",
+  "title": "Child care for Bridgeton, NJ families"
+}

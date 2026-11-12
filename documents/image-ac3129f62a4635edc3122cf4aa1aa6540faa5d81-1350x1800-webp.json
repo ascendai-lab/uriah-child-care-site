@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:27:15Z",
+  "_id": "image-ac3129f62a4635edc3122cf4aa1aa6540faa5d81-1350x1800-webp",
+  "_rev": "6fXA2k3jCstDiCIQOrrqj9",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:27:15Z",
+  "assetId": "ac3129f62a4635edc3122cf4aa1aa6540faa5d81",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "diCQDWt7acaxk]ayacf5XWV@jXj[XBjrj@kCWZs.ofkD",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGwAAAQQDAAAAAAAAAAAAAAAAAAEEBQYCAwf/xAAkEAACAQMEAgIDAAAAAAAAAAABAgMABBEFITFBEhMicQZRkf/EABgBAAIDAAAAAAAAAAAAAAAAAAIFAAQG/8QAHBEAAgIDAQEAAAAAAAAAAAAAAQIAEQMEBSFB/9oADAMBAAIRAxEAPwDHTBb37EQ+Q8eVYdU8vDBEjnGPXyB39VCx2V/a6ZI+nyQNOq/Ni+xqty6rJMji6uLcyIMkBzzTJOrlxoFCi5UbTR2smXK3d5o/NfFVJ2BI4ormY/JZOkiAG3JooR08teyHTT5LEs9xIzImcHkYx/abz+lZClzbQSN0Mb1IXPD/AHUcd52z1WfEZstTSYLLJxp8Dfsk0UuoRos/xUDIBoowYNT/2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#51482c",
+        "foreground": "#fff",
+        "population": 1.5,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#6e5a2c",
+        "foreground": "#fff",
+        "population": 0.01,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5888e0",
+        "foreground": "#fff",
+        "population": 5.6,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#96a7c7",
+        "foreground": "#000",
+        "population": 1.05,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#6e9ef6",
+        "foreground": "#000",
+        "population": 1.89,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5c8ca4",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5888e0",
+        "foreground": "#fff",
+        "population": 5.6,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "2vcJPQZqd392uHaIiJdodoiAhAlH"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "exterior-morning-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/ac3129f62a4635edc3122cf4aa1aa6540faa5d81-1350x1800.webp",
+  "sha1hash": "ac3129f62a4635edc3122cf4aa1aa6540faa5d81",
+  "size": 604874,
+  "uploadId": "f0bab30e6ab6483f968add4ad3ddfd564201e944",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/ac3129f62a4635edc3122cf4aa1aa6540faa5d81-1350x1800.webp"
+}

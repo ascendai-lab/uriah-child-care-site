@@ -1,0 +1,64 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-tour",
+  "_rev": "OXKzsTJ7Efs4i6zOkPoNqf",
+  "_type": "faq",
+  "_updatedAt": "2026-11-04T13:04:58Z",
+  "answer": [
+    {
+      "_key": "k000az",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000b1",
+          "_type": "span",
+          "marks": [
+            "k000b0"
+          ],
+          "text": "Book a tour"
+        },
+        {
+          "_key": "k000b2",
+          "_type": "span",
+          "marks": [],
+          "text": " online or call us at "
+        },
+        {
+          "_key": "k000b4",
+          "_type": "span",
+          "marks": [
+            "k000b3"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000b5",
+          "_type": "span",
+          "marks": [],
+          "text": ". Tours take about 20 minutes, and you are welcome to bring your little one."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000b0",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000b3",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Enrolling",
+  "order": 12,
+  "question": "How do I schedule a tour?"
+}

@@ -1,0 +1,50 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-license",
+  "_rev": "OXKzsTJ7Efs4i6zOkPoNqf",
+  "_type": "faq",
+  "_updatedAt": "2026-11-04T13:04:58Z",
+  "answer": [
+    {
+      "_key": "k000au",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000av",
+          "_type": "span",
+          "marks": [],
+          "text": "Yes. We are licensed by the New Jersey Department of Children and Families as a child care center, license ID CCC128557. Our license and the DCF information for parents are posted in the lobby. See "
+        },
+        {
+          "_key": "k000ax",
+          "_type": "span",
+          "marks": [
+            "k000aw"
+          ],
+          "text": "safety and licensing"
+        },
+        {
+          "_key": "k000ay",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000aw",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-safe-licensed",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Safety",
+  "order": 11,
+  "question": "Are you licensed?"
+}

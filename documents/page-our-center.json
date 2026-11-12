@@ -1,0 +1,250 @@
+{
+  "_createdAt": "2026-11-04T13:04:38Z",
+  "_id": "page-our-center",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "page-our-center",
+      "rev": "1tk6J7MImmXVkYKAfaoz4X"
+    }
+  },
+  "_type": "page",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "pageBuilder": [
+    {
+      "_key": "k00080",
+      "_type": "hero",
+      "accent": "sky",
+      "buttons": [
+        {
+          "_key": "k0007z",
+          "_type": "ctaButton",
+          "label": "Book a tour to see it in person",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-tour",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "variant": "primary"
+        }
+      ],
+      "eyebrow": "30 W Chestnut Ave, Vineland",
+      "heading": "Take a look around our center",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Covered front porch with a security camera at Uriah Child Care",
+        "asset": {
+          "_ref": "image-2836d6d41cd562a122e093cbd6c6a5167f04beb6-1350x1800-webp",
+          "_type": "reference"
+        }
+      },
+      "layout": "card",
+      "subheading": "A bright, welcoming center with a secure entrance, Procare check-in and an accessible ramp."
+    },
+    {
+      "_key": "k00089",
+      "_type": "galleryBlock",
+      "background": "white",
+      "heading": "Inside and out",
+      "images": [
+        {
+          "_key": "k00081",
+          "_type": "imageWithAlt",
+          "alt": "Day Care flag on the front lawn of Uriah Child Care in Vineland on a sunny day",
+          "asset": {
+            "_ref": "image-07a2246e94384014a006a440bb142a84edd96c48-1350x1800-webp",
+            "_type": "reference"
+          },
+          "caption": "Our building on W Chestnut Ave"
+        },
+        {
+          "_key": "k00082",
+          "_type": "imageWithAlt",
+          "alt": "Classroom with an alphabet rug, reading shelves and a horseshoe table at Uriah Child Care",
+          "asset": {
+            "_ref": "image-310f0f16796cdea7b6eecab19c5a8d92552cb2c4-1350x1800-webp",
+            "_type": "reference"
+          },
+          "caption": "Reading rug and shelves"
+        },
+        {
+          "_key": "k00083",
+          "_type": "imageWithAlt",
+          "alt": "Toy and learning centers in a bright classroom at Uriah Child Care",
+          "asset": {
+            "_ref": "image-a47c8f11b531a3df12c3f829c0f560ce88ceeaee-1350x1800-webp",
+            "_type": "reference"
+          },
+          "caption": "Learning centers"
+        },
+        {
+          "_key": "k00084",
+          "_type": "imageWithAlt",
+          "alt": "Colorful play rug with toys and cubbies at Uriah Child Care in Vineland",
+          "asset": {
+            "_ref": "image-b5dc3b30dc0ab49b24a5f9f7be338212762ed205-1350x1800-webp",
+            "_type": "reference"
+          },
+          "caption": "Play rug and cubbies"
+        },
+        {
+          "_key": "k00085",
+          "_type": "imageWithAlt",
+          "alt": "Classroom tables, an easel and toy shelves at Uriah Child Care in Vineland",
+          "asset": {
+            "_ref": "image-e3a6c44e778dc9f17cb0c8edd47a2c8b4e1c09b4-1350x1800-webp",
+            "_type": "reference"
+          },
+          "caption": "Tables and art easel"
+        },
+        {
+          "_key": "k00087",
+          "_type": "imageWithAlt",
+          "alt": "Open play hall with a basketball hoop at Uriah Child Care",
+          "asset": {
+            "_ref": "image-a493ca114ef2c230c1ac0a59e99e4f2183c57cf4-1350x1800-webp",
+            "_type": "reference"
+          },
+          "caption": "Open play hall"
+        },
+        {
+          "_key": "fall01",
+          "_type": "imageWithAlt",
+          "alt": "Lobby welcome table with fall decor, the November newsletter and NJ child care subsidy flyers at Uriah Child Care",
+          "asset": {
+            "_ref": "image-5b71eb9d092ae6b0460581419ba406b3cb7a1628-1800x1753-webp",
+            "_type": "reference"
+          },
+          "caption": "Welcome table in the lobby"
+        },
+        {
+          "_key": "fall02",
+          "_type": "imageWithAlt",
+          "alt": "Teal lobby chairs, a plant and pumpkins under the window at Uriah Child Care",
+          "asset": {
+            "_ref": "image-2c5ea85cca45533a345d87dacb3122ca92ed93a4-1800x1350-webp",
+            "_type": "reference"
+          },
+          "caption": "Lobby seating, dressed for fall"
+        },
+        {
+          "_key": "fall03",
+          "_type": "imageWithAlt",
+          "alt": "Lobby seating with a fall wreath and pumpkins at Uriah Child Care in Vineland",
+          "asset": {
+            "_ref": "image-dbbdb70bdb9b0377f4f992fb09e8401ebee7505a-1247x1800-webp",
+            "_type": "reference"
+          },
+          "caption": "A cozy spot to wait at pickup"
+        },
+        {
+          "_key": "kids01",
+          "_type": "imageWithAlt",
+          "alt": "Children playing in the fenced, shaded outdoor play yard at Uriah Child Care in Vineland",
+          "asset": {
+            "_ref": "image-c190a59718859ab7d0c586426c78d7177f9dcc3b-480x640-webp",
+            "_type": "reference"
+          },
+          "caption": "Our fenced, shaded play yard"
+        },
+        {
+          "_key": "kids02",
+          "_type": "imageWithAlt",
+          "alt": "Children holding up paper watermelon slices they made for Watermelon Wednesday at Uriah Child Care",
+          "asset": {
+            "_ref": "image-ab224a6cc0b27dcd88614970dbedf8e88201161d-640x480-webp",
+            "_type": "reference"
+          },
+          "caption": "Watermelon Wednesday crafts"
+        },
+        {
+          "_key": "kids03",
+          "_type": "imageWithAlt",
+          "alt": "Girl eating birthday cake at a classroom table at Uriah Child Care",
+          "asset": {
+            "_ref": "image-3b04af116b237f676875e22f9e9fe12b64fda7e7-480x640-webp",
+            "_type": "reference"
+          },
+          "caption": "Birthday cake at the table"
+        }
+      ],
+      "intro": "Our building, classrooms and play yard. Photos of children are shared with their parents’ written permission."
+    },
+    {
+      "_key": "k0008g",
+      "_type": "featureGrid",
+      "background": "default",
+      "columns": 3,
+      "heading": "What parents notice",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Hallway and accessible restroom at Uriah Child Care",
+        "asset": {
+          "_ref": "image-8790199b65ffa64bde9c67e2be7e16e8902222a3-1350x1800-webp",
+          "_type": "reference"
+        }
+      },
+      "imageShape": "arch",
+      "items": [
+        {
+          "_key": "k0008a",
+          "_type": "feature",
+          "description": "Check your child in and out with Procare, and get updates about their day.",
+          "title": "Procare check-in"
+        },
+        {
+          "_key": "k0008b",
+          "_type": "feature",
+          "description": "A covered porch with a security camera at the front door.",
+          "title": "Secure entrance"
+        },
+        {
+          "_key": "k0008c",
+          "_type": "feature",
+          "description": "A wheelchair ramp, accessible parking and an accessible restroom.",
+          "title": "Accessible for everyone"
+        },
+        {
+          "_key": "k0008d",
+          "_type": "feature",
+          "description": "Learning centers, books, art supplies and a picture schedule children can follow.",
+          "title": "A classroom made for play"
+        },
+        {
+          "_key": "k0008e",
+          "_type": "feature",
+          "description": "Our NJ DCF license (CCC128557) and the state’s information for parents.",
+          "title": "License posted in the lobby"
+        },
+        {
+          "_key": "k0008f",
+          "_type": "feature",
+          "description": "Parents mention it in their reviews: “safe and clean environment.”",
+          "title": "Clean and cared for"
+        }
+      ],
+      "style": "checklist"
+    },
+    {
+      "_key": "k0008h",
+      "_type": "testimonialsBlock",
+      "background": "muted",
+      "heading": "What parents say about our center",
+      "intro": "Real reviews from local families on Google.",
+      "mode": "all"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "See photos of Uriah Child Care at 30 W Chestnut Ave in Vineland, NJ: secure entrance, Procare check-in, classroom and accessible ramp.",
+    "metaTitle": "Our Center | Photos of Uriah Child Care in Vineland, NJ"
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "our-center"
+  },
+  "title": "Our child care center in Vineland, NJ"
+}

@@ -1,0 +1,73 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-where",
+  "_rev": "OXKzsTJ7Efs4i6zOkPoNqf",
+  "_type": "faq",
+  "_updatedAt": "2026-11-04T13:04:58Z",
+  "answer": [
+    {
+      "_key": "k000bb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000bc",
+          "_type": "span",
+          "marks": [],
+          "text": "We are at 30 W Chestnut Ave, Vineland, NJ 08360, with an accessible ramp and parking. Many of our families drive in from "
+        },
+        {
+          "_key": "k000be",
+          "_type": "span",
+          "marks": [
+            "k000bd"
+          ],
+          "text": "Millville"
+        },
+        {
+          "_key": "k000bf",
+          "_type": "span",
+          "marks": [],
+          "text": " and "
+        },
+        {
+          "_key": "k000bh",
+          "_type": "span",
+          "marks": [
+            "k000bg"
+          ],
+          "text": "Bridgeton"
+        },
+        {
+          "_key": "k000bi",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000bd",
+          "_type": "link",
+          "internal": {
+            "_ref": "area-millville",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000bg",
+          "_type": "link",
+          "internal": {
+            "_ref": "area-bridgeton",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Enrolling",
+  "order": 14,
+  "question": "Where are you, and do you serve Millville and Bridgeton?"
+}

@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-05T17:54:29Z",
+  "_id": "image-2c5ea85cca45533a345d87dacb3122ca92ed93a4-1800x1350-webp",
+  "_rev": "QCUAteQjtFGCH4SAG1M5N8",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-05T17:54:29Z",
+  "assetId": "2c5ea85cca45533a345d87dacb3122ca92ed93a4",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "VXIhT,RPxERki_~VNGRje.R-%M-pjskDoLX9Rkf7oeoe",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 1.3333333333333333,
+      "height": 1350,
+      "width": 1800
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAYHBAX/xAAhEAABBAICAgMAAAAAAAAAAAABAgMEEQAFBhITISRBYf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGhEAAgMBAQAAAAAAAAAAAAAAAREAAiEDEv/aAAwDAQACEQMRAD8AZuO8rly3nUvrZ7tkWU+rBGbNRttw9t/lzCqO4glCAkUMR5XBtlqohVBkedSzauy+tZxoUmVqn1suy1eZs2tQs3+DJc6ekAdMp26ijssEtsVE4NnzSgtRJNgfWGSnV89jOxiX5sptYURQTfrDAQsiDOz/2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5f3b30",
+        "foreground": "#fff",
+        "population": 7.47,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#652608",
+        "foreground": "#fff",
+        "population": 0.04,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#cbc4b7",
+        "foreground": "#000",
+        "population": 7.47,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#cbc4b7",
+        "foreground": "#000",
+        "population": 7.47,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#f0d1b9",
+        "foreground": "#000",
+        "population": 0.82,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#997566",
+        "foreground": "#fff",
+        "population": 1.92,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ba482a",
+        "foreground": "#fff",
+        "population": 0.01,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "YwgKDYKVZphvd4e6iHiGjNxf1f1F"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "lobby-fall-seating-pumpkins-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/2c5ea85cca45533a345d87dacb3122ca92ed93a4-1800x1350.webp",
+  "sha1hash": "2c5ea85cca45533a345d87dacb3122ca92ed93a4",
+  "size": 266840,
+  "uploadId": "2fc9c799d075550db2ff1394c64226c0fcd23df2",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/2c5ea85cca45533a345d87dacb3122ca92ed93a4-1800x1350.webp"
+}

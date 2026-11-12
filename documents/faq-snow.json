@@ -1,0 +1,50 @@
+{
+  "_createdAt": "2026-11-05T17:44:42Z",
+  "_id": "faq-snow",
+  "_rev": "Weiss0T6IziVTCaiuOyMwM",
+  "_type": "faq",
+  "_updatedAt": "2026-11-05T17:44:49Z",
+  "answer": [
+    {
+      "_key": "k000c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000c2",
+          "_type": "span",
+          "marks": [],
+          "text": "Yes. We stay open when public schools have a snow day, though we may open a little late. If we ever have to close for something like an ice storm or a power outage, we let families know as early as we can. See "
+        },
+        {
+          "_key": "k000c4",
+          "_type": "span",
+          "marks": [
+            "k000c3"
+          ],
+          "text": "school closure care"
+        },
+        {
+          "_key": "k000c5",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000c3",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-school-closure",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Hours and schedules",
+  "order": 17,
+  "question": "Are you open on snow days?"
+}

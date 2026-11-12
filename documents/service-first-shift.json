@@ -1,0 +1,371 @@
+{
+  "_createdAt": "2026-11-04T13:02:52Z",
+  "_id": "service-first-shift",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-first-shift",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sunshine",
+  "ageRange": "Ages 2.5 and up",
+  "body": [
+    {
+      "_key": "k000t3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000t4",
+          "_type": "span",
+          "marks": [],
+          "text": "Drop off from 6 am"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000t5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000t6",
+          "_type": "span",
+          "marks": [],
+          "text": "Many Vineland parents start work at 6 or 7 in the morning. We open at "
+        },
+        {
+          "_key": "k000t7",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "6 am, Monday to Saturday"
+        },
+        {
+          "_key": "k000t8",
+          "_type": "span",
+          "marks": [],
+          "text": ", so you can drop off on the way and still get to work on time."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000t9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ta",
+          "_type": "span",
+          "marks": [],
+          "text": "A gentle morning for your child"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000tb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000tc",
+          "_type": "span",
+          "marks": [],
+          "text": "Early arrivals get breakfast and a quiet start: books, puzzles and free play while the center wakes up. Toddlers and younger children join circle time and the day's activities, and school-age kids can start the day here with "
+        },
+        {
+          "_key": "k000te",
+          "_type": "span",
+          "marks": [
+            "k000td"
+          ],
+          "text": "before school care"
+        },
+        {
+          "_key": "k000tf",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000td",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-before-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000tg",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000th",
+          "_type": "span",
+          "marks": [],
+          "text": "Breakfast is included"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000ti",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000tj",
+          "_type": "span",
+          "marks": [],
+          "text": "You don't have to feed everyone before a 6 am shift. Breakfast is served from 7:30 to 9 am through the USDA Child and Adult Care Food Program (CACFP). On a typical morning that's whole-grain cereal or a muffin, fresh fruit like cantaloupe, peaches or honeydew, and milk. The menu changes every month."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000tk",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000tl",
+          "_type": "span",
+          "marks": [],
+          "text": "Who uses early morning care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000tm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000tn",
+          "_type": "span",
+          "marks": [],
+          "text": "Nurses and hospital staff starting at 7 am, warehouse and plant workers on first shift, and anyone who has to be at work before schools and most daycares open. School-age kids can stay with us until it's time for school, and school buses can pick up at the center."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000to",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000tp",
+          "_type": "span",
+          "marks": [],
+          "text": "Fast check-in"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000tq",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000tr",
+          "_type": "span",
+          "marks": [],
+          "text": "Check your child in with Procare and you're on your way."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ts",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000tt",
+          "_type": "span",
+          "marks": [],
+          "text": "See all "
+        },
+        {
+          "_key": "k000tv",
+          "_type": "span",
+          "marks": [
+            "k000tu"
+          ],
+          "text": "shift care"
+        },
+        {
+          "_key": "k000tw",
+          "_type": "span",
+          "marks": [],
+          "text": ", or call "
+        },
+        {
+          "_key": "k000ty",
+          "_type": "span",
+          "marks": [
+            "k000tx"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000tz",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000tu",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-shift-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000tx",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-shift-care",
+    "_type": "reference"
+  },
+  "dayPlan": [
+    {
+      "_key": "k0004w",
+      "_type": "dayStep",
+      "activity": "Check in with Procare and head to work.",
+      "label": "6 am drop-off"
+    },
+    {
+      "_key": "k0004x",
+      "_type": "dayStep",
+      "activity": "Books, puzzles and free play while the center wakes up.",
+      "label": "Quiet start"
+    },
+    {
+      "_key": "k0004y",
+      "_type": "dayStep",
+      "activity": "Served from 7:30 to 9 am through the USDA food program (CACFP).",
+      "label": "Breakfast"
+    },
+    {
+      "_key": "k0004z",
+      "_type": "dayStep",
+      "activity": "Circle time and play-based learning for toddlers and young children. School-age kids leave for school.",
+      "label": "Morning activities"
+    }
+  ],
+  "excerpt": "Drop off from 6 am, Monday to Saturday, with breakfast and a calm start to the day.",
+  "faqs": [
+    {
+      "_key": "k0004o",
+      "_type": "faqItem",
+      "answer": "We open at 6 am, Monday to Saturday.",
+      "question": "How early do you open?"
+    },
+    {
+      "_key": "k0004p",
+      "_type": "faqItem",
+      "answer": "Yes. Breakfast is served from 7:30 to 9 am through the USDA Child and Adult Care Food Program (CACFP).",
+      "question": "Is breakfast served for early arrivals?"
+    },
+    {
+      "_key": "k0004q",
+      "_type": "faqItem",
+      "answer": "Yes. We open at 6 am on Saturday, the same as weekdays. We are closed on Sunday.",
+      "question": "Are you open early on Saturday too?"
+    },
+    {
+      "_key": "k0004r",
+      "_type": "faqItem",
+      "answer": "Parents check children in and out with Procare.",
+      "question": "How do I check my child in?"
+    }
+  ],
+  "gbpName": "First shift child care",
+  "highlights": [
+    "Open from 6 am",
+    "Monday to Saturday",
+    "Breakfast served (CACFP)",
+    "Ages 2.5 and up"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Welcome sign at the front entrance of Uriah Child Care in Vineland",
+    "asset": {
+      "_ref": "image-9947ecb0aaaec784157590d7811ec252175966f2-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "We open at 6 am, Monday to Saturday, so you can drop off before first shift. Breakfast and a calm start to the day.",
+  "keyword": "early morning daycare vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 1,
+  "related": [
+    {
+      "_key": "k0004a",
+      "_ref": "category-shift-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0004b",
+      "_ref": "service-before-school",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0004c",
+      "_ref": "service-shift-workers",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0004d",
+      "_ref": "service-full-part-time",
+      "_type": "reference"
+    }
+  ],
+  "reviews": [
+    {
+      "_key": "k0004f",
+      "_ref": "review-marcia-antina",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "From 6 am, Monday to Saturday",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "First shift child care in Vineland, NJ. Drop off from 6 am, Monday to Saturday, with breakfast. Ages 2.5 and up. CCAP accepted.",
+    "metaTitle": "Early Morning Daycare in Vineland, NJ"
+  },
+  "shortTitle": "Early morning care",
+  "slug": {
+    "_type": "slug",
+    "current": "first-shift-child-care-vineland-nj"
+  },
+  "title": "Early morning child care in Vineland, NJ"
+}

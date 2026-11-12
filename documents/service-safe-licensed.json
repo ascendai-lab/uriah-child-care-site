@@ -1,0 +1,373 @@
+{
+  "_createdAt": "2026-11-04T13:00:34Z",
+  "_id": "service-safe-licensed",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-safe-licensed",
+      "rev": "Weiss0T6IziVTCaiuOyMwM"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sky",
+  "ageRange": "Ages 2.5 and up",
+  "body": [
+    {
+      "_key": "k000kf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000kg",
+          "_type": "span",
+          "marks": [],
+          "text": "Licensed by NJ DCF"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000kh",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ki",
+          "_type": "span",
+          "marks": [],
+          "text": "We are licensed by the New Jersey Department of Children and Families (DCF) as a child care center, license ID "
+        },
+        {
+          "_key": "k000kj",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "CCC128557"
+        },
+        {
+          "_key": "k000kk",
+          "_type": "span",
+          "marks": [],
+          "text": ". Our license and the state's information for parents are posted in the lobby, and you can look up any licensed center in New Jersey through the state's child care search."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000kl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000km",
+          "_type": "span",
+          "marks": [],
+          "text": "Safe drop-off and pickup"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000kn",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ko",
+          "_type": "span",
+          "marks": [],
+          "text": "Parents check in and out with "
+        },
+        {
+          "_key": "k000kp",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Procare"
+        },
+        {
+          "_key": "k000kq",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000kr",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ks",
+          "_type": "span",
+          "marks": [],
+          "text": "We release children only to parents and adults you authorize in writing, and we ask for photo ID from anyone we don't know, even grandparents."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000kt",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ku",
+          "_type": "span",
+          "marks": [],
+          "text": "The front door stays locked. Only staff can let visitors in, so ring the bell when you arrive. Parents are welcome to visit any time we are open."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000kv",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000kw",
+          "_type": "span",
+          "marks": [],
+          "text": "A security camera watches the front entrance."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000kx",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ky",
+          "_type": "span",
+          "marks": [],
+          "text": "Health and safety every day"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000kz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l0",
+          "_type": "span",
+          "marks": [],
+          "text": "Children wash their hands when they arrive, before meals and after using the bathroom. Ms. Paulette is certified in pediatric First Aid and CPR/AED, and every staff member must have CPR and first aid training before we hire them. Our director, Tameca Burke, has about five years of experience in child care. We use positive discipline: clear rules, redirection and praise, and never physical punishment or shaming."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000l1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l2",
+          "_type": "span",
+          "marks": [],
+          "text": "Open with parents"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000l3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l4",
+          "_type": "span",
+          "marks": [],
+          "text": "All of our staff are mandated reporters under New Jersey law. Our licensing notebook, with the state's inspection reports, is in the office, and you are welcome to read it any time we are open. You can also ask to see your own child's records."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000l5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l6",
+          "_type": "span",
+          "marks": [],
+          "text": "Built for every family"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000l7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l8",
+          "_type": "span",
+          "marks": [],
+          "text": "Our building has a wheelchair ramp, accessible parking and an accessible restroom. Come see it for yourself: "
+        },
+        {
+          "_key": "k000la",
+          "_type": "span",
+          "marks": [
+            "k000l9"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000lb",
+          "_type": "span",
+          "marks": [],
+          "text": " or call "
+        },
+        {
+          "_key": "k000ld",
+          "_type": "span",
+          "marks": [
+            "k000lc"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000le",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000l9",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000lc",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "excerpt": "Licensed by NJ DCF (CCC128557), with secure Procare check-in and release only to authorized adults.",
+  "faqs": [
+    {
+      "_key": "k0002w",
+      "_type": "faqItem",
+      "answer": "Yes. We are licensed by the NJ Department of Children and Families as a child care center, license ID CCC128557.",
+      "question": "Is Uriah Child Care licensed?"
+    },
+    {
+      "_key": "k0002x",
+      "_type": "faqItem",
+      "answer": "Parents check in and out with Procare, and we release children only to adults you authorize in writing. We ask for ID from anyone we do not know.",
+      "question": "How do you keep track of who picks up?"
+    },
+    {
+      "_key": "k0002y",
+      "_type": "faqItem",
+      "answer": "We use positive discipline: clear, simple rules, redirection and praise. We never use physical punishment, shaming or withholding food.",
+      "question": "How do you handle discipline?"
+    },
+    {
+      "_key": "k0002z",
+      "_type": "faqItem",
+      "answer": "Yes. Every staff member must have CPR and first aid training before we hire them, and Ms. Paulette is certified in pediatric First Aid and CPR/AED.",
+      "question": "Are your staff trained in CPR and first aid?"
+    }
+  ],
+  "gbpName": "Licensed child care center",
+  "highlights": [
+    "Licensed by NJ DCF, license ID CCC128557",
+    "Procare check-in and check-out",
+    "Release only to authorized adults",
+    "CPR and first aid trained staff",
+    "Security camera at the entrance",
+    "Wheelchair accessible entrance and parking"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Covered front porch with a security camera at Uriah Child Care",
+    "asset": {
+      "_ref": "image-2836d6d41cd562a122e093cbd6c6a5167f04beb6-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Licensed by the NJ Department of Children and Families (CCC128557), with Procare check-in and release only to adults you authorize.",
+  "keyword": "licensed daycare vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 4,
+  "related": [
+    {
+      "_key": "k0002q",
+      "_ref": "page-our-center",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0002r",
+      "_ref": "page-about",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0002s",
+      "_ref": "service-meals",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0002t",
+      "_ref": "page-faq",
+      "_type": "reference"
+    }
+  ],
+  "reviews": [
+    {
+      "_key": "k0002n",
+      "_ref": "review-monique-willoughby",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0002o",
+      "_ref": "review-rockay-davis",
+      "_type": "reference"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Uriah Child Care is a licensed child care center in Vineland, NJ (NJ DCF license CCC128557). Procare check-in and safe, secure pickup.",
+    "metaTitle": "Licensed Daycare in Vineland, NJ"
+  },
+  "shortTitle": "Safety and licensing",
+  "slug": {
+    "_type": "slug",
+    "current": "safe-licensed-daycare-vineland-nj"
+  },
+  "title": "Safe, licensed daycare in Vineland, NJ"
+}

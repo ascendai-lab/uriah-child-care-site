@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T12:53:03Z",
+  "_id": "image-a811e5c42da2f84dd40eef74db84b470a682a8f8-1800x1350-webp",
+  "_rev": "6fXA2k3jCstDiCIQOrGFww",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T12:53:03Z",
+  "assetId": "a811e5c42da2f84dd40eef74db84b470a682a8f8",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "VoE3#eWCV@ozoM%%a}aefRofp1ogjYf6bItTogaxj]WB",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 1.3333333333333333,
+      "height": 1350,
+      "width": 1800
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAcCAwUG/8QAIhAAAgEEAQQDAAAAAAAAAAAAAQIDAAQFEUEGEiFhFjFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAeEQABBAEFAAAAAAAAAAAAAAAAAQIDERQSEyExUf/aAAwDAQACEQMRAD8Al84yDTsttZRSByTGujvVbh6omubCJRbm2mcdrvwD6pePdgHaKVI+iD5FWwZFIRqdndWVgq8AnmrZcl9kHQN0rScncDqHHWyrFkJCbgDydb2P2il6Ze471v2aKOVILab4f//Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#3d4243",
+        "foreground": "#fff",
+        "population": 6.76,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#45471d",
+        "foreground": "#fff",
+        "population": 0.06,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#3d4243",
+        "foreground": "#fff",
+        "population": 6.76,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#abbec6",
+        "foreground": "#000",
+        "population": 0.59,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#a2c3fc",
+        "foreground": "#000",
+        "population": 0.08,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#728496",
+        "foreground": "#fff",
+        "population": 2.43,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#34a6c7",
+        "foreground": "#fff",
+        "population": 0.73,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "n+cJJYR2iYd/d3iLd6h5iIdwkwhH"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "exterior-now-enrolling-flags-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/a811e5c42da2f84dd40eef74db84b470a682a8f8-1800x1350.webp",
+  "sha1hash": "a811e5c42da2f84dd40eef74db84b470a682a8f8",
+  "size": 572738,
+  "uploadId": "60d9038de2be453d65eb6e93e20538a9e1b3caf0",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/a811e5c42da2f84dd40eef74db84b470a682a8f8-1800x1350.webp"
+}

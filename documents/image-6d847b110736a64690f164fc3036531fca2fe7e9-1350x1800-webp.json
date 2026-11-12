@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:49Z",
+  "_id": "image-6d847b110736a64690f164fc3036531fca2fe7e9-1350x1800-webp",
+  "_rev": "OXKzsTJ7Efs4i6zOkQRvGz",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:49Z",
+  "assetId": "6d847b110736a64690f164fc3036531fca2fe7e9",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dDF$Y99b%ftP~p%KNItS00NgahM{x]tRtQIUbw-:W.bc",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAMFBwIECP/EACYQAAIBBAEDAwUAAAAAAAAAAAECAwAEBRESBiExE0FRByIjYoH/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQUE/8QAHBEAAgIDAQEAAAAAAAAAAAAAAAIBEQMEEiFB/9oADAMBAAIRAxEAPwDKCDHX6QmTJ2kcpXXBn0RqmrgRNL6dtLHMB5dDtR/af1N0UMhJbtYNbCQ8i2yByrbwttJ0vjosReRRvNezbDI/ZRShmeQ5VV8FLhxbj0yY9j9qKkJcWxlbahe/jvRRQrKeuPqFlJp5Hgkijj3+NWXwKl8X1PdZJrOS+mjeeNiA/sB8Cqoh7o26krCaRLKTi5HFgRr2qrt66JitIqjLhyMz03tnTWIzVucfEXvSzkfdzj2QfiiqrsS0lnDI7MXdAzHkRs6oqJETP0o8Qf/Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#56442c",
+        "foreground": "#fff",
+        "population": 3.69,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#09235c",
+        "foreground": "#fff",
+        "population": 10.09,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#09235c",
+        "foreground": "#fff",
+        "population": 10.09,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c9ba9c",
+        "foreground": "#000",
+        "population": 0.52,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#84aac7",
+        "foreground": "#000",
+        "population": 1.87,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#85807c",
+        "foreground": "#fff",
+        "population": 4.05,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#e44c14",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "3vcJFQKkiJ6HB3eniZhHVpHfEecN"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "classroom-alphabet-rug-shelves-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/6d847b110736a64690f164fc3036531fca2fe7e9-1350x1800.webp",
+  "sha1hash": "6d847b110736a64690f164fc3036531fca2fe7e9",
+  "size": 170234,
+  "uploadId": "d4087b6a8ae0185408764200cbc2e76770f2faae",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/6d847b110736a64690f164fc3036531fca2fe7e9-1350x1800.webp"
+}

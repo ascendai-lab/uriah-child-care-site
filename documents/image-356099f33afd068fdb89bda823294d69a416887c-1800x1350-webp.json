@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:51Z",
+  "_id": "image-356099f33afd068fdb89bda823294d69a416887c-1800x1350-webp",
+  "_rev": "OXKzsTJ7Efs4i6zOkQRvs1",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:51Z",
+  "assetId": "356099f33afd068fdb89bda823294d69a416887c",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "VsEM^9o#s;ayW=%%bIozayWAo%aea~ayoIo$RiV@jubH",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 1.3333333333333333,
+      "height": 1350,
+      "width": 1800
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAYHAv/EACMQAAIBBAEDBQAAAAAAAAAAAAECAwAEBREhBjFBBxITFXH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABwRAAEEAwEAAAAAAAAAAAAAAAEAAgMhBBNRFP/aAAwDAQACEQMRAD8AbMjnsTZ41rm3mSZ96VR334pWl6ry1pfR29nbpPPKAzKQTr8pVubuGMKiglFI2xHJrWUzLfY/Lj5nQsgBYcGqXZbyDalGOA4VSoT+oLo3tXH71wd77+aKmQy90u9zSbPJ5oofTN1Ppj4v/9k=",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#494934",
+        "foreground": "#fff",
+        "population": 0.19,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#1d5267",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#9cbded",
+        "foreground": "#000",
+        "population": 10.52,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#a8bdd4",
+        "foreground": "#000",
+        "population": 0.39,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#9cbded",
+        "foreground": "#000",
+        "population": 10.52,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#76909e",
+        "foreground": "#fff",
+        "population": 7.88,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#3b9fc7",
+        "foreground": "#fff",
+        "population": 2.18,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "X+cNJYSZh2iPeXd6d5hmZ4VwVAxX"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "day-care-flag-w-chestnut-ave-vineland.webp",
+  "path": "images/lhga98wd/production/356099f33afd068fdb89bda823294d69a416887c-1800x1350.webp",
+  "sha1hash": "356099f33afd068fdb89bda823294d69a416887c",
+  "size": 522108,
+  "uploadId": "55a424b434d339abcb1732a3106f7be09d6911b6",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/356099f33afd068fdb89bda823294d69a416887c-1800x1350.webp"
+}

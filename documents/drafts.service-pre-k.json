@@ -1,0 +1,424 @@
+{
+  "_createdAt": "2026-11-04T13:00:34Z",
+  "_id": "drafts.service-pre-k",
+  "_rev": "Mj8jZDV099qjkJYi2zIfpU",
+  "_system": {
+    "base": {
+      "id": "service-pre-k",
+      "rev": "Mj8jZDV099qjkJYi2yjUXy"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-04T19:51:44Z",
+  "accent": "coral",
+  "ageRange": "Ages 4 to 5",
+  "body": [
+    {
+      "_key": "k000kv",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000kw",
+          "_type": "span",
+          "marks": [],
+          "text": "Pre-K that feels like play"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000kx",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ky",
+          "_type": "span",
+          "marks": [],
+          "text": "Four and five-year-olds learn best by doing. In our pre-K, children sort and count real objects, act out stories, build, paint and experiment, and practice letters and sounds in games. Our Experience Early Learning curriculum gives each week a theme and tracks the skills children are building."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000kz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l0",
+          "_type": "span",
+          "marks": [],
+          "text": "Skills for kindergarten"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000l1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l2",
+          "_type": "span",
+          "marks": [],
+          "text": "Recognizing letters and their sounds, and writing their own name"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000l3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l4",
+          "_type": "span",
+          "marks": [],
+          "text": "Counting, comparing and simple patterns"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000l5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l6",
+          "_type": "span",
+          "marks": [],
+          "text": "Listening during a story and answering questions"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000l7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l8",
+          "_type": "span",
+          "marks": [],
+          "text": "Following two-step directions, cleaning up and taking turns"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000l9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000la",
+          "_type": "span",
+          "marks": [],
+          "text": "Telling a teacher what they need"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000lb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000lc",
+          "_type": "span",
+          "marks": [],
+          "text": "Read more about "
+        },
+        {
+          "_key": "k000le",
+          "_type": "span",
+          "marks": [
+            "k000ld"
+          ],
+          "text": "kindergarten readiness"
+        },
+        {
+          "_key": "k000lf",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000ld",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-kindergarten-readiness",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000lg",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000lh",
+          "_type": "span",
+          "marks": [],
+          "text": "Pre-K for working parents"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000li",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000lj",
+          "_type": "span",
+          "marks": [],
+          "text": "Our pre-K runs inside a full child care day. Your child can arrive at 6 am and stay into the evening, or come on weekends, so you don't have to piece together care around a short school day."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000lk",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ll",
+          "_type": "span",
+          "marks": [],
+          "text": "Who teaches your child"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000lm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ln",
+          "_type": "span",
+          "marks": [],
+          "text": "Pre-K is led by Ms. Paulette, who has cared for local children since 2005, with our director, Tameca Burke, who has about five years of experience in child care. Ms. Paulette is certified in pediatric First Aid and CPR/AED, and every staff member must have CPR and first aid training before we hire them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000lo",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000lp",
+          "_type": "span",
+          "marks": [],
+          "text": "Is your child also eligible for public preschool?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000lq",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000lr",
+          "_type": "span",
+          "marks": [],
+          "text": "Some Vineland families also qualify for the public school district's free preschool. If you are deciding between options, call us at "
+        },
+        {
+          "_key": "k000lt",
+          "_type": "span",
+          "marks": [
+            "k000ls"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000lu",
+          "_type": "span",
+          "marks": [],
+          "text": " and we will talk it through honestly, or "
+        },
+        {
+          "_key": "k000lw",
+          "_type": "span",
+          "marks": [
+            "k000lv"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000lx",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000ls",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        },
+        {
+          "_key": "k000lv",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-preschool",
+    "_type": "reference"
+  },
+  "dayPlan": [
+    {
+      "_key": "k0000w",
+      "_type": "dayStep",
+      "activity": "From 6 am, parents check in on the Brightwheel kiosk, and children wash hands and settle in with free play.",
+      "label": "Arrival"
+    },
+    {
+      "_key": "k0000x",
+      "_type": "dayStep",
+      "activity": "Served from 7:30 to 9 am through the USDA food program (CACFP).",
+      "label": "Breakfast"
+    },
+    {
+      "_key": "k0000y",
+      "_type": "dayStep",
+      "activity": "Calendar, weather, letters, numbers and a song to start the day together.",
+      "label": "Circle time"
+    },
+    {
+      "_key": "k0000z",
+      "_type": "dayStep",
+      "activity": "Play-based activities in language, math, science and art from our Experience Early Learning curriculum.",
+      "label": "Learning centers"
+    },
+    {
+      "_key": "k00010",
+      "_type": "dayStep",
+      "activity": "Lunch at 12 noon, then a quiet rest time.",
+      "label": "Lunch and rest"
+    },
+    {
+      "_key": "k00011",
+      "_type": "dayStep",
+      "activity": "Snack at 3 pm, then stories, music and movement, and play with friends until pickup.",
+      "label": "Afternoon"
+    }
+  ],
+  "excerpt": "Play-based pre-K for 4 and 5-year-olds: letters, numbers, writing their name and getting ready for school.",
+  "faqs": [
+    {
+      "_key": "k0002v",
+      "_type": "faqItem",
+      "answer": "Our pre-K is for children ages 4 to 5, the year or two before kindergarten.",
+      "question": "What age is pre-K?"
+    },
+    {
+      "_key": "k0002w",
+      "_type": "faqItem",
+      "answer": "Yes. Pre-K learning happens inside a full child care day, and children can stay for the hours you need between 6 am and 11 pm.",
+      "question": "Is pre-K a full day?"
+    }
+  ],
+  "gbpName": "Pre-kindergarten",
+  "highlights": [
+    "For 4 and 5-year-olds",
+    "Letters, sounds and writing their name",
+    "Counting, shapes and patterns",
+    "Following directions and taking turns",
+    "Full-day care around your shift"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Colorful preschool classroom at Uriah Child Care in Vineland",
+    "asset": {
+      "_ref": "image-a404a5e0831994c49425c0711a3bcabeee604c23-1800x1176-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Uriah Child Care offers a play-based pre-K program in Vineland, NJ for 4 and 5-year-olds. Children practice letters, numbers, writing their name and following directions, so they start kindergarten confident. Our center is licensed by NJ DCF, open 7 days a week, and accepts NJ childcare subsidy (CCAP).",
+  "keyword": "pre k vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 1,
+  "related": [
+    {
+      "_key": "k0002x",
+      "_ref": "service-kindergarten-readiness",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0002y",
+      "_ref": "service-play-based-learning",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0002z",
+      "_ref": "category-preschool",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00030",
+      "_ref": "service-ccap",
+      "_type": "reference"
+    }
+  ],
+  "reviews": [
+    {
+      "_key": "k0002w",
+      "_ref": "review-marcia-antina",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Monday to Sunday, 6 am to 11 pm",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Play-based pre-K in Vineland, NJ for 4 and 5-year-olds. Letters, numbers and school skills in a licensed center open 7 days. CCAP accepted.",
+    "metaTitle": "Pre-K in Vineland, NJ | Ages 4 to 5 | Uriah Child Care"
+  },
+  "shortTitle": "Pre-K",
+  "slug": {
+    "_type": "slug",
+    "current": "pre-k-vineland-nj"
+  },
+  "title": "Pre-K in Vineland, NJ"
+}

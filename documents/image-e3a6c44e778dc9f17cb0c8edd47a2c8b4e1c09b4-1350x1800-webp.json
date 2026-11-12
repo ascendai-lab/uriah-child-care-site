@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:48Z",
+  "_id": "image-e3a6c44e778dc9f17cb0c8edd47a2c8b4e1c09b4-1350x1800-webp",
+  "_rev": "OXKzsTJ7Efs4i6zOkQRvD1",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:48Z",
+  "assetId": "e3a6c44e778dc9f17cb0c8edd47a2c8b4e1c09b4",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dQH2WZxvo}oN~qkCR%M|IUj?M{WAIUV@t6%LxvMxWCo#",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFBgf/xAAlEAACAQQBAwQDAAAAAAAAAAABAgMABAURIQYSMRNCUWEycaH/xAAXAQEAAwAAAAAAAAAAAAAAAAACAwQF/8QAHBEBAAMAAgMAAAAAAAAAAAAAAQACEQMEEiFB/9oADAMBAAIRAxEAPwDb2GHgnZWQDnwR4NSMplcnZZGWzs7WDULdod23vj4p1OqLXCxx2d/EFvUiDMkXKL9A0nh7+PLXs0s9q6iQlw2tf2ij5YRHoViT5HqhjsZCKMH2rHwKKuXuZsbOVYWiVSqj8mHP3RQRhNZyrre8jyOTaPGSl07gWlI86+D8VMF7m7EqBcTSwDwoc6q1jIIlk0qLommc7BHbgeggT9Us1xko/ZnBdRhFN/P3TsNnnxRWW6pldsqSW9gorT4+pRoMoW5rCk//2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5d3332",
+        "foreground": "#fff",
+        "population": 4.84,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#112958",
+        "foreground": "#fff",
+        "population": 1.08,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5d3332",
+        "foreground": "#fff",
+        "population": 4.84,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#b6bac4",
+        "foreground": "#000",
+        "population": 1.96,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#99b4df",
+        "foreground": "#000",
+        "population": 0,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5f82ac",
+        "foreground": "#fff",
+        "population": 0.06,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#3563ad",
+        "foreground": "#fff",
+        "population": 0.1,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "IQgODQKJeI9nV2hXh2qHhwhJtlB1"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "classroom-tables-easel-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/e3a6c44e778dc9f17cb0c8edd47a2c8b4e1c09b4-1350x1800.webp",
+  "sha1hash": "e3a6c44e778dc9f17cb0c8edd47a2c8b4e1c09b4",
+  "size": 163404,
+  "uploadId": "2cf1b54f6efb84e3364a58b3ae2e0740d3c65c06",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/e3a6c44e778dc9f17cb0c8edd47a2c8b4e1c09b4-1350x1800.webp"
+}

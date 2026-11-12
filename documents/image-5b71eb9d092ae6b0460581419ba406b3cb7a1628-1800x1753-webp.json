@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-05T17:54:28Z",
+  "_id": "image-5b71eb9d092ae6b0460581419ba406b3cb7a1628-1800x1753-webp",
+  "_rev": "1tk6J7MImmXVkYKAfZU7Nb",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-05T17:54:28Z",
+  "assetId": "5b71eb9d092ae6b0460581419ba406b3cb7a1628",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "eaJ@atnOgNIoIo?^bvxHRPr??bM|xuf+ofaLxaX8Rjof%MtRRjj[kC",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 1.026811180832858,
+      "height": 1753,
+      "width": 1800
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAATABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAQFBwYI/8QAJBAAAgICAgEDBQAAAAAAAAAAAQMCBAAFBhEhEhNBFCIxUWH/xAAVAQEBAAAAAAAAAAAAAAAAAAAFBP/EABsRAAIDAQEBAAAAAAAAAAAAAAECAAMRBBIj/9oADAMBAAIRAxEAPwDQtRy4WuMVLDIeZqHomP3lQnkSNhYXfLB9PXYA6fxEA+czjinK3a3h6te2iuxFDiYSZI/b/MgXeQbS77yK4ipbiSUoh0D3kDdAByKJwOw9bgM9Ep5vqJLElXUMifIlHGYLUN3V1l1m+1CYHqIMfPnGWitiNhTXqpK4ZJ39KtU48iVZUVmcwZEfOdtwnWUl6hL41lh0h2Z9dnGMOUfRo3cSOauW9mnXa31MSuUuvyY4xjKYZP/Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#503527",
+        "foreground": "#fff",
+        "population": 2.52,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#862c04",
+        "foreground": "#fff",
+        "population": 0.01,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c9b6a8",
+        "foreground": "#000",
+        "population": 4.75,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c9b6a8",
+        "foreground": "#000",
+        "population": 4.75,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#f3e4b4",
+        "foreground": "#000",
+        "population": 0.02,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ab816a",
+        "foreground": "#fff",
+        "population": 3.96,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c94131",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "4jgOF4aGVWWfaIhtiVh5pnl2pwJmOmAG"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "lobby-fall-welcome-table-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/5b71eb9d092ae6b0460581419ba406b3cb7a1628-1800x1753.webp",
+  "sha1hash": "5b71eb9d092ae6b0460581419ba406b3cb7a1628",
+  "size": 307126,
+  "uploadId": "9777b7bd1b4c7b8bc17413f997a3ce8f2b274766",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/5b71eb9d092ae6b0460581419ba406b3cb7a1628-1800x1753.webp"
+}

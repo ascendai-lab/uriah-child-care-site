@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-06T04:26:19Z",
+  "_id": "image-4450f6a9336ae0e59f7b7859d41527c9dfe116f3-480x640-webp",
+  "_rev": "1tk6J7MImmXVkYKAfaowua",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-06T04:26:19Z",
+  "assetId": "4450f6a9336ae0e59f7b7859d41527c9dfe116f3",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dHFiGRxJH?9Y~oxbr=SNIpIVx[t7NfxFR.RP-mRo%1t8",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 640,
+      "width": 480
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAMEBgIFB//EACUQAAIBBAIBAwUAAAAAAAAAAAECAwAEBREGITEHEkEiMkNRcf/EABcBAAMBAAAAAAAAAAAAAAAAAAMEBQL/xAAhEQEAAQMCBwAAAAAAAAAAAAABAAIDIRESBAUTFDFBof/aAAwDAQACEQMRAD8AmYTMZkWqlrNZEl+EbW6xyWVaK4MF1ibmOUeQO9U7BZXHiyiS0nd1hCtsr3rdO5LlrO4yV3MbpRIfCnokgUHdpTkm7nmIteQ4lIQsljdM48kaFFarEQY+7tmmml+tnJ+7VFS6uIpHTP2OFu3pmqU30lv/AHvew5O+aFYEDIOhv+mpPJpE5HmXbF3aqlonZP5D481Qr6NEtjIo05A2RVw4YqvxyxLKCWudE67IHxVlfcSRHMjGC/iPtlEqt+gDqiurjTAbAOuvFFGp5qAHTIt2C53s/9k=",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#4f3a32",
+        "foreground": "#fff",
+        "population": 6.23,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#184372",
+        "foreground": "#fff",
+        "population": 4.08,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#4f3a32",
+        "foreground": "#fff",
+        "population": 6.23,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c0b3a6",
+        "foreground": "#000",
+        "population": 3.01,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#bfd7a1",
+        "foreground": "#000",
+        "population": 0.91,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5a9a84",
+        "foreground": "#fff",
+        "population": 0.06,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c32c3d",
+        "foreground": "#fff",
+        "population": 0.05,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "XAgKDQJHc5+HaJV4aHq5ibRf895W"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "classroom-birthday-party-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/4450f6a9336ae0e59f7b7859d41527c9dfe116f3-480x640.webp",
+  "sha1hash": "4450f6a9336ae0e59f7b7859d41527c9dfe116f3",
+  "size": 60826,
+  "uploadId": "d2428376054db588cd0934da97992fe06ea618da",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/4450f6a9336ae0e59f7b7859d41527c9dfe116f3-480x640.webp"
+}

@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:50Z",
+  "_id": "image-c7a0e850235f48b69275c655c186a1dbe3b39b86-1350x1800-webp",
+  "_rev": "Mj8jZDV099qjkJYi2yZlpp",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:50Z",
+  "assetId": "c7a0e850235f48b69275c655c186a1dbe3b39b86",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dBG+H+IB0000~qR.%Ks+t6o#oLt7ITobtR-;9GM{-;%3",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAABgACAwcF/8QAJxAAAgIBAwMDBQEAAAAAAAAAAQIDBAAFESEGEiIHE1EUMTZBQ5H/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwH/xAAZEQADAQEBAAAAAAAAAAAAAAAAARIRITH/2gAMAwEAAhEDEQA/ANvRiL1XUsvetu8lKQezPH48H5z3tcgl08oGk9xGHDAYB9C9b9jSbW0Qcug8T9t98Ra91PHckaAkCSBvNF5HOS41g36Ja9gRwRghuVB4yzDTNc016MRZ1DBQCMsyGGkcv9BalWaearYnNd+zwRjt3n4xjdlq1Ldr6KnHAQ3a7sNySOM510EOzrLQ1XgNONx84+6r/LbcX8zKSV/WZmMo2H57E6zOYYQ6Mdwd9ssWJBEUG8a/5ljsnKP/2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#4d3527",
+        "foreground": "#fff",
+        "population": 2.9,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#2e1804",
+        "foreground": "#fff",
+        "population": 0.23,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#807e72",
+        "foreground": "#fff",
+        "population": 7.12,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d4a8b2",
+        "foreground": "#000",
+        "population": 0.01,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d6c69d",
+        "foreground": "#000",
+        "population": 0.59,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#807e72",
+        "foreground": "#fff",
+        "population": 7.12,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#cc945c",
+        "foreground": "#000",
+        "population": 0,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "XwgKBQACYIyJmIhpiHWamIwB+lmH"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "lobby-welcome-table-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/c7a0e850235f48b69275c655c186a1dbe3b39b86-1350x1800.webp",
+  "sha1hash": "c7a0e850235f48b69275c655c186a1dbe3b39b86",
+  "size": 274924,
+  "uploadId": "dd4adefe402f3f7aabf84f062901afacd99ab165",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/c7a0e850235f48b69275c655c186a1dbe3b39b86-1350x1800.webp"
+}

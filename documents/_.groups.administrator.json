@@ -1,0 +1,30 @@
+{
+  "_createdAt": "2026-11-04T12:35:56Z",
+  "_id": "_.groups.administrator",
+  "_rev": "o3j7Liw4brTzZp1Oef1b1z",
+  "_type": "system.group",
+  "_updatedAt": "2026-11-12T06:00:30Z",
+  "grants": [
+    {
+      "filter": "_id in path(\"**\")",
+      "permissions": [
+        "history",
+        "read",
+        "update",
+        "create"
+      ]
+    },
+    {
+      "filter": "(_id in path(\"**\")) && (_id in path(\"drafts.**\") || _id in path(\"versions.**\"))",
+      "permissions": [
+        "history",
+        "read",
+        "update",
+        "create"
+      ]
+    }
+  ],
+  "members": [
+    "pQxDlVa7p"
+  ]
+}

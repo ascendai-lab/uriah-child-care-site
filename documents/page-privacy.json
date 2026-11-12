@@ -1,0 +1,717 @@
+{
+  "_createdAt": "2026-11-04T15:49:27Z",
+  "_id": "page-privacy",
+  "_rev": "LLB7XvsnrFBwaHMSzdPKq0",
+  "_system": {
+    "base": {
+      "id": "page-privacy",
+      "rev": "OXKzsTJ7Efs4i6zOkQGoRX"
+    }
+  },
+  "_type": "page",
+  "_updatedAt": "2026-11-12T04:42:43Z",
+  "hideTourBlock": true,
+  "pageBuilder": [
+    {
+      "_key": "k0007y",
+      "_type": "hero",
+      "background": "white",
+      "heading": "Privacy Policy",
+      "layout": "split",
+      "showPhone": false,
+      "subheading": "Last updated November 4, 2026"
+    },
+    {
+      "_key": "k0007z",
+      "_type": "textBlock",
+      "background": "white",
+      "body": [
+        {
+          "_key": "k000tl",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000tm",
+              "_type": "span",
+              "marks": [],
+              "text": "At Uriah Child Care, accessible from uriahchildcare.com, one of our main priorities is the privacy of our visitors. This Privacy Policy describes the information Uriah Child Care collects and records and how we use it."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000tn",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000to",
+              "_type": "span",
+              "marks": [],
+              "text": "If you have additional questions or need more information about our Privacy Policy, contact us at "
+            },
+            {
+              "_key": "k000tq",
+              "_type": "span",
+              "marks": [
+                "k000tp"
+              ],
+              "text": "hello@uriahchildcare.com"
+            },
+            {
+              "_key": "k000tr",
+              "_type": "span",
+              "marks": [],
+              "text": " or "
+            },
+            {
+              "_key": "k000tt",
+              "_type": "span",
+              "marks": [
+                "k000ts"
+              ],
+              "text": "(856) 455-6701"
+            },
+            {
+              "_key": "k000tu",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "k000tp",
+              "_type": "link",
+              "email": "hello@uriahchildcare.com",
+              "linkType": "email"
+            },
+            {
+              "_key": "k000ts",
+              "_type": "link",
+              "linkType": "phone",
+              "phone": "8564556701"
+            }
+          ],
+          "style": "normal"
+        },
+        {
+          "_key": "k000tv",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000tw",
+              "_type": "span",
+              "marks": [],
+              "text": "This Privacy Policy applies only to our online activities and is valid for visitors to our website with regard to the information that they shared and/or collect on this website. It does not apply to information collected offline or through channels other than this website."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000tx",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000ty",
+              "_type": "span",
+              "marks": [],
+              "text": "Consent"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000tz",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000u0",
+              "_type": "span",
+              "marks": [],
+              "text": "By using our website, you consent to our Privacy Policy and agree to its terms."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000u1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000u2",
+              "_type": "span",
+              "marks": [],
+              "text": "Information we collect"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000u3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000u4",
+              "_type": "span",
+              "marks": [],
+              "text": "The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide it."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000u5",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000u6",
+              "_type": "span",
+              "marks": [],
+              "text": "When you request a tour, we ask for your name, phone number, email address (optional), your child's age, the care you need and any message you write. If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of your message and any other information you choose to provide."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000u7",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000u8",
+              "_type": "span",
+              "marks": [],
+              "text": "How we use your information"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000u9",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000ua",
+              "_type": "span",
+              "marks": [],
+              "text": "We use the information we collect in various ways, including to:"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000ub",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000uc",
+              "_type": "span",
+              "marks": [],
+              "text": "Provide, operate, and maintain our website"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000ud",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000ue",
+              "_type": "span",
+              "marks": [],
+              "text": "Contact you about your tour request and your child's care"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000uf",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000ug",
+              "_type": "span",
+              "marks": [],
+              "text": "Improve, personalize, and expand our website"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000uh",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000ui",
+              "_type": "span",
+              "marks": [],
+              "text": "Understand and analyze how you use our website"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000uj",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000uk",
+              "_type": "span",
+              "marks": [],
+              "text": "Communicate with you, including for customer service and to provide updates about our center"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000ul",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000um",
+              "_type": "span",
+              "marks": [],
+              "text": "Find and prevent fraud and spam"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000un",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000uo",
+              "_type": "span",
+              "marks": [],
+              "text": "Tour requests"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000up",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000uq",
+              "_type": "span",
+              "marks": [],
+              "text": "Tour requests are stored by our website host, Netlify, and sent to our staff by email so we can call you back. We do not sell your information, and we only use it to respond to you and to arrange care."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000ur",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000us",
+              "_type": "span",
+              "marks": [],
+              "text": "Log files"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000ut",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000uu",
+              "_type": "span",
+              "marks": [],
+              "text": "Uriah Child Care follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this as part of hosting services' analytics. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000uv",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000uw",
+              "_type": "span",
+              "marks": [],
+              "text": "Cookies and web beacons"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000ux",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000uy",
+              "_type": "span",
+              "marks": [],
+              "text": "Like any other website, Uriah Child Care uses cookies. These cookies are used to store information including visitors' preferences and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000uz",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000v0",
+              "_type": "span",
+              "marks": [],
+              "text": "Third-party privacy policies"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000v1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000v2",
+              "_type": "span",
+              "marks": [],
+              "text": "Uriah Child Care's Privacy Policy does not apply to other advertisers or websites, such as Google Maps, which shows the map on our pages. We advise you to consult the privacy policies of these third parties for more detailed information, including how to opt out of certain options."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000v3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000v4",
+              "_type": "span",
+              "marks": [],
+              "text": "You can choose to disable cookies through your individual browser options. More detailed information about cookie management can be found on your browser's website."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000v5",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000v6",
+              "_type": "span",
+              "marks": [],
+              "text": "CCPA privacy rights (Do Not Sell My Personal Information)"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000v7",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000v8",
+              "_type": "span",
+              "marks": [],
+              "text": "Under the CCPA, among other rights, California consumers have the right to:"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000v9",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000va",
+              "_type": "span",
+              "marks": [],
+              "text": "Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000vb",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000vc",
+              "_type": "span",
+              "marks": [],
+              "text": "Request that a business delete any personal data about the consumer that a business has collected."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000vd",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000ve",
+              "_type": "span",
+              "marks": [],
+              "text": "Request that a business that sells a consumer's personal data not sell the consumer's personal data."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000vf",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000vg",
+              "_type": "span",
+              "marks": [],
+              "text": "If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000vh",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000vi",
+              "_type": "span",
+              "marks": [],
+              "text": "GDPR data protection rights"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000vj",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000vk",
+              "_type": "span",
+              "marks": [],
+              "text": "We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000vl",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000vm",
+              "_type": "span",
+              "marks": [],
+              "text": "The right to access: you have the right to request copies of your personal data. We may charge you a small fee for this service."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000vn",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000vo",
+              "_type": "span",
+              "marks": [],
+              "text": "The right to rectification: you have the right to request that we correct any information you believe is inaccurate, or complete information you believe is incomplete."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000vp",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000vq",
+              "_type": "span",
+              "marks": [],
+              "text": "The right to erasure: you have the right to request that we erase your personal data, under certain conditions."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000vr",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000vs",
+              "_type": "span",
+              "marks": [],
+              "text": "The right to restrict processing: you have the right to request that we restrict the processing of your personal data, under certain conditions."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000vt",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000vu",
+              "_type": "span",
+              "marks": [],
+              "text": "The right to object to processing: you have the right to object to our processing of your personal data, under certain conditions."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000vv",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000vw",
+              "_type": "span",
+              "marks": [],
+              "text": "The right to data portability: you have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000vx",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000vy",
+              "_type": "span",
+              "marks": [],
+              "text": "If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000vz",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000w0",
+              "_type": "span",
+              "marks": [],
+              "text": "Children's information"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000w1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000w2",
+              "_type": "span",
+              "marks": [],
+              "text": "Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000w3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000w4",
+              "_type": "span",
+              "marks": [],
+              "text": "Uriah Child Care does not knowingly collect any personally identifiable information from children under the age of 13. If you think that your child provided this kind of information on our website, please contact us immediately and we will do our best to promptly remove it from our records."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "width": "narrow"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "How Uriah Child Care in Vineland, NJ collects, uses and protects the information you share on our website, including tour requests.",
+    "metaTitle": "Privacy Policy | Uriah Child Care"
+  },
+  "showInFooter": true,
+  "slug": {
+    "_type": "slug",
+    "current": "privacy-policy"
+  },
+  "title": "Privacy Policy"
+}

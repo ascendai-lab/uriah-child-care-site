@@ -1,0 +1,98 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "siteSettings",
+  "_rev": "Mj8jZDV099qjkJYi2zIe4c",
+  "_system": {
+    "base": {
+      "id": "siteSettings",
+      "rev": "OXKzsTJ7Efs4i6zOkPvZnD"
+    }
+  },
+  "_type": "siteSettings",
+  "_updatedAt": "2026-11-05T03:23:06Z",
+  "address": {
+    "city": "Vineland",
+    "state": "NJ",
+    "street": "30 W Chestnut Ave",
+    "zip": "08360"
+  },
+  "ageMax": 13,
+  "ageMin": 2.5,
+  "agesServed": "Ages 2.5 and up",
+  "announcement": {
+    "enabled": true,
+    "link": {
+      "_type": "link",
+      "internal": {
+        "_ref": "page-tour",
+        "_type": "reference"
+      },
+      "linkType": "internal"
+    },
+    "text": "Now enrolling ages 2.5 and up at our Vineland center. Book a tour."
+  },
+  "attributes": [
+    "Wheelchair accessible entrance",
+    "Wheelchair accessible parking",
+    "Tours by appointment"
+  ],
+  "businessType": "ChildCare",
+  "copyrightName": "Uriah Child Care",
+  "defaultSeo": {
+    "_type": "seoFields",
+    "metaDescription": "Licensed day care center in Vineland, NJ for ages 2.5 and up. Open Monday to Saturday, early morning to 11 pm, for parents who work shifts. Book a tour.",
+    "metaTitle": "Uriah Child Care",
+    "ogImage": {
+      "_type": "imageWithAlt",
+      "alt": "Classroom at Uriah Child Care in Vineland, NJ",
+      "asset": {
+        "_ref": "image-a404a5e0831994c49425c0711a3bcabeee604c23-1800x1176-webp",
+        "_type": "reference"
+      }
+    }
+  },
+  "email": "hello@uriahchildcare.com",
+  "foodProgramStatement": "We participate in the USDA Child and Adult Care Food Program (CACFP).",
+  "footerText": "A licensed child care center in Vineland, NJ, open Monday to Saturday.",
+  "foundingYear": 2005,
+  "gbpDescription": "Uriah Child Care is a licensed child care center at 30 W Chestnut Ave in Vineland, NJ, led by Ms. Paulette, who has cared for Cumberland County children since 2005. We serve families in Vineland, Millville and Bridgeton with toddler care, kindergarten readiness, and before and after school care for ages 2.5 and up. We are open Monday to Saturday, early morning to 11 pm, for parents who work early mornings, evenings and Saturdays. Our play-based curriculum builds language, social and early learning skills, and parents get regular updates about their child's day. We accept NJ childcare subsidy (CCAP) for families who qualify and take part in the USDA food program (CACFP). Book a tour to see our classrooms and meet Ms. Paulette.",
+  "gbpReviewUrl": "https://search.google.com/local/reviews?placeid=ChIJk-4vYVw3x4kRSX5zZYYtB10",
+  "gbpUrl": "https://www.google.com/maps/place/?q=place_id:ChIJk-4vYVw3x4kRSX5zZYYtB10",
+  "gbpWriteReviewUrl": "https://search.google.com/local/writereview?placeid=ChIJk-4vYVw3x4kRSX5zZYYtB10",
+  "hours": [
+    {
+      "_key": "k00001",
+      "_type": "openingHours",
+      "closes": "23:00",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "open24Hours": false,
+      "opens": "06:00"
+    }
+  ],
+  "hoursSummary": "Monday to Saturday, 6 am to 11 pm",
+  "legalName": "Johnson and Senior Group LLC",
+  "license": {
+    "expires": "2026-12-17",
+    "issuer": "New Jersey Department of Children and Families",
+    "number": "CCC128557",
+    "summary": "Licensed by NJ DCF as a child care center, license ID CCC128557"
+  },
+  "ownerName": "Ms. Paulette (Paulette Senior)",
+  "phone": "(856) 455-6701",
+  "programsLine": "Toddler care, kindergarten readiness, before and after school care, and shift care",
+  "sameAs": [],
+  "serviceAreasLine": "Serving Vineland, Millville and Bridgeton (Cumberland County, NJ)",
+  "shiftsLine": "Early morning to 11 pm, Monday to Saturday",
+  "siteName": "Uriah Child Care",
+  "socialLinks": [],
+  "subsidyStatement": "We accept NJ childcare subsidy (CCAP) for families who qualify.",
+  "tagline": "Warm. Safe. Playful. Ours.",
+  "titleTemplate": "%s | Uriah Child Care"
+}

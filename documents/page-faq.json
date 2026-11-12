@@ -1,0 +1,65 @@
+{
+  "_createdAt": "2026-11-04T13:04:38Z",
+  "_id": "page-faq",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "page-faq",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "page",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "pageBuilder": [
+    {
+      "_key": "k00084",
+      "_type": "hero",
+      "accent": "sunshine",
+      "buttons": [
+        {
+          "_key": "k00083",
+          "_type": "ctaButton",
+          "label": "Book a tour",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-tour",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "variant": "primary"
+        }
+      ],
+      "eyebrow": "FAQ",
+      "heading": "Questions parents ask",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Toy and learning centers in a bright classroom at Uriah Child Care",
+        "asset": {
+          "_ref": "image-a47c8f11b531a3df12c3f829c0f560ce88ceeaee-1350x1800-webp",
+          "_type": "reference"
+        }
+      },
+      "layout": "card",
+      "subheading": "Hours, ages, cost, CCAP, meals and safety. Can't find your answer? Call us."
+    },
+    {
+      "_key": "k00085",
+      "_type": "faqBlock",
+      "background": "white",
+      "heading": "Everything parents ask us",
+      "mode": "all"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Answers about hours, ages, cost, CCAP, meals, safety and enrolling at Uriah Child Care in Vineland, NJ. Open Monday to Saturday, 6 am to 11 pm.",
+    "metaTitle": "FAQ | Uriah Child Care in Vineland, NJ"
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "faq"
+  },
+  "title": "Child care questions parents ask"
+}

@@ -1,0 +1,20 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "review-vana-tinamarie",
+  "_rev": "OXKzsTJ7Efs4i6zOkQSCIP",
+  "_system": {
+    "base": {
+      "id": "review-vana-tinamarie",
+      "rev": "OXKzsTJ7Efs4i6zOkPoNqf"
+    }
+  },
+  "_type": "testimonial",
+  "_updatedAt": "2026-11-04T17:32:19Z",
+  "firstParty": true,
+  "name": "Vana TinaMarie",
+  "order": 5,
+  "quote": "Ms Paulette is an excellent child care provider she took care of my first son , is currently taking care of my second son and she will be taking care of my baby when he gets old enough to go to daycare as well ! I highly recommended her !",
+  "rating": 5,
+  "reviewUrl": "https://search.google.com/local/reviews?placeid=ChIJk-4vYVw3x4kRSX5zZYYtB10",
+  "source": "Google"
+}

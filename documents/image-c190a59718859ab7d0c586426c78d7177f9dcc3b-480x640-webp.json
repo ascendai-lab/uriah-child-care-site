@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-06T04:26:17Z",
+  "_id": "image-c190a59718859ab7d0c586426c78d7177f9dcc3b-480x640-webp",
+  "_rev": "Weiss0T6IziVTCaiuPh3YD",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-06T04:26:17Z",
+  "assetId": "c190a59718859ab7d0c586426c78d7177f9dcc3b",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dBB|vCs%R-R#03Mz%MRSIVM|WUad_Kt2kEs+%Nn+aeWV",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 640,
+      "width": 480
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYEBQcD/8QAJhAAAgEDAwMFAQEAAAAAAAAAAQIDAAQRBRIhEyIxBgcUQVFxof/EABgBAAIDAAAAAAAAAAAAAAAAAAADAgQF/8QAHxEBAAIABgMAAAAAAAAAAAAAAQACAwQREhNBkaHR/9oADAMBAAIRAxEAPwDBZb+X5fWjYGSP7/akw6rvu9jHamzLZONxp0T2xdFVJ8RMTjcGzUC59uLmC7VpZBKnjIXyPqk8tHuLUIy6BrV7baZFEJlUDxRVfb6BqdpH0Pm26BDgAjPFFHLbq3uGwepoMN4k0q9/GfviiSdllZA3A/apvTKLqHqYW94OrDz2E4H+UwTwxh5QFGFkKj+VimG7BZLSKmo3LQ3bjMAB7huU5ornrgC6g4HAwKKvUzDWoaHg+RThiz//2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#434a37",
+        "foreground": "#fff",
+        "population": 6.23,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#142868",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#434a37",
+        "foreground": "#fff",
+        "population": 6.23,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c5caaf",
+        "foreground": "#000",
+        "population": 3.08,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ceda9e",
+        "foreground": "#000",
+        "population": 0,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#9fac67",
+        "foreground": "#000",
+        "population": 5.52,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#718131",
+        "foreground": "#fff",
+        "population": 2.75,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "1egNJQKHh2B5eHbIeIlneIhwmPaY"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "fenced-outdoor-play-yard-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/c190a59718859ab7d0c586426c78d7177f9dcc3b-480x640.webp",
+  "sha1hash": "c190a59718859ab7d0c586426c78d7177f9dcc3b",
+  "size": 143490,
+  "uploadId": "a57ae8f22b740cf2ec03decf44752dc4250aa94c",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/c190a59718859ab7d0c586426c78d7177f9dcc3b-480x640.webp"
+}

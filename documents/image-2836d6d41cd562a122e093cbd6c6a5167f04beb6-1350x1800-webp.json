@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T12:53:00Z",
+  "_id": "image-2836d6d41cd562a122e093cbd6c6a5167f04beb6-1350x1800-webp",
+  "_rev": "OXKzsTJ7Efs4i6zOkPn1Kb",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T12:53:00Z",
+  "assetId": "2836d6d41cd562a122e093cbd6c6a5167f04beb6",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dKI5b=?v?a-;Zxt8o#ofJFM}D*Rj_1IXkDof~oM~ogof",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAUEBgcBA//EACYQAAEDAwMEAgMAAAAAAAAAAAECAwQABREGEiEHEzFRFWFBUnH/xAAYAQADAQEAAAAAAAAAAAAAAAAAAgQBBf/EAB0RAAEFAAMBAAAAAAAAAAAAAAABAgMREhMUMlH/2gAMAwEAAhEDEQA/AHeodS/EktXhyW4EDP6pI/tVxHU6KjItLDaSTjcEFRrReoVojzLVJkOtAqDJ8j1WR2PSTeuJjtwsjiIrEZSULaUMZOOfFTXu1eo9Z8oS5Wv70XlELkD6GBRUuZ0suq3yW5UdKfW40UYiN04v11lyrjH7CzsaPkD80kt8BdlS4bYsxws7lBA4JpuondXHOUHNdNIWVVEm1Fbl6vCVY7yVfZTRXo6kbzxRS9eP4HI4/9k=",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#686146",
+        "foreground": "#fff",
+        "population": 5.19,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#242460",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d8d1b1",
+        "foreground": "#000",
+        "population": 7.31,
+        "title": "#000"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d8d1b1",
+        "foreground": "#000",
+        "population": 7.31,
+        "title": "#000"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#f5e4c1",
+        "foreground": "#000",
+        "population": 0.01,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#8b8569",
+        "foreground": "#fff",
+        "population": 2.32,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#2c2c74",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "I/gJHQLeapGIqDb3dW+YiYh/c/g3"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "entrance-porch-security-camera-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/2836d6d41cd562a122e093cbd6c6a5167f04beb6-1350x1800.webp",
+  "sha1hash": "2836d6d41cd562a122e093cbd6c6a5167f04beb6",
+  "size": 139568,
+  "uploadId": "a27c0eddd3f7d35aeb53b01bf959abd3e2965c68",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/2836d6d41cd562a122e093cbd6c6a5167f04beb6-1350x1800.webp"
+}

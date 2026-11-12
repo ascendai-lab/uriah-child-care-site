@@ -1,0 +1,50 @@
+{
+  "_createdAt": "2026-11-11T14:03:07Z",
+  "_id": "page-careers",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "page-careers",
+      "rev": "o3j7Liw4brTzZp1OebsjXt"
+    }
+  },
+  "_type": "page",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "pageBuilder": [
+    {
+      "_key": "k00096",
+      "_type": "hero",
+      "background": "white",
+      "eyebrow": "Careers",
+      "heading": "Work at Uriah Child Care in Vineland",
+      "layout": "split",
+      "showPhone": false,
+      "subheading": "A small, family-run center in Vineland. If you love caring for young children, we'd like to hear from you."
+    },
+    {
+      "_key": "k00097",
+      "_type": "jobApplicationBlock",
+      "background": "default",
+      "heading": "Apply online",
+      "intro": "Tell us a little about yourself and attach your résumé. It takes about five minutes. Ms. Paulette or Tameca will reach out if there is a good fit.",
+      "positions": [
+        "Teacher",
+        "Assistant teacher",
+        "Aide / floater",
+        "Cook",
+        "Other"
+      ],
+      "successMessage": "Thank you for applying. We read every application, and we will call or email you if there is a good fit."
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Apply to work at Uriah Child Care, a licensed child care center in Vineland, NJ. Fill out a short application and upload your résumé and cover letter.",
+    "metaTitle": "Careers | Uriah Child Care, Vineland, NJ"
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "careers"
+  },
+  "title": "Careers"
+}

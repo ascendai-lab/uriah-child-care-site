@@ -1,0 +1,26 @@
+{
+  "_createdAt": "2026-11-05T17:44:42Z",
+  "_id": "faq-families",
+  "_rev": "Weiss0T6IziVTCaiuOyMwM",
+  "_type": "faq",
+  "_updatedAt": "2026-11-05T17:44:49Z",
+  "answer": [
+    {
+      "_key": "k000ch",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ci",
+          "_type": "span",
+          "marks": [],
+          "text": "Yes. Every January we hold a Winter Family Festival with dinner and entertainment, and in June we celebrate graduation with a family potluck. Families are also invited to our Grandparents' Day, Mother's Day and Father's Day celebrations. We send a center newsletter every month so you always know what's coming up."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "category": "Daily life",
+  "order": 22,
+  "question": "Do families get together at the center?"
+}

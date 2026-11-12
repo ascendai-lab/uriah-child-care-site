@@ -1,0 +1,201 @@
+{
+  "_createdAt": "2026-11-04T13:04:38Z",
+  "_id": "page-tuition",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "page-tuition",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "page",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "pageBuilder": [
+    {
+      "_key": "k0008p",
+      "_type": "hero",
+      "accent": "sage",
+      "buttons": [
+        {
+          "_key": "k0008o",
+          "_type": "ctaButton",
+          "label": "Get a price for your schedule",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-tour",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "variant": "primary"
+        }
+      ],
+      "eyebrow": "Tuition and how to pay",
+      "heading": "Tuition and NJ childcare subsidy (CCAP)",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Welcome sign at the front entrance of Uriah Child Care in Vineland",
+        "asset": {
+          "_ref": "image-9947ecb0aaaec784157590d7811ec252175966f2-1350x1800-webp",
+          "_type": "reference"
+        }
+      },
+      "layout": "card",
+      "subheading": "Tuition depends on your child's age and schedule. Call or book a tour for a clear price. We accept CCAP."
+    },
+    {
+      "_key": "k0008t",
+      "_type": "featureGrid",
+      "background": "default",
+      "columns": 3,
+      "heading": "What sets your tuition",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Horseshoe learning table and book shelves in a classroom at Uriah Child Care",
+        "asset": {
+          "_ref": "image-2079291fd01a6c97652e3052b08b77f8fbd6cbeb-1350x1800-webp",
+          "_type": "reference"
+        }
+      },
+      "imageShape": "circle",
+      "intro": "Three things decide your price. Tell us your schedule and we will give you a clear number.",
+      "items": [
+        {
+          "_key": "k0008q",
+          "_type": "feature",
+          "description": "Toddler care and early learning, or before and after school care for school-age kids.",
+          "title": "Your child’s age"
+        },
+        {
+          "_key": "k0008r",
+          "_type": "feature",
+          "description": "The number of days and hours you need each week.",
+          "title": "Full-time or part-time"
+        },
+        {
+          "_key": "k0008s",
+          "_type": "feature",
+          "description": "Early morning, evening, late evening and Saturday care are all available.",
+          "title": "Your shift"
+        }
+      ],
+      "style": "checklist"
+    },
+    {
+      "_key": "k0008v",
+      "_type": "imageText",
+      "accent": "sage",
+      "background": "white",
+      "body": [
+        {
+          "_key": "k000y8",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000y9",
+              "_type": "span",
+              "marks": [],
+              "text": "We accept NJ childcare subsidy (CCAP) for families who qualify. In Cumberland County, CCAP is managed by Rutgers Southern Regional CCR&R in Vineland. The agency decides eligibility and your family's share, and we help you with the steps. "
+            },
+            {
+              "_key": "k000yb",
+              "_type": "span",
+              "marks": [
+                "k000ya"
+              ],
+              "text": "Read more about CCAP"
+            },
+            {
+              "_key": "k000yc",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "k000ya",
+              "_type": "link",
+              "internal": {
+                "_ref": "service-ccap",
+                "_type": "reference"
+              },
+              "linkType": "internal"
+            }
+          ],
+          "style": "normal"
+        }
+      ],
+      "buttons": [
+        {
+          "_key": "k0008u",
+          "_type": "ctaButton",
+          "label": "CCAP child care",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-ccap",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "variant": "secondary"
+        }
+      ],
+      "heading": "Paying with NJ childcare subsidy (CCAP)",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Welcome table with forms and flowers in the lobby of Uriah Child Care",
+        "asset": {
+          "_ref": "image-c7a0e850235f48b69275c655c186a1dbe3b39b86-1350x1800-webp",
+          "_type": "reference"
+        }
+      },
+      "imagePosition": "right",
+      "imageShape": "rounded"
+    },
+    {
+      "_key": "k0008z",
+      "_type": "faqBlock",
+      "background": "default",
+      "faqs": [
+        {
+          "_key": "k0008w",
+          "_ref": "faq-cost",
+          "_type": "reference"
+        },
+        {
+          "_key": "k0008x",
+          "_ref": "faq-ccap",
+          "_type": "reference"
+        },
+        {
+          "_key": "k0008y",
+          "_ref": "faq-meals",
+          "_type": "reference"
+        }
+      ],
+      "heading": "Cost questions",
+      "mode": "selected"
+    },
+    {
+      "_key": "k00090",
+      "_type": "testimonialsBlock",
+      "background": "muted",
+      "heading": "What parents say",
+      "intro": "Real reviews from local families on Google.",
+      "mode": "all"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "How tuition works at Uriah Child Care in Vineland, NJ, and how to pay with NJ childcare subsidy (CCAP). Call for a price for your schedule.",
+    "metaTitle": "Tuition and CCAP | Uriah Child Care, Vineland, NJ"
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "tuition"
+  },
+  "title": "Tuition and CCAP at Uriah Child Care"
+}

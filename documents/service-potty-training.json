@@ -1,0 +1,354 @@
+{
+  "_createdAt": "2026-11-04T13:00:34Z",
+  "_id": "service-potty-training",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-potty-training",
+      "rev": "Weiss0T6IziVTCaiuOyMwM"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sky",
+  "ageRange": "Ages 2.5 to 4",
+  "body": [
+    {
+      "_key": "k000o5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000o6",
+          "_type": "span",
+          "marks": [],
+          "text": "Your child does not need to be potty trained"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000o7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000o8",
+          "_type": "span",
+          "marks": [],
+          "text": "Many of our 2½ and 3-year-olds are still in diapers or pull-ups when they start. That's normal, and we're happy to help."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000o9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000oa",
+          "_type": "span",
+          "marks": [],
+          "text": "How long potty training usually takes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000ob",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000oc",
+          "_type": "span",
+          "marks": [],
+          "text": "Every child is different. Toilet training often starts somewhere between 21 and 36 months, and only about 40 to 60 percent of children are fully trained by their third birthday, according to a review in the journal of the "
+        },
+        {
+          "_key": "k000oe",
+          "_type": "span",
+          "marks": [
+            "k000od"
+          ],
+          "text": "American Academy of Family Physicians"
+        },
+        {
+          "_key": "k000of",
+          "_type": "span",
+          "marks": [],
+          "text": ". Staying dry at night usually comes later than staying dry during the day. Starting earlier doesn't always mean finishing earlier, so we follow your child's readiness signs, like staying dry for a couple of hours, telling you about a wet diaper or showing interest in the toilet."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000od",
+          "_type": "link",
+          "external": "https://www.aafp.org/pubs/afp/issues/2008/1101/p1059.html",
+          "linkType": "external",
+          "openInNewTab": true
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000og",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000oh",
+          "_type": "span",
+          "marks": [],
+          "text": "How we work on it together"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000oi",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000oj",
+          "_type": "span",
+          "marks": [],
+          "text": "We talk with you about the words and steps you use at home, and use the same ones."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ok",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ol",
+          "_type": "span",
+          "marks": [],
+          "text": "Children get regular bathroom breaks and gentle reminders."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000om",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000on",
+          "_type": "span",
+          "marks": [],
+          "text": "We celebrate every success and treat accidents calmly. We never shame a child."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000oo",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000op",
+          "_type": "span",
+          "marks": [],
+          "text": "We tell you how the day went so you can keep going at home."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000oq",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000or",
+          "_type": "span",
+          "marks": [],
+          "text": "What to bring"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000os",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ot",
+          "_type": "span",
+          "marks": [],
+          "text": "Diapers or pull-ups, plus two or three changes of clothes, all labeled with your child's name. We provide the wipes. Clothes that are easy to pull down help a lot: overalls and lots of snaps slow little ones down."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ou",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ov",
+          "_type": "span",
+          "marks": [],
+          "text": "Questions?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000ow",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ox",
+          "_type": "span",
+          "marks": [],
+          "text": "Ask us when you "
+        },
+        {
+          "_key": "k000oz",
+          "_type": "span",
+          "marks": [
+            "k000oy"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000p0",
+          "_type": "span",
+          "marks": [],
+          "text": ", or see our "
+        },
+        {
+          "_key": "k000p2",
+          "_type": "span",
+          "marks": [
+            "k000p1"
+          ],
+          "text": "toddler care"
+        },
+        {
+          "_key": "k000p3",
+          "_type": "span",
+          "marks": [],
+          "text": " program."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000oy",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000p1",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-toddler-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-preschool",
+    "_type": "reference"
+  },
+  "excerpt": "No need to be potty trained. We work on it with you, with the same routine at home and at the center.",
+  "faqs": [
+    {
+      "_key": "k0003c",
+      "_type": "faqItem",
+      "answer": "Diapers or pull-ups and two or three labeled changes of clothes. We provide the wipes, and we will tell you if you run low on anything.",
+      "question": "What should I pack for potty training?"
+    },
+    {
+      "_key": "k0003d",
+      "_type": "faqItem",
+      "answer": "No. We care for children from 2½, and many start in diapers or pull-ups. We work on potty training together with you.",
+      "question": "Does my child have to be potty trained to start?"
+    },
+    {
+      "_key": "k0003e",
+      "_type": "faqItem",
+      "answer": "We tell you at pickup, and parents get updates through the Procare app. You can always call us too.",
+      "question": "How will I know how potty training went today?"
+    }
+  ],
+  "gbpName": "Potty training support",
+  "highlights": [
+    "Children do not need to be potty trained",
+    "Same routine at home and at the center",
+    "Regular bathroom breaks",
+    "Patience and praise, never shame"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Child-height classroom sink with a step stool at Uriah Child Care",
+    "asset": {
+      "_ref": "image-c47300f42d84211fc4d44d132a955242bc557377-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Your child doesn't need to be potty trained to join. We work with you, using the same words and routine at home and here.",
+  "keyword": "daycare potty training vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 4,
+  "related": [
+    {
+      "_key": "k0003c",
+      "_ref": "service-toddler-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0003d",
+      "_ref": "category-preschool",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0003e",
+      "_ref": "service-play-based-learning",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0003f",
+      "_ref": "page-faq",
+      "_type": "reference"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "No need to be potty trained to start at Uriah Child Care in Vineland, NJ. We support potty training together with parents, from 2½ years.",
+    "metaTitle": "Potty Training Daycare in Vineland, NJ"
+  },
+  "shortTitle": "Potty training support",
+  "slug": {
+    "_type": "slug",
+    "current": "potty-training-daycare-vineland-nj"
+  },
+  "title": "Potty training support at our Vineland daycare"
+}

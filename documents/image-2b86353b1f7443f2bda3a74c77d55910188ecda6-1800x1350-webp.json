@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T12:53:06Z",
+  "_id": "image-2b86353b1f7443f2bda3a74c77d55910188ecda6-1800x1350-webp",
+  "_rev": "Mj8jZDV099qjkJYi2xy7Y1",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T12:53:06Z",
+  "assetId": "2b86353b1f7443f2bda3a74c77d55910188ecda6",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "VGF=:aD*4nR*D%~qM|%2oJWA%MRjtQe.t7E1t6?Ho#%M",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 1.3333333333333333,
+      "height": 1350,
+      "width": 1800
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAYHAQX/xAAlEAABAwMDAwUAAAAAAAAAAAABAgMEAAURBhITByEiJDFBUYH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABsRAAICAwEAAAAAAAAAAAAAAAABAhEDEjFB/9oADAMBAAIRAxEAPwDmdOb7cdRXeREv3pHEthxI27Sfw09wEhDrpddy21kDvUb6bsXe93STO51vPce3kcWMiniXpm5J8nJ3iUnkAJ+qF30UlqZqTqTJs91chx2mVtoAIJ+c0VOrzBcfnrO9J2gJyfftRQKKeP1n/9k=",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#4e362f",
+        "foreground": "#fff",
+        "population": 7.44,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#1e0d04",
+        "foreground": "#fff",
+        "population": 0.39,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#4e362f",
+        "foreground": "#fff",
+        "population": 7.44,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c0bab6",
+        "foreground": "#000",
+        "population": 6.81,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#efad8a",
+        "foreground": "#000",
+        "population": 0,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#8c8c87",
+        "foreground": "#fff",
+        "population": 6.51,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#e1611e",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "HQgKBYIDV5t+iYd6eVi5nPMSrG90"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "lobby-sign-in-area-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/2b86353b1f7443f2bda3a74c77d55910188ecda6-1800x1350.webp",
+  "sha1hash": "2b86353b1f7443f2bda3a74c77d55910188ecda6",
+  "size": 137904,
+  "uploadId": "f8350454f9609bc10890f7f022a6dce0b3d143c9",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/2b86353b1f7443f2bda3a74c77d55910188ecda6-1800x1350.webp"
+}

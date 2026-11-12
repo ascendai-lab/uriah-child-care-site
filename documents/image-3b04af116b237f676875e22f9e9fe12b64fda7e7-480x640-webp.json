@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-06T04:26:19Z",
+  "_id": "image-3b04af116b237f676875e22f9e9fe12b64fda7e7-480x640-webp",
+  "_rev": "QCUAteQjtFGCH4SAG25JRG",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-06T04:26:19Z",
+  "assetId": "3b04af116b237f676875e22f9e9fe12b64fda7e7",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dXIhKsn$WAoh-:RPxaRj~Rt7W?nfRiR%bcoeE7W;xuNH",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 640,
+      "width": 480
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAcFBgEDBP/EACYQAAICAQMDBAMBAAAAAAAAAAECAwQABQYREiExEzJBYQcicVH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgT/xAAfEQACAwACAgMAAAAAAAAAAAABAgADEQUxEiFyodH/2gAMAwEAAhEDEQA/ALzDLRFGAvJ3cknge0cZiXQtOhSpar2X6mkH6Ee7FDT3XqokmmeRZVZeyEcAfzOmTct+zJDI9qQNC3WqjwDmhOIsZ2rJGgbJs5GtFFi7h9Rtbi31LpWpGlVkCrEgDDj5wyhJ+QaAHGrVarWx2ZnA5P2cMBg1Z8GpbR8f2ULFb2HH3NMu2FuiCAslB2BdOx8f5/ckKWgafoe3Jrd1Y9QvsxAYnpCj47YzZ6NWzAPXhR+lu3I8ZU941oYdGt+lGq8eMMvZ2D3EUJmMNAie1HaTaxaa7ZZPUkHcBvH1hk7KzOsTMT1MgJPjnDDLne4qhc6n/9k=",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#654039",
+        "foreground": "#fff",
+        "population": 5.92,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#154b99",
+        "foreground": "#fff",
+        "population": 6.13,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#154b99",
+        "foreground": "#fff",
+        "population": 6.13,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#cbbaa8",
+        "foreground": "#000",
+        "population": 3,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#f6dace",
+        "foreground": "#000",
+        "population": 1.03,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#9b7068",
+        "foreground": "#fff",
+        "population": 4.43,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#2569c4",
+        "foreground": "#fff",
+        "population": 2.22,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "4gcKLQZ4eWxp94lXh4V5d4iIj5j5"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "birthday-cake-classroom-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/3b04af116b237f676875e22f9e9fe12b64fda7e7-480x640.webp",
+  "sha1hash": "3b04af116b237f676875e22f9e9fe12b64fda7e7",
+  "size": 64412,
+  "uploadId": "d76e447b88bc7dd0146045b28c143a14c3820c49",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/3b04af116b237f676875e22f9e9fe12b64fda7e7-480x640.webp"
+}

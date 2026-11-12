@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:48Z",
+  "_id": "image-c47300f42d84211fc4d44d132a955242bc557377-1350x1800-webp",
+  "_rev": "6fXA2k3jCstDiCIQOrrpZK",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:48Z",
+  "assetId": "c47300f42d84211fc4d44d132a955242bc557377",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dZIhjTxvRkof~qWBRjt7M{j?j[t7Rjxux]M|RkV@a{Ri",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUEBgcD/8QAJBAAAgICAgEFAAMAAAAAAAAAAQIDBAARBRIhBhMiMUEHUdH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/xAAdEQEAAgICAwAAAAAAAAAAAAABABECIRIxA1HB/9oADAMBAAIRAxEAPwDTrslOuhM0yhANknyM7wcPDYUMgA7eQfw5TuFaaWjJDSnqpB38++vbGVj+QqVeu8EMLmdCY960CR+gf1kyKLlBWoquctycVyeGpxsUkUTlA3ua3rDJfFcpUNNXeJQ7ku3b72cMB483fyPngaYh5T1nWhhrwQVFmQoTJoddMfrM8uPyD3nuxOY3A+CD8/3Cu7fH5HwMsVuNG41XZR3GtHFl3MdVFUHr/nIIxG7QsV8baEE4ZKr0680feWFGbetkYYOT7YqHdE//2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#2e3d5e",
+        "foreground": "#fff",
+        "population": 0.36,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#2e5287",
+        "foreground": "#fff",
+        "population": 0.41,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#2e5287",
+        "foreground": "#fff",
+        "population": 0.41,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d5c6b7",
+        "foreground": "#000",
+        "population": 0.04,
+        "title": "#000"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#e8ccc6",
+        "foreground": "#000",
+        "population": 0.24,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#6b7c98",
+        "foreground": "#fff",
+        "population": 0.23,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#3d6fbc",
+        "foreground": "#fff",
+        "population": 0.12,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "JAgODQJ5eH+HZ3h4mWh3l3CGOQl4"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "classroom-sink-step-stool-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/c47300f42d84211fc4d44d132a955242bc557377-1350x1800.webp",
+  "sha1hash": "c47300f42d84211fc4d44d132a955242bc557377",
+  "size": 151348,
+  "uploadId": "f57087ee3d140889b3d5ad975efff93c4731cc33",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/c47300f42d84211fc4d44d132a955242bc557377-1350x1800.webp"
+}

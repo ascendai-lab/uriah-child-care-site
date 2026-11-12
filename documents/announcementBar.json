@@ -1,0 +1,17 @@
+{
+  "_createdAt": "2026-11-07T23:01:57Z",
+  "_id": "announcementBar",
+  "_rev": "Weiss0T6IziVTCaiuRjkJi",
+  "_type": "announcementBar",
+  "_updatedAt": "2026-11-07T23:02:02Z",
+  "enabled": true,
+  "link": {
+    "_type": "link",
+    "internal": {
+      "_ref": "page-tour",
+      "_type": "reference"
+    },
+    "linkType": "internal"
+  },
+  "text": "Now enrolling ages 2.5 and up at our Vineland center. Book a tour."
+}

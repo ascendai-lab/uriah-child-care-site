@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:52Z",
+  "_id": "image-81442c837a7eb302a3b53b3568d61e4ca39466f6-1800x1350-webp",
+  "_rev": "6fXA2k3jCstDiCIQOrrq9p",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:52Z",
+  "assetId": "81442c837a7eb302a3b53b3568d61e4ca39466f6",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "VZC%BWR.WAM{s.~qR.WBRjoftTWBayoJkCIun~ofxaa#",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 1.3333333333333333,
+      "height": 1350,
+      "width": 1800
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIIAwf/xAAiEAACAQQCAQUAAAAAAAAAAAABAgMABAURBiESExRBUXH/xAAVAQEBAAAAAAAAAAAAAAAAAAADAv/EABsRAAMAAgMAAAAAAAAAAAAAAAABAhJSEzFB/9oADAMBAAIRAxEAPwBeLcmw7Y1pMs/t5IiFIPe/yk5LzXEiGBcXeIGLaYgEaFcJhyVw7emz9N8EVqbpd+Mqb19UzV13QacrwpTG854xHZRpdZNGmA7PgaKmg3A30gAooeK9y851P//Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#283247",
+        "foreground": "#fff",
+        "population": 3.77,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#041123",
+        "foreground": "#fff",
+        "population": 0.32,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#283247",
+        "foreground": "#fff",
+        "population": 3.77,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#acb4cc",
+        "foreground": "#000",
+        "population": 0.03,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#efdfae",
+        "foreground": "#000",
+        "population": 1.45,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#a46c54",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ae8b4e",
+        "foreground": "#fff",
+        "population": 0.1,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "lvcRFYJ3hnd/d3h5h3iHhoVZUJgF"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "evening-parking-sunset-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/81442c837a7eb302a3b53b3568d61e4ca39466f6-1800x1350.webp",
+  "sha1hash": "81442c837a7eb302a3b53b3568d61e4ca39466f6",
+  "size": 467618,
+  "uploadId": "1e40d8bd9846cdf42a35ff167093a9c7579e9fb0",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/81442c837a7eb302a3b53b3568d61e4ca39466f6-1800x1350.webp"
+}

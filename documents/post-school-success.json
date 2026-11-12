@@ -1,0 +1,446 @@
+{
+  "_createdAt": "2026-11-04T17:31:13Z",
+  "_id": "post-school-success",
+  "_rev": "Mj8jZDV099qjkJYi2zIe4c",
+  "_system": {
+    "base": {
+      "id": "post-school-success",
+      "rev": "OXKzsTJ7Efs4i6zOkQS55N"
+    }
+  },
+  "_type": "blogPost",
+  "_updatedAt": "2026-11-05T03:23:06Z",
+  "body": [
+    {
+      "_key": "k0013n",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0013o",
+          "_type": "span",
+          "marks": [],
+          "text": "Every parent wants their child to do well in school. You don't need a magic formula: small, steady habits at home make a real difference. Here are the tips we share with families at our center."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0013p",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0013q",
+          "_type": "span",
+          "marks": [],
+          "text": "Build a strong relationship with your child"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0013r",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0013s",
+          "_type": "span",
+          "marks": [],
+          "text": "Children try harder when they feel close to the adults around them. Make time to talk, play and do things together, even for a few minutes a day. You still set the rules, and you can still have fun."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0013t",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0013u",
+          "_type": "span",
+          "marks": [],
+          "text": "Set clear and reasonable expectations"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0013v",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0013w",
+          "_type": "span",
+          "marks": [],
+          "text": "Expecting straight A's can set a child up for frustration. Focus on the process instead of the grade: did they practice, ask for help, and finish their work? Children who learn to judge themselves by their effort feel less pressure and keep trying."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0013x",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0013y",
+          "_type": "span",
+          "marks": [],
+          "text": "Be clear and calm about consequences"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0013z",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00140",
+          "_type": "span",
+          "marks": [],
+          "text": "Agree on a few simple rules, such as homework before screens."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00141",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00142",
+          "_type": "span",
+          "marks": [],
+          "text": "Explain the consequence ahead of time, so it is never a surprise."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00143",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00144",
+          "_type": "span",
+          "marks": [],
+          "text": "Follow through, calmly and without anger. If you are upset, wait until you have both cooled down."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00145",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00146",
+          "_type": "span",
+          "marks": [],
+          "text": "Use consequences sparingly. Too many, and children stop listening."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00147",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00148",
+          "_type": "span",
+          "marks": [],
+          "text": "Praise effort, not just results"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k00149",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014a",
+          "_type": "span",
+          "marks": [],
+          "text": "Praise small wins: finishing a worksheet, reading a page out loud, trying a hard problem. Praise trying too, even when it doesn't work out. Children who hear that their effort matters build confidence and take on bigger challenges."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0014b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014c",
+          "_type": "span",
+          "marks": [],
+          "text": "Make it safe to ask questions and make mistakes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0014d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014e",
+          "_type": "span",
+          "marks": [],
+          "text": "Let your child know questions are welcome."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0014f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014g",
+          "_type": "span",
+          "marks": [],
+          "text": "Give them a moment to think before you jump in with the answer."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0014h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014i",
+          "_type": "span",
+          "marks": [],
+          "text": "It's fine to say \"I don't know, let's find out together.\""
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0014j",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014k",
+          "_type": "span",
+          "marks": [],
+          "text": "Treat mistakes as part of learning, not as failure."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0014l",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014m",
+          "_type": "span",
+          "marks": [],
+          "text": "Set a good example"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0014n",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014o",
+          "_type": "span",
+          "marks": [],
+          "text": "Children copy what they see. Read where they can see you, talk about what you learned today, and keep a regular routine for meals, sleep and homework."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0014p",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014q",
+          "_type": "span",
+          "marks": [],
+          "text": "Get to know your child's teachers"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0014r",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014s",
+          "_type": "span",
+          "marks": [],
+          "text": "Keep in touch with your child's teachers, share what is happening at home, and raise worries early. Go to school events when you can. It shows your child that you care about their education."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0014t",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014u",
+          "_type": "span",
+          "marks": [],
+          "text": "How we help at Uriah Child Care"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0014v",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k001ak",
+          "_type": "span",
+          "marks": [],
+          "text": "Our "
+        },
+        {
+          "_key": "k001am",
+          "_type": "span",
+          "marks": [
+            "k001al"
+          ],
+          "text": "after school program"
+        },
+        {
+          "_key": "k001an",
+          "_type": "span",
+          "marks": [],
+          "text": " gives school-age children a quiet time and place for "
+        },
+        {
+          "_key": "k001ap",
+          "_type": "span",
+          "marks": [
+            "k001ao"
+          ],
+          "text": "homework help"
+        },
+        {
+          "_key": "k001aq",
+          "_type": "span",
+          "marks": [],
+          "text": ", and our "
+        },
+        {
+          "_key": "k001as",
+          "_type": "span",
+          "marks": [
+            "k001ar"
+          ],
+          "text": "kindergarten readiness"
+        },
+        {
+          "_key": "k001at",
+          "_type": "span",
+          "marks": [],
+          "text": " program builds the habits younger children need for school."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k001al",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k001ao",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-homework-help",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k001ar",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-kindergarten-readiness",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "categories": [
+    "Tips for parents"
+  ],
+  "excerpt": "Simple, practical ways parents can build confidence, good habits and a love of learning at home.",
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Classroom tables, an easel and toy shelves at Uriah Child Care in Vineland",
+    "asset": {
+      "_ref": "image-e3a6c44e778dc9f17cb0c8edd47a2c8b4e1c09b4-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "publishedAt": "2023-05-04T12:00:00Z",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Practical tips for parents from Uriah Child Care in Vineland, NJ: clear routines, praise for effort, a safe place to ask questions and a good relationship with teachers.",
+    "metaTitle": "How to help your child succeed in school | Uriah Child Care"
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "how-to-help-your-child-succeed-in-school"
+  },
+  "title": "How to help your child succeed in school this year"
+}

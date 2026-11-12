@@ -1,0 +1,32 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-updates",
+  "_rev": "Mj8jZDV099qjkJYi2zIe4c",
+  "_system": {
+    "base": {
+      "id": "faq-updates",
+      "rev": "OXKzsTJ7Efs4i6zOkQGoRX"
+    }
+  },
+  "_type": "faq",
+  "_updatedAt": "2026-11-05T03:23:06Z",
+  "answer": [
+    {
+      "_key": "k000a4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000a5",
+          "_type": "span",
+          "marks": [],
+          "text": "Parents check their child in and out with Procare, and we keep you updated about your child's day. You can always call us too."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "category": "Daily life",
+  "order": 8,
+  "question": "How will I know how my child’s day went?"
+}

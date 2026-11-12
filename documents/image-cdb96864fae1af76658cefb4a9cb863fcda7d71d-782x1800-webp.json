@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T12:52:58Z",
+  "_id": "image-cdb96864fae1af76658cefb4a9cb863fcda7d71d-782x1800-webp",
+  "_rev": "6fXA2k3jCstDiCIQOrGFio",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T12:52:58Z",
+  "assetId": "cdb96864fae1af76658cefb4a9cb863fcda7d71d",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "cTK1%e?b_N~pRQxuD%M{M{-;t7o3a_WBWB",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.43444444444444447,
+      "height": 1800,
+      "width": 782
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAuABQDASIAAhEBAxEB/8QAGwAAAgMAAwAAAAAAAAAAAAAAAAcDBQYCBAj/xAArEAABAwQBAgQGAwAAAAAAAAABAgMEAAUGESESFAcTMUEVIiMyUWEzgZH/xAAYAQADAQEAAAAAAAAAAAAAAAAAAgMBBP/EAB8RAQACAgEFAQAAAAAAAAAAAAEAAhESIQMEQVHB8P/aAAwDAQACEQMRAD8AaeeXKdZrU0/bUsl1TgQfNGxqqLEsivdxvTMe5CJ27iT/ABJIINXXiVDXLxV1Lji2ilxKgtvhSefasDgdtbiZbAdS/JdWSUkuub9vxSJzNMaxu9mjZJAJJ3yKKwWbIy5V+c+CSUNwwkAJKwOfeimye5PabLOGyvG53GylPV/hpZ2KWpnIbcpASE+ZyAP1TTyBSZOOTlt/MlUdSk/vjdecPD24ZHkWYwX0Qy1aozv1F66U6HHqfWjXLHqgMbV1vEUT3hOgrU91ckK1sUV3bui0Garu5LKXdcgqoqdu36K5akTQfEgtuUNxfCy3XJ4pWVRwg9R436c0p4d6cm3N9JkuIhtoKuhsdCUk+gAFUEuZJiWCPaXHlvNMp2Ar7Rv8CprK098GUEOAMrO9a+Yf3VavOX99nRUryMgnz5HdOfXUvn7ieaK5i2IXz1GiiyLmLP/Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#483932",
+        "foreground": "#fff",
+        "population": 2.15,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#3c742c",
+        "foreground": "#fff",
+        "population": 0.03,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#bcb2aa",
+        "foreground": "#000",
+        "population": 4.81,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#bcb2aa",
+        "foreground": "#000",
+        "population": 4.81,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#e3e9f4",
+        "foreground": "#000",
+        "population": 0.06,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#4ba447",
+        "foreground": "#fff",
+        "population": 0.03,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#3775b7",
+        "foreground": "#fff",
+        "population": 0.42,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "JggKCwL7b0lmineZOk9pENk="
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "daily-schedule-chart-classroom-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/cdb96864fae1af76658cefb4a9cb863fcda7d71d-782x1800.webp",
+  "sha1hash": "cdb96864fae1af76658cefb4a9cb863fcda7d71d",
+  "size": 83134,
+  "uploadId": "411008f68ce1a2d0a38995b2d99d030e10a87a63",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/cdb96864fae1af76658cefb4a9cb863fcda7d71d-782x1800.webp"
+}

@@ -1,0 +1,548 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "homePage",
+  "_rev": "qHfAR2GXSfO7zaD7XmK4og",
+  "_system": {
+    "base": {
+      "id": "homePage",
+      "rev": "1tk6J7MImmXVkYKAfaoz4X"
+    }
+  },
+  "_type": "homePage",
+  "_updatedAt": "2026-11-11T13:55:20Z",
+  "pageBuilder": [
+    {
+      "_key": "k0006v",
+      "_type": "hero",
+      "accent": "sunshine",
+      "accentWord": "Vineland, NJ",
+      "buttons": [
+        {
+          "_key": "k0006u",
+          "_type": "ctaButton",
+          "label": "Book a tour",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-tour",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "variant": "primary"
+        }
+      ],
+      "heading": "Childcare center in Vineland, NJ",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Uriah Child Care building on W Chestnut Ave in Vineland, NJ, with Now Enrolling flags",
+        "asset": {
+          "_ref": "image-a811e5c42da2f84dd40eef74db84b470a682a8f8-1800x1350-webp",
+          "_type": "reference"
+        }
+      },
+      "layout": "photoFade",
+      "showPhone": true,
+      "showRating": false,
+      "subheading": "Uriah Child Care is a licensed child care center at 30 W Chestnut Ave, open Monday to Saturday, 6 am to 11 pm. Toddler care, kindergarten readiness, and before and after school care, from early morning to 11 pm for working parents."
+    },
+    {
+      "_key": "k0006w",
+      "_type": "servicesBlock",
+      "background": "default",
+      "heading": "Programs for every age we serve",
+      "intro": "From 2½-year-olds to school-age kids up to 13, every program follows our play-based curriculum and runs Monday to Saturday.",
+      "mode": "all"
+    },
+    {
+      "_key": "k0006y",
+      "_type": "imageText",
+      "accent": "coral",
+      "background": "muted",
+      "body": [
+        {
+          "_key": "k00095",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k00096",
+              "_type": "span",
+              "marks": [],
+              "text": "Our play-based day for toddlers and young children, built on the Experience Early Learning curriculum, helps them learn letters, numbers, colors and how to be a good friend. Every day starts with circle time, and 4 and 5-year-olds work on "
+            },
+            {
+              "_key": "k00098",
+              "_type": "span",
+              "marks": [
+                "k00097"
+              ],
+              "text": "kindergarten readiness"
+            },
+            {
+              "_key": "k00099",
+              "_type": "span",
+              "marks": [],
+              "text": ". Children don't need to be potty trained to start."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "k00097",
+              "_type": "link",
+              "internal": {
+                "_ref": "service-kindergarten-readiness",
+                "_type": "reference"
+              },
+              "linkType": "internal"
+            }
+          ],
+          "style": "normal"
+        }
+      ],
+      "buttons": [
+        {
+          "_key": "k0006x",
+          "_type": "ctaButton",
+          "label": "Explore early learning",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "category-preschool",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "variant": "secondary"
+        }
+      ],
+      "eyebrow": "Ages 2.5 to 5",
+      "heading": "Early learning in Vineland",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Children holding up paper watermelon slices they made for Watermelon Wednesday at Uriah Child Care",
+        "asset": {
+          "_ref": "image-ab224a6cc0b27dcd88614970dbedf8e88201161d-640x480-webp",
+          "_type": "reference"
+        }
+      },
+      "imagePosition": "right",
+      "imageShape": "blob",
+      "showDoodles": true
+    },
+    {
+      "_key": "k00070",
+      "_type": "imageText",
+      "accent": "sky",
+      "background": "default",
+      "body": [
+        {
+          "_key": "k0009a",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k0009b",
+              "_type": "span",
+              "marks": [],
+              "text": "Before school from 6 am and after school until 11 pm, school-age kids get a snack, "
+            },
+            {
+              "_key": "k0009d",
+              "_type": "span",
+              "marks": [
+                "k0009c"
+              ],
+              "text": "homework time"
+            },
+            {
+              "_key": "k0009e",
+              "_type": "span",
+              "marks": [],
+              "text": " with help on reading, and time to play with friends in a safe, licensed center."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "k0009c",
+              "_type": "link",
+              "internal": {
+                "_ref": "service-homework-help",
+                "_type": "reference"
+              },
+              "linkType": "internal"
+            }
+          ],
+          "style": "normal"
+        }
+      ],
+      "buttons": [
+        {
+          "_key": "k0006z",
+          "_type": "ctaButton",
+          "label": "See the after school program",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "category-after-school",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "variant": "secondary"
+        }
+      ],
+      "eyebrow": "School age, up to 13",
+      "heading": "After school program in Vineland",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Classroom tables, an easel and toy shelves at Uriah Child Care in Vineland",
+        "asset": {
+          "_ref": "image-e3a6c44e778dc9f17cb0c8edd47a2c8b4e1c09b4-1350x1800-webp",
+          "_type": "reference"
+        }
+      },
+      "imagePosition": "left",
+      "imageShape": "arch",
+      "showDoodles": true
+    },
+    {
+      "_key": "k00072",
+      "_type": "imageText",
+      "accent": "sage",
+      "background": "muted",
+      "body": [
+        {
+          "_key": "k0009f",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k0009g",
+              "_type": "span",
+              "marks": [],
+              "text": "Nurses, warehouse and plant workers, retail and restaurant staff: we are open when you work. "
+            },
+            {
+              "_key": "k0009i",
+              "_type": "span",
+              "marks": [
+                "k0009h"
+              ],
+              "text": "Early morning care"
+            },
+            {
+              "_key": "k0009j",
+              "_type": "span",
+              "marks": [],
+              "text": " from 6 am, "
+            },
+            {
+              "_key": "k0009l",
+              "_type": "span",
+              "marks": [
+                "k0009k"
+              ],
+              "text": "evening care"
+            },
+            {
+              "_key": "k0009m",
+              "_type": "span",
+              "marks": [],
+              "text": " with dinner, "
+            },
+            {
+              "_key": "k0009o",
+              "_type": "span",
+              "marks": [
+                "k0009n"
+              ],
+              "text": "late evening care until 11 pm"
+            },
+            {
+              "_key": "k0009p",
+              "_type": "span",
+              "marks": [],
+              "text": ", and "
+            },
+            {
+              "_key": "k0009r",
+              "_type": "span",
+              "marks": [
+                "k0009q"
+              ],
+              "text": "Saturday daycare"
+            },
+            {
+              "_key": "k0009s",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "k0009h",
+              "_type": "link",
+              "internal": {
+                "_ref": "service-first-shift",
+                "_type": "reference"
+              },
+              "linkType": "internal"
+            },
+            {
+              "_key": "k0009k",
+              "_type": "link",
+              "internal": {
+                "_ref": "service-evening",
+                "_type": "reference"
+              },
+              "linkType": "internal"
+            },
+            {
+              "_key": "k0009n",
+              "_type": "link",
+              "internal": {
+                "_ref": "service-late-evening",
+                "_type": "reference"
+              },
+              "linkType": "internal"
+            },
+            {
+              "_key": "k0009q",
+              "_type": "link",
+              "internal": {
+                "_ref": "service-weekend",
+                "_type": "reference"
+              },
+              "linkType": "internal"
+            }
+          ],
+          "style": "normal"
+        }
+      ],
+      "buttons": [
+        {
+          "_key": "k00071",
+          "_type": "ctaButton",
+          "label": "Find care for your shift",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "category-shift-care",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "variant": "secondary"
+        }
+      ],
+      "eyebrow": "Open Monday to Saturday, 6 am to 11 pm",
+      "heading": "Child care for every shift in Vineland",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Front porch and entrance of Uriah Child Care at dusk",
+        "asset": {
+          "_ref": "image-e00d54b355a50ec728740d81e923cede12e65101-1800x1350-webp",
+          "_type": "reference"
+        }
+      },
+      "imagePosition": "right",
+      "imageShape": "circle",
+      "showDoodles": true
+    },
+    {
+      "_key": "k0007a",
+      "_type": "featureGrid",
+      "background": "default",
+      "buttons": [
+        {
+          "_key": "k00079",
+          "_type": "ctaButton",
+          "label": "Meet Ms. Paulette",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-about",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "variant": "secondary"
+        }
+      ],
+      "heading": "Why Vineland families choose Uriah",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Ms. Paulette, owner of Uriah Child Care",
+        "asset": {
+          "_ref": "image-7e94a3e1e227a21fbb7c3145cfc35c526f6e7d33-1350x1800-webp",
+          "_type": "reference"
+        }
+      },
+      "imageShape": "circle",
+      "intro": "A small, family-run center where your child is known by name.",
+      "items": [
+        {
+          "_key": "k00073",
+          "_type": "feature",
+          "description": "Families who have known her for years now bring their younger children, and their grandchildren.",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-about",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "title": "Led by Ms. Paulette since 2005"
+        },
+        {
+          "_key": "k00074",
+          "_type": "feature",
+          "description": "License ID CCC128557, posted in our lobby with the state’s information for parents.",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-safe-licensed",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "title": "Licensed by NJ DCF"
+        },
+        {
+          "_key": "k00075",
+          "_type": "feature",
+          "description": "Monday to Saturday, early morning to 11 pm, for parents who work shifts.",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "category-shift-care",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "title": "Open when you work"
+        },
+        {
+          "_key": "k00076",
+          "_type": "feature",
+          "description": "We walk you through the steps for families who qualify.",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-ccap",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "title": "NJ childcare subsidy (CCAP) accepted"
+        },
+        {
+          "_key": "k00077",
+          "_type": "feature",
+          "description": "Meals and snacks through the USDA Child and Adult Care Food Program (CACFP).",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-meals",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "title": "Meals included"
+        },
+        {
+          "_key": "k00078",
+          "_type": "feature",
+          "description": "Secure check-in and check-out, and updates about your child’s day.",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-our-center",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "title": "Procare check-in and updates"
+        }
+      ],
+      "style": "checklist"
+    },
+    {
+      "_key": "k0007b",
+      "_type": "testimonialsBlock",
+      "background": "muted",
+      "heading": "What parents say",
+      "intro": "Real reviews from local families on Google.",
+      "mode": "all"
+    },
+    {
+      "_key": "k0007c",
+      "_type": "serviceAreasBlock",
+      "background": "default",
+      "heading": "Serving Vineland, Millville and Bridgeton",
+      "intro": "Our center is in Vineland, and many families drive in from across Cumberland County.",
+      "mode": "all"
+    },
+    {
+      "_key": "k0007k",
+      "_type": "faqBlock",
+      "background": "white",
+      "buttons": [
+        {
+          "_key": "k0007j",
+          "_type": "ctaButton",
+          "label": "See all questions",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-faq",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "variant": "secondary"
+        }
+      ],
+      "faqs": [
+        {
+          "_key": "k0007d",
+          "_ref": "faq-hours",
+          "_type": "reference"
+        },
+        {
+          "_key": "k0007e",
+          "_ref": "faq-ages",
+          "_type": "reference"
+        },
+        {
+          "_key": "k0007f",
+          "_ref": "faq-third-shift",
+          "_type": "reference"
+        },
+        {
+          "_key": "k0007g",
+          "_ref": "faq-ccap",
+          "_type": "reference"
+        },
+        {
+          "_key": "k0007h",
+          "_ref": "faq-cost",
+          "_type": "reference"
+        },
+        {
+          "_key": "k0007i",
+          "_ref": "faq-tour",
+          "_type": "reference"
+        }
+      ],
+      "heading": "Questions parents ask",
+      "mode": "selected"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Licensed day care center in Vineland, NJ for ages 2.5 and up. Open Monday to Saturday, early morning to 11 pm. CCAP accepted. Book a tour.",
+    "metaTitle": "Day Care Center in Vineland, NJ | Uriah Child Care"
+  },
+  "title": "Home"
+}

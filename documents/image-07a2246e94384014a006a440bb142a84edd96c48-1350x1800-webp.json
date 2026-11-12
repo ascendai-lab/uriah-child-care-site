@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:51Z",
+  "_id": "image-07a2246e94384014a006a440bb142a84edd96c48-1350x1800-webp",
+  "_rev": "Mj8jZDV099qjkJYi2yZlyI",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:51Z",
+  "assetId": "07a2246e94384014a006a440bb142a84edd96c48",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dZC@ERRkR4jENlWBaJfkNioJozozOHt7oeWCs=kDWrV[",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBAP/xAAmEAACAQMEAAYDAAAAAAAAAAABAgMABBEFEhMhBhQiMUFRUmGB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAwQFAf/EACARAAEEAQQDAAAAAAAAAAAAAAEAAgMREgQFEzEhQZH/2gAMAwEAAhEDEQA/AJLTtas5LhI5j65DjcfiqjyixRJJtUq5IVc9movwxoVhdXfJq+oR2yRn0RDt3b4FW2oSvBqIWGeJoVULtKnP8qgN6lbGSRdJGTRxmVrWOoHtT19cXxuG44uNfxYZNFO5ro8hwyuPsrRSbt3JN2fqZGibXYS2GKGOZZuFGKEMeu67QG4v724up4xBGeo4x74+zWe5JDsB7Kwx+qfKq+ThkwN5AyahFxDcb8IvG0nL2lcq7XIOTRW0xqWJKgnNFDW4L//Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#677139",
+        "foreground": "#fff",
+        "population": 6.46,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#213069",
+        "foreground": "#fff",
+        "population": 0.11,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#4a74c6",
+        "foreground": "#fff",
+        "population": 6.79,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#8fa0c8",
+        "foreground": "#000",
+        "population": 0.63,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#548bee",
+        "foreground": "#fff",
+        "population": 0.55,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#9b8e68",
+        "foreground": "#fff",
+        "population": 6.36,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#4a74c6",
+        "foreground": "#fff",
+        "population": 6.79,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "G+gFRQQAhm2FyKmbnJx3V5eAlB84"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "exterior-spring-day-care-flag-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/07a2246e94384014a006a440bb142a84edd96c48-1350x1800.webp",
+  "sha1hash": "07a2246e94384014a006a440bb142a84edd96c48",
+  "size": 541788,
+  "uploadId": "47fbd66fed762567e961bcbdcd4f60ac4a00b675",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/07a2246e94384014a006a440bb142a84edd96c48-1350x1800.webp"
+}

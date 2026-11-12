@@ -1,0 +1,458 @@
+{
+  "_createdAt": "2026-11-04T17:31:13Z",
+  "_id": "post-new-chapter",
+  "_rev": "Mj8jZDV099qjkJYi2zIe4c",
+  "_system": {
+    "base": {
+      "id": "post-new-chapter",
+      "rev": "OXKzsTJ7Efs4i6zOkQS55N"
+    }
+  },
+  "_type": "blogPost",
+  "_updatedAt": "2026-11-05T03:23:06Z",
+  "body": [
+    {
+      "_key": "k00122",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00123",
+          "_type": "span",
+          "marks": [],
+          "text": "We have some fantastic news to share with the Vineland community!"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00124",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00125",
+          "_type": "span",
+          "marks": [],
+          "text": "At Uriah Child Care, our mission has always been to provide high-quality, nurturing care for your little ones. To better serve the growing needs of families in Vineland and the surrounding areas, we are thrilled to announce our "
+        },
+        {
+          "_key": "k00126",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "grand opening and expansion"
+        },
+        {
+          "_key": "k00127",
+          "_type": "span",
+          "marks": [],
+          "text": " into a brand-new facility."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00128",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00129",
+          "_type": "span",
+          "marks": [],
+          "text": "We have officially moved and expanded to our new home at "
+        },
+        {
+          "_key": "k0012a",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "30 W Chestnut Ave, Vineland, NJ 08360"
+        },
+        {
+          "_key": "k0012b",
+          "_type": "span",
+          "marks": [],
+          "text": ". The larger space lets us welcome more children into the Uriah family, with more room for learning, play and growth. You can "
+        },
+        {
+          "_key": "k0012d",
+          "_type": "span",
+          "marks": [
+            "k0012c"
+          ],
+          "text": "see photos of the center"
+        },
+        {
+          "_key": "k0012e",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0012c",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-our-center",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0012f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0012g",
+          "_type": "span",
+          "marks": [],
+          "text": "Flexible care for modern families"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0012h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0012i",
+          "_type": "span",
+          "marks": [],
+          "text": "Life for today's parents doesn't always fit a 9-to-5 schedule. Parents work early mornings, evenings and weekends to provide for their families, and finding reliable child care shouldn't add to that stress."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0012j",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0012k",
+          "_type": "span",
+          "marks": [],
+          "text": "That is why we are open "
+        },
+        {
+          "_key": "k0012l",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Monday to Saturday, 6 am to 11 pm"
+        },
+        {
+          "_key": "k0012m",
+          "_type": "span",
+          "marks": [],
+          "text": ". Whether you work early, late or on Saturday, your child has a safe, engaging place to be. See "
+        },
+        {
+          "_key": "k0012o",
+          "_type": "span",
+          "marks": [
+            "k0012n"
+          ],
+          "text": "child care for every shift"
+        },
+        {
+          "_key": "k0012p",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0012n",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-shift-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0012q",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0012r",
+          "_type": "span",
+          "marks": [],
+          "text": "Subsidy news for 2026"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0012s",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0012t",
+          "_type": "span",
+          "marks": [],
+          "text": "We believe money shouldn't stand between a child and good care. When we wrote this post, the New Jersey Child Care Assistance Program (CCAP) was preparing to reopen for new applications in January 2026, after a pause because of limited funding."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0012u",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0012v",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Limited reopening and priorities:"
+        },
+        {
+          "_key": "k0012w",
+          "_type": "span",
+          "marks": [],
+          "text": " because funding was limited, the first openings were set aside for priority groups, including families with very low incomes, children with special needs and families experiencing homelessness."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0012x",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0012y",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Registration first:"
+        },
+        {
+          "_key": "k0012z",
+          "_type": "span",
+          "marks": [],
+          "text": " families complete a registration form at "
+        },
+        {
+          "_key": "k00131",
+          "_type": "span",
+          "marks": [
+            "k00130"
+          ],
+          "text": "mynjhelps.gov"
+        },
+        {
+          "_key": "k00132",
+          "_type": "span",
+          "marks": [],
+          "text": " to be considered, and are told when they can complete the full application."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k00130",
+          "_type": "link",
+          "external": "https://www.mynjhelps.gov/home",
+          "linkType": "external",
+          "openInNewTab": true
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k00133",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00134",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Local office:"
+        },
+        {
+          "_key": "k00135",
+          "_type": "span",
+          "marks": [],
+          "text": " in Cumberland County the program is managed locally by Rutgers Southern Regional CCR&R in Vineland, but you still start with the statewide registration form."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00136",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00137",
+          "_type": "span",
+          "marks": [],
+          "text": "For where things stand today and how we can help with the steps, see our "
+        },
+        {
+          "_key": "k00139",
+          "_type": "span",
+          "marks": [
+            "k00138"
+          ],
+          "text": "CCAP child care page"
+        },
+        {
+          "_key": "k0013a",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k00138",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-ccap",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0013b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0013c",
+          "_type": "span",
+          "marks": [],
+          "text": "Open enrollment"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0013d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0013e",
+          "_type": "span",
+          "marks": [],
+          "text": "We are enrolling children ages 2.5 and up at our new location. Spaces fill quickly, especially for evening and Saturday care, so reach out soon."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0013f",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0013g",
+          "_type": "span",
+          "marks": [],
+          "text": "Call "
+        },
+        {
+          "_key": "k0013i",
+          "_type": "span",
+          "marks": [
+            "k0013h"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k0013j",
+          "_type": "span",
+          "marks": [],
+          "text": " or "
+        },
+        {
+          "_key": "k0013l",
+          "_type": "span",
+          "marks": [
+            "k0013k"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k0013m",
+          "_type": "span",
+          "marks": [],
+          "text": ". We can't wait to welcome you to our new home!"
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0013h",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        },
+        {
+          "_key": "k0013k",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "categories": [
+    "Announcements"
+  ],
+  "excerpt": "We moved and expanded to a new home at 30 W Chestnut Ave in Vineland, open Monday to Saturday with open enrollment.",
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Day Care flag on the front lawn of Uriah Child Care in Vineland on a sunny day",
+    "asset": {
+      "_ref": "image-07a2246e94384014a006a440bb142a84edd96c48-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "publishedAt": "2025-12-30T12:00:00Z",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Uriah Child Care moved and expanded to 30 W Chestnut Ave, Vineland, NJ 08360. Open Monday to Saturday, 6 am to 11 pm. Open enrollment for ages 2.5 and up.",
+    "metaTitle": "A new chapter: our new Vineland center | Uriah Child Care"
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "a-new-chapter-begins-for-uriah-child-care"
+  },
+  "title": "A new chapter begins for Uriah Child Care"
+}

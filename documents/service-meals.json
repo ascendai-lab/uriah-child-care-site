@@ -1,0 +1,565 @@
+{
+  "_createdAt": "2026-11-04T12:58:28Z",
+  "_id": "service-meals",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-meals",
+      "rev": "1tk6J7MImmXVkYKAfaoz4X"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sunshine",
+  "ageRange": "Ages 2.5 and up",
+  "body": [
+    {
+      "_key": "k000in",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000io",
+          "_type": "span",
+          "marks": [],
+          "text": "Meals through the USDA food program"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000ip",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000iq",
+          "_type": "span",
+          "marks": [],
+          "text": "We participate in the USDA Child and Adult Care Food Program (CACFP). The program sets standards for the meals and snacks child care centers serve, such as fruits, vegetables, whole grains, protein and milk, and it helps us serve them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ir",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000is",
+          "_type": "span",
+          "marks": [],
+          "text": "What a day of meals looks like"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000it",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000iu",
+          "_type": "span",
+          "marks": [],
+          "text": "Meals are served at the same times every day, Monday to Saturday:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000iv",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000iw",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Breakfast:"
+        },
+        {
+          "_key": "k000ix",
+          "_type": "span",
+          "marks": [],
+          "text": " 7:30 to 9 am"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000iy",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000iz",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Lunch:"
+        },
+        {
+          "_key": "k000j0",
+          "_type": "span",
+          "marks": [],
+          "text": " 12 noon"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000j1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000j2",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Afternoon snack:"
+        },
+        {
+          "_key": "k000j3",
+          "_type": "span",
+          "marks": [],
+          "text": " 3 pm"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000j4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000j5",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Dinner:"
+        },
+        {
+          "_key": "k000j6",
+          "_type": "span",
+          "marks": [],
+          "text": " 6 pm, for children staying into the evening"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000j7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000j8",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Evening snack:"
+        },
+        {
+          "_key": "k000j9",
+          "_type": "span",
+          "marks": [],
+          "text": " 9 pm, for children staying late"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ja",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000jb",
+          "_type": "span",
+          "marks": [],
+          "text": "Children wash their hands before every meal, and we eat together at the table."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000jc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000jd",
+          "_type": "span",
+          "marks": [],
+          "text": "A sample of our menu"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000je",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000jf",
+          "_type": "span",
+          "marks": [],
+          "text": "Our menu changes every month. Here are some of the meals on our November 2026 menu:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000jg",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000jh",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Breakfast:"
+        },
+        {
+          "_key": "k000ji",
+          "_type": "span",
+          "marks": [],
+          "text": " a whole-grain banana muffin with honeydew melon, a yogurt parfait with blueberries and granola, or whole-grain cereal with peaches or pears"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000jj",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000jk",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Lunch:"
+        },
+        {
+          "_key": "k000jl",
+          "_type": "span",
+          "marks": [],
+          "text": " arroz con pollo with brown rice and mixed vegetables, chicken fajitas with bell peppers, turkey with gravy, brown rice and broccoli, or vegetable chili with quinoa"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000jm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000jn",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Snack:"
+        },
+        {
+          "_key": "k000jo",
+          "_type": "span",
+          "marks": [],
+          "text": " apple slices with a banana-cinnamon chickpea spread, yogurt with banana slices, or cheddar cheese with whole-grain crackers"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000jp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000jq",
+          "_type": "span",
+          "marks": [],
+          "text": "Breakfast and lunch come with milk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000jr",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000js",
+          "_type": "span",
+          "marks": [],
+          "text": "And every week, the children look forward to "
+        },
+        {
+          "_key": "k000jt",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Watermelon Wednesday"
+        },
+        {
+          "_key": "k000ju",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000jv",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000jw",
+          "_type": "span",
+          "marks": [],
+          "text": "Who prepares our meals"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000jx",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000jy",
+          "_type": "span",
+          "marks": [],
+          "text": "Our meals are made by a licensed local food vendor and delivered following Vineland Health Department and New Jersey licensing rules. We have a Certified Food Protection Manager on staff, and we follow food safety rules for storing, holding and serving food at the right temperature. Weekly menus are posted for families. Because of these rules, breakfast can't be brought from home, and birthday treats need to be store-bought, labeled with their ingredients and okayed with us first."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000jz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000k0",
+          "_type": "span",
+          "marks": [],
+          "text": "Allergies and special diets"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000k1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000k2",
+          "_type": "span",
+          "marks": [],
+          "text": "If your child has a food allergy, a medical condition or a special diet, bring a note from your child's doctor and we will fill out an Allergy Action Plan together and keep it on file. We plan your child's meals around it, and staff can see it at every meal. Let us know before your child's first day, and tell us if anything changes."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000k3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000k4",
+          "_type": "span",
+          "marks": [],
+          "text": "We encourage children to try new foods, but we never force them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000k5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000k6",
+          "_type": "span",
+          "marks": [],
+          "text": "Questions"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000k7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000k8",
+          "_type": "span",
+          "marks": [],
+          "text": "Ask about our menus when you "
+        },
+        {
+          "_key": "k000ka",
+          "_type": "span",
+          "marks": [
+            "k000k9"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000kb",
+          "_type": "span",
+          "marks": [],
+          "text": ", or call "
+        },
+        {
+          "_key": "k000kd",
+          "_type": "span",
+          "marks": [
+            "k000kc"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000ke",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000k9",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000kc",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "excerpt": "Meals and snacks through the USDA Child and Adult Care Food Program (CACFP), with allergies planned for.",
+  "faqs": [
+    {
+      "_key": "k0002m",
+      "_type": "faqItem",
+      "answer": "Meals and snacks are served during the day through the USDA food program (CACFP). Ask us at enrollment about anything your child needs from home.",
+      "question": "Do I need to pack lunch?"
+    },
+    {
+      "_key": "k0002n",
+      "_type": "faqItem",
+      "answer": "Breakfast is from 7:30 to 9 am, lunch is at 12 noon, snack is at 3 pm, dinner is at 6 pm and the evening snack is at 9 pm.",
+      "question": "What time are meals served?"
+    },
+    {
+      "_key": "k0002o",
+      "_type": "faqItem",
+      "answer": "Yes. Bring a note from your child’s doctor, and we will complete an Allergy Action Plan with you and plan meals around it.",
+      "question": "Can you handle food allergies?"
+    }
+  ],
+  "gbpName": "Meals provided",
+  "highlights": [
+    "USDA food program (CACFP) participant",
+    "Meals and snacks during the day",
+    "Allergies and special diets planned for",
+    "Handwashing before every meal"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Children sharing birthday cake at a classroom table with their teacher at Uriah Child Care in Vineland",
+    "asset": {
+      "_ref": "image-4450f6a9336ae0e59f7b7859d41527c9dfe116f3-480x640-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Meals and snacks every day, following the USDA Child and Adult Care Food Program (CACFP). Tell us about allergies when you enroll.",
+  "keyword": "daycare meals vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 3,
+  "related": [
+    {
+      "_key": "k0002h",
+      "_ref": "service-safe-licensed",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0002i",
+      "_ref": "category-preschool",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0002j",
+      "_ref": "service-evening",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0002k",
+      "_ref": "page-faq",
+      "_type": "reference"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Meals and snacks for children at Uriah Child Care in Vineland, NJ through the USDA food program (CACFP). Allergies planned for. Book a tour.",
+    "metaTitle": "Daycare Meals in Vineland, NJ | CACFP | Uriah Child Care"
+  },
+  "shortTitle": "Meals and snacks",
+  "slug": {
+    "_type": "slug",
+    "current": "daycare-meals-vineland-nj"
+  },
+  "title": "Daycare meals and snacks in Vineland, NJ"
+}

@@ -1,0 +1,346 @@
+{
+  "_createdAt": "2026-11-04T12:58:28Z",
+  "_id": "service-ccap",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-ccap",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sage",
+  "ageRange": "Ages 2.5 and up",
+  "body": [
+    {
+      "_key": "k000gz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000h0",
+          "_type": "span",
+          "marks": [],
+          "text": "We accept NJ childcare subsidy"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000h2",
+          "_type": "span",
+          "marks": [],
+          "text": "The New Jersey Child Care Assistance Program (CCAP) helps working families, and families in school or training, pay for child care. Uriah Child Care accepts CCAP for families who qualify, for toddler care, kindergarten readiness and before and after school care."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000h3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000h4",
+          "_type": "span",
+          "marks": [],
+          "text": "How CCAP works in Cumberland County"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000h5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000h6",
+          "_type": "span",
+          "marks": [],
+          "text": "In Cumberland County, CCAP is managed by the local child care resource and referral agency, Rutgers Southern Regional CCR&R. Its Vineland office is at 415 W Landis Ave, Suite 202, and you can call them at "
+        },
+        {
+          "_key": "k000h8",
+          "_type": "span",
+          "marks": [
+            "k000h7"
+          ],
+          "text": "(856) 462-6800"
+        },
+        {
+          "_key": "k000h9",
+          "_type": "span",
+          "marks": [],
+          "text": ". You apply through the state's Child Care Assistance Program, and the agency decides eligibility and your family's share of the cost. Rules and income limits are set by the state and can change, so check the official "
+        },
+        {
+          "_key": "k000hb",
+          "_type": "span",
+          "marks": [
+            "k000ha"
+          ],
+          "text": "NJ Child Care Assistance Program"
+        },
+        {
+          "_key": "k000hc",
+          "_type": "span",
+          "marks": [],
+          "text": " website for the latest."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000h7",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564626800"
+        },
+        {
+          "_key": "k000ha",
+          "_type": "link",
+          "external": "https://www.childcarenj.gov/",
+          "linkType": "external",
+          "openInNewTab": true
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000hd",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000he",
+          "_type": "span",
+          "marks": [],
+          "text": "How we help"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000hf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000hg",
+          "_type": "span",
+          "marks": [],
+          "text": "We explain what to bring and who to contact."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000hh",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000hi",
+          "_type": "span",
+          "marks": [],
+          "text": "Once you are approved, we help you choose a schedule that fits your work hours."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000hj",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000hk",
+          "_type": "span",
+          "marks": [],
+          "text": "If your schedule changes, tell us and we will help you update it."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000hl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000hm",
+          "_type": "span",
+          "marks": [],
+          "text": "Questions about cost?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000hn",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ho",
+          "_type": "span",
+          "marks": [],
+          "text": "See "
+        },
+        {
+          "_key": "k000hq",
+          "_type": "span",
+          "marks": [
+            "k000hp"
+          ],
+          "text": "tuition and how to pay"
+        },
+        {
+          "_key": "k000hr",
+          "_type": "span",
+          "marks": [],
+          "text": ", call us at "
+        },
+        {
+          "_key": "k000ht",
+          "_type": "span",
+          "marks": [
+            "k000hs"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000hu",
+          "_type": "span",
+          "marks": [],
+          "text": ", or "
+        },
+        {
+          "_key": "k000hw",
+          "_type": "span",
+          "marks": [
+            "k000hv"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000hx",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000hp",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tuition",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000hs",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        },
+        {
+          "_key": "k000hv",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "excerpt": "We accept NJ childcare subsidy (CCAP) for families who qualify, and we can walk you through the steps.",
+  "faqs": [
+    {
+      "_key": "k0002g",
+      "_type": "faqItem",
+      "answer": "Yes. We accept NJ childcare subsidy (CCAP) for families who qualify.",
+      "question": "Do you accept CCAP?"
+    },
+    {
+      "_key": "k0002h",
+      "_type": "faqItem",
+      "answer": "The state program and the county agency decide eligibility and your share of the cost. In Cumberland County that is Rutgers Southern Regional CCR&R in Vineland, (856) 462-6800. We can help you with the next steps.",
+      "question": "Who decides if I qualify?"
+    },
+    {
+      "_key": "k0002i",
+      "_type": "faqItem",
+      "answer": "Care has to fit what your subsidy approval covers. Tell us your work schedule and we will go over it with you.",
+      "question": "Can I use CCAP for evening or Saturday care?"
+    }
+  ],
+  "gbpName": "Child care subsidy accepted",
+  "highlights": [
+    "NJ childcare subsidy (CCAP) accepted",
+    "Help with the next steps",
+    "Care for every shift, Monday to Saturday",
+    "Ages 2.5 and up"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Welcome table with forms and flowers in the lobby of Uriah Child Care",
+    "asset": {
+      "_ref": "image-c7a0e850235f48b69275c655c186a1dbe3b39b86-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Yes, we accept NJ childcare subsidy (CCAP) for families who qualify, and we're happy to walk you through the steps.",
+  "keyword": "daycare that accepts ccap vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 2,
+  "related": [
+    {
+      "_key": "k0002b",
+      "_ref": "page-tuition",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0002c",
+      "_ref": "category-shift-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0002d",
+      "_ref": "category-preschool",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0002e",
+      "_ref": "page-tour",
+      "_type": "reference"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Uriah Child Care in Vineland, NJ accepts NJ childcare subsidy (CCAP) for families who qualify. Ages 2.5+, open Monday to Saturday. We help with the steps.",
+    "metaTitle": "Daycare That Accepts CCAP in Vineland, NJ | Uriah Child Care"
+  },
+  "shortTitle": "CCAP child care",
+  "slug": {
+    "_type": "slug",
+    "current": "ccap-child-care-vineland-nj"
+  },
+  "title": "Child care in Vineland that accepts NJ subsidy (CCAP)"
+}

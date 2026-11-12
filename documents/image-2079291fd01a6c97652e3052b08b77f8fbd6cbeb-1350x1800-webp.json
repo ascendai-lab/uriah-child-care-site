@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:48Z",
+  "_id": "image-2079291fd01a6c97652e3052b08b77f8fbd6cbeb-1350x1800-webp",
+  "_rev": "OXKzsTJ7Efs4i6zOkQRv93",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:48Z",
+  "assetId": "2079291fd01a6c97652e3052b08b77f8fbd6cbeb",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dFEME~--IpMf~ot8oLkC9HROWC%gx^t8t6Ri%HWEo#s.",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYDBAUCB//EACgQAAICAQMDAgcBAAAAAAAAAAECAwQABRESBiExE2EUIiNBQlGCkf/EABcBAAMBAAAAAAAAAAAAAAAAAAIDBQD/xAAbEQACAwEBAQAAAAAAAAAAAAABAgADERJRIf/aAAwDAQACEQMRAD8AsQT6RdidhqapJ+Cg7f7vkvwm8f03R+3kMDklDSKQlWS/FXC7lQHUd+2LPUWjrD6IpOsJZiCQ5G+L7w6Yar0cEuT1mMh+ZR/WGc6X0aRVBuuJJSSeQkPjDCLnyAciz0915U0+AjWWmt2Tuoi4jivvvmX1BqN2ZfXrqFqseSFSTx9sW4oY5LMRdQST3z0fpyCKaFq8qK0HjgR2x9VoR16GjybjoEA4YsUOs7aQcbsnOUHzt9sMzr9SBLs6rGAquQB+hvhlJqqCdwyebnX5P//Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5b4936",
+        "foreground": "#fff",
+        "population": 2.41,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#0e2b80",
+        "foreground": "#fff",
+        "population": 4.89,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#0e2b80",
+        "foreground": "#fff",
+        "population": 4.89,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#9eadc7",
+        "foreground": "#000",
+        "population": 2.06,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#95b7e3",
+        "foreground": "#000",
+        "population": 0,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#848180",
+        "foreground": "#fff",
+        "population": 4.57,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#2c64ac",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "2wcKFQJpdo+IR3aqiHpIaU5Ps/Ei"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "classroom-horseshoe-table-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/2079291fd01a6c97652e3052b08b77f8fbd6cbeb-1350x1800.webp",
+  "sha1hash": "2079291fd01a6c97652e3052b08b77f8fbd6cbeb",
+  "size": 170940,
+  "uploadId": "232a08a56ca99ec715849618381ec3ce06404a7f",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/2079291fd01a6c97652e3052b08b77f8fbd6cbeb-1350x1800.webp"
+}

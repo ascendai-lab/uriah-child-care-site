@@ -1,0 +1,28 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "team-ms-paulette",
+  "_rev": "OXKzsTJ7Efs4i6zOkPrljX",
+  "_system": {
+    "base": {
+      "id": "team-ms-paulette",
+      "rev": "OXKzsTJ7Efs4i6zOkPoNqf"
+    }
+  },
+  "_type": "teamMember",
+  "_updatedAt": "2026-11-04T13:26:43Z",
+  "bio": "Ms. Paulette has cared for Cumberland County children since 2005. Families who have known her for years now bring their younger children, and some of their grandchildren, to the new Vineland center.",
+  "credentials": [
+    "Pediatric First Aid and CPR/AED certified"
+  ],
+  "name": "Ms. Paulette",
+  "order": 1,
+  "photo": {
+    "_type": "imageWithAlt",
+    "alt": "Ms. Paulette, owner of Uriah Child Care in Vineland, NJ",
+    "asset": {
+      "_ref": "image-7e94a3e1e227a21fbb7c3145cfc35c526f6e7d33-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "role": "Owner"
+}

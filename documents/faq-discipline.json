@@ -1,0 +1,26 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-discipline",
+  "_rev": "OXKzsTJ7Efs4i6zOkPoNqf",
+  "_type": "faq",
+  "_updatedAt": "2026-11-04T13:04:58Z",
+  "answer": [
+    {
+      "_key": "k000ai",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000aj",
+          "_type": "span",
+          "marks": [],
+          "text": "We use positive discipline: clear and simple rules, redirection, and praise for good choices. We never use spanking or any physical punishment, shaming or withholding food. We talk with you when we need to redirect your child, so we can work on it together."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "category": "Safety",
+  "order": 9,
+  "question": "How do you handle discipline?"
+}

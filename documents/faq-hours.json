@@ -1,0 +1,56 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-hours",
+  "_rev": "Mj8jZDV099qjkJYi2zIe4c",
+  "_system": {
+    "base": {
+      "id": "faq-hours",
+      "rev": "OXKzsTJ7Efs4i6zOkPvZnD"
+    }
+  },
+  "_type": "faq",
+  "_updatedAt": "2026-11-05T03:23:06Z",
+  "answer": [
+    {
+      "_key": "k00095",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00096",
+          "_type": "span",
+          "marks": [],
+          "text": "We are open Monday to Saturday, 6 am to 11 pm: early morning, daytime, evening and late evening care. We are closed on Sunday. See "
+        },
+        {
+          "_key": "k00098",
+          "_type": "span",
+          "marks": [
+            "k00097"
+          ],
+          "text": "child care for every shift"
+        },
+        {
+          "_key": "k00099",
+          "_type": "span",
+          "marks": [],
+          "text": " for how families fit care around their work."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k00097",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-shift-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Hours and schedules",
+  "order": 1,
+  "question": "What are your hours?"
+}

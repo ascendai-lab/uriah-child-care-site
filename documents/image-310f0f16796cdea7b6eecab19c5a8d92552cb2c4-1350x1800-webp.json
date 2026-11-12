@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:08Z",
+  "_id": "image-310f0f16796cdea7b6eecab19c5a8d92552cb2c4-1350x1800-webp",
+  "_rev": "OXKzsTJ7Efs4i6zOkQRt0n",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:08Z",
+  "assetId": "310f0f16796cdea7b6eecab19c5a8d92552cb2c4",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dGE{hGoutjxw~oRjM{xs9fROD%t7?cItxZxv?FM_M{of",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAUGAwQH/8QAJRAAAgIBBAEEAwEAAAAAAAAAAQIDBAAFBhEhEhMxQVEHIiOB/8QAGAEAAgMAAAAAAAAAAAAAAAAAAwQAAQL/xAAhEQABBAEDBQAAAAAAAAAAAAACAAEDEQQFEjETFCFBof/aAAwDAQACEQMRAD8AytQmR+Y3hmA7DxNyMcHeGu1KYgijjUr0H8e8Uybap16Nc1WaOdSwkaKQjv4xTo9fWr0ssLWGaqrEFvIFlGCGSnpbENzWt6bWdetSGWS5N5H6PGGO9P0WRaqhmeU8n9ie8MvrR+2dBcZb8UoXWt06dbrIm3meS1H27KxUN/nzkvpW57+n3isrmOvI39R8jFO0EVXLgDyU9H6ym37Ugi0ipYjiVZ5OfJx7nHsQozkcJBu/ikjEIbhfhUUf5JWuvp1azyxL7Oz8E4ZyqsT6Q7wxl9Lx74SncyL/2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#56432d",
+        "foreground": "#fff",
+        "population": 2.48,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#0e2868",
+        "foreground": "#fff",
+        "population": 7.03,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#0e2868",
+        "foreground": "#fff",
+        "population": 7.03,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#92acc9",
+        "foreground": "#000",
+        "population": 2.17,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#dfaf9a",
+        "foreground": "#000",
+        "population": 0,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ad8e69",
+        "foreground": "#fff",
+        "population": 0.34,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c46c44",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "3PcJFQKXeH+GSEfIl2pml5tesMEE"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "classroom-reading-rug-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/310f0f16796cdea7b6eecab19c5a8d92552cb2c4-1350x1800.webp",
+  "sha1hash": "310f0f16796cdea7b6eecab19c5a8d92552cb2c4",
+  "size": 187582,
+  "uploadId": "c8060397fa27f376615f12a468d2fec2f72962a1",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/310f0f16796cdea7b6eecab19c5a8d92552cb2c4-1350x1800.webp"
+}

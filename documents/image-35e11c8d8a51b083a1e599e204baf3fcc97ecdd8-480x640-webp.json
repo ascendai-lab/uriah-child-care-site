@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-06T04:26:19Z",
+  "_id": "image-35e11c8d8a51b083a1e599e204baf3fcc97ecdd8-480x640-webp",
+  "_rev": "QCUAteQjtFGCH4SAG25JVB",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-06T04:26:19Z",
+  "assetId": "35e11c8d8a51b083a1e599e204baf3fcc97ecdd8",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dID,TBa0X8RjDsem%4n$00s7-psAXAROE1WA~WM{J7R%",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 640,
+      "width": 480
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUHBgT/xAAmEAABAwQCAAYDAAAAAAAAAAABAgMEAAURIQYSBxMxM0FRYXGB/8QAFwEBAQEBAAAAAAAAAAAAAAAAAgMABf/EACERAAEEAQMFAAAAAAAAAAAAAAEAAgMRBCExURITMkGR/9oADAMBAAIRAxEAPwCS3XiM+0SX2XWVpKcFC86UKUxmlRFrefSpCkDKMoyCqrjB45NvNqiuqfEtqQruhwq0PsZ+K7rj4bIeuzZm9IsBLYBwckkfNLtNbudlK3SdLmtoHVTV+62qQ1FXdLemVM8lIcdQ0QCd0VSbrYo0WSlqHNdQylAABbBz+aKZlN6AIiJh9lTKxnmHEQY8YOSYCthsL1/PqtJL5vy2dGQ2/bz1AwFKUMJ/dN1qIlOJycYOqXzB1bVjW65Lc2SqNLOhaefpS0W6/wA1IffvZjLUPba2kCitBD3FbJA9KKkcua/JIQR8L//Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#504e32",
+        "foreground": "#fff",
+        "population": 6.6,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#8d5f1c",
+        "foreground": "#fff",
+        "population": 0.12,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#504e32",
+        "foreground": "#fff",
+        "population": 6.6,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#cdcda6",
+        "foreground": "#000",
+        "population": 0.35,
+        "title": "#000"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d58091",
+        "foreground": "#000",
+        "population": 1.38,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#6492ac",
+        "foreground": "#fff",
+        "population": 5.4,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#e14764",
+        "foreground": "#fff",
+        "population": 1.51,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "GOgJHQKGhnR5CKhoZm1Hd4iRz/i7"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "summer-foam-sensory-play-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/35e11c8d8a51b083a1e599e204baf3fcc97ecdd8-480x640.webp",
+  "sha1hash": "35e11c8d8a51b083a1e599e204baf3fcc97ecdd8",
+  "size": 109640,
+  "uploadId": "fbfef94b90312d080bd2cee44681c024a4b7edc1",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/35e11c8d8a51b083a1e599e204baf3fcc97ecdd8-480x640.webp"
+}

@@ -1,0 +1,26 @@
+{
+  "_createdAt": "2026-11-05T17:44:42Z",
+  "_id": "faq-sick",
+  "_rev": "Weiss0T6IziVTCaiuOyMwM",
+  "_type": "faq",
+  "_updatedAt": "2026-11-05T17:44:49Z",
+  "answer": [
+    {
+      "_key": "k000cb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000cc",
+          "_type": "span",
+          "marks": [],
+          "text": "Please keep your child home with a fever of 100.9°F or higher until they have been fever-free for 48 hours without medicine, and for 24 hours after vomiting. Children also stay home with diarrhea, a cough or runny nose that won't go away, or a contagious illness like strep throat (24 hours on antibiotics first) or lice. A new rash needs a doctor's note. If your child gets sick here, we call you, and we ask that you or an emergency contact come within the hour."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "category": "Daily life",
+  "order": 19,
+  "question": "When should my child stay home sick?"
+}

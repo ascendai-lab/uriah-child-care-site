@@ -1,0 +1,480 @@
+{
+  "_createdAt": "2026-11-04T13:00:34Z",
+  "_id": "service-kindergarten-readiness",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-kindergarten-readiness",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sunshine",
+  "ageRange": "Ages 4 to 5",
+  "body": [
+    {
+      "_key": "k000kj",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000kk",
+          "_type": "span",
+          "marks": [],
+          "text": "What \"ready for kindergarten\" means"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000kl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000km",
+          "_type": "span",
+          "marks": [],
+          "text": "Kindergarten readiness is more than ABCs. Teachers also look for children who can sit for a story, follow a routine, ask for help, take care of their things and get along with others. We work on all of it, every day."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000kn",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ko",
+          "_type": "span",
+          "marks": [],
+          "text": "How we build school skills"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000kp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000kq",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Early reading:"
+        },
+        {
+          "_key": "k000kr",
+          "_type": "span",
+          "marks": [],
+          "text": " letter games, rhymes and reading aloud, plus finding letters from their own name."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ks",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000kt",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Early math:"
+        },
+        {
+          "_key": "k000ku",
+          "_type": "span",
+          "marks": [],
+          "text": " counting real objects, sorting, patterns and comparing more and less."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000kv",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000kw",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Fine motor:"
+        },
+        {
+          "_key": "k000kx",
+          "_type": "span",
+          "marks": [],
+          "text": " crayons, scissors, play dough and puzzles, which build the hand strength for writing."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ky",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000kz",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Routines:"
+        },
+        {
+          "_key": "k000l0",
+          "_type": "span",
+          "marks": [],
+          "text": " a picture schedule, clean-up time, lining up and handwashing, just like school."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000l1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l2",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Social skills:"
+        },
+        {
+          "_key": "k000l3",
+          "_type": "span",
+          "marks": [],
+          "text": " sharing, taking turns and using words to solve problems."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000l4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l5",
+          "_type": "span",
+          "marks": [],
+          "text": "Keeping you in the loop"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000l6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l7",
+          "_type": "span",
+          "marks": [],
+          "text": "We share how your child is doing and what to practice at home, through the Procare app and at pickup."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000l8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000l9",
+          "_type": "span",
+          "marks": [],
+          "text": "Getting ready for a Vineland school"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000la",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000lb",
+          "_type": "span",
+          "marks": [],
+          "text": "Many Vineland children go on to Vineland Public Schools elementary schools such as Gloria M. Sabater, Pauline J. Petway, Marie Durand or Dr. William Mennies Elementary School. Kindergarten registration is run by the school district, so check its website in the spring before your child starts. If your child will stay with us before or after school, our "
+        },
+        {
+          "_key": "k000ld",
+          "_type": "span",
+          "marks": [
+            "k000lc"
+          ],
+          "text": "before and after school care"
+        },
+        {
+          "_key": "k000le",
+          "_type": "span",
+          "marks": [],
+          "text": " keeps the same faces in their week."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000lc",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000lf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000lg",
+          "_type": "span",
+          "marks": [],
+          "text": "Who teaches your child"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000lh",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000li",
+          "_type": "span",
+          "marks": [],
+          "text": "Ms. Paulette has cared for local children since 2005, and our director, Tameca Burke, has about five years of experience in child care. Ms. Paulette is certified in pediatric First Aid and CPR/AED, and every staff member must have CPR and first aid training before we hire them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000lj",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000lk",
+          "_type": "span",
+          "marks": [],
+          "text": "A full day around your shift"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000ll",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000lm",
+          "_type": "span",
+          "marks": [],
+          "text": "School skills are built into a full child care day. Your child can arrive at 6 am and stay into the evening, or come on Saturday, so you don't have to piece together care around a short school day."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ln",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000lo",
+          "_type": "span",
+          "marks": [],
+          "text": "Learn more"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000lp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000lq",
+          "_type": "span",
+          "marks": [],
+          "text": "See "
+        },
+        {
+          "_key": "k000ls",
+          "_type": "span",
+          "marks": [
+            "k000lr"
+          ],
+          "text": "early learning at Uriah"
+        },
+        {
+          "_key": "k000lt",
+          "_type": "span",
+          "marks": [],
+          "text": " and our "
+        },
+        {
+          "_key": "k000lv",
+          "_type": "span",
+          "marks": [
+            "k000lu"
+          ],
+          "text": "play-based curriculum"
+        },
+        {
+          "_key": "k000lw",
+          "_type": "span",
+          "marks": [],
+          "text": ", or "
+        },
+        {
+          "_key": "k000ly",
+          "_type": "span",
+          "marks": [
+            "k000lx"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000lz",
+          "_type": "span",
+          "marks": [],
+          "text": " and ask Ms. Paulette how she prepares children for school."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000lr",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-preschool",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000lu",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-play-based-learning",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000lx",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-preschool",
+    "_type": "reference"
+  },
+  "excerpt": "The skills kindergarten teachers look for, built through play: letters, counting, routines and making friends.",
+  "faqs": [
+    {
+      "_key": "k00031",
+      "_type": "faqItem",
+      "answer": "The year or two before kindergarten, around age 4, is a great time. School skills start even earlier, through play, from age 2½.",
+      "question": "When should my child start getting ready for kindergarten?"
+    }
+  ],
+  "gbpName": "Kindergarten readiness",
+  "highlights": [
+    "Letters, sounds and early reading",
+    "Counting and number sense",
+    "Holding a pencil and writing their name",
+    "Routines, listening and following directions",
+    "Making friends and solving problems"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Alphabet rug, circle time board and shelves in a classroom at Uriah Child Care",
+    "asset": {
+      "_ref": "image-6d847b110736a64690f164fc3036531fca2fe7e9-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "We get 4 and 5-year-olds ready for kindergarten: letters and sounds, counting, writing their name and getting along with classmates.",
+  "keyword": "kindergarten readiness vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 2,
+  "related": [
+    {
+      "_key": "k00034",
+      "_ref": "category-preschool",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00035",
+      "_ref": "service-play-based-learning",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00036",
+      "_ref": "service-toddler-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00037",
+      "_ref": "category-after-school",
+      "_type": "reference"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Get your 4 or 5-year-old ready for kindergarten in Vineland, NJ: letters, counting, routines and social skills, built through play. Book a tour.",
+    "metaTitle": "Kindergarten Readiness in Vineland, NJ | Uriah Child Care"
+  },
+  "shortTitle": "Kindergarten readiness",
+  "slug": {
+    "_type": "slug",
+    "current": "kindergarten-readiness-vineland-nj"
+  },
+  "title": "Kindergarten readiness in Vineland, NJ"
+}

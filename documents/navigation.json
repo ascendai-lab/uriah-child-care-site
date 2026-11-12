@@ -1,0 +1,368 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "navigation",
+  "_rev": "qHfAR2GXSfO7zaD7XmNX0p",
+  "_system": {
+    "base": {
+      "id": "navigation",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "navigation",
+  "_updatedAt": "2026-11-11T14:03:24Z",
+  "footerColumns": [
+    {
+      "_key": "k0000o",
+      "heading": "Get to know us",
+      "links": [
+        {
+          "_key": "k0000p",
+          "label": "Meet Ms. Paulette",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-about",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000q",
+          "label": "Our center",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-our-center",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000r",
+          "label": "Reviews",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-reviews",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000s",
+          "label": "News",
+          "link": {
+            "_type": "link",
+            "external": "/news/",
+            "linkType": "external"
+          }
+        },
+        {
+          "_key": "k0000t",
+          "label": "Tuition and CCAP",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-tuition",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000u",
+          "label": "Questions parents ask",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-faq",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "kcareers1",
+          "label": "Careers",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-careers",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000v",
+          "label": "Book a tour",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-tour",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        }
+      ]
+    }
+  ],
+  "headerCta": {
+    "_type": "ctaButton",
+    "label": "Book a tour",
+    "link": {
+      "_type": "link",
+      "internal": {
+        "_ref": "page-tour",
+        "_type": "reference"
+      },
+      "linkType": "internal"
+    },
+    "variant": "primary"
+  },
+  "headerLinks": [
+    {
+      "_key": "k00002",
+      "children": [
+        {
+          "_key": "k00003",
+          "label": "Toddler care (2.5 and up)",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-toddler-care",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k00004",
+          "label": "Early learning (2.5 to 5)",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "category-preschool",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k00005",
+          "label": "Kindergarten readiness",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-kindergarten-readiness",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k00006",
+          "label": "After school program",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "category-after-school",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k00007",
+          "label": "Before school care",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-before-school",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        }
+      ],
+      "label": "Programs"
+    },
+    {
+      "_key": "k00008",
+      "children": [
+        {
+          "_key": "k00009",
+          "label": "Early morning care",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-first-shift",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000a",
+          "label": "Evening care",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-evening",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000b",
+          "label": "Late evening care (until 11 pm)",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-late-evening",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000c",
+          "label": "Saturday daycare",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-weekend",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000d",
+          "label": "For shift workers",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-shift-workers",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000e",
+          "label": "Full-time and part-time",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-full-part-time",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        }
+      ],
+      "label": "Shift care",
+      "link": {
+        "_type": "link",
+        "internal": {
+          "_ref": "category-shift-care",
+          "_type": "reference"
+        },
+        "linkType": "internal"
+      }
+    },
+    {
+      "_key": "k0000f",
+      "label": "Tuition & CCAP",
+      "link": {
+        "_type": "link",
+        "internal": {
+          "_ref": "page-tuition",
+          "_type": "reference"
+        },
+        "linkType": "internal"
+      }
+    },
+    {
+      "_key": "k0000g",
+      "children": [
+        {
+          "_key": "k0000h",
+          "label": "Meet Ms. Paulette",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-about",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000i",
+          "label": "Our center",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-our-center",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000j",
+          "label": "Safety and licensing",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "service-safe-licensed",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000k",
+          "label": "Reviews",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-reviews",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        },
+        {
+          "_key": "k0000l",
+          "label": "News",
+          "link": {
+            "_type": "link",
+            "external": "/news/",
+            "linkType": "external"
+          }
+        },
+        {
+          "_key": "k0000m",
+          "label": "FAQ",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-faq",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          }
+        }
+      ],
+      "label": "About"
+    }
+  ]
+}

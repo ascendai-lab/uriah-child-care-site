@@ -1,0 +1,319 @@
+{
+  "_createdAt": "2026-11-05T03:22:55Z",
+  "_id": "post-november-2026",
+  "_rev": "Mj8jZDV099qjkJYi2zIe4c",
+  "_type": "blogPost",
+  "_updatedAt": "2026-11-05T03:23:06Z",
+  "body": [
+    {
+      "_key": "k0015t",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015u",
+          "_type": "span",
+          "marks": [],
+          "text": "November is a season of gratitude at Uriah Child Care. Here is what is coming up this month."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0015v",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015w",
+          "_type": "span",
+          "marks": [],
+          "text": "Important dates"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0015x",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015y",
+          "_type": "span",
+          "marks": [],
+          "text": "Our center is "
+        },
+        {
+          "_key": "k0015z",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "closed Thursday, November 26, Friday, November 27 and Saturday, November 28"
+        },
+        {
+          "_key": "k00160",
+          "_type": "span",
+          "marks": [],
+          "text": " for Thanksgiving. We reopen on Monday, November 30 at 6 am. If you work over the holiday, please plan care for those days early."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00161",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00162",
+          "_type": "span",
+          "marks": [],
+          "text": "What the children are learning"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k00163",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00164",
+          "_type": "span",
+          "marks": [],
+          "text": "This month our learning focus is:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00165",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00166",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Language development:"
+        },
+        {
+          "_key": "k00167",
+          "_type": "span",
+          "marks": [],
+          "text": " new words, stories and talking about what we are thankful for."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00168",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00169",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Creative expression:"
+        },
+        {
+          "_key": "k0016a",
+          "_type": "span",
+          "marks": [],
+          "text": " art, music and pretend play."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016c",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Math and problem solving:"
+        },
+        {
+          "_key": "k0016d",
+          "_type": "span",
+          "marks": [],
+          "text": " counting, sorting and patterns."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016f",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Exploring nature and the seasons:"
+        },
+        {
+          "_key": "k0016g",
+          "_type": "span",
+          "marks": [],
+          "text": " leaves, pumpkins and how the weather changes in the fall."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016i",
+          "_type": "span",
+          "marks": [],
+          "text": "See how we teach through play on our "
+        },
+        {
+          "_key": "k0016k",
+          "_type": "span",
+          "marks": [
+            "k0016j"
+          ],
+          "text": "play-based learning"
+        },
+        {
+          "_key": "k0016l",
+          "_type": "span",
+          "marks": [],
+          "text": " page."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0016j",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-play-based-learning",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016m",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016n",
+          "_type": "span",
+          "marks": [],
+          "text": "Questions"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0016o",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016p",
+          "_type": "span",
+          "marks": [],
+          "text": "Call us at "
+        },
+        {
+          "_key": "k0016r",
+          "_type": "span",
+          "marks": [
+            "k0016q"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k0016s",
+          "_type": "span",
+          "marks": [],
+          "text": " or email "
+        },
+        {
+          "_key": "k0016u",
+          "_type": "span",
+          "marks": [
+            "k0016t"
+          ],
+          "text": "hello@uriahchildcare.com"
+        },
+        {
+          "_key": "k0016v",
+          "_type": "span",
+          "marks": [],
+          "text": ". Thank you for being part of the Uriah family."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0016q",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        },
+        {
+          "_key": "k0016t",
+          "_type": "link",
+          "email": "hello@uriahchildcare.com",
+          "linkType": "email"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "categories": [
+    "Announcements"
+  ],
+  "excerpt": "Our center is closed Thursday to Saturday, November 26 to 28, for Thanksgiving. Here is what the children are learning this month.",
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Classroom with an alphabet rug, reading shelves and a horseshoe table at Uriah Child Care",
+    "asset": {
+      "_ref": "image-310f0f16796cdea7b6eecab19c5a8d92552cb2c4-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "publishedAt": "2026-11-01T12:00:00Z",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Uriah Child Care is closed November 26 to 28 for Thanksgiving. This month the children focus on language, creative expression, math and the seasons.",
+    "metaTitle": "November 2026 newsletter | Uriah Child Care, Vineland, NJ"
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "november-2026-newsletter"
+  },
+  "title": "November 2026 at Uriah Child Care: a season of gratitude"
+}

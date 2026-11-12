@@ -1,0 +1,466 @@
+{
+  "_createdAt": "2026-11-04T13:04:38Z",
+  "_id": "area-millville",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "area-millville",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "serviceArea",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sage",
+  "ageRange": "Ages 2.5 and up",
+  "body": [
+    {
+      "_key": "k00148",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00149",
+          "_type": "span",
+          "marks": [],
+          "text": "Ms. Paulette and Millville"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0014a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014b",
+          "_type": "span",
+          "marks": [],
+          "text": "Before opening our center in Vineland, Ms. Paulette cared for children in Millville for many years. Families who have known her since then still bring their children to her, and some now bring their grandchildren. One grandmother wrote that Ms. Paulette \"has been watching my grand children throughout the years.\""
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0014c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014d",
+          "_type": "span",
+          "marks": [],
+          "text": "Worth the short drive"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0014e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014f",
+          "_type": "span",
+          "marks": [],
+          "text": "Our center at 30 W Chestnut Ave in Vineland is about a 15-minute drive from Millville. Most Millville families drive north on Delsea Drive (Route 47) into Vineland and turn onto W Chestnut Ave. For Millville parents who work in Vineland, it's right on the way. And because we're open "
+        },
+        {
+          "_key": "k0014g",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Monday to Saturday, 6 am to 11 pm"
+        },
+        {
+          "_key": "k0014h",
+          "_type": "span",
+          "marks": [],
+          "text": ", you can find care for "
+        },
+        {
+          "_key": "k0014j",
+          "_type": "span",
+          "marks": [
+            "k0014i"
+          ],
+          "text": "early, evening and Saturday shifts"
+        },
+        {
+          "_key": "k0014k",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0014i",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-shift-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0014l",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014m",
+          "_type": "span",
+          "marks": [],
+          "text": "School-age kids from Millville"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0014n",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014o",
+          "_type": "span",
+          "marks": [],
+          "text": "Many Millville children go to Millville Public Schools elementary schools such as Rieck Avenue, Mount Pleasant or Silver Run Elementary. Bus routes are set by the district, so ask whether a stop in Vineland is possible. Our "
+        },
+        {
+          "_key": "k0014q",
+          "_type": "span",
+          "marks": [
+            "k0014p"
+          ],
+          "text": "after school program"
+        },
+        {
+          "_key": "k0014r",
+          "_type": "span",
+          "marks": [],
+          "text": " is open until 11 pm, with homework help on every shift and dinner at 6 pm."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0014p",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0014s",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014t",
+          "_type": "span",
+          "marks": [],
+          "text": "Programs for Millville families"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0014u",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0014w",
+          "_type": "span",
+          "marks": [
+            "k0014v"
+          ],
+          "text": "Toddler care"
+        },
+        {
+          "_key": "k0014x",
+          "_type": "span",
+          "marks": [],
+          "text": " from 2½"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k0014v",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-toddler-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0014y",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0013w",
+          "_type": "span",
+          "marks": [
+            "k0013v"
+          ],
+          "text": "Early learning"
+        },
+        {
+          "_key": "k0013x",
+          "_type": "span",
+          "marks": [],
+          "text": " and "
+        },
+        {
+          "_key": "k0013z",
+          "_type": "span",
+          "marks": [
+            "k0013y"
+          ],
+          "text": "kindergarten readiness"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k0013v",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-preschool",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k0013y",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-kindergarten-readiness",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k00154",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00156",
+          "_type": "span",
+          "marks": [
+            "k00155"
+          ],
+          "text": "Before and after school care"
+        },
+        {
+          "_key": "k00157",
+          "_type": "span",
+          "marks": [],
+          "text": " up to 13"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k00155",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k00158",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00159",
+          "_type": "span",
+          "marks": [],
+          "text": "We accept "
+        },
+        {
+          "_key": "k0015b",
+          "_type": "span",
+          "marks": [
+            "k0015a"
+          ],
+          "text": "NJ childcare subsidy (CCAP)"
+        },
+        {
+          "_key": "k0015c",
+          "_type": "span",
+          "marks": [],
+          "text": " for families who qualify. "
+        },
+        {
+          "_key": "k0015e",
+          "_type": "span",
+          "marks": [
+            "k0015d"
+          ],
+          "text": "Book a tour"
+        },
+        {
+          "_key": "k0015f",
+          "_type": "span",
+          "marks": [],
+          "text": " or call "
+        },
+        {
+          "_key": "k0015h",
+          "_type": "span",
+          "marks": [
+            "k0015g"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k0015i",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0015a",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-ccap",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k0015d",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k0015g",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "city": "Millville",
+  "driveTime": "About 15 minutes by car",
+  "excerpt": "Ms. Paulette has cared for Millville children for years. Our Vineland center is about 15 minutes away.",
+  "faqs": [
+    {
+      "_key": "k0006b",
+      "_type": "faqItem",
+      "answer": "Our center is in Vineland at 30 W Chestnut Ave, about a 15-minute drive from Millville up Delsea Drive. Many of our families come from Millville.",
+      "question": "Is your center in Millville?"
+    },
+    {
+      "_key": "k0006c",
+      "_type": "faqItem",
+      "answer": "Bus routes are set by each school district, so ask Millville Public Schools whether a stop in Vineland is possible. School buses can pick up and drop off at our center, and parents can always drop off and pick up here.",
+      "question": "Will my child's Millville school bus stop at your center?"
+    },
+    {
+      "_key": "k0006d",
+      "_type": "faqItem",
+      "answer": "Yes. Millville and Vineland are both in Cumberland County, and we accept NJ childcare subsidy (CCAP) for families who qualify.",
+      "question": "Can I use CCAP if I live in Millville?"
+    }
+  ],
+  "highlights": [
+    "About 15 minutes from Millville",
+    "Open Monday to Saturday, 6 am to 11 pm",
+    "Ages 2.5 and up",
+    "NJ childcare subsidy (CCAP) accepted"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Front of Uriah Child Care with the wheelchair ramp",
+    "asset": {
+      "_ref": "image-260fb20613ee0fe85a745a23648bad6f59b236c4-1800x1350-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Licensed child care for Millville families, about 15 minutes away. Ms. Paulette cared for Millville children for years before opening in Vineland.",
+  "keyword": "daycare millville nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 1,
+  "related": [
+    {
+      "_key": "k0005f",
+      "_ref": "category-shift-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0005g",
+      "_ref": "category-preschool",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0005h",
+      "_ref": "page-about",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0005i",
+      "_ref": "area-bridgeton",
+      "_type": "reference"
+    }
+  ],
+  "reviews": [
+    {
+      "_key": "k0005w",
+      "_ref": "review-marcia-antina",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0005x",
+      "_ref": "review-monique-willoughby",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Monday to Saturday, 6 am to 11 pm",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Child care for Millville, NJ families at our licensed Vineland center, about 15 minutes away. Open Monday to Saturday, 6 am to 11 pm. Ages 2.5+.",
+    "metaTitle": "Daycare for Millville, NJ Families | Uriah Child Care"
+  },
+  "shortTitle": "Millville, NJ",
+  "slug": {
+    "_type": "slug",
+    "current": "millville-nj"
+  },
+  "state": "NJ",
+  "title": "Child care for Millville, NJ families"
+}

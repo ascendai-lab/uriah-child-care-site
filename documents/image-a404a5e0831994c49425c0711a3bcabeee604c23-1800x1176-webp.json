@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T12:52:56Z",
+  "_id": "image-a404a5e0831994c49425c0711a3bcabeee604c23-1800x1176-webp",
+  "_rev": "Mj8jZDV099qjkJYi2xy6yw",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T12:52:56Z",
+  "assetId": "a404a5e0831994c49425c0711a3bcabeee604c23",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "VGH_uo_Mxb-=-;V@M|M{RjIU?dDiIUoeM{_NaeM{ogRj",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 1.530612244897959,
+      "height": 1176,
+      "width": 1800
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQYA/8QAHxAAAQQCAwEBAAAAAAAAAAAAAQIDBAUABhESQRWB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/8QAGxEAAwACAwAAAAAAAAAAAAAAAAECEUESE1L/2gAMAwEAAhEDEQA/AGbCrv6iaY0fYHHAAFAqHIIODWOy7HVSzEenNuKUASoI8yu2rlv5zwUSpbKQfzBdkfjRXIBdgtSFyT0UpRIIw5Tp4TNqltErLtbd58rNk6knwHjNlBT0kWdGU872B7kADwZsvTXoTnK0f//Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#533d3a",
+        "foreground": "#fff",
+        "population": 6.73,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#252e54",
+        "foreground": "#fff",
+        "population": 0.78,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#533d3a",
+        "foreground": "#fff",
+        "population": 6.73,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d8c3ab",
+        "foreground": "#000",
+        "population": 0.05,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#e29c7a",
+        "foreground": "#000",
+        "population": 0.05,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#86725e",
+        "foreground": "#fff",
+        "population": 4.11,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#4294b4",
+        "foreground": "#fff",
+        "population": 0.01,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "YggGDYKOqWpVdoY9lfZnr4hbAMso"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "classroom-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/a404a5e0831994c49425c0711a3bcabeee604c23-1800x1176.webp",
+  "sha1hash": "a404a5e0831994c49425c0711a3bcabeee604c23",
+  "size": 153704,
+  "uploadId": "e2441f36a6aed877d9d80542badfcef3007c7cf7",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/a404a5e0831994c49425c0711a3bcabeee604c23-1800x1176.webp"
+}

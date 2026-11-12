@@ -1,0 +1,26 @@
+{
+  "_createdAt": "2026-11-05T17:44:42Z",
+  "_id": "faq-outside",
+  "_rev": "Weiss0T6IziVTCaiuOyMwM",
+  "_type": "faq",
+  "_updatedAt": "2026-11-05T17:44:49Z",
+  "answer": [
+    {
+      "_key": "k000cd",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ce",
+          "_type": "span",
+          "marks": [],
+          "text": "Yes. Children go outside to play when the weather allows, so send a labeled jacket, hat and boots that suit the season. We also take nature walks and occasional field trips to places like parks, museums and apple orchards. We always tell you about a trip ahead of time, and any trip with transportation needs your signed permission slip."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "category": "Daily life",
+  "order": 20,
+  "question": "Do children play outside and go on trips?"
+}

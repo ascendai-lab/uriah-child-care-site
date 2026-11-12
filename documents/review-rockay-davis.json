@@ -1,0 +1,20 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "review-rockay-davis",
+  "_rev": "OXKzsTJ7Efs4i6zOkQSCIP",
+  "_system": {
+    "base": {
+      "id": "review-rockay-davis",
+      "rev": "OXKzsTJ7Efs4i6zOkPoNqf"
+    }
+  },
+  "_type": "testimonial",
+  "_updatedAt": "2026-11-04T17:32:19Z",
+  "firstParty": true,
+  "name": "Rockay Davis",
+  "order": 2,
+  "quote": "Ms. Paulette is a very impactful caretaker. She takes excellent care of our son, who is two years old. Our son has gained a wealth of knowledge while attending Uriahs Child Care. Additionally, she is a warm soul, and I do not know what we would do without her. Ms. Paulette assist us tremendously with our work schedules, and we are thankful for her. I would highly recommend Ms. Paulette to be your child's caretaker because they will be in great hands. You do not have to worry about their well-being while they are under her care. She is truly a blessing.",
+  "rating": 5,
+  "reviewUrl": "https://search.google.com/local/reviews?placeid=ChIJk-4vYVw3x4kRSX5zZYYtB10",
+  "source": "Google"
+}

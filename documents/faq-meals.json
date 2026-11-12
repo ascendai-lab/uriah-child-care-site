@@ -1,0 +1,56 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-meals",
+  "_rev": "Weiss0T6IziVTCaiuOyMwM",
+  "_system": {
+    "base": {
+      "id": "faq-meals",
+      "rev": "Mj8jZDV099qjkJYi2yjUXy"
+    }
+  },
+  "_type": "faq",
+  "_updatedAt": "2026-11-05T17:44:49Z",
+  "answer": [
+    {
+      "_key": "k000au",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000av",
+          "_type": "span",
+          "marks": [],
+          "text": "Yes. We participate in the USDA Child and Adult Care Food Program (CACFP), and children are served breakfast from 7:30 to 9 am, lunch at 12 noon, a snack at 3 pm, dinner at 6 pm and an evening snack at 9 pm. Food allergies need a doctor’s note and an Allergy Action Plan. More on "
+        },
+        {
+          "_key": "k000ax",
+          "_type": "span",
+          "marks": [
+            "k000aw"
+          ],
+          "text": "meals at our center"
+        },
+        {
+          "_key": "k000ay",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000aw",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-meals",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Daily life",
+  "order": 6,
+  "question": "Do you provide meals and snacks?"
+}

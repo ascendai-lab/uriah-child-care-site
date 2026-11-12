@@ -1,0 +1,10 @@
+{
+  "_createdAt": "2026-11-04T12:35:56Z",
+  "_id": "_.retention._maximum_project",
+  "_rev": "6fXA2k3jCstDiCIQOrEKw3",
+  "_type": "system.retention",
+  "_updatedAt": "2026-11-04T12:35:56Z",
+  "days": 90,
+  "maximum": true,
+  "preferShorter": true
+}

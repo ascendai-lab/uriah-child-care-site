@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:50Z",
+  "_id": "image-b5dc3b30dc0ab49b24a5f9f7be338212762ed205-1350x1800-webp",
+  "_rev": "OXKzsTJ7Efs4i6zOkQRvSt",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:50Z",
+  "assetId": "b5dc3b30dc0ab49b24a5f9f7be338212762ed205",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dLHU:^Di-=?v~qIVtR-;MdxbD%RjD%M|jFIUozNFX8RP",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAMFBgQHCP/EACQQAAIBAwQCAgMAAAAAAAAAAAECAwAEBQcREiETUTFBBhQy/8QAFgEBAQEAAAAAAAAAAAAAAAAABAMC/8QAIREAAgIBAgcAAAAAAAAAAAAAAAECERIDFCEiQVFiweH/2gAMAwEAAhEDEQA/AF5yC6wecvLCC9nKwNtyJ+R7q66c2cWTxr3GRkNwyseLOap+rWbiMMuStvAt7IwDIO2YVm6K5lrjDXUN06xOsm6KTt0aOqu0+BVNyhdE/k43S8kWP+AeqKs744SNyIG5oq+BLI53eBoMnc87gXUsa8I0ZeWxFLP7OMiS6milgkZ+TAHiG9AVOWMMcWTmljQCQvsWpWphNv8AjeP8JK+WZy/e+5HxRoTzaXV+hE9Jtcrr6yWxeomWgskSR4CR9SN2B6orX0VrDPBFJLGGdl7J+6K3cO7D7jxP/9k=",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5c382a",
+        "foreground": "#fff",
+        "population": 6.43,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#1d3f78",
+        "foreground": "#fff",
+        "population": 2.55,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#8a745e",
+        "foreground": "#fff",
+        "population": 6.78,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c0bfb9",
+        "foreground": "#000",
+        "population": 4.58,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#db9d60",
+        "foreground": "#000",
+        "population": 0.63,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#8a745e",
+        "foreground": "#fff",
+        "population": 6.78,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c13c27",
+        "foreground": "#fff",
+        "population": 0.54,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "XwgKDQKzi1+pVklWhnh4eU92+4LV"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "play-rug-toys-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/b5dc3b30dc0ab49b24a5f9f7be338212762ed205-1350x1800.webp",
+  "sha1hash": "b5dc3b30dc0ab49b24a5f9f7be338212762ed205",
+  "size": 258214,
+  "uploadId": "6b691d032251e8d8a3233d030334632c2184f91b",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/b5dc3b30dc0ab49b24a5f9f7be338212762ed205-1350x1800.webp"
+}

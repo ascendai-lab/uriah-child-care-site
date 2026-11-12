@@ -1,0 +1,403 @@
+{
+  "_createdAt": "2026-11-04T12:58:28Z",
+  "_id": "service-toddler-care",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-toddler-care",
+      "rev": "1tk6J7MImmXVkYKAfaoz4X"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sunshine",
+  "ageRange": "From 2½ years",
+  "body": [
+    {
+      "_key": "k000gk",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000gl",
+          "_type": "span",
+          "marks": [],
+          "text": "Care for your 2½-year-old"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000gm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000gn",
+          "_type": "span",
+          "marks": [],
+          "text": "Two-and-a-half is a big age. Toddlers are learning new words every day, wanting to do things themselves, and figuring out how to play with other children. Our toddler care gives them a calm, predictable day with lots of play, songs and stories, and adults who get down on their level."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000go",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000gp",
+          "_type": "span",
+          "marks": [],
+          "text": "Learning to talk, share and play"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000gq",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000gr",
+          "_type": "span",
+          "marks": [],
+          "text": "One mom wrote that her son \"learned how to communicate his words better because of Ms. Paulette.\" We model words all day, read together, and help toddlers use words instead of grabbing or crying when they are frustrated."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000gs",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000gt",
+          "_type": "span",
+          "marks": [],
+          "text": "Potty training, together"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000gu",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000gv",
+          "_type": "span",
+          "marks": [],
+          "text": "Many children who join us at 2½ are still in diapers or pull-ups. We follow your routine and "
+        },
+        {
+          "_key": "k000gx",
+          "_type": "span",
+          "marks": [
+            "k000gw"
+          ],
+          "text": "support potty training"
+        },
+        {
+          "_key": "k000gy",
+          "_type": "span",
+          "marks": [],
+          "text": " at the center, so your child hears the same words and steps everywhere."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000gw",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-potty-training",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000gz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000h0",
+          "_type": "span",
+          "marks": [],
+          "text": "Meals for little eaters"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000h1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000h2",
+          "_type": "span",
+          "marks": [],
+          "text": "Toddlers eat breakfast from 7:30 to 9 am, lunch at 12 noon and a snack at 3 pm, all through the USDA food program (CACFP), with portions sized for their age. Lunch might be a chicken patty with whole-grain rotini and green beans, or meatloaf with a corn muffin and broccoli."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000h3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000h4",
+          "_type": "span",
+          "marks": [],
+          "text": "A small center, familiar faces"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000h5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000h6",
+          "_type": "span",
+          "marks": [],
+          "text": "We are licensed by NJ DCF for up to 33 children, so your toddler sees the same faces every day: Ms. Paulette, who has cared for Vineland and Millville children since 2005, and our director, Tameca Burke. Every staff member must have CPR and first aid training before we hire them."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000h7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000h8",
+          "_type": "span",
+          "marks": [],
+          "text": "Next steps"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000h9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000gu",
+          "_type": "span",
+          "marks": [],
+          "text": "As they grow, toddlers move on to "
+        },
+        {
+          "_key": "k000gw",
+          "_type": "span",
+          "marks": [
+            "k000gv"
+          ],
+          "text": "kindergarten readiness"
+        },
+        {
+          "_key": "k000gx",
+          "_type": "span",
+          "marks": [],
+          "text": ". "
+        },
+        {
+          "_key": "k000gz",
+          "_type": "span",
+          "marks": [
+            "k000gy"
+          ],
+          "text": "Book a tour"
+        },
+        {
+          "_key": "k000h0",
+          "_type": "span",
+          "marks": [],
+          "text": " or call "
+        },
+        {
+          "_key": "k000h2",
+          "_type": "span",
+          "marks": [
+            "k000h1"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000h3",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000gv",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-kindergarten-readiness",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000gy",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000h1",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "dayPlan": [
+    {
+      "_key": "k00021",
+      "_type": "dayStep",
+      "activity": "From 6 am, parents check in with Procare, and your toddler washes hands and warms up with free play.",
+      "label": "Arrival"
+    },
+    {
+      "_key": "k00022",
+      "_type": "dayStep",
+      "activity": "Served from 7:30 to 9 am through the USDA food program (CACFP).",
+      "label": "Breakfast"
+    },
+    {
+      "_key": "k00023",
+      "_type": "dayStep",
+      "activity": "A short circle with songs, colors and new words, sized for younger children.",
+      "label": "Circle time"
+    },
+    {
+      "_key": "k00024",
+      "_type": "dayStep",
+      "activity": "Hands-on play in small groups, with regular bathroom trips for children who are potty training.",
+      "label": "Play and potty breaks"
+    },
+    {
+      "_key": "k00025",
+      "_type": "dayStep",
+      "activity": "Lunch at 12 noon, then a quiet rest time.",
+      "label": "Lunch and rest"
+    },
+    {
+      "_key": "k00026",
+      "_type": "dayStep",
+      "activity": "Snack at 3 pm, then stories, music and play until pickup.",
+      "label": "Afternoon"
+    }
+  ],
+  "excerpt": "Warm, play-based care for toddlers from 2½, with potty training support and care Monday to Saturday.",
+  "faqs": [
+    {
+      "_key": "k00021",
+      "_type": "faqItem",
+      "answer": "We care for children from 2½ years old.",
+      "question": "What is the youngest age you take?"
+    },
+    {
+      "_key": "k00022",
+      "_type": "faqItem",
+      "answer": "We keep the first days calm and predictable, and you are welcome to stay for a few minutes at drop-off. We let you know how your child is doing so you are not left wondering.",
+      "question": "My toddler has never been to daycare. How do you help them settle in?"
+    },
+    {
+      "_key": "k00023",
+      "_type": "faqItem",
+      "answer": "Yes. After lunch there is a quiet rest time. Bring a small blanket or comfort item if your child uses one.",
+      "question": "Do toddlers nap?"
+    }
+  ],
+  "gbpName": "Toddler care",
+  "highlights": [
+    "Children from 2½ years old",
+    "Talking, sharing and taking turns",
+    "Potty training support",
+    "Daily routine with a picture schedule",
+    "Meals and snacks (CACFP)",
+    "Updates through the Procare app"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Toddler playing with a bubble wand in the fenced yard at Uriah Child Care",
+    "asset": {
+      "_ref": "image-1ede37f0d8e8edea31365009edc2a48086f41ca2-480x640-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Care for toddlers from 2½. Your little one builds words, makes friends and learns routines through play, with potty training support.",
+  "keyword": "toddler daycare vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 1,
+  "related": [
+    {
+      "_key": "k00024",
+      "_ref": "category-preschool",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00025",
+      "_ref": "service-potty-training",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00026",
+      "_ref": "service-play-based-learning",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00027",
+      "_ref": "service-ccap",
+      "_type": "reference"
+    }
+  ],
+  "reviews": [
+    {
+      "_key": "k00021",
+      "_ref": "review-monique-willoughby",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00022",
+      "_ref": "review-marcia-antina",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Monday to Saturday, 6 am to 11 pm",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Toddler daycare in Vineland, NJ from 2½ years old. Play-based learning, potty training support, open Monday to Saturday, 6 am to 11 pm. CCAP accepted.",
+    "metaTitle": "Toddler Care in Vineland, NJ | Ages 2.5+ | Uriah Child Care"
+  },
+  "shortTitle": "Toddler care",
+  "slug": {
+    "_type": "slug",
+    "current": "toddler-care-vineland-nj"
+  },
+  "title": "Toddler care in Vineland, NJ for ages 2.5 and up"
+}

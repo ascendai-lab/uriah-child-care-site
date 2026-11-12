@@ -1,0 +1,300 @@
+{
+  "_createdAt": "2026-11-04T13:02:52Z",
+  "_id": "service-weekend",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-weekend",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sage",
+  "ageRange": "Ages 2.5 and up",
+  "body": [
+    {
+      "_key": "k000vu",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000vv",
+          "_type": "span",
+          "marks": [],
+          "text": "Child care on Saturday"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000vw",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000vx",
+          "_type": "span",
+          "marks": [],
+          "text": "Hospitals, stores, restaurants and plants don't close on Saturday, and neither do we. Uriah Child Care is open "
+        },
+        {
+          "_key": "k000vy",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Saturday, 6 am to 11 pm"
+        },
+        {
+          "_key": "k000vz",
+          "_type": "span",
+          "marks": [],
+          "text": ", the same hours as Monday to Friday. We are closed on Sunday."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000w0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000w1",
+          "_type": "span",
+          "marks": [],
+          "text": "The same routine as the rest of the week"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000w2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000w3",
+          "_type": "span",
+          "marks": [],
+          "text": "Saturdays follow the same routine as weekdays: meals and snacks, play-based learning, rest time and play. Children see familiar faces, which helps when your schedule changes from week to week."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000w4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000w5",
+          "_type": "span",
+          "marks": [],
+          "text": "A Saturday at Uriah"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000w6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000w7",
+          "_type": "span",
+          "marks": [],
+          "text": "Meals are served at the same times on Saturday as during the week: breakfast from 7:30 to 9 am, lunch at 12 noon, a snack at 3 pm, dinner at 6 pm and an evening snack at 9 pm. Toddlers and younger children have circle time, play-based activities and rest time. School-age kids can get homework help with weekend assignments, on every shift."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000w8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000w9",
+          "_type": "span",
+          "marks": [],
+          "text": "Who Saturday care is for"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000wa",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000wb",
+          "_type": "span",
+          "marks": [],
+          "text": "Nurses working Saturday shifts, retail and restaurant staff, warehouse and plant workers, and any parent who has to work a Saturday. Children can stay until 11 pm on Saturday too. Need care after 11 pm? Call us and Ms. Paulette will talk with you about it."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000wc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000wd",
+          "_type": "span",
+          "marks": [],
+          "text": "Saturdays only, or the whole week"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000we",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000wf",
+          "_type": "span",
+          "marks": [],
+          "text": "Some families use us only on Saturdays; others every day we are open. See "
+        },
+        {
+          "_key": "k000wh",
+          "_type": "span",
+          "marks": [
+            "k000wg"
+          ],
+          "text": "full-time and part-time daycare"
+        },
+        {
+          "_key": "k000wi",
+          "_type": "span",
+          "marks": [],
+          "text": ", or call "
+        },
+        {
+          "_key": "k000wk",
+          "_type": "span",
+          "marks": [
+            "k000wj"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000wl",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000wg",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-full-part-time",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000wj",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-shift-care",
+    "_type": "reference"
+  },
+  "excerpt": "Open Saturday, 6 am to 11 pm, for parents who work Saturdays.",
+  "faqs": [
+    {
+      "_key": "k00056",
+      "_type": "faqItem",
+      "answer": "No. We are open Monday to Saturday, 6 am to 11 pm, and closed on Sunday.",
+      "question": "Are you open on Sundays?"
+    },
+    {
+      "_key": "k00057",
+      "_type": "faqItem",
+      "answer": "Yes. Some families use us only on Saturdays and others during the week too. Choose the days you need, as space allows.",
+      "question": "Can I use Saturday care only?"
+    },
+    {
+      "_key": "k00058",
+      "_type": "faqItem",
+      "answer": "We accept NJ childcare subsidy (CCAP) for families who qualify. Ask us and we will help you check what your approval covers.",
+      "question": "Is Saturday care covered by CCAP?"
+    },
+    {
+      "_key": "k00059",
+      "_type": "faqItem",
+      "answer": "The same as every day: children ages 2.5 and up, including school-age children up to 13.",
+      "question": "What ages do you care for on Saturday?"
+    }
+  ],
+  "gbpName": "Saturday child care",
+  "highlights": [
+    "Open Saturday",
+    "6 am to 11 pm",
+    "Same caring staff",
+    "Ages 2.5 and up"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Front lawn and flowering tree at Uriah Child Care on W Chestnut Ave",
+    "asset": {
+      "_ref": "image-bd7d6fd6b405b266147beef0899c1c606954907d-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Open Saturdays from 6 am to 11 pm, so parents who work weekends have care they can count on. Closed on Sunday.",
+  "keyword": "saturday daycare vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 4,
+  "related": [
+    {
+      "_key": "k0004v",
+      "_ref": "category-shift-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0004w",
+      "_ref": "service-shift-workers",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0004x",
+      "_ref": "service-full-part-time",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0004y",
+      "_ref": "service-late-evening",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Saturday, 6 am to 11 pm",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Saturday child care in Vineland, NJ, open 6 am to 11 pm. Licensed center for ages 2.5 and up. CCAP accepted. Closed Sunday.",
+    "metaTitle": "Saturday Daycare in Vineland, NJ"
+  },
+  "shortTitle": "Saturday daycare",
+  "slug": {
+    "_type": "slug",
+    "current": "saturday-daycare-vineland-nj"
+  },
+  "title": "Saturday daycare in Vineland, NJ"
+}

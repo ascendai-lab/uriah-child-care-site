@@ -1,0 +1,355 @@
+{
+  "_createdAt": "2026-11-04T13:02:52Z",
+  "_id": "service-late-evening",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-late-evening",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sky",
+  "ageRange": "Ages 2.5 and up",
+  "body": [
+    {
+      "_key": "k000ux",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000uy",
+          "_type": "span",
+          "marks": [],
+          "text": "Child care until 11 pm"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000uz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000v0",
+          "_type": "span",
+          "marks": [],
+          "text": "If you work late, finding child care in Cumberland County can feel impossible. Uriah Child Care stays open "
+        },
+        {
+          "_key": "k000v1",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "until 11 pm, Monday to Saturday"
+        },
+        {
+          "_key": "k000v2",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000v3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000v4",
+          "_type": "span",
+          "marks": [],
+          "text": "Working past 11 pm?"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000v5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000v6",
+          "_type": "span",
+          "marks": [],
+          "text": "Our posted hours end at 11 pm. Need care after 11 pm for an overnight shift? Call us at "
+        },
+        {
+          "_key": "k000v8",
+          "_type": "span",
+          "marks": [
+            "k000v7"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000v9",
+          "_type": "span",
+          "marks": [],
+          "text": " and Ms. Paulette will talk with you about it."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000v7",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000va",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000vb",
+          "_type": "span",
+          "marks": [],
+          "text": "A quiet, safe evening"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000vc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000vd",
+          "_type": "span",
+          "marks": [],
+          "text": "By late evening the center is calm. Children have had dinner at 6 pm, and they go outside when the weather allows. School-age children get homework help if they need it. The evening snack is at 9 pm and quiet time starts at 9:30 pm, so children are ready for bed when you get them home."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ve",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000vf",
+          "_type": "span",
+          "marks": [],
+          "text": "Safe pickup at night"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000vg",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000vh",
+          "_type": "span",
+          "marks": [],
+          "text": "You check out with Procare, and we release children only to adults you have authorized in writing. A security camera watches the front entrance, and our building has a ramp and accessible parking, which helps when you're carrying a sleepy child."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000vi",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000vj",
+          "_type": "span",
+          "marks": [],
+          "text": "Brothers and sisters together"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000vk",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000vl",
+          "_type": "span",
+          "marks": [],
+          "text": "Children from 2½ up to 13 can stay until 11 pm, so younger and school-age siblings can be picked up together at the end of your shift."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000vm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000vn",
+          "_type": "span",
+          "marks": [],
+          "text": "Call "
+        },
+        {
+          "_key": "k000vp",
+          "_type": "span",
+          "marks": [
+            "k000vo"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000vq",
+          "_type": "span",
+          "marks": [],
+          "text": " to talk about your hours, or see "
+        },
+        {
+          "_key": "k000vs",
+          "_type": "span",
+          "marks": [
+            "k000vr"
+          ],
+          "text": "evening child care"
+        },
+        {
+          "_key": "k000vt",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000vo",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        },
+        {
+          "_key": "k000vr",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-evening",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-shift-care",
+    "_type": "reference"
+  },
+  "dayPlan": [
+    {
+      "_key": "k00058",
+      "_type": "dayStep",
+      "activity": "Dinner at 6 pm through the USDA food program (CACFP).",
+      "label": "Dinner"
+    },
+    {
+      "_key": "k00059",
+      "_type": "dayStep",
+      "activity": "Children go outside to play when the weather allows.",
+      "label": "Outside time"
+    },
+    {
+      "_key": "k0005a",
+      "_type": "dayStep",
+      "activity": "School-age kids finish homework, with help if they need it.",
+      "label": "Homework help"
+    },
+    {
+      "_key": "k0005b",
+      "_type": "dayStep",
+      "activity": "A light snack at 9 pm.",
+      "label": "Evening snack"
+    },
+    {
+      "_key": "k0005c",
+      "_type": "dayStep",
+      "activity": "From 9:30 pm, books and calm play until pickup by 11 pm.",
+      "label": "Quiet time"
+    }
+  ],
+  "excerpt": "Care until 11 pm, Monday to Saturday, for parents who work late.",
+  "faqs": [
+    {
+      "_key": "k0004o",
+      "_type": "faqItem",
+      "answer": "Our posted closing time is 11 pm, Monday to Saturday.",
+      "question": "What time do you close?"
+    },
+    {
+      "_key": "k0004p",
+      "_type": "faqItem",
+      "answer": "Our posted hours end at 11 pm. If you work overnight and need care after 11 pm, call us at (856) 455-6701 and Ms. Paulette will talk with you about it.",
+      "question": "Do you offer overnight care?"
+    }
+  ],
+  "gbpName": "Third shift child care",
+  "highlights": [
+    "Open until 11 pm",
+    "Monday to Saturday",
+    "Dinner served",
+    "After 11 pm? Call us"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Covered front porch with a security camera at Uriah Child Care",
+    "asset": {
+      "_ref": "image-2836d6d41cd562a122e093cbd6c6a5167f04beb6-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Open until 11 pm, Monday to Saturday, for parents who work late. Need care after 11 pm? Call us.",
+  "keyword": "late night daycare vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 3,
+  "related": [
+    {
+      "_key": "k0004q",
+      "_ref": "service-evening",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0004r",
+      "_ref": "category-shift-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0004s",
+      "_ref": "service-shift-workers",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0004t",
+      "_ref": "service-weekend",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Until 11 pm, Monday to Saturday",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Late evening child care in Vineland, NJ until 11 pm, Monday to Saturday. For parents who work late. Ages 2.5+. CCAP accepted.",
+    "metaTitle": "Late Evening Child Care in Vineland, NJ"
+  },
+  "shortTitle": "Late evening care",
+  "slug": {
+    "_type": "slug",
+    "current": "late-evening-child-care-vineland-nj"
+  },
+  "title": "Late evening child care in Vineland until 11 pm"
+}

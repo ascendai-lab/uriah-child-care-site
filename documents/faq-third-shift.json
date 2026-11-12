@@ -1,0 +1,53 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-third-shift",
+  "_rev": "OXKzsTJ7Efs4i6zOkPvZnD",
+  "_system": {
+    "base": {
+      "id": "faq-third-shift",
+      "rev": "OXKzsTJ7Efs4i6zOkPoNqf"
+    }
+  },
+  "_type": "faq",
+  "_updatedAt": "2026-11-04T13:58:04Z",
+  "answer": [
+    {
+      "_key": "k0009o",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0009p",
+          "_type": "span",
+          "marks": [],
+          "text": "Our posted hours end at 11 pm, so parents who work late can pick up before we close. If you work an overnight shift and need care after 11 pm, call us at "
+        },
+        {
+          "_key": "k0009r",
+          "_type": "span",
+          "marks": [
+            "k0009q"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k0009s",
+          "_type": "span",
+          "marks": [],
+          "text": ". Ms. Paulette will talk with you about your schedule."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0009q",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Hours and schedules",
+  "order": 3,
+  "question": "Do you offer care after 11 pm or overnight?"
+}

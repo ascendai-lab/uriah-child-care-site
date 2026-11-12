@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-06T04:26:17Z",
+  "_id": "image-9c412634b2f891d249d7157a814930f83a6d091b-480x640-webp",
+  "_rev": "QCUAteQjtFGCH4SAG25JAH",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-06T04:26:17Z",
+  "assetId": "9c412634b2f891d249d7157a814930f83a6d091b",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "d8Dvuxxrxtox00njoyaf~lV[nnn,-oRQM~R+05WARkR*",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 640,
+      "width": 480
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCBgcE/8QAJBAAAgEEAgEEAwAAAAAAAAAAAQIDAAQFERIhUQYTIkEkMUL/xAAZAQACAwEAAAAAAAAAAAAAAAABAwACBAX/xAAcEQACAQUBAAAAAAAAAAAAAAAAAQIREhMhUUH/2gAMAwEAAhEDEQA/AMYRHtYnW5YqJIxvfmllvMkN3HKqe4sUm9H+hV8vprHJMY57VYZePBDv4g0ltYMdDkOM9uzxDogefNZ4yrti7vSt5mKW8yEk9njmjgftVCk6oqw3GRuXk/GlaCJRxVAf1RUyPgLzdl9NYWGRXSzjDg7BqYwmIWUSCzjZ977Fd/EbPVSKjmnX3XEySb2x4pnwWHkkLNh7ZifvWqKesig9Cijkl0tQ/9k=",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#3c4f32",
+        "foreground": "#fff",
+        "population": 4.84,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#1f2f04",
+        "foreground": "#fff",
+        "population": 0.07,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#9ea96c",
+        "foreground": "#000",
+        "population": 9.18,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c8c3ae",
+        "foreground": "#000",
+        "population": 0.51,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#dce699",
+        "foreground": "#000",
+        "population": 0.15,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#9ea96c",
+        "foreground": "#000",
+        "population": 9.18,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#acb854",
+        "foreground": "#000",
+        "population": 0.01,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "1vgRJQCId4B4l4eHd3aXiIiAilf5"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "outdoor-bubbles-play-yard-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/9c412634b2f891d249d7157a814930f83a6d091b-480x640.webp",
+  "sha1hash": "9c412634b2f891d249d7157a814930f83a6d091b",
+  "size": 142424,
+  "uploadId": "51117d076bf13b05ceceb2d37feda1e049ac9a8f",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/9c412634b2f891d249d7157a814930f83a6d091b-480x640.webp"
+}

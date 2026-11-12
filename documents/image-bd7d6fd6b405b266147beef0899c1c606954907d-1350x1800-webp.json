@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:51Z",
+  "_id": "image-bd7d6fd6b405b266147beef0899c1c606954907d-1350x1800-webp",
+  "_rev": "OXKzsTJ7Efs4i6zOkQRvo3",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:51Z",
+  "assetId": "bd7d6fd6b405b266147beef0899c1c606954907d",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "d7Dl[uE1x^t80Hogo$ozD[stIuR*Tx-;bbRkyGNeX8f9",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAQFBgECA//EACYQAAIBBAIABQUAAAAAAAAAAAECAwAEESEFEgYTMUFhFDJRYnH/xAAYAQACAwAAAAAAAAAAAAAAAAACAwABBf/EAB4RAQACAgEFAAAAAAAAAAAAAAEAEQISAwQUITFB/9oADAMBAAIRAxEAPwCiG/kZJcIyiTRBrS1kiuX6yN0CbAx6mpufgZZAHZgnUYBzo1jhbLiLUTPf30S3J0gYZA/tB3bm2tx48YUeJFzRSF8wbT2waKtFvamNCLLxDZ+STkD6fOPiiqerb+QbwIzJ0Jx9/wCua4S8DYXcglZCknqQvvSnDyO4UsxJOc1NXI8uEOmm/NY1a+ouhLgnH2sKhI4l6j4opyLcak7OKKGTUn//2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#422628",
+        "foreground": "#fff",
+        "population": 6.01,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5f672b",
+        "foreground": "#fff",
+        "population": 0.84,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#422628",
+        "foreground": "#fff",
+        "population": 6.01,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d3cdba",
+        "foreground": "#000",
+        "population": 3.54,
+        "title": "#000"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#a1b0d8",
+        "foreground": "#000",
+        "population": 0,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#8a9658",
+        "foreground": "#fff",
+        "population": 5.2,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#7088c4",
+        "foreground": "#fff",
+        "population": 2.81,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "2QgGJQSlaICIhmeXi4q3N3hwhvaI"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "exterior-spring-tree-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/bd7d6fd6b405b266147beef0899c1c606954907d-1350x1800.webp",
+  "sha1hash": "bd7d6fd6b405b266147beef0899c1c606954907d",
+  "size": 836842,
+  "uploadId": "bef60a8caf36e56855629ff49bece8e478a5c38f",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/bd7d6fd6b405b266147beef0899c1c606954907d-1350x1800.webp"
+}

@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-05T17:54:28Z",
+  "_id": "image-dbbdb70bdb9b0377f4f992fb09e8401ebee7505a-1247x1800-webp",
+  "_rev": "QCUAteQjtFGCH4SAG1M5Hu",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-05T17:54:28Z",
+  "assetId": "dbbdb70bdb9b0377f4f992fb09e8401ebee7505a",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dTHxZ#sonOt7-oD*Rkxa~WxukCjZI;xat7WV-:R+WBf7",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.6927777777777778,
+      "height": 1800,
+      "width": 1247
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAdABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQGBwgF/8QAKhAAAQMDAwMBCQAAAAAAAAAAAgEDBAAFEQYSIQcTQVEUIiMxMkJhYnH/xAAXAQADAQAAAAAAAAAAAAAAAAAAAwQC/8QAHhEAAgICAgMAAAAAAAAAAAAAAAECAxETEiExQVH/2gAMAwEAAhEDEQA/AOkx1G9sdjiUEwF0tqFuylS22Xl524qx2vg7co5+aoy3XBvs22KH1g8pEiJyvotWZbb9EY2i84rRftxUccyK7VGL6EuoGpZ8XUbjMWa6y2LY+6C8ZopW4wrNdZ78ufMQXTLjaX2+KKHM1HhjtiUrp41FApTRvm+2ikKZxzULlzxjq848TqPgmNjnhf5WmzjAoYVPFRLUWk7VcS7z0cEeHlDROafVPX4RJdXuabZntLgUsAcI1RcY4RaKsedqALbJOKxa4O1vjPbTlfX5UUh3L4PVD9H/2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#2b474d",
+        "foreground": "#fff",
+        "population": 2.37,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#570f09",
+        "foreground": "#fff",
+        "population": 0.02,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ccc2b3",
+        "foreground": "#000",
+        "population": 5.48,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ccc2b3",
+        "foreground": "#000",
+        "population": 5.48,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ebd8c0",
+        "foreground": "#000",
+        "population": 1.45,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#8f8068",
+        "foreground": "#fff",
+        "population": 2.15,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#a44434",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "oBgKDQJoeEqX94pXmWuXmf2N2s+I"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "lobby-fall-door-chairs-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/dbbdb70bdb9b0377f4f992fb09e8401ebee7505a-1247x1800.webp",
+  "sha1hash": "dbbdb70bdb9b0377f4f992fb09e8401ebee7505a",
+  "size": 164882,
+  "uploadId": "69a4952b85e4a562152888ae3af97e4ae6425e31",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/dbbdb70bdb9b0377f4f992fb09e8401ebee7505a-1247x1800.webp"
+}

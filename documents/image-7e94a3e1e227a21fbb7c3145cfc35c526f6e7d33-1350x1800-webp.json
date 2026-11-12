@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T12:53:07Z",
+  "_id": "image-7e94a3e1e227a21fbb7c3145cfc35c526f6e7d33-1350x1800-webp",
+  "_rev": "OXKzsTJ7Efs4i6zOkPn2JR",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T12:53:07Z",
+  "assetId": "7e94a3e1e227a21fbb7c3145cfc35c526f6e7d33",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "daLDobIUkPof~nRkRRf8R$j[Rlfis;R*WBogs;a#NFkB",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMHBgL/xAAiEAABBAICAgMBAAAAAAAAAAABAAIDBAURBjESISJBcVL/xAAXAQADAQAAAAAAAAAAAAAAAAABAgQF/8QAGxEAAwEAAwEAAAAAAAAAAAAAAAECEQMEITH/2gAMAwEAAhEDEQA/AKBg4Gs8Tpaahma9oSw1rDJJIfi9oPSxoytahF525AyLonet/i44zi8Xx+zYsV8gZn5B+42vPsDvSgniqpdItS1abKRvm8uPaEhtgEdhCCQpIeUk2KLYHtIkcQ+Np7do/SbHKZJsbFoietIHPH8DSnkmSuT8pw7ZrEj2tAABPSVyjJ3K2VJgsPYXOO9fftaPW4acZv0V2pTL62+3xGnoUGr5e+6JpNqTf6hB9ZrwVPfT/9k=",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#3a2727",
+        "foreground": "#fff",
+        "population": 6.02,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#243060",
+        "foreground": "#fff",
+        "population": 0.59,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#dcccac",
+        "foreground": "#000",
+        "population": 6.65,
+        "title": "#000"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ceb9ad",
+        "foreground": "#000",
+        "population": 6.61,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#dcccac",
+        "foreground": "#000",
+        "population": 6.65,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#9a8967",
+        "foreground": "#fff",
+        "population": 2.83,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d6cc79",
+        "foreground": "#000",
+        "population": 0.02,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "pygKFQKUh393ZmiXd4iWV9pviGBH"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "ms-paulette-senior-owner-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/7e94a3e1e227a21fbb7c3145cfc35c526f6e7d33-1350x1800.webp",
+  "sha1hash": "7e94a3e1e227a21fbb7c3145cfc35c526f6e7d33",
+  "size": 84162,
+  "uploadId": "b0cfa442fa76bdebbe2ae7bef807aa30e08403ca",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/7e94a3e1e227a21fbb7c3145cfc35c526f6e7d33-1350x1800.webp"
+}

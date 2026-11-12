@@ -1,0 +1,25 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "team-tameca-burke",
+  "_rev": "Mj8jZDV099qjkJYi2yjUXy",
+  "_system": {
+    "base": {
+      "id": "team-tameca-burke",
+      "rev": "OXKzsTJ7Efs4i6zOkPoNqf"
+    }
+  },
+  "_type": "teamMember",
+  "_updatedAt": "2026-11-04T19:21:36Z",
+  "bio": "Tameca is Ms. Paulette's daughter and runs the center day to day, from enrollment and schedules to keeping families in the loop. She has about five years of experience in child care.",
+  "name": "Tameca Burke",
+  "order": 2,
+  "photo": {
+    "_type": "imageWithAlt",
+    "alt": "Tameca Burke, director of Uriah Child Care in Vineland, NJ",
+    "asset": {
+      "_ref": "image-b8bdb83ef30262a4308a6882a29ecea121868199-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "role": "Director"
+}

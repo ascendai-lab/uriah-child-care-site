@@ -1,0 +1,79 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-school-transport",
+  "_rev": "Mj8jZDV099qjkJYi2yjUXy",
+  "_system": {
+    "base": {
+      "id": "faq-school-transport",
+      "rev": "OXKzsTJ7Efs4i6zOkPoNqf"
+    }
+  },
+  "_type": "faq",
+  "_updatedAt": "2026-11-04T19:21:36Z",
+  "answer": [
+    {
+      "_key": "k000bb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000bc",
+          "_type": "span",
+          "marks": [],
+          "text": "Yes, by school bus. We don't drive children to or from school, but school buses can pick up and drop off at our center. Ask your school district about a bus stop at 30 W Chestnut Ave. We do offer full-day "
+        },
+        {
+          "_key": "k000be",
+          "_type": "span",
+          "marks": [
+            "k000bd"
+          ],
+          "text": "summer care"
+        },
+        {
+          "_key": "k000bf",
+          "_type": "span",
+          "marks": [],
+          "text": " and care on "
+        },
+        {
+          "_key": "k000bh",
+          "_type": "span",
+          "marks": [
+            "k000bg"
+          ],
+          "text": "school closure days"
+        },
+        {
+          "_key": "k000bi",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000bd",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-summer-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000bg",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-school-closure",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Ages and programs",
+  "order": 15,
+  "question": "Can my child get to and from school from your center?"
+}

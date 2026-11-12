@@ -1,0 +1,421 @@
+{
+  "_createdAt": "2026-11-04T13:02:52Z",
+  "_id": "service-summer-care",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-summer-care",
+      "rev": "1tk6J7MImmXVkYKAfaoz4X"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sunshine",
+  "ageRange": "School-age children up to 13",
+  "body": [
+    {
+      "_key": "k000qx",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000qy",
+          "_type": "span",
+          "marks": [],
+          "text": "Summer care for school-age kids"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000qz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000r0",
+          "_type": "span",
+          "marks": [],
+          "text": "Summer break is long when you still have to work. Our summer care gives school-age children up to 13 a safe, familiar place to spend full days, with the same caring staff they know from our "
+        },
+        {
+          "_key": "k000r2",
+          "_type": "span",
+          "marks": [
+            "k000r1"
+          ],
+          "text": "after school program"
+        },
+        {
+          "_key": "k000r3",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000r1",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000r4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000r5",
+          "_type": "span",
+          "marks": [],
+          "text": "What a summer day looks like"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000r6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000r7",
+          "_type": "span",
+          "marks": [],
+          "text": "Children have breakfast, lunch and snacks through the USDA food program (CACFP). We mix reading time with art, building, games and time with friends, so kids stay busy and keep their skills up before the new school year."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000r8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000r9",
+          "_type": "span",
+          "marks": [],
+          "text": "Meals all summer"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000ra",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000rb",
+          "_type": "span",
+          "marks": [],
+          "text": "Summer days are long, so meals come at set times: breakfast from 7:30 to 9 am, lunch at 12 noon and a snack at 3 pm, plus dinner at 6 pm for kids who stay into the evening. Lunches are real meals, like arroz con pollo with brown rice or chicken fajitas with peppers, served through the USDA food program (CACFP)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000rc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000rd",
+          "_type": "span",
+          "marks": [],
+          "text": "Reading and homework help"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000re",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000rf",
+          "_type": "span",
+          "marks": [],
+          "text": "If your child has a summer reading list or packet from school, send it in. Homework help is available on every shift, so kids can chip away at it before playtime."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000rg",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000rh",
+          "_type": "span",
+          "marks": [],
+          "text": "Hours that fit your job"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000ri",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000rj",
+          "_type": "span",
+          "marks": [],
+          "text": "We are open "
+        },
+        {
+          "_key": "k000rk",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Monday to Saturday, 6 am to 11 pm"
+        },
+        {
+          "_key": "k000rl",
+          "_type": "span",
+          "marks": [],
+          "text": " all summer, including evenings and Saturdays for parents who work "
+        },
+        {
+          "_key": "k000rn",
+          "_type": "span",
+          "marks": [
+            "k000rm"
+          ],
+          "text": "shifts"
+        },
+        {
+          "_key": "k000ro",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000rm",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-shift-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000rp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000rq",
+          "_type": "span",
+          "marks": [],
+          "text": "Save a spot"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000rr",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000rs",
+          "_type": "span",
+          "marks": [],
+          "text": "Space can fill up before summer, so call "
+        },
+        {
+          "_key": "k000ru",
+          "_type": "span",
+          "marks": [
+            "k000rt"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000rv",
+          "_type": "span",
+          "marks": [],
+          "text": " or "
+        },
+        {
+          "_key": "k000rx",
+          "_type": "span",
+          "marks": [
+            "k000rw"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000ry",
+          "_type": "span",
+          "marks": [],
+          "text": " early. We accept "
+        },
+        {
+          "_key": "k000s0",
+          "_type": "span",
+          "marks": [
+            "k000rz"
+          ],
+          "text": "NJ childcare subsidy (CCAP)"
+        },
+        {
+          "_key": "k000s1",
+          "_type": "span",
+          "marks": [],
+          "text": " for families who qualify."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000rt",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        },
+        {
+          "_key": "k000rw",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000rz",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-ccap",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-after-school",
+    "_type": "reference"
+  },
+  "dayPlan": [
+    {
+      "_key": "k0003r",
+      "_type": "dayStep",
+      "activity": "Breakfast, then reading time to keep skills sharp over the summer.",
+      "label": "Morning"
+    },
+    {
+      "_key": "k0003s",
+      "_type": "dayStep",
+      "activity": "Art, building, games and group activities.",
+      "label": "Late morning"
+    },
+    {
+      "_key": "k0003t",
+      "_type": "dayStep",
+      "activity": "Lunch together, then a calm break with books and quiet games.",
+      "label": "Lunch and quiet time"
+    },
+    {
+      "_key": "k0003u",
+      "_type": "dayStep",
+      "activity": "Snack and play with friends until pickup.",
+      "label": "Afternoon"
+    }
+  ],
+  "excerpt": "Full-day summer care for school-age kids up to 13, Monday to Saturday, 6 am to 11 pm.",
+  "faqs": [
+    {
+      "_key": "k0003v",
+      "_type": "faqItem",
+      "answer": "Yes. School-age children up to 13 can come for full days all summer, Monday to Saturday, 6 am to 11 pm.",
+      "question": "Do you offer summer care?"
+    },
+    {
+      "_key": "k0003w",
+      "_type": "faqItem",
+      "answer": "We recommend it. Space can fill up before school lets out, so call us in the spring.",
+      "question": "Do I need to sign up early for summer?"
+    },
+    {
+      "_key": "k0003x",
+      "_type": "faqItem",
+      "answer": "Yes. Children are served meals and snacks through the USDA food program (CACFP).",
+      "question": "Are meals included in summer care?"
+    }
+  ],
+  "gbpName": "Summer care",
+  "highlights": [
+    "Full days when school is out",
+    "Open Monday to Saturday, 6 am to 11 pm",
+    "Meals and snacks (CACFP)",
+    "Reading, games, art and play",
+    "Ages up to 13",
+    "NJ childcare subsidy (CCAP) accepted"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Two girls playing in a kiddie pool of soap foam on a summer day at Uriah Child Care in Vineland",
+    "asset": {
+      "_ref": "image-35e11c8d8a51b083a1e599e204baf3fcc97ecdd8-480x640-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Full summer days for school-age kids up to 13, with meals, play and learning. Open Monday to Saturday, 6 am to 11 pm.",
+  "keyword": "summer child care vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 3,
+  "related": [
+    {
+      "_key": "k0003y",
+      "_ref": "category-after-school",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0003z",
+      "_ref": "service-school-closure",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00040",
+      "_ref": "service-meals",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00041",
+      "_ref": "category-shift-care",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Full days all summer, Monday to Saturday, 6 am to 11 pm",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Full-day summer child care in Vineland, NJ for school-age kids up to 13. Open Monday to Saturday, 6 am to 11 pm, meals included. CCAP accepted.",
+    "metaTitle": "Summer Child Care in Vineland, NJ"
+  },
+  "shortTitle": "Summer care",
+  "slug": {
+    "_type": "slug",
+    "current": "summer-child-care-vineland-nj"
+  },
+  "title": "Summer child care in Vineland, NJ"
+}

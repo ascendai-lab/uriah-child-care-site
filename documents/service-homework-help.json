@@ -1,0 +1,302 @@
+{
+  "_createdAt": "2026-11-04T13:00:34Z",
+  "_id": "service-homework-help",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-homework-help",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sky",
+  "ageRange": "School-age children up to 13",
+  "body": [
+    {
+      "_key": "k000q5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000q6",
+          "_type": "span",
+          "marks": [],
+          "text": "Homework done before you get home"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000q7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000q8",
+          "_type": "span",
+          "marks": [],
+          "text": "After school and a snack, children sit down at a quiet table for homework time. Staff help with reading, explain directions and check that work is finished before play."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000q9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000qa",
+          "_type": "span",
+          "marks": [],
+          "text": "Help with reading"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000qb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000qc",
+          "_type": "span",
+          "marks": [],
+          "text": "Younger children can read aloud to staff or to a friend. Older children can ask for help with words, spelling and understanding what they read."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000qd",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000qe",
+          "_type": "span",
+          "marks": [],
+          "text": "Working with you"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000qf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000qg",
+          "_type": "span",
+          "marks": [],
+          "text": "If your child's teacher sends notes or a reading log, put it in their bag and tell us. We'll keep you posted through the Procare app."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000qh",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000qi",
+          "_type": "span",
+          "marks": [],
+          "text": "Homework help on every shift"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000qj",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000qk",
+          "_type": "span",
+          "marks": [],
+          "text": "Homework help isn't only for the hour after school. Children who stay into the evening, or come in on a Saturday with a project due, can get help whenever they need it, on every shift until we close at 11 pm. Kids who stay late have dinner at 6 pm and an evening snack at 9 pm, so nobody is doing math on an empty stomach."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ql",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000qm",
+          "_type": "span",
+          "marks": [],
+          "text": "Getting here from school"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000qn",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000qo",
+          "_type": "span",
+          "marks": [],
+          "text": "School buses can pick up and drop off at our center at 30 W Chestnut Ave, so ask your school district about a stop here. Gloria M. Sabater Elementary School is close by, and Compass Academy Charter School is also on W Chestnut Ave. Parents can always drop off and pick up at the center too."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000qp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000qq",
+          "_type": "span",
+          "marks": [],
+          "text": "See our full "
+        },
+        {
+          "_key": "k000qs",
+          "_type": "span",
+          "marks": [
+            "k000qr"
+          ],
+          "text": "after school program"
+        },
+        {
+          "_key": "k000qt",
+          "_type": "span",
+          "marks": [],
+          "text": " or "
+        },
+        {
+          "_key": "k000qv",
+          "_type": "span",
+          "marks": [
+            "k000qu"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000qw",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000qr",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000qu",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-after-school",
+    "_type": "reference"
+  },
+  "excerpt": "Daily homework time with help on reading and checking work, so evenings are easier at home.",
+  "faqs": [
+    {
+      "_key": "k0003y",
+      "_type": "faqItem",
+      "answer": "We set aside homework time every day and check work before play. Let us know if there is something specific your child needs to finish.",
+      "question": "Do you make sure homework is finished?"
+    },
+    {
+      "_key": "k0003z",
+      "_type": "faqItem",
+      "answer": "Homework time is part of our after school program for school-age children up to 13.",
+      "question": "What ages come to homework help?"
+    },
+    {
+      "_key": "k00040",
+      "_type": "faqItem",
+      "answer": "Yes. School buses can pick up and drop off at our center, so ask your school district about a stop at 30 W Chestnut Ave. We do not drive children to or from school ourselves.",
+      "question": "Can the school bus drop my child off here?"
+    },
+    {
+      "_key": "k00041",
+      "_type": "faqItem",
+      "answer": "Yes. We accept NJ childcare subsidy (CCAP) for families who qualify.",
+      "question": "Do you accept CCAP for after school care?"
+    }
+  ],
+  "gbpName": "Homework help",
+  "highlights": [
+    "Daily homework time after snack",
+    "Help with reading",
+    "Work checked before play",
+    "Less homework stress at night"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Classroom tables, an easel and toy shelves at Uriah Child Care in Vineland",
+    "asset": {
+      "_ref": "image-e3a6c44e778dc9f17cb0c8edd47a2c8b4e1c09b4-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Daily homework time at a quiet table, with staff who help with reading and check the work gets done.",
+  "keyword": "after school homework help vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 2,
+  "related": [
+    {
+      "_key": "k0003n",
+      "_ref": "category-after-school",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0003o",
+      "_ref": "service-before-school",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0003p",
+      "_ref": "service-evening",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0003q",
+      "_ref": "service-kindergarten-readiness",
+      "_type": "reference"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Daily homework time and reading help in our after school program in Vineland, NJ. Kids up to 13, care until 11 pm, CCAP accepted.",
+    "metaTitle": "Homework Help in Vineland, NJ"
+  },
+  "shortTitle": "Homework help",
+  "slug": {
+    "_type": "slug",
+    "current": "homework-help-vineland-nj"
+  },
+  "title": "After school homework help in Vineland, NJ"
+}

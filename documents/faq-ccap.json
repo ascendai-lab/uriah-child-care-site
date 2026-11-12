@@ -1,0 +1,76 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-ccap",
+  "_rev": "Mj8jZDV099qjkJYi2yjUXy",
+  "_system": {
+    "base": {
+      "id": "faq-ccap",
+      "rev": "OXKzsTJ7Efs4i6zOkPoNqf"
+    }
+  },
+  "_type": "faq",
+  "_updatedAt": "2026-11-04T19:21:36Z",
+  "answer": [
+    {
+      "_key": "k000ah",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ai",
+          "_type": "span",
+          "marks": [],
+          "text": "Yes. We accept NJ childcare subsidy (CCAP) for families who qualify. In Cumberland County the program is managed locally by Rutgers Southern Regional CCR&R in Vineland, "
+        },
+        {
+          "_key": "k000ak",
+          "_type": "span",
+          "marks": [
+            "k000aj"
+          ],
+          "text": "(856) 462-6800"
+        },
+        {
+          "_key": "k000al",
+          "_type": "span",
+          "marks": [],
+          "text": ", and we are happy to walk you through the steps. Read more on our "
+        },
+        {
+          "_key": "k000an",
+          "_type": "span",
+          "marks": [
+            "k000am"
+          ],
+          "text": "CCAP page"
+        },
+        {
+          "_key": "k000ao",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000aj",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564626800"
+        },
+        {
+          "_key": "k000am",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-ccap",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Cost and subsidy",
+  "order": 4,
+  "question": "Do you accept NJ childcare subsidy (CCAP)?"
+}

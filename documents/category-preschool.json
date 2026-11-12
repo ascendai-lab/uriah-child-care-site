@@ -1,0 +1,438 @@
+{
+  "_createdAt": "2026-11-04T12:58:28Z",
+  "_id": "category-preschool",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "category-preschool",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "category",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "coral",
+  "ageRange": "Ages 2.5 to 5",
+  "body": [
+    {
+      "_key": "k000bj",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000bk",
+          "_type": "span",
+          "marks": [],
+          "text": "What young children learn with us"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000bl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000bm",
+          "_type": "span",
+          "marks": [],
+          "text": "Our day follows a play-based curriculum built on Experience Early Learning. Each week has a theme, and children explore it through stories, songs, art, building, pretend play and simple science. A developmental continuum helps us see what each child can do and what to work on next, so your child is never pushed too fast or held back."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000bn",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000bo",
+          "_type": "span",
+          "marks": [],
+          "text": "Every day starts with circle time: we go over the calendar and the weather, practice letters and numbers, and talk about the day ahead. A picture schedule on the classroom wall helps younger children know what comes next, which makes the day calmer for everyone."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000bp",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000bq",
+          "_type": "span",
+          "marks": [],
+          "text": "From toddler to kindergarten-ready"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000br",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000cg",
+          "_type": "span",
+          "marks": [],
+          "text": "We welcome children from 2½ years old. Our "
+        },
+        {
+          "_key": "k000ci",
+          "_type": "span",
+          "marks": [
+            "k000ch"
+          ],
+          "text": "toddlers"
+        },
+        {
+          "_key": "k000cj",
+          "_type": "span",
+          "marks": [],
+          "text": " work on talking, sharing, listening and taking turns, and many are still "
+        },
+        {
+          "_key": "k000cl",
+          "_type": "span",
+          "marks": [
+            "k000ck"
+          ],
+          "text": "potty training"
+        },
+        {
+          "_key": "k000cm",
+          "_type": "span",
+          "marks": [],
+          "text": ", which we support together with you. As they turn 4 and 5, children move on to "
+        },
+        {
+          "_key": "k000co",
+          "_type": "span",
+          "marks": [
+            "k000cn"
+          ],
+          "text": "kindergarten readiness"
+        },
+        {
+          "_key": "k000cp",
+          "_type": "span",
+          "marks": [],
+          "text": ": writing their name, counting, following two-step directions and getting ready for a full school day."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000ch",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-toddler-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000ck",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-potty-training",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000cn",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-kindergarten-readiness",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000c2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000c3",
+          "_type": "span",
+          "marks": [],
+          "text": "Care that fits your work schedule"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000c4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000c5",
+          "_type": "span",
+          "marks": [],
+          "text": "We are open Monday to Saturday, 6 am to 11 pm, so children can come before an early shift, stay through a late one, or come on Saturday. "
+        },
+        {
+          "_key": "k000c7",
+          "_type": "span",
+          "marks": [
+            "k000c6"
+          ],
+          "text": "Full-time and part-time schedules"
+        },
+        {
+          "_key": "k000c8",
+          "_type": "span",
+          "marks": [],
+          "text": " are available."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000c6",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-full-part-time",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000c9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ca",
+          "_type": "span",
+          "marks": [],
+          "text": "How to enroll"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000cb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000cc",
+          "_type": "span",
+          "marks": [],
+          "text": "Call us at "
+        },
+        {
+          "_key": "k000ce",
+          "_type": "span",
+          "marks": [
+            "k000cd"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000cf",
+          "_type": "span",
+          "marks": [],
+          "text": " or "
+        },
+        {
+          "_key": "k000ch",
+          "_type": "span",
+          "marks": [
+            "k000cg"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000ci",
+          "_type": "span",
+          "marks": [],
+          "text": " to see the classroom and meet Ms. Paulette. We accept "
+        },
+        {
+          "_key": "k000ck",
+          "_type": "span",
+          "marks": [
+            "k000cj"
+          ],
+          "text": "NJ childcare subsidy (CCAP)"
+        },
+        {
+          "_key": "k000cl",
+          "_type": "span",
+          "marks": [],
+          "text": " for families who qualify."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000cd",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        },
+        {
+          "_key": "k000cg",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000cj",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-ccap",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "dayPlan": [
+    {
+      "_key": "k0000w",
+      "_type": "dayStep",
+      "activity": "From 6 am, parents check in with Procare, and children wash hands and settle in with free play.",
+      "label": "Arrival"
+    },
+    {
+      "_key": "k0000x",
+      "_type": "dayStep",
+      "activity": "Served from 7:30 to 9 am through the USDA food program (CACFP).",
+      "label": "Breakfast"
+    },
+    {
+      "_key": "k0000y",
+      "_type": "dayStep",
+      "activity": "Calendar, weather, letters, numbers and a song to start the day together.",
+      "label": "Circle time"
+    },
+    {
+      "_key": "k0000z",
+      "_type": "dayStep",
+      "activity": "Play-based activities in language, math, science and art from our Experience Early Learning curriculum.",
+      "label": "Learning centers"
+    },
+    {
+      "_key": "k00010",
+      "_type": "dayStep",
+      "activity": "Lunch at 12 noon, then a quiet rest time.",
+      "label": "Lunch and rest"
+    },
+    {
+      "_key": "k00011",
+      "_type": "dayStep",
+      "activity": "Snack at 3 pm, then stories, music and movement, and play with friends until pickup.",
+      "label": "Afternoon"
+    }
+  ],
+  "excerpt": "Toddler care and kindergarten readiness for ages 2.5 to 5, open Monday to Saturday at our licensed Vineland center.",
+  "faqs": [
+    {
+      "_key": "k00012",
+      "_type": "faqItem",
+      "answer": "Children can start at 2½ years old. We care for toddlers and young children up to 5, and 4 and 5-year-olds work on kindergarten readiness. School-age children up to 13 join our before and after school care.",
+      "question": "What age can my child start at Uriah?"
+    },
+    {
+      "_key": "k00013",
+      "_type": "faqItem",
+      "answer": "No. Many of our 2½ and 3-year-olds are still learning. We work on potty training together with you, using the same routine at home and at the center.",
+      "question": "Does my child need to be potty trained?"
+    },
+    {
+      "_key": "k00014",
+      "_type": "faqItem",
+      "answer": "We use a play-based curriculum built on Experience Early Learning, with weekly themes and a developmental continuum of skills in language, math, science, art and social skills.",
+      "question": "What curriculum do you use?"
+    },
+    {
+      "_key": "k00015",
+      "_type": "faqItem",
+      "answer": "We accept NJ childcare subsidy (CCAP) for families who qualify. Call us and we will walk you through the steps with the Cumberland County agency.",
+      "question": "Is care for young children covered by CCAP?"
+    }
+  ],
+  "gbpName": "Day care center",
+  "highlights": [
+    "Play-based curriculum from Experience Early Learning",
+    "Circle time every day: calendar, weather, letters and counting",
+    "Potty training support for 2½ and 3-year-olds",
+    "Kindergarten readiness for 4 and 5-year-olds",
+    "Meals and snacks through the USDA food program (CACFP)",
+    "NJ childcare subsidy (CCAP) accepted"
+  ],
+  "homeHeading": "Early learning in Vineland",
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Classroom with an alphabet rug, reading shelves and a horseshoe table at Uriah Child Care",
+    "asset": {
+      "_ref": "image-310f0f16796cdea7b6eecab19c5a8d92552cb2c4-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Play-based learning for ages 2½ to 5. Children learn letters, numbers and friendship, and 4 and 5-year-olds get ready for kindergarten.",
+  "keyword": "early learning child care vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 1,
+  "related": [
+    {
+      "_key": "k00017",
+      "_ref": "service-toddler-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00018",
+      "_ref": "service-kindergarten-readiness",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00019",
+      "_ref": "service-play-based-learning",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0001a",
+      "_ref": "service-potty-training",
+      "_type": "reference"
+    }
+  ],
+  "reviews": [
+    {
+      "_key": "k00012",
+      "_ref": "review-monique-willoughby",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00013",
+      "_ref": "review-marcia-antina",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Monday to Saturday, 6 am to 11 pm. Full-time and part-time.",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Toddler care and kindergarten readiness in Vineland, NJ for ages 2.5 to 5. Licensed by NJ DCF, open Monday to Saturday, CCAP accepted. Book a tour.",
+    "metaTitle": "Early Learning in Vineland, NJ | Ages 2.5 to 5 | Uriah Child Care"
+  },
+  "shortTitle": "Early learning",
+  "slug": {
+    "_type": "slug",
+    "current": "early-learning-vineland-nj"
+  },
+  "title": "Early learning in Vineland, NJ"
+}

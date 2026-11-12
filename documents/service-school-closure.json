@@ -1,0 +1,394 @@
+{
+  "_createdAt": "2026-11-04T13:02:52Z",
+  "_id": "service-school-closure",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-school-closure",
+      "rev": "Weiss0T6IziVTCaiuOyMwM"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sky",
+  "ageRange": "School-age children up to 13",
+  "body": [
+    {
+      "_key": "k000ru",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000rv",
+          "_type": "span",
+          "marks": [],
+          "text": "Care when school is closed"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000rw",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000rx",
+          "_type": "span",
+          "marks": [],
+          "text": "School calendars are full of days off: holidays, winter and spring breaks, teacher in-service days and surprise snow days. Your job doesn't stop for any of them. On those days, school-age children up to 13 can spend the full day with us."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ry",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000rz",
+          "_type": "span",
+          "marks": [],
+          "text": "A full day with familiar faces"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000s0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000s1",
+          "_type": "span",
+          "marks": [],
+          "text": "Children who come to our "
+        },
+        {
+          "_key": "k000s3",
+          "_type": "span",
+          "marks": [
+            "k000s2"
+          ],
+          "text": "after school program"
+        },
+        {
+          "_key": "k000s4",
+          "_type": "span",
+          "marks": [],
+          "text": " already know our staff and routine. On closure days they get breakfast, lunch and snacks, reading and homework time, and plenty of play."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000s2",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000s5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000s6",
+          "_type": "span",
+          "marks": [],
+          "text": "What a closure day looks like"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000s7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000s8",
+          "_type": "span",
+          "marks": [],
+          "text": "Doors open at 6 am. Breakfast is from 7:30 to 9 am, lunch is at 12 noon and snack is at 3 pm, all through the USDA food program (CACFP). Children who stay late have dinner at 6 pm. Between meals there's reading and homework time, art, building, games and time with friends. Children can stay until 11 pm if you work a late shift."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000s9",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000sa",
+          "_type": "span",
+          "marks": [],
+          "text": "Brothers and sisters together"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000sb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000sc",
+          "_type": "span",
+          "marks": [],
+          "text": "On a day off school, younger siblings in our "
+        },
+        {
+          "_key": "k000se",
+          "_type": "span",
+          "marks": [
+            "k000sd"
+          ],
+          "text": "toddler care"
+        },
+        {
+          "_key": "k000sf",
+          "_type": "span",
+          "marks": [],
+          "text": " or "
+        },
+        {
+          "_key": "k000sh",
+          "_type": "span",
+          "marks": [
+            "k000sg"
+          ],
+          "text": "early learning"
+        },
+        {
+          "_key": "k000si",
+          "_type": "span",
+          "marks": [],
+          "text": " are in the same building, so you make one drop-off and one pickup."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000sd",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-toddler-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000sg",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-preschool",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000sj",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000sk",
+          "_type": "span",
+          "marks": [],
+          "text": "Plan ahead, or call that morning"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000sl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000sm",
+          "_type": "span",
+          "marks": [],
+          "text": "We stay open when public schools have a snow day, though we may open a little late. For planned days off, tell us ahead of time. For snow days and other surprises, call "
+        },
+        {
+          "_key": "k000so",
+          "_type": "span",
+          "marks": [
+            "k000sn"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000sp",
+          "_type": "span",
+          "marks": [],
+          "text": " as early as you can, and we will fit your child in if we have space."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000sn",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000sq",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000sr",
+          "_type": "span",
+          "marks": [],
+          "text": "We accept "
+        },
+        {
+          "_key": "k000st",
+          "_type": "span",
+          "marks": [
+            "k000ss"
+          ],
+          "text": "NJ childcare subsidy (CCAP)"
+        },
+        {
+          "_key": "k000su",
+          "_type": "span",
+          "marks": [],
+          "text": " for families who qualify."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000ss",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-ccap",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-after-school",
+    "_type": "reference"
+  },
+  "dayPlan": [
+    {
+      "_key": "k0004l",
+      "_type": "dayStep",
+      "activity": "From 6 am. Check in with Procare.",
+      "label": "Arrival"
+    },
+    {
+      "_key": "k0004m",
+      "_type": "dayStep",
+      "activity": "Served from 7:30 to 9 am through the USDA food program (CACFP).",
+      "label": "Breakfast"
+    },
+    {
+      "_key": "k0004n",
+      "_type": "dayStep",
+      "activity": "Reading and homework time, then art, building and games.",
+      "label": "Reading and play"
+    },
+    {
+      "_key": "k0004o",
+      "_type": "dayStep",
+      "activity": "Lunch at 12 noon, with fruit or vegetables and milk.",
+      "label": "Lunch"
+    },
+    {
+      "_key": "k0004p",
+      "_type": "dayStep",
+      "activity": "Snack at 3 pm and time with friends, with dinner at 6 pm for kids who stay late.",
+      "label": "Afternoon"
+    }
+  ],
+  "excerpt": "Full-day care on school holidays, breaks, teacher days and snow days.",
+  "faqs": [
+    {
+      "_key": "k0004h",
+      "_type": "faqItem",
+      "answer": "Yes. We offer full-day care for school-age children up to 13 on school holidays, breaks, teacher days and snow days.",
+      "question": "Are you open when school is closed?"
+    },
+    {
+      "_key": "k0004i",
+      "_type": "faqItem",
+      "answer": "We stay open on public school snow days, though we may open a little late. Call us as early as you can that morning, and we will fit your child in if we have space.",
+      "question": "What about snow days?"
+    }
+  ],
+  "gbpName": "School closure care",
+  "highlights": [
+    "School holidays and breaks",
+    "Teacher in-service days",
+    "Snow days",
+    "Full days, 6 am to 11 pm",
+    "Meals and snacks (CACFP)",
+    "Ages up to 13"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Day Care flag outside Uriah Child Care on W Chestnut Ave in Vineland",
+    "asset": {
+      "_ref": "image-356099f33afd068fdb89bda823294d69a416887c-1800x1350-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "School closed but you still have to work? Full-day care on holidays, breaks, teacher days and snow days for kids up to 13.",
+  "keyword": "school closure child care vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 4,
+  "related": [
+    {
+      "_key": "k00044",
+      "_ref": "category-after-school",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00045",
+      "_ref": "service-summer-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00046",
+      "_ref": "service-before-school",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00047",
+      "_ref": "category-shift-care",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Full days on school holidays, breaks and snow days",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Full-day child care in Vineland, NJ on school holidays, breaks and snow days for kids up to 13. Open Monday to Saturday, 6 am to 11 pm. CCAP accepted.",
+    "metaTitle": "School Closure Day Care in Vineland, NJ"
+  },
+  "shortTitle": "School closure days",
+  "slug": {
+    "_type": "slug",
+    "current": "school-closure-care-vineland-nj"
+  },
+  "title": "Child care on school closure days in Vineland"
+}

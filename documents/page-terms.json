@@ -1,0 +1,619 @@
+{
+  "_createdAt": "2026-11-04T15:50:19Z",
+  "_id": "page-terms",
+  "_rev": "LLB7XvsnrFBwaHMSzdPKq0",
+  "_system": {
+    "base": {
+      "id": "page-terms",
+      "rev": "6fXA2k3jCstDiCIQOrgvCM"
+    }
+  },
+  "_type": "page",
+  "_updatedAt": "2026-11-12T04:42:43Z",
+  "hideTourBlock": true,
+  "pageBuilder": [
+    {
+      "_key": "k00080",
+      "_type": "hero",
+      "background": "white",
+      "heading": "Terms and Conditions",
+      "layout": "split",
+      "showPhone": false,
+      "subheading": "Last updated November 4, 2026"
+    },
+    {
+      "_key": "k00081",
+      "_type": "textBlock",
+      "background": "white",
+      "body": [
+        {
+          "_key": "k000w5",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000w6",
+              "_type": "span",
+              "marks": [],
+              "text": "Welcome to Uriah Child Care. These terms and conditions outline the rules and regulations for the use of Uriah Child Care's website, located at uriahchildcare.com."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000w7",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000w8",
+              "_type": "span",
+              "marks": [],
+              "text": "By accessing this website we assume you accept these terms and conditions. Do not continue to use this website if you do not agree to all of the terms and conditions stated on this page."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000w9",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000wa",
+              "_type": "span",
+              "marks": [],
+              "text": "The following terminology applies to these Terms and Conditions, our Privacy Policy and all agreements: \"Client\", \"You\" and \"Your\" refer to you, the person using this website. \"The Company\", \"Ourselves\", \"We\", \"Our\" and \"Us\" refer to Uriah Child Care. \"Party\", \"Parties\", or \"Us\" refer to both the Client and ourselves. These terms are governed by the laws of the State of New Jersey."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000wb",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000wc",
+              "_type": "span",
+              "marks": [],
+              "text": "Cookies"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000wd",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000we",
+              "_type": "span",
+              "marks": [],
+              "text": "We use cookies. By accessing this website, you agree to the use of cookies in line with our "
+            },
+            {
+              "_key": "k000wg",
+              "_type": "span",
+              "marks": [
+                "k000wf"
+              ],
+              "text": "Privacy Policy"
+            },
+            {
+              "_key": "k000wh",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "k000wf",
+              "_type": "link",
+              "internal": {
+                "_ref": "page-privacy",
+                "_type": "reference"
+              },
+              "linkType": "internal"
+            }
+          ],
+          "style": "normal"
+        },
+        {
+          "_key": "k000wi",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000wj",
+              "_type": "span",
+              "marks": [],
+              "text": "Most interactive websites use cookies to retrieve the user's details for each visit. Cookies are used by our website to make certain areas work and to make the site easier to use."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000wk",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000wl",
+              "_type": "span",
+              "marks": [],
+              "text": "License"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000wm",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000wn",
+              "_type": "span",
+              "marks": [],
+              "text": "Unless otherwise stated, Uriah Child Care and/or its licensors own the intellectual property rights for all material on this website, including text, photos and the Uriah Child Care name and logo. All intellectual property rights are reserved. You may view and print pages from this website for your own personal use, subject to the restrictions set in these terms and conditions."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000wo",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000wp",
+              "_type": "span",
+              "marks": [],
+              "text": "You must not:"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000wq",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000wr",
+              "_type": "span",
+              "marks": [],
+              "text": "Republish material from this website"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000ws",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000wt",
+              "_type": "span",
+              "marks": [],
+              "text": "Sell, rent or sub-license material from this website"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000wu",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000wv",
+              "_type": "span",
+              "marks": [],
+              "text": "Reproduce, duplicate or copy material from this website"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000ww",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000wx",
+              "_type": "span",
+              "marks": [],
+              "text": "Redistribute content from this website"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000wy",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000wz",
+              "_type": "span",
+              "marks": [],
+              "text": "Hyperlinking to our content"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000x0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000x1",
+              "_type": "span",
+              "marks": [],
+              "text": "Government agencies, search engines, news organizations, online directories, schools and community organizations may link to our website without prior written approval, so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000x2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000x3",
+              "_type": "span",
+              "marks": [],
+              "text": "No use of the Uriah Child Care logo or other artwork is allowed for linking without our written permission."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000x4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000x5",
+              "_type": "span",
+              "marks": [],
+              "text": "iFrames"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000x6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000x7",
+              "_type": "span",
+              "marks": [],
+              "text": "Without prior approval and written permission, you may not create frames around our web pages that alter in any way the visual presentation or appearance of our website."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000x8",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000x9",
+              "_type": "span",
+              "marks": [],
+              "text": "Content liability"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000xa",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xb",
+              "_type": "span",
+              "marks": [],
+              "text": "We shall not be held responsible for any content that appears on your website. You agree to protect and defend us against all claims arising from your website. No link should appear on any website that may be interpreted as libelous, obscene or criminal, or which infringes or otherwise violates any third-party rights."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000xc",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xd",
+              "_type": "span",
+              "marks": [],
+              "text": "Your privacy"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000xe",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xf",
+              "_type": "span",
+              "marks": [],
+              "text": "Please read our "
+            },
+            {
+              "_key": "k000xh",
+              "_type": "span",
+              "marks": [
+                "k000xg"
+              ],
+              "text": "Privacy Policy"
+            },
+            {
+              "_key": "k000xi",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "k000xg",
+              "_type": "link",
+              "internal": {
+                "_ref": "page-privacy",
+                "_type": "reference"
+              },
+              "linkType": "internal"
+            }
+          ],
+          "style": "normal"
+        },
+        {
+          "_key": "k000xj",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xk",
+              "_type": "span",
+              "marks": [],
+              "text": "Reservation of rights"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000xl",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xm",
+              "_type": "span",
+              "marks": [],
+              "text": "We reserve the right to request that you remove all links or any particular link to our website. You agree to immediately remove all links to our website upon request. We also reserve the right to amend these terms and conditions and this linking policy at any time. By continuing to link to our website, you agree to be bound by these terms."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000xn",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xo",
+              "_type": "span",
+              "marks": [],
+              "text": "Removal of links from our website"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000xp",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xq",
+              "_type": "span",
+              "marks": [],
+              "text": "If you find any link on our website that is offensive for any reason, you are free to contact us at any moment. We will consider requests to remove links, but we are not obligated to do so or to respond to you directly."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000xr",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xs",
+              "_type": "span",
+              "marks": [],
+              "text": "We do our best to keep the information on this website correct, but we do not warrant its completeness or accuracy, nor do we promise that the website remains available or that the material on it is kept up to date. Hours, programs and availability can change: please call us at "
+            },
+            {
+              "_key": "k000xu",
+              "_type": "span",
+              "marks": [
+                "k000xt"
+              ],
+              "text": "(856) 455-6701"
+            },
+            {
+              "_key": "k000xv",
+              "_type": "span",
+              "marks": [],
+              "text": " to confirm."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "k000xt",
+              "_type": "link",
+              "linkType": "phone",
+              "phone": "8564556701"
+            }
+          ],
+          "style": "normal"
+        },
+        {
+          "_key": "k000xw",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xx",
+              "_type": "span",
+              "marks": [],
+              "text": "Disclaimer"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "k000xy",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xz",
+              "_type": "span",
+              "marks": [],
+              "text": "To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000y0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000y1",
+              "_type": "span",
+              "marks": [],
+              "text": "limit or exclude our or your liability for death or personal injury;"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000y2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000y3",
+              "_type": "span",
+              "marks": [],
+              "text": "limit or exclude our or your liability for fraud or fraudulent misrepresentation;"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000y4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000y5",
+              "_type": "span",
+              "marks": [],
+              "text": "limit any of our or your liabilities in any way that is not permitted under applicable law; or"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000y6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000y7",
+              "_type": "span",
+              "marks": [],
+              "text": "exclude any of our or your liabilities that may not be excluded under applicable law."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000y8",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000y9",
+              "_type": "span",
+              "marks": [],
+              "text": "The limitations and prohibitions of liability set in this section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000ya",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000yb",
+              "_type": "span",
+              "marks": [],
+              "text": "As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "width": "narrow"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "The terms and conditions for using the Uriah Child Care website.",
+    "metaTitle": "Terms and Conditions | Uriah Child Care"
+  },
+  "showInFooter": true,
+  "slug": {
+    "_type": "slug",
+    "current": "terms-and-conditions"
+  },
+  "title": "Terms and Conditions"
+}

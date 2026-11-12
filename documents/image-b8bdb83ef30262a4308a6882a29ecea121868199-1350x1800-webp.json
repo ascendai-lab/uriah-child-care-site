@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T12:53:08Z",
+  "_id": "image-b8bdb83ef30262a4308a6882a29ecea121868199-1350x1800-webp",
+  "_rev": "6fXA2k3jCstDiCIQOrGGJJ",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T12:53:08Z",
+  "assetId": "b8bdb83ef30262a4308a6882a29ecea121868199",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "ddHxWoMwxYWY~VRjM{a~ofj[IoofofayWBofR-ayf5a#",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUHBgH/xAAnEAACAQQBAgUFAAAAAAAAAAABAgMABAURBhIhIzFBUWETFBUyQv/EABcBAQEBAQAAAAAAAAAAAAAAAAQDAAL/xAAcEQACAgMBAQAAAAAAAAAAAAABAgADBBEhIlH/2gAMAwEAAhEDEQA/ANPxaEIqsB3FbO2y8Ny1xaRydU0IHWPbdTlMobHFzyx660Qso+aQ8O5LK2dhkVG+pfHxmLb8vigY1bNs/Ii1gOSny2yNIxI70V0XMZ77FFV1NIlm+S2NoqW6zGYSR7JA8t+lIeG5S0x+ZlnnZtfwNbpb9jbtxa+umj3cRzhFcsdhfas7jLmaC9LRSFW7jfnT8XFDL5MNdcVPRL3Fyy3kQNGHZT66oqd8Zupvxa+If2NFcNQFJEqtmxuf/9k=",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#533733",
+        "foreground": "#fff",
+        "population": 1.96,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#11275a",
+        "foreground": "#fff",
+        "population": 3.11,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#cfc7b2",
+        "foreground": "#000",
+        "population": 7.27,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#cfc7b2",
+        "foreground": "#000",
+        "population": 7.27,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ddc99f",
+        "foreground": "#000",
+        "population": 1,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#a3926c",
+        "foreground": "#fff",
+        "population": 6.84,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ccb851",
+        "foreground": "#000",
+        "population": 0.12,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "XwgOHQKVZ392Z2eIh3eHiM2P1f5J"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "tameca-burke-director-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/b8bdb83ef30262a4308a6882a29ecea121868199-1350x1800.webp",
+  "sha1hash": "b8bdb83ef30262a4308a6882a29ecea121868199",
+  "size": 118840,
+  "uploadId": "6a97d9ffec395222b8fbe978e0434054bf66fff7",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/b8bdb83ef30262a4308a6882a29ecea121868199-1350x1800.webp"
+}

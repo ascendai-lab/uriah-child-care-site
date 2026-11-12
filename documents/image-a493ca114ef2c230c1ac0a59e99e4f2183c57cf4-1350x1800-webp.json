@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:50Z",
+  "_id": "image-a493ca114ef2c230c1ac0a59e99e4f2183c57cf4-1350x1800-webp",
+  "_rev": "OXKzsTJ7Efs4i6zOkQRvWr",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:50Z",
+  "assetId": "a493ca114ef2c230c1ac0a59e99e4f2183c57cf4",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dCEfTg={DhRj?wRPRPx]0P9ZNFt8Rkt6RkWEv_xYx^x]",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBAL/xAAkEAACAgMAAgEEAwAAAAAAAAABAgMEAAUREiEGIjFRkRMjYf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABwRAAMBAAIDAAAAAAAAAAAAAAABEQIDMQQhYf/aAAwDAQACEQMRAD8AS6XT0drWEYmRSv3UuF5+8qa/x7VVa/hLs6dZPxF/Y37zVP8AH9OzMIIoWUDvmvrpya+Va2DWUTapzVxOOdiZvQyMeRmdex3xu9iXa6iot+YQXjNF36WK++YZxftbHXziGWLXyN4h/JR0cI7hi+X4KwbdVtKc9+vr5p3iglQuZlbnP8xJ83SpetPQ1yyhPJR/OxJLAYnpRqdqQVHFHQPxlQUUM3APQBGUolIDTtpO2xPrZzVkhawUAAfy70cwxjL9crs/s9+5wzF4TdLp/9k=",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#4e4839",
+        "foreground": "#fff",
+        "population": 2.67,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#1e417b",
+        "foreground": "#fff",
+        "population": 0.23,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#4e4839",
+        "foreground": "#fff",
+        "population": 2.67,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c7c1af",
+        "foreground": "#000",
+        "population": 1.22,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#bca66c",
+        "foreground": "#000",
+        "population": 0.01,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#98845c",
+        "foreground": "#fff",
+        "population": 0.04,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#2954a0",
+        "foreground": "#fff",
+        "population": 0.01,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "GwgGFQIrhm6XJnJpeodJCbmVsC8Z"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "open-play-hall-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/a493ca114ef2c230c1ac0a59e99e4f2183c57cf4-1350x1800.webp",
+  "sha1hash": "a493ca114ef2c230c1ac0a59e99e4f2183c57cf4",
+  "size": 144506,
+  "uploadId": "e9380d1cbc9b295e5c10afcf697d4486f82dcc5a",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/a493ca114ef2c230c1ac0a59e99e4f2183c57cf4-1350x1800.webp"
+}

@@ -1,0 +1,352 @@
+{
+  "_createdAt": "2026-11-04T13:02:52Z",
+  "_id": "service-full-part-time",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-full-part-time",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "coral",
+  "ageRange": "Ages 2.5 and up",
+  "body": [
+    {
+      "_key": "k000wm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000wn",
+          "_type": "span",
+          "marks": [],
+          "text": "Care that fits your week"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000wo",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000wp",
+          "_type": "span",
+          "marks": [],
+          "text": "Every family's week looks different. Some parents need care five or more days, some two or three, and some only on certain shifts. We offer "
+        },
+        {
+          "_key": "k000wq",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "full-time and part-time"
+        },
+        {
+          "_key": "k000wr",
+          "_type": "span",
+          "marks": [],
+          "text": " child care, and you choose the days and hours you need between 6 am and 11 pm."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ws",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000wt",
+          "_type": "span",
+          "marks": [],
+          "text": "How scheduling works"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000wu",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000wv",
+          "_type": "span",
+          "marks": [],
+          "text": "Tell us your work schedule when you call or tour. We'll set up a regular schedule so your child has a steady routine. If your hours change, talk to us and we'll do our best to adjust, as space allows."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ww",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000wx",
+          "_type": "span",
+          "marks": [],
+          "text": "What every schedule includes"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000wy",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000wz",
+          "_type": "span",
+          "marks": [],
+          "text": "Full-time or part-time, your child gets the same day: meals and snacks at set times through the USDA food program (CACFP), our play-based Experience Early Learning curriculum for toddlers and young children, and homework help for school-age kids on every shift. Your child is with the same small team every time, led by Ms. Paulette and our director, Tameca Burke. You check in and out with Procare, so every drop-off and pickup is on record."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000x0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000x1",
+          "_type": "span",
+          "marks": [],
+          "text": "Schedules we can set up"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000x2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000x3",
+          "_type": "span",
+          "marks": [],
+          "text": "Three or four days a week around 12-hour hospital shifts"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000x4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000x5",
+          "_type": "span",
+          "marks": [],
+          "text": "Weekday mornings only, or weekday afternoons and evenings"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000x6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000x7",
+          "_type": "span",
+          "marks": [],
+          "text": "Saturdays only"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000x8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000x9",
+          "_type": "span",
+          "marks": [],
+          "text": "After school until 11 pm for school-age kids"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000xa",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000xb",
+          "_type": "span",
+          "marks": [],
+          "text": "Cost"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000xc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000xd",
+          "_type": "span",
+          "marks": [],
+          "text": "Tuition depends on your child's age and schedule. See "
+        },
+        {
+          "_key": "k000xf",
+          "_type": "span",
+          "marks": [
+            "k000xe"
+          ],
+          "text": "tuition and how to pay"
+        },
+        {
+          "_key": "k000xg",
+          "_type": "span",
+          "marks": [],
+          "text": " and "
+        },
+        {
+          "_key": "k000xi",
+          "_type": "span",
+          "marks": [
+            "k000xh"
+          ],
+          "text": "CCAP"
+        },
+        {
+          "_key": "k000xj",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000xe",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tuition",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000xh",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-ccap",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-shift-care",
+    "_type": "reference"
+  },
+  "excerpt": "Choose the days and hours you need, between 6 am and 11 pm, Monday to Saturday.",
+  "faqs": [
+    {
+      "_key": "k0005e",
+      "_type": "faqItem",
+      "answer": "Yes. Choose the days and hours you need between 6 am and 11 pm, Monday to Saturday, as space allows.",
+      "question": "Do you offer part-time care?"
+    },
+    {
+      "_key": "k0005f",
+      "_type": "faqItem",
+      "answer": "Tuition depends on your child's age, the days and the shift you need. Call us or book a tour and we will give you a clear price for your schedule.",
+      "question": "How much does full-time or part-time care cost?"
+    },
+    {
+      "_key": "k0005g",
+      "_type": "faqItem",
+      "answer": "Talk to us when your hours change, and we will do our best to adjust as space allows.",
+      "question": "Can I change my schedule later?"
+    },
+    {
+      "_key": "k0005h",
+      "_type": "faqItem",
+      "answer": "Yes. We accept NJ childcare subsidy (CCAP) for families who qualify, for full-time and part-time care.",
+      "question": "Do you accept CCAP?"
+    }
+  ],
+  "gbpName": "Full-time and part-time care",
+  "highlights": [
+    "Full-time schedules",
+    "Part-time schedules",
+    "Pick your days and hours",
+    "Open Monday to Saturday, 6 am to 11 pm"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Colorful classroom at Uriah Child Care in Vineland",
+    "asset": {
+      "_ref": "image-a404a5e0831994c49425c0711a3bcabeee604c23-1800x1176-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Full-time or part-time care for ages 2.5 and up. Pick the days and hours you need, 6 am to 11 pm, Monday to Saturday.",
+  "keyword": "part time daycare vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 5,
+  "related": [
+    {
+      "_key": "k00050",
+      "_ref": "page-tuition",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00051",
+      "_ref": "service-shift-workers",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00052",
+      "_ref": "category-shift-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00053",
+      "_ref": "service-ccap",
+      "_type": "reference"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Full-time and part-time child care in Vineland, NJ for ages 2.5+. Pick your days and hours, 6 am to 11 pm, Monday to Saturday. CCAP accepted.",
+    "metaTitle": "Full & Part-Time Daycare in Vineland, NJ"
+  },
+  "shortTitle": "Full-time and part-time",
+  "slug": {
+    "_type": "slug",
+    "current": "full-time-part-time-daycare-vineland-nj"
+  },
+  "title": "Full-time and part-time daycare in Vineland, NJ"
+}

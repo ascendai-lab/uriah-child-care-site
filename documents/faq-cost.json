@@ -1,0 +1,73 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-cost",
+  "_rev": "OXKzsTJ7Efs4i6zOkPoNqf",
+  "_type": "faq",
+  "_updatedAt": "2026-11-04T13:04:58Z",
+  "answer": [
+    {
+      "_key": "k0009y",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0009z",
+          "_type": "span",
+          "marks": [],
+          "text": "Tuition depends on your child's age, the days and the shift you need. Call us or "
+        },
+        {
+          "_key": "k000a1",
+          "_type": "span",
+          "marks": [
+            "k000a0"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000a2",
+          "_type": "span",
+          "marks": [],
+          "text": " and we will give you a clear price for your schedule. See "
+        },
+        {
+          "_key": "k000a4",
+          "_type": "span",
+          "marks": [
+            "k000a3"
+          ],
+          "text": "tuition and how to pay"
+        },
+        {
+          "_key": "k000a5",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000a0",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000a3",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tuition",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Cost and subsidy",
+  "order": 5,
+  "question": "How much does child care cost?"
+}

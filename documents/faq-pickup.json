@@ -1,0 +1,32 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-pickup",
+  "_rev": "Weiss0T6IziVTCaiuOyMwM",
+  "_system": {
+    "base": {
+      "id": "faq-pickup",
+      "rev": "OXKzsTJ7Efs4i6zOkPoNqf"
+    }
+  },
+  "_type": "faq",
+  "_updatedAt": "2026-11-05T17:44:49Z",
+  "answer": [
+    {
+      "_key": "k000bg",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000bh",
+          "_type": "span",
+          "marks": [],
+          "text": "We release children only to parents and to the adults you authorize in writing. Anyone we don't know is asked for photo ID, even grandparents. If plans change, tell us in writing before pickup."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "category": "Safety",
+  "order": 10,
+  "question": "Who can pick up my child?"
+}

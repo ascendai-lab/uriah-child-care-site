@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T12:53:01Z",
+  "_id": "image-9947ecb0aaaec784157590d7811ec252175966f2-1350x1800-webp",
+  "_rev": "6fXA2k3jCstDiCIQOrGFtP",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T12:53:01Z",
+  "assetId": "9947ecb0aaaec784157590d7811ec252175966f2",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dGG+XMxA#fnfo%t30LxZ00M|~qkDD%t7ozWAIUt7oMjF",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAUGBwEI/8QAKRAAAQIFAgMJAAAAAAAAAAAAAQIDAAQFBhEHIRITIhQxQVNhcZGhsf/EABgBAAIDAAAAAAAAAAAAAAAAAAADAQIF/8QAGxEAAgMBAQEAAAAAAAAAAAAAAAECAxEhEjL/2gAMAwEAAhEDEQA/AJioWii4NSn5Jx4y6FdSlgb7CHdT0jZZlHlydW5jzac8C04yIeU5so1idSPLJ7s+EUuo9SXTrTemGwhtxbiW8hO+DC6Yp1psJtqWGeWjazQpRDoBVzVb/EEPbVmw3Q5crJCl5X9wQcJ6JL3rsxbOos5UJQoD6GwE8YyNxE9cepFVuaniQqKJcNBYWC2nByI7rt03s5jbKE5jPWSecj3itGqtBP6PVNi29JTNpUx2aZ4nFNA5z6wRQ2YAm1KUEjA7Oj8gjMlfP0+j1BYf/9k=",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#43443c",
+        "foreground": "#fff",
+        "population": 7.8,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#1c130d",
+        "foreground": "#fff",
+        "population": 0.37,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ded4a3",
+        "foreground": "#000",
+        "population": 8.39,
+        "title": "#000"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#b3c3d3",
+        "foreground": "#000",
+        "population": 0.15,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ded4a3",
+        "foreground": "#000",
+        "population": 8.39,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#898678",
+        "foreground": "#fff",
+        "population": 4.16,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#bc9e5b",
+        "foreground": "#000",
+        "population": 0.06,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "XfgNFQKH94mEF8dYiIVYh/qGqn+p"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "entrance-welcome-sign-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/9947ecb0aaaec784157590d7811ec252175966f2-1350x1800.webp",
+  "sha1hash": "9947ecb0aaaec784157590d7811ec252175966f2",
+  "size": 76130,
+  "uploadId": "93d5015cb75581aaecb36cd01eb436f6902056d0",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/9947ecb0aaaec784157590d7811ec252175966f2-1350x1800.webp"
+}

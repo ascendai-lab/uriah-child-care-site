@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:53Z",
+  "_id": "image-bf4e1041437bd713a5bd5d9bf40535c783054b63-1800x1350-webp",
+  "_rev": "OXKzsTJ7Efs4i6zOkQRw5F",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:53Z",
+  "assetId": "bf4e1041437bd713a5bd5d9bf40535c783054b63",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "VbEC@2IVIVxtax_4RjRQt6j?xvbIWBj[ofV@ofofazj]",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 1.3333333333333333,
+      "height": 1350,
+      "width": 1800
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAcEBQb/xAAmEAABAwMCBQUAAAAAAAAAAAACAQMRAAQFBiESEyIjJDEycYGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAaEQACAgMAAAAAAAAAAAAAAAAAAgESAxEx/9oADAMBAAIRAxEAPwCBgdQeU+OQfbJENYhZQfut/jNXYO9sXLdoVG4bSSM9kikHbFw9Je1fVE2q4bugba7TaCURNW2SW6TCaGPdZ7Hc5YfFfhaKVblwamuw/lFFwqf/2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5c4434",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#342f16",
+        "foreground": "#fff",
+        "population": 0.6,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c5cccf",
+        "foreground": "#000",
+        "population": 8.96,
+        "title": "#000"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#c5cccf",
+        "foreground": "#000",
+        "population": 8.96,
+        "title": "#000"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#e0d598",
+        "foreground": "#000",
+        "population": 0,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#65758f",
+        "foreground": "#fff",
+        "population": 2.71,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#90802b",
+        "foreground": "#fff",
+        "population": 0.03,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "3PcNDYJVeIh/h3eJh3iIhmVQdQZ2"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "building-parking-lot-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/bf4e1041437bd713a5bd5d9bf40535c783054b63-1800x1350.webp",
+  "sha1hash": "bf4e1041437bd713a5bd5d9bf40535c783054b63",
+  "size": 477512,
+  "uploadId": "3b509b9f4b91d0f549f23d11df5d349c5ac57519",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/bf4e1041437bd713a5bd5d9bf40535c783054b63-1800x1350.webp"
+}

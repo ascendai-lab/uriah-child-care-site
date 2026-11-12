@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-06T04:26:18Z",
+  "_id": "image-ab224a6cc0b27dcd88614970dbedf8e88201161d-640x480-webp",
+  "_rev": "1tk6J7MImmXVkYKAfaowdX",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-06T04:26:18Z",
+  "assetId": "ab224a6cc0b27dcd88614970dbedf8e88201161d",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "VBG*m4nOIqIoD%},r@ozE2bcMxt89aWCbuD*-nIoI=oz",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 1.3333333333333333,
+      "height": 480,
+      "width": 640
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMGAgX/xAAjEAABBAIBAwUAAAAAAAAAAAABAgMEBQARIQYTYRIxMkFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAcEQABBQADAAAAAAAAAAAAAAABAAIDESESE1H/2gAMAwEAAhEDEQA/AEVDJralyVBc0kL0qO58FDx+HNaes2BIRCAUeS2lwE5wIcpxfTCZ1++vttKLgZZGgQfo6x9fWwrSkTa00mXD7gJ0Vk6175D06ORpXOmNUNKp3KysY9CZctEd4pCi2rkpwyHYNmhlO5DEkHkOOo2ojzhiCKP1CXvvAv/Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#443454",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#0e3c6b",
+        "foreground": "#fff",
+        "population": 3.76,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d6cdb3",
+        "foreground": "#000",
+        "population": 5.52,
+        "title": "#000"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d6cdb3",
+        "foreground": "#000",
+        "population": 5.52,
+        "title": "#000"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d2a58d",
+        "foreground": "#000",
+        "population": 4.57,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#957e63",
+        "foreground": "#fff",
+        "population": 5.49,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#9a1015",
+        "foreground": "#fff",
+        "population": 0.19,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "3CgGFYJWNWB+SbmFcidLamp/yPaY"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "watermelon-wednesday-craft-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/ab224a6cc0b27dcd88614970dbedf8e88201161d-640x480.webp",
+  "sha1hash": "ab224a6cc0b27dcd88614970dbedf8e88201161d",
+  "size": 64946,
+  "uploadId": "ad6bff61ca53c6ae534eccf45afd059b955885f0",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/ab224a6cc0b27dcd88614970dbedf8e88201161d-640x480.webp"
+}

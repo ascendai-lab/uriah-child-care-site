@@ -1,0 +1,369 @@
+{
+  "_createdAt": "2026-11-04T13:02:52Z",
+  "_id": "service-evening",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-evening",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "coral",
+  "ageRange": "Ages 2.5 and up",
+  "body": [
+    {
+      "_key": "k000u0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000u1",
+          "_type": "span",
+          "marks": [],
+          "text": "Care while you work second shift"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000u2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000u3",
+          "_type": "span",
+          "marks": [],
+          "text": "Second shift is hard on families when child care closes as your shift starts. We stay open "
+        },
+        {
+          "_key": "k000u4",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "until 11 pm, Monday to Saturday"
+        },
+        {
+          "_key": "k000u5",
+          "_type": "span",
+          "marks": [],
+          "text": ", so your child can be with people they know while you work."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000u6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000u7",
+          "_type": "span",
+          "marks": [],
+          "text": "A real evening routine"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000u8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000u9",
+          "_type": "span",
+          "marks": [],
+          "text": "Dinner is at 6 pm. Children go outside when the weather allows, school-age kids get homework help if they need it, and then everyone settles into calm activities like books, puzzles and quiet games. There is an evening snack at 9 pm. We keep the evening low-key so children are ready for bed when you pick them up."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ua",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ub",
+          "_type": "span",
+          "marks": [],
+          "text": "What's for dinner"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000uc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ud",
+          "_type": "span",
+          "marks": [],
+          "text": "Dinner is at 6 pm through the USDA Child and Adult Care Food Program (CACFP). Like every meal we serve, it follows the program's standards: a protein, a whole grain, vegetables or fruit, and milk. Tell us about allergies or special diets when you enroll."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ue",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000uf",
+          "_type": "span",
+          "marks": [],
+          "text": "Safe pickup at night"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000ug",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000uh",
+          "_type": "span",
+          "marks": [],
+          "text": "Pick up any time before we close at 11 pm. You check out with Procare, we release children only to adults you have authorized in writing, and a security camera watches the front entrance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ui",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000uj",
+          "_type": "span",
+          "marks": [],
+          "text": "For every age we serve"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000uk",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ul",
+          "_type": "span",
+          "marks": [],
+          "text": "Toddlers and young children from 2½, and school-age children up to 13 coming from our "
+        },
+        {
+          "_key": "k000un",
+          "_type": "span",
+          "marks": [
+            "k000um"
+          ],
+          "text": "after school program"
+        },
+        {
+          "_key": "k000uo",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000um",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000up",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000uq",
+          "_type": "span",
+          "marks": [],
+          "text": "See "
+        },
+        {
+          "_key": "k000us",
+          "_type": "span",
+          "marks": [
+            "k000ur"
+          ],
+          "text": "late evening care until 11 pm"
+        },
+        {
+          "_key": "k000ut",
+          "_type": "span",
+          "marks": [],
+          "text": ", or "
+        },
+        {
+          "_key": "k000uv",
+          "_type": "span",
+          "marks": [
+            "k000uu"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000uw",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000ur",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-late-evening",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000uu",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-shift-care",
+    "_type": "reference"
+  },
+  "dayPlan": [
+    {
+      "_key": "k0004w",
+      "_type": "dayStep",
+      "activity": "Snack at 3 pm and play, or homework time for school-age kids.",
+      "label": "Afternoon"
+    },
+    {
+      "_key": "k0004x",
+      "_type": "dayStep",
+      "activity": "Dinner at 6 pm through the USDA food program (CACFP).",
+      "label": "Dinner"
+    },
+    {
+      "_key": "k0004y",
+      "_type": "dayStep",
+      "activity": "Books, quiet games and stories, with an evening snack at 9 pm.",
+      "label": "Wind-down"
+    },
+    {
+      "_key": "k0004z",
+      "_type": "dayStep",
+      "activity": "Before we close at 11 pm.",
+      "label": "Pickup"
+    }
+  ],
+  "excerpt": "Second shift care with dinner and a calm evening routine, open until 11 pm.",
+  "faqs": [
+    {
+      "_key": "k0004t",
+      "_type": "faqItem",
+      "answer": "Yes. Children staying into the evening are served an evening meal through the USDA food program (CACFP).",
+      "question": "Do children get dinner?"
+    },
+    {
+      "_key": "k0004u",
+      "_type": "faqItem",
+      "answer": "We are open until 11 pm, Monday to Saturday.",
+      "question": "How late are you open?"
+    },
+    {
+      "_key": "k0004v",
+      "_type": "faqItem",
+      "answer": "Yes. We care for children ages 2.5 and up, including school-age children up to 13, so older kids can do homework and wind down with us.",
+      "question": "Can school-age children come in the evening?"
+    }
+  ],
+  "gbpName": "Second shift child care",
+  "highlights": [
+    "Second shift care",
+    "Open until 11 pm",
+    "Evening meal served",
+    "Calm evening routine",
+    "Ages 2.5 and up"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Accessible parking at Uriah Child Care at sunset",
+    "asset": {
+      "_ref": "image-81442c837a7eb302a3b53b3568d61e4ca39466f6-1800x1350-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Evening care for parents who work second shift. Dinner, play and a calm routine, open until 11 pm, Monday to Saturday.",
+  "keyword": "evening child care vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 2,
+  "related": [
+    {
+      "_key": "k0004k",
+      "_ref": "service-late-evening",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0004l",
+      "_ref": "category-shift-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0004m",
+      "_ref": "service-shift-workers",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0004n",
+      "_ref": "category-after-school",
+      "_type": "reference"
+    }
+  ],
+  "reviews": [
+    {
+      "_key": "k0004s",
+      "_ref": "review-marcia-antina",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Evenings, Monday to Saturday, until 11 pm",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Second shift child care in Vineland, NJ with dinner and a calm evening routine. Open until 11 pm, Monday to Saturday. Ages 2.5+. CCAP accepted.",
+    "metaTitle": "Evening Child Care in Vineland, NJ"
+  },
+  "shortTitle": "Evening care",
+  "slug": {
+    "_type": "slug",
+    "current": "evening-child-care-vineland-nj"
+  },
+  "title": "Evening child care in Vineland, NJ"
+}

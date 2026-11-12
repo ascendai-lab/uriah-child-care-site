@@ -1,0 +1,453 @@
+{
+  "_createdAt": "2026-11-04T12:58:28Z",
+  "_id": "category-after-school",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "category-after-school",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "category",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sky",
+  "ageRange": "School-age children up to 13",
+  "body": [
+    {
+      "_key": "k000dd",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000de",
+          "_type": "span",
+          "marks": [],
+          "text": "Before and after school care for working parents"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000df",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000dg",
+          "_type": "span",
+          "marks": [],
+          "text": "School gets out long before most shifts end. Our after school program gives school-age children a safe, familiar place to go, with people who know them. Children up to 13 can come "
+        },
+        {
+          "_key": "k000di",
+          "_type": "span",
+          "marks": [
+            "k000dh"
+          ],
+          "text": "before school"
+        },
+        {
+          "_key": "k000dj",
+          "_type": "span",
+          "marks": [],
+          "text": " from 6 am and after school until 11 pm, Monday to Saturday."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000dh",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-before-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000dk",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000dl",
+          "_type": "span",
+          "marks": [],
+          "text": "What kids do after school"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000dm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000dn",
+          "_type": "span",
+          "marks": [],
+          "text": "After a snack, children sit down for "
+        },
+        {
+          "_key": "k000dp",
+          "_type": "span",
+          "marks": [
+            "k000do"
+          ],
+          "text": "homework time"
+        },
+        {
+          "_key": "k000dq",
+          "_type": "span",
+          "marks": [],
+          "text": ". Staff help with reading and checking work, and keep kids on task so homework is done before you pick up. Then it is time to play: games, art, building and time with friends. Children who stay into the evening have dinner and settle down with calm activities."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000do",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-homework-help",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000dr",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ds",
+          "_type": "span",
+          "marks": [],
+          "text": "Care on days off school and all summer"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000dt",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000du",
+          "_type": "span",
+          "marks": [],
+          "text": "Many parents still work when school is closed. We offer full-day care on "
+        },
+        {
+          "_key": "k000dw",
+          "_type": "span",
+          "marks": [
+            "k000dv"
+          ],
+          "text": "school closure days"
+        },
+        {
+          "_key": "k000dx",
+          "_type": "span",
+          "marks": [],
+          "text": " like holidays, breaks and snow days, and full-day "
+        },
+        {
+          "_key": "k000dz",
+          "_type": "span",
+          "marks": [
+            "k000dy"
+          ],
+          "text": "summer care"
+        },
+        {
+          "_key": "k000e0",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000dv",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-school-closure",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000dy",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-summer-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000e1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000e2",
+          "_type": "span",
+          "marks": [],
+          "text": "Getting to and from school"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000e3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000e4",
+          "_type": "span",
+          "marks": [],
+          "text": "We don't drive children to or from school, but school buses can pick up and drop off at our center. Ask your school district about a bus stop at 30 W Chestnut Ave. Vineland Public Schools elementary schools such as Gloria M. Sabater Elementary School are close by. Parents can always drop off and pick up at the center too."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000e5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000e6",
+          "_type": "span",
+          "marks": [],
+          "text": "Getting started"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000e7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000e8",
+          "_type": "span",
+          "marks": [],
+          "text": "Call "
+        },
+        {
+          "_key": "k000ea",
+          "_type": "span",
+          "marks": [
+            "k000e9"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000eb",
+          "_type": "span",
+          "marks": [],
+          "text": " or "
+        },
+        {
+          "_key": "k000ed",
+          "_type": "span",
+          "marks": [
+            "k000ec"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000ee",
+          "_type": "span",
+          "marks": [],
+          "text": ". Tell us your child's school and your work schedule, and we will go over how the days would work. We accept "
+        },
+        {
+          "_key": "k000eg",
+          "_type": "span",
+          "marks": [
+            "k000ef"
+          ],
+          "text": "NJ childcare subsidy (CCAP)"
+        },
+        {
+          "_key": "k000eh",
+          "_type": "span",
+          "marks": [],
+          "text": " for families who qualify."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000e9",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        },
+        {
+          "_key": "k000ec",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000ef",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-ccap",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "dayPlan": [
+    {
+      "_key": "k0001c",
+      "_type": "dayStep",
+      "activity": "Kids arrive by school bus or with a parent, wash up and have a snack.",
+      "label": "After school"
+    },
+    {
+      "_key": "k0001d",
+      "_type": "dayStep",
+      "activity": "A quiet table for homework and reading, with help when they get stuck.",
+      "label": "Homework time"
+    },
+    {
+      "_key": "k0001e",
+      "_type": "dayStep",
+      "activity": "Games, art, building and time with friends.",
+      "label": "Play"
+    },
+    {
+      "_key": "k0001f",
+      "_type": "dayStep",
+      "activity": "Dinner at 6 pm and an evening snack at 9 pm for children staying late, with calm activities until pickup.",
+      "label": "Dinner and wind-down"
+    }
+  ],
+  "excerpt": "Before and after school care for school-age kids up to 13, with homework time, snacks and care until 11 pm.",
+  "faqs": [
+    {
+      "_key": "k0001i",
+      "_type": "faqItem",
+      "answer": "Our before and after school program is for school-age children up to 13 years old.",
+      "question": "What ages are in the after school program?"
+    },
+    {
+      "_key": "k0001j",
+      "_type": "faqItem",
+      "answer": "We are open until 11 pm, Monday to Saturday, so children can stay through a second shift.",
+      "question": "How late can my child stay?"
+    },
+    {
+      "_key": "k0001k",
+      "_type": "faqItem",
+      "answer": "Yes. After snack, children have homework time at a quiet table, and staff help with reading and checking work.",
+      "question": "Do you help with homework?"
+    },
+    {
+      "_key": "k0001l",
+      "_type": "faqItem",
+      "answer": "Yes. School buses can pick up and drop off at our center. Ask your school district about a bus stop at 30 W Chestnut Ave. We do not drive children to or from school ourselves.",
+      "question": "Can the school bus drop my child off at your center?"
+    },
+    {
+      "_key": "k0001m",
+      "_type": "faqItem",
+      "answer": "Yes. We offer full-day care all summer and on school holidays, breaks and snow days.",
+      "question": "Are you open in the summer and when school is closed?"
+    },
+    {
+      "_key": "k0001n",
+      "_type": "faqItem",
+      "answer": "We accept NJ childcare subsidy (CCAP) for families who qualify, including for school-age care. Call us and we will help you with the next steps.",
+      "question": "Can I use CCAP for after school care?"
+    }
+  ],
+  "gbpName": "After school program",
+  "highlights": [
+    "Before school care from 6 am",
+    "After school care until 11 pm, Monday to Saturday",
+    "Homework time and help with reading",
+    "Afternoon snack through the USDA food program (CACFP)",
+    "Licensed by NJ DCF, license ID CCC128557",
+    "NJ childcare subsidy (CCAP) accepted"
+  ],
+  "homeHeading": "After school program in Vineland",
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Open play hall with a basketball hoop at Uriah Child Care",
+    "asset": {
+      "_ref": "image-a493ca114ef2c230c1ac0a59e99e4f2183c57cf4-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Before and after school care for kids up to 13, with snacks, homework time and play. Open until 11 pm for parents who work late.",
+  "keyword": "after school program vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 2,
+  "related": [
+    {
+      "_key": "k0001m",
+      "_ref": "service-before-school",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0001n",
+      "_ref": "service-homework-help",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0001o",
+      "_ref": "service-evening",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0001p",
+      "_ref": "service-ccap",
+      "_type": "reference"
+    }
+  ],
+  "reviews": [
+    {
+      "_key": "k0001g",
+      "_ref": "review-rockay-davis",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0001h",
+      "_ref": "review-marcia-antina",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Monday to Saturday, 6 am to 11 pm",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Before and after school care in Vineland, NJ for kids up to 13. Homework time, snacks and care until 11 pm, Monday to Saturday. CCAP accepted.",
+    "metaTitle": "After School Program in Vineland, NJ | Uriah Child Care"
+  },
+  "shortTitle": "After school program",
+  "slug": {
+    "_type": "slug",
+    "current": "after-school-program-vineland-nj"
+  },
+  "title": "After school program in Vineland, NJ"
+}

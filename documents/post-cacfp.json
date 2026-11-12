@@ -1,0 +1,244 @@
+{
+  "_createdAt": "2026-11-04T17:31:13Z",
+  "_id": "post-cacfp",
+  "_rev": "OXKzsTJ7Efs4i6zOkQS55N",
+  "_type": "blogPost",
+  "_updatedAt": "2026-11-04T17:31:25Z",
+  "body": [
+    {
+      "_key": "k00118",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00119",
+          "_type": "span",
+          "marks": [],
+          "text": "Uriah Childcare Center is pleased to announce its participation in the Child and Adult Care Food Program (CACFP). Through this federally funded program, nutritious meals and snacks are provided to enrolled children in accordance with USDA nutrition standards."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0011a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0011b",
+          "_type": "span",
+          "marks": [],
+          "text": "CACFP is administered by the New Jersey Department of Agriculture, Division of Food and Nutrition, and funded by the United States Department of Agriculture (USDA)."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0011c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0011d",
+          "_type": "span",
+          "marks": [],
+          "text": "Meals are available to all enrolled participants without regard to race, color, national origin, sex, age, or disability. Read more about "
+        },
+        {
+          "_key": "k0011f",
+          "_type": "span",
+          "marks": [
+            "k0011e"
+          ],
+          "text": "meals and snacks at our center"
+        },
+        {
+          "_key": "k0011g",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0011e",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-meals",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0011h",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0011i",
+          "_type": "span",
+          "marks": [],
+          "text": "Contact information"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0011j",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0011k",
+          "_type": "span",
+          "marks": [],
+          "text": "Uriah Childcare Center, 30 W Chestnut Ave, Vineland, NJ 08360. Phone: "
+        },
+        {
+          "_key": "k0011m",
+          "_type": "span",
+          "marks": [
+            "k0011l"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k0011n",
+          "_type": "span",
+          "marks": [],
+          "text": ". Email: "
+        },
+        {
+          "_key": "k0011p",
+          "_type": "span",
+          "marks": [
+            "k0011o"
+          ],
+          "text": "hello@uriahchildcare.com"
+        },
+        {
+          "_key": "k0011q",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0011l",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        },
+        {
+          "_key": "k0011o",
+          "_type": "link",
+          "email": "hello@uriahchildcare.com",
+          "linkType": "email"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k0011r",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0011s",
+          "_type": "span",
+          "marks": [],
+          "text": "USDA nondiscrimination statement"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0011t",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0011u",
+          "_type": "span",
+          "marks": [],
+          "text": "In accordance with federal civil rights law and USDA civil rights regulations and policies, this institution is prohibited from discriminating on the basis of race, color, national origin, sex (including gender identity and sexual orientation), disability, age, or reprisal or retaliation for prior civil rights activity."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0011v",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0011w",
+          "_type": "span",
+          "marks": [],
+          "text": "Program information may be made available in languages other than English. Persons with disabilities who require alternative means of communication should contact the agency where they applied for benefits. Individuals who are deaf, hard of hearing, or have speech disabilities may contact USDA through the Federal Relay Service at "
+        },
+        {
+          "_key": "k0011y",
+          "_type": "span",
+          "marks": [
+            "k0011x"
+          ],
+          "text": "(800) 877-8339"
+        },
+        {
+          "_key": "k0011z",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k0011x",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8008778339"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k00120",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00121",
+          "_type": "span",
+          "marks": [],
+          "text": "To file a program discrimination complaint, complete Form AD-3027 or contact USDA as described in the current USDA nondiscrimination guidance."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "categories": [
+    "Announcements"
+  ],
+  "excerpt": "Enrolled children are served nutritious meals and snacks that meet USDA nutrition standards through the federal Child and Adult Care Food Program.",
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Picture daily schedule chart on a classroom wall at Uriah Child Care",
+    "asset": {
+      "_ref": "image-cdb96864fae1af76658cefb4a9cb863fcda7d71d-782x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "publishedAt": "2026-08-01T12:00:00Z",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Uriah Childcare Center in Vineland, NJ participates in the USDA Child and Adult Care Food Program (CACFP). Meals are available to all enrolled children.",
+    "metaTitle": "Uriah Child Care joins the CACFP food program | Vineland, NJ"
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "uriah-childcare-center-participates-in-the-child-and-adult-care-food-program-cacfp"
+  },
+  "title": "Uriah Childcare Center participates in the Child and Adult Care Food Program (CACFP)"
+}

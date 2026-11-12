@@ -1,0 +1,204 @@
+{
+  "_createdAt": "2026-11-04T13:04:38Z",
+  "_id": "page-about",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "page-about",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "page",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "pageBuilder": [
+    {
+      "_key": "k0007u",
+      "_type": "hero",
+      "accent": "sunshine",
+      "buttons": [
+        {
+          "_key": "k0007t",
+          "_type": "ctaButton",
+          "label": "Book a tour with Ms. Paulette",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-tour",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "variant": "primary"
+        }
+      ],
+      "eyebrow": "Caring for local children since 2005",
+      "heading": "Meet Ms. Paulette",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Day Care flag on the front lawn of Uriah Child Care in Vineland on a sunny day",
+        "asset": {
+          "_ref": "image-07a2246e94384014a006a440bb142a84edd96c48-1350x1800-webp",
+          "_type": "reference"
+        }
+      },
+      "layout": "split",
+      "subheading": "Caring for Cumberland County children since 2005, now with her daughter, director Tameca Burke."
+    },
+    {
+      "_key": "k0007v",
+      "_type": "imageText",
+      "accent": "coral",
+      "background": "muted",
+      "body": [
+        {
+          "_key": "k000xu",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xv",
+              "_type": "span",
+              "marks": [],
+              "text": "For many families, Ms. Paulette is more than a child care provider. Parents who brought their first child now bring their second, and some grandparents bring their grandchildren. As one grandmother wrote on Google, \"she has been watching my grand children throughout the years and she always takes great care of them.\""
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000xw",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xx",
+              "_type": "span",
+              "marks": [],
+              "text": "What families mention most is how she treats their children. In another parent's words: \"just know that your child is in AMAZING hands with her.\""
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ],
+      "heading": "Families who come back, generation after generation",
+      "image": {
+        "_type": "imageWithAlt",
+        "alt": "Welcome sign at the front entrance of Uriah Child Care in Vineland",
+        "asset": {
+          "_ref": "image-9947ecb0aaaec784157590d7811ec252175966f2-1350x1800-webp",
+          "_type": "reference"
+        }
+      },
+      "imagePosition": "left",
+      "imageShape": "arch"
+    },
+    {
+      "_key": "k0007w",
+      "_type": "teamBlock",
+      "heading": "The people who care for your child",
+      "intro": "A small, family-run team.",
+      "mode": "all"
+    },
+    {
+      "_key": "k0007x",
+      "_type": "textBlock",
+      "background": "default",
+      "body": [
+        {
+          "_key": "k000xy",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000xz",
+              "_type": "span",
+              "marks": [],
+              "text": "Ms. Paulette cared for children in Millville for many years before opening Uriah Child Care at 30 W Chestnut Ave in Vineland. The new center gave her room to welcome more families and to stay open Monday to Saturday, from 6 am to 11 pm, for parents who work every kind of shift."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "k000y0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "k000y1",
+              "_type": "span",
+              "marks": [],
+              "text": "The center is licensed by the New Jersey Department of Children and Families, license ID CCC128557. See "
+            },
+            {
+              "_key": "k000y3",
+              "_type": "span",
+              "marks": [
+                "k000y2"
+              ],
+              "text": "safety and licensing"
+            },
+            {
+              "_key": "k000y4",
+              "_type": "span",
+              "marks": [],
+              "text": " or "
+            },
+            {
+              "_key": "k000y6",
+              "_type": "span",
+              "marks": [
+                "k000y5"
+              ],
+              "text": "take a look around our center"
+            },
+            {
+              "_key": "k000y7",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "k000y2",
+              "_type": "link",
+              "internal": {
+                "_ref": "service-safe-licensed",
+                "_type": "reference"
+              },
+              "linkType": "internal"
+            },
+            {
+              "_key": "k000y5",
+              "_type": "link",
+              "internal": {
+                "_ref": "page-our-center",
+                "_type": "reference"
+              },
+              "linkType": "internal"
+            }
+          ],
+          "style": "normal"
+        }
+      ],
+      "heading": "From Millville to Vineland",
+      "width": "narrow"
+    },
+    {
+      "_key": "k0007y",
+      "_type": "testimonialsBlock",
+      "background": "muted",
+      "heading": "What parents say",
+      "intro": "Real reviews from local families on Google.",
+      "mode": "all"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Ms. Paulette has cared for Cumberland County children since 2005. Meet the owner and director of Uriah Child Care in Vineland, NJ.",
+    "metaTitle": "Meet Ms. Paulette | Owner of Uriah Child Care, Vineland"
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "about-ms-paulette"
+  },
+  "title": "Meet Ms. Paulette, owner of Uriah Child Care"
+}

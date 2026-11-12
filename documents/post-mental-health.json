@@ -1,0 +1,544 @@
+{
+  "_createdAt": "2026-11-04T17:31:13Z",
+  "_id": "post-mental-health",
+  "_rev": "OXKzsTJ7Efs4i6zOkQS55N",
+  "_type": "blogPost",
+  "_updatedAt": "2026-11-04T17:31:25Z",
+  "body": [
+    {
+      "_key": "k00159",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015a",
+          "_type": "span",
+          "marks": [],
+          "text": "Children are often resilient, but that doesn't mean we can ignore signs that they are struggling. As a parent or caregiver, there is a lot you can do to help your child build good mental health."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0015b",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015c",
+          "_type": "span",
+          "marks": [],
+          "text": "Lay the foundation"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0015d",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015e",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Be a good role model."
+        },
+        {
+          "_key": "k0015f",
+          "_type": "span",
+          "marks": [],
+          "text": " When children see you talk openly about feelings and ask for help when you need it, they learn that it's OK to do the same."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0015g",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015h",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Talk about feelings openly."
+        },
+        {
+          "_key": "k0015i",
+          "_type": "span",
+          "marks": [],
+          "text": " Sharing your own experiences, in a way that fits their age, helps children understand that their feelings are normal."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0015j",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015k",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Listen without judging."
+        },
+        {
+          "_key": "k0015l",
+          "_type": "span",
+          "marks": [],
+          "text": " Children need to know they can talk to you without being criticized or rushed to a fix."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0015m",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015n",
+          "_type": "span",
+          "marks": [],
+          "text": "Talking about mental health"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0015o",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015p",
+          "_type": "span",
+          "marks": [],
+          "text": "Mental health is as important as physical health. It's OK to talk about it, and it's OK to ask for help and support for your child and for yourself. There is nothing to be ashamed of when things aren't going well."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0015q",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015r",
+          "_type": "span",
+          "marks": [],
+          "text": "Signs of stress and anxiety in children"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0015s",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015t",
+          "_type": "span",
+          "marks": [],
+          "text": "Stress and anxiety don't always look like worry or sadness. Some children get headaches or stomach aches. Others pull away from friends or stop enjoying activities they used to love. Watch for changes from your child's usual mood and routine, such as:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0015u",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015v",
+          "_type": "span",
+          "marks": [],
+          "text": "worry about school, friends or family problems"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0015w",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015x",
+          "_type": "span",
+          "marks": [],
+          "text": "trouble sleeping, or eating much more or less than usual"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0015y",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0015z",
+          "_type": "span",
+          "marks": [],
+          "text": "new clinginess, irritability or tantrums"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00160",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00161",
+          "_type": "span",
+          "marks": [],
+          "text": "avoiding places or people they used to enjoy"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00162",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00163",
+          "_type": "span",
+          "marks": [],
+          "text": "How to help a child who is anxious or down"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k00164",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00165",
+          "_type": "span",
+          "marks": [],
+          "text": "Ask gently about what is going on in their life, and listen."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00166",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00167",
+          "_type": "span",
+          "marks": [],
+          "text": "Help them name their feelings and why they might feel that way."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00168",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00169",
+          "_type": "span",
+          "marks": [],
+          "text": "Keep calm, predictable routines for meals, sleep and play."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016b",
+          "_type": "span",
+          "marks": [],
+          "text": "Set aside a few minutes each day just to talk, about anything at all."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016c",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016d",
+          "_type": "span",
+          "marks": [],
+          "text": "Let them know that asking for help is a strong thing to do."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016e",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016f",
+          "_type": "span",
+          "marks": [],
+          "text": "If you think your child is hurting themselves"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0016g",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016h",
+          "_type": "span",
+          "marks": [],
+          "text": "Stay calm and talk with your child. Tell them you have noticed and that you want to help, ask what is going on, and listen without anger or punishment. Then contact your child's doctor or a mental health professional for support."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016i",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016j",
+          "_type": "span",
+          "marks": [],
+          "text": "When to get professional help"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0016k",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016l",
+          "_type": "span",
+          "marks": [],
+          "text": "Talk to your child's doctor or a qualified mental health professional when:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016m",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016n",
+          "_type": "span",
+          "marks": [],
+          "text": "your child's behavior puts them or others at risk"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016o",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016p",
+          "_type": "span",
+          "marks": [],
+          "text": "anxiety or sadness keeps them from going to school or getting through the day"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016q",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016r",
+          "_type": "span",
+          "marks": [],
+          "text": "changes in sleep or eating last longer than two weeks"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016s",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016t",
+          "_type": "span",
+          "marks": [],
+          "text": "If your child is in crisis or talks about wanting to die, call or text "
+        },
+        {
+          "_key": "k0016u",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "988"
+        },
+        {
+          "_key": "k0016v",
+          "_type": "span",
+          "marks": [],
+          "text": ", the Suicide and Crisis Lifeline, any time. In an emergency, call 911."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k0016w",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016x",
+          "_type": "span",
+          "marks": [],
+          "text": "Children need our love and support"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k0016y",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0016z",
+          "_type": "span",
+          "marks": [],
+          "text": "Children bounce back best when they feel heard. Ask questions like \"what do you think would help?\" or \"how can we work through this together?\" Giving your child a sense of control over their feelings helps them cope, and getting support for yourself when you feel overwhelmed helps the whole family."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k00170",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k00171",
+          "_type": "span",
+          "marks": [],
+          "text": "At Uriah Child Care, we use "
+        },
+        {
+          "_key": "k00173",
+          "_type": "span",
+          "marks": [
+            "k00172"
+          ],
+          "text": "positive discipline and play-based learning"
+        },
+        {
+          "_key": "k00174",
+          "_type": "span",
+          "marks": [],
+          "text": " to help children name their feelings, solve problems and get along with others."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k00172",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-play-based-learning",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "categories": [
+    "Tips for parents"
+  ],
+  "excerpt": "How to talk with your child about feelings, spot signs of stress and anxiety, and know when to get professional help.",
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Horseshoe learning table and book shelves in a classroom at Uriah Child Care",
+    "asset": {
+      "_ref": "image-2079291fd01a6c97652e3052b08b77f8fbd6cbeb-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "publishedAt": "2022-09-29T12:00:00Z",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Tips for parents from Uriah Child Care in Vineland, NJ: talking about feelings, signs of stress and anxiety in children, and when to get professional help.",
+    "metaTitle": "How to protect your child's mental health | Uriah Child Care"
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "how-to-protect-your-childs-mental-health"
+  },
+  "title": "How to protect your child's mental health"
+}

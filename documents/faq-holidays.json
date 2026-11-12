@@ -1,0 +1,26 @@
+{
+  "_createdAt": "2026-11-05T17:44:42Z",
+  "_id": "faq-holidays",
+  "_rev": "Weiss0T6IziVTCaiuOyMwM",
+  "_type": "faq",
+  "_updatedAt": "2026-11-05T17:44:49Z",
+  "answer": [
+    {
+      "_key": "k000bz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000c0",
+          "_type": "span",
+          "marks": [],
+          "text": "We are closed on New Year's Day, Presidents' Day, Good Friday, Memorial Day, Juneteenth, Independence Day, Labor Day, Thanksgiving Day and the Friday after, Christmas Eve, Christmas Day and New Year's Eve. When a holiday falls on a weekend, we close the nearest Friday or Monday. We also close for the holiday week, from December 24 to January 2. We share each year's dates in our monthly newsletter and on our news page."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "category": "Hours and schedules",
+  "order": 16,
+  "question": "Which holidays are you closed?"
+}

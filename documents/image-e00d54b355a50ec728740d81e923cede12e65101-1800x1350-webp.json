@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:52Z",
+  "_id": "image-e00d54b355a50ec728740d81e923cede12e65101-1800x1350-webp",
+  "_rev": "Mj8jZDV099qjkJYi2yZm9B",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:52Z",
+  "assetId": "e00d54b355a50ec728740d81e923cede12e65101",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "VKH2co~q-;xVM{-Ms+WAWXt84;NHR-WYaxtSE2bJxtWB",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 1.3333333333333333,
+      "height": 1350,
+      "width": 1800
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYDBQf/xAAjEAABAwMDBQEAAAAAAAAAAAABAgMEAAURBhITFCEiQmEx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAHBEAAQQDAQAAAAAAAAAAAAAAAAIDEyEBBBEU/9oADAMBAAIRAxEAPwBuuOm7UJBZdfZXMKCtDSz5KArN5vMwhxS7VbBtG4BSzkinu43aCuW5NeYBlx0lsOAHI7flIWmrq7ZhNy03L6hZXl8bij4PlMa7nKsSpI4XJKjoeFutLYV6rUQaKsk6pQM80Boqz6gYxRV8zhmVJ//Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#374357",
+        "foreground": "#fff",
+        "population": 1.21,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#45341b",
+        "foreground": "#fff",
+        "population": 0.14,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d1c9b3",
+        "foreground": "#000",
+        "population": 8.53,
+        "title": "#000"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d1c9b3",
+        "foreground": "#000",
+        "population": 8.53,
+        "title": "#000"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#efddae",
+        "foreground": "#000",
+        "population": 0.62,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#6c7c9c",
+        "foreground": "#fff",
+        "population": 0.01,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#b78a47",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "IPgJFYK/Z7iHd3l0h5eFdYiPgfcn"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "front-porch-dusk-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/e00d54b355a50ec728740d81e923cede12e65101-1800x1350.webp",
+  "sha1hash": "e00d54b355a50ec728740d81e923cede12e65101",
+  "size": 212840,
+  "uploadId": "0f5f77f7180edd326456dc83b21d8aa98a513333",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/e00d54b355a50ec728740d81e923cede12e65101-1800x1350.webp"
+}

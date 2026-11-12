@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T12:53:04Z",
+  "_id": "image-8790199b65ffa64bde9c67e2be7e16e8902222a3-1350x1800-webp",
+  "_rev": "OXKzsTJ7Efs4i6zOkPn1yH",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T12:53:04Z",
+  "assetId": "8790199b65ffa64bde9c67e2be7e16e8902222a3",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dAF=,Rxu.8V?~Wof~qoLRkjZIU%M9Gt7ogfk9Zj[ofWB",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUHBgT/xAAmEAABAwQCAQMFAAAAAAAAAAABAgMEAAUGERIxIRNhcUFCUYHB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQADAQEAAAAAAAAAAAAAAAAAASERAv/aAAwDAQACEQMRAD8A7svs7EqHBu8V1SZCmk8h9FClC7S+5BS8l9oJUeO+Y2CfamMWaX8Jszu96aAP6rMIVMakLQ63wbdfCk+481LXCqSpV8YsluiWZltJWv7iojsnuiuGDeWYsNltxWlBO6KWk8J3jEhx/DILII2jafPzTO4Wx9mPEWnSvUTyJUevis7iKEqsfFQ2A6QBuqJkMZk2y1bR0z+TRG42SvJr45GuKWgoji2n+0VnM3GshfA6AFFFulueIf/Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#593d31",
+        "foreground": "#fff",
+        "population": 2.24,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#2b1913",
+        "foreground": "#fff",
+        "population": 6.62,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d0ccc6",
+        "foreground": "#000",
+        "population": 8.8,
+        "title": "#000"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d0ccc6",
+        "foreground": "#000",
+        "population": 8.8,
+        "title": "#000"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#e594a0",
+        "foreground": "#000",
+        "population": 0,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#a47864",
+        "foreground": "#fff",
+        "population": 0.01,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d14258",
+        "foreground": "#fff",
+        "population": 0.08,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "XggGBQCXZI1/a0hLiIRIaFuF4GMH"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "hallway-accessible-restroom-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/8790199b65ffa64bde9c67e2be7e16e8902222a3-1350x1800.webp",
+  "sha1hash": "8790199b65ffa64bde9c67e2be7e16e8902222a3",
+  "size": 111472,
+  "uploadId": "a06490e15e55d28bcffc1a2e63c1494b1a6e31e9",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/8790199b65ffa64bde9c67e2be7e16e8902222a3-1350x1800.webp"
+}

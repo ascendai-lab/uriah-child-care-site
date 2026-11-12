@@ -1,0 +1,34 @@
+{
+  "_createdAt": "2026-11-07T23:01:57Z",
+  "_id": "businessInfo",
+  "_rev": "Weiss0T6IziVTCaiuRjkJi",
+  "_type": "businessInfo",
+  "_updatedAt": "2026-11-07T23:02:02Z",
+  "address": {
+    "city": "Vineland",
+    "state": "NJ",
+    "street": "30 W Chestnut Ave",
+    "zip": "08360"
+  },
+  "email": "hello@uriahchildcare.com",
+  "hours": [
+    {
+      "_key": "k00001",
+      "_type": "openingHours",
+      "closes": "23:00",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "open24Hours": false,
+      "opens": "06:00"
+    }
+  ],
+  "hoursSummary": "Monday to Saturday, 6 am to 11 pm",
+  "phone": "(856) 455-6701",
+  "siteName": "Uriah Child Care"
+}

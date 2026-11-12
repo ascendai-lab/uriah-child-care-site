@@ -1,0 +1,56 @@
+{
+  "_createdAt": "2026-11-04T13:04:38Z",
+  "_id": "page-reviews",
+  "_rev": "OXKzsTJ7Efs4i6zOkQGoRX",
+  "_system": {
+    "base": {
+      "id": "page-reviews",
+      "rev": "OXKzsTJ7Efs4i6zOkPrljX"
+    }
+  },
+  "_type": "page",
+  "_updatedAt": "2026-11-04T15:49:45Z",
+  "pageBuilder": [
+    {
+      "_key": "k0007g",
+      "_type": "hero",
+      "accent": "sage",
+      "buttons": [
+        {
+          "_key": "k0007f",
+          "_type": "ctaButton",
+          "label": "Book a tour",
+          "link": {
+            "_type": "link",
+            "internal": {
+              "_ref": "page-tour",
+              "_type": "reference"
+            },
+            "linkType": "internal"
+          },
+          "variant": "primary"
+        }
+      ],
+      "eyebrow": "Google reviews",
+      "heading": "What families say about Ms. Paulette",
+      "layout": "centered",
+      "subheading": "Real reviews from parents and grandparents, copied word for word from Google."
+    },
+    {
+      "_key": "k0007h",
+      "_type": "testimonialsBlock",
+      "background": "white",
+      "mode": "all"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Read Google reviews of Uriah Child Care and Ms. Paulette from parents and grandparents in Vineland, Millville and Bridgeton, NJ.",
+    "metaTitle": "Reviews | Uriah Child Care in Vineland, NJ"
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "reviews"
+  },
+  "title": "Uriah Child Care reviews from Vineland families"
+}

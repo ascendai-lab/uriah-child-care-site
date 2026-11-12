@@ -1,0 +1,50 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-curriculum",
+  "_rev": "OXKzsTJ7Efs4i6zOkPoNqf",
+  "_type": "faq",
+  "_updatedAt": "2026-11-04T13:04:58Z",
+  "answer": [
+    {
+      "_key": "k000ab",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ac",
+          "_type": "span",
+          "marks": [],
+          "text": "We use a play-based curriculum built on Experience Early Learning, with a developmental continuum of skills and weekly activities for language, math, science and art. Circle time covers the calendar, weather, letters and counting. See "
+        },
+        {
+          "_key": "k000ae",
+          "_type": "span",
+          "marks": [
+            "k000ad"
+          ],
+          "text": "play-based learning"
+        },
+        {
+          "_key": "k000af",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000ad",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-play-based-learning",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Ages and programs",
+  "order": 7,
+  "question": "What will my child learn?"
+}

@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T12:52:53Z",
+  "_id": "image-165a6486cfedd420872a5b6df65ec81be21311d6-1800x1350-webp",
+  "_rev": "6fXA2k3jCstDiCIQOrGFAf",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T12:52:53Z",
+  "assetId": "165a6486cfedd420872a5b6df65ec81be21311d6",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "VaD0WFM|Mxt6f6_NNHRPofaytTWCoej]WBNgt6xaWCWB",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 1.3333333333333333,
+      "height": 1350,
+      "width": 1800
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAcEBQj/xAAhEAABAwQCAwEAAAAAAAAAAAABAgMRAAQFBhIhEyJRQf/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/EAB0RAAICAQUAAAAAAAAAAAAAAAABAhMREiJBUVL/2gAMAwEAAhEDEQA/AKHX9ozDN401mGkuthIJW311TGc2vXLEpSq5AcgE+sxNZtayt6oLUp5RgfamN5F15vyOq5kddindklhyD2rgauQ3SyVevKauYQVHj6/lFK4XFusSoQfkTRWKZei610f/2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#333e57",
+        "foreground": "#fff",
+        "population": 3.27,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#6c4408",
+        "foreground": "#fff",
+        "population": 0.01,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#94a7c4",
+        "foreground": "#000",
+        "population": 6.27,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#94a7c4",
+        "foreground": "#000",
+        "population": 6.27,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#f0e8c4",
+        "foreground": "#000",
+        "population": 0.9,
+        "title": "#000"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#aa9255",
+        "foreground": "#fff",
+        "population": 0.04,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#2d5ea6",
+        "foreground": "#fff",
+        "population": 0.56,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "mPcRFYJWeHh/hod5eIeYl4ZYYIgF"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "accessible-parking-ramp-uriah-child-care-vineland.webp",
+  "path": "images/lhga98wd/production/165a6486cfedd420872a5b6df65ec81be21311d6-1800x1350.webp",
+  "sha1hash": "165a6486cfedd420872a5b6df65ec81be21311d6",
+  "size": 431474,
+  "uploadId": "b35c7f56d6d2449f18663691434b272307322b69",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/165a6486cfedd420872a5b6df65ec81be21311d6-1800x1350.webp"
+}

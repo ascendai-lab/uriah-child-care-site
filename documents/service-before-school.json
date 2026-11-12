@@ -1,0 +1,323 @@
+{
+  "_createdAt": "2026-11-04T13:00:34Z",
+  "_id": "service-before-school",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-before-school",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sunshine",
+  "ageRange": "School-age children up to 13",
+  "body": [
+    {
+      "_key": "k000pc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000pd",
+          "_type": "span",
+          "marks": [],
+          "text": "A calm start before school"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000pe",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000pf",
+          "_type": "span",
+          "marks": [],
+          "text": "If your shift starts before the school day, bring your child to us from 6 am. They can finish a little reading or homework, have breakfast if they are still here at 7:30, and relax with friends until it's time for school."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000pg",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ph",
+          "_type": "span",
+          "marks": [],
+          "text": "What the morning looks like"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000pi",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000pj",
+          "_type": "span",
+          "marks": [],
+          "text": "Doors open at 6 am. Parents check in with Procare, and children wash their hands and settle in with books, puzzles or quiet play. Breakfast is served from 7:30 to 9 am through the USDA food program (CACFP). A typical breakfast is whole-grain cereal or a muffin with fruit, like peaches or cantaloupe, and milk."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000pk",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000pl",
+          "_type": "span",
+          "marks": [],
+          "text": "Schools near the center"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000pm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000pn",
+          "_type": "span",
+          "marks": [],
+          "text": "Our center is at 30 W Chestnut Ave in Vineland. Gloria M. Sabater Elementary School is close by, and Compass Academy Charter School is also on W Chestnut Ave. Wherever your child goes to school, school buses can pick up at our center, so ask your district about a stop here."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000po",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000pp",
+          "_type": "span",
+          "marks": [],
+          "text": "Getting to and from school"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000pq",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000pr",
+          "_type": "span",
+          "marks": [],
+          "text": "Parents drop off and pick up at the center, and we do not drive children to or from school. School buses can stop at the center, so ask your school district whether your child's bus can pick up and drop off here."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ps",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000pt",
+          "_type": "span",
+          "marks": [],
+          "text": "After school too"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000pu",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000pv",
+          "_type": "span",
+          "marks": [],
+          "text": "Many families pair before school care with our "
+        },
+        {
+          "_key": "k000px",
+          "_type": "span",
+          "marks": [
+            "k000pw"
+          ],
+          "text": "after school program"
+        },
+        {
+          "_key": "k000py",
+          "_type": "span",
+          "marks": [],
+          "text": ". Call "
+        },
+        {
+          "_key": "k000q0",
+          "_type": "span",
+          "marks": [
+            "k000pz"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000q1",
+          "_type": "span",
+          "marks": [],
+          "text": " or "
+        },
+        {
+          "_key": "k000q3",
+          "_type": "span",
+          "marks": [
+            "k000q2"
+          ],
+          "text": "book a tour"
+        },
+        {
+          "_key": "k000q4",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000pw",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000pz",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        },
+        {
+          "_key": "k000q2",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-after-school",
+    "_type": "reference"
+  },
+  "dayPlan": [
+    {
+      "_key": "k0003s",
+      "_type": "dayStep",
+      "activity": "From 6 am, check in with Procare. Children wash hands and settle in.",
+      "label": "Arrival"
+    },
+    {
+      "_key": "k0003t",
+      "_type": "dayStep",
+      "activity": "Books, puzzles, or reading and homework left over from last night.",
+      "label": "Quiet start"
+    },
+    {
+      "_key": "k0003u",
+      "_type": "dayStep",
+      "activity": "Served from 7:30 to 9 am through the USDA food program (CACFP).",
+      "label": "Breakfast"
+    },
+    {
+      "_key": "k0003v",
+      "_type": "dayStep",
+      "activity": "Parents take children to school. School buses can also stop at the center.",
+      "label": "Off to school"
+    }
+  ],
+  "excerpt": "Drop off from 6 am. Breakfast and a calm start to the day before school.",
+  "faqs": [
+    {
+      "_key": "k0003s",
+      "_type": "faqItem",
+      "answer": "We open at 6 am, Monday to Saturday.",
+      "question": "What time can I drop off before school?"
+    },
+    {
+      "_key": "k0003t",
+      "_type": "faqItem",
+      "answer": "Yes. School buses can pick up and drop off at our center, so ask your school district about a stop at 30 W Chestnut Ave. We do not drive children to or from school ourselves.",
+      "question": "Can the school bus pick my child up here?"
+    }
+  ],
+  "gbpName": "Before school care",
+  "highlights": [
+    "Drop-off from 6 am",
+    "Breakfast through the USDA food program (CACFP)",
+    "Quiet time and reading",
+    "Ages up to 13"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Uriah Child Care building in Vineland in the morning sun",
+    "asset": {
+      "_ref": "image-ac3129f62a4635edc3122cf4aa1aa6540faa5d81-1350x1800-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "We open at 6 am, so school-age kids have a safe, warm place to start the day. Breakfast is served from 7:30 am.",
+  "keyword": "before school care vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 1,
+  "related": [
+    {
+      "_key": "k0003i",
+      "_ref": "category-after-school",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0003j",
+      "_ref": "service-first-shift",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0003k",
+      "_ref": "service-homework-help",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0003l",
+      "_ref": "service-meals",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "From 6 am, Monday to Saturday",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Before school care in Vineland, NJ from 6 am, with breakfast and a calm start to the day. School-age kids up to 13. CCAP accepted.",
+    "metaTitle": "Before School Care in Vineland, NJ"
+  },
+  "shortTitle": "Before school care",
+  "slug": {
+    "_type": "slug",
+    "current": "before-school-care-vineland-nj"
+  },
+  "title": "Before school care in Vineland, NJ"
+}

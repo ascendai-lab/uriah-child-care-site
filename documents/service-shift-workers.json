@@ -1,0 +1,496 @@
+{
+  "_createdAt": "2026-11-04T13:02:52Z",
+  "_id": "service-shift-workers",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-shift-workers",
+      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sunshine",
+  "ageRange": "Ages 2.5 and up",
+  "body": [
+    {
+      "_key": "k000xk",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000xl",
+          "_type": "span",
+          "marks": [],
+          "text": "Made for parents who work shifts"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000xm",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000xn",
+          "_type": "span",
+          "marks": [],
+          "text": "Ms. Paulette has spent years helping parents with hard schedules. As one parent wrote, \"Ms. Paulette assist us tremendously with our work schedules, and we are thankful for her.\" Whether you work at a hospital, a warehouse, a food plant, a store or a restaurant, we are open when you are working."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000xo",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000xp",
+          "_type": "span",
+          "marks": [],
+          "text": "Every shift, every day"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000xq",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000xr",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Early morning:"
+        },
+        {
+          "_key": "k000xs",
+          "_type": "span",
+          "marks": [],
+          "text": " "
+        },
+        {
+          "_key": "k000xu",
+          "_type": "span",
+          "marks": [
+            "k000xt"
+          ],
+          "text": "drop off from 6 am"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k000xt",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-first-shift",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000xv",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000xw",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Evening:"
+        },
+        {
+          "_key": "k000xx",
+          "_type": "span",
+          "marks": [],
+          "text": " "
+        },
+        {
+          "_key": "k000xz",
+          "_type": "span",
+          "marks": [
+            "k000xy"
+          ],
+          "text": "evening care"
+        },
+        {
+          "_key": "k000y0",
+          "_type": "span",
+          "marks": [],
+          "text": " with dinner"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k000xy",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-evening",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000y1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000y2",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Late evening:"
+        },
+        {
+          "_key": "k000y3",
+          "_type": "span",
+          "marks": [],
+          "text": " "
+        },
+        {
+          "_key": "k000y5",
+          "_type": "span",
+          "marks": [
+            "k000y4"
+          ],
+          "text": "care until 11 pm"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k000y4",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-late-evening",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000y6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000y7",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Saturday:"
+        },
+        {
+          "_key": "k000y8",
+          "_type": "span",
+          "marks": [],
+          "text": " "
+        },
+        {
+          "_key": "k000ya",
+          "_type": "span",
+          "marks": [
+            "k000y9"
+          ],
+          "text": "Saturday daycare"
+        },
+        {
+          "_key": "k000yb",
+          "_type": "span",
+          "marks": [],
+          "text": ", same hours"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k000y9",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-weekend",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000yc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000yd",
+          "_type": "span",
+          "marks": [],
+          "text": "Rotating and changing schedules"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000ye",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000yf",
+          "_type": "span",
+          "marks": [],
+          "text": "If your schedule rotates, bring it to your tour and we'll work out a plan. Tell us as early as you can when your hours change."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000yg",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000yh",
+          "_type": "span",
+          "marks": [],
+          "text": "Meals on every shift"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000yi",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000yj",
+          "_type": "span",
+          "marks": [],
+          "text": "Whatever hours your child is here, meals come at set times through the USDA food program (CACFP): breakfast from 7:30 to 9 am, lunch at 12 noon, a snack at 3 pm, dinner at 6 pm and an evening snack at 9 pm. Tell us about allergies when you enroll."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000yk",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000yl",
+          "_type": "span",
+          "marks": [],
+          "text": "Room for the whole family"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000ym",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000yn",
+          "_type": "span",
+          "marks": [],
+          "text": "Brothers and sisters can come together: we care for children from 2½ up to 13, and homework help is available on every shift. We accept "
+        },
+        {
+          "_key": "k000yp",
+          "_type": "span",
+          "marks": [
+            "k000yo"
+          ],
+          "text": "NJ childcare subsidy (CCAP)"
+        },
+        {
+          "_key": "k000yq",
+          "_type": "span",
+          "marks": [],
+          "text": " for families who qualify. In Cumberland County, CCAP is handled by Rutgers Southern Regional CCR&R in Vineland, (856) 462-6800."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000yo",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-ccap",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000yr",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000yt",
+          "_type": "span",
+          "marks": [
+            "k000ys"
+          ],
+          "text": "Book a tour"
+        },
+        {
+          "_key": "k000yu",
+          "_type": "span",
+          "marks": [],
+          "text": " or call "
+        },
+        {
+          "_key": "k000yw",
+          "_type": "span",
+          "marks": [
+            "k000yv"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000yx",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000ys",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000yv",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-shift-care",
+    "_type": "reference"
+  },
+  "excerpt": "Built for nurses, warehouse, plant, retail and restaurant workers: care 6 am to 11 pm, Monday to Saturday.",
+  "faqs": [
+    {
+      "_key": "k0005o",
+      "_type": "faqItem",
+      "answer": "Often, yes. Bring your schedule to your tour and we will work out a plan, as space allows.",
+      "question": "My shifts rotate. Can you work with that?"
+    },
+    {
+      "_key": "k0005p",
+      "_type": "faqItem",
+      "answer": "We are open Monday to Saturday, 6 am to 11 pm.",
+      "question": "What are your hours?"
+    },
+    {
+      "_key": "k0005q",
+      "_type": "faqItem",
+      "answer": "Our posted hours end at 11 pm. If you need care after 11 pm, call us at (856) 455-6701 and Ms. Paulette will talk with you about your schedule.",
+      "question": "I work overnight. Can you help?"
+    },
+    {
+      "_key": "k0005r",
+      "_type": "faqItem",
+      "answer": "Yes. Children are served meals and snacks through the USDA Child and Adult Care Food Program (CACFP), including an evening meal for children staying late.",
+      "question": "Do children get meals during long shifts?"
+    }
+  ],
+  "gbpName": "Child care for shift workers",
+  "highlights": [
+    "Early morning to 11 pm",
+    "Open Monday to Saturday",
+    "Rotating schedules welcome",
+    "CCAP accepted"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Bright lobby waiting area at Uriah Child Care",
+    "asset": {
+      "_ref": "image-2b86353b1f7443f2bda3a74c77d55910188ecda6-1800x1350-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Built for parents who work shifts, from nurses to warehouse and restaurant staff. Open Monday to Saturday, early morning to 11 pm.",
+  "keyword": "child care for shift workers vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 6,
+  "related": [
+    {
+      "_key": "k00057",
+      "_ref": "category-shift-care",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00058",
+      "_ref": "service-first-shift",
+      "_type": "reference"
+    },
+    {
+      "_key": "k00059",
+      "_ref": "service-evening",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0005a",
+      "_ref": "service-weekend",
+      "_type": "reference"
+    }
+  ],
+  "reviews": [
+    {
+      "_key": "k0005m",
+      "_ref": "review-monique-willoughby",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0005n",
+      "_ref": "review-rockay-davis",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Monday to Saturday, 6 am to 11 pm",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Child care for nurses, warehouse and plant workers in Vineland, NJ. Open 6 am to 11 pm, Monday to Saturday. Ages 2.5+. CCAP accepted.",
+    "metaTitle": "Shift Worker Child Care in Vineland, NJ"
+  },
+  "shortTitle": "For shift workers",
+  "slug": {
+    "_type": "slug",
+    "current": "child-care-for-shift-workers-vineland-nj"
+  },
+  "title": "Child care for shift workers in Vineland, NJ"
+}

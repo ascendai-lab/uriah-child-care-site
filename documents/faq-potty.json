@@ -1,0 +1,56 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-potty",
+  "_rev": "Mj8jZDV099qjkJYi2yjUXy",
+  "_system": {
+    "base": {
+      "id": "faq-potty",
+      "rev": "OXKzsTJ7Efs4i6zOkPoNqf"
+    }
+  },
+  "_type": "faq",
+  "_updatedAt": "2026-11-04T19:21:36Z",
+  "answer": [
+    {
+      "_key": "k000bx",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000by",
+          "_type": "span",
+          "marks": [],
+          "text": "No. Many of our 2½ and 3-year-olds are still learning, which is normal: only about half of children are fully potty trained by age 3. We work on it together with you. See "
+        },
+        {
+          "_key": "k000c0",
+          "_type": "span",
+          "marks": [
+            "k000bz"
+          ],
+          "text": "potty training support"
+        },
+        {
+          "_key": "k000c1",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000bz",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-potty-training",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Ages and programs",
+  "order": 13,
+  "question": "Does my child need to be potty trained?"
+}

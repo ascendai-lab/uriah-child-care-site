@@ -1,0 +1,50 @@
+{
+  "_createdAt": "2026-11-05T17:44:42Z",
+  "_id": "faq-enroll",
+  "_rev": "Weiss0T6IziVTCaiuOyMwM",
+  "_type": "faq",
+  "_updatedAt": "2026-11-05T17:44:49Z",
+  "answer": [
+    {
+      "_key": "k000c6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000c7",
+          "_type": "span",
+          "marks": [],
+          "text": "We enroll children from 2½ to 13, for families paying with NJ childcare subsidy (CCAP) and families paying on their own. Before the first day, you fill out an enrollment form, a child information record and our policy agreement, and bring a health appraisal (a physical signed by your child's doctor) and their immunization record. New Jersey requires children in child care to be up to date on vaccines. "
+        },
+        {
+          "_key": "k000c9",
+          "_type": "span",
+          "marks": [
+            "k000c8"
+          ],
+          "text": "Book a tour"
+        },
+        {
+          "_key": "k000ca",
+          "_type": "span",
+          "marks": [],
+          "text": " and we will give you the forms."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000c8",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Enrolling",
+  "order": 18,
+  "question": "What do I need to enroll?"
+}

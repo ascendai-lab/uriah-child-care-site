@@ -1,0 +1,455 @@
+{
+  "_createdAt": "2026-11-04T13:00:34Z",
+  "_id": "service-play-based-learning",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "service-play-based-learning",
+      "rev": "1tk6J7MImmXVkYKAfaoz4X"
+    }
+  },
+  "_type": "service",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sage",
+  "ageRange": "Ages 2.5 to 5",
+  "body": [
+    {
+      "_key": "k000n4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000n5",
+          "_type": "span",
+          "marks": [],
+          "text": "Why play-based learning works"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000n6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000n7",
+          "_type": "span",
+          "marks": [],
+          "text": "Young children learn by touching, building, pretending and asking questions. Play-based learning uses that. Instead of worksheets, children count blocks, mix colors, act out stories and talk with friends, and they learn more because they care about what they are doing."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000n8",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000n9",
+          "_type": "span",
+          "marks": [],
+          "text": "Our curriculum: Experience Early Learning"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000na",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000nb",
+          "_type": "span",
+          "marks": [],
+          "text": "We use a curriculum built on Experience Early Learning. Each week brings a theme with planned activities in:"
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000nc",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000nd",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Language and literacy:"
+        },
+        {
+          "_key": "k000ne",
+          "_type": "span",
+          "marks": [],
+          "text": " stories, songs, rhymes and letter play"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000nf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ng",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Math:"
+        },
+        {
+          "_key": "k000nh",
+          "_type": "span",
+          "marks": [],
+          "text": " counting, sorting, shapes and patterns"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ni",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000nj",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Science:"
+        },
+        {
+          "_key": "k000nk",
+          "_type": "span",
+          "marks": [],
+          "text": " simple experiments, nature and the five senses"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000nl",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000nm",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Art and music:"
+        },
+        {
+          "_key": "k000nn",
+          "_type": "span",
+          "marks": [],
+          "text": " painting, building, dancing and singing"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000no",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000np",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Social and emotional skills:"
+        },
+        {
+          "_key": "k000nq",
+          "_type": "span",
+          "marks": [],
+          "text": " sharing, feelings and solving problems"
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000nr",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ns",
+          "_type": "span",
+          "marks": [],
+          "text": "A developmental continuum lets us see where each child is and plan the next step, so learning fits your child."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000nt",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000nu",
+          "_type": "span",
+          "marks": [],
+          "text": "Circle time every day"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000nv",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000nw",
+          "_type": "span",
+          "marks": [],
+          "text": "Each morning starts at circle time with the calendar, the weather, letters and counting. It builds the routines children will use in school."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000nx",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ny",
+          "_type": "span",
+          "marks": [],
+          "text": "How you'll know what your child did"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000nz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000o0",
+          "_type": "span",
+          "marks": [],
+          "text": "At pickup we tell you about your child's day, and the Procare app keeps you posted with updates. If your child built something they are proud of or learned a new song, you'll hear about it, so you can talk about it on the drive home."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000o1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000o2",
+          "_type": "span",
+          "marks": [],
+          "text": "See it in action"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000o3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000n1",
+          "_type": "span",
+          "marks": [
+            "k000n0"
+          ],
+          "text": "Book a tour"
+        },
+        {
+          "_key": "k000n2",
+          "_type": "span",
+          "marks": [],
+          "text": " to see our classroom, or read about "
+        },
+        {
+          "_key": "k000n4",
+          "_type": "span",
+          "marks": [
+            "k000n3"
+          ],
+          "text": "early learning"
+        },
+        {
+          "_key": "k000n5",
+          "_type": "span",
+          "marks": [],
+          "text": " and "
+        },
+        {
+          "_key": "k000n7",
+          "_type": "span",
+          "marks": [
+            "k000n6"
+          ],
+          "text": "kindergarten readiness"
+        },
+        {
+          "_key": "k000n8",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000n0",
+          "_type": "link",
+          "internal": {
+            "_ref": "page-tour",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000n3",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-preschool",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000n6",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-kindergarten-readiness",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": {
+    "_ref": "category-preschool",
+    "_type": "reference"
+  },
+  "dayPlan": [
+    {
+      "_key": "k0000w",
+      "_type": "dayStep",
+      "activity": "From 6 am, parents check in with Procare, and children wash hands and settle in with free play.",
+      "label": "Arrival"
+    },
+    {
+      "_key": "k0000x",
+      "_type": "dayStep",
+      "activity": "Served from 7:30 to 9 am through the USDA food program (CACFP).",
+      "label": "Breakfast"
+    },
+    {
+      "_key": "k0000y",
+      "_type": "dayStep",
+      "activity": "Calendar, weather, letters, numbers and a song to start the day together.",
+      "label": "Circle time"
+    },
+    {
+      "_key": "k0000z",
+      "_type": "dayStep",
+      "activity": "Play-based activities in language, math, science and art from our Experience Early Learning curriculum.",
+      "label": "Learning centers"
+    },
+    {
+      "_key": "k00010",
+      "_type": "dayStep",
+      "activity": "Lunch at 12 noon, then a quiet rest time.",
+      "label": "Lunch and rest"
+    },
+    {
+      "_key": "k00011",
+      "_type": "dayStep",
+      "activity": "Snack at 3 pm, then stories, music and movement, and play with friends until pickup.",
+      "label": "Afternoon"
+    }
+  ],
+  "excerpt": "Our Experience Early Learning curriculum: weekly themes, hands-on play and a skills continuum for each child.",
+  "faqs": [
+    {
+      "_key": "k00036",
+      "_type": "faqItem",
+      "answer": "Yes. Through play, children build the language, math, fine motor and social skills kindergarten teachers look for. Our curriculum plans those skills week by week.",
+      "question": "Is play-based learning enough to prepare my child for school?"
+    }
+  ],
+  "gbpName": "Play-based curriculum",
+  "highlights": [
+    "Experience Early Learning curriculum",
+    "Weekly themes",
+    "Daily circle time",
+    "Developmental continuum of skills",
+    "Language, math, science and art"
+  ],
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Boy playing in a pool of soap foam during outdoor sensory play at Uriah Child Care",
+    "asset": {
+      "_ref": "image-519346fd550aed81d436450c07cfac425ec1580f-480x640-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "A play-based curriculum built on Experience Early Learning, with weekly themes, daily circle time and hands-on play.",
+  "keyword": "play based learning vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 3,
+  "related": [
+    {
+      "_key": "k00039",
+      "_ref": "category-preschool",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0003a",
+      "_ref": "service-kindergarten-readiness",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0003b",
+      "_ref": "service-toddler-care",
+      "_type": "reference"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Our play-based curriculum built on Experience Early Learning: weekly themes, circle time and a skills continuum for ages 2.5 to 5 in Vineland, NJ.",
+    "metaTitle": "Play-Based Learning in Vineland, NJ"
+  },
+  "shortTitle": "Play-based learning",
+  "slug": {
+    "_type": "slug",
+    "current": "play-based-learning-vineland-nj"
+  },
+  "title": "Play-based learning curriculum in Vineland, NJ"
+}

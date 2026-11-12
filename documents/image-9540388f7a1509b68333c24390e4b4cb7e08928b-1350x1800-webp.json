@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T12:52:55Z",
+  "_id": "image-9540388f7a1509b68333c24390e4b4cb7e08928b-1350x1800-webp",
+  "_rev": "6fXA2k3jCstDiCIQOrGFNc",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T12:52:55Z",
+  "assetId": "9540388f7a1509b68333c24390e4b4cb7e08928b",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dHGk|6%MX1E2~VRjNbx]=;WFS+%LsFogx]M_alWU%E%M",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAUGAgMH/8QAIhAAAgICAgIDAQEAAAAAAAAAAQIDBAAFESEGMSJBUZHB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwIA/8QAHBEBAAICAwEAAAAAAAAAAAAAAQACAxEEIVGB/9oADAMBAAIRAxEAPwChgu2N3Qu0JTGheIhSBx3mjS623ovGnqx2oFmZyRIx4A5xNT3daHYFKkU07mFiUVe+f8ycm3ccxgMss1pTITLWD9xd/eFTjZM5a9daqe9/I5yrY6GI72yu3G+sa6xHXsOryrGpZl9E4ZKbU2dpekswa+28LdIypyCB+YYYa6kqruN/Bt9X1NC3Nt6zy37Lk/FelX8yBOulTfX71cmOO0zcqFJ+JPrOtzwxLeuARqADyBx6xfKigdKP5lF0mdeRf415jf0OpioLXksJGSVZk7AP1hmTkg4YblVlFCf/2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#33364a",
+        "foreground": "#fff",
+        "population": 3.85,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#7b2c24",
+        "foreground": "#fff",
+        "population": 6.63,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#7b2c24",
+        "foreground": "#fff",
+        "population": 6.63,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#ccbcb1",
+        "foreground": "#000",
+        "population": 1.06,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#8898d9",
+        "foreground": "#000",
+        "population": 2.79,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#5568ac",
+        "foreground": "#fff",
+        "population": 0.15,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#3884fc",
+        "foreground": "#fff",
+        "population": 0,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "XhgGFQSKRH+nt4daqHlpuKh6f8X3"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "brightwheel-check-in-kiosk-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/9540388f7a1509b68333c24390e4b4cb7e08928b-1350x1800.webp",
+  "sha1hash": "9540388f7a1509b68333c24390e4b4cb7e08928b",
+  "size": 241462,
+  "uploadId": "f5060400d3c7880765923917448916eef433a678",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/9540388f7a1509b68333c24390e4b4cb7e08928b-1350x1800.webp"
+}

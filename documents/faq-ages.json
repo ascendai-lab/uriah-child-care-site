@@ -1,0 +1,102 @@
+{
+  "_createdAt": "2026-11-04T12:56:12Z",
+  "_id": "faq-ages",
+  "_rev": "Mj8jZDV099qjkJYi2zIe4c",
+  "_system": {
+    "base": {
+      "id": "faq-ages",
+      "rev": "OXKzsTJ7Efs4i6zOkPrljX"
+    }
+  },
+  "_type": "faq",
+  "_updatedAt": "2026-11-05T03:23:06Z",
+  "answer": [
+    {
+      "_key": "k0009a",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k0009z",
+          "_type": "span",
+          "marks": [],
+          "text": "We care for children ages 2.5 and up: "
+        },
+        {
+          "_key": "k000a1",
+          "_type": "span",
+          "marks": [
+            "k000a0"
+          ],
+          "text": "toddler care"
+        },
+        {
+          "_key": "k000a2",
+          "_type": "span",
+          "marks": [],
+          "text": " from 2½, "
+        },
+        {
+          "_key": "k000a4",
+          "_type": "span",
+          "marks": [
+            "k000a3"
+          ],
+          "text": "kindergarten readiness"
+        },
+        {
+          "_key": "k000a5",
+          "_type": "span",
+          "marks": [],
+          "text": " for 4 and 5-year-olds, and "
+        },
+        {
+          "_key": "k000a7",
+          "_type": "span",
+          "marks": [
+            "k000a6"
+          ],
+          "text": "before and after school care"
+        },
+        {
+          "_key": "k000a8",
+          "_type": "span",
+          "marks": [],
+          "text": " for school-age children up to 13."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000a0",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-toddler-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000a3",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-kindergarten-readiness",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000a6",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "category": "Ages and programs",
+  "order": 2,
+  "question": "What ages do you care for?"
+}

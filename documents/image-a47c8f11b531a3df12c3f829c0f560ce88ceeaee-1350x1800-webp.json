@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-04T17:26:49Z",
+  "_id": "image-a47c8f11b531a3df12c3f829c0f560ce88ceeaee-1350x1800-webp",
+  "_rev": "6fXA2k3jCstDiCIQOrrpgO",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-04T17:26:49Z",
+  "assetId": "a47c8f11b531a3df12c3f829c0f560ce88ceeaee",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dVHLVYM_NGW=?wa$s,oI-p-:R-M{R.f,t6n$-:n+RjWr",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 1800,
+      "width": 1350
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUHBgT/xAApEAACAgECBQIHAQAAAAAAAAABAgMEAAURBhITFCExQiIjQVFSYZGh/8QAGAEAAwEBAAAAAAAAAAAAAAAAAQIEAAX/xAAcEQACAgMBAQAAAAAAAAAAAAAAAQIDERIhBBP/2gAMAwEAAhEDEQA/AKBS4mmWPayvUX8h65yz6m9u6k9M83tYHx4yKaPr2oSWHRbVk/MO6kbqPOWHh56b6ejFg0jHckNiKXMMLyxhIlstuemN/u2GKq9CW09h++lCiVlXY/QYZvrAGrIpCmoarq5m06uAX9qL4/maHT3t6bvDbWSHbckHcEn9DKbw9Qq0O07SBIuovxco9cz+vObPG7Qz7PFGq8qkeBnOr9Dts1SwiyVKrjszNUeJRXrhGkkhO5PKcMT3okkvWGdQT1GH+4ZY7IR4xV5pyWya6f/Z",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#573d33",
+        "foreground": "#fff",
+        "population": 3.41,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#23406c",
+        "foreground": "#fff",
+        "population": 0.29,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#bfbdb8",
+        "foreground": "#000",
+        "population": 6.64,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#bfbdb8",
+        "foreground": "#000",
+        "population": 6.64,
+        "title": "#fff"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#a4b4d4",
+        "foreground": "#000",
+        "population": 0,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#61698e",
+        "foreground": "#fff",
+        "population": 0.01,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#e2be81",
+        "foreground": "#000",
+        "population": 6.53,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "YAgOFQJkeI94t3tmh3pml2lgmga4"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "classroom-learning-centers-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/a47c8f11b531a3df12c3f829c0f560ce88ceeaee-1350x1800.webp",
+  "sha1hash": "a47c8f11b531a3df12c3f829c0f560ce88ceeaee",
+  "size": 132994,
+  "uploadId": "7377035ccc1af6722b900fea795a3c7873a8996e",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/a47c8f11b531a3df12c3f829c0f560ce88ceeaee-1350x1800.webp"
+}

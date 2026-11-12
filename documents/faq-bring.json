@@ -1,0 +1,26 @@
+{
+  "_createdAt": "2026-11-05T17:44:42Z",
+  "_id": "faq-bring",
+  "_rev": "Weiss0T6IziVTCaiuOyMwM",
+  "_type": "faq",
+  "_updatedAt": "2026-11-05T17:44:49Z",
+  "answer": [
+    {
+      "_key": "k000cf",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000cg",
+          "_type": "span",
+          "marks": [],
+          "text": "A full change of clothes (underwear, socks, pants and a shirt) in a labeled bag, weather-appropriate outdoor clothes, and diapers or pull-ups if your child uses them (we provide wipes). A small blanket or comfort item for rest time is welcome. Please keep toys at home unless it is show-and-tell day, and never send toy guns, gum, money or candy. Label everything with your child's name."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    }
+  ],
+  "category": "Daily life",
+  "order": 21,
+  "question": "What should my child bring?"
+}

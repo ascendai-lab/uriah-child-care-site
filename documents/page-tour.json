@@ -1,0 +1,75 @@
+{
+  "_createdAt": "2026-11-04T13:02:52Z",
+  "_id": "page-tour",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "page-tour",
+      "rev": "OXKzsTJ7Efs4i6zOkQGoRX"
+    }
+  },
+  "_type": "page",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "pageBuilder": [
+    {
+      "_key": "k0006h",
+      "_type": "hero",
+      "accent": "coral",
+      "eyebrow": "Tours by appointment",
+      "heading": "Book a tour of our Vineland child care center",
+      "layout": "card",
+      "showPhone": true,
+      "subheading": "See the classroom, meet Ms. Paulette and ask your questions. Fill in the form or call us."
+    },
+    {
+      "_key": "k0006i",
+      "_type": "contactFormBlock",
+      "anchorId": "tour-form",
+      "heading": "Request your tour",
+      "intro": "Tell us a little about your child and your schedule. Ms. Paulette or Tameca will call you within one business day to pick a time. Tours take about 20 minutes, and you are welcome to bring your little one."
+    },
+    {
+      "_key": "k0006o",
+      "_type": "faqBlock",
+      "faqs": [
+        {
+          "_key": "k0006j",
+          "_ref": "faq-tour",
+          "_type": "reference"
+        },
+        {
+          "_key": "k0006k",
+          "_ref": "faq-ages",
+          "_type": "reference"
+        },
+        {
+          "_key": "k0006l",
+          "_ref": "faq-hours",
+          "_type": "reference"
+        },
+        {
+          "_key": "k0006m",
+          "_ref": "faq-ccap",
+          "_type": "reference"
+        },
+        {
+          "_key": "k0006n",
+          "_ref": "faq-cost",
+          "_type": "reference"
+        }
+      ],
+      "heading": "Before your tour",
+      "mode": "selected"
+    }
+  ],
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Book a tour of Uriah Child Care at 30 W Chestnut Ave in Vineland, NJ. Meet Ms. Paulette, see our classroom and ask about care for ages 2.5+.",
+    "metaTitle": "Book a Tour | Uriah Child Care, Vineland, NJ"
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "tour"
+  },
+  "title": "Book a tour of our Vineland child care center"
+}

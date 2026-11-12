@@ -1,0 +1,82 @@
+{
+  "_createdAt": "2026-11-06T04:26:18Z",
+  "_id": "image-1ede37f0d8e8edea31365009edc2a48086f41ca2-480x640-webp",
+  "_rev": "QCUAteQjtFGCH4SAG25JFV",
+  "_type": "sanity.imageAsset",
+  "_updatedAt": "2026-11-06T04:26:18Z",
+  "assetId": "1ede37f0d8e8edea31365009edc2a48086f41ca2",
+  "extension": "webp",
+  "metadata": {
+    "_type": "sanity.imageMetadata",
+    "blurHash": "dBEV_-y9%0xc?1%2s:kD%g=}oLNY$+?IoyM_-Wtlbcen",
+    "dimensions": {
+      "_type": "sanity.imageDimensions",
+      "aspectRatio": 0.75,
+      "height": 640,
+      "width": 480
+    },
+    "hasAlpha": false,
+    "isOpaque": true,
+    "lqip": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAbABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAMBBAIFBv/EACcQAAIBBAECBQUAAAAAAAAAAAECAwAEBREhE1EGEiIxcSNBQmFi/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQIABAX/xAAbEQEAAgMBAQAAAAAAAAAAAAABAAIDERIhMf/aAAwDAQACEQMRAD8Azm8b5aaweS3xXQnb0r1JB6P6rnxkLu4tzLkTFJdIfqlRtiT7E1YYRg6Ub77pmNy8OJyCzNbrIZOGXjnX3O6z8eZtbmxCdXQrK6SB0BeFVPZhzRT765N3dPOxLFzvYFFI57D5CqOpYeJF2eD8Vrb/AB0d95VkCgA899fqn28jM5DMSN0/8m+armz5Fk28EcMKxqQFXgDdFJ9+TRQ5kn//2Q==",
+    "palette": {
+      "_type": "sanity.imagePalette",
+      "darkMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#545e29",
+        "foreground": "#fff",
+        "population": 5.9,
+        "title": "#fff"
+      },
+      "darkVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#1a4e73",
+        "foreground": "#fff",
+        "population": 0.19,
+        "title": "#fff"
+      },
+      "dominant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#545e29",
+        "foreground": "#fff",
+        "population": 5.9,
+        "title": "#fff"
+      },
+      "lightMuted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#cdc9c1",
+        "foreground": "#000",
+        "population": 5.69,
+        "title": "#000"
+      },
+      "lightVibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#f08891",
+        "foreground": "#000",
+        "population": 0.16,
+        "title": "#fff"
+      },
+      "muted": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#909e63",
+        "foreground": "#fff",
+        "population": 4.21,
+        "title": "#fff"
+      },
+      "vibrant": {
+        "_type": "sanity.imagePaletteSwatch",
+        "background": "#d99b40",
+        "foreground": "#000",
+        "population": 0.65,
+        "title": "#fff"
+      }
+    },
+    "thumbHash": "GvkFFQKpZ4uIxoqXjJv4uJmAFft5"
+  },
+  "mimeType": "image/webp",
+  "originalFilename": "toddler-bubble-wand-outdoor-play-uriah-child-care.webp",
+  "path": "images/lhga98wd/production/1ede37f0d8e8edea31365009edc2a48086f41ca2-480x640.webp",
+  "sha1hash": "1ede37f0d8e8edea31365009edc2a48086f41ca2",
+  "size": 150956,
+  "uploadId": "e65497dff1e109f57cc29fabcd4e0643ebd85172",
+  "url": "https://cdn.sanity.io/images/lhga98wd/production/1ede37f0d8e8edea31365009edc2a48086f41ca2-480x640.webp"
+}

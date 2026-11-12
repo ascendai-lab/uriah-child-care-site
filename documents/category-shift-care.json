@@ -1,0 +1,576 @@
+{
+  "_createdAt": "2026-11-04T12:58:28Z",
+  "_id": "category-shift-care",
+  "_rev": "o3j7Liw4brTzZp1OeiJaVr",
+  "_system": {
+    "base": {
+      "id": "category-shift-care",
+      "rev": "1tk6J7MImmXVkYKAfaoz4X"
+    }
+  },
+  "_type": "category",
+  "_updatedAt": "2026-11-12T09:31:13Z",
+  "accent": "sage",
+  "ageRange": "Ages 2.5 and up",
+  "body": [
+    {
+      "_key": "k000dr",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ds",
+          "_type": "span",
+          "marks": [],
+          "text": "Child care that matches your hours"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000dt",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000du",
+          "_type": "span",
+          "marks": [],
+          "text": "Vineland runs on more than nine-to-five. Parents work at the hospital, in warehouses and food plants, in stores and on farms, and many start before sunrise or finish late at night. Uriah Child Care is open "
+        },
+        {
+          "_key": "k000dv",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Monday to Saturday, 6 am to 11 pm"
+        },
+        {
+          "_key": "k000dw",
+          "_type": "span",
+          "marks": [],
+          "text": ", so your child care can follow your shift instead of the other way around."
+        }
+      ],
+      "markDefs": [],
+      "style": "normal"
+    },
+    {
+      "_key": "k000dx",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000dy",
+          "_type": "span",
+          "marks": [],
+          "text": "Care from early morning to 11 pm"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000dz",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000e1",
+          "_type": "span",
+          "marks": [
+            "k000e0"
+          ],
+          "text": "Early morning care"
+        },
+        {
+          "_key": "k000e2",
+          "_type": "span",
+          "marks": [],
+          "text": " from 6 am."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k000e0",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-first-shift",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000e3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000e5",
+          "_type": "span",
+          "marks": [
+            "k000e4"
+          ],
+          "text": "Evening child care"
+        },
+        {
+          "_key": "k000e6",
+          "_type": "span",
+          "marks": [],
+          "text": " after work."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k000e4",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-evening",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000e7",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000e9",
+          "_type": "span",
+          "marks": [
+            "k000e8"
+          ],
+          "text": "Late evening care until 11 pm"
+        },
+        {
+          "_key": "k000ea",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k000e8",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-late-evening",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000eb",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000ed",
+          "_type": "span",
+          "marks": [
+            "k000ec"
+          ],
+          "text": "Saturday daycare"
+        },
+        {
+          "_key": "k000ee",
+          "_type": "span",
+          "marks": [],
+          "text": ", 6 am to 11 pm."
+        }
+      ],
+      "level": 1,
+      "listItem": "bullet",
+      "markDefs": [
+        {
+          "_key": "k000ec",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-weekend",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000ef",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000eg",
+          "_type": "span",
+          "marks": [],
+          "text": "Work overnight? Call us at "
+        },
+        {
+          "_key": "k000ei",
+          "_type": "span",
+          "marks": [
+            "k000eh"
+          ],
+          "text": "(856) 455-6701"
+        },
+        {
+          "_key": "k000ej",
+          "_type": "span",
+          "marks": [],
+          "text": " and Ms. Paulette will talk with you about it. If your schedule changes from week to week, see "
+        },
+        {
+          "_key": "k000el",
+          "_type": "span",
+          "marks": [
+            "k000ek"
+          ],
+          "text": "child care for shift workers"
+        },
+        {
+          "_key": "k000em",
+          "_type": "span",
+          "marks": [],
+          "text": "."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000eh",
+          "_type": "link",
+          "linkType": "phone",
+          "phone": "8564556701"
+        },
+        {
+          "_key": "k000ek",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-shift-workers",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000en",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000eo",
+          "_type": "span",
+          "marks": [],
+          "text": "Who we care for"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000ep",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000fe",
+          "_type": "span",
+          "marks": [],
+          "text": "We care for children ages 2.5 and up: "
+        },
+        {
+          "_key": "k000fg",
+          "_type": "span",
+          "marks": [
+            "k000ff"
+          ],
+          "text": "toddlers from 2½"
+        },
+        {
+          "_key": "k000fh",
+          "_type": "span",
+          "marks": [],
+          "text": ", "
+        },
+        {
+          "_key": "k000fj",
+          "_type": "span",
+          "marks": [
+            "k000fi"
+          ],
+          "text": "kindergarten readiness"
+        },
+        {
+          "_key": "k000fk",
+          "_type": "span",
+          "marks": [],
+          "text": " for 4 and 5-year-olds, and "
+        },
+        {
+          "_key": "k000fm",
+          "_type": "span",
+          "marks": [
+            "k000fl"
+          ],
+          "text": "before and after school care"
+        },
+        {
+          "_key": "k000fn",
+          "_type": "span",
+          "marks": [],
+          "text": " for school-age kids up to 13."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000ff",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-toddler-care",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000fi",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-kindergarten-readiness",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000fl",
+          "_type": "link",
+          "internal": {
+            "_ref": "category-after-school",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "k000f0",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000f1",
+          "_type": "span",
+          "marks": [],
+          "text": "A licensed center close to home"
+        }
+      ],
+      "markDefs": [],
+      "style": "h2"
+    },
+    {
+      "_key": "k000f2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "k000f3",
+          "_type": "span",
+          "marks": [],
+          "text": "We are at 30 W Chestnut Ave in Vineland, and many families drive in from "
+        },
+        {
+          "_key": "k000f5",
+          "_type": "span",
+          "marks": [
+            "k000f4"
+          ],
+          "text": "Millville"
+        },
+        {
+          "_key": "k000f6",
+          "_type": "span",
+          "marks": [],
+          "text": " and "
+        },
+        {
+          "_key": "k000f8",
+          "_type": "span",
+          "marks": [
+            "k000f7"
+          ],
+          "text": "Bridgeton"
+        },
+        {
+          "_key": "k000f9",
+          "_type": "span",
+          "marks": [],
+          "text": ". We are "
+        },
+        {
+          "_key": "k000fb",
+          "_type": "span",
+          "marks": [
+            "k000fa"
+          ],
+          "text": "licensed by NJ DCF"
+        },
+        {
+          "_key": "k000fc",
+          "_type": "span",
+          "marks": [],
+          "text": " (license ID CCC128557) and accept "
+        },
+        {
+          "_key": "k000fe",
+          "_type": "span",
+          "marks": [
+            "k000fd"
+          ],
+          "text": "NJ childcare subsidy (CCAP)"
+        },
+        {
+          "_key": "k000ff",
+          "_type": "span",
+          "marks": [],
+          "text": " for families who qualify."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "k000f4",
+          "_type": "link",
+          "internal": {
+            "_ref": "area-millville",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000f7",
+          "_type": "link",
+          "internal": {
+            "_ref": "area-bridgeton",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000fa",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-safe-licensed",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        },
+        {
+          "_key": "k000fd",
+          "_type": "link",
+          "internal": {
+            "_ref": "service-ccap",
+            "_type": "reference"
+          },
+          "linkType": "internal"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "excerpt": "Licensed child care open Monday to Saturday, early morning to 11 pm, for ages 2.5 and up.",
+  "faqs": [
+    {
+      "_key": "k0001s",
+      "_type": "faqItem",
+      "answer": "We are open Monday to Saturday, 6 am to 11 pm.",
+      "question": "What are your hours?"
+    },
+    {
+      "_key": "k0001t",
+      "_type": "faqItem",
+      "answer": "Our posted hours end at 11 pm. If you work overnight and need care after 11 pm, call us at (856) 455-6701 and Ms. Paulette will talk with you about it.",
+      "question": "Do you offer overnight care?"
+    },
+    {
+      "_key": "k0001u",
+      "_type": "faqItem",
+      "answer": "Often, yes. Many of our parents work rotating shifts. Tell us your schedule and we will work out the days and times that fit, as space allows.",
+      "question": "Can my schedule change from week to week?"
+    }
+  ],
+  "gbpName": "Child care agency",
+  "highlights": [
+    "Open Monday to Saturday, 6 am to 11 pm",
+    "Evening meal for children staying late",
+    "Saturday care, 6 am to 11 pm",
+    "Full-time and part-time schedules",
+    "Ages 2.5 and up",
+    "NJ childcare subsidy (CCAP) accepted"
+  ],
+  "homeHeading": "Child care for every shift in Vineland",
+  "image": {
+    "_type": "imageWithAlt",
+    "alt": "Children blowing bubbles in the fenced play yard at Uriah Child Care in Vineland, NJ",
+    "asset": {
+      "_ref": "image-9c412634b2f891d249d7157a814930f83a6d091b-480x640-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": "Licensed child care open Monday to Saturday, 6 am to 11 pm, for ages 2.5 and up. Early mornings, evenings and Saturdays covered.",
+  "keyword": "child care vineland nj",
+  "lastReviewed": "2026-11-04",
+  "needsConfirmation": false,
+  "order": 3,
+  "related": [
+    {
+      "_key": "k0001v",
+      "_ref": "service-first-shift",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0001w",
+      "_ref": "service-evening",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0001x",
+      "_ref": "service-weekend",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0001y",
+      "_ref": "service-shift-workers",
+      "_type": "reference"
+    }
+  ],
+  "reviews": [
+    {
+      "_key": "k0001s",
+      "_ref": "review-marcia-antina",
+      "_type": "reference"
+    },
+    {
+      "_key": "k0001t",
+      "_ref": "review-rockay-davis",
+      "_type": "reference"
+    }
+  ],
+  "schedule": "Monday to Saturday, 6 am to 11 pm.",
+  "seo": {
+    "_type": "seoFields",
+    "metaDescription": "Licensed child care in Vineland, NJ open Monday to Saturday, 6 am to 11 pm. Early morning to late evening care for ages 2.5 and up. CCAP accepted.",
+    "metaTitle": "Child Care in Vineland, NJ, Open Monday to Saturday"
+  },
+  "shortTitle": "Child care for every shift",
+  "slug": {
+    "_type": "slug",
+    "current": "child-care-vineland-nj"
+  },
+  "title": "Child care in Vineland, NJ for every shift"
+}
