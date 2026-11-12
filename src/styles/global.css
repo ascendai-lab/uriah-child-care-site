@@ -961,3 +961,7 @@
     .reveal { opacity: 1; transform: none; }
   }
 }
+
+/* When a page ends on a white section (the legal pages), fill the gap above the footer wave with white
+   too, so no strip of the tan page background shows between the content and the footer. */
+body:has(main > div > .section.bg-white:last-child) { background: var(--white); }
