@@ -1,0 +1,21 @@
+# Dependabot opens a pull request when a package the site uses gets a security fix or an update.
+# Security fixes come in as soon as they're published; routine updates are grouped once a month.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    groups:
+      astro:
+        patterns: ['astro', '@astrojs/*']
+      sanity:
+        patterns: ['sanity', '@sanity/*', 'groq']
+      everything-else:
+        patterns: ['*']
+        exclude-patterns: ['astro', '@astrojs/*', 'sanity', '@sanity/*', 'groq']
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

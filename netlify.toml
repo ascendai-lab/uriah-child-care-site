@@ -12,12 +12,16 @@
 # allows Sanity Studio (embedded at /studio or hosted on *.sanity.studio) to
 # show this site in its Presentation iframe for visual editing.
 # Do NOT add X-Frame-Options: DENY — it overrides this and breaks visual editing.
+# The full Content-Security-Policy for pages is set in src/middleware.ts (it has to skip /studio).
 [[headers]]
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    # Browsers only ever use https for this site (1 year). Netlify serves every page over https.
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Cross-Origin-Opener-Policy = "same-origin-allow-popups"
     Content-Security-Policy = "frame-ancestors 'self' https://*.sanity.studio https://sanity.studio"
 
 # Astro's Netlify adapter routes /api/* and every page to its SSR function

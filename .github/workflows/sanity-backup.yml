@@ -1,0 +1,97 @@
+# Backs up the Sanity content (pages, settings, news, images).
+#
+# Daily (3 am Eastern): exports every document and commits it to the `sanity-backups` branch, one file per
+#   document. Git only stores what changed, and the branch history shows every day's version of each page.
+# Weekly (Sunday): a full backup with every image and file, kept as a download on the workflow run for 90 days.
+#
+# Setup: add a repository secret SANITY_BACKUP_TOKEN (sanity.io/manage → project → API → Tokens → Viewer).
+# Restore steps: see scripts/backup-sanity.mjs.
+name: Sanity backup
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+    inputs:
+      full:
+        description: 'Also make a full backup with images'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sanity-backup
+  cancel-in-progress: false
+
+env:
+  SANITY_BACKUP_TOKEN: ${{ secrets.SANITY_BACKUP_TOKEN }}
+  PUBLIC_SANITY_PROJECT_ID: lhga98wd
+  PUBLIC_SANITY_DATASET: production
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+          path: site
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check the token is set
+        run: |
+          if [ -z "$SANITY_BACKUP_TOKEN" ]; then
+            echo "::error::Add the SANITY_BACKUP_TOKEN repository secret (a Sanity Viewer token)."
+            exit 1
+          fi
+
+      - name: Get the backup branch
+        run: |
+          if git ls-remote --exit-code --heads "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sanity-backups; then
+            git clone --depth 1 --branch sanity-backups "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" backup
+          else
+            mkdir backup && cd backup && git init -b sanity-backups
+            git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          fi
+
+      - name: Daily backup (changed documents)
+        run: node site/scripts/backup-sanity.mjs backup
+
+      - name: Commit changes
+        working-directory: backup
+        run: |
+          git config user.name "sanity-backup"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No content changed since the last backup."
+          else
+            git commit -q -m "Sanity backup $(date -u +%Y-%m-%d) [skip netlify]"
+            git push origin sanity-backups
+          fi
+
+      - name: Weekly full backup (with images)
+        id: full
+        env:
+          EVENT: ${{ github.event_name }}
+          FULL_INPUT: ${{ inputs.full }}
+        run: |
+          if { [ "$EVENT" = "schedule" ] && [ "$(date -u +%u)" = "7" ]; } || [ "$FULL_INPUT" = "true" ]; then
+            node site/scripts/backup-sanity.mjs full-backup --full
+            echo "made=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Full backups run on Sundays."
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: steps.full.outputs.made == 'true'
+        with:
+          name: sanity-full-backup-${{ github.run_id }}
+          path: full-backup
+          retention-days: 90
