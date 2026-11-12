@@ -106,7 +106,7 @@ if (gallery) {
   pageType={pageType}
   modifiedAt={doc.lastReviewed ?? doc._updatedAt}
   jsonLd={jsonLd}
-  hideTourBlock={hasTourForm}
+  hideTourBlock={hasTourForm || doc.hideTourBlock === true}
   forceNoIndex={Boolean(doc.needsConfirmation)}
 >
   {

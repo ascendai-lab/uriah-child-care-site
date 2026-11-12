@@ -28,6 +28,14 @@ export const page = defineType({
       group: 'settings',
       initialValue: false,
     }),
+    defineField({
+      name: 'hideTourBlock',
+      title: 'Hide the "Book a tour" section at the bottom',
+      type: 'boolean',
+      description: 'Turn on for pages where a tour form does not fit, like the Privacy Policy or Terms.',
+      group: 'settings',
+      initialValue: false,
+    }),
     seoField,
   ],
   preview: {

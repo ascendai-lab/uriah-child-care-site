@@ -324,6 +324,7 @@ export const routeQuery = defineQuery(`
     keyword,
     gbpName,
     needsConfirmation,
+    hideTourBlock,
     lastReviewed,
     city,
     state,

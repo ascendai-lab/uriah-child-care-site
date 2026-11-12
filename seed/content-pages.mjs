@@ -374,6 +374,7 @@ The center is licensed by the New Jersey Department of Children and Families, li
     title: 'Privacy Policy',
     slug: slug('privacy-policy'),
     showInFooter: true,
+    hideTourBlock: true,
     pageBuilder: [
       block('hero', { layout: 'split', heading: 'Privacy Policy', subheading: 'Last updated November 4, 2026', showPhone: false, background: 'white' }),
       block('textBlock', {
@@ -461,6 +462,7 @@ Uriah Child Care does not knowingly collect any personally identifiable informat
     title: 'Terms and Conditions',
     slug: slug('terms-and-conditions'),
     showInFooter: true,
+    hideTourBlock: true,
     pageBuilder: [
       block('hero', { layout: 'split', heading: 'Terms and Conditions', subheading: 'Last updated November 4, 2026', showPhone: false, background: 'white' }),
       block('textBlock', {
