@@ -89,7 +89,7 @@ jobs:
             echo "Full backups run on Sundays."
           fi
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: steps.full.outputs.made == 'true'
         with:
           name: sanity-full-backup-${{ github.run_id }}
