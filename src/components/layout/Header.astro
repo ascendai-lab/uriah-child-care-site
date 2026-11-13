@@ -97,7 +97,7 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
                         </ul>
                         <aside class="mega__feature">
                           {item.menuPhoto?.asset && (
-                            <SanityImage image={item.menuPhoto} width={520} aspectRatio={16 / 10} sizes="320px" class="mega__photo" />
+                            <SanityImage image={item.menuPhoto} width={520} sizes="320px" class="mega__photo" />
                           )}
                           <p class="mega__note">{item.menuNote || 'See the center for yourself. Tours take about 20 minutes.'}</p>
                           <a class="btn btn--primary mega__cta" href={tourHref}>
@@ -444,7 +444,7 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
       background: var(--cream);
       border-radius: var(--radius-lg);
     }
-    .mega__feature :global(img) { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; border-radius: var(--radius-md); }
+    .mega__feature :global(img) { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 30%; border-radius: var(--radius-md); }
     .mega__note { font-size: 0.95rem; line-height: 1.5; padding-inline: 0.15rem; }
     .mega__cta { align-self: flex-start; }
     @media (prefers-reduced-motion: reduce) {
