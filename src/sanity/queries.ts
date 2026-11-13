@@ -259,7 +259,15 @@ export const layoutQuery = defineQuery(`{
       _key,
       label,
       link { ${linkFields} },
-      children[] { _key, label, link { ${linkFields} } }
+      children[] {
+        _key,
+        label,
+        icon,
+        "description": coalesce(description, link.internal->excerpt),
+        link { ${linkFields} }
+      },
+      menuNote,
+      "menuPhoto": coalesce(menuPhoto, link.internal->image, children[0].link.internal->image) { ${imageFields} }
     },
     headerCta { ${buttonFields} },
     footerColumns[] {

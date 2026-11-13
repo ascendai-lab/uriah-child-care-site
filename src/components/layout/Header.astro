@@ -5,7 +5,8 @@ import { resolveLink, telHref } from '@cms/lib/links'
 import { editAttr } from '@cms/lib/visualEditing'
 import { urlFor } from '@cms/lib/image'
 import Button from '@components/ui/Button.astro'
-import Icon from '@components/ui/Icon.astro'
+import Icon, { type IconName } from '@components/ui/Icon.astro'
+import SanityImage from '@components/ui/SanityImage.astro'
 
 interface Props {
   layout: Layout
@@ -22,6 +23,7 @@ const isCurrent = (href: string | undefined) => href !== undefined && norm(href)
 const siteName = stegaClean(settings?.siteName) || 'Uriah Child Care'
 const logoSrc = settings?.logo?.asset ? urlFor(settings.logo as Parameters<typeof urlFor>[0]).width(440).url() : '/brand/uriah-logo.svg'
 const phone = settings?.phone
+const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
 ---
 
 {
@@ -61,25 +63,49 @@ const phone = settings?.phone
                         <path d="m6 9 6 6 6-6" />
                       </svg>
                     </summary>
-                    <ul>
-                      {link && (
-                        <li>
-                          <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>
-                            All {String(item.label).toLowerCase()}
+                    <div class="mega">
+                      <div class="mega__inner">
+                        <ul class="mega__links">
+                          {children.map((child) => {
+                            const childLink = resolveLink(child.link)!
+                            const icon = (stegaClean(child.icon) || 'sparkle') as IconName
+                            return (
+                              <li>
+                                <a
+                                  class="mega__link"
+                                  href={childLink.href}
+                                  target={childLink.target}
+                                  rel={childLink.rel}
+                                  aria-current={isCurrent(childLink.href) ? 'page' : undefined}
+                                >
+                                  <span class="mega__icon"><Icon name={icon} size={20} /></span>
+                                  <span class="mega__text">
+                                    <span class="mega__label">{child.label}</span>
+                                    {child.description && <span class="mega__desc">{child.description}</span>}
+                                  </span>
+                                </a>
+                              </li>
+                            )
+                          })}
+                          {link && (
+                            <li class="mega__all">
+                              <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>
+                                See all {String(stegaClean(item.label)).toLowerCase()} <Icon name="arrow" size={16} />
+                              </a>
+                            </li>
+                          )}
+                        </ul>
+                        <aside class="mega__feature">
+                          {item.menuPhoto?.asset && (
+                            <SanityImage image={item.menuPhoto} width={520} aspectRatio={16 / 10} sizes="320px" class="mega__photo" />
+                          )}
+                          <p class="mega__note">{item.menuNote || 'See the center for yourself. Tours take about 20 minutes.'}</p>
+                          <a class="btn btn--primary mega__cta" href={tourHref}>
+                            Book a tour
                           </a>
-                        </li>
-                      )}
-                      {children.map((child) => {
-                        const childLink = resolveLink(child.link)!
-                        return (
-                          <li>
-                            <a href={childLink.href} target={childLink.target} rel={childLink.rel} aria-current={isCurrent(childLink.href) ? 'page' : undefined}>
-                              {child.label}
-                            </a>
-                          </li>
-                        )
-                      })}
-                    </ul>
+                        </aside>
+                      </div>
+                    </div>
                   </details>
                 </li>
               )
@@ -166,6 +192,27 @@ const phone = settings?.phone
   document.addEventListener('click', (e) => {
     if (window.matchMedia('(min-width: 1080px)').matches && !(e.target as Element).closest('.site-nav__dropdown')) {
       dropdowns.forEach((d) => (d.open = false))
+    }
+  })
+
+  // Desktop: the mega menu also opens on hover (with a short delay so it doesn't flicker when the
+  // mouse passes over), and Escape closes it and returns focus to its button.
+  const canHover = window.matchMedia('(hover: hover) and (pointer: fine)')
+  dropdowns.forEach((d) => {
+    let timer: number | undefined
+    const later = (open: boolean, ms: number) => {
+      window.clearTimeout(timer)
+      timer = window.setTimeout(() => (d.open = open), ms)
+    }
+    d.addEventListener('mouseenter', () => desktop.matches && canHover.matches && later(true, 90))
+    d.addEventListener('mouseleave', () => desktop.matches && canHover.matches && later(false, 220))
+  })
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' || !desktop.matches) return
+    const open = dropdowns.find((d) => d.open)
+    if (open) {
+      open.open = false
+      open.querySelector('summary')?.focus()
     }
   })
 </script>
@@ -276,9 +323,13 @@ const phone = settings?.phone
   .site-nav__dropdown summary { list-style: none; }
   .site-nav__dropdown summary::-webkit-details-marker { display: none; }
   .site-nav__dropdown[open] summary svg { transform: rotate(180deg); }
-  .site-nav__dropdown ul { list-style: none; padding: 0 0 0.5rem 0.9rem; }
-  .site-nav__dropdown ul a { display: block; padding: 0.55rem 0; font-weight: 600; font-size: 1.05rem; }
-  .site-nav__dropdown ul a:hover { color: var(--coral-700); }
+  /* Dropdown content. On phones it's a simple indented list; on desktop it becomes the mega menu. */
+  .mega__links { list-style: none; padding: 0 0 0.5rem 0.9rem; }
+  .mega__link, .mega__all a { display: flex; align-items: center; gap: 0.6rem; padding: 0.55rem 0; font-weight: 600; font-size: 1.05rem; }
+  .mega__link:hover, .mega__all a:hover { color: var(--coral-700); }
+  .mega__icon { display: none; }
+  .mega__desc, .mega__feature { display: none; }
+  .mega__all a { color: var(--coral-800); }
   .site-nav__phone-mobile { margin-top: 1.5rem; }
   .site-nav__list > .site-nav__item + .site-nav__item { border-top: 1px solid var(--border-hairline); }
 
@@ -321,17 +372,83 @@ const phone = settings?.phone
     .site-nav__list > .site-nav__item + .site-nav__item { border-top: 0; }
     .site-nav__list { display: flex; gap: 1.4rem; }
     .site-nav__item > a, .site-nav__item summary { padding: 0.5rem 0; font-size: 1.02rem; }
-    .site-nav__dropdown { position: relative; }
-    .site-nav__dropdown ul {
+    /* Mega menu: a wide panel that drops from under the header, centred on the page. */
+    .mega {
       position: absolute;
-      top: calc(100% + 0.4rem);
-      left: -1rem;
-      min-width: 17rem;
-      padding: 0.6rem 1rem;
+      top: 100%;
+      left: 50%;
+      width: min(1080px, calc(100vw - 2 * var(--container-px)));
+      transform: translate(-50%, 6px);
+      padding-top: 0.75rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.22s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s linear 0.28s;
+    }
+    .site-nav__dropdown[open] .mega {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, 0);
+      transition: opacity 0.22s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s;
+    }
+    .mega__inner {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 1.5rem;
+      padding: 1.5rem;
       background: var(--white);
       border: 1px solid var(--border-hairline);
-      border-radius: var(--radius-lg);
+      border-radius: var(--radius-xl);
       box-shadow: var(--shadow-overlay);
+    }
+    .mega__links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-content: start;
+      gap: 0.25rem 1rem;
+      padding: 0;
+    }
+    .mega__link {
+      align-items: flex-start;
+      gap: 0.85rem;
+      padding: 0.8rem 0.85rem;
+      border-radius: var(--radius-lg);
+      font-size: 1rem;
+      transition: background-color 0.18s ease;
+    }
+    .mega__link:hover, .mega__link:focus-visible { background: var(--cream); color: inherit; }
+    .mega__link[aria-current='page'] .mega__label { color: var(--coral-700); }
+    .mega__icon {
+      display: inline-grid;
+      place-items: center;
+      flex: none;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: var(--sunshine-50);
+      color: var(--coral-800);
+      transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .mega__link:hover .mega__icon { transform: scale(1.08) rotate(-6deg); }
+    .mega__text { display: grid; gap: 0.15rem; }
+    .mega__label { font-family: var(--font-display); font-weight: 600; font-size: 1.02rem; }
+    .mega__desc { display: block; font-family: var(--font-body); font-weight: 400; font-size: 0.88rem; line-height: 1.45; color: var(--color-text-muted); }
+    .mega__all { grid-column: 1 / -1; padding: 0.4rem 0.85rem 0; }
+    .mega__all a { display: inline-flex; gap: 0.35rem; padding: 0.4rem 0; font-family: var(--font-display); font-size: 0.98rem; }
+    .mega__all a :global(svg) { transition: transform 0.2s ease; }
+    .mega__all a:hover :global(svg) { transform: translateX(3px); }
+    .mega__feature {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      padding: 0.85rem 0.85rem 1.1rem;
+      background: var(--cream);
+      border-radius: var(--radius-lg);
+    }
+    .mega__feature :global(img) { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; border-radius: var(--radius-md); }
+    .mega__note { font-size: 0.95rem; line-height: 1.5; padding-inline: 0.15rem; }
+    .mega__cta { align-self: flex-start; }
+    @media (prefers-reduced-motion: reduce) {
+      .mega, .site-nav__dropdown[open] .mega { transition: none; transform: translate(-50%, 0); }
     }
   }
 </style>

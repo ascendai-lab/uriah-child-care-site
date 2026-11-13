@@ -1,6 +1,26 @@
 import { defineArrayMember, defineField, defineType } from 'sanity'
 import { MenuIcon } from '@sanity/icons/Menu'
 
+/** Icons editors can pick for dropdown links (names from src/components/ui/Icon.astro). */
+const menuIcons = [
+  { title: 'Sparkle', value: 'sparkle' },
+  { title: 'Sun (morning)', value: 'sun' },
+  { title: 'Moon (evening)', value: 'moon' },
+  { title: 'Clock', value: 'clock' },
+  { title: 'Calendar', value: 'calendar' },
+  { title: 'Book', value: 'book' },
+  { title: 'School', value: 'school' },
+  { title: 'Heart', value: 'heart' },
+  { title: 'Shield', value: 'shield' },
+  { title: 'Star', value: 'star' },
+  { title: 'People', value: 'users' },
+  { title: 'Home', value: 'home' },
+  { title: 'Camera', value: 'camera' },
+  { title: 'Message', value: 'message' },
+  { title: 'Meals', value: 'utensils' },
+  { title: 'Wallet', value: 'wallet' },
+]
+
 const navItem = defineArrayMember({
   type: 'object',
   name: 'navItem',
@@ -19,10 +39,39 @@ const navItem = defineArrayMember({
           fields: [
             defineField({ name: 'label', title: 'Label', type: 'string', validation: (Rule) => Rule.required() }),
             defineField({ name: 'link', title: 'Link', type: 'link', validation: (Rule) => Rule.required() }),
+            defineField({
+              name: 'description',
+              title: 'Short description',
+              type: 'string',
+              description: 'One short line under the link in the desktop menu. Leave empty to use the page summary.',
+              validation: (Rule) => Rule.max(80),
+            }),
+            defineField({
+              name: 'icon',
+              title: 'Icon',
+              type: 'string',
+              options: { list: menuIcons },
+              initialValue: 'sparkle',
+            }),
           ],
-          preview: { select: { title: 'label' } },
+          preview: { select: { title: 'label', subtitle: 'description' } },
         }),
       ],
+    }),
+    defineField({
+      name: 'menuPhoto',
+      title: 'Photo in the dropdown',
+      type: 'imageWithAlt',
+      description: 'Shown on the right of the desktop dropdown. Leave empty to use the photo from the linked page.',
+      hidden: ({ parent }) => !parent?.children?.length,
+    }),
+    defineField({
+      name: 'menuNote',
+      title: 'Text next to the photo',
+      type: 'string',
+      description: 'A short line above the "Book a tour" button in the dropdown.',
+      validation: (Rule) => Rule.max(110),
+      hidden: ({ parent }) => !parent?.children?.length,
     }),
   ],
   preview: {

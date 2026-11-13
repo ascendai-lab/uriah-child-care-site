@@ -86,41 +86,71 @@ export const settingsDocs = [
 /** The News listing is a route, not a document, so it is linked by path. */
 const NEWS = { _type: 'link', linkType: 'external', external: '/news/' }
 
-const navItem = (label, id, children = []) => ({
+/** A main-menu item. Dropdown children are [label, page id, short description, icon]. */
+const navItem = (label, id, children = [], extra = {}) => ({
   _key: key(),
   label,
   ...(id ? { link: link.internal(id) } : {}),
-  ...(children.length ? { children: children.map(([l, cid]) => ({ _key: key(), label: l, link: typeof cid === 'string' ? link.internal(cid) : cid })) } : {}),
+  ...(children.length
+    ? {
+        children: children.map(([l, cid, description, icon]) => ({
+          _key: key(),
+          label: l,
+          link: typeof cid === 'string' ? link.internal(cid) : cid,
+          ...(description ? { description } : {}),
+          ...(icon ? { icon } : {}),
+        })),
+      }
+    : {}),
+  ...extra,
 })
 
 export const navigation = {
   _id: 'navigation',
   _type: 'navigation',
   headerLinks: [
-    navItem('Programs', null, [
-      ['Toddler care (2.5 and up)', 'service-toddler-care'],
-      ['Early learning (2.5 to 5)', 'category-preschool'],
-      ['Kindergarten readiness', 'service-kindergarten-readiness'],
-      ['After school program', 'category-after-school'],
-      ['Before school care', 'service-before-school'],
-    ]),
-    navItem('Shift care', 'category-shift-care', [
-      ['Early morning care', 'service-first-shift'],
-      ['Evening care', 'service-evening'],
-      ['Late evening care (until 11 pm)', 'service-late-evening'],
-      ['Saturday daycare', 'service-weekend'],
-      ['For shift workers', 'service-shift-workers'],
-      ['Full-time and part-time', 'service-full-part-time'],
-    ]),
+    navItem(
+      'Programs',
+      null,
+      [
+        ['Toddler care (2.5 and up)', 'service-toddler-care', 'Ages 2½ and up, with potty training support', 'heart'],
+        ['Early learning (2.5 to 5)', 'category-preschool', 'Play-based learning for ages 2½ to 5', 'book'],
+        ['Kindergarten readiness', 'service-kindergarten-readiness', 'Letters, counting and routines for 4 and 5-year-olds', 'star'],
+        ['After school program', 'category-after-school', 'Homework time, snacks and play, up to age 13', 'school'],
+        ['Before school care', 'service-before-school', 'Drop off from 6 am, with breakfast', 'sun'],
+      ],
+      { menuNote: 'Every program runs Monday to Saturday, from 6 am to 11 pm.' },
+    ),
+    navItem(
+      'Shift care',
+      'category-shift-care',
+      [
+        ['Early morning care', 'service-first-shift', 'Drop off from 6 am, Monday to Saturday', 'sun'],
+        ['Evening care', 'service-evening', 'Dinner and a calm routine for second shift', 'moon'],
+        ['Late evening care (until 11 pm)', 'service-late-evening', 'For parents who work late', 'clock'],
+        ['Saturday daycare', 'service-weekend', 'Open Saturday, 6 am to 11 pm', 'calendar'],
+        ['For shift workers', 'service-shift-workers', 'Nurses, warehouse, plant and restaurant staff', 'users'],
+        ['Full-time and part-time', 'service-full-part-time', 'Pick the days and hours you need', 'home'],
+      ],
+      { menuNote: 'Care that fits your shift, from early morning to 11 pm.' },
+    ),
     navItem('Tuition & CCAP', 'page-tuition'),
-    navItem('About', null, [
-      ['Meet Ms. Paulette', 'page-about'],
-      ['Our center', 'page-our-center'],
-      ['Safety and licensing', 'service-safe-licensed'],
-      ['Reviews', 'page-reviews'],
-      ['News', NEWS],
-      ['FAQ', 'page-faq'],
-    ]),
+    navItem(
+      'About',
+      null,
+      [
+        ['Meet Ms. Paulette', 'page-about', 'Caring for local children since 2005', 'heart'],
+        ['Our center', 'page-our-center', 'Photos of our classroom and play yard', 'camera'],
+        ['Safety and licensing', 'service-safe-licensed', 'NJ DCF licensed, with secure Procare check-in', 'shield'],
+        ['Reviews', 'page-reviews', 'What local families say on Google', 'star'],
+        ['News', NEWS, 'Center news and tips for parents', 'message'],
+        ['FAQ', 'page-faq', 'Hours, ages, CCAP, meals and more', 'book'],
+      ],
+      {
+        menuNote: 'Family-run and licensed by NJ DCF. Come meet Ms. Paulette.',
+        menuPhoto: img('ms-paulette-senior-owner-uriah-child-care', 'Ms. Paulette, owner of Uriah Child Care in Vineland, NJ'),
+      },
+    ),
   ],
   headerCta: { _type: 'ctaButton', label: 'Book a tour', variant: 'primary', link: link.internal('page-tour') },
   footerColumns: [
