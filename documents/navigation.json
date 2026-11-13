@@ -1,15 +1,15 @@
 {
   "_createdAt": "2026-11-04T12:56:12Z",
   "_id": "navigation",
-  "_rev": "qHfAR2GXSfO7zaD7XmNX0p",
+  "_rev": "nBLIgwEYjSKazCv8rxCULB",
   "_system": {
     "base": {
       "id": "navigation",
-      "rev": "Mj8jZDV099qjkJYi2zIe4c"
+      "rev": "qHfAR2GXSfO7zaD7XmNX0p"
     }
   },
   "_type": "navigation",
-  "_updatedAt": "2026-11-11T14:03:24Z",
+  "_updatedAt": "2026-11-13T02:03:14Z",
   "footerColumns": [
     {
       "_key": "k0000o",
@@ -130,6 +130,8 @@
       "children": [
         {
           "_key": "k00003",
+          "description": "Ages 2½ and up, with potty training support",
+          "icon": "heart",
           "label": "Toddler care (2.5 and up)",
           "link": {
             "_type": "link",
@@ -142,6 +144,8 @@
         },
         {
           "_key": "k00004",
+          "description": "Play-based learning for ages 2½ to 5",
+          "icon": "book",
           "label": "Early learning (2.5 to 5)",
           "link": {
             "_type": "link",
@@ -154,6 +158,8 @@
         },
         {
           "_key": "k00005",
+          "description": "Letters, counting and routines for 4 and 5-year-olds",
+          "icon": "star",
           "label": "Kindergarten readiness",
           "link": {
             "_type": "link",
@@ -166,6 +172,8 @@
         },
         {
           "_key": "k00006",
+          "description": "Homework time, snacks and play, up to age 13",
+          "icon": "school",
           "label": "After school program",
           "link": {
             "_type": "link",
@@ -178,6 +186,8 @@
         },
         {
           "_key": "k00007",
+          "description": "Drop off from 6 am, with breakfast",
+          "icon": "sun",
           "label": "Before school care",
           "link": {
             "_type": "link",
@@ -189,13 +199,16 @@
           }
         }
       ],
-      "label": "Programs"
+      "label": "Programs",
+      "menuNote": "Every program runs Monday to Saturday, from 6 am to 11 pm."
     },
     {
       "_key": "k00008",
       "children": [
         {
           "_key": "k00009",
+          "description": "Drop off from 6 am, Monday to Saturday",
+          "icon": "sun",
           "label": "Early morning care",
           "link": {
             "_type": "link",
@@ -208,6 +221,8 @@
         },
         {
           "_key": "k0000a",
+          "description": "Dinner and a calm routine for second shift",
+          "icon": "moon",
           "label": "Evening care",
           "link": {
             "_type": "link",
@@ -220,6 +235,8 @@
         },
         {
           "_key": "k0000b",
+          "description": "For parents who work late",
+          "icon": "clock",
           "label": "Late evening care (until 11 pm)",
           "link": {
             "_type": "link",
@@ -232,6 +249,8 @@
         },
         {
           "_key": "k0000c",
+          "description": "Open Saturday, 6 am to 11 pm",
+          "icon": "calendar",
           "label": "Saturday daycare",
           "link": {
             "_type": "link",
@@ -244,6 +263,8 @@
         },
         {
           "_key": "k0000d",
+          "description": "Nurses, warehouse, plant and restaurant staff",
+          "icon": "users",
           "label": "For shift workers",
           "link": {
             "_type": "link",
@@ -256,6 +277,8 @@
         },
         {
           "_key": "k0000e",
+          "description": "Pick the days and hours you need",
+          "icon": "home",
           "label": "Full-time and part-time",
           "link": {
             "_type": "link",
@@ -275,7 +298,8 @@
           "_type": "reference"
         },
         "linkType": "internal"
-      }
+      },
+      "menuNote": "Care that fits your shift, from early morning to 11 pm."
     },
     {
       "_key": "k0000f",
@@ -294,6 +318,8 @@
       "children": [
         {
           "_key": "k0000h",
+          "description": "Caring for local children since 2005",
+          "icon": "heart",
           "label": "Meet Ms. Paulette",
           "link": {
             "_type": "link",
@@ -306,6 +332,8 @@
         },
         {
           "_key": "k0000i",
+          "description": "Photos of our classroom and play yard",
+          "icon": "camera",
           "label": "Our center",
           "link": {
             "_type": "link",
@@ -318,6 +346,8 @@
         },
         {
           "_key": "k0000j",
+          "description": "NJ DCF licensed, with secure Procare check-in",
+          "icon": "shield",
           "label": "Safety and licensing",
           "link": {
             "_type": "link",
@@ -330,6 +360,8 @@
         },
         {
           "_key": "k0000k",
+          "description": "What local families say on Google",
+          "icon": "star",
           "label": "Reviews",
           "link": {
             "_type": "link",
@@ -342,6 +374,8 @@
         },
         {
           "_key": "k0000l",
+          "description": "Center news and tips for parents",
+          "icon": "message",
           "label": "News",
           "link": {
             "_type": "link",
@@ -351,6 +385,8 @@
         },
         {
           "_key": "k0000m",
+          "description": "Hours, ages, CCAP, meals and more",
+          "icon": "book",
           "label": "FAQ",
           "link": {
             "_type": "link",
@@ -362,7 +398,16 @@
           }
         }
       ],
-      "label": "About"
+      "label": "About",
+      "menuNote": "Family-run and licensed by NJ DCF. Come meet Ms. Paulette.",
+      "menuPhoto": {
+        "_type": "imageWithAlt",
+        "alt": "Ms. Paulette, owner of Uriah Child Care in Vineland, NJ",
+        "asset": {
+          "_ref": "image-7e94a3e1e227a21fbb7c3145cfc35c526f6e7d33-1350x1800-webp",
+          "_type": "reference"
+        }
+      }
     }
   ]
 }
