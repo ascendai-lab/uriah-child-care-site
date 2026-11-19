@@ -1,9 +1,9 @@
 {
   "_createdAt": "2026-11-04T12:35:56Z",
   "_id": "_.groups.sanity.editor",
-  "_rev": "o3j7Liw4brTzZp1Oef1b1z",
+  "_rev": "RkIdnDo6i3oGNua6YQeK8S",
   "_type": "system.group",
-  "_updatedAt": "2026-11-12T06:00:30Z",
+  "_updatedAt": "2026-11-19T07:21:59Z",
   "grants": [
     {
       "filter": "_id in path(\"**\")",
