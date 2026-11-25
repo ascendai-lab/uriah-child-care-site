@@ -16,7 +16,7 @@ const images = (block.images ?? []).filter((img) => img?.asset)
 <Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
   <SectionHeader heading={block.heading} intro={block.intro} />
   {/* Mosaic: the first photo is large (2x2), the rest fill a fixed-height grid so no card has empty space. */}
-  <ul class="gallery">
+  <ul role="list" class="gallery">
     {
       images.map((img, i) => (
         <li class:list={['gallery__item', i === 0 && 'gallery__item--feature']}>
@@ -34,7 +34,7 @@ const images = (block.images ?? []).filter((img) => img?.asset)
   .gallery { list-style: none; display: grid; gap: 1rem; grid-template-columns: 1fr; }
   .gallery figure { position: relative; height: 100%; margin: 0; border-radius: var(--radius-xl); overflow: hidden; background: var(--surface-soft); }
   .gallery :global(img) { width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform 700ms var(--ease-out); }
-  .gallery figure:hover :global(img) { transform: scale(1.03); }
+  @media (prefers-reduced-motion: no-preference) { .gallery figure:hover :global(img) { transform: scale(1.03); } }
   .gallery figcaption {
     position: absolute;
     left: 0.75rem;

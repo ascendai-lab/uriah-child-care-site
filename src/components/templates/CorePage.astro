@@ -122,7 +122,7 @@ const getsBand = !doc.dayPlan?.length && !shownServices.length ? 'bg-sky' : 'bg-
       <div class="core-hero__text enter">
         <h1 class="page-title" data-sanity={edit('title')}>{doc.title}</h1>
         {doc.intro && <p class="core-hero__intro" data-sanity={edit('intro')}>{doc.intro}</p>}
-        <ul class="fact-line core-hero__facts">
+        <ul role="list" class="fact-line core-hero__facts">
           <li><Icon name="users" /> {doc.ageRange || settings?.agesServed}</li>
           {heroSchedule && <li><Icon name="clock" /> {heroSchedule}</li>}
           <li><Icon name="pin" /> {where}</li>
@@ -176,7 +176,7 @@ const getsBand = !doc.dayPlan?.length && !shownServices.length ? 'bg-sky' : 'bg-
     <section class:list={['section', getsBand]}>
       <div class="container">
         <h2 class="section-heading core-section-title">{titles.gets}</h2>
-        <ul class="ticks core-highlights" style={`--cols:${highlightCols}`}>
+        <ul role="list" class="ticks core-highlights" style={`--cols:${highlightCols}`}>
           {doc.highlights.map((h, i) => (
             <li data-sanity={edit(`highlights[${i}]`)}>
               <span class="ticks__icon"><Icon name="check" /></span>
@@ -194,7 +194,7 @@ const getsBand = !doc.dayPlan?.length && !shownServices.length ? 'bg-sky' : 'bg-
     <section class="section bg-sky">
       <div class="container">
         <h2 class="section-heading core-section-title">{titles.day}</h2>
-        <ol class="day-plan" style={`--steps:${doc.dayPlan.length}`}>
+        <ol role="list" class="day-plan" style={`--steps:${doc.dayPlan.length}`}>
           {doc.dayPlan.map((step, i) => (
             <li class={`accent-${['coral', 'sage', 'sunshine', 'sky'][i % 4]}`} data-sanity={edit(`dayPlan[_key=="${step._key}"]`)}>
               <span class="day-plan__dot" aria-hidden="true">{i + 1}</span>
@@ -256,7 +256,7 @@ const getsBand = !doc.dayPlan?.length && !shownServices.length ? 'bg-sky' : 'bg-
       <div class="container">
         <nav class="keep-exploring" aria-label="Related pages">
           <h2>Keep exploring</h2>
-          <ul>
+          <ul role="list">
             {related.map((p) => (
               <li>
                 <a href={hrefFor(p._type, p.slug) ?? '#'}>
@@ -404,7 +404,8 @@ const getsBand = !doc.dayPlan?.length && !shownServices.length ? 'bg-sky' : 'bg-
     font-weight: 700;
     transition: border-color 200ms var(--ease-out), transform 200ms var(--ease-out);
   }
-  .keep-exploring a:hover { border-color: var(--navy); transform: translateY(-1px); }
+  .keep-exploring a:hover { border-color: var(--navy); }
+  @media (prefers-reduced-motion: no-preference) { .keep-exploring a:hover { transform: translateY(-1px); } }
   .last-updated { margin-top: 1.5rem; font-size: 0.88rem; color: var(--fg3); }
 
   @media (min-width: 900px) {

@@ -18,12 +18,15 @@ const CDN_CACHE = 'public, durable, s-maxage=60, stale-while-revalidate=604800'
  * islands, JSON-LD and the GA / pixel snippets are inline. If a new embed or tracker stops working,
  * add its domain here.
  */
+/** The local seed preview serves images from seed/mock-api.mjs (never set in production). */
+const previewImageHost = (import.meta.env as Record<string, string | undefined>).PUBLIC_SANITY_IMAGE_BASE_URL ?? ''
+
 const CSP = [
   "default-src 'self'",
   "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.google-analytics.com https://connect.facebook.net",
-  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-  "font-src 'self' data: https://fonts.gstatic.com",
-  "img-src 'self' data: blob: https://cdn.sanity.io https://*.google-analytics.com https://*.googletagmanager.com https://www.facebook.com https://*.googleapis.com https://*.gstatic.com https://*.googleusercontent.com https://i.ytimg.com https://*.vimeocdn.com",
+  "style-src 'self' 'unsafe-inline'",
+  "font-src 'self' data:",
+  `img-src 'self' data: blob: https://cdn.sanity.io https://*.google-analytics.com https://*.googletagmanager.com https://www.facebook.com https://*.googleapis.com https://*.gstatic.com https://*.googleusercontent.com https://i.ytimg.com https://*.vimeocdn.com${previewImageHost ? ` ${previewImageHost}` : ''}`,
   "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.facebook.com https://connect.facebook.net",
   "frame-src https://www.google.com https://maps.google.com https://www.youtube-nocookie.com https://www.youtube.com https://player.vimeo.com https://www.googletagmanager.com",
   "media-src 'self' https://cdn.sanity.io",
@@ -33,6 +36,23 @@ const CSP = [
   // Keep in step with netlify.toml: lets Sanity's Presentation tool show the site in its iframe.
   "frame-ancestors 'self' https://*.sanity.studio https://sanity.studio",
   'upgrade-insecure-requests',
+].join('; ')
+
+/**
+ * The stricter policy we want to enforce once we know it breaks nothing: no inline scripts unless
+ * listed, and Trusted Types for anything that writes HTML from script. It only *reports* for now
+ * (Content-Security-Policy-Report-Only), to /api/csp-report, which logs each violation.
+ * Plan: watch the Netlify function log for two weeks, add hashes for the inline snippets that must
+ * stay, then swap it in for CSP above.
+ */
+const CSP_REPORT_ONLY = [
+  ...CSP.split('; ')
+    // frame-ancestors and upgrade-insecure-requests do nothing in a report-only policy (browsers warn).
+    .filter((d) => !d.startsWith('frame-ancestors') && d !== 'upgrade-insecure-requests')
+    .map((d) => d.replace("script-src 'self' 'unsafe-inline'", "script-src 'self' 'report-sample'")),
+  "require-trusted-types-for 'script'",
+  'report-uri /api/csp-report',
+  'report-to csp',
 ].join('; ')
 
 const skipPrefixes = ['/studio', '/api/', '/_astro/', '/_image']
@@ -73,7 +93,11 @@ export const onRequest = defineMiddleware(async (context, next) => {
   try {
     response.headers.set('Netlify-Vary', `cookie=${DRAFT_MODE_COOKIE}`)
     const isHtml = response.headers.get('content-type')?.includes('text/html')
-    if (isHtml && !context.locals.draftMode) response.headers.set('Content-Security-Policy', CSP)
+    if (isHtml && !context.locals.draftMode) {
+      response.headers.set('Content-Security-Policy', CSP)
+      response.headers.set('Content-Security-Policy-Report-Only', CSP_REPORT_ONLY)
+      response.headers.set('Reporting-Endpoints', 'csp="/api/csp-report"')
+    }
     if (context.locals.draftMode) {
       response.headers.set('Cache-Control', 'private, no-store')
     } else if (response.status === 200 && isHtml) {

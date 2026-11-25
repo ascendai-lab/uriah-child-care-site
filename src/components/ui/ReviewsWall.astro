@@ -145,7 +145,7 @@ const showInvite = Boolean(showWrite && writeUrl)
     transition: transform 200ms var(--ease-out), box-shadow 200ms var(--ease-out);
   }
   .reviews-invite__link:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18); }
-  .reviews-invite__link:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--navy), 0 0 0 4.5px #fff; }
+  .reviews-invite__link:focus-visible { outline: 2px solid transparent; box-shadow: 0 0 0 2px var(--navy), 0 0 0 4.5px #fff; }
   .reviews-actions { display: flex; justify-content: center; margin-top: 2.25rem; }
   @media (min-width: 720px) { .reviews-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   /* Two columns: a lone invite tile in the last row spans it, so there's no empty cell beside it. */

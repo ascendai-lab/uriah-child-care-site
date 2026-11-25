@@ -25,3 +25,27 @@ export function getEmbedUrl(url: string | null | undefined, autoplay = false): s
     return null
   }
 }
+
+export interface VideoFacade {
+  /** Player URL that starts playing once loaded (the visitor already pressed play). */
+  playUrl: string
+  /** Poster image (YouTube only; Vimeo needs an API call, so it gets a plain panel). */
+  poster: string | null
+  /** The video's own page, for visitors without JS. */
+  pageUrl: string
+}
+
+/**
+ * Data for a click-to-play video: a poster and a play button stand in for the player, which is
+ * only loaded when the visitor presses play. Returns null when autoplay is on (it must load at once).
+ */
+export function getVideoFacade(url: string | null | undefined, autoplay = false): VideoFacade | null {
+  const embed = getEmbedUrl(url, false)
+  if (!embed || autoplay || !url) return null
+  const youtubeId = embed.match(/youtube-nocookie\.com\/embed\/([^/?]+)/)?.[1]
+  return {
+    playUrl: `${embed}?autoplay=1`,
+    poster: youtubeId ? `https://i.ytimg.com/vi/${encodeURIComponent(youtubeId)}/hqdefault.jpg` : null,
+    pageUrl: stegaClean(url),
+  }
+}

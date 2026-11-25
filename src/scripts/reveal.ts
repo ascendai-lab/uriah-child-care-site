@@ -1,5 +1,6 @@
 /**
  * Entrance animations: section content fades up as it scrolls into view.
+ * Fallback only: browsers with scroll-driven animations do this in CSS (global.css, "Motion").
  * Only runs when the visitor hasn't asked for reduced motion; content stays visible without JS.
  */
 const SELECTOR = [
@@ -20,7 +21,8 @@ const SELECTOR = [
 ].join(',')
 
 function init() {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return
+  if (CSS.supports('(animation-timeline: view()) and (animation-range: entry)')) return
+  if (!window.matchMedia('(prefers-reduced-motion: no-preference)').matches || !('IntersectionObserver' in window)) return
   const els = Array.from(document.querySelectorAll<HTMLElement>(SELECTOR)).filter(
     (el) => el.getBoundingClientRect().top > window.innerHeight * 0.9,
   )

@@ -9,6 +9,7 @@ import {
   tourTimeOptions,
   TourRequestSchema,
 } from '@/lib/tour'
+import { validityHandlers } from '@/lib/formValidity'
 
 type FormState = 'idle' | 'submitting' | 'error'
 
@@ -57,10 +58,22 @@ function readGaClientId(): string | undefined {
  * The tour request form. Checks the answers with the shared Zod schema, then sends them to Netlify Forms
  * (Netlify emails each request to the center; see public/__forms.html).
  */
+/**
+ * WebMCP (declarative): lets an AI agent in the visitor's browser recognise this form as a "book a tour"
+ * tool and fill it in for them. The visitor still presses the button; the form never submits itself.
+ * Browsers without WebMCP ignore the attributes. React doesn't know them, hence the plain object.
+ */
+const webMcp = {
+  toolname: 'book-tour',
+  tooldescription:
+    'Ask Uriah Child Care in Vineland, NJ for a tour: parent name and phone, child age, the care needed and good tour times. Staff call back to set the time.',
+} as Record<string, string>
+
 export default function TourForm({ thanksPath = '/tour/thanks/', phone, idPrefix = 'tour' }: Props) {
   const [state, setState] = useState<FormState>('idle')
   const [errorMsg, setErrorMsg] = useState('')
   const [childAge, setChildAge] = useState('')
+  const [careMissing, setCareMissing] = useState(false)
   const startedAt = useRef<number>(Date.now())
 
   useEffect(() => {
@@ -77,9 +90,12 @@ export default function TourForm({ thanksPath = '/tour/thanks/', phone, idPrefix
     const careNeeded = data.getAll('careNeeded').map(String)
     if (!careNeeded.length) {
       setErrorMsg('Please pick at least one kind of care.')
+      setCareMissing(true)
       setState('error')
+      form.querySelector<HTMLInputElement>('input[name="careNeeded"]')?.focus()
       return
     }
+    setCareMissing(false)
 
     setState('submitting')
     setErrorMsg('')
@@ -131,7 +147,13 @@ export default function TourForm({ thanksPath = '/tour/thanks/', phone, idPrefix
   }
 
   return (
-    <form className="form tour-form" onSubmit={handleSubmit} noValidate={false}>
+    <form
+      className="form tour-form"
+      method="post"
+      onSubmit={handleSubmit}
+      {...validityHandlers}
+      {...webMcp}
+    >
       <div className="form-row form-row--2">
         <div className="field">
           <label htmlFor={id('name')}>Your name</label>
@@ -172,13 +194,13 @@ export default function TourForm({ thanksPath = '/tour/thanks/', phone, idPrefix
         </p>
       )}
 
-      <fieldset className="field">
+      <fieldset className="field" aria-describedby={careMissing ? id('error') : id('care-hint')}>
         <legend className="field__label">Care you need</legend>
-        <span className="field__hint">Pick any that fit.</span>
+        <span className="field__hint" id={id('care-hint')}>Pick any that fit.</span>
         <div className="choice-group">
           {careOptions.map((o) => (
             <label key={o.value} className="choice">
-              <input type="checkbox" name="careNeeded" value={o.value} />
+              <input type="checkbox" name="careNeeded" value={o.value} aria-invalid={careMissing || undefined} onChange={() => careMissing && setCareMissing(false)} />
               <span>{o.label}</span>
             </label>
           ))}
@@ -226,7 +248,7 @@ export default function TourForm({ thanksPath = '/tour/thanks/', phone, idPrefix
       </div>
 
       {state === 'error' && (
-        <p className="form-error" role="alert">
+        <p className="form-error" role="alert" id={id('error')}>
           {errorMsg}
           {phone ? ` You can also call us at ${phone}.` : ''}
         </p>

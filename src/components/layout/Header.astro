@@ -47,7 +47,7 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
     </a>
 
     <nav aria-label="Main" class="site-nav" id="site-nav" data-sanity={editAttr(draftMode, { _id: 'navigation', _type: 'navigation' }, 'headerLinks')}>
-      <ul class="site-nav__list">
+      <ul role="list" class="site-nav__list">
         {
           navigation?.headerLinks?.map((item, index) => {
             const link = resolveLink(item.link)
@@ -56,16 +56,16 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
               const open = children.some((c) => isCurrent(resolveLink(c.link)?.href)) || isCurrent(link?.href)
               return (
                 <li class="site-nav__item" style={`--i:${index}`}>
-                  <details class="site-nav__dropdown">
-                    <summary class:list={[open && 'is-active']}>
+                  <div class="site-nav__dropdown">
+                    <button type="button" class:list={['site-nav__trigger', open && 'is-active']} aria-expanded="false" aria-controls={`mega-${index}`}>
                       {item.label}
                       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
                         <path d="m6 9 6 6 6-6" />
                       </svg>
-                    </summary>
-                    <div class="mega">
+                    </button>
+                    <div class="mega" id={`mega-${index}`}>
                       <div class="mega__inner">
-                        <ul class="mega__links">
+                        <ul role="list" class="mega__links">
                           {children.map((child) => {
                             const childLink = resolveLink(child.link)!
                             const icon = (stegaClean(child.icon) || 'sparkle') as IconName
@@ -97,7 +97,7 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
                         </ul>
                         <aside class="mega__feature">
                           {item.menuPhoto?.asset && (
-                            <SanityImage image={item.menuPhoto} width={520} sizes="320px" class="mega__photo" />
+                            <SanityImage image={item.menuPhoto} width={520} sizes="320px" class="mega__photo" fetchpriority="low" />
                           )}
                           <p class="mega__note">{item.menuNote || 'See the center for yourself. Tours take about 20 minutes.'}</p>
                           <a class="btn btn--primary mega__cta" href={tourHref}>
@@ -106,7 +106,7 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
                         </aside>
                       </div>
                     </div>
-                  </details>
+                  </div>
                 </li>
               )
             }
@@ -144,7 +144,7 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
         )
       }
       {navigation?.headerCta?.label ? <Button button={navigation.headerCta} /> : <a class="btn btn--primary" href="/tour/">Book a tour</a>}
-      <button class="site-header__toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+      <button type="button" class="site-header__toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
         <span class="toggle-open"><Icon name="menu" size={24} /></span>
         <span class="toggle-close"><Icon name="close" size={24} /></span>
       </button>
@@ -153,68 +153,133 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
 </header>
 
 <script>
+  /*
+   * Navigation, built on the browser's own features (Chrome "navbar" guidance):
+   * - Phones: the menu button opens a full-screen panel. While it's open, the page behind it is made
+   *   `inert`, so Tab and screen readers stay in the menu; Escape closes it and returns focus.
+   *   Submenus are simple show/hide lists (`hidden`).
+   * - Desktop: each submenu is a native popover (`popover="auto"`). The browser handles click-outside,
+   *   Escape, focus return and "only one open at a time". It also opens on hover, with a short delay.
+   */
   const header = document.querySelector<HTMLElement>('.site-header')
   const toggle = document.querySelector<HTMLButtonElement>('.site-header__toggle')
   const nav = document.getElementById('site-nav')
   const desktop = window.matchMedia('(min-width: 1080px)')
+  const canHover = window.matchMedia('(hover: hover) and (pointer: fine)')
+  const triggers = Array.from(document.querySelectorAll<HTMLButtonElement>('.site-nav__trigger'))
+  const panelOf = (t: HTMLButtonElement) => document.getElementById(t.getAttribute('aria-controls') ?? '')
 
-  // The mobile menu is a full-screen panel that starts right under the header and covers the page.
+  // Everything the mobile panel covers. Made inert while the panel is open.
+  const background = () =>
+    Array.from(document.querySelectorAll<HTMLElement>('.skip-link, .announcement, .site-header__logo, main, .site-footer, .draft-banner'))
+
+  // ── Phone menu ──
   const placeMenu = () => header && nav?.style.setProperty('--nav-top', `${Math.max(0, header.getBoundingClientRect().bottom)}px`)
-  const setMenu = (open: boolean) => {
+  const setMenu = (open: boolean, { restoreFocus = false } = {}) => {
     if (!toggle || !nav) return
     if (open) placeMenu()
     toggle.setAttribute('aria-expanded', String(open))
     toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
     nav.classList.toggle('is-open', open)
     document.documentElement.classList.toggle('menu-open', open)
+    background().forEach((el) => el.toggleAttribute('inert', open))
+    if (open) nav.querySelector<HTMLElement>('a, button')?.focus({ preventScroll: true })
+    else if (restoreFocus) toggle.focus()
   }
   toggle?.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'))
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && nav?.classList.contains('is-open')) {
-      setMenu(false)
-      toggle?.focus()
-    }
+    if (e.key === 'Escape' && nav?.classList.contains('is-open')) setMenu(false, { restoreFocus: true })
   })
   // Following a link (including #anchors on the same page) closes the menu.
   nav?.addEventListener('click', (e) => {
     if ((e.target as Element).closest('a') && !desktop.matches) setMenu(false)
   })
-  desktop.addEventListener('change', () => setMenu(false))
   window.addEventListener('resize', () => nav?.classList.contains('is-open') && placeMenu())
 
-  // Close other dropdowns when one opens, and when clicking outside.
-  const dropdowns = Array.from(document.querySelectorAll<HTMLDetailsElement>('.site-nav__dropdown'))
-  dropdowns.forEach((d) =>
-    d.addEventListener('toggle', () => {
-      if (d.open) dropdowns.filter((o) => o !== d).forEach((o) => (o.open = false))
-    }),
-  )
-  document.addEventListener('click', (e) => {
-    if (window.matchMedia('(min-width: 1080px)').matches && !(e.target as Element).closest('.site-nav__dropdown')) {
-      dropdowns.forEach((d) => (d.open = false))
-    }
+  // ── Submenus ──
+  const placeMega = () => header && document.documentElement.style.setProperty('--mega-top', `${Math.max(0, header.getBoundingClientRect().bottom)}px`)
+  const supportsPopover = typeof HTMLElement.prototype.showPopover === 'function'
+  const isPopover = (panel: HTMLElement) => panel.hasAttribute('popover')
+  const isOpen = (panel: HTMLElement) => (isPopover(panel) ? panel.matches(':popover-open') : !panel.hidden)
+
+  /** Switch every submenu between the phone layout (inline list) and the desktop layout (popover). */
+  const applyLayout = () => {
+    const wide = desktop.matches && supportsPopover
+    if (!desktop.matches) setMenu(false)
+    triggers.forEach((t) => {
+      const panel = panelOf(t)
+      if (!panel) return
+      if (wide) {
+        panel.hidden = false
+        panel.setAttribute('popover', 'auto')
+        t.setAttribute('popovertarget', panel.id)
+      } else {
+        if (isPopover(panel) && panel.matches(':popover-open')) panel.hidePopover()
+        panel.removeAttribute('popover')
+        t.removeAttribute('popovertarget')
+        panel.hidden = true
+      }
+      t.setAttribute('aria-expanded', String(isOpen(panel)))
+    })
+  }
+
+  triggers.forEach((t) => {
+    const panel = panelOf(t)
+    const item = t.closest<HTMLElement>('.site-nav__item')
+    if (!panel || !item) return
+
+    // Phones: a plain show/hide list. (On desktop the popovertarget attribute does the work.)
+    t.addEventListener('click', () => {
+      if (isPopover(panel)) return
+      panel.hidden = !panel.hidden
+      t.setAttribute('aria-expanded', String(!panel.hidden))
+    })
+
+    panel.addEventListener('beforetoggle', (e) => {
+      if ((e as ToggleEvent).newState === 'open') placeMega()
+    })
+    panel.addEventListener('toggle', (e) => {
+      t.setAttribute('aria-expanded', String((e as ToggleEvent).newState === 'open'))
+      if ((e as ToggleEvent).newState === 'closed') hoverOpened = false
+    })
+
+    // Desktop hover preview: opens after a short pause and closes when the pointer leaves, unless the
+    // visitor clicked to open it. Touch never triggers it.
+    let timer: number | undefined
+    let hoverOpened = false
+    item.addEventListener('pointerenter', (e) => {
+      if (!isPopover(panel) || !canHover.matches || e.pointerType === 'touch') return
+      window.clearTimeout(timer)
+      timer = window.setTimeout(() => {
+        if (panel.matches(':popover-open')) return
+        try {
+          (panel.showPopover as (this: HTMLElement, options?: { source?: HTMLElement }) => void).call(panel, { source: t })
+        } catch {
+          panel.showPopover()
+        }
+        hoverOpened = true
+      }, 90)
+    })
+    item.addEventListener('pointerleave', (e) => {
+      if (!isPopover(panel) || e.pointerType === 'touch') return
+      window.clearTimeout(timer)
+      timer = window.setTimeout(() => {
+        if (hoverOpened && panel.matches(':popover-open')) panel.hidePopover()
+      }, 220)
+    })
+    // A click on a hover-opened menu keeps it open instead of closing it.
+    t.addEventListener('pointerdown', (e) => {
+      if (isPopover(panel) && hoverOpened && panel.matches(':popover-open') && e.pointerType !== 'touch') {
+        hoverOpened = false
+        t.addEventListener('click', (ev) => ev.preventDefault(), { once: true })
+      }
+    })
   })
 
-  // Desktop: the mega menu also opens on hover (with a short delay so it doesn't flicker when the
-  // mouse passes over), and Escape closes it and returns focus to its button.
-  const canHover = window.matchMedia('(hover: hover) and (pointer: fine)')
-  dropdowns.forEach((d) => {
-    let timer: number | undefined
-    const later = (open: boolean, ms: number) => {
-      window.clearTimeout(timer)
-      timer = window.setTimeout(() => (d.open = open), ms)
-    }
-    d.addEventListener('mouseenter', () => desktop.matches && canHover.matches && later(true, 90))
-    d.addEventListener('mouseleave', () => desktop.matches && canHover.matches && later(false, 220))
-  })
-  document.addEventListener('keydown', (e) => {
-    if (e.key !== 'Escape' || !desktop.matches) return
-    const open = dropdowns.find((d) => d.open)
-    if (open) {
-      open.open = false
-      open.querySelector('summary')?.focus()
-    }
-  })
+  // Keep an open submenu tucked under the header as the announcement bar scrolls away.
+  window.addEventListener('scroll', () => document.querySelector('.mega:popover-open') && placeMega(), { passive: true })
+  desktop.addEventListener('change', applyLayout)
+  applyLayout()
 </script>
 
 <style>
@@ -274,41 +339,41 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
     background: var(--cream);
     padding: 1.25rem var(--container-px) 2.5rem;
     visibility: hidden;
-    clip-path: inset(0 0 100% 0);
-    transition:
-      clip-path 0.5s cubic-bezier(0.22, 1, 0.36, 1),
-      visibility 0s linear 0.5s;
   }
-  .site-nav.is-open {
-    visibility: visible;
-    clip-path: inset(0 0 0 0);
-    transition:
-      clip-path 0.5s cubic-bezier(0.22, 1, 0.36, 1),
-      visibility 0s;
-  }
-  .site-nav__item,
-  .site-nav__phone-mobile {
-    opacity: 0;
-    transform: translateY(-14px);
-    transition: opacity 0.2s ease, transform 0.2s ease;
-  }
-  .site-nav.is-open .site-nav__item,
-  .site-nav.is-open .site-nav__phone-mobile {
-    opacity: 1;
-    transform: none;
-    transition: opacity 0.45s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-    transition-delay: calc(0.12s + var(--i, 0) * 0.06s);
+  .site-nav.is-open { visibility: visible; }
+  /* Motion only for visitors who haven't asked for less of it: the panel unrolls from the header,
+     then the items slide down one after another. */
+  @media (prefers-reduced-motion: no-preference) {
+    .site-nav {
+      clip-path: inset(0 0 100% 0);
+      transition:
+        clip-path 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+        visibility 0s linear 0.5s;
+    }
+    .site-nav.is-open {
+      clip-path: inset(0 0 0 0);
+      transition:
+        clip-path 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+        visibility 0s;
+    }
+    .site-nav__item,
+    .site-nav__phone-mobile {
+      opacity: 0;
+      transform: translateY(-14px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+    .site-nav.is-open .site-nav__item,
+    .site-nav.is-open .site-nav__phone-mobile {
+      opacity: 1;
+      transform: none;
+      transition: opacity 0.45s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+      transition-delay: calc(0.12s + var(--i, 0) * 0.06s);
+    }
   }
   :global(html.menu-open body) { overflow: hidden; }
-  @media (prefers-reduced-motion: reduce) {
-    .site-nav, .site-nav.is-open { clip-path: none; opacity: 0; transition: opacity 0.15s, visibility 0s linear 0.15s; }
-    .site-nav.is-open { opacity: 1; transition: opacity 0.15s, visibility 0s; }
-    .site-nav__item, .site-nav__phone-mobile,
-    .site-nav.is-open .site-nav__item, .site-nav.is-open .site-nav__phone-mobile { opacity: 1; transform: none; transition: none; }
-  }
   .site-nav__list { list-style: none; display: grid; gap: 0.1rem; }
   .site-nav__item > a,
-  .site-nav__item summary,
+  .site-nav__trigger,
   .site-nav__item > span {
     display: flex;
     align-items: center;
@@ -319,10 +384,11 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
     font-size: 1.3rem;
     cursor: pointer;
   }
-  .site-nav a[aria-current='page'], .site-nav summary.is-active { color: var(--coral-700); }
-  .site-nav__dropdown summary { list-style: none; }
-  .site-nav__dropdown summary::-webkit-details-marker { display: none; }
-  .site-nav__dropdown[open] summary svg { transform: rotate(180deg); }
+  .site-nav__trigger { width: 100%; border: 0; background: none; color: inherit; text-align: start; }
+  .site-nav__trigger svg { transition: transform 0.25s var(--ease-out); }
+  .site-nav a[aria-current='page'], .site-nav__trigger.is-active { color: var(--coral-700); }
+  .site-nav__trigger[aria-expanded='true'] svg { transform: rotate(180deg); }
+  .mega[hidden] { display: none; }
   /* Dropdown content. On phones it's a simple indented list; on desktop it becomes the mega menu. */
   .mega__links { list-style: none; padding: 0 0 0.5rem 0.9rem; }
   .mega__link, .mega__all a { display: flex; align-items: center; gap: 0.6rem; padding: 0.55rem 0; font-weight: 600; font-size: 1.05rem; }
@@ -371,24 +437,37 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
     .site-nav__item, .site-nav.is-open .site-nav__item { opacity: 1; transform: none; transition: none; }
     .site-nav__list > .site-nav__item + .site-nav__item { border-top: 0; }
     .site-nav__list { display: flex; gap: 1.4rem; }
-    .site-nav__item > a, .site-nav__item summary { padding: 0.5rem 0; font-size: 1.02rem; }
-    /* Mega menu: a wide panel that drops from under the header, centred on the page. */
-    .mega {
-      position: absolute;
-      top: 100%;
-      left: 50%;
+    .site-nav__item > a, .site-nav__trigger { padding: 0.5rem 0; font-size: 1.02rem; }
+    .site-nav__trigger { width: auto; }
+    /* Mega menu: a native popover, a wide panel that drops from under the header, centred on the page.
+       --mega-top is the header's bottom edge, set by the script when it opens. */
+    .mega:not(:popover-open) { display: none; }
+    .mega:popover-open {
+      position: fixed;
+      inset: var(--mega-top, 117px) auto auto 50%;
       width: min(1080px, calc(100vw - 2 * var(--container-px)));
-      transform: translate(-50%, 6px);
-      padding-top: 0.75rem;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.22s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s linear 0.28s;
+      max-height: calc(100dvh - var(--mega-top, 117px));
+      margin: 0;
+      padding: 0.75rem 0 0;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      overflow: visible;
+      translate: -50% 0;
     }
-    .site-nav__dropdown[open] .mega {
-      opacity: 1;
-      visibility: visible;
-      transform: translate(-50%, 0);
-      transition: opacity 0.22s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s;
+    @media (prefers-reduced-motion: no-preference) {
+      .mega {
+        transition:
+          opacity 0.22s ease,
+          translate 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+          display 0.28s,
+          overlay 0.28s;
+        transition-behavior: allow-discrete;
+      }
+      .mega:not(:popover-open) { opacity: 0; translate: -50% 6px; }
+      @starting-style {
+        .mega:popover-open { opacity: 0; translate: -50% 6px; }
+      }
     }
     .mega__inner {
       display: grid;
@@ -428,7 +507,7 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
       color: var(--coral-800);
       transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
     }
-    .mega__link:hover .mega__icon { transform: scale(1.08) rotate(-6deg); }
+    @media (prefers-reduced-motion: no-preference) { .mega__link:hover .mega__icon { transform: scale(1.08) rotate(-6deg); } }
     .mega__text { display: grid; gap: 0.15rem; }
     .mega__label { font-family: var(--font-display); font-weight: 600; font-size: 1.02rem; }
     .mega__desc { display: block; font-family: var(--font-body); font-weight: 400; font-size: 0.88rem; line-height: 1.45; color: var(--color-text-muted); }
@@ -447,8 +526,5 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
     .mega__feature :global(img) { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 30%; border-radius: var(--radius-md); }
     .mega__note { font-size: 0.95rem; line-height: 1.5; padding-inline: 0.15rem; }
     .mega__cta { align-self: flex-start; }
-    @media (prefers-reduced-motion: reduce) {
-      .mega, .site-nav__dropdown[open] .mega { transition: none; transform: translate(-50%, 0); }
-    }
   }
 </style>

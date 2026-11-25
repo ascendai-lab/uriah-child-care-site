@@ -5,6 +5,7 @@ import { telHref } from '@cms/lib/links'
 import Section from '@components/ui/Section.astro'
 import SectionHeader from '@components/ui/SectionHeader.astro'
 import Icon from '@components/ui/Icon.astro'
+import MapEmbed from '@components/ui/MapEmbed.astro'
 
 interface Props {
   block: BlockOf<'mapBlock'>
@@ -45,12 +46,7 @@ const listing = stegaClean(settings?.gbpUrl)
       </div>
     </div>
     <div class="map-block__map">
-      <iframe
-        src={embed}
-        title={`Map of ${name} at ${stegaClean(fullAddress)}`}
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen></iframe>
+      <MapEmbed src={embed} title={`Map of ${name} at ${stegaClean(fullAddress)}`} href={listing || directions} />
     </div>
   </div>
 </Section>
@@ -71,6 +67,5 @@ const listing = stegaClean(settings?.gbpUrl)
     box-shadow: var(--shadow-card-hover);
     background: var(--sky-50);
   }
-  .map-block__map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   @media (min-width: 900px) { .map-block { grid-template-columns: 1fr 1.2fr; gap: 3.5rem; } .map-block__map { min-height: 420px; } }
 </style>

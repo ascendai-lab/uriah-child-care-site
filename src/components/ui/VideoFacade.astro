@@ -1,0 +1,23 @@
+---
+/**
+ * Click-to-play video. The YouTube / Vimeo player is about a megabyte of script, so a poster
+ * and a play button stand in for it until the visitor presses play (src/scripts/facades.ts).
+ * Without JS the button is a link to the video's page. Sits inside a .video-frame.
+ */
+import type { VideoFacade } from '@/lib/video'
+
+interface Props {
+  facade: VideoFacade
+  title: string
+}
+
+const { facade, title } = Astro.props
+---
+
+<a class="video-facade" href={facade.pageUrl} target="_blank" rel="noopener noreferrer" data-facade-src={facade.playUrl} data-facade-title={title} data-facade-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+  {facade.poster && <img src={facade.poster} alt="" loading="lazy" decoding="async" fetchpriority="low" />}
+  <span class="video-facade__play" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M8 5.5v13l11-6.5z" /></svg>
+  </span>
+  <span class="visually-hidden">Play video: {title}</span>
+</a>

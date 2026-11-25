@@ -10,11 +10,11 @@ const { items } = Astro.props
 ---
 
 <nav class="breadcrumbs" aria-label="Breadcrumb">
-  <ol>
+  <ol role="list">
     {
       items.map((c, i) =>
         i === items.length - 1 ? (
-          <li aria-current="page"><span>{c.label}</span></li>
+          <li><a href={c.href} aria-current="page">{c.label}</a></li>
         ) : (
           <li>
             <a href={c.href}>{c.label}</a>
