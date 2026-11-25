@@ -6,6 +6,7 @@ import { resolveLink, telHref } from '@cms/lib/links'
 import { urlFor } from '@cms/lib/image'
 import SocialIcon from '@components/ui/SocialIcon.astro'
 import Icon from '@components/ui/Icon.astro'
+import MapEmbed from '@components/ui/MapEmbed.astro'
 
 interface Props {
   layout: Layout
@@ -85,7 +86,7 @@ const aboutLinks = [
 
       {
         settings?.socialLinks?.length ? (
-          <ul class="site-footer__social">
+          <ul role="list" class="site-footer__social">
             {settings.socialLinks.map((social) => (
               <li>
                 <a href={stegaClean(social.url) ?? '#'} target="_blank" rel="noopener noreferrer" aria-label={stegaClean(social.platform) ?? 'Social profile'}>
@@ -100,7 +101,7 @@ const aboutLinks = [
 
     <nav class="site-footer__col" aria-label="Programs">
       <h2>Programs</h2>
-      <ul>
+      <ul role="list">
         {
           programs?.map((p) => (
             <li>
@@ -123,7 +124,7 @@ const aboutLinks = [
         navigation.footerColumns.map((col) => (
           <nav class="site-footer__col" aria-label={col.heading ?? 'Links'}>
             <h2>{col.heading}</h2>
-            <ul>
+            <ul role="list">
               {col.links?.map((l) => {
                 const link = resolveLink(l.link)
                 return link ? (
@@ -140,7 +141,7 @@ const aboutLinks = [
       ) : (
         <nav class="site-footer__col" aria-label="About us">
           <h2>Get to know us</h2>
-          <ul>
+          <ul role="list">
             {aboutLinks.map((l) => (
               <li>
                 <a href={l.href}>{l.label}</a>
@@ -154,13 +155,7 @@ const aboutLinks = [
     <div class="site-footer__map">
       <h2>Find us</h2>
       <div class="site-footer__map-frame">
-        <iframe
-          src={mapEmbed}
-          title={`Map: ${siteName}, ${stegaClean(fullAddress)}`}
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen
-        />
+        <MapEmbed src={mapEmbed} title={`Map: ${siteName}, ${stegaClean(fullAddress)}`} href={directionsHref} tone="dark" caption={address?.street ? stegaClean(address.street) : undefined} />
       </div>
       <p class="site-footer__areas">
         Serving <a href="/">Vineland</a>{
@@ -179,7 +174,7 @@ const aboutLinks = [
   </div>
 
   <div class="container">
-    <ul class="site-footer__facts">
+    <ul role="list" class="site-footer__facts">
       {settings?.license?.summary && <li><Icon name="shield" size={16} /> {settings.license.summary}</li>}
       {settings?.subsidyStatement && <li><Icon name="wallet" size={16} /> {settings.subsidyStatement}</li>}
       {settings?.foodProgramStatement && <li><Icon name="utensils" size={16} /> {settings.foodProgramStatement}</li>}
@@ -191,7 +186,7 @@ const aboutLinks = [
       <p>© {year} {copyright}. All rights reserved.</p>
       {
         footerPages?.length ? (
-          <ul>
+          <ul role="list">
             {footerPages.map((p) => (
               <li>
                 <a href={hrefFor('page', p.slug) ?? '#'}>{p.title}</a>
@@ -242,7 +237,6 @@ const aboutLinks = [
     overflow: hidden;
     background: var(--navy-600);
   }
-  .site-footer__map-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   .site-footer__areas { margin-top: 0.9rem; font-size: 0.95rem; }
   .site-footer__areas a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255, 255, 255, 0.35); }
   .site-footer__directions {

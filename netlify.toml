@@ -24,6 +24,18 @@
     Cross-Origin-Opener-Policy = "same-origin-allow-popups"
     Content-Security-Policy = "frame-ancestors 'self' https://*.sanity.studio https://sanity.studio"
 
+# Built assets and fonts are for this site's own pages only: other sites can't embed them.
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cross-Origin-Resource-Policy = "same-origin"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cross-Origin-Resource-Policy = "same-origin"
+    Cache-Control = "public, max-age=2592000"
+
 # Astro's Netlify adapter routes /api/* and every page to its SSR function
 # automatically. No manual redirects needed.
 

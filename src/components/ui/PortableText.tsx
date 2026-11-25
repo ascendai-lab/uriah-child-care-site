@@ -6,7 +6,7 @@ import {
 import { stegaClean } from '@sanity/client/stega'
 import { urlFor, type ImageSource } from '@cms/lib/image'
 import { resolveLink, type LinkValue } from '@cms/lib/links'
-import { getEmbedUrl } from '@/lib/video'
+import { getEmbedUrl, getVideoFacade } from '@/lib/video'
 
 interface ImageBlock {
   _type: 'imageWithAlt'
@@ -57,9 +57,20 @@ const components: PortableTextComponents = {
     videoEmbed: ({ value }: { value: VideoBlock }) => {
       const embedUrl = getEmbedUrl(value?.url, Boolean(value?.autoplay))
       if (!embedUrl) return null
+      const facade = getVideoFacade(value?.url, Boolean(value?.autoplay))
+      const title = stegaClean(value.caption) || 'Video'
       return (
         <figure>
           <div className="video-frame">
+            {facade ? (
+              <a className="video-facade" href={facade.pageUrl} target="_blank" rel="noopener noreferrer" data-facade-src={facade.playUrl} data-facade-title={title} data-facade-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                {facade.poster && <img src={facade.poster} alt="" loading="lazy" decoding="async" />}
+                <span className="video-facade__play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M8 5.5v13l11-6.5z" /></svg>
+                </span>
+                <span className="visually-hidden">Play video: {title}</span>
+              </a>
+            ) : (
             <iframe
               src={embedUrl}
               title={stegaClean(value.caption) || 'Video'}
@@ -67,6 +78,7 @@ const components: PortableTextComponents = {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
+            )}
           </div>
           {value.caption && <figcaption>{value.caption}</figcaption>}
         </figure>

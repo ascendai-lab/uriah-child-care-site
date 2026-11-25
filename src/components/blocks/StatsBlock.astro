@@ -22,7 +22,7 @@ const items = block.items ?? []
 >
   <div class="container">
     {block.heading && <h2 class="visually-hidden">{block.heading}</h2>}
-    <ul class="trust-band__panel" style={`--count:${items.length}`}>
+    <ul role="list" class="trust-band__panel" style={`--count:${items.length}`}>
       {
         items.map((item) => (
           <li class="trust-band__item">

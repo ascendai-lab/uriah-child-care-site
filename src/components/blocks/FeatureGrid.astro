@@ -36,7 +36,7 @@ const palette = ['coral', 'sage', 'sunshine', 'sky']
         </div>
         <div>
           <SectionHeader heading={block.heading} intro={block.intro} />
-          <ul class="checklist">
+          <ul role="list" class="checklist">
             {block.items?.map((item) => {
               const link = resolveLink(item.link)
               return (
@@ -104,7 +104,8 @@ const palette = ['coral', 'sage', 'sunshine', 'sky']
     background: var(--accent-50);
     transition: box-shadow 260ms var(--ease-out), transform 260ms var(--ease-out);
   }
-  a.feature-card:hover { box-shadow: var(--shadow-card-hover); transform: translateY(-3px); }
+  a.feature-card:hover { box-shadow: var(--shadow-card-hover); }
+  @media (prefers-reduced-motion: no-preference) { a.feature-card:hover { transform: translateY(-3px); } }
   .feature-card h3 { font-size: 1.3rem; }
   .feature-card p { color: var(--fg2); }
   .feature-card__icon { width: 64px; height: 64px; border-radius: 50%; overflow: hidden; background: var(--accent); }

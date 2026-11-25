@@ -8,6 +8,7 @@ import {
   toNetlifyFormData,
   yesNoOptions,
 } from '@/lib/careers'
+import { validityHandlers } from '@/lib/formValidity'
 
 type FormState = 'idle' | 'submitting' | 'error' | 'sent'
 
@@ -109,7 +110,7 @@ export default function JobApplicationForm({ positions, successMessage, phone, i
   }
 
   return (
-    <form ref={formRef} className="form job-form" onSubmit={handleSubmit} encType="multipart/form-data">
+    <form ref={formRef} className="form job-form" method="post" onSubmit={handleSubmit} encType="multipart/form-data" {...validityHandlers}>
       <div className="form-row form-row--2">
         <div className="field">
           <label htmlFor={id('name')}>Full name</label>

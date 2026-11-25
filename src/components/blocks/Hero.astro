@@ -79,7 +79,7 @@ const facts =
       {block.subheading && <p class="hero__sub">{block.subheading}</p>}
       {
         facts.length > 0 && (
-          <ul class="fact-line hero__facts">
+          <ul role="list" class="fact-line hero__facts">
             {facts.map((f) => (
               <li>
                 <Icon name={f.icon} /> {f.text}

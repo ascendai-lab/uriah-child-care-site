@@ -1,7 +1,7 @@
 # CLAUDE.md — Uriah Child Care website
 
 Built from the Ascend AI starter. Client: **Uriah Child Care**, 30 W Chestnut Ave, Vineland, NJ 08360, (856) 455-6701.
-Licensed NJ DCF child care center (CCC128557), open Monday to Sunday 6 am to 11 pm, **ages 2.5 and up only (no infant care)**.
+Licensed NJ DCF child care center (CCC128557), open Monday to Saturday 6 am to 11 pm, closed Sunday, **ages 2.5 and up only (no infant care)**.
 Owner Ms. Paulette (Paulette Senior), director Tameca Burke. Service areas: Vineland, Millville, Bridgeton.
 
 Content rules that override everything below:
@@ -134,6 +134,20 @@ Mark does not use n8n. Don't add a webhook or third-party form service unless as
 The `netlify.toml` sets `Content-Security-Policy: frame-ancestors` to allow
 Sanity Studio to embed the site in an iframe. Do NOT remove this header.
 If visual editing breaks, this header is the first thing to check.
+
+---
+
+## Browser support and modern platform features
+
+Target: the last two versions of Chrome, Edge, Safari (macOS + iOS) and Firefox ("Baseline widely available"), plus newer
+features as progressive enhancement. Every newer feature must leave the page working without it:
+- Desktop mega menu: `popover` (old browsers get the same panel toggled with `hidden`). Mobile menu: `inert` on the rest of the page.
+- FAQ open/close: `::details-content` + `interpolate-size` (others open instantly). Scroll reveal: `animation-timeline: view()`, with `src/scripts/reveal.ts` as the fallback.
+- Page cross-fade: `@view-transition`. Link prefetch: speculation rules in `BaseLayout.astro` (never Studio, API or the thank-you page).
+- Motion is opt-in: put every animation and hover movement inside `@media (prefers-reduced-motion: no-preference)`. No global kill switch.
+- Focus rings use `outline: 2px solid transparent` + `box-shadow` (the outline shows in Windows high-contrast mode). Never `outline: none`.
+- Fonts are self-hosted in `public/fonts` (no Google Fonts request). Maps and videos load on click (`MapEmbed.astro`, `VideoFacade.astro`).
+- CSP: enforced policy + a stricter Report-Only policy in `middleware.ts`; violations log via `/api/csp-report`.
 
 ---
 

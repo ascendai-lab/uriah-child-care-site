@@ -31,7 +31,7 @@ const accents = ['coral', 'sky', 'sage', 'sunshine']
             {m.role && <p class="team-card__role">{m.role}</p>}
             {m.bio && <p>{m.bio}</p>}
             {m.credentials?.length ? (
-              <ul class="chip-row">
+              <ul role="list" class="chip-row">
                 {m.credentials.map((c) => (
                   <li class="chip">
                     <Icon name="shield" /> {c}

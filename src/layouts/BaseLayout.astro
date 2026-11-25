@@ -81,6 +81,20 @@ const shareImageAlt = stegaClean(shareImage?.alt) || pageTitle
 const noIndex = Boolean(seo?.noIndex) || forceNoIndex || draftMode
 const favicon = settings?.faviconUrl
 const tracking = draftMode ? null : settings
+const speculationRules = {
+  prefetch: [
+    {
+      where: {
+        and: [
+          { href_matches: '/*' },
+          { not: { href_matches: ['/studio', '/studio/*', '/api/*', '/tour/thanks/*', '/tour/thanks'] } },
+          { not: { selector_matches: '[rel~=nofollow], [download], [target=_blank]' } },
+        ],
+      },
+      eagerness: 'moderate',
+    },
+  ],
+}
 
 const owner = layout.owner
 const ownerPhoto = owner?.photo?.asset ? urlFor(owner.photo as Parameters<typeof urlFor>[0]).width(800).url() : null
@@ -107,6 +121,8 @@ const structuredData = [...structuredJsonLd, ...jsonLd].filter(Boolean)
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/* Follow the visitor's text-size setting (OS / browser), not just page zoom. */}
+    <meta name="text-scale" content="scale" />
     <title>{pageTitle}</title>
     {pageDescription && <meta name="description" content={pageDescription} />}
     <link rel="canonical" href={canonical} />
@@ -139,12 +155,9 @@ const structuredData = [...structuredJsonLd, ...jsonLd].filter(Boolean)
       )
     }
     <link rel="sitemap" href="/sitemap.xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Quicksand:wght@500;600;700&display=swap"
-    />
+    {/* Fonts are self-hosted (public/fonts, @font-face in global.css). Preload the two every page uses first. */}
+    <link rel="preload" href="/fonts/quicksand-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/fredoka-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin />
     <meta name="theme-color" content="#334350" />
     {tracking?.googleSiteVerification && <meta name="google-site-verification" content={stegaClean(tracking.googleSiteVerification)} />}
 
@@ -228,6 +241,14 @@ const structuredData = [...structuredJsonLd, ...jsonLd].filter(Boolean)
     }
     <VisualEditing enabled={draftMode} zIndex={1000} />
     {!draftMode && <script>import '@/scripts/reveal'</script>}
+    <script>import '@/scripts/facades'</script>
+    {
+      /* Prefetch a page when the visitor hovers or presses a link to it, so the next page opens fast.
+         Never in draft mode, and never for the Studio, API routes or the tour thank-you page. */
+      !draftMode && (
+        <script is:inline type="speculationrules" set:html={JSON.stringify(speculationRules)} />
+      )
+    }
   </body>
 </html>
 

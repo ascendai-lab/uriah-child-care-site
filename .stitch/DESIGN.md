@@ -47,7 +47,8 @@ Text on coral, sky and sage surfaces is `--navy-600` (#263440, 4.8:1 or better);
 - Cards: radius 28px (`--radius-xl`), soft shadow, no hard borders.
 - Chips: white pills with an icon (ages, hours, address).
 - FAQ: white rounded `<details>` rows, first one open.
-- Forms: large rounded inputs, choice chips for checkboxes and radios.
+- Forms: large rounded inputs, choice chips for checkboxes and radios. Input boxes use the neutral `--border-input` (#8A939B, a navy tint, 3:1 on white so the box is visible); a field the visitor got wrong turns `--coral-700` only after they tried (`:user-invalid`).
+- Embedded Google maps and videos load on click: a soft drawn street map (or the video poster) with a coral pin / play button stands in until then.
 
 ## 5. Deliberate exceptions
 

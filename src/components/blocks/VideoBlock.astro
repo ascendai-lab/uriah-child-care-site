@@ -1,6 +1,7 @@
 ---
 import type { BlockOf } from '@cms/lib/types'
-import { getEmbedUrl } from '@/lib/video'
+import { getEmbedUrl, getVideoFacade } from '@/lib/video'
+import VideoFacade from '@components/ui/VideoFacade.astro'
 import Section from '@components/ui/Section.astro'
 import SectionHeader from '@components/ui/SectionHeader.astro'
 
@@ -11,6 +12,8 @@ interface Props {
 
 const { block, 'data-sanity': dataSanity } = Astro.props
 const embedUrl = getEmbedUrl(block.video?.url, Boolean(block.video?.autoplay))
+const facade = getVideoFacade(block.video?.url, Boolean(block.video?.autoplay))
+const videoTitle = block.video?.caption || block.heading || 'Video'
 ---
 
 <Section anchorId={block.anchorId} background={block.background} data-sanity={dataSanity}>
@@ -19,13 +22,17 @@ const embedUrl = getEmbedUrl(block.video?.url, Boolean(block.video?.autoplay))
     embedUrl && (
       <figure class="video">
         <div class="video-frame">
-          <iframe
-            src={embedUrl}
-            title={block.video?.caption || block.heading || 'Video'}
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
+          {facade ? (
+            <VideoFacade facade={facade} title={videoTitle} />
+          ) : (
+            <iframe
+              src={embedUrl}
+              title={videoTitle}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            />
+          )}
         </div>
         {block.video?.caption && <figcaption>{block.video.caption}</figcaption>}
       </figure>
