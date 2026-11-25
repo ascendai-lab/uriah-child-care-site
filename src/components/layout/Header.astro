@@ -387,6 +387,9 @@ const tourHref = resolveLink(navigation?.headerCta?.link)?.href ?? '/tour/'
   .site-nav__trigger { width: 100%; border: 0; background: none; color: inherit; text-align: start; }
   .site-nav__trigger svg { transition: transform 0.25s var(--ease-out); }
   .site-nav a[aria-current='page'], .site-nav__trigger.is-active { color: var(--coral-700); }
+  /* While a menu is open, only its own trigger stands out. */
+  .site-nav:has(.mega:popover-open) .site-nav__trigger.is-active[aria-expanded='false'] { color: inherit; }
+  .site-nav__trigger[aria-expanded='true'] { color: var(--coral-700); }
   .site-nav__trigger[aria-expanded='true'] svg { transform: rotate(180deg); }
   .mega[hidden] { display: none; }
   /* Dropdown content. On phones it's a simple indented list; on desktop it becomes the mega menu. */

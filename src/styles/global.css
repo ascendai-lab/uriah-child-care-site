@@ -831,6 +831,8 @@
   .field :is(input, select, textarea):user-invalid,
   .field :is(input, select, textarea)[aria-invalid='true'] { border: 1.5px solid var(--coral-700); }
   .choice input[aria-invalid='true'] + span { border-color: var(--coral-700); }
+  .field--invalid > legend, .field__error { color: var(--coral-700); }
+  .field__error { font-size: 0.9rem; font-weight: 700; }
   .field fieldset, fieldset.field { border: 0; }
   .choice-group { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.15rem; }
   @media (max-width: 520px) {

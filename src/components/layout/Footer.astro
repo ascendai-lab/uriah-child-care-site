@@ -155,7 +155,7 @@ const aboutLinks = [
     <div class="site-footer__map">
       <h2>Find us</h2>
       <div class="site-footer__map-frame">
-        <MapEmbed src={mapEmbed} title={`Map: ${siteName}, ${stegaClean(fullAddress)}`} href={directionsHref} tone="dark" />
+        <MapEmbed src={mapEmbed} title={`Map: ${siteName}, ${stegaClean(fullAddress)}`} href={directionsHref} tone="dark" caption={address?.street ? stegaClean(address.street) : undefined} />
       </div>
       <p class="site-footer__areas">
         Serving <a href="/">Vineland</a>{

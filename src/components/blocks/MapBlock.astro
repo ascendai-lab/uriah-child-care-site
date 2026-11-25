@@ -46,7 +46,7 @@ const listing = stegaClean(settings?.gbpUrl)
       </div>
     </div>
     <div class="map-block__map">
-      <MapEmbed src={embed} title={`Map of ${name} at ${stegaClean(fullAddress)}`} href={listing || directions} />
+      <MapEmbed src={embed} title={`Map of ${name} at ${stegaClean(fullAddress)}`} href={listing || directions} caption={a?.street ? stegaClean(a.street) : undefined} />
     </div>
   </div>
 </Section>

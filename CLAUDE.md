@@ -1,7 +1,7 @@
 # CLAUDE.md — Uriah Child Care website
 
 Built from the Ascend AI starter. Client: **Uriah Child Care**, 30 W Chestnut Ave, Vineland, NJ 08360, (856) 455-6701.
-Licensed NJ DCF child care center (CCC128557), open Monday to Sunday 6 am to 11 pm, **ages 2.5 and up only (no infant care)**.
+Licensed NJ DCF child care center (CCC128557), open Monday to Saturday 6 am to 11 pm, closed Sunday, **ages 2.5 and up only (no infant care)**.
 Owner Ms. Paulette (Paulette Senior), director Tameca Burke. Service areas: Vineland, Millville, Bridgeton.
 
 Content rules that override everything below:

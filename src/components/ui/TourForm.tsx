@@ -194,9 +194,17 @@ export default function TourForm({ thanksPath = '/tour/thanks/', phone, idPrefix
         </p>
       )}
 
-      <fieldset className="field" aria-describedby={careMissing ? id('error') : id('care-hint')}>
+      <fieldset className={careMissing ? 'field field--invalid' : 'field'} aria-describedby={careMissing ? id('care-error') : id('care-hint')}>
         <legend className="field__label">Care you need</legend>
-        <span className="field__hint" id={id('care-hint')}>Pick any that fit.</span>
+        {careMissing ? (
+          <span className="field__error" id={id('care-error')}>
+            Pick at least one.
+          </span>
+        ) : (
+          <span className="field__hint" id={id('care-hint')}>
+            Pick any that fit.
+          </span>
+        )}
         <div className="choice-group">
           {careOptions.map((o) => (
             <label key={o.value} className="choice">
